@@ -3,7 +3,7 @@
 An adaptive Italian trainer for an English speaker at about B2 who is aiming for C1. It has six areas:
 
 - **Learn**: 61 lessons across the B2→C1 curriculum.
-- **Play / Test**: 26 games linked to those lessons.
+- **Play / Test**: 28 games linked to those lessons.
 - **Vocabulary**: a 308-entry library plus spaced-repetition flashcards.
 - **Google Translate import**: turns your translation history into flashcards, exercises and games.
 - **Error Bank**: a permanent record of your mistakes, retested until mastered.
