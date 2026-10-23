@@ -21,6 +21,10 @@ An adaptive Italian trainer for an English speaker at about B2 who is aiming for
 
 Everything works as silent text, so you can use it in public. Audio (text-to-speech) and speaking (speech recognition) are used when the browser supports them.
 
+## Live site
+
+**https://ajoshi1education.github.io/allenamento/**: works on any PC or phone (Chrome or Edge for voice). After changing anything, publish the update with `npm run deploy` (it builds and pushes to the `gh-pages` branch). Progress is stored in each browser: use Settings → Download backup / Restore to move it, or set up the optional sync.
+
 ## Run it locally
 
 ```
