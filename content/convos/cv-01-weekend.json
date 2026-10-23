@@ -3,8 +3,18 @@
   "title": "Un caffè con Giulia",
   "subtitle": "Small talk with a friend: your weekend, plans and opinions.",
   "level": "B2",
-  "conceptIds": ["B2-PAST-01", "B2-FUT-01", "B2-SUBJ-01"],
-  "tutor": { "name": "Giulia", "avatar": "👩‍🦰", "gender": "female", "register": "informal" },
+  "theme": "Vita quotidiana",
+  "conceptIds": [
+    "B2-PAST-01",
+    "B2-FUT-01",
+    "B2-SUBJ-01"
+  ],
+  "tutor": {
+    "name": "Giulia",
+    "avatar": "👩‍🦰",
+    "gender": "female",
+    "register": "informal"
+  },
   "setting": "You meet your Italian friend Giulia for a coffee on Monday morning in a bar in Bologna.",
   "turns": [
     {
@@ -16,8 +26,26 @@
       "expect": {
         "minWords": 8,
         "rubric": [
-          { "label": "Uses the passato prossimo", "anyOf": ["\\b(sono|siamo|ho|abbiamo)\\s+(\\w+\\s+)?\\w+(ato|ata|ati|ate|uto|uta|uti|ito|ita|iti|tto|tta|sto|sta|so|sa)\\b"], "min": 2, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "Two actions: *sono andato…, ho visto…*" },
-          { "label": "Says when (sabato, domenica, venerdì sera…)", "anyOf": ["\\b(sabato|domenica|venerdì|ieri|stamattina|weekend|fine settimana)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-PAST-01", "hint": "*Sabato…, domenica…*" }
+          {
+            "label": "Uses the passato prossimo",
+            "anyOf": [
+              "\\b(sono|siamo|ho|abbiamo)\\s+(\\w+\\s+)?\\w+(ato|ata|ati|ate|uto|uta|uti|ito|ita|iti|tto|tta|sto|sta|so|sa)\\b"
+            ],
+            "min": 2,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "Two actions: *sono andato…, ho visto…*"
+          },
+          {
+            "label": "Says when (sabato, domenica, venerdì sera…)",
+            "anyOf": [
+              "\\b(sabato|domenica|venerdì|ieri|stamattina|weekend|fine settimana)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-PAST-01",
+            "hint": "*Sabato…, domenica…*"
+          }
         ]
       },
       "model": "Sabato sono andato al mare con degli amici e domenica ho finalmente finito il libro che stavo leggendo.",
@@ -33,7 +61,16 @@
       "expect": {
         "minWords": 6,
         "rubric": [
-          { "label": "Uses the imperfetto for description", "anyOf": ["\\b(faceva|era|c'era|c'erano|tirava|pioveva|nevicava|erano|sembrava)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "Background → imperfetto: *faceva caldo, c'era il sole*." }
+          {
+            "label": "Uses the imperfetto for description",
+            "anyOf": [
+              "\\b(faceva|era|c'era|c'erano|tirava|pioveva|nevicava|erano|sembrava)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "Background → imperfetto: *faceva caldo, c'era il sole*."
+          }
         ]
       },
       "model": "Da noi faceva caldo e c'era un sole bellissimo, ma la sera tirava un po' di vento.",
@@ -49,8 +86,26 @@
       "expect": {
         "minWords": 8,
         "rubric": [
-          { "label": "Uses the future", "anyOf": ["\\b\\w+(rò|rai|rà|remo|rete|ranno)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-FUT-01", "hint": "*Andrò, farò, vedrò…*" },
-          { "label": "Uses the futuro anteriore (quando/appena avrò…)", "anyOf": ["\\b(avrò|avremo|sarò|saremo)\\s+\\w+(ato|ata|ati|ate|uto|uta|uti|ito|ita|iti|tto|tta)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-FUT-01", "hint": "*Quando avrò finito di lavorare, …*" }
+          {
+            "label": "Uses the future",
+            "anyOf": [
+              "\\b\\w+(rò|rai|rà|remo|rete|ranno)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*Andrò, farò, vedrò…*"
+          },
+          {
+            "label": "Uses the futuro anteriore (quando/appena avrò…)",
+            "anyOf": [
+              "\\b(avrò|avremo|sarò|saremo)\\s+\\w+(ato|ata|ati|ate|uto|uta|uti|ito|ita|iti|tto|tta)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*Quando avrò finito di lavorare, …*"
+          }
         ]
       },
       "model": "Sabato andrò a trovare i miei genitori, e quando avrò finito di lavorare domenica, forse andrò al cinema.",
@@ -66,8 +121,26 @@
       "expect": {
         "minWords": 8,
         "rubric": [
-          { "label": "Opinion verb + che + subjunctive", "anyOf": ["\\b(penso|credo|mi sembra|mi pare|immagino|ritengo)\\s+che\\s+(\\w+\\s+){0,3}(sia|siano|abbia|abbiano|possa|possano|faccia|facciano|vada|vadano|debba|debbano|serva|servano|migliori|aiuti|renda|crei|risolva)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Penso che **sia**…, credo che **possa**…*" },
-          { "label": "Gives a reason", "anyOf": ["\\b(perché|poiché|visto che|dato che|siccome|infatti)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…perché…*" }
+          {
+            "label": "Opinion verb + che + subjunctive",
+            "anyOf": [
+              "\\b(penso|credo|mi sembra|mi pare|immagino|ritengo)\\s+che\\s+(\\w+\\s+){0,3}(sia|siano|abbia|abbiano|possa|possano|faccia|facciano|vada|vadano|debba|debbano|serva|servano|migliori|aiuti|renda|crei|risolva)\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Penso che **sia**…, credo che **possa**…*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché…*"
+          }
         ]
       },
       "model": "Penso che sia una buona idea, perché in centro c'è troppo traffico e l'aria è irrespirabile.",
@@ -83,7 +156,16 @@
       "expect": {
         "minWords": 7,
         "rubric": [
-          { "label": "Uses the conditional", "anyOf": ["\\b\\w+(rei|resti|rebbe|remmo|reste|rebbero)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-HYP-01", "hint": "*Vivrei, sceglierei…*" }
+          {
+            "label": "Uses the conditional",
+            "anyOf": [
+              "\\b\\w+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-HYP-01",
+            "hint": "*Vivrei, sceglierei…*"
+          }
         ]
       },
       "model": "Se potessi scegliere, vivrei a Napoli, perché mi piace la sua energia e si mangia benissimo.",

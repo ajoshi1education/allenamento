@@ -3,8 +3,19 @@
   "title": "Il dibattito",
   "subtitle": "A structured debate on mass tourism: concessives, nominal style, polite disagreement, conclusions.",
   "level": "C1",
-  "conceptIds": ["C1-CONN-02", "C1-SYN-02", "C1-INT-02", "C1-SPEAK-02"],
-  "tutor": { "name": "Davide Galli", "avatar": "🎙️", "gender": "male", "register": "formal" },
+  "theme": "Società e attualità",
+  "conceptIds": [
+    "C1-CONN-02",
+    "C1-SYN-02",
+    "C1-INT-02",
+    "C1-SPEAK-02"
+  ],
+  "tutor": {
+    "name": "Davide Galli",
+    "avatar": "🎙️",
+    "gender": "male",
+    "register": "formal"
+  },
   "setting": "You're a guest on a local radio debate about mass tourism in Italy's art cities. Davide Galli is the moderator.",
   "turns": [
     {
@@ -16,8 +27,26 @@
       "expect": {
         "minWords": 10,
         "rubric": [
-          { "label": "Argumentative opener", "anyOf": ["\\b(a mio avviso|a mio parere|dal mio punto di vista|secondo me|ritengo|sono convinto|sono convinta|sono dell['’]avviso|personalmente)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "C1-VOC-05", "hint": "*Dal mio punto di vista… / A mio avviso…*" },
-          { "label": "Ritengo che / sono convinto che + subjunctive", "anyOf": ["\\b(ritengo|credo|penso|sono convinto|sono convinta|reputo|trovo|mi sembra)\\s+che\\s+(\\p{L}+\\s+){0,4}(sia|siano|vada|vadano|debba|debbano|possa|possano|abbia|abbiano|serva|servano|occorra|bisogni|porti|portino|rappresenti|rappresentino|danneggi|danneggino|faccia|facciano|stia|stiano|rischi|rischino|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Ritengo che il turismo **vada** regolato.*" }
+          {
+            "label": "Argumentative opener",
+            "anyOf": [
+              "\\b(a mio avviso|a mio parere|dal mio punto di vista|secondo me|ritengo|sono convinto|sono convinta|sono dell['’]avviso|personalmente)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "C1-VOC-05",
+            "hint": "*Dal mio punto di vista… / A mio avviso…*"
+          },
+          {
+            "label": "Ritengo che / sono convinto che + subjunctive",
+            "anyOf": [
+              "\\b(ritengo|credo|penso|sono convinto|sono convinta|reputo|trovo|mi sembra)\\s+che\\s+(\\p{L}+\\s+){0,4}(sia|siano|vada|vadano|debba|debbano|possa|possano|abbia|abbiano|serva|servano|occorra|bisogni|porti|portino|rappresenti|rappresentino|danneggi|danneggino|faccia|facciano|stia|stiano|rischi|rischino|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Ritengo che il turismo **vada** regolato.*"
+          }
         ]
       },
       "model": "Dal mio punto di vista, sono convinto che il turismo di massa vada regolato, altrimenti i centri storici si svuoteranno.",
@@ -33,7 +62,16 @@
       "expect": {
         "minWords": 12,
         "rubric": [
-          { "label": "Concessive + subjunctive", "anyOf": ["\\b(sebbene|benché|nonostante|malgrado|per quanto|ammesso che|anche ammesso che)\\s+(\\p{L}+\\s+){0,4}(sia|siano|porti|portino|crei|creino|abbia|abbiano|produca|producano|generi|generino|rappresenti|rappresentino|dia|diano|faccia|facciano|garantisca|garantiscano|possa|possano|offra|offrano|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "connector", "conceptId": "C1-CONN-02", "hint": "*Sebbene il turismo **porti** lavoro, …*" }
+          {
+            "label": "Concessive + subjunctive",
+            "anyOf": [
+              "\\b(sebbene|benché|nonostante|malgrado|per quanto|ammesso che|anche ammesso che)\\s+(\\p{L}+\\s+){0,4}(sia|siano|porti|portino|crei|creino|abbia|abbiano|produca|producano|generi|generino|rappresenti|rappresentino|dia|diano|faccia|facciano|garantisca|garantiscano|possa|possano|offra|offrano|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "C1-CONN-02",
+            "hint": "*Sebbene il turismo **porti** lavoro, …*"
+          }
         ]
       },
       "model": "Sebbene il turismo porti lavoro a molte famiglie, i guadagni spesso finiscono nelle mani di pochi grandi operatori.",
@@ -49,8 +87,26 @@
       "expect": {
         "minWords": 12,
         "rubric": [
-          { "label": "Two nominalisations", "anyOf": ["\\b(introduzione|istituzione|limitazione|riduzione|potenziamento|creazione|aumento|regolamentazione|divieto|tutela|promozione|distribuzione|rafforzamento|applicazione|incentivazione|tassazione|chiusura|controllo|obbligo|sviluppo|tetto|blocco)\\b"], "min": 2, "errorType": "word-formation", "conceptId": "C1-SYN-02", "hint": "*l'introduzione di…, la limitazione di…*" },
-          { "label": "Orders the points", "anyOf": ["\\b(innanzitutto|in primo luogo|prima di tutto|in secondo luogo|inoltre|infine|da un lato|dall['’]altro|poi)\\b"], "min": 1, "errorType": "text-structure", "conceptId": "C1-VOC-05", "hint": "*In primo luogo…, inoltre…*" }
+          {
+            "label": "Two nominalisations",
+            "anyOf": [
+              "\\b(introduzione|istituzione|limitazione|riduzione|potenziamento|creazione|aumento|regolamentazione|divieto|tutela|promozione|distribuzione|rafforzamento|applicazione|incentivazione|tassazione|chiusura|controllo|obbligo|sviluppo|tetto|blocco)\\b"
+            ],
+            "min": 2,
+            "errorType": "word-formation",
+            "conceptId": "C1-SYN-02",
+            "hint": "*l'introduzione di…, la limitazione di…*"
+          },
+          {
+            "label": "Orders the points",
+            "anyOf": [
+              "\\b(innanzitutto|in primo luogo|prima di tutto|in secondo luogo|inoltre|infine|da un lato|dall['’]altro|poi)\\b"
+            ],
+            "min": 1,
+            "errorType": "text-structure",
+            "conceptId": "C1-VOC-05",
+            "hint": "*In primo luogo…, inoltre…*"
+          }
         ]
       },
       "model": "In primo luogo proporrei l'introduzione di un numero chiuso nei periodi di punta, e inoltre la limitazione degli affitti brevi.",
@@ -66,8 +122,26 @@
       "expect": {
         "minWords": 12,
         "rubric": [
-          { "label": "Polite (partial) disagreement", "anyOf": ["\\b(non sono del tutto d['’]accordo|non sono d['’]accordo|sono d['’]accordo solo in parte|solo in parte|in parte|fino a un certo punto|capisco la preoccupazione|capisco il punto|non condivido|mi permetto di dissentire|la vedo diversamente)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "C1-INT-02", "hint": "*Non sono del tutto d'accordo… / Fino a un certo punto…*" },
-          { "label": "Contrast connector", "anyOf": ["\\b(ma|però|tuttavia|d['’]altra parte|eppure|ciononostante|d['’]altro canto)\\b"], "min": 1, "errorType": "connector", "conceptId": "C1-CONN-02", "hint": "*…ma…, tuttavia…*" }
+          {
+            "label": "Polite (partial) disagreement",
+            "anyOf": [
+              "\\b(non sono del tutto d['’]accordo|non sono d['’]accordo|sono d['’]accordo solo in parte|solo in parte|in parte|fino a un certo punto|capisco la preoccupazione|capisco il punto|non condivido|mi permetto di dissentire|la vedo diversamente)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "C1-INT-02",
+            "hint": "*Non sono del tutto d'accordo… / Fino a un certo punto…*"
+          },
+          {
+            "label": "Contrast connector",
+            "anyOf": [
+              "\\b(ma|però|tuttavia|d['’]altra parte|eppure|ciononostante|d['’]altro canto)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "C1-CONN-02",
+            "hint": "*…ma…, tuttavia…*"
+          }
         ]
       },
       "model": "Capisco la preoccupazione, ma non sono del tutto d'accordo: il numero chiuso servirebbe solo nei periodi di massima affluenza.",
@@ -83,8 +157,26 @@
       "expect": {
         "minWords": 12,
         "rubric": [
-          { "label": "Concluding phrase", "anyOf": ["\\b(in conclusione|per concludere|concludendo|in definitiva|tirando le somme|in sintesi|alla luce di|insomma)\\b"], "min": 1, "errorType": "text-structure", "conceptId": "C1-SPEAK-02", "hint": "*In conclusione… / In definitiva…*" },
-          { "label": "Concessive connector", "anyOf": ["\\b(nonostante|sebbene|benché|malgrado|per quanto|pur)\\b"], "min": 1, "errorType": "connector", "conceptId": "C1-CONN-02", "hint": "*…nonostante il turismo sia…*" }
+          {
+            "label": "Concluding phrase",
+            "anyOf": [
+              "\\b(in conclusione|per concludere|concludendo|in definitiva|tirando le somme|in sintesi|alla luce di|insomma)\\b"
+            ],
+            "min": 1,
+            "errorType": "text-structure",
+            "conceptId": "C1-SPEAK-02",
+            "hint": "*In conclusione… / In definitiva…*"
+          },
+          {
+            "label": "Concessive connector",
+            "anyOf": [
+              "\\b(nonostante|sebbene|benché|malgrado|per quanto|pur)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "C1-CONN-02",
+            "hint": "*…nonostante il turismo sia…*"
+          }
         ]
       },
       "model": "In conclusione, nonostante il turismo sia una risorsa preziosa, va gestito con regole chiare per proteggere chi ci vive.",

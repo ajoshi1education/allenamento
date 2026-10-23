@@ -4,6 +4,7 @@ import { evaluate } from "./core/evaluate.js";
 import { masteryProgress } from "./core/errors.js";
 import { bestSpokenAnswer } from "./core/speechcheck.js";
 import { guessLang } from "./core/importer.js";
+import { bindMic } from "./mic.js";
 import * as speech from "./speech.js";
 
 export const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -170,14 +171,16 @@ export function runExercise(host, item, opts) {
     if (item.en && item.type === "cloze") body.append(h(`<button type="button" class="linkish small" data-act="hint">Show English meaning</button>`));
 
     // ---- audio: hear the question, answer by voice, hear the correct answer ----
-    const voiceable = ["cloze", "choice", "order", "transform", "translate", "speak"].includes(item.type);
+    const voiceable = ["cloze", "choice", "order", "transform", "translate", "speak", "free"].includes(item.type);
     const live = h(`<div class="live-transcript" hidden><span class="lt-dot"></span><span class="lt-text"></span></div>`);
     body.append(live);
     const setLive = (t, cls = "") => { live.hidden = false; live.className = "live-transcript " + cls; live.querySelector(".lt-text").textContent = t; };
     let micBtn = null;
-    if (voiceable && speech.canListen()) {
-      micBtn = h(`<button type="button" class="mic-btn" data-act="mic" title="Answer by voice" aria-label="Answer by voice">🎤</button>`);
+    // A mic is always offered (when the browser can recognise speech): tap, or hold to talk.
+    if (voiceable && speech.hasRecognition()) {
+      micBtn = h(`<button type="button" class="mic-btn" title="Answer by voice: tap, or hold to talk" aria-label="Answer by voice">🎤</button>`);
       actionsEl.insertBefore(micBtn, actionsEl.querySelector("[data-act=dontknow]"));
+      bindMic(micBtn, () => listenAnswer());
     }
     const alive = () => document.body.contains(el) && !el.classList.contains("done");
     async function listenAnswer() {
@@ -188,6 +191,12 @@ export function runExercise(host, item, opts) {
       micBtn.classList.remove("on");
       if (!alive()) return;
       if (r.error) { setLive(speech.MIC_HELP[r.error] || "Didn't catch that. Tap 🎤 to try again, or type your answer.", "warn"); return; }
+      if (item.type === "free") {       // dictation: add to the text, you check it yourself
+        lastInput.value = (lastInput.value.trim() + " " + r.text).trim();
+        lastInput.dispatchEvent(new Event("input"));
+        setLive(`🎤 Added: “${r.text}”. Speak again to continue, or press Check.`, "heard");
+        return;
+      }
       const best = bestSpokenAnswer(item, r.alts);
       if (!best) { setLive(`I heard “${r.text}” but couldn't match it to an answer. Tap 🎤 to try again.`, "warn"); return; }
       setLive(`🎤 “${r.text}”`, "heard");
@@ -198,13 +207,13 @@ export function runExercise(host, item, opts) {
     }
     const readQuestion = () => speech.sayAll(questionParts(item));
     // If Chrome blocked the automatic reading, the "turn on sound" prompt replays it.
-    const onRetry = () => { if (alive()) readQuestion().then(ok => { if (ok && micBtn && alive() && opts.autoMic !== false) listenAnswer(); }); else window.removeEventListener("tts-retry", onRetry); };
+    const onRetry = () => { if (alive()) readQuestion().then(ok => { if (ok && micBtn && alive() && opts.autoMic !== false && speech.canListen()) listenAnswer(); }); else window.removeEventListener("tts-retry", onRetry); };
     window.addEventListener("tts-retry", onRetry);
     if (speech.canSpeak() && !item.audio && opts.autoRead !== false) {
       setTimeout(async () => {
         if (!alive()) return;
         const finished = await readQuestion();
-        if (finished && micBtn && alive() && opts.autoMic !== false) listenAnswer();
+        if (finished && micBtn && alive() && opts.autoMic !== false && speech.canListen()) listenAnswer();
       }, 250);
     }
 
@@ -229,7 +238,6 @@ export function runExercise(host, item, opts) {
       if (a.dataset.act === "dontknow") check(true);
       if (a.dataset.act === "hint") { body.querySelector(".hint").hidden = false; a.remove(); }
       if (a.dataset.act === "read") { speech.stopListening(); readQuestion(); }
-      if (a.dataset.act === "mic") { if (micBtn.classList.contains("on")) speech.stopListening(); else listenAnswer(); }
     };
     if (footer) { el.onclick = onAct; footer.onclick = onAct; } else el.addEventListener("click", onAct);
     setTimeout(() => (lastInput || el.querySelector("button.choice, .token"))?.focus(), 30);

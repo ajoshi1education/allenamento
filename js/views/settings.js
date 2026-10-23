@@ -3,6 +3,7 @@ import { h, esc, toast, confirmDialog } from "../ui.js";
 import { exportAll, importAll } from "../db.js";
 import { getOffset, setOffset } from "../core/clock.js";
 import * as speech from "../speech.js";
+import * as inst from "../install.js";
 
 export async function render(view, { store }) {
   const theme = await store.setting("theme", "auto");
@@ -22,6 +23,10 @@ export async function render(view, { store }) {
       </div>
       <div class="row-actions"><button class="btn small" id="testBeep">🔔 Test sound</button><button class="btn small" id="testVoice">🔊 Test the voice</button><button class="btn small" id="testMic" ${speech.hasRecognition() ? "" : "disabled"}>🎤 Test the microphone</button></div>
       <p class="small muted" id="audioStatus">Italian voice: ${speech.hasItalianVoice() ? "available ✓" : "none found. Chrome includes 'Google italiano'; on Windows you can add Italian under Settings › Time & language › Speech"} · Speech recognition: ${speech.hasRecognition() ? "available ✓ (Chrome / Edge, needs internet)" : "not available in this browser. Use Chrome or Edge"}</p></div>
+    <div class="card" id="appCard"><h3>📲 Phone & desktop app</h3>
+      ${inst.isInstalled() ? `<p>✓ You're using the installed app.</p>` : `<p>Install Allenamento so it opens full screen from your home screen and works offline.</p>
+      <div class="row-actions"><button class="btn3d primary" id="installBtn">Install the app</button></div>
+      <p class="small muted" id="installHow"></p>`}</div>
     <div class="card"><h3>Daily goal</h3>
       <select id="goal"><option value="20">Relaxed: 20 XP a day (about 5 minutes)</option><option value="50">Regular: 50 XP (about 15 minutes)</option><option value="100">Serious: 100 XP (about 30 minutes)</option><option value="200">Intense: 200 XP (an hour)</option></select></div>
     <div class="card"><h3>Appearance</h3>
@@ -48,6 +53,14 @@ export async function render(view, { store }) {
       <div class="row-actions"><button class="btn small" data-off="1">+1 day</button><button class="btn small" data-off="7">+7 days</button><button class="btn small" data-off="0">Reset to today</button></div></div>
   </section>`));
   view.querySelector("#theme").value = theme;
+  const ib = view.querySelector("#installBtn");
+  if (ib) ib.onclick = async () => {
+    const r = await inst.install();
+    const how = view.querySelector("#installHow");
+    if (r === "accepted") toast("Installed! Find Allenamento on your home screen.");
+    else if (r === "ios") how.innerHTML = inst.HOWTO.ios;
+    else if (r === "unavailable") how.innerHTML = `${inst.HOWTO.android}<br>${inst.HOWTO.ios}<br>${inst.HOWTO.desktop}`;
+  };
   view.querySelector("#goal").value = String(await store.setting("dailyGoal", 50));
   view.querySelector("#goal").onchange = async e => { await store.setSetting("dailyGoal", Number(e.target.value)); toast("Daily goal updated"); };
   view.querySelector("#theme").onchange = async e => { await store.setSetting("theme", e.target.value); applyTheme(e.target.value); };

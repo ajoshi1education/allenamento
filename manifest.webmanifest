@@ -1,9 +1,24 @@
 {
+  "id": "./",
   "name": "Allenamento: Italian B2→C1",
   "short_name": "Allenamento",
-  "start_url": "./",
+  "description": "Learn Italian from B2 to C1: guided lessons, games, spoken conversations with a tutor, and a permanent Error Bank.",
+  "start_url": "./#/path",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#f7f7f2",
   "theme_color": "#2fb36b",
-  "icons": [{ "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+  "categories": ["education"],
+  "lang": "en",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Continue the path", "short_name": "Percorso", "url": "./#/path", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Talk with a tutor", "short_name": "Convos", "url": "./#/convo", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Review my mistakes", "short_name": "Ripasso", "url": "./#/review", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
 }

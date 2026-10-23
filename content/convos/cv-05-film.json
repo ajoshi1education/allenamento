@@ -3,8 +3,19 @@
   "title": "Il film di ieri sera",
   "subtitle": "Talking about a film: telling the plot, opinions with the subjunctive, però and eppure.",
   "level": "B2",
-  "conceptIds": ["B2-PAST-01", "B2-SUBJ-01", "B2-SUBJ-02", "B2-CONN-01"],
-  "tutor": { "name": "Sara", "avatar": "👩", "gender": "female", "register": "informal" },
+  "theme": "Cultura e tempo libero",
+  "conceptIds": [
+    "B2-PAST-01",
+    "B2-SUBJ-01",
+    "B2-SUBJ-02",
+    "B2-CONN-01"
+  ],
+  "tutor": {
+    "name": "Sara",
+    "avatar": "👩",
+    "gender": "female",
+    "register": "informal"
+  },
   "setting": "Your colleague and friend Sara catches you at the coffee machine the morning after you went to the cinema.",
   "turns": [
     {
@@ -16,8 +27,26 @@
       "expect": {
         "minWords": 7,
         "rubric": [
-          { "label": "Uses the passato prossimo", "anyOf": ["\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*Ho visto…, sono andato/a…*" },
-          { "label": "Says what kind of film", "anyOf": ["\\b(film|serie|thriller|commedia|giallo|horror|dramma|drammatico|documentario|fantascienza|animazione|cartone|romantico|western|poliziesco|biografico|musical|storico)\\b"], "min": 1, "errorType": "vocabulary", "conceptId": "B2-SPEAK-01", "hint": "*un thriller, una commedia, un film d'animazione…*" }
+          {
+            "label": "Uses the passato prossimo",
+            "anyOf": [
+              "\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "*Ho visto…, sono andato/a…*"
+          },
+          {
+            "label": "Says what kind of film",
+            "anyOf": [
+              "\\b(film|serie|thriller|commedia|giallo|horror|dramma|drammatico|documentario|fantascienza|animazione|cartone|romantico|western|poliziesco|biografico|musical|storico)\\b"
+            ],
+            "min": 1,
+            "errorType": "vocabulary",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*un thriller, una commedia, un film d'animazione…*"
+          }
         ]
       },
       "model": "Ho visto un thriller italiano con mia sorella, si chiama La stanza vuota.",
@@ -33,8 +62,26 @@
       "expect": {
         "minWords": 10,
         "rubric": [
-          { "label": "Imperfetto for the background", "anyOf": ["\\b(era|erano|c['’]era|c['’]erano|\\p{L}+(ava|avano|eva|evano|iva|ivano))\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*viveva, lavorava, c'era…*" },
-          { "label": "Passato prossimo for the event", "anyOf": ["\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*…un giorno ha trovato…*" }
+          {
+            "label": "Imperfetto for the background",
+            "anyOf": [
+              "\\b(era|erano|c['’]era|c['’]erano|\\p{L}+(ava|avano|eva|evano|iva|ivano))\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "*viveva, lavorava, c'era…*"
+          },
+          {
+            "label": "Passato prossimo for the event",
+            "anyOf": [
+              "\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "*…un giorno ha trovato…*"
+          }
         ]
       },
       "model": "All'inizio il protagonista viveva da solo in una vecchia casa, ma un giorno ha trovato una lettera misteriosa.",
@@ -50,8 +97,26 @@
       "expect": {
         "minWords": 9,
         "rubric": [
-          { "label": "Opinion verb + che + subjunctive", "anyOf": ["\\b(penso|credo|mi sembra|mi pare|trovo|ho l['’]impressione)\\s+che\\s+(\\p{L}+\\s+){0,3}(sia|siano|abbia|abbiano|possa|possano|faccia|facciano|funzioni|funzionino|arrivi|arrivino|finisca|manchi|sia stato|sia stata|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Penso che il finale **sia**…*" },
-          { "label": "Contrast with però / eppure / ma", "anyOf": ["\\b(però|eppure|tuttavia|ma|anche se|comunque)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…però gli attori sono bravissimi.*" }
+          {
+            "label": "Opinion verb + che + subjunctive",
+            "anyOf": [
+              "\\b(penso|credo|mi sembra|mi pare|trovo|ho l['’]impressione)\\s+che\\s+(\\p{L}+\\s+){0,3}(sia|siano|abbia|abbiano|possa|possano|faccia|facciano|funzioni|funzionino|arrivi|arrivino|finisca|manchi|sia stato|sia stata|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Penso che il finale **sia**…*"
+          },
+          {
+            "label": "Contrast with però / eppure / ma",
+            "anyOf": [
+              "\\b(però|eppure|tuttavia|ma|anche se|comunque)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…però gli attori sono bravissimi.*"
+          }
         ]
       },
       "model": "Penso che il finale sia un po' prevedibile, però gli attori sono davvero bravissimi.",
@@ -67,8 +132,26 @@
       "expect": {
         "minWords": 8,
         "rubric": [
-          { "label": "Emotion/judgement + che + subjunctive", "anyOf": ["\\b(è strano|strano|mi sorprende|mi stupisce|peccato|che peccato|è un peccato|mi sembra strano|è incredibile|non ci credo)\\s+che\\s+(\\p{L}+\\s+){0,3}(sia|siano|abbia|abbiano|piaccia|piacciano|deluda|convinca|sia piaciuta|sia piaciuto)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-02", "hint": "*È strano che non ti **sia piaciuta**.*" },
-          { "label": "Contrast with eppure / però", "anyOf": ["\\b(eppure|però|tuttavia|ma|anche se)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…eppure tutti ne parlano bene.*" }
+          {
+            "label": "Emotion/judgement + che + subjunctive",
+            "anyOf": [
+              "\\b(è strano|strano|mi sorprende|mi stupisce|peccato|che peccato|è un peccato|mi sembra strano|è incredibile|non ci credo)\\s+che\\s+(\\p{L}+\\s+){0,3}(sia|siano|abbia|abbiano|piaccia|piacciano|deluda|convinca|sia piaciuta|sia piaciuto)\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-02",
+            "hint": "*È strano che non ti **sia piaciuta**.*"
+          },
+          {
+            "label": "Contrast with eppure / però",
+            "anyOf": [
+              "\\b(eppure|però|tuttavia|ma|anche se)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…eppure tutti ne parlano bene.*"
+          }
         ]
       },
       "model": "Davvero? È strano che non ti sia piaciuta, eppure tutti ne parlano benissimo.",
@@ -84,8 +167,27 @@
       "expect": {
         "minWords": 9,
         "rubric": [
-          { "label": "Consigliare di + infinitive", "anyOf": ["\\b(consiglio|consiglierei|suggerisco|suggerirei|direi|propongo)\\s+di\\s+\\p{L}+(are|ere|ire|arlo|erlo|irlo|arla|erla|irla)\\b", "\\bti\\s+conviene\\s+\\p{L}+(are|ere|ire|arlo|erlo|irlo|arla|erla|irla)\\b"], "min": 1, "errorType": "infinitive-construction", "conceptId": "B2-PREP-01", "hint": "*Ti consiglio **di** guardare…*" },
-          { "label": "Gives a reason", "anyOf": ["\\b(perché|poiché|visto che|dato che|siccome|infatti)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…perché è più breve.*" }
+          {
+            "label": "Consigliare di + infinitive",
+            "anyOf": [
+              "\\b(consiglio|consiglierei|suggerisco|suggerirei|direi|propongo)\\s+di\\s+\\p{L}+(are|ere|ire|arlo|erlo|irlo|arla|erla|irla)\\b",
+              "\\bti\\s+conviene\\s+\\p{L}+(are|ere|ire|arlo|erlo|irlo|arla|erla|irla)\\b"
+            ],
+            "min": 1,
+            "errorType": "infinitive-construction",
+            "conceptId": "B2-PREP-01",
+            "hint": "*Ti consiglio **di** guardare…*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché è più breve.*"
+          }
         ]
       },
       "model": "Ti consiglio di guardare il mio film, perché è più breve e la storia è davvero originale.",

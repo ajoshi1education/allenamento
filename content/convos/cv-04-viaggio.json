@@ -3,8 +3,19 @@
   "title": "Organizzare un viaggio",
   "subtitle": "Planning a trip with a friend: the future, se-clauses, a/in and making suggestions.",
   "level": "B2",
-  "conceptIds": ["B2-FUT-01", "B2-HYP-01", "B2-PREP-02", "B2-INT-01"],
-  "tutor": { "name": "Marco", "avatar": "🧔", "gender": "male", "register": "informal" },
+  "theme": "Cultura e tempo libero",
+  "conceptIds": [
+    "B2-FUT-01",
+    "B2-HYP-01",
+    "B2-PREP-02",
+    "B2-INT-01"
+  ],
+  "tutor": {
+    "name": "Marco",
+    "avatar": "🧔",
+    "gender": "male",
+    "register": "informal"
+  },
   "setting": "You and your friend Marco both have a free week in August. You're on a video call, planning a trip together.",
   "turns": [
     {
@@ -16,8 +27,28 @@
       "expect": {
         "minWords": 8,
         "rubric": [
-          { "label": "Correct preposition of place (a + city, in + region/country)", "anyOf": ["\\bin\\s+(sicilia|sardegna|puglia|toscana|calabria|campania|liguria|umbria|marche|abruzzo|basilicata|trentino|veneto|friuli|piemonte|lombardia|grecia|spagna|portogallo|francia|croazia|irlanda|scozia|inghilterra|norvegia|islanda|germania|austria|svizzera|olanda|marocco|turchia|albania|slovenia|montagna|campagna|italia|europa)\\b", "\\ba\\s+(roma|napoli|lisbona|barcellona|parigi|londra|atene|vienna|praga|berlino|madrid|amsterdam|firenze|venezia|palermo|bari|lecce|trieste|siracusa|catania|genova|torino|bologna|milano|budapest|copenaghen|dublino|edimburgo|siviglia|valencia|porto|marsiglia|nizza|matera|cagliari|creta|capri|ischia|malta|cipro)\\b", "\\bal\\s+(mare|lago|sud|nord)\\b"], "min": 1, "errorType": "preposition", "conceptId": "B2-PREP-02", "hint": "*a Lisbona, a Palermo* but *in Sicilia, in Portogallo*" },
-          { "label": "Gives a reason", "anyOf": ["\\b(perché|poiché|visto che|dato che|siccome|infatti)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…perché…*" }
+          {
+            "label": "Correct preposition of place (a + city, in + region/country)",
+            "anyOf": [
+              "\\bin\\s+(sicilia|sardegna|puglia|toscana|calabria|campania|liguria|umbria|marche|abruzzo|basilicata|trentino|veneto|friuli|piemonte|lombardia|grecia|spagna|portogallo|francia|croazia|irlanda|scozia|inghilterra|norvegia|islanda|germania|austria|svizzera|olanda|marocco|turchia|albania|slovenia|montagna|campagna|italia|europa)\\b",
+              "\\ba\\s+(roma|napoli|lisbona|barcellona|parigi|londra|atene|vienna|praga|berlino|madrid|amsterdam|firenze|venezia|palermo|bari|lecce|trieste|siracusa|catania|genova|torino|bologna|milano|budapest|copenaghen|dublino|edimburgo|siviglia|valencia|porto|marsiglia|nizza|matera|cagliari|creta|capri|ischia|malta|cipro)\\b",
+              "\\bal\\s+(mare|lago|sud|nord)\\b"
+            ],
+            "min": 1,
+            "errorType": "preposition",
+            "conceptId": "B2-PREP-02",
+            "hint": "*a Lisbona, a Palermo* but *in Sicilia, in Portogallo*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché…*"
+          }
         ]
       },
       "model": "Andrei volentieri in Sicilia, perché non ci sono mai stato e adoro il mare.",
@@ -33,8 +64,26 @@
       "expect": {
         "minWords": 8,
         "rubric": [
-          { "label": "Two verbs in the future", "anyOf": ["\\b\\p{L}+(rò|rai|rà|remo|rete|ranno)\\b"], "min": 2, "errorType": "wrong-tense", "conceptId": "B2-FUT-01", "hint": "*arriveremo, visiteremo, andremo…*" },
-          { "label": "Puts things in order", "anyOf": ["\\b(prima|poi|dopo|il primo giorno|il giorno dopo|infine|alla fine|la mattina|la sera|il secondo giorno)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "B2-INT-01", "hint": "*Prima…, poi…*" }
+          {
+            "label": "Two verbs in the future",
+            "anyOf": [
+              "\\b\\p{L}+(rò|rai|rà|remo|rete|ranno)\\b"
+            ],
+            "min": 2,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*arriveremo, visiteremo, andremo…*"
+          },
+          {
+            "label": "Puts things in order",
+            "anyOf": [
+              "\\b(prima|poi|dopo|il primo giorno|il giorno dopo|infine|alla fine|la mattina|la sera|il secondo giorno)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "B2-INT-01",
+            "hint": "*Prima…, poi…*"
+          }
         ]
       },
       "model": "Il primo giorno arriveremo a Palermo e ci riposeremo, poi il giorno dopo visiteremo il centro.",
@@ -50,8 +99,26 @@
       "expect": {
         "minWords": 7,
         "rubric": [
-          { "label": "Se + present/future", "anyOf": ["\\bse\\s+(non\\s+)?(piove|pioverà|fa|farà|c['’]è|ci sarà|è|sarà|tira|tirerà)\\b"], "min": 1, "errorType": "hypothetical", "conceptId": "B2-HYP-01", "hint": "*Se piove, … / Se farà brutto, …*" },
-          { "label": "Says what you'll do", "anyOf": ["\\b(andremo|andiamo|visiteremo|visitiamo|faremo|facciamo|resteremo|restiamo|staremo|stiamo|vedremo|vediamo|potremo|possiamo|prenderemo|prendiamo|passeremo|passiamo|giocheremo|leggeremo|dormiremo|cercheremo|troveremo|guarderemo)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-FUT-01", "hint": "*…andremo al museo.*" }
+          {
+            "label": "Se + present/future",
+            "anyOf": [
+              "\\bse\\s+(non\\s+)?(piove|pioverà|fa|farà|c['’]è|ci sarà|è|sarà|tira|tirerà)\\b"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-HYP-01",
+            "hint": "*Se piove, … / Se farà brutto, …*"
+          },
+          {
+            "label": "Says what you'll do",
+            "anyOf": [
+              "\\b(andremo|andiamo|visiteremo|visitiamo|faremo|facciamo|resteremo|restiamo|staremo|stiamo|vedremo|vediamo|potremo|possiamo|prenderemo|prendiamo|passeremo|passiamo|giocheremo|leggeremo|dormiremo|cercheremo|troveremo|guarderemo)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*…andremo al museo.*"
+          }
         ]
       },
       "model": "Se piove, andremo a vedere qualche museo o passeremo il pomeriggio in un bel caffè.",
@@ -67,8 +134,26 @@
       "expect": {
         "minWords": 8,
         "rubric": [
-          { "label": "Suggests with 'e se…?'", "anyOf": ["\\be\\s+se\\s+(\\p{L}+\\s+)?(prendessimo|cercassimo|affittassimo|andassimo|dormissimo|prenotassimo|provassimo|facessimo|stessimo|scegliessimo|restassimo|prendiamo|cerchiamo|affittiamo|andiamo|dormiamo|prenotiamo|proviamo|facciamo|stiamo|scegliamo)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "B2-INT-01", "hint": "*E se prendessimo un appartamento?*" },
-          { "label": "Says why (così, perché…)", "anyOf": ["\\b(così|perché|tanto|in questo modo|almeno)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*Così potremmo cucinare.*" }
+          {
+            "label": "Suggests with 'e se…?'",
+            "anyOf": [
+              "\\be\\s+se\\s+(\\p{L}+\\s+)?(prendessimo|cercassimo|affittassimo|andassimo|dormissimo|prenotassimo|provassimo|facessimo|stessimo|scegliessimo|restassimo|prendiamo|cerchiamo|affittiamo|andiamo|dormiamo|prenotiamo|proviamo|facciamo|stiamo|scegliamo)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "B2-INT-01",
+            "hint": "*E se prendessimo un appartamento?*"
+          },
+          {
+            "label": "Says why (così, perché…)",
+            "anyOf": [
+              "\\b(così|perché|tanto|in questo modo|almeno)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*Così potremmo cucinare.*"
+          }
         ]
       },
       "model": "E se prendessimo un appartamento? Così potremmo cucinare e risparmiare un po'.",
@@ -84,8 +169,26 @@
       "expect": {
         "minWords": 8,
         "rubric": [
-          { "label": "Future for yourself (-rò)", "anyOf": ["\\b\\p{L}+rò\\b"], "min": 1, "errorType": "verb-form", "conceptId": "B2-FUT-01", "hint": "*Io prenoterò, io comprerò…*" },
-          { "label": "Future for him (-rai)", "anyOf": ["\\b\\p{L}+rai\\b"], "min": 1, "errorType": "verb-form", "conceptId": "B2-FUT-01", "hint": "*…e tu comprerai, tu cercherai…*" }
+          {
+            "label": "Future for yourself (-rò)",
+            "anyOf": [
+              "\\b\\p{L}+rò\\b"
+            ],
+            "min": 1,
+            "errorType": "verb-form",
+            "conceptId": "B2-FUT-01",
+            "hint": "*Io prenoterò, io comprerò…*"
+          },
+          {
+            "label": "Future for him (-rai)",
+            "anyOf": [
+              "\\b\\p{L}+rai\\b"
+            ],
+            "min": 1,
+            "errorType": "verb-form",
+            "conceptId": "B2-FUT-01",
+            "hint": "*…e tu comprerai, tu cercherai…*"
+          }
         ]
       },
       "model": "Io prenoterò l'appartamento stasera, e tu comprerai i biglietti dell'aereo domani.",
@@ -101,8 +204,26 @@
       "expect": {
         "minWords": 7,
         "rubric": [
-          { "label": "Estimates with the future", "anyOf": ["\\b(costerà|costeranno|spenderemo|spenderò|spenderai|saranno|sarà|ci vorranno|ci vorrà|servirà|serviranno|basteranno|basterà)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-FUT-01", "hint": "*Spenderemo circa…, costerà…*" },
-          { "label": "Gives an amount", "anyOf": ["\\b(\\d+|cento|duecento|trecento|quattrocento|cinquecento|seicento|settecento|ottocento|novecento|mille|euro)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-FUT-01", "hint": "*…cinquecento euro a testa*" }
+          {
+            "label": "Estimates with the future",
+            "anyOf": [
+              "\\b(costerà|costeranno|spenderemo|spenderò|spenderai|saranno|sarà|ci vorranno|ci vorrà|servirà|serviranno|basteranno|basterà)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*Spenderemo circa…, costerà…*"
+          },
+          {
+            "label": "Gives an amount",
+            "anyOf": [
+              "\\b(\\d+|cento|duecento|trecento|quattrocento|cinquecento|seicento|settecento|ottocento|novecento|mille|euro)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-FUT-01",
+            "hint": "*…cinquecento euro a testa*"
+          }
         ]
       },
       "model": "Tra volo e appartamento, spenderemo circa cinquecento euro a testa, ma il cibo costerà poco.",

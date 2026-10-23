@@ -3,8 +3,18 @@
   "title": "Cercare casa",
   "subtitle": "Phoning about a flat to rent: polite requests, questions, ci and ne.",
   "level": "B2",
-  "conceptIds": ["B2-COND-01", "B2-PRON-02", "B2-REG-01"],
-  "tutor": { "name": "Signora Bianchi", "avatar": "👩‍🦳", "gender": "female", "register": "formal" },
+  "theme": "Vita quotidiana",
+  "conceptIds": [
+    "B2-COND-01",
+    "B2-PRON-02",
+    "B2-REG-01"
+  ],
+  "tutor": {
+    "name": "Signora Bianchi",
+    "avatar": "👩‍🦳",
+    "gender": "female",
+    "register": "formal"
+  },
   "setting": "You've seen an ad for a flat to rent in Milan and you phone the owner's agent, Signora Bianchi.",
   "turns": [
     {
@@ -16,8 +26,26 @@
       "expect": {
         "minWords": 8,
         "rubric": [
-          { "label": "Uses a polite conditional (vorrei, potrei…)", "anyOf": ["\\b(vorrei|vorremmo|potrei|potremmo|avrei|desidererei|gradirei|mi piacerebbe)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Vorrei avere qualche informazione…*" },
-          { "label": "Says what you're calling about", "anyOf": ["\\b(appartamento|annuncio|casa|bilocale|monolocale|trilocale|stanza|affitto)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-REG-01", "hint": "*La chiamo per l'annuncio dell'appartamento.*" }
+          {
+            "label": "Uses a polite conditional (vorrei, potrei…)",
+            "anyOf": [
+              "\\b(vorrei|vorremmo|potrei|potremmo|avrei|desidererei|gradirei|mi piacerebbe)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Vorrei avere qualche informazione…*"
+          },
+          {
+            "label": "Says what you're calling about",
+            "anyOf": [
+              "\\b(appartamento|annuncio|casa|bilocale|monolocale|trilocale|stanza|affitto)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-REG-01",
+            "hint": "*La chiamo per l'annuncio dell'appartamento.*"
+          }
         ]
       },
       "model": "Buongiorno, La chiamo per l'annuncio dell'appartamento in affitto. Vorrei avere qualche informazione in più.",
@@ -33,8 +61,26 @@
       "expect": {
         "minWords": 8,
         "rubric": [
-          { "label": "Polite request with the conditional", "anyOf": ["\\b(potrebbe|potrei|vorrei|saprebbe|sarebbe possibile|le dispiacerebbe|mi direbbe)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Potrebbe dirmi…?*" },
-          { "label": "Asks about rent or bills", "anyOf": ["\\b(affitto|costa|prezzo|spese|bollette|condominio|condominiali|canone|al mese)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-REG-01", "hint": "*…quanto costa l'affitto e se le spese sono incluse?*" }
+          {
+            "label": "Polite request with the conditional",
+            "anyOf": [
+              "\\b(potrebbe|potrei|vorrei|saprebbe|sarebbe possibile|le dispiacerebbe|mi direbbe)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Potrebbe dirmi…?*"
+          },
+          {
+            "label": "Asks about rent or bills",
+            "anyOf": [
+              "\\b(affitto|costa|prezzo|spese|bollette|condominio|condominiali|canone|al mese)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-REG-01",
+            "hint": "*…quanto costa l'affitto e se le spese sono incluse?*"
+          }
         ]
       },
       "model": "Potrebbe dirmi quanto costa l'affitto al mese e se le spese condominiali sono incluse?",
@@ -50,7 +96,16 @@
       "expect": {
         "minWords": 6,
         "rubric": [
-          { "label": "Uses ne for quantity (ne ho uno / non ne ho)", "anyOf": ["\\b(ne|n['’])\\s*(ho|abbiamo|avrei|possiedo|avevo)\\b"], "min": 1, "errorType": "ci-ne", "conceptId": "B2-PRON-02", "hint": "*Ne ho uno. / Non ne ho.*" }
+          {
+            "label": "Uses ne for quantity (ne ho uno / non ne ho)",
+            "anyOf": [
+              "\\b(ne|n['’])\\s*(ho|abbiamo|avrei|possiedo|avevo)\\b"
+            ],
+            "min": 1,
+            "errorType": "ci-ne",
+            "conceptId": "B2-PRON-02",
+            "hint": "*Ne ho uno. / Non ne ho.*"
+          }
         ]
       },
       "model": "Sì, ne ho uno: un gatto molto tranquillo, che non fa mai rumore.",
@@ -66,8 +121,26 @@
       "expect": {
         "minWords": 7,
         "rubric": [
-          { "label": "Uses ci for the place", "anyOf": ["\\b(ci\\s+(posso|potrei|vengo|verrei|passo|passerei|vado|andrei|riesco|riuscirei|sono|sarei)|venirci|passarci|andarci|esserci)\\b"], "min": 1, "errorType": "ci-ne", "conceptId": "B2-PRON-02", "hint": "*Ci potrei passare… / Potrei venirci…*" },
-          { "label": "Gives a day or time", "anyOf": ["\\b(lunedì|martedì|mercoledì|giovedì|venerdì|sabato|domenica|domani|dopodomani|mattina|pomeriggio|sera|alle|ore)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-COND-01", "hint": "*…giovedì pomeriggio, verso le sei.*" }
+          {
+            "label": "Uses ci for the place",
+            "anyOf": [
+              "\\b(ci\\s+(posso|potrei|vengo|verrei|passo|passerei|vado|andrei|riesco|riuscirei|sono|sarei)|venirci|passarci|andarci|esserci)\\b"
+            ],
+            "min": 1,
+            "errorType": "ci-ne",
+            "conceptId": "B2-PRON-02",
+            "hint": "*Ci potrei passare… / Potrei venirci…*"
+          },
+          {
+            "label": "Gives a day or time",
+            "anyOf": [
+              "\\b(lunedì|martedì|mercoledì|giovedì|venerdì|sabato|domenica|domani|dopodomani|mattina|pomeriggio|sera|alle|ore)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-COND-01",
+            "hint": "*…giovedì pomeriggio, verso le sei.*"
+          }
         ]
       },
       "model": "Sì, mi interessa molto. Ci potrei passare giovedì pomeriggio, verso le sei, se per Lei va bene.",
@@ -83,8 +156,27 @@
       "expect": {
         "minWords": 7,
         "rubric": [
-          { "label": "Uses c'è / ci sono", "anyOf": ["\\bc['’]\\s?(è|e)\\b", "\\bci\\s+(sono|sarebbe|sarebbero|sarà|saranno)\\b"], "min": 1, "errorType": "ci-ne", "conceptId": "B2-PRON-02", "hint": "*C'è l'ascensore? Ci sono i mobili?*" },
-          { "label": "Asks about two features", "anyOf": ["\\b(ascensore|arredato|arredata|mobili|balcone|terrazzo|terrazza|cantina|garage|box|posto auto|lavatrice|lavastoviglie|riscaldamento|cucina|bagno|bagni|giardino|internet)\\b"], "min": 2, "errorType": "vocabulary", "conceptId": "B2-REG-01", "hint": "*ascensore, arredato, balcone, cantina…*" }
+          {
+            "label": "Uses c'è / ci sono",
+            "anyOf": [
+              "\\bc['’]\\s?(è|e)\\b",
+              "\\bci\\s+(sono|sarebbe|sarebbero|sarà|saranno)\\b"
+            ],
+            "min": 1,
+            "errorType": "ci-ne",
+            "conceptId": "B2-PRON-02",
+            "hint": "*C'è l'ascensore? Ci sono i mobili?*"
+          },
+          {
+            "label": "Asks about two features",
+            "anyOf": [
+              "\\b(ascensore|arredato|arredata|mobili|balcone|terrazzo|terrazza|cantina|garage|box|posto auto|lavatrice|lavastoviglie|riscaldamento|cucina|bagno|bagni|giardino|internet)\\b"
+            ],
+            "min": 2,
+            "errorType": "vocabulary",
+            "conceptId": "B2-REG-01",
+            "hint": "*ascensore, arredato, balcone, cantina…*"
+          }
         ]
       },
       "model": "Sì, ancora due cose: c'è l'ascensore? E l'appartamento è arredato, o bisogna comprare i mobili?",
@@ -100,8 +192,26 @@
       "expect": {
         "minWords": 8,
         "rubric": [
-          { "label": "Uses the conditional", "anyOf": ["\\b(preferirei|vorrei|andrebbe|sarebbe|potrei|potremmo|avrei|dovrei|converrebbe|mi piacerebbe)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Preferirei…, sarebbe meglio…*" },
-          { "label": "Gives a reason", "anyOf": ["\\b(perché|poiché|visto che|dato che|siccome|infatti)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…perché…*" }
+          {
+            "label": "Uses the conditional",
+            "anyOf": [
+              "\\b(preferirei|vorrei|andrebbe|sarebbe|potrei|potremmo|avrei|dovrei|converrebbe|mi piacerebbe)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Preferirei…, sarebbe meglio…*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché…*"
+          }
         ]
       },
       "model": "Sinceramente preferirei un contratto più breve, perché tra due anni potrei cambiare lavoro.",

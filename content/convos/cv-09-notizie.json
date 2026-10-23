@@ -3,8 +3,19 @@
   "title": "Notizie del giorno",
   "subtitle": "Discussing a news story: reported speech, hearsay conditional, sequence of tenses.",
   "level": "C1",
-  "conceptIds": ["C1-SEQ-03", "B2-COND-02", "C1-SEQ-02", "B2-READ-01"],
-  "tutor": { "name": "Elena", "avatar": "👩‍💻", "gender": "female", "register": "informal" },
+  "theme": "Società e attualità",
+  "conceptIds": [
+    "C1-SEQ-03",
+    "B2-COND-02",
+    "C1-SEQ-02",
+    "B2-READ-01"
+  ],
+  "tutor": {
+    "name": "Elena",
+    "avatar": "👩‍💻",
+    "gender": "female",
+    "register": "informal"
+  },
   "setting": "During the lunch break your colleague Elena asks you about a story that's all over the news: a theft at a museum.",
   "turns": [
     {
@@ -16,8 +27,26 @@
       "expect": {
         "minWords": 10,
         "rubric": [
-          { "label": "Hearsay conditional (sarebbero entrati, avrebbero rubato)", "anyOf": ["\\b(avrei|avresti|avrebbe|avremmo|avreste|avrebbero|sarei|saresti|sarebbe|saremmo|sareste|sarebbero)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-02", "hint": "*…sarebbero entrati…, avrebbero rubato…*" },
-          { "label": "Names the source", "anyOf": ["\\b(secondo|stando a|a quanto pare|pare che|sembra che|sembrerebbe|si dice|dicono|i giornali|il telegiornale)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "B2-READ-01", "hint": "*Secondo i giornali… / A quanto pare…*" }
+          {
+            "label": "Hearsay conditional (sarebbero entrati, avrebbero rubato)",
+            "anyOf": [
+              "\\b(avrei|avresti|avrebbe|avremmo|avreste|avrebbero|sarei|saresti|sarebbe|saremmo|sareste|sarebbero)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-02",
+            "hint": "*…sarebbero entrati…, avrebbero rubato…*"
+          },
+          {
+            "label": "Names the source",
+            "anyOf": [
+              "\\b(secondo|stando a|a quanto pare|pare che|sembra che|sembrerebbe|si dice|dicono|i giornali|il telegiornale)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "B2-READ-01",
+            "hint": "*Secondo i giornali… / A quanto pare…*"
+          }
         ]
       },
       "model": "Sì, secondo i giornali i ladri sarebbero entrati di notte e avrebbero rubato due quadri famosi.",
@@ -33,8 +62,26 @@
       "expect": {
         "minWords": 10,
         "rubric": [
-          { "label": "Reporting verb + che", "anyOf": ["\\b(ha|hanno)\\s+(detto|dichiarato|spiegato|affermato|comunicato|annunciato|fatto sapere|riferito|confermato|assicurato)\\s+che\\b"], "min": 1, "errorType": "reported-speech", "conceptId": "C1-SEQ-03", "hint": "*Ha dichiarato che…*" },
-          { "label": "Past tenses in the reported clause", "anyOf": ["\\b(stavano|stava|erano|era|avevano|aveva|c['’]erano|c['’]era|sarebbero|sarebbe|avrebbero|avrebbe|potevano|poteva|dovevano|doveva|volevano|voleva)\\b"], "min": 1, "errorType": "tense-sequence", "conceptId": "B2-SEQ-01", "hint": "*…che stavano indagando e che avrebbero…*" }
+          {
+            "label": "Reporting verb + che",
+            "anyOf": [
+              "\\b(ha|hanno)\\s+(detto|dichiarato|spiegato|affermato|comunicato|annunciato|fatto sapere|riferito|confermato|assicurato)\\s+che\\b"
+            ],
+            "min": 1,
+            "errorType": "reported-speech",
+            "conceptId": "C1-SEQ-03",
+            "hint": "*Ha dichiarato che…*"
+          },
+          {
+            "label": "Past tenses in the reported clause",
+            "anyOf": [
+              "\\b(stavano|stava|erano|era|avevano|aveva|c['’]erano|c['’]era|sarebbero|sarebbe|avrebbero|avrebbe|potevano|poteva|dovevano|doveva|volevano|voleva)\\b"
+            ],
+            "min": 1,
+            "errorType": "tense-sequence",
+            "conceptId": "B2-SEQ-01",
+            "hint": "*…che stavano indagando e che avrebbero…*"
+          }
         ]
       },
       "model": "Il portavoce ha dichiarato che stavano già indagando e che avrebbero controllato tutte le telecamere.",
@@ -50,7 +97,16 @@
       "expect": {
         "minWords": 8,
         "rubric": [
-          { "label": "Past opinion verb + congiuntivo imperfetto", "anyOf": ["\\b(non sapevo|non pensavo|non credevo|non immaginavo|pensavo|credevo|immaginavo|mi sembrava|dubitavo|non mi aspettavo|non avrei mai detto)\\s+che\\s+(\\p{L}+\\s+){0,4}(fosse|fossero|avesse|avessero|potesse|potessero|lavorasse|lavorassero|conoscesse|aiutasse|aiutassero|sapesse|sapessero|c['’]entrasse|esistesse)\\b"], "min": 1, "errorType": "tense-sequence", "conceptId": "C1-SEQ-02", "hint": "*Non pensavo che **potesse**…*" }
+          {
+            "label": "Past opinion verb + congiuntivo imperfetto",
+            "anyOf": [
+              "\\b(non sapevo|non pensavo|non credevo|non immaginavo|pensavo|credevo|immaginavo|mi sembrava|dubitavo|non mi aspettavo|non avrei mai detto)\\s+che\\s+(\\p{L}+\\s+){0,4}(fosse|fossero|avesse|avessero|potesse|potessero|lavorasse|lavorassero|conoscesse|aiutasse|aiutassero|sapesse|sapessero|c['’]entrasse|esistesse)\\b"
+            ],
+            "min": 1,
+            "errorType": "tense-sequence",
+            "conceptId": "C1-SEQ-02",
+            "hint": "*Non pensavo che **potesse**…*"
+          }
         ]
       },
       "model": "Davvero? Non pensavo che qualcuno del museo potesse essere coinvolto in una cosa del genere.",
@@ -66,8 +122,26 @@
       "expect": {
         "minWords": 10,
         "rubric": [
-          { "label": "Hedge + che + subjunctive", "anyOf": ["\\b(è probabile|è possibile|può darsi|può anche darsi|non è escluso|immagino|suppongo|credo|penso|mi sembra|ho l['’]impressione)\\s+che\\s+(\\p{L}+\\s+){0,4}(sia|siano|abbia|abbiano|manchino|manchi|possa|possano|servano|serva|costi|costino|debba|debbano|spendano|spenda|investano|investa|vogliano|voglia|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Può darsi che **manchino** i soldi.*" },
-          { "label": "Gives a cause", "anyOf": ["\\b(perché|poiché|dato che|visto che|siccome|a causa|per via|per mancanza)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…perché la sicurezza costa.*" }
+          {
+            "label": "Hedge + che + subjunctive",
+            "anyOf": [
+              "\\b(è probabile|è possibile|può darsi|può anche darsi|non è escluso|immagino|suppongo|credo|penso|mi sembra|ho l['’]impressione)\\s+che\\s+(\\p{L}+\\s+){0,4}(sia|siano|abbia|abbiano|manchino|manchi|possa|possano|servano|serva|costi|costino|debba|debbano|spendano|spenda|investano|investa|vogliano|voglia|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Può darsi che **manchino** i soldi.*"
+          },
+          {
+            "label": "Gives a cause",
+            "anyOf": [
+              "\\b(perché|poiché|dato che|visto che|siccome|a causa|per via|per mancanza)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché la sicurezza costa.*"
+          }
         ]
       },
       "model": "Può darsi che manchino i soldi, perché la sicurezza costa moltissimo e i musei hanno budget limitati.",
@@ -83,8 +157,27 @@
       "expect": {
         "minWords": 12,
         "rubric": [
-          { "label": "Summarising phrase", "anyOf": ["\\b(in sintesi|insomma|in breve|in poche parole|in pratica|riassumendo|in due parole|in sostanza)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "C1-WRIT-03", "hint": "*In poche parole…*" },
-          { "label": "Hearsay conditional or reported speech", "anyOf": ["\\b(sarebbe|sarebbero|avrebbe|avrebbero)\\b", "\\b(ha|hanno)\\s+(detto|dichiarato|spiegato|affermato|comunicato|fatto sapere|confermato)\\s+che\\b"], "min": 1, "errorType": "reported-speech", "conceptId": "C1-SEQ-03", "hint": "*…sarebbero entrati…; ha detto che…*" }
+          {
+            "label": "Summarising phrase",
+            "anyOf": [
+              "\\b(in sintesi|insomma|in breve|in poche parole|in pratica|riassumendo|in due parole|in sostanza)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "C1-WRIT-03",
+            "hint": "*In poche parole…*"
+          },
+          {
+            "label": "Hearsay conditional or reported speech",
+            "anyOf": [
+              "\\b(sarebbe|sarebbero|avrebbe|avrebbero)\\b",
+              "\\b(ha|hanno)\\s+(detto|dichiarato|spiegato|affermato|comunicato|fatto sapere|confermato)\\s+che\\b"
+            ],
+            "min": 1,
+            "errorType": "reported-speech",
+            "conceptId": "C1-SEQ-03",
+            "hint": "*…sarebbero entrati…; ha detto che…*"
+          }
         ]
       },
       "model": "In poche parole, secondo i giornali alcuni ladri sarebbero entrati nel museo, e la polizia ha detto che stava indagando.",

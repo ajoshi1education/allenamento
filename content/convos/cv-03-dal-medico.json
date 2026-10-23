@@ -3,8 +3,19 @@
   "title": "Dal medico",
   "subtitle": "At the doctor's: symptoms, how long (da + present), advice and instructions.",
   "level": "B2",
-  "conceptIds": ["B2-PREP-02", "B2-VOC-02", "B2-COND-01", "B2-HYP-01"],
-  "tutor": { "name": "Dottor Ferri", "avatar": "👨‍⚕️", "gender": "male", "register": "formal" },
+  "theme": "Vita quotidiana",
+  "conceptIds": [
+    "B2-PREP-02",
+    "B2-VOC-02",
+    "B2-COND-01",
+    "B2-HYP-01"
+  ],
+  "tutor": {
+    "name": "Dottor Ferri",
+    "avatar": "👨‍⚕️",
+    "gender": "male",
+    "register": "formal"
+  },
   "setting": "You're not feeling well and you go to see Dottor Ferri, a GP in Turin.",
   "turns": [
     {
@@ -16,7 +27,16 @@
       "expect": {
         "minWords": 7,
         "rubric": [
-          { "label": "Names two symptoms or body parts", "anyOf": ["\\b(mal di|mi fa male|mi fanno male|febbre|tosse|raffreddore|nausea|dolore|dolori|vertigini|brividi|gola|testa|schiena|stomaco|pancia|orecchio|orecchie|occhi|petto|gambe|naso)\\b"], "min": 2, "errorType": "vocabulary", "conceptId": "B2-VOC-02", "hint": "*Ho mal di gola, mi fa male la testa…*" }
+          {
+            "label": "Names two symptoms or body parts",
+            "anyOf": [
+              "\\b(mal di|mi fa male|mi fanno male|febbre|tosse|raffreddore|nausea|dolore|dolori|vertigini|brividi|gola|testa|schiena|stomaco|pancia|orecchio|orecchie|occhi|petto|gambe|naso)\\b"
+            ],
+            "min": 2,
+            "errorType": "vocabulary",
+            "conceptId": "B2-VOC-02",
+            "hint": "*Ho mal di gola, mi fa male la testa…*"
+          }
         ]
       },
       "model": "Ho mal di gola e un po' di febbre, e da ieri mi fa male anche la testa.",
@@ -32,7 +52,16 @@
       "expect": {
         "minWords": 6,
         "rubric": [
-          { "label": "Present + da + time", "anyOf": ["\\bda\\s+(ieri|stamattina|stanotte|lunedì|martedì|mercoledì|giovedì|venerdì|sabato|domenica|qualche|un|una|un paio|due|tre|quattro|cinque|sei|sette|dieci|quindici|\\d+|alcuni|alcune|parecchi|parecchio|almeno|circa|quasi|più|tanto|molto)\\b"], "min": 1, "errorType": "preposition", "conceptId": "B2-PREP-02", "hint": "*Ho la febbre **da** tre giorni.*" }
+          {
+            "label": "Present + da + time",
+            "anyOf": [
+              "\\bda\\s+(ieri|stamattina|stanotte|lunedì|martedì|mercoledì|giovedì|venerdì|sabato|domenica|qualche|un|una|un paio|due|tre|quattro|cinque|sei|sette|dieci|quindici|\\d+|alcuni|alcune|parecchi|parecchio|almeno|circa|quasi|più|tanto|molto)\\b"
+            ],
+            "min": 1,
+            "errorType": "preposition",
+            "conceptId": "B2-PREP-02",
+            "hint": "*Ho la febbre **da** tre giorni.*"
+          }
         ]
       },
       "model": "Ho la febbre da tre giorni, e la tosse da almeno una settimana.",
@@ -48,8 +77,26 @@
       "expect": {
         "minWords": 7,
         "rubric": [
-          { "label": "Passato prossimo of prendere", "anyOf": ["\\b(ho|abbiamo)\\s+(\\p{L}+\\s+)?(preso|presa|presi|prese)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*Ho preso un'aspirina…*" },
-          { "label": "Uses ne with the participle (ne ho prese…)", "anyOf": ["\\bne\\s+ho\\s+(\\p{L}+\\s+)?(preso|presa|presi|prese)\\b"], "min": 1, "errorType": "ci-ne", "conceptId": "B2-PRON-02", "hint": "*…ne ho prese due al giorno.*" }
+          {
+            "label": "Passato prossimo of prendere",
+            "anyOf": [
+              "\\b(ho|abbiamo)\\s+(\\p{L}+\\s+)?(preso|presa|presi|prese)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "*Ho preso un'aspirina…*"
+          },
+          {
+            "label": "Uses ne with the participle (ne ho prese…)",
+            "anyOf": [
+              "\\bne\\s+ho\\s+(\\p{L}+\\s+)?(preso|presa|presi|prese)\\b"
+            ],
+            "min": 1,
+            "errorType": "ci-ne",
+            "conceptId": "B2-PRON-02",
+            "hint": "*…ne ho prese due al giorno.*"
+          }
         ]
       },
       "model": "Ho preso della tachipirina per la febbre: ne ho prese due al giorno.",
@@ -65,8 +112,26 @@
       "expect": {
         "minWords": 7,
         "rubric": [
-          { "label": "Asks with dovrei (or another conditional)", "anyOf": ["\\b(dovrei|dovremmo|potrei|sarebbe meglio|converrebbe)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Dovrei restare a casa?*" },
-          { "label": "Mentions work, rest or home", "anyOf": ["\\b(lavoro|lavorare|casa|ufficio|sport|palestra|uscire|letto|riposo|riposare|scuola|università)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-VOC-02", "hint": "*…restare a casa dal lavoro…*" }
+          {
+            "label": "Asks with dovrei (or another conditional)",
+            "anyOf": [
+              "\\b(dovrei|dovremmo|potrei|sarebbe meglio|converrebbe)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Dovrei restare a casa?*"
+          },
+          {
+            "label": "Mentions work, rest or home",
+            "anyOf": [
+              "\\b(lavoro|lavorare|casa|ufficio|sport|palestra|uscire|letto|riposo|riposare|scuola|università)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-VOC-02",
+            "hint": "*…restare a casa dal lavoro…*"
+          }
         ]
       },
       "model": "Dovrei restare a casa dal lavoro, o posso tornare in ufficio domani?",
@@ -82,8 +147,26 @@
       "expect": {
         "minWords": 8,
         "rubric": [
-          { "label": "Uses devo + infinitive", "anyOf": ["\\b(devo|dovrei|dovrò)\\s+(\\p{L}+\\s+)?\\p{L}+(are|ere|ire|arlo|erlo|irlo|arla|erla|irla|armi|ermi|irmi)\\b"], "min": 1, "errorType": "verb-form", "conceptId": "B2-PREP-01", "hint": "*Devo prendere…, devo bere…*" },
-          { "label": "Repeats two instructions", "anyOf": ["\\b(sciroppo|acqua|riposo|riposare|letto|tre volte|bere|prendere|stare)\\b"], "min": 2, "errorType": "listening", "conceptId": "B2-LIST-01", "hint": "*sciroppo tre volte al giorno, molta acqua, riposo*" }
+          {
+            "label": "Uses devo + infinitive",
+            "anyOf": [
+              "\\b(devo|dovrei|dovrò)\\s+(\\p{L}+\\s+)?\\p{L}+(are|ere|ire|arlo|erlo|irlo|arla|erla|irla|armi|ermi|irmi)\\b"
+            ],
+            "min": 1,
+            "errorType": "verb-form",
+            "conceptId": "B2-PREP-01",
+            "hint": "*Devo prendere…, devo bere…*"
+          },
+          {
+            "label": "Repeats two instructions",
+            "anyOf": [
+              "\\b(sciroppo|acqua|riposo|riposare|letto|tre volte|bere|prendere|stare)\\b"
+            ],
+            "min": 2,
+            "errorType": "listening",
+            "conceptId": "B2-LIST-01",
+            "hint": "*sciroppo tre volte al giorno, molta acqua, riposo*"
+          }
         ]
       },
       "model": "Quindi devo prendere lo sciroppo tre volte al giorno, bere molta acqua e riposare.",
@@ -99,8 +182,26 @@
       "expect": {
         "minWords": 8,
         "rubric": [
-          { "label": "Se + present (real condition)", "anyOf": ["\\bse\\s+(\\p{L}+\\s+){0,3}(passa|scende|sale|peggiora|aumenta|continua|torna|resta|rimane|dura|migliora|ho|sto|sento)\\b"], "min": 1, "errorType": "hypothetical", "conceptId": "B2-HYP-01", "hint": "*Se la febbre non **passa**, …*" },
-          { "label": "Asks what to do", "anyOf": ["\\b(devo|dovrei|posso|potrei|che cosa|cosa|bisogna|richiamare|richiamarla|tornare|chiamare|chiamarla)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-COND-01", "hint": "*…devo tornare da Lei?*" }
+          {
+            "label": "Se + present (real condition)",
+            "anyOf": [
+              "\\bse\\s+(\\p{L}+\\s+){0,3}(passa|scende|sale|peggiora|aumenta|continua|torna|resta|rimane|dura|migliora|ho|sto|sento)\\b"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-HYP-01",
+            "hint": "*Se la febbre non **passa**, …*"
+          },
+          {
+            "label": "Asks what to do",
+            "anyOf": [
+              "\\b(devo|dovrei|posso|potrei|che cosa|cosa|bisogna|richiamare|richiamarla|tornare|chiamare|chiamarla)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-COND-01",
+            "hint": "*…devo tornare da Lei?*"
+          }
         ]
       },
       "model": "Sì: se la febbre non passa entro tre giorni, devo tornare da Lei o posso chiamare?",

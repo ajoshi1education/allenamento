@@ -3,6 +3,7 @@ import { h, esc, md, toast, confirmDialog } from "../ui.js";
 import { buildPath, nodeStates, planSession, unitProgress, xpSummary, STEP_LABEL } from "../core/path.js";
 import { isDue } from "../core/errors.js";
 import { runSession } from "../session.js";
+import * as inst from "../install.js";
 
 const KIND_ICON = { learn: "📖", practice: "✏️", challenge: "⚡", checkpoint: "🏆" };
 const GAME_ICON = { detective: "🕵️", dialogue: "💬", gauntlet: "⏱️", builder: "🧩", duel: "⚔️", reading: "📰", listening: "🎧", debate: "🎤" };
@@ -55,6 +56,7 @@ export async function render(view, ctx) {
         ${dueErr || dueVocab ? `<p>${dueErr ? `<b>${dueErr}</b> mistake${dueErr > 1 ? "s" : ""} to retest` : ""}${dueErr && dueVocab ? " · " : ""}${dueVocab ? `<b>${dueVocab}</b> flashcard${dueVocab > 1 ? "s" : ""} due` : ""}</p>
           <a class="btn3d blue" href="#/review">Start review</a>` : `<p class="muted">Nothing due. Your mistakes come back here on a schedule.</p>`}
       </div>
+      ${!inst.isInstalled() && (inst.canPrompt() || inst.isIOS()) ? `<div class="card3d install-card"><h3>📲 Get the app</h3><p class="small muted">Full screen on your phone, works offline.</p><button class="btn3d blue" data-install>Install</button></div>` : ""}
       ${curNode ? `<div class="card3d next-card"><h3>Up next</h3><p><b>${esc(STEP_LABEL[curNode.kind])}</b>: ${esc(curNode.title)}</p><button class="btn3d primary" data-go-current>Continue</button></div>` : ""}
     </aside>
   </section>`));
@@ -82,6 +84,11 @@ export async function render(view, ctx) {
   };
   pop.addEventListener("click", e => { const b = e.target.closest("[data-start]"); if (b) { pop.hidden = true; start(path.byId.get(b.dataset.start)); } });
   view.querySelector("[data-go-current]")?.addEventListener("click", () => start(curNode));
+  view.querySelector("[data-install]")?.addEventListener("click", async e => {
+    const r = await inst.install();
+    if (r === "ios") e.target.closest(".install-card").querySelector("p").innerHTML = inst.HOWTO.ios;
+    if (r === "accepted") e.target.closest(".install-card").remove();
+  });
   view.querySelector("[data-start-first]")?.addEventListener("click", () => start(curNode));
   view.querySelectorAll("[data-jump]").forEach(b => b.addEventListener("click", () => jump(path.unitById.get(b.dataset.jump))));
 

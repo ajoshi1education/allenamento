@@ -7,6 +7,8 @@ import { now } from "./core/clock.js";
 import * as speech from "./speech.js";
 import { h, esc, toast } from "./ui.js";
 import { xpSummary } from "./core/path.js";
+import { mountCoach } from "./coachpanel.js";
+import "./install.js";                       // listens for the browser's install prompt early
 
 // Main mode is the guided path; Esplora is the free mode that opens everything else.
 const TABS = [
@@ -139,6 +141,7 @@ async function main() {
     view.focus({ preventScroll: true });
     window.scrollTo(0, 0);
   }
+  window.__coach = mountCoach(store);       // the Coach chat, available on every screen
   window.addEventListener("hashchange", route);
   if (!location.hash) location.hash = "#/path"; else route();
 }

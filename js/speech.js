@@ -132,8 +132,13 @@ export async function ensureMic() {
 }
 
 // ---- listening ----------------------------------------------------------------------
-let current = null;
-export function stopListening() { try { current && current.abort(); } catch { /* */ } current = null; }
+let current = null, ctl = null;
+export function stopListening() { try { current && current.abort(); } catch { /* */ } current = null; ctl = null; }
+// Push-to-talk: while held, silence never ends the turn; releasing sends what was said.
+export const isListening = () => !!current;
+export function holdListening() { ctl && ctl.hold(); }
+export function releaseListening() { ctl && ctl.release(); }
+export const listeningReady = () => !!ctl;
 
 /**
  * Listen once. Resolves with
@@ -141,7 +146,7 @@ export function stopListening() { try { current && current.abort(); } catch { /*
  * or { error: "no-speech" | "not-allowed" | "unsupported" | "aborted" | … }.
  * onInterim(text) is called with live partial results.
  */
-export async function listen({ lang = "it-IT", onInterim, onStatus, maxMs = 15000, silenceMs = 1800 } = {}) {
+export async function listen({ lang = "it-IT", onInterim, onStatus, maxMs = 15000, silenceMs = 1800, hold = false } = {}) {
   if (!SR) return { error: "unsupported" };
   stop();                                   // never listen while the app is talking
   stopListening();
@@ -158,14 +163,23 @@ export async function listen({ lang = "it-IT", onInterim, onStatus, maxMs = 1500
     current = r;
     r.lang = lang; r.interimResults = true; r.maxAlternatives = 5; r.continuous = true;
     const t0 = performance.now();
-    let speechStart = null, lastResult = null, finals = [], best = null, done = false, silenceTimer = null, maxTimer = null, audioOn = false;
+    let speechStart = null, lastResult = null, finals = [], best = null, done = false, silenceTimer = null, maxTimer = null, audioOn = false, interimText = "", held = hold;
     const finish = out => {
       if (done) return; done = true; clearTimeout(silenceTimer); clearTimeout(maxTimer); clearTimeout(watch); clearTimeout(hardCap);
       try { r.stop(); } catch { /* */ }
-      if (current === r) current = null;
+      if (current === r) { current = null; ctl = null; }
       res(out);
     };
+    ctl = {
+      hold() { held = true; clearTimeout(silenceTimer); },
+      release() {                           // graceful: Chrome turns the last words into a final result, then ends
+        held = false;
+        try { r.stop(); } catch { /* */ }
+        setTimeout(() => finish(assemble() || best || { error: "no-speech" }), 2500);
+      }
+    };
     const assemble = () => {
+      if (!finals.length && interimText) return { alts: [{ text: interimText, confidence: 0 }], text: interimText, confidence: 0, totalMs: performance.now() - t0, speechMs: Math.max(300, (lastResult || performance.now()) - (speechStart || t0)) };
       if (!finals.length) return null;
       // Combine segments: first alternative for each, plus whole-utterance alternatives from the longest segment.
       const main = finals.map(f => f[0].transcript.trim()).join(" ").replace(/\s+/g, " ").trim();
@@ -177,7 +191,7 @@ export async function listen({ lang = "it-IT", onInterim, onStatus, maxMs = 1500
     // The listening time only starts once Chrome is actually recording.
     r.onaudiostart = () => {
       audioOn = true; onStatus && onStatus("listening");
-      maxTimer = setTimeout(() => finish(assemble() || { error: "no-speech" }), maxMs);
+      maxTimer = setTimeout(() => finish(assemble() || { error: "no-speech" }), held ? Math.max(maxMs, 60000) : maxMs);
     };
     const watch = setTimeout(() => { if (!audioOn) onStatus && onStatus("stuck"); }, 3000);
     const hardCap = setTimeout(() => finish(assemble() || { error: audioOn ? "no-speech" : "not-started" }), maxMs + 30000);
@@ -192,12 +206,13 @@ export async function listen({ lang = "it-IT", onInterim, onStatus, maxMs = 1500
         if (res.isFinal) finals.push([...res].map(a => ({ transcript: a.transcript, confidence: a.confidence })));
         else interim += res[0].transcript;
       }
-      onInterim && onInterim((finals.map(f => f[0].transcript).join(" ") + " " + interim).trim());
+      interimText = (finals.map(f => f[0].transcript).join(" ") + " " + interim).trim();
+      onInterim && onInterim(interimText);
       best = assemble();
       clearTimeout(silenceTimer);
-      silenceTimer = setTimeout(() => finish(assemble() || { error: "no-speech" }), silenceMs);
+      if (!held) silenceTimer = setTimeout(() => finish(assemble() || { error: "no-speech" }), silenceMs);
     };
-    r.onerror = e => finish(best || { error: e.error || "error" });
+    r.onerror = e => { if (e.error === "no-speech" && held) return; finish(best || { error: e.error || "error" }); };
     r.onend = () => finish(assemble() || best || { error: "no-speech" });
     try { r.start(); } catch (e) { finish({ error: "busy" }); }
   });
