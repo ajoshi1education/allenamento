@@ -2,6 +2,7 @@
 import { h, esc, md, runExercise, toast, fmtDate, fmtRel, errorLabel } from "../ui.js";
 import { buildQuiz, masteryProgress, patterns, pickRetestItem, isDue } from "../core/errors.js";
 import * as speech from "../speech.js";
+import { aiEnabled, generateRetests } from "../ai.js";
 
 const ST = { open: ["Open", "bad"], improving: ["Improving", "warn"], mastered: ["Mastered", "ok"] };
 
@@ -157,8 +158,13 @@ async function detail(view, ctx, id) {
     await store.deleteError(id); toast("Entry deleted"); location.hash = "#/errors";
   };
   view.querySelector("[data-retest]").onclick = async () => {
-    const item = pickRetestItem(e, content.allItems());
+    let item = pickRetestItem(e, content.allItems());
     const host = view.querySelector("#retest");
+    if (item.id === e.itemId && await aiEnabled()) {
+      host.replaceChildren(h(`<div class="card muted">Writing a new sentence for you…</div>`));
+      const gen = await generateRetests(e, content.concepts.get(e.conceptId));
+      if (gen && gen.length) item = gen[0];
+    }
     await runExercise(host, item, { store, source: "errorbank", mode: "retest", retestOf: e.id, silent: speech.isSilent(),
       banner: item.id === e.itemId ? "Retest: same item (no other sentence exists yet for this concept)" : "Retest in a new context" });
     detail(view, ctx, id);
@@ -187,7 +193,13 @@ async function quiz(view, ctx) {
     <div id="ex"></div></section>`));
   const host = view.querySelector("#ex"), dots = view.querySelectorAll(".progress-dots span");
   let right = 0, mastered = 0;
-  for (const [i, { error, item }] of plan.entries()) {
+  const useAi = await aiEnabled();
+  for (let [i, { error, item }] of plan.entries()) {
+    // No other sentence exists for this mistake: ask the optional AI for a fresh, self-checked one.
+    if (useAi && item.id === error.itemId) {
+      const gen = await generateRetests(error, content.concepts.get(error.conceptId));
+      if (gen && gen.length) item = gen[0];
+    }
     view.querySelector(".sb-count").textContent = `${i + 1}/${plan.length}`;
     dots[i].classList.add("cur");
     const banner = `Targets your mistake: <b>${esc(errorLabel(content, error.errorType))}</b>, originally on <span class="it">“${esc(error.correctAnswer)}”</span>${item.id === error.itemId ? "" : " · new sentence"}`;

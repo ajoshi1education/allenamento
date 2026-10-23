@@ -1,0 +1,15 @@
+{
+  "id": "G-GNT-02",
+  "type": "gauntlet",
+  "title": "Sfida a tempo: concordanza e discorso indiretto",
+  "subtitle": "Beat the clock: future in the past, subjunctive sequence and reported speech, as many as you can before your lives run out.",
+  "conceptIds": [
+    "B2-SEQ-01",
+    "C1-SEQ-02",
+    "C1-SEQ-03"
+  ],
+  "difficulty": 3,
+  "minutes": 3,
+  "seconds": 150,
+  "lives": 3
+}

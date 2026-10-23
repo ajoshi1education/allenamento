@@ -2,11 +2,15 @@
   "name": "allenamento",
   "version": "0.1.0",
   "private": true,
-  "description": "Adaptive Italian B2-C1 trainer with a permanent Error Bank",
+  "description": "Adaptive Italian B2-C1 trainer with a permanent Error Bank (AI helper optional: only used when ANTHROPIC_API_KEY is set on Netlify)",
   "type": "module",
   "scripts": {
     "test": "node --test test/*.test.mjs",
     "validate": "node scripts/validate-content.mjs",
     "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.0.0",
+    "zod": "^4.0.0"
   }
 }

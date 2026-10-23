@@ -7,7 +7,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const { buildIndex, gameItems } = await import(pathToFileURL(path.join(ROOT, "js/core/content.js")));
-const { evaluate, expand } = await import(pathToFileURL(path.join(ROOT, "js/core/evaluate.js")));
+const { evaluate, expand, rubricRegex, checkWriting } = await import(pathToFileURL(path.join(ROOT, "js/core/evaluate.js")));
 const BI = await import(pathToFileURL(path.join(ROOT, "scripts/build-index.mjs")));
 
 export const MIN_EXERCISES = 8;
@@ -41,8 +41,14 @@ export function validate(all) {
     if (!it.prompt) errors.push(`${it.id}: no prompt`);
     if (it.type === "free") {
       if (!it.rubric || !it.rubric.length) errors.push(`${it.id}: free item needs a rubric`);
-      for (const r of it.rubric || []) for (const p of [].concat(r.anyOf || [])) { try { new RegExp(p, "i"); } catch { errors.push(`${it.id}: bad rubric regex ${p}`); } }
+      for (const r of it.rubric || []) for (const p of [].concat(r.anyOf || [])) { try { rubricRegex(p); } catch { errors.push(`${it.id}: bad rubric regex ${p}`); } }
       if (!it.model) warnings.push(`${it.id}: free item has no model answer`);
+      else {
+        const w = checkWriting(it, it.model);
+        const missed = w.checks.filter(c => !c.ok).map(c => c.label);
+        if (missed.length) errors.push(`${it.id}: model answer fails its own rubric: ${missed.join("; ")}`);
+        if (!w.lengthOk) warnings.push(`${it.id}: model answer length ${w.words} outside ${it.minWords}-${it.maxWords}`);
+      }
       return;
     }
     if (it.type === "choice") {

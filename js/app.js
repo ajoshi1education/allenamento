@@ -1,5 +1,6 @@
 // App shell: loads content and the database, then routes #/tab/... to the views.
 import { openDb } from "./db.js";
+import { createSync } from "./sync.js";
 import { loadContent } from "./core/content.js";
 import { createStore } from "./store.js";
 import { now } from "./core/clock.js";
@@ -33,6 +34,18 @@ async function main() {
   const [db, content] = await Promise.all([openDb(), loadContent(fetchJson)]);
   const store = createStore(db, content, now);
   await store.registerImports();
+
+  // Optional sync: finish a magic-link sign-in, then sync on start, every 5 minutes and when the app is hidden.
+  const sync = createSync({ db, now });
+  window.__sync = sync;
+  if (location.hash.includes("access_token=")) { sync.acceptRedirect(location.hash); history.replaceState(null, "", location.pathname + "#/settings"); }
+  const autoSync = async () => {
+    if (!sync.configured() || !sync.signedIn() || !navigator.onLine) return;
+    try { const r = await sync.sync(); if (r.pulled) { await store.registerImports(); store.emit("sync"); } } catch (e) { console.warn("sync", e.message); }
+  };
+  autoSync();
+  setInterval(autoSync, 5 * 60e3);
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") autoSync(); });
   window.__app = { store, content, db };       // handy for debugging in the console
   speech.setSilent(await store.setting("silent", false));
   const theme = await store.setting("theme", "auto");

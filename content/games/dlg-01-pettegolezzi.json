@@ -1,0 +1,144 @@
+{
+  "id": "G-DLG-01",
+  "type": "dialogue",
+  "title": "Pettegolezzi sul pianerottolo",
+  "subtitle": "Your neighbour Pina knows everything about everyone. A week later, relay her gossip to your friend Giulia, in flawless reported speech.",
+  "conceptIds": ["C1-SEQ-03", "B2-SEQ-01"],
+  "difficulty": 3,
+  "minutes": 8,
+  "characters": {
+    "giulia": { "name": "Giulia", "role": "la tua amica, curiosissima", "avatar": "👩🏻" },
+    "you": { "name": "Tu", "role": "you" }
+  },
+  "setting": "Condominio di via Garibaldi, Bologna. Una settimana fa la signora Pina del terzo piano ti ha fermato sulle scale per un'ora. Oggi Giulia ti chiama: vuole sapere tutto.",
+  "start": "G-DLG-01.n1",
+  "nodes": [
+    {
+      "id": "G-DLG-01.n1",
+      "speaker": "giulia",
+      "line": "Ciao! Allora, la signora Pina ti ha attaccato bottone di nuovo? Che cosa ti ha detto del dottor Rossi?",
+      "conceptId": "B2-SEQ-01",
+      "instruction": "Last week Pina said: «Il dottor Rossi si trasferisce a Milano il mese prossimo.» Report it to Giulia.",
+      "prompt": "«Il dottor Rossi si trasferisce a Milano il mese prossimo.» → How do you report it?",
+      "explanation": "Past reporting verb: the planned move becomes *si trasferiva* or *si sarebbe trasferito*; the pronoun stays third person.",
+      "choices": [
+        { "text": "Ha detto che il dottor Rossi si sarebbe trasferito a Milano il mese dopo.", "ok": true, "next": "G-DLG-01.n2" },
+        { "text": "Ha detto che il dottor Rossi si trasferirebbe a Milano il mese prossimo.", "ok": false, "errorType": "tense-sequence", "why": "'Would move' is not *si trasferirebbe*: a future seen from the past is *si sarebbe trasferito*. And *il mese prossimo* becomes *il mese dopo*.", "next": "G-DLG-01.n1b" },
+        { "text": "Ha detto che mi trasferivo a Milano il mese dopo.", "ok": false, "errorType": "pronoun", "why": "*Mi trasferivo* means **you** are moving! The subject is still the doctor: *si trasferiva / si sarebbe trasferito*.", "next": "G-DLG-01.n1c" }
+      ]
+    },
+    {
+      "id": "G-DLG-01.n1b",
+      "speaker": "giulia",
+      "line": "Si trasferirebbe? Cioè, se gli offrissero un lavoro? Non ho capito: si trasferisce o no?",
+      "item": { "id": "G-DLG-01.n1b.i", "conceptId": "B2-SEQ-01", "type": "transform", "difficulty": 2, "instruction": "Report Pina's words again, starting with 'Ha detto che…'.", "prompt": "«Il dottor Rossi si trasferisce a Milano.»", "answers": ["Ha detto che il dottor Rossi si (trasferiva|sarebbe trasferito) a Milano"], "focus": ["trasferiva", "sarebbe"], "errorType": "tense-sequence", "traps": [{ "contains": ["trasferirebbe"], "errorType": "tense-sequence", "why": "*Si trasferirebbe* sounds conditional ('would move if…'). Use *si trasferiva* or *si sarebbe trasferito*." }, { "contains": ["trasferisce"], "errorType": "tense-sequence", "why": "Past reporting verb: *si trasferisce* → *si trasferiva*." }], "explanation": "Presente → imperfetto (*si trasferiva*), or future in the past (*si sarebbe trasferito*)." },
+      "next": "G-DLG-01.n2"
+    },
+    {
+      "id": "G-DLG-01.n1c",
+      "speaker": "giulia",
+      "line": "Cosa?! TU ti trasferisci a Milano?! E me lo dici così?",
+      "conceptId": "C1-SEQ-03",
+      "instruction": "Fix the misunderstanding.",
+      "prompt": "Giulia thinks you're moving. Correct yourself.",
+      "explanation": "In reported speech, the person changes only if the speaker changes: the doctor is still *lui*.",
+      "choices": [
+        { "text": "No, no! Ha detto che LUI si sarebbe trasferito, il dottor Rossi!", "ok": true, "next": "G-DLG-01.n2" },
+        { "text": "No, ha detto che io mi trasferirei.", "ok": false, "errorType": "pronoun", "why": "Still the wrong person (and the wrong tense). It's the doctor who's moving: *si sarebbe trasferito*.", "next": "G-DLG-01.n1b" }
+      ]
+    },
+    {
+      "id": "G-DLG-01.n2",
+      "speaker": "giulia",
+      "line": "Ah, ecco, che spavento. E la figlia, Martina? Pina sa qualcosa anche di lei?",
+      "item": { "id": "G-DLG-01.n2.i", "conceptId": "B2-SEQ-01", "type": "cloze", "difficulty": 2, "instruction": "Pina said: «Martina si sposerà a giugno.» Complete your answer.", "prompt": "Pina mi ha detto che Martina ___ (sposarsi) a giugno.", "answers": ["si sarebbe sposata"], "focus": ["sarebbe", "sposata"], "errorType": "tense-sequence", "traps": [{ "match": "si sposerebbe", "errorType": "tense-sequence", "why": "Futuro → condizionale **passato** after a past reporting verb: *si sarebbe sposata*." }, { "match": "si sarebbe sposato", "errorType": "agreement", "why": "Reflexive → *essere* → agree with Martina: *sposata*." }, { "match": "si sposerà", "errorType": "tense-sequence", "why": "*Mi ha detto* is past: the future shifts to *si sarebbe sposata*." }, { "match": "si sposava", "ok": true, "why": "Natural in conversation. The standard shift is *si sarebbe sposata*." }], "explanation": "Futuro → **si sarebbe sposata**." },
+      "next": "G-DLG-01.n3"
+    },
+    {
+      "id": "G-DLG-01.n3",
+      "speaker": "giulia",
+      "line": "A giugno! Bisogna comprare un vestito. E del signor Bianchi, quello del secondo piano? Si dice che stia succedendo qualcosa…",
+      "item": { "id": "G-DLG-01.n3.i", "conceptId": "C1-SEQ-03", "type": "transform", "difficulty": 3, "instruction": "Pina said: «Ieri ho visto il signor Bianchi uscire con una valigia enorme.» Report it, starting with 'Mi ha detto che…'.", "prompt": "«Ieri ho visto il signor Bianchi uscire con una valigia enorme.»", "answers": ["Mi ha detto che (il giorno prima|il giorno precedente) aveva visto il signor Bianchi uscire con una valigia enorme", "Mi ha detto che aveva visto il signor Bianchi uscire con una valigia enorme (il giorno prima|il giorno precedente)"], "focus": ["aveva", "prima", "precedente"], "errorType": "reported-speech", "traps": [{ "contains": ["ieri"], "errorType": "reported-speech", "why": "Pina spoke a week ago: her *ieri* is *il giorno prima*." }, { "contains": ["ho"], "errorType": "pronoun", "why": "Pina saw him, not you: *aveva visto* (third person, trapassato)." }, { "contains": ["avrebbe"], "errorType": "tense-sequence", "why": "She saw him **before** speaking: trapassato *aveva visto*." }], "explanation": "*Ieri* → **il giorno prima**; passato prossimo → **aveva visto**." },
+      "next": "G-DLG-01.n4",
+      "nextFail": "G-DLG-01.n3b"
+    },
+    {
+      "id": "G-DLG-01.n3b",
+      "speaker": "giulia",
+      "line": "Ieri? Ma ieri era domenica e Pina era da sua sorella a Modena… Ah, intendi il giorno prima che te lo raccontasse!",
+      "item": { "id": "G-DLG-01.n3b.i", "conceptId": "C1-SEQ-03", "type": "choice", "difficulty": 2, "instruction": "Choose the right time expression.", "prompt": "When Pina's «ieri» is reported a week later, it becomes…", "options": ["ieri", "il giorno prima", "il giorno dopo"], "answer": 1, "optionWhy": { "0": "Her 'yesterday' was eight days ago now: *il giorno prima*.", "2": "*Il giorno dopo* replaces *domani*." }, "errorType": "reported-speech", "explanation": "*Ieri* → **il giorno prima**." },
+      "next": "G-DLG-01.n4"
+    },
+    {
+      "id": "G-DLG-01.n4",
+      "speaker": "giulia",
+      "line": "Una valigia enorme… Mmm. E a te Pina ha dato qualche ordine, come al solito?",
+      "item": { "id": "G-DLG-01.n4.i", "conceptId": "C1-SEQ-03", "type": "transform", "difficulty": 3, "instruction": "Pina told you: «Non dire niente a nessuno!» Report it, starting with 'Mi ha detto…'.", "prompt": "«Non dire niente a nessuno!»", "answers": ["Mi ha detto (di non dire|che non dicessi) niente a nessuno"], "focus": ["non"], "errorType": "reported-speech", "traps": [{ "match": "Mi ha detto di dire niente a nessuno", "errorType": "negation", "why": "A negative command becomes *di non dire*: the *non* must stay!" }, { "contains": ["dici", "dico"], "errorType": "reported-speech", "why": "Commands are reported with *di* + infinitive: *di non dire*." }], "explanation": "Negative imperative → **di non dire** (or *che non dicessi*)." },
+      "next": "G-DLG-01.n5"
+    },
+    {
+      "id": "G-DLG-01.n5",
+      "speaker": "giulia",
+      "line": "Ahahah, e tu invece lo racconti a me! E Pina ti ha fatto anche delle domande, immagino.",
+      "conceptId": "C1-SEQ-03",
+      "instruction": "Pina asked you: «Sai se i Bianchi divorziano?» Choose a correct way to report it (more than one may be right).",
+      "prompt": "«Sai se i Bianchi divorziano?» → How do you report her question?",
+      "explanation": "Yes/no question → *se*; presente → imperfetto (everyday) or congiuntivo imperfetto (more formal).",
+      "choices": [
+        { "text": "Mi ha chiesto se sapevo se i Bianchi divorziavano.", "ok": true, "next": "G-DLG-01.n6" },
+        { "text": "Mi ha chiesto che sapevo se i Bianchi divorziano.", "ok": false, "errorType": "reported-speech", "why": "A yes/no question is reported with *se*, not *che*; and the tenses must shift: *se sapevo… divorziavano*.", "next": "G-DLG-01.n5b" },
+        { "text": "Mi ha chiesto se sapessi se i Bianchi divorziassero.", "ok": true, "why": "Correct and more formal: the subjunctive in reported questions is typical of careful Italian.", "next": "G-DLG-01.n6" }
+      ]
+    },
+    {
+      "id": "G-DLG-01.n5b",
+      "speaker": "giulia",
+      "line": "«Che sapevo»? Mi sa che anche tu hai bisogno di ripassare, eh! Dai, riprova.",
+      "item": { "id": "G-DLG-01.n5b.i", "conceptId": "C1-SEQ-03", "type": "cloze", "difficulty": 2, "instruction": "Complete the reported question.", "prompt": "Mi ha chiesto ___ sapevo qualcosa dei Bianchi.", "answers": ["se"], "focus": ["se"], "errorType": "reported-speech", "traps": [{ "match": "che", "errorType": "reported-speech", "why": "Reported yes/no questions take *se*." }], "explanation": "Yes/no question → **se**." },
+      "next": "G-DLG-01.n6"
+    },
+    {
+      "id": "G-DLG-01.n6",
+      "speaker": "giulia",
+      "line": "E tu che cosa le hai risposto?",
+      "conceptId": "B2-SEQ-01",
+      "instruction": "You told Pina: «Non so niente, ma glielo chiederò.» How do you report your own words?",
+      "prompt": "«Non so niente, ma glielo chiederò.» → Report what you said.",
+      "explanation": "Presente → imperfetto (*non sapevo*); futuro → condizionale passato (*glielo avrei chiesto*).",
+      "choices": [
+        { "text": "Le ho detto che non sapevo niente, ma che glielo avrei chiesto.", "ok": true, "next": "G-DLG-01.n7" },
+        { "text": "Le ho detto che non sapevo niente, ma che glielo chiederei.", "ok": false, "errorType": "tense-sequence", "why": "*Glielo chiederei* = 'I would ask (if…)'. The promise was future from that moment: *glielo avrei chiesto*.", "next": "G-DLG-01.n6b" },
+        { "text": "Le ho detto che non sapevo niente, ma che glielo avevo chiesto.", "ok": false, "errorType": "tense-sequence", "why": "The trapassato means you had **already** asked. Your promise was about later: *glielo avrei chiesto*.", "next": "G-DLG-01.n6b" }
+      ]
+    },
+    {
+      "id": "G-DLG-01.n6b",
+      "speaker": "giulia",
+      "line": "Aspetta: gliel'hai chiesto o no? Non ci capisco più niente!",
+      "item": { "id": "G-DLG-01.n6b.i", "conceptId": "B2-SEQ-01", "type": "cloze", "difficulty": 2, "instruction": "Make it clear: you promised to ask later.", "prompt": "Le ho promesso che glielo ___ (chiedere) appena possibile.", "answers": ["avrei chiesto"], "focus": ["avrei", "chiesto"], "errorType": "tense-sequence", "traps": [{ "match": "chiederei", "errorType": "tense-sequence", "why": "Promise in the past + later action → *avrei chiesto*." }, { "match": "avevo chiesto", "errorType": "tense-sequence", "why": "That would mean you'd already asked. Later action → *avrei chiesto*." }, { "match": "chiederò", "errorType": "tense-sequence", "why": "*Ho promesso* is past: the future shifts to *avrei chiesto*." }], "explanation": "Future in the past → **avrei chiesto**." },
+      "next": "G-DLG-01.n7"
+    },
+    {
+      "id": "G-DLG-01.n7",
+      "speaker": "giulia",
+      "line": "Va bene, va bene. Ultima cosa: Pina ti ha detto dove e quando si fa la riunione di condominio?",
+      "item": { "id": "G-DLG-01.n7.i", "conceptId": "C1-SEQ-03", "type": "translate", "difficulty": 4, "instruction": "Pina had said: «La riunione sarà qui, nel mio appartamento, giovedì prossimo.» Tell Giulia in Italian:", "prompt": "She said the meeting would be there, in her flat, the following Thursday.", "answers": ["[Mi] ha detto che la riunione (sarebbe stata|si sarebbe tenuta|si sarebbe fatta) (lì|là)[,] nel suo appartamento[,] il giovedì (dopo|successivo|seguente)"], "focus": ["sarebbe", "suo"], "errorType": "reported-speech", "traps": [{ "contains": ["sarà"], "errorType": "tense-sequence", "why": "Futuro → condizionale passato: *sarebbe stata*." }, { "contains": ["qui", "qua"], "errorType": "reported-speech", "why": "Pina's *qui* is *lì* from your point of view." }, { "contains": ["mio"], "errorType": "pronoun", "why": "Her flat: *nel suo appartamento*." }, { "contains": ["prossimo"], "errorType": "reported-speech", "why": "*Giovedì prossimo* → *il giovedì dopo / successivo*." }], "explanation": "Four shifts: **sarebbe stata**, **lì**, **suo**, **il giovedì dopo**." },
+      "next": "G-DLG-01.end1",
+      "nextFail": "G-DLG-01.end2"
+    },
+    {
+      "id": "G-DLG-01.end1",
+      "speaker": "giulia",
+      "line": "Perfetto, sei più affidabile di Pina! Allora ci vediamo giovedì… e acqua in bocca, mi raccomando!",
+      "end": true,
+      "outcome": "You relayed the gossip accurately: tenses shifted, pronouns and time and place words adjusted. Giulia knows exactly where to be on Thursday."
+    },
+    {
+      "id": "G-DLG-01.end2",
+      "speaker": "giulia",
+      "line": "Lì dove? Da te? E quale giovedì, questo o il prossimo? Va be', lascia stare: chiamo Pina direttamente…",
+      "end": true,
+      "outcome": "Giulia got lost in the details of the meeting. Review how *qui → lì*, *mio → suo*, *prossimo → dopo* and futuro → condizionale passato work in reported speech."
+    }
+  ]
+}

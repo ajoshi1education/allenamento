@@ -232,8 +232,28 @@ function showFeedback(fb, item, resp, result, outcome, concept, opts) {
       ${item.model ? `<details class="fb-rule" open><summary>Model answer</summary><p class="it">${md(item.model)}</p></details>` : ""}
       ${result.why ? `<p class="fb-why">${md(result.why)}</p>` : ""}
       ${eb.length ? `<div class="eb-row">${eb.join("")}</div>` : ""}
-      <div class="fb-actions"><span class="grow"></span><button type="button" class="btn primary" data-act="next">Continue ↵</button></div>`;
+      <div class="ai-fb"></div>
+      <div class="fb-actions"><button type="button" class="btn ghost small" data-ai hidden>✨ Detailed AI feedback</button><span class="grow"></span><button type="button" class="btn primary" data-act="next">Continue ↵</button></div>`;
     fb.hidden = false;
+    // Optional AI corrections (only shown when an API key is configured on the server).
+    import("./ai.js").then(async ai => {
+      if (!(await ai.aiEnabled())) return;
+      const b = fb.querySelector("[data-ai]"); b.hidden = false;
+      b.onclick = async () => {
+        b.disabled = true; b.textContent = "Reading your text…";
+        const r = await ai.writingFeedback(item.prompt, String(resp));
+        b.remove();
+        if (!r) { fb.querySelector(".ai-fb").textContent = "AI feedback is unavailable right now."; return; }
+        fb.querySelector(".ai-fb").innerHTML = `<div class="card-inset"><h4>Corrections</h4>${(r.corrections || []).map(c => `<div class="fb-row"><span class="wrong it">${esc(c.original)}</span> → <span class="right it">${esc(c.corrected)}</span></div><p class="small">${md(c.why)}</p>`).join("") || "<p>No significant mistakes found.</p>"}
+          <p>${md(r.overall || "")}</p>${r.improved ? `<details><summary>Polished version</summary><p class="it">${md(r.improved)}</p></details>` : ""}</div>`;
+        // Each AI-found mistake goes to the Error Bank like any other, as a sentence to correct.
+        for (const [k, c] of (r.corrections || []).entries()) {
+          const fix = { id: `${item.id}#ai${k}`, conceptId: item.conceptId, skill: "writing", type: "transform", instruction: "Correct the mistake from your own writing.",
+            prompt: c.original, answers: [c.corrected.replace(/[()[\]|]/g, " ")], errorType: c.errorType, explanation: c.why, typoTolerance: true };
+          await opts.store.recordAnswer({ item: fix, response: c.original, result: { ...evaluate(fix, c.original), verdict: "wrong", correct: false, errorType: c.errorType, note: c.why }, source: "writing-ai", mode: "writing" });
+        }
+      };
+    });
     return;
   }
   fb.innerHTML = `

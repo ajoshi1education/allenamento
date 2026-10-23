@@ -1,0 +1,136 @@
+{
+  "id": "G-LST-02",
+  "type": "listening",
+  "title": "Piazza Italia: la passeggiata",
+  "subtitle": "A podcast episode on the evening stroll: follow the anecdote, the argument and the speaker's view.",
+  "conceptIds": [
+    "C1-LIST-02"
+  ],
+  "difficulty": 4,
+  "minutes": 10,
+  "passage": {
+    "title": "Piazza Italia – puntata 12",
+    "source": "invented",
+    "it": "Ciao a tutti e benvenuti a una nuova puntata di «Piazza Italia», il podcast che racconta le abitudini che diamo per scontate. Oggi vi parlo della passeggiata serale, quella che in molte zone si chiama «struscio» e altrove semplicemente «vasca», perché si va su e giù per la stessa strada, come in piscina.\nVi confesso che, da ragazzina, la detestavo. Mia madre mi obbligava a vestirmi bene la domenica pomeriggio per percorrere tre volte il corso principale del paese, salutando le stesse persone che avevamo visto la mattina a messa. Mi sembrava un rito inutile, quasi ridicolo. E poi c'erano le regole non scritte: le ragazze camminavano a braccetto, i ragazzi stavano appoggiati ai muretti, e guai a fermarsi a parlare con qualcuno che la tua famiglia non conosceva. Solo molti anni dopo, vivendo all'estero, ho capito che cosa mi mancava: non la strada in sé, ma l'idea di uno spazio pubblico in cui si va senza un motivo preciso, non per comprare qualcosa, ma per vedere e farsi vedere.\nGli antropologi, del resto, lo dicono da tempo: la passeggiata non serve a spostarsi, serve a stare insieme. È un modo per controllare chi c'è, chi manca, chi si è fidanzato con chi. Una specie di social network ante litteram, con una differenza importante: per partecipare bisognava uscire di casa.\nOggi il rito resiste soprattutto nei centri piccoli e medi, mentre nelle grandi città si è trasformato, e d'inverno si è spesso spostato nei centri commerciali. In alcune città, poi, sono nate passeggiate organizzate dai comuni, con musica e bancarelle. C'è chi lo considera un impoverimento. Io sono meno pessimista: finché ci sarà qualcuno che esce la sera senza una meta, solo per incontrare gli altri, la passeggiata sarà viva.\nNella prossima puntata parleremo di un altro rito molto italiano: il pranzo della domenica. Restate con noi."
+  },
+  "questions": [
+    {
+      "id": "G-LST-02.q1",
+      "type": "choice",
+      "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What is the episode about?",
+      "options": [
+        "The traditional evening stroll and its social role",
+        "The history of Italian swimming pools",
+        "Shopping habits in Italian shopping centres",
+        "Sunday lunch in Italian families"
+      ],
+      "answer": 0,
+      "optionWhy": {
+        "3": "That's the topic of the *next* episode (*nella prossima puntata*)."
+      },
+      "explanation": "*Oggi vi parlo della passeggiata serale.* Sunday lunch is announced for the next episode.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-02.q2",
+      "type": "choice",
+      "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why is the stroll called *vasca* in some places?",
+      "options": [
+        "Because people walk up and down the same street, like swimming lengths in a pool.",
+        "Because it ends at a fountain.",
+        "Because people used to walk to the public baths.",
+        "Because it's done in summer, when it's hot."
+      ],
+      "answer": 0,
+      "explanation": "*Perché si va su e giù per la stessa strada, come in piscina.* *Fare una vasca* = to swim a length.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-02.q3",
+      "type": "choice",
+      "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "How did the speaker feel about the stroll as a girl?",
+      "options": [
+        "She hated it and found it pointless.",
+        "She loved dressing up for it.",
+        "She didn't care either way.",
+        "She enjoyed meeting her friends there."
+      ],
+      "answer": 0,
+      "explanation": "*Da ragazzina, la detestavo… Mi sembrava un rito inutile, quasi ridicolo.*",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-02.q4",
+      "type": "choice",
+      "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What did she realise while living abroad?",
+      "options": [
+        "She missed having a public space to go to without a specific purpose, just to see and be seen.",
+        "She missed the main street of her town.",
+        "She preferred the way people meet abroad.",
+        "She missed going to Mass with her mother."
+      ],
+      "answer": 0,
+      "optionWhy": {
+        "1": "She says explicitly *non la strada in sé*."
+      },
+      "explanation": "*Non la strada in sé, ma l'idea di uno spazio pubblico in cui si va senza un motivo preciso.* *Non… ma* corrects the obvious answer.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-02.q5",
+      "type": "choice",
+      "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why does she call the stroll *«un social network ante litteram»*?",
+      "options": [
+        "It had the same social function as a social network before the term existed, but you had to leave home to take part.",
+        "It was organised through early websites.",
+        "It was used to share photos.",
+        "Anthropologists invented the term for it."
+      ],
+      "answer": 0,
+      "explanation": "*Ante litteram* = before the word existed. The *differenza importante*: *per partecipare bisognava uscire di casa*.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-02.q6",
+      "type": "choice",
+      "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Where does the ritual survive best today?",
+      "options": [
+        "In small and medium-sized towns",
+        "In big cities",
+        "Only in shopping centres",
+        "Only in the south"
+      ],
+      "answer": 0,
+      "explanation": "*Oggi il rito resiste soprattutto nei centri piccoli e medi*; in big cities it has changed and in winter often moves to shopping centres.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-02.q7",
+      "type": "choice",
+      "difficulty": 5,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What is the speaker's view of how the stroll has changed?",
+      "options": [
+        "Not too pessimistic: it will survive as long as people go out without a destination just to meet others.",
+        "Very pessimistic: it has become an empty ritual.",
+        "Enthusiastic: shopping centres have improved it.",
+        "She has no opinion and reports only the anthropologists' view."
+      ],
+      "answer": 0,
+      "explanation": "*C'è chi lo considera un impoverimento. Io sono meno pessimista: finché ci sarà qualcuno che esce… la passeggiata sarà viva.* The *c'è chi… io…* contrast marks her own position.",
+      "errorType": "listening"
+    }
+  ]
+}

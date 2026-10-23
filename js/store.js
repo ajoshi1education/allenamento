@@ -77,6 +77,7 @@ export function createStore(db, content, clock) {
     const concept = content.concepts.get(item.conceptId);
     const skill = item.skill || (concept && concept.skill) || "grammar";
     await db.put("attempts", {
+      id: now.toString(36) + "-" + Math.random().toString(36).slice(2, 8),   // unique across devices (for sync)
       t: now, itemId: item.id, conceptId: item.conceptId, skill, source, mode,
       response: String(response ?? ""), verdict: result.verdict, correct: result.correct, errorType: result.errorType || null
     });

@@ -8,7 +8,7 @@ export async function render(view, { store, content }) {
   const last = await store.setting("diagnosticResult", null);
   view.replaceChildren(h(`<section class="page narrow">
     <h1>Placement test</h1>
-    <p class="lead">About 30 questions across grammar, vocabulary, register and comprehension. It starts at B2 and moves up to C1 in each area if you're doing well.</p>
+    <p class="lead">About 30 questions (10–15 minutes) across grammar, vocabulary, register and comprehension. It starts at B2 and moves up to C1 in each area if you're doing well.</p>
     <div class="card"><ul>
       <li>Take your time. There's no timer, and you can type accents with the buttons.</li>
       <li>Concepts you get right on harder items can be skipped. They'll come back for short check-ups so nothing is forgotten.</li>

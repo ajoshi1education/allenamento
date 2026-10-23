@@ -1,0 +1,146 @@
+{
+  "id": "G-RDG-03",
+  "type": "reading",
+  "title": "L'esperto universale",
+  "subtitle": "An ironic opinion column: work out what the author really thinks.",
+  "conceptIds": [
+    "C1-READ-02"
+  ],
+  "difficulty": 4,
+  "minutes": 12,
+  "passage": {
+    "title": "Elogio dell'esperto universale",
+    "source": "invented",
+    "it": "Bisogna riconoscerlo: viviamo in un'epoca fortunata. Un tempo, per diventare esperti di virologia, occorrevano anni di studio, notti in laboratorio e un certo numero di esami fastidiosi. Oggi bastano un pomeriggio libero e una connessione stabile. Non serve nemmeno leggere un libro intero: basta il titolo, e a volte nemmeno quello. Il mio vicino di casa, per esempio, a gennaio era un'autorità in materia di vaccini; a marzo si era già specializzato in politica estera; da qualche settimana si occupa di intelligenza artificiale, con la stessa sicurezza e, va detto, con la stessa preparazione.\nSarebbe ingeneroso prendersela con lui. In fondo, fa quello che gli chiediamo tutti: ha un'opinione su tutto, la esprime subito e non cambia mai idea. Le piattaforme premiano chi parla per primo, non chi parla con cognizione di causa, e un dubbio, si sa, non ottiene mai tanti «mi piace» quanto una certezza urlata. Chi risponde «non lo so, dovrei informarmi» viene considerato, nella migliore delle ipotesi, un tipo noioso; nella peggiore, un complice dei poteri forti.\nGli esperti veri, intanto, hanno imparato a stare zitti. Alcuni per prudenza, altri per stanchezza, altri ancora perché hanno scoperto che spiegare un problema complesso in trenta secondi è un mestiere diverso dal loro, e non necessariamente più nobile. Qualcuno, a dire il vero, ci prova ancora: va in televisione, premette che la questione è complessa, chiede un minuto in più e viene interrotto dopo venti secondi da un ospite che di minuti non ha bisogno. Il risultato è un dibattito pubblico vivacissimo, in cui tutti parlano e quasi nessuno sa di che cosa.\nQualcuno propone di insegnare a scuola a riconoscere le fonti affidabili. Idea interessante, ma rischiosa: se i ragazzi imparassero davvero a distinguere un'opinione da un dato, chi leggerebbe più i commenti del mio vicino? E soprattutto: che fine farebbe la nostra splendida epoca di esperti universali? Meglio non pensarci. Io, nel frattempo, mi sto preparando: da lunedì mi occupo di astrofisica. Ho già visto due video."
+  },
+  "questions": [
+    {
+      "id": "G-RDG-03.q1",
+      "type": "choice",
+      "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What is the author's overall attitude?",
+      "options": [
+        "Ironic and critical of instant online 'experts' and of the platforms that reward them.",
+        "Admiring: anyone can now become an expert quickly.",
+        "Neutral: the author simply describes how social media works.",
+        "Hostile to real experts, who no longer speak in public."
+      ],
+      "answer": 0,
+      "explanation": "The praise (*epoca fortunata, splendida epoca*) is constantly contradicted by the facts: a neighbour who changes specialism every few months with no preparation.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-03.q2",
+      "type": "choice",
+      "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«viviamo in un'epoca fortunata»*: how should this opening be read?",
+      "options": [
+        "As antiphrasis: the author means the situation is worrying.",
+        "Literally: the author is grateful for modern technology.",
+        "As a quotation from the neighbour.",
+        "As a statement about the economy."
+      ],
+      "answer": 0,
+      "explanation": "The rest of the column shows what this 'luck' consists of: expertise without study. Saying the opposite of what you mean is antiphrasis.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-03.q3",
+      "type": "choice",
+      "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«con la stessa sicurezza e, va detto, con la stessa preparazione»*. What is implied about the neighbour?",
+      "options": [
+        "He is equally confident, and equally unprepared, on every topic.",
+        "He is well prepared on every topic.",
+        "He studies each subject carefully before speaking.",
+        "He has become less confident over time."
+      ],
+      "answer": 0,
+      "explanation": "*Va detto* (it must be said) sets up the sting: his preparation is the same, i.e. non-existent, whatever the subject.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-03.q4",
+      "type": "choice",
+      "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why does the author say *«Sarebbe ingeneroso prendersela con lui»*?",
+      "options": [
+        "The neighbour only behaves the way platforms and audiences reward.",
+        "The neighbour is a kind person who means well.",
+        "The neighbour is actually right about most things.",
+        "The author doesn't want to offend a neighbour."
+      ],
+      "answer": 0,
+      "explanation": "*In fondo, fa quello che gli chiediamo tutti*: the criticism shifts from the individual to the system that rewards *una certezza urlata*.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-03.q5",
+      "type": "choice",
+      "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«chi parla con cognizione di causa»* refers to someone who…",
+      "options": [
+        "knows what they are talking about",
+        "speaks about the causes of a problem",
+        "speaks in court",
+        "speaks cautiously"
+      ],
+      "answer": 0,
+      "explanation": "*Con cognizione di causa* = with full knowledge of the facts.",
+      "errorType": "idiom"
+    },
+    {
+      "id": "G-RDG-03.q6",
+      "type": "choice",
+      "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why have real experts gone quiet, according to the author?",
+      "options": [
+        "Out of caution or tiredness, or because explaining complex issues in thirty seconds is a different job.",
+        "Because they've been banned from the platforms.",
+        "Because they're paid to stay silent.",
+        "Because they agree with the online 'experts'."
+      ],
+      "answer": 0,
+      "explanation": "*Alcuni per prudenza, altri per stanchezza, altri ancora perché… spiegare un problema complesso in trenta secondi è un mestiere diverso dal loro.*",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-03.q7",
+      "type": "choice",
+      "difficulty": 5,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«Idea interessante, ma rischiosa: se i ragazzi imparassero davvero a distinguere un'opinione da un dato, chi leggerebbe più i commenti del mio vicino?»* What does the author really think of the proposal?",
+      "options": [
+        "He supports it: the 'risk' is ironic, since its effect would be exactly what's needed.",
+        "He opposes it because it's too risky for students.",
+        "He thinks it's interesting but impossible to put into practice.",
+        "He thinks schools already teach this well."
+      ],
+      "answer": 0,
+      "explanation": "The 'danger' is that nobody would read the neighbour any more, which is the desirable outcome. Presenting a benefit as a risk is irony.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-03.q8",
+      "type": "choice",
+      "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«da lunedì mi occupo di astrofisica. Ho già visto due video.»* What is the effect of this ending?",
+      "options": [
+        "Self-irony: it mocks how easily people now claim expertise from superficial sources.",
+        "The author announces a genuine career change.",
+        "The author recommends two good videos on astrophysics.",
+        "The author admits he is an expert in astrophysics."
+      ],
+      "answer": 0,
+      "explanation": "The author pretends to join the 'experts', reducing the whole phenomenon to absurdity with a deadpan final line.",
+      "errorType": "comprehension"
+    }
+  ]
+}

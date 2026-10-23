@@ -84,3 +84,18 @@ test("writing checklist", () => {
   assert.equal(r.checks[0].ok, true);
   assert.equal(r.lengthOk, true);
 });
+
+test("rubric word boundaries work with accented Italian words", async () => {
+  const { rubricRegex } = await import("../js/core/evaluate.js");
+  assert.ok(rubricRegex("\\bperché\\b").test("Non so perché lo dici."));
+  assert.ok(!rubricRegex("\\bperché\\b").test("perchéx"));
+  assert.ok(rubricRegex("\\bè vero che\\b").test("È vero che piove"));
+  assert.ok(rubricRegex("\\bsia\\b").test("che sia"));
+  assert.ok(!rubricRegex("\\bsia\\b").test("siamo"));
+});
+
+test("rubric min counts occurrences", () => {
+  const task = { minWords: 1, rubric: [{ label: "3 conditionals", anyOf: ["\\b\\w+(rei|rebbe)\\b"], min: 3 }] };
+  assert.equal(checkWriting(task, "Andrei, farei e sarebbe bello.").checks[0].ok, true);
+  assert.equal(checkWriting(task, "Andrei e farei.").checks[0].ok, false);
+});

@@ -9,7 +9,7 @@ export function pickProbe(pool, target, rand = Math.random) {
   return c[Math.floor(rand() * c.length)];
 }
 
-export function createDiagnostic(content, { rand = Math.random, perStrandB2 = 2, perStrandC1 = 2 } = {}) {
+export function createDiagnostic(content, { rand = Math.random, perStrandB2 = 2, perStrandC1 = 1 } = {}) {
   const strands = (content.curriculum ? content.curriculum.strands : content.units.map(u => ({ id: u.id, concepts: u.conceptIds.map(id => ({ id, cefr: content.concepts.get(id).cefr })) })))
     .map(s => ({ id: s.id, title: s.title, b2: shuffle(s.concepts.filter(c => c.cefr === "B2" && content.concepts.has(c.id)), rand), c1: shuffle(s.concepts.filter(c => c.cefr === "C1" && content.concepts.has(c.id)), rand) }))
     .filter(s => s.b2.length || s.c1.length);

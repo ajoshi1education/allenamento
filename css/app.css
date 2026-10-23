@@ -85,7 +85,7 @@ main { outline: none; }
 .back:hover { color: var(--brand); }
 
 @media (max-width: 820px) {
-  .topbar { padding: .5rem .9rem; }
+  .topbar { padding: .5rem .9rem; backdrop-filter: none; background: var(--bg); }   /* a backdrop-filter would trap the fixed tab bar inside the header */
   .tabs { position: fixed; bottom: 0; left: 0; right: 0; justify-content: space-around; margin: 0; padding: .35rem .3rem calc(.35rem + env(safe-area-inset-bottom));
     background: var(--surface); border-top: 1px solid var(--line); z-index: 30; }
   .tabs a { flex-direction: column; gap: 0; padding: .3rem .4rem; font-size: .68rem; }
@@ -329,3 +329,6 @@ blockquote { margin: .3rem 0 1rem; padding: .8rem 1.1rem; border-radius: 4px 14p
 .ach-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: .6rem; }
 .ach { display: flex; gap: .6rem; align-items: flex-start; padding: .6rem .7rem; border-radius: 10px; background: var(--surface-2); opacity: .6; }
 .ach.done { opacity: 1; background: var(--warn-soft); } .ach-icon { font-size: 1.3rem; color: var(--gold); }
+
+.sync-form { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: .5rem; margin-top: .5rem; }
+@media (max-width: 700px) { .sync-form { grid-template-columns: 1fr; } }

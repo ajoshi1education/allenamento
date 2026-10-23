@@ -1,0 +1,18 @@
+{
+  "id": "G-GNT-03",
+  "type": "gauntlet",
+  "title": "Sfida a tempo: condizionale e periodo ipotetico",
+  "subtitle": "Ifs, woulds and should-haves against the clock. One \"se avrei\" and you lose a life.",
+  "conceptIds": [
+    "B2-COND-01",
+    "B2-COND-02",
+    "B2-HYP-01",
+    "B2-HYP-02",
+    "C1-HYP-03",
+    "C1-HYP-04"
+  ],
+  "difficulty": 3,
+  "minutes": 3,
+  "seconds": 150,
+  "lives": 3
+}

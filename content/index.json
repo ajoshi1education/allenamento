@@ -2,26 +2,50 @@
   "curriculum": "curriculum.json",
   "units": [
     "units/r01-registro.json",
+    "units/s01-comprensione-scrittura.json",
     "units/s02-parlato.json",
     "units/u01-congiuntivo.json",
     "units/u02-concordanza.json",
+    "units/u03-ipotetico.json",
     "units/u04-passato-futuro.json",
     "units/u05-pronomi.json",
     "units/u06-preposizioni.json",
     "units/u07-passivo-si.json",
-    "units/u09-connettivi-sintassi.json"
+    "units/u08-forme-implicite.json",
+    "units/u09-connettivi-sintassi.json",
+    "units/v01-lessico.json"
   ],
   "games": [
+    "games/bld-u08.json",
     "games/dbt-01-smartworking.json",
+    "games/dbt-02-turismo.json",
+    "games/dbt-03-riassunto.json",
     "games/det-01-quadro.json",
     "games/det-02-testamento.json",
+    "games/det-03-alibi.json",
     "games/det-04-biblioteca.json",
+    "games/dlg-01-pettegolezzi.json",
     "games/dlg-02-trasloco.json",
+    "games/dlg-03-colloquio.json",
+    "games/dlg-04-reclamo.json",
+    "games/dlg-05-cena.json",
     "games/duel-u06.json",
+    "games/duel-v01.json",
     "games/gnt-u01.json",
+    "games/gnt-u02.json",
+    "games/gnt-u03.json",
+    "games/gnt-u04.json",
     "games/gnt-u05.json",
     "games/gnt-u07.json",
-    "games/gnt-u09.json"
+    "games/gnt-u09.json",
+    "games/gnt-v01.json",
+    "games/lst-01-dialogo.json",
+    "games/lst-02-podcast.json",
+    "games/rdg-01-leggenda.json",
+    "games/rdg-02-notizia.json",
+    "games/rdg-03-opinione.json"
   ],
-  "vocab": []
+  "vocab": [
+    "vocab/core.json"
+  ]
 }

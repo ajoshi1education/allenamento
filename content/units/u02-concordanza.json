@@ -24,39 +24,100 @@
             "title": "Future in the past = condizionale passato",
             "text": "After a past main verb (*ha detto, disse, diceva, aveva detto, pensavo, sapevo, ero sicuro, mi aveva promesso…*), a later action uses *avrebbe / sarebbe* + past participle. It doesn't matter whether the action then happened or not, or even whether it is still in the future today.",
             "examples": [
-              { "it": "Marco ha detto che **sarebbe venuto** alle otto.", "en": "Marco said he would come at eight." },
-              { "it": "Sapevo che **avresti capito**.", "en": "I knew you would understand." },
-              { "it": "Mi avevano promesso che mi **avrebbero richiamato**, ma non l'hanno fatto.", "en": "They'd promised they would call me back, but they didn't." }
+              {
+                "it": "Marco ha detto che **sarebbe venuto** alle otto.",
+                "en": "Marco said he would come at eight."
+              },
+              {
+                "it": "Sapevo che **avresti capito**.",
+                "en": "I knew you would understand."
+              },
+              {
+                "it": "Mi avevano promesso che mi **avrebbero richiamato**, ma non l'hanno fatto.",
+                "en": "They'd promised they would call me back, but they didn't."
+              }
             ]
           },
           {
             "title": "The full picture: before, same time, after",
             "text": "With a **present** main verb, Italian uses the normal tenses. With a **past** main verb, everything moves one step back: simultaneity → *imperfetto*, anteriority → *trapassato prossimo*, posteriority → *condizionale passato*.",
             "table": {
-              "head": ["Main verb", "Before (anteriority)", "Same time (simultaneity)", "After (posteriority)"],
+              "head": [
+                "Main verb",
+                "Before (anteriority)",
+                "Same time (simultaneity)",
+                "After (posteriority)"
+              ],
               "rows": [
-                ["Present: *Dice che…*", "è partito", "parte", "partirà"],
-                ["Past: *Ha detto / Diceva / Disse che…*", "era partito", "partiva", "**sarebbe partito**"]
+                [
+                  "Present: *Dice che…*",
+                  "è partito",
+                  "parte",
+                  "partirà"
+                ],
+                [
+                  "Past: *Ha detto / Diceva / Disse che…*",
+                  "era partito",
+                  "partiva",
+                  "**sarebbe partito**"
+                ]
               ]
             },
             "examples": [
-              { "it": "Ha detto che **era** stanca.", "en": "She said she was tired (at that moment)." },
-              { "it": "Ha detto che **era già partita**.", "en": "She said she had already left." },
-              { "it": "Ha detto che **sarebbe partita** il giorno dopo.", "en": "She said she would leave the next day." }
+              {
+                "it": "Ha detto che **era** stanca.",
+                "en": "She said she was tired (at that moment)."
+              },
+              {
+                "it": "Ha detto che **era già partita**.",
+                "en": "She said she had already left."
+              },
+              {
+                "it": "Ha detto che **sarebbe partita** il giorno dopo.",
+                "en": "She said she would leave the next day."
+              }
             ]
           },
           {
             "title": "Forming the condizionale passato",
             "text": "Condizionale presente of *avere* or *essere* + past participle. Verbs that take *essere* (andare, venire, partire, tornare, diventare, reflexives…) agree with the subject: *Le ragazze hanno detto che sarebbero **tornate** presto.*",
             "table": {
-              "head": ["", "avere + participle", "essere + participle"],
+              "head": [
+                "",
+                "avere + participle",
+                "essere + participle"
+              ],
               "rows": [
-                ["io", "avrei capito", "sarei venuto/a"],
-                ["tu", "avresti capito", "saresti venuto/a"],
-                ["lui / lei", "avrebbe capito", "sarebbe venuto/a"],
-                ["noi", "avremmo capito", "saremmo venuti/e"],
-                ["voi", "avreste capito", "sareste venuti/e"],
-                ["loro", "avrebbero capito", "sarebbero venuti/e"]
+                [
+                  "io",
+                  "avrei capito",
+                  "sarei venuto/a"
+                ],
+                [
+                  "tu",
+                  "avresti capito",
+                  "saresti venuto/a"
+                ],
+                [
+                  "lui / lei",
+                  "avrebbe capito",
+                  "sarebbe venuto/a"
+                ],
+                [
+                  "noi",
+                  "avremmo capito",
+                  "saremmo venuti/e"
+                ],
+                [
+                  "voi",
+                  "avreste capito",
+                  "sareste venuti/e"
+                ],
+                [
+                  "loro",
+                  "avrebbero capito",
+                  "sarebbero venuti/e"
+                ]
               ]
             }
           },
@@ -64,17 +125,43 @@
             "title": "What you'll hear in conversation",
             "text": "In everyday speech Italians often use the **imperfetto** for the future in the past: *Ha detto che veniva*. It's fine in conversation, but in writing and careful speech use the condizionale passato. If the event is still ahead of us now, the **futuro** is also heard (*Mi ha detto ieri che verrà domani*). The condizionale passato is always correct.",
             "examples": [
-              { "it": "Ha detto che veniva. (colloquial)", "en": "He said he was coming." },
-              { "it": "Ha detto che sarebbe venuto. (standard)", "en": "He said he would come." }
+              {
+                "it": "Ha detto che veniva. (colloquial)",
+                "en": "He said he was coming."
+              },
+              {
+                "it": "Ha detto che sarebbe venuto. (standard)",
+                "en": "He said he would come."
+              }
             ]
           }
         ],
         "mistakes": [
-          { "wrong": "Ha detto che verrebbe.", "right": "Ha detto che sarebbe venuto.", "why": "English 'would come' is a future in the past here, not a condition. *Verrebbe* means 'he would come (if…)'." },
-          { "wrong": "Sapevo che avrai ragione.", "right": "Sapevo che avresti avuto ragione.", "why": "After a past main verb the future becomes condizionale passato." },
-          { "wrong": "Pensavo che il film finirebbe presto.", "right": "Pensavo che il film sarebbe finito presto.", "why": "Same calque: 'would end' seen from the past → *sarebbe finito*." },
-          { "wrong": "Le ragazze hanno detto che sarebbero venuti.", "right": "Le ragazze hanno detto che sarebbero venute.", "why": "With *essere* the participle agrees with the subject: feminine plural → *venute*." },
-          { "wrong": "Ha detto che sarebbe stata stanca.", "right": "Ha detto che era stanca.", "why": "If the state was at the same time as the speaking, use the imperfetto, not the condizionale passato." }
+          {
+            "wrong": "Ha detto che verrebbe.",
+            "right": "Ha detto che sarebbe venuto.",
+            "why": "English 'would come' is a future in the past here, not a condition. *Verrebbe* means 'he would come (if…)'."
+          },
+          {
+            "wrong": "Sapevo che avrai ragione.",
+            "right": "Sapevo che avresti avuto ragione.",
+            "why": "After a past main verb the future becomes condizionale passato."
+          },
+          {
+            "wrong": "Pensavo che il film finirebbe presto.",
+            "right": "Pensavo che il film sarebbe finito presto.",
+            "why": "Same calque: 'would end' seen from the past → *sarebbe finito*."
+          },
+          {
+            "wrong": "Le ragazze hanno detto che sarebbero venuti.",
+            "right": "Le ragazze hanno detto che sarebbero venute.",
+            "why": "With *essere* the participle agrees with the subject: feminine plural → *venute*."
+          },
+          {
+            "wrong": "Ha detto che sarebbe stata stanca.",
+            "right": "Ha detto che era stanca.",
+            "why": "If the state was at the same time as the speaking, use the imperfetto, not the condizionale passato."
+          }
         ],
         "tips": [
           "Alarm bell: past main verb + English 'would' = *avrebbe / sarebbe* + participle.",
@@ -83,29 +170,649 @@
         ]
       },
       "exercises": [
-        { "id": "B2-SEQ-01.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Marco ha detto che ___ (venire) alla festa, ma poi non si è fatto vedere.", "answers": ["sarebbe venuto"], "focus": ["sarebbe", "venuto"], "errorType": "tense-sequence", "traps": [{ "match": "verrebbe", "errorType": "tense-sequence", "why": "'Would come' after a past main verb is a future in the past: condizionale **passato**, *sarebbe venuto*. *Verrebbe* means 'would come (if…)'." }, { "match": "verrà", "errorType": "tense-sequence", "why": "The main verb is past (*ha detto*) and the party is over: the future becomes *sarebbe venuto*." }, { "match": "veniva", "ok": true, "why": "Very common in conversation. In writing and careful speech use the condizionale passato: *sarebbe venuto*." }, { "match": "avrebbe venuto", "errorType": "auxiliary", "why": "*Venire* takes *essere*: *sarebbe venuto*." }], "explanation": "Past main verb + later action → condizionale passato: **sarebbe venuto**.", "en": "Marco said he'd come to the party, but then he didn't show up." },
-        { "id": "B2-SEQ-01.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Mi avevi promesso che mi ___ (chiamare) appena arrivato.", "answers": ["avresti chiamato", "avresti chiamata"], "focus": ["avresti"], "errorType": "tense-sequence", "traps": [{ "match": "chiameresti", "errorType": "tense-sequence", "why": "English 'you would call' → after a past main verb Italian needs *avresti chiamato*." }, { "match": "chiamerai", "errorType": "tense-sequence", "why": "The promise is in the past (*avevi promesso*), so the future becomes condizionale passato." }, { "match": "chiamavi", "ok": true, "why": "Colloquial. The standard form is *avresti chiamato*." }], "explanation": "Promise in the past → future in the past → **avresti chiamato**.", "en": "You had promised you'd call me as soon as you arrived." },
-        { "id": "B2-SEQ-01.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Le previsioni dicevano che ___ (piovere) tutto il weekend, e invece c'era il sole.", "answers": ["(sarebbe|avrebbe) piovuto"], "focus": ["piovuto"], "errorType": "tense-sequence", "traps": [{ "match": "pioverebbe", "errorType": "tense-sequence", "why": "Seen from the past (*dicevano*), a later event takes the condizionale **passato**: *sarebbe (avrebbe) piovuto*." }, { "match": "pioverà", "errorType": "tense-sequence", "why": "The weekend is over: from a past viewpoint use *sarebbe piovuto*." }, { "match": "pioveva", "errorType": "tense-sequence", "why": "In speech you may hear this, but here it's ambiguous: it sounds like 'it was raining (at that moment)'. Use *sarebbe piovuto*." }], "explanation": "Future in the past → condizionale passato. Weather verbs accept both auxiliaries: **sarebbe / avrebbe piovuto**.", "en": "The forecast said it would rain all weekend, but it was sunny." },
-        { "id": "B2-SEQ-01.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Ero sicura che i ragazzi ___ (capire) subito.", "answers": ["avrebbero capito"], "focus": ["avrebbero", "capito"], "errorType": "tense-sequence", "traps": [{ "match": "capirebbero", "errorType": "tense-sequence", "why": "The English 'would understand' tempts you to use the present conditional. After *ero sicura*, the later event is *avrebbero capito*." }, { "match": "capiranno", "errorType": "tense-sequence", "why": "Past main verb → future becomes condizionale passato." }, { "match": "capissero", "errorType": "wrong-mood", "why": "*Essere sicuro* expresses certainty, so no subjunctive. For a later action: *avrebbero capito*." }], "explanation": "*Ero sicura che* (certainty, past) + later action → **avrebbero capito**.", "en": "I was sure the boys would understand straight away." },
-        { "id": "B2-SEQ-01.e05", "type": "choice", "difficulty": 2, "instruction": "Choose the correct form.", "prompt": "Nel 2015 Lucia mi scrisse che ___ a Roma l'anno seguente.", "options": ["si trasferirebbe", "si sarebbe trasferita", "si trasferirà", "si è trasferita"], "answer": 1, "optionWhy": { "0": "Calque of 'she would move'. Future in the past = condizionale **passato**.", "2": "The main verb is past (*scrisse*): the future must shift to *si sarebbe trasferita*.", "3": "Passato prossimo describes something before the writing, but she moved *the following year*." }, "errorType": "tense-sequence", "explanation": "*Scrisse* (past) + 'the following year' (later) → **si sarebbe trasferita**.", "en": "In 2015 Lucia wrote to me that she would move to Rome the following year." },
-        { "id": "B2-SEQ-01.e06", "type": "choice", "difficulty": 2, "instruction": "Choose the correct form. Watch the tense of the main verb.", "prompt": "Luca dice sempre che domani ___ in palestra, ma non ci va mai.", "options": ["sarebbe andato", "andrà", "andrebbe", "andasse"], "answer": 1, "optionWhy": { "0": "The main verb is **present** (*dice*), so no shift: a future stays a future, *andrà*.", "2": "*Andrebbe* is a conditional ('would go if…'). With *dice* + *domani* you need the future.", "3": "*Dire che* reporting a statement takes the indicative, not the subjunctive." }, "errorType": "tense-sequence", "explanation": "Contrast item: with a present main verb, no shift. Future → **andrà**.", "en": "Luca always says he'll go to the gym tomorrow, but he never goes." },
-        { "id": "B2-SEQ-01.e07", "type": "cloze", "difficulty": 3, "instruction": "Before, same time or after? Complete with the correct form.", "prompt": "Quando l'ho chiamata, Anna mi ha detto che ___ (essere) troppo stanca per uscire.", "answers": ["era"], "focus": ["era"], "errorType": "tense-sequence", "traps": [{ "match": "sarebbe stata", "errorType": "tense-sequence", "why": "She was tired **at the time** she spoke (simultaneity): imperfetto *era*, not condizionale passato." }, { "match": "sarebbe", "errorType": "tense-sequence", "why": "Simultaneous state in the past → imperfetto *era*." }, { "match": "fosse", "errorType": "subjunctive-for-indicative", "why": "*Dire che* reporting a statement takes the indicative: *era*." }], "explanation": "Simultaneity with a past main verb → **imperfetto**: *era*.", "en": "When I called her, Anna told me she was too tired to go out." },
-        { "id": "B2-SEQ-01.e08", "type": "cloze", "difficulty": 3, "instruction": "Before, same time or after? Complete with the correct form.", "prompt": "Il tecnico ci disse che qualcuno ___ (manomettere) il contatore prima del suo arrivo.", "answers": ["aveva manomesso"], "focus": ["aveva", "manomesso"], "errorType": "tense-sequence", "traps": [{ "match": "avrebbe manomesso", "errorType": "tense-sequence", "why": "*Prima del suo arrivo* = **before**: anteriority in the past → trapassato *aveva manomesso*." }, { "match": "ha manomesso", "errorType": "tense-sequence", "why": "With a past main verb (*disse*), an earlier action goes into the trapassato: *aveva manomesso*." }], "explanation": "Anteriority with a past main verb → **trapassato prossimo**: *aveva manomesso*.", "en": "The technician told us that someone had tampered with the meter before he arrived." },
-        { "id": "B2-SEQ-01.e09", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian.", "prompt": "She told me she would call me later.", "answers": ["[Lei] mi (ha detto|disse) che mi avrebbe (chiamato|chiamata|richiamato|richiamata|telefonato) (più tardi|dopo)"], "focus": ["avrebbe"], "errorType": "tense-sequence", "traps": [{ "contains": ["chiamerebbe", "richiamerebbe", "telefonerebbe"], "errorType": "tense-sequence", "why": "'Would call' after a past main verb = future in the past → *avrebbe chiamato*." }, { "contains": ["chiamerà", "richiamerà", "telefonerà"], "errorType": "tense-sequence", "why": "Past main verb (*mi ha detto*): the future shifts to *avrebbe chiamato*." }], "explanation": "*Mi ha detto* (past) + later action → **mi avrebbe chiamato**.", "en": "She told me she would call me later." },
-        { "id": "B2-SEQ-01.e10", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian (informal 'you').", "prompt": "I knew you would understand.", "answers": ["[Lo] sapevo che [tu] avresti capito"], "focus": ["avresti"], "errorType": "tense-sequence", "traps": [{ "contains": ["capiresti"], "errorType": "tense-sequence", "why": "The classic calque. 'Would understand' seen from the past → *avresti capito*." }, { "contains": ["capirai"], "errorType": "tense-sequence", "why": "*Sapevo* is past, so the future becomes *avresti capito*." }, { "contains": ["capivi"], "errorType": "tense-sequence", "why": "*Sapevo che capivi* means 'I knew you understood' (same time). For 'would understand' use *avresti capito*." }, { "contains": ["capissi"], "errorType": "wrong-mood", "why": "*Sapere* states a certainty: no subjunctive. Use *avresti capito*." }], "explanation": "*Sapevo* + later action → **avresti capito**.", "en": "I knew you would understand." },
-        { "id": "B2-SEQ-01.e11", "type": "transform", "difficulty": 3, "instruction": "Report it in the past, starting with 'Ha detto che…'.", "prompt": "Dice che arriverà alle otto.", "answers": ["Ha detto che sarebbe (arrivato|arrivata) alle otto"], "focus": ["sarebbe"], "errorType": "tense-sequence", "traps": [{ "contains": ["arriverebbe"], "errorType": "tense-sequence", "why": "Future → condizionale **passato** after *ha detto*: *sarebbe arrivato*." }, { "contains": ["arriverà"], "errorType": "tense-sequence", "why": "The main verb is now past, so the future must shift: *sarebbe arrivato*." }, { "contains": ["avrebbe"], "errorType": "auxiliary", "why": "*Arrivare* takes *essere*: *sarebbe arrivato/a*." }], "explanation": "*Dice che arriverà* → *Ha detto che **sarebbe arrivato***.", "en": "He said he would arrive at eight." },
-        { "id": "B2-SEQ-01.e12", "type": "transform", "difficulty": 4, "instruction": "Rewrite starting with 'Eravamo convinti che…'.", "prompt": "Il concerto finirà tardi.", "answers": ["Eravamo convinti che il concerto sarebbe finito tardi"], "focus": ["sarebbe", "finito"], "errorType": "tense-sequence", "traps": [{ "contains": ["finirebbe"], "errorType": "tense-sequence", "why": "'Would end' from a past viewpoint → *sarebbe finito*." }, { "contains": ["finirà"], "errorType": "tense-sequence", "why": "Past main verb → the future becomes condizionale passato." }, { "contains": ["avrebbe"], "errorType": "auxiliary", "why": "Intransitive *finire* (the concert ends) takes *essere*: *sarebbe finito*." }, { "match": "Eravamo convinti che il concerto finisse tardi", "ok": true, "why": "Also heard: the congiuntivo imperfetto can carry a future meaning after opinion verbs. The condizionale passato *sarebbe finito* is the clearest choice for 'would end'." }], "explanation": "Past opinion verb + later event → **sarebbe finito**.", "en": "We were convinced the concert would end late." },
-        { "id": "B2-SEQ-01.e13", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "They assured us the parcel would arrive on Monday.", "tokens": ["Ci", "hanno", "assicurato", "che", "il", "pacco", "sarebbe", "arrivato", "lunedì"], "answers": ["Ci hanno assicurato che il pacco sarebbe arrivato lunedì", "Ci hanno assicurato che lunedì il pacco sarebbe arrivato"], "errorType": "word-order", "explanation": "*Ci hanno assicurato* (past) + later action → *sarebbe arrivato*. The object pronoun *ci* comes before the auxiliary." },
-        { "id": "B2-SEQ-01.e14", "type": "choice", "difficulty": 3, "instruction": "Choose the correct form.", "prompt": "Giorgio pensava che noi ___ in ritardo, e invece siamo arrivati puntualissimi.", "options": ["arriveremmo", "saremmo arrivati", "arriveremo", "siamo arrivati"], "answer": 1, "optionWhy": { "0": "Calque of 'we would arrive'. From a past viewpoint use the condizionale passato.", "2": "*Pensava* is past: the future shifts to *saremmo arrivati*.", "3": "Indicative passato prossimo states a fact, and the arrival was *after* his thought." }, "errorType": "tense-sequence", "explanation": "Past opinion + later event → **saremmo arrivati**.", "en": "Giorgio thought we'd be late, but we arrived bang on time." },
-        { "id": "B2-SEQ-01.e15", "type": "cloze", "difficulty": 4, "instruction": "Complete with the correct form. Watch the agreement.", "prompt": "Le ragazze avevano detto che ___ (tornare) prima di mezzanotte.", "answers": ["sarebbero tornate"], "focus": ["sarebbero", "tornate"], "errorType": "tense-sequence", "traps": [{ "match": "sarebbero tornati", "errorType": "agreement", "why": "With *essere*, the participle agrees with *le ragazze*: *tornate*." }, { "match": "tornerebbero", "errorType": "tense-sequence", "why": "'Would come back' from a past viewpoint → *sarebbero tornate*." }, { "match": "avrebbero tornato", "errorType": "auxiliary", "why": "*Tornare* takes *essere*." }], "explanation": "Future in the past, essere-verb, feminine plural → **sarebbero tornate**.", "en": "The girls had said they would be back before midnight." },
-        { "id": "B2-SEQ-01.e16", "type": "cloze", "difficulty": 4, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Le mie sorelle mi avevano giurato che non ___ (dire) niente a nessuno.", "answers": ["avrebbero detto"], "focus": ["avrebbero", "detto"], "errorType": "tense-sequence", "traps": [{ "match": "direbbero", "errorType": "tense-sequence", "why": "A sworn promise in the past about later behaviour → *avrebbero detto*." }, { "match": "diranno", "errorType": "tense-sequence", "why": "*Avevano giurato* is past: the future becomes condizionale passato." }, { "match": "sarebbero dette", "errorType": "auxiliary", "why": "Transitive *dire* takes *avere*: *avrebbero detto*." }], "explanation": "Promise in the past → **avrebbero detto**.", "en": "My sisters had sworn they wouldn't say anything to anyone." },
-        { "id": "B2-SEQ-01.e17", "type": "cloze", "difficulty": 5, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Nel 1990 nessuno immaginava che quel ragazzino un giorno ___ (diventare) presidente.", "answers": ["sarebbe diventato"], "focus": ["sarebbe", "diventato"], "errorType": "tense-sequence", "traps": [{ "match": "diventerebbe", "errorType": "tense-sequence", "why": "'Would become' seen from 1990 → condizionale passato *sarebbe diventato*." }, { "match": "diventerà", "errorType": "tense-sequence", "why": "The main verb is past: *sarebbe diventato*." }, { "match": "diventasse", "ok": true, "why": "Also possible after a negated *immaginare*, but *sarebbe diventato* makes the 'later' meaning explicit and is the preferred form." }, { "match": "avrebbe diventato", "errorType": "auxiliary", "why": "*Diventare* takes *essere*." }], "explanation": "'Would one day become' from a past viewpoint → **sarebbe diventato**.", "en": "In 1990 nobody imagined that little boy would one day become president." },
-        { "id": "B2-SEQ-01.e18", "type": "speak", "difficulty": 4, "interaction": true, "instruction": "Say it in Italian.", "prompt": "A friend asks why you look surprised that Paolo isn't here. Say: \"He told me he would come at nine.\"", "answers": ["[Mi] (ha detto|aveva detto) che sarebbe (venuto|arrivato|passato) alle nove"], "focus": ["sarebbe"], "errorType": "tense-sequence", "traps": [{ "contains": ["verrebbe", "arriverebbe", "passerebbe"], "errorType": "tense-sequence", "why": "'Would come' after *mi ha detto* → *sarebbe venuto*." }, { "contains": ["verrà", "arriverà", "passerà"], "errorType": "tense-sequence", "why": "Nine o'clock has passed and the main verb is past: *sarebbe venuto*." }], "explanation": "*Mi ha detto che **sarebbe venuto** alle nove.*", "en": "He told me he would come at nine." },
-        { "id": "B2-SEQ-01.e19", "type": "free", "difficulty": 5, "instruction": "Write 40–80 words in Italian.", "prompt": "Tell the story of a promise someone made to you that they didn't keep. What did they say they would do? What did you think would happen?", "minWords": 40, "maxWords": 80, "errorType": "writing", "rubric": [
-          { "label": "Uses the condizionale passato for a future in the past", "anyOf": ["\\b(avrei|avresti|avrebbe|avremmo|avreste|avrebbero|sarei|saresti|sarebbe|saremmo|sareste|sarebbero)\\s+\\w+"], "min": 2, "errorType": "tense-sequence", "hint": "Use *avrebbe / sarebbe* + participle: *mi aveva detto che sarebbe venuto*." },
-          { "label": "Uses a past reporting or thinking verb", "anyOf": ["\\b(ha detto|aveva detto|disse|ha promesso|aveva promesso|promise|ha giurato|aveva giurato|ha assicurato|aveva assicurato|pensavo|credevo|ero sicur[oa]|sapevo)\\b"], "min": 1, "errorType": "tense-sequence", "hint": "Start from a past verb: *mi aveva promesso che…*, *pensavo che…*" },
-          { "label": "Avoids the 'would' calque (present conditional after a past verb)", "anyOf": ["^(?![\\s\\S]*\\b(ha|aveva) detto che \\w+(rebbe|rebbero)\\b)"], "min": 1, "errorType": "tense-sequence", "hint": "After *ha detto che*, not *verrebbe* but *sarebbe venuto*." }
-        ], "model": "L'anno scorso il mio vicino mi aveva promesso che mi avrebbe aiutato a traslocare. Mi aveva detto che sarebbe venuto alle otto con il furgone di suo fratello. Io ero sicuro che sarebbe stato puntuale, e invece alle dieci non era ancora arrivato. Alla fine mi ha scritto che il furgone si era rotto. Ho dovuto fare tutto da solo!", "explanation": "Past reporting verb + later action → condizionale passato." }
+        {
+          "id": "B2-SEQ-01.e01",
+          "type": "cloze",
+          "difficulty": 1,
+          "instruction": "Complete with the correct form of the verb in brackets.",
+          "prompt": "Marco ha detto che ___ (venire) alla festa, ma poi non si è fatto vedere.",
+          "answers": [
+            "sarebbe venuto"
+          ],
+          "focus": [
+            "sarebbe",
+            "venuto"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "verrebbe",
+              "errorType": "tense-sequence",
+              "why": "'Would come' after a past main verb is a future in the past: condizionale **passato**, *sarebbe venuto*. *Verrebbe* means 'would come (if…)'."
+            },
+            {
+              "match": "verrà",
+              "errorType": "tense-sequence",
+              "why": "The main verb is past (*ha detto*) and the party is over: the future becomes *sarebbe venuto*."
+            },
+            {
+              "match": "veniva",
+              "ok": true,
+              "why": "Very common in conversation. In writing and careful speech use the condizionale passato: *sarebbe venuto*."
+            },
+            {
+              "match": "avrebbe venuto",
+              "errorType": "auxiliary",
+              "why": "*Venire* takes *essere*: *sarebbe venuto*."
+            }
+          ],
+          "explanation": "Past main verb + later action → condizionale passato: **sarebbe venuto**.",
+          "en": "Marco said he'd come to the party, but then he didn't show up."
+        },
+        {
+          "id": "B2-SEQ-01.e02",
+          "type": "cloze",
+          "difficulty": 1,
+          "instruction": "Complete with the correct form of the verb in brackets.",
+          "prompt": "Mi avevi promesso che mi ___ (chiamare) appena arrivato.",
+          "answers": [
+            "avresti chiamato",
+            "avresti chiamata"
+          ],
+          "focus": [
+            "avresti"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "chiameresti",
+              "errorType": "tense-sequence",
+              "why": "English 'you would call' → after a past main verb Italian needs *avresti chiamato*."
+            },
+            {
+              "match": "chiamerai",
+              "errorType": "tense-sequence",
+              "why": "The promise is in the past (*avevi promesso*), so the future becomes condizionale passato."
+            },
+            {
+              "match": "chiamavi",
+              "ok": true,
+              "why": "Colloquial. The standard form is *avresti chiamato*."
+            }
+          ],
+          "explanation": "Promise in the past → future in the past → **avresti chiamato**.",
+          "en": "You had promised you'd call me as soon as you arrived."
+        },
+        {
+          "id": "B2-SEQ-01.e03",
+          "type": "cloze",
+          "difficulty": 2,
+          "instruction": "Complete with the correct form of the verb in brackets.",
+          "prompt": "Le previsioni dicevano che ___ (piovere) tutto il weekend, e invece c'era il sole.",
+          "answers": [
+            "(sarebbe|avrebbe) piovuto"
+          ],
+          "focus": [
+            "piovuto"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "pioverebbe",
+              "errorType": "tense-sequence",
+              "why": "Seen from the past (*dicevano*), a later event takes the condizionale **passato**: *sarebbe (avrebbe) piovuto*."
+            },
+            {
+              "match": "pioverà",
+              "errorType": "tense-sequence",
+              "why": "The weekend is over: from a past viewpoint use *sarebbe piovuto*."
+            },
+            {
+              "match": "pioveva",
+              "errorType": "tense-sequence",
+              "why": "In speech you may hear this, but here it's ambiguous: it sounds like 'it was raining (at that moment)'. Use *sarebbe piovuto*."
+            }
+          ],
+          "explanation": "Future in the past → condizionale passato. Weather verbs accept both auxiliaries: **sarebbe / avrebbe piovuto**.",
+          "en": "The forecast said it would rain all weekend, but it was sunny."
+        },
+        {
+          "id": "B2-SEQ-01.e04",
+          "type": "cloze",
+          "difficulty": 2,
+          "instruction": "Complete with the correct form of the verb in brackets.",
+          "prompt": "Ero sicura che i ragazzi ___ (capire) subito.",
+          "answers": [
+            "avrebbero capito"
+          ],
+          "focus": [
+            "avrebbero",
+            "capito"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "capirebbero",
+              "errorType": "tense-sequence",
+              "why": "The English 'would understand' tempts you to use the present conditional. After *ero sicura*, the later event is *avrebbero capito*."
+            },
+            {
+              "match": "capiranno",
+              "errorType": "tense-sequence",
+              "why": "Past main verb → future becomes condizionale passato."
+            },
+            {
+              "match": "capissero",
+              "errorType": "wrong-mood",
+              "why": "*Essere sicuro* expresses certainty, so no subjunctive. For a later action: *avrebbero capito*."
+            }
+          ],
+          "explanation": "*Ero sicura che* (certainty, past) + later action → **avrebbero capito**.",
+          "en": "I was sure the boys would understand straight away."
+        },
+        {
+          "id": "B2-SEQ-01.e05",
+          "type": "choice",
+          "difficulty": 2,
+          "instruction": "Choose the correct form.",
+          "prompt": "Nel 2015 Lucia mi scrisse che ___ a Roma l'anno seguente.",
+          "options": [
+            "si trasferirebbe",
+            "si sarebbe trasferita",
+            "si trasferirà",
+            "si è trasferita"
+          ],
+          "answer": 1,
+          "optionWhy": {
+            "0": "Calque of 'she would move'. Future in the past = condizionale **passato**.",
+            "2": "The main verb is past (*scrisse*): the future must shift to *si sarebbe trasferita*.",
+            "3": "Passato prossimo describes something before the writing, but she moved *the following year*."
+          },
+          "errorType": "tense-sequence",
+          "explanation": "*Scrisse* (past) + 'the following year' (later) → **si sarebbe trasferita**.",
+          "en": "In 2015 Lucia wrote to me that she would move to Rome the following year."
+        },
+        {
+          "id": "B2-SEQ-01.e06",
+          "type": "choice",
+          "difficulty": 2,
+          "instruction": "Choose the correct form. Watch the tense of the main verb.",
+          "prompt": "Luca dice sempre che domani ___ in palestra, ma non ci va mai.",
+          "options": [
+            "sarebbe andato",
+            "andrà",
+            "andrebbe",
+            "andasse"
+          ],
+          "answer": 1,
+          "optionWhy": {
+            "0": "The main verb is **present** (*dice*), so no shift: a future stays a future, *andrà*.",
+            "2": "*Andrebbe* is a conditional ('would go if…'). With *dice* + *domani* you need the future.",
+            "3": "*Dire che* reporting a statement takes the indicative, not the subjunctive."
+          },
+          "errorType": "tense-sequence",
+          "explanation": "Contrast item: with a present main verb, no shift. Future → **andrà**.",
+          "en": "Luca always says he'll go to the gym tomorrow, but he never goes."
+        },
+        {
+          "id": "B2-SEQ-01.e07",
+          "type": "cloze",
+          "difficulty": 3,
+          "instruction": "Before, same time or after? Complete with the correct form.",
+          "prompt": "Quando l'ho chiamata, Anna mi ha detto che ___ (essere) troppo stanca per uscire.",
+          "answers": [
+            "era"
+          ],
+          "focus": [
+            "era"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "sarebbe stata",
+              "errorType": "tense-sequence",
+              "why": "She was tired **at the time** she spoke (simultaneity): imperfetto *era*, not condizionale passato."
+            },
+            {
+              "match": "sarebbe",
+              "errorType": "tense-sequence",
+              "why": "Simultaneous state in the past → imperfetto *era*."
+            },
+            {
+              "match": "fosse",
+              "errorType": "subjunctive-for-indicative",
+              "why": "*Dire che* reporting a statement takes the indicative: *era*."
+            }
+          ],
+          "explanation": "Simultaneity with a past main verb → **imperfetto**: *era*.",
+          "en": "When I called her, Anna told me she was too tired to go out."
+        },
+        {
+          "id": "B2-SEQ-01.e08",
+          "type": "cloze",
+          "difficulty": 3,
+          "instruction": "Before, same time or after? Complete with the correct form.",
+          "prompt": "Il tecnico ci disse che qualcuno ___ (manomettere) il contatore prima del suo arrivo.",
+          "answers": [
+            "aveva manomesso"
+          ],
+          "focus": [
+            "aveva",
+            "manomesso"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "avrebbe manomesso",
+              "errorType": "tense-sequence",
+              "why": "*Prima del suo arrivo* = **before**: anteriority in the past → trapassato *aveva manomesso*."
+            },
+            {
+              "match": "ha manomesso",
+              "errorType": "tense-sequence",
+              "why": "With a past main verb (*disse*), an earlier action goes into the trapassato: *aveva manomesso*."
+            }
+          ],
+          "explanation": "Anteriority with a past main verb → **trapassato prossimo**: *aveva manomesso*.",
+          "en": "The technician told us that someone had tampered with the meter before he arrived."
+        },
+        {
+          "id": "B2-SEQ-01.e09",
+          "type": "translate",
+          "difficulty": 3,
+          "instruction": "Translate into Italian.",
+          "prompt": "She told me she would call me later.",
+          "answers": [
+            "[Lei] mi (ha detto|disse) che mi avrebbe (chiamato|chiamata|richiamato|richiamata|telefonato) (più tardi|dopo)"
+          ],
+          "focus": [
+            "avrebbe"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "contains": [
+                "chiamerebbe",
+                "richiamerebbe",
+                "telefonerebbe"
+              ],
+              "errorType": "tense-sequence",
+              "why": "'Would call' after a past main verb = future in the past → *avrebbe chiamato*."
+            },
+            {
+              "contains": [
+                "chiamerà",
+                "richiamerà",
+                "telefonerà"
+              ],
+              "errorType": "tense-sequence",
+              "why": "Past main verb (*mi ha detto*): the future shifts to *avrebbe chiamato*."
+            }
+          ],
+          "explanation": "*Mi ha detto* (past) + later action → **mi avrebbe chiamato**.",
+          "en": "She told me she would call me later."
+        },
+        {
+          "id": "B2-SEQ-01.e10",
+          "type": "translate",
+          "difficulty": 3,
+          "instruction": "Translate into Italian (informal 'you').",
+          "prompt": "I knew you would understand.",
+          "answers": [
+            "[Lo] sapevo che [tu] avresti capito"
+          ],
+          "focus": [
+            "avresti"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "contains": [
+                "capiresti"
+              ],
+              "errorType": "tense-sequence",
+              "why": "The classic calque. 'Would understand' seen from the past → *avresti capito*."
+            },
+            {
+              "contains": [
+                "capirai"
+              ],
+              "errorType": "tense-sequence",
+              "why": "*Sapevo* is past, so the future becomes *avresti capito*."
+            },
+            {
+              "contains": [
+                "capivi"
+              ],
+              "errorType": "tense-sequence",
+              "why": "*Sapevo che capivi* means 'I knew you understood' (same time). For 'would understand' use *avresti capito*."
+            },
+            {
+              "contains": [
+                "capissi"
+              ],
+              "errorType": "wrong-mood",
+              "why": "*Sapere* states a certainty: no subjunctive. Use *avresti capito*."
+            }
+          ],
+          "explanation": "*Sapevo* + later action → **avresti capito**.",
+          "en": "I knew you would understand."
+        },
+        {
+          "id": "B2-SEQ-01.e11",
+          "type": "transform",
+          "difficulty": 3,
+          "instruction": "Report it in the past, starting with 'Ha detto che…'.",
+          "prompt": "Dice che arriverà alle otto.",
+          "answers": [
+            "Ha detto che sarebbe (arrivato|arrivata) alle otto"
+          ],
+          "focus": [
+            "sarebbe"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "contains": [
+                "arriverebbe"
+              ],
+              "errorType": "tense-sequence",
+              "why": "Future → condizionale **passato** after *ha detto*: *sarebbe arrivato*."
+            },
+            {
+              "contains": [
+                "arriverà"
+              ],
+              "errorType": "tense-sequence",
+              "why": "The main verb is now past, so the future must shift: *sarebbe arrivato*."
+            },
+            {
+              "contains": [
+                "avrebbe"
+              ],
+              "errorType": "auxiliary",
+              "why": "*Arrivare* takes *essere*: *sarebbe arrivato/a*."
+            }
+          ],
+          "explanation": "*Dice che arriverà* → *Ha detto che **sarebbe arrivato***.",
+          "en": "He said he would arrive at eight."
+        },
+        {
+          "id": "B2-SEQ-01.e12",
+          "type": "transform",
+          "difficulty": 4,
+          "instruction": "Rewrite starting with 'Eravamo convinti che…'.",
+          "prompt": "Il concerto finirà tardi.",
+          "answers": [
+            "Eravamo convinti che il concerto sarebbe finito tardi"
+          ],
+          "focus": [
+            "sarebbe",
+            "finito"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "contains": [
+                "finirebbe"
+              ],
+              "errorType": "tense-sequence",
+              "why": "'Would end' from a past viewpoint → *sarebbe finito*."
+            },
+            {
+              "contains": [
+                "finirà"
+              ],
+              "errorType": "tense-sequence",
+              "why": "Past main verb → the future becomes condizionale passato."
+            },
+            {
+              "contains": [
+                "avrebbe"
+              ],
+              "errorType": "auxiliary",
+              "why": "Intransitive *finire* (the concert ends) takes *essere*: *sarebbe finito*."
+            },
+            {
+              "match": "Eravamo convinti che il concerto finisse tardi",
+              "ok": true,
+              "why": "Also heard: the congiuntivo imperfetto can carry a future meaning after opinion verbs. The condizionale passato *sarebbe finito* is the clearest choice for 'would end'."
+            }
+          ],
+          "explanation": "Past opinion verb + later event → **sarebbe finito**.",
+          "en": "We were convinced the concert would end late."
+        },
+        {
+          "id": "B2-SEQ-01.e13",
+          "type": "order",
+          "difficulty": 2,
+          "instruction": "Put the words in order.",
+          "prompt": "They assured us the parcel would arrive on Monday.",
+          "tokens": [
+            "Ci",
+            "hanno",
+            "assicurato",
+            "che",
+            "il",
+            "pacco",
+            "sarebbe",
+            "arrivato",
+            "lunedì"
+          ],
+          "answers": [
+            "Ci hanno assicurato che il pacco sarebbe arrivato lunedì",
+            "Ci hanno assicurato che lunedì il pacco sarebbe arrivato"
+          ],
+          "errorType": "word-order",
+          "explanation": "*Ci hanno assicurato* (past) + later action → *sarebbe arrivato*. The object pronoun *ci* comes before the auxiliary."
+        },
+        {
+          "id": "B2-SEQ-01.e14",
+          "type": "choice",
+          "difficulty": 3,
+          "instruction": "Choose the correct form.",
+          "prompt": "Giorgio pensava che noi ___ in ritardo, e invece siamo arrivati puntualissimi.",
+          "options": [
+            "arriveremmo",
+            "saremmo arrivati",
+            "arriveremo",
+            "siamo arrivati"
+          ],
+          "answer": 1,
+          "optionWhy": {
+            "0": "Calque of 'we would arrive'. From a past viewpoint use the condizionale passato.",
+            "2": "*Pensava* is past: the future shifts to *saremmo arrivati*.",
+            "3": "Indicative passato prossimo states a fact, and the arrival was *after* his thought."
+          },
+          "errorType": "tense-sequence",
+          "explanation": "Past opinion + later event → **saremmo arrivati**.",
+          "en": "Giorgio thought we'd be late, but we arrived bang on time."
+        },
+        {
+          "id": "B2-SEQ-01.e15",
+          "type": "cloze",
+          "difficulty": 4,
+          "instruction": "Complete with the correct form. Watch the agreement.",
+          "prompt": "Le ragazze avevano detto che ___ (tornare) prima di mezzanotte.",
+          "answers": [
+            "sarebbero tornate"
+          ],
+          "focus": [
+            "sarebbero",
+            "tornate"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "sarebbero tornati",
+              "errorType": "agreement",
+              "why": "With *essere*, the participle agrees with *le ragazze*: *tornate*."
+            },
+            {
+              "match": "tornerebbero",
+              "errorType": "tense-sequence",
+              "why": "'Would come back' from a past viewpoint → *sarebbero tornate*."
+            },
+            {
+              "match": "avrebbero tornato",
+              "errorType": "auxiliary",
+              "why": "*Tornare* takes *essere*."
+            }
+          ],
+          "explanation": "Future in the past, essere-verb, feminine plural → **sarebbero tornate**.",
+          "en": "The girls had said they would be back before midnight."
+        },
+        {
+          "id": "B2-SEQ-01.e16",
+          "type": "cloze",
+          "difficulty": 4,
+          "instruction": "Complete with the correct form of the verb in brackets.",
+          "prompt": "Le mie sorelle mi avevano giurato che non ___ (dire) niente a nessuno.",
+          "answers": [
+            "avrebbero detto"
+          ],
+          "focus": [
+            "avrebbero",
+            "detto"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "direbbero",
+              "errorType": "tense-sequence",
+              "why": "A sworn promise in the past about later behaviour → *avrebbero detto*."
+            },
+            {
+              "match": "diranno",
+              "errorType": "tense-sequence",
+              "why": "*Avevano giurato* is past: the future becomes condizionale passato."
+            },
+            {
+              "match": "sarebbero dette",
+              "errorType": "auxiliary",
+              "why": "Transitive *dire* takes *avere*: *avrebbero detto*."
+            }
+          ],
+          "explanation": "Promise in the past → **avrebbero detto**.",
+          "en": "My sisters had sworn they wouldn't say anything to anyone."
+        },
+        {
+          "id": "B2-SEQ-01.e17",
+          "type": "cloze",
+          "difficulty": 5,
+          "instruction": "Complete with the correct form of the verb in brackets.",
+          "prompt": "Nel 1990 nessuno immaginava che quel ragazzino un giorno ___ (diventare) presidente.",
+          "answers": [
+            "sarebbe diventato"
+          ],
+          "focus": [
+            "sarebbe",
+            "diventato"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "diventerebbe",
+              "errorType": "tense-sequence",
+              "why": "'Would become' seen from 1990 → condizionale passato *sarebbe diventato*."
+            },
+            {
+              "match": "diventerà",
+              "errorType": "tense-sequence",
+              "why": "The main verb is past: *sarebbe diventato*."
+            },
+            {
+              "match": "diventasse",
+              "ok": true,
+              "why": "Also possible after a negated *immaginare*, but *sarebbe diventato* makes the 'later' meaning explicit and is the preferred form."
+            },
+            {
+              "match": "avrebbe diventato",
+              "errorType": "auxiliary",
+              "why": "*Diventare* takes *essere*."
+            }
+          ],
+          "explanation": "'Would one day become' from a past viewpoint → **sarebbe diventato**.",
+          "en": "In 1990 nobody imagined that little boy would one day become president."
+        },
+        {
+          "id": "B2-SEQ-01.e18",
+          "type": "speak",
+          "difficulty": 4,
+          "interaction": true,
+          "instruction": "Say it in Italian.",
+          "prompt": "A friend asks why you look surprised that Paolo isn't here. Say: \"He told me he would come at nine.\"",
+          "answers": [
+            "[Mi] (ha detto|aveva detto) che sarebbe (venuto|arrivato|passato) alle nove"
+          ],
+          "focus": [
+            "sarebbe"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "contains": [
+                "verrebbe",
+                "arriverebbe",
+                "passerebbe"
+              ],
+              "errorType": "tense-sequence",
+              "why": "'Would come' after *mi ha detto* → *sarebbe venuto*."
+            },
+            {
+              "contains": [
+                "verrà",
+                "arriverà",
+                "passerà"
+              ],
+              "errorType": "tense-sequence",
+              "why": "Nine o'clock has passed and the main verb is past: *sarebbe venuto*."
+            }
+          ],
+          "explanation": "*Mi ha detto che **sarebbe venuto** alle nove.*",
+          "en": "He told me he would come at nine."
+        },
+        {
+          "id": "B2-SEQ-01.e19",
+          "type": "free",
+          "difficulty": 5,
+          "instruction": "Write 40–80 words in Italian.",
+          "prompt": "Tell the story of a promise someone made to you that they didn't keep. What did they say they would do? What did you think would happen?",
+          "minWords": 40,
+          "maxWords": 80,
+          "errorType": "writing",
+          "rubric": [
+            {
+              "label": "Uses the condizionale passato for a future in the past",
+              "anyOf": [
+                "\\b(avrei|avresti|avrebbe|avremmo|avreste|avrebbero|sarei|saresti|sarebbe|saremmo|sareste|sarebbero)\\s+\\w+"
+              ],
+              "min": 2,
+              "errorType": "tense-sequence",
+              "hint": "Use *avrebbe / sarebbe* + participle: *mi aveva detto che sarebbe venuto*."
+            },
+            {
+              "label": "Uses a past reporting or thinking verb",
+              "anyOf": [
+                "\\b(ha detto|aveva detto|disse|ha promesso|aveva promesso|promise|ha giurato|aveva giurato|ha assicurato|aveva assicurato|pensavo|credevo|ero sicur[oa]|sapevo)\\b"
+              ],
+              "min": 1,
+              "errorType": "tense-sequence",
+              "hint": "Start from a past verb: *mi aveva promesso che…*, *pensavo che…*"
+            },
+            {
+              "label": "Avoids the 'would' calque (present conditional after a past verb)",
+              "anyOf": [
+                "^(?![\\s\\S]*\\b(ha|aveva) detto che \\w+(rebbe|rebbero)\\b(?!\\s+\\w+(ato|uto|ito|ata|uta|ita|ati|ute|iti|ate|ite)\\b))"
+              ],
+              "min": 1,
+              "errorType": "tense-sequence",
+              "hint": "After *ha detto che*, not *verrebbe* but *sarebbe venuto*."
+            }
+          ],
+          "model": "L'anno scorso il mio vicino mi aveva promesso che mi avrebbe aiutato a traslocare. Mi aveva detto che sarebbe venuto alle otto con il furgone di suo fratello. Io ero sicuro che sarebbe stato puntuale, e invece alle dieci non era ancora arrivato. Alla fine mi ha scritto che il furgone si era rotto. Ho dovuto fare tutto da solo!",
+          "explanation": "Past reporting verb + later action → condizionale passato."
+        }
       ]
     },
     {
@@ -113,7 +820,9 @@
       "title": "Sequence of tenses with the subjunctive",
       "cefr": "C1",
       "skill": "grammar",
-      "prereqs": ["B2-SEQ-01"],
+      "prereqs": [
+        "B2-SEQ-01"
+      ],
       "rule": "The tense of the subjunctive depends on the main verb and on time relation. Present/future main verb → congiuntivo presente (same time/after) or passato (before). Past or conditional main verb → congiuntivo imperfetto (same time) or trapassato (before); after a past main verb a later action takes the condizionale passato.",
       "assessment": [
         "Chooses present or past subjunctive after a present main verb according to time relation",
@@ -129,11 +838,31 @@
             "title": "The grid",
             "text": "Find the main verb's tense (row), then ask: did the action in the *che*-clause happen before, at the same time as, or after it (column)?",
             "table": {
-              "head": ["Main clause", "Before", "Same time", "After"],
+              "head": [
+                "Main clause",
+                "Before",
+                "Same time",
+                "After"
+              ],
               "rows": [
-                ["Present / future / imperative: *Penso che…*", "cong. passato: *sia partito*", "cong. presente: *parta*", "cong. presente or futuro: *parta / partirà*"],
-                ["Any past tense: *Pensavo / Ho pensato / Pensai che…*", "cong. trapassato: *fosse partito*", "cong. imperfetto: *partisse*", "condizionale passato: *sarebbe partito*"],
-                ["Conditional: *Vorrei / Preferirei / Sarebbe meglio che…*", "cong. trapassato: *fosse partito*", "cong. imperfetto: *partisse*", "cong. imperfetto: *partisse*"]
+                [
+                  "Present / future / imperative: *Penso che…*",
+                  "cong. passato: *sia partito*",
+                  "cong. presente: *parta*",
+                  "cong. presente or futuro: *parta / partirà*"
+                ],
+                [
+                  "Any past tense: *Pensavo / Ho pensato / Pensai che…*",
+                  "cong. trapassato: *fosse partito*",
+                  "cong. imperfetto: *partisse*",
+                  "condizionale passato: *sarebbe partito*"
+                ],
+                [
+                  "Conditional: *Vorrei / Preferirei / Sarebbe meglio che…*",
+                  "cong. trapassato: *fosse partito*",
+                  "cong. imperfetto: *partisse*",
+                  "cong. imperfetto: *partisse*"
+                ]
               ]
             }
           },
@@ -141,45 +870,101 @@
             "title": "Present main verb",
             "text": "Same time or later → congiuntivo presente. Earlier (a completed event) → congiuntivo passato.",
             "examples": [
-              { "it": "Penso che Giulia **sia** a casa.", "en": "I think Giulia is at home." },
-              { "it": "Penso che Giulia **sia partita** ieri.", "en": "I think Giulia left yesterday." },
-              { "it": "È probabile che domani **nevichi**.", "en": "It'll probably snow tomorrow." }
+              {
+                "it": "Penso che Giulia **sia** a casa.",
+                "en": "I think Giulia is at home."
+              },
+              {
+                "it": "Penso che Giulia **sia partita** ieri.",
+                "en": "I think Giulia left yesterday."
+              },
+              {
+                "it": "È probabile che domani **nevichi**.",
+                "en": "It'll probably snow tomorrow."
+              }
             ]
           },
           {
             "title": "Past main verb",
             "text": "Same time → congiuntivo imperfetto. Earlier → congiuntivo trapassato. Later → condizionale passato (after wish verbs like *volere, sperare*, the imperfetto is normal for later actions too: *Volevo che venissi*).",
             "examples": [
-              { "it": "Pensavo che Giulia **fosse** a casa.", "en": "I thought Giulia was at home." },
-              { "it": "Pensavo che Giulia **fosse partita** il giorno prima.", "en": "I thought Giulia had left the day before." },
-              { "it": "Pensavo che Giulia **sarebbe partita** il giorno dopo.", "en": "I thought Giulia would leave the next day." },
-              { "it": "Volevo che tu mi **dicessi** la verità.", "en": "I wanted you to tell me the truth." }
+              {
+                "it": "Pensavo che Giulia **fosse** a casa.",
+                "en": "I thought Giulia was at home."
+              },
+              {
+                "it": "Pensavo che Giulia **fosse partita** il giorno prima.",
+                "en": "I thought Giulia had left the day before."
+              },
+              {
+                "it": "Pensavo che Giulia **sarebbe partita** il giorno dopo.",
+                "en": "I thought Giulia would leave the next day."
+              },
+              {
+                "it": "Volevo che tu mi **dicessi** la verità.",
+                "en": "I wanted you to tell me the truth."
+              }
             ]
           },
           {
             "title": "Conditional main verb",
             "text": "*Vorrei, preferirei, sarebbe meglio, bisognerebbe, mi piacerebbe che* take the **congiuntivo imperfetto**, never the presente. *Avrei voluto che* takes the imperfetto or, for a completed past event, the trapassato.",
             "examples": [
-              { "it": "Vorrei che tu **venissi** con me.", "en": "I'd like you to come with me." },
-              { "it": "Bisognerebbe che il governo **intervenisse**.", "en": "The government ought to step in." },
-              { "it": "Avrei voluto che tu **venissi / fossi venuto** alla festa.", "en": "I would have liked you to come to the party." }
+              {
+                "it": "Vorrei che tu **venissi** con me.",
+                "en": "I'd like you to come with me."
+              },
+              {
+                "it": "Bisognerebbe che il governo **intervenisse**.",
+                "en": "The government ought to step in."
+              },
+              {
+                "it": "Avrei voluto che tu **venissi / fossi venuto** alla festa.",
+                "en": "I would have liked you to come to the party."
+              }
             ]
           },
           {
             "title": "Present main verb, past state or habit",
             "text": "When a present main verb comments on a past **state or repeated action** (not a single completed event), use the congiuntivo **imperfetto**: *Credo che da bambino **fosse** molto timido.* Compare the single event: *Credo che ieri **sia uscito** presto.*",
             "examples": [
-              { "it": "Si dice che da giovane **suonasse** la chitarra nei locali.", "en": "They say he used to play guitar in clubs when he was young." },
-              { "it": "Mi dispiace che ieri tu **abbia perso** il treno.", "en": "I'm sorry you missed the train yesterday." }
+              {
+                "it": "Si dice che da giovane **suonasse** la chitarra nei locali.",
+                "en": "They say he used to play guitar in clubs when he was young."
+              },
+              {
+                "it": "Mi dispiace che ieri tu **abbia perso** il treno.",
+                "en": "I'm sorry you missed the train yesterday."
+              }
             ]
           }
         ],
         "mistakes": [
-          { "wrong": "Vorrei che tu venga con me.", "right": "Vorrei che tu venissi con me.", "why": "A conditional main verb always takes the congiuntivo imperfetto." },
-          { "wrong": "Pensavo che fosse arrivato domani.", "right": "Pensavo che sarebbe arrivato il giorno dopo.", "why": "A later action after a past main verb takes the condizionale passato. The trapassato means 'had arrived'." },
-          { "wrong": "Credevo che tu sia a casa.", "right": "Credevo che tu fossi a casa.", "why": "Past main verb → congiuntivo imperfetto for same time." },
-          { "wrong": "Speravo che tu abbia capito.", "right": "Speravo che tu avessi capito.", "why": "Past main verb + earlier action → congiuntivo trapassato." },
-          { "wrong": "Bisognerebbe che il governo intervenga.", "right": "Bisognerebbe che il governo intervenisse.", "why": "*Bisognerebbe* is conditional → imperfetto." }
+          {
+            "wrong": "Vorrei che tu venga con me.",
+            "right": "Vorrei che tu venissi con me.",
+            "why": "A conditional main verb always takes the congiuntivo imperfetto."
+          },
+          {
+            "wrong": "Pensavo che fosse arrivato domani.",
+            "right": "Pensavo che sarebbe arrivato il giorno dopo.",
+            "why": "A later action after a past main verb takes the condizionale passato. The trapassato means 'had arrived'."
+          },
+          {
+            "wrong": "Credevo che tu sia a casa.",
+            "right": "Credevo che tu fossi a casa.",
+            "why": "Past main verb → congiuntivo imperfetto for same time."
+          },
+          {
+            "wrong": "Speravo che tu abbia capito.",
+            "right": "Speravo che tu avessi capito.",
+            "why": "Past main verb + earlier action → congiuntivo trapassato."
+          },
+          {
+            "wrong": "Bisognerebbe che il governo intervenga.",
+            "right": "Bisognerebbe che il governo intervenisse.",
+            "why": "*Bisognerebbe* is conditional → imperfetto."
+          }
         ],
         "tips": [
           "Two questions, every time: 1) Is the main verb present, past or conditional? 2) Before, same time or after?",
@@ -188,30 +973,680 @@
         ]
       },
       "exercises": [
-        { "id": "C1-SEQ-02.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct subjunctive form.", "prompt": "Penso che Giulia ___ (partire) ieri sera.", "answers": ["sia partita"], "focus": ["sia", "partita"], "errorType": "tense-sequence", "traps": [{ "match": "fosse partita", "errorType": "tense-sequence", "why": "The main verb is present (*penso*): an earlier event takes the congiuntivo **passato**, *sia partita*." }, { "match": "è partita", "errorType": "indicative-for-subjunctive", "why": "*Penso che* needs the subjunctive: *sia partita*." }, { "match": "sia partito", "errorType": "agreement", "why": "*Partire* takes *essere*: the participle agrees with Giulia → *partita*." }], "explanation": "Present main verb + earlier event → congiuntivo passato: **sia partita**.", "en": "I think Giulia left last night." },
-        { "id": "C1-SEQ-02.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct subjunctive form.", "prompt": "Pensavo che Giulia ___ (essere) a casa.", "answers": ["fosse"], "focus": ["fosse"], "errorType": "tense-sequence", "traps": [{ "match": "sia", "errorType": "tense-sequence", "why": "The main verb is past (*pensavo*): same time → congiuntivo **imperfetto**, *fosse*." }, { "match": "era", "errorType": "indicative-for-subjunctive", "why": "Very common in speech, but standard Italian needs the subjunctive after *pensare che*: *fosse*." }], "explanation": "Past main verb + same time → **fosse**.", "en": "I thought Giulia was at home." },
-        { "id": "C1-SEQ-02.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct subjunctive form.", "prompt": "Credevo che i bambini ___ (cenare) prima del nostro arrivo.", "answers": ["avessero cenato"], "focus": ["avessero", "cenato"], "errorType": "tense-sequence", "traps": [{ "match": "abbiano cenato", "errorType": "tense-sequence", "why": "*Credevo* is past: an earlier event takes the congiuntivo **trapassato**, *avessero cenato*." }, { "match": "cenassero", "errorType": "tense-sequence", "why": "*Prima del nostro arrivo* = before. Before + past main verb → *avessero cenato*." }, { "match": "avevano cenato", "errorType": "indicative-for-subjunctive", "why": "*Credere che* takes the subjunctive: *avessero cenato*." }], "explanation": "Past main verb + earlier event → congiuntivo trapassato: **avessero cenato**.", "en": "I thought the children had eaten before we arrived." },
-        { "id": "C1-SEQ-02.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct subjunctive form.", "prompt": "Vorrei che tu mi ___ (ascoltare) almeno una volta.", "answers": ["ascoltassi"], "focus": ["ascoltassi"], "errorType": "tense-sequence", "traps": [{ "match": "ascolti", "errorType": "tense-sequence", "why": "*Vorrei* is conditional: it always takes the congiuntivo **imperfetto**, *ascoltassi*." }, { "match": "ascolteresti", "errorType": "wrong-mood", "why": "No conditional after *che* here: *vorrei che* + congiuntivo imperfetto." }], "explanation": "Conditional main verb → congiuntivo imperfetto: **ascoltassi**.", "en": "I wish you'd listen to me for once." },
-        { "id": "C1-SEQ-02.e05", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct form.", "prompt": "È probabile che domani ___ (nevicare) in montagna.", "answers": ["nevichi"], "focus": ["nevichi"], "errorType": "tense-sequence", "traps": [{ "match": "nevicasse", "errorType": "tense-sequence", "why": "*È probabile* is present: a later event takes the congiuntivo **presente**, *nevichi*." }, { "match": "nevicherà", "ok": true, "why": "After a present main verb the future indicative is also used for later events, especially in speech. *Nevichi* is the more formal choice." }, { "match": "nevica", "errorType": "indicative-for-subjunctive", "why": "*È probabile che* takes the subjunctive." }], "explanation": "Present main verb + later event → congiuntivo presente **nevichi** (or futuro *nevicherà*).", "en": "It'll probably snow in the mountains tomorrow." },
-        { "id": "C1-SEQ-02.e06", "type": "cloze", "difficulty": 3, "instruction": "Complete with the correct subjunctive form.", "prompt": "Mi sembrava strano che Marta non ___ (laurearsi) ancora.", "answers": ["si fosse laureata"], "focus": ["fosse", "laureata"], "errorType": "tense-sequence", "traps": [{ "match": "si sia laureata", "errorType": "tense-sequence", "why": "*Mi sembrava* is past: an earlier (non-)event takes the trapassato, *si fosse laureata*." }, { "match": "si laureasse", "errorType": "tense-sequence", "why": "*Non… ancora* refers to something that should already have happened: anteriority → *si fosse laureata*." }, { "match": "si fosse laureato", "errorType": "agreement", "why": "Reflexive verbs take *essere*: agree with Marta → *laureata*." }], "explanation": "Past main verb + anteriority → **si fosse laureata**.", "en": "It seemed strange to me that Marta hadn't graduated yet." },
-        { "id": "C1-SEQ-02.e07", "type": "choice", "difficulty": 3, "instruction": "Choose ALL the correct options (more than one may be right).", "prompt": "Avrei voluto che tu ___ con noi ieri sera.", "options": ["venga", "venissi", "fossi venuto", "verresti"], "answer": [1, 2], "optionWhy": { "0": "A conditional main verb never takes the congiuntivo presente.", "2": "Also correct: the trapassato stresses the completed event ('that you had come').", "3": "No conditional after *che* here." }, "errorType": "tense-sequence", "explanation": "*Avrei voluto che* + congiuntivo imperfetto (**venissi**) or trapassato (**fossi venuto**).", "en": "I would have liked you to come with us last night." },
-        { "id": "C1-SEQ-02.e08", "type": "cloze", "difficulty": 3, "instruction": "Complete with the correct subjunctive form.", "prompt": "Bisognerebbe che il governo ___ (intervenire) subito.", "answers": ["intervenisse"], "focus": ["intervenisse"], "errorType": "tense-sequence", "traps": [{ "match": "intervenga", "errorType": "tense-sequence", "why": "*Bisognerebbe* is conditional → congiuntivo **imperfetto**, *intervenisse*." }, { "match": "interverrebbe", "errorType": "wrong-mood", "why": "*Bisognerebbe che* needs the subjunctive, not the conditional." }], "explanation": "Conditional main clause → **intervenisse**.", "en": "The government ought to step in immediately." },
-        { "id": "C1-SEQ-02.e09", "type": "cloze", "difficulty": 3, "instruction": "Complete with the correct subjunctive form.", "prompt": "Mi dispiace che ieri tu ___ (perdere) il treno.", "answers": ["abbia (perso|perduto)"], "focus": ["abbia"], "errorType": "tense-sequence", "traps": [{ "match": "avessi (perso|perduto)", "errorType": "tense-sequence", "why": "The main verb is present (*mi dispiace*): a single earlier event takes the congiuntivo **passato**, *abbia perso*." }, { "match": "perdessi", "errorType": "tense-sequence", "why": "Missing a train is a single completed event, not a state or habit: *abbia perso*." }, { "match": "hai perso", "errorType": "indicative-for-subjunctive", "why": "Emotion (*mi dispiace che*) → subjunctive." }], "explanation": "Present main verb + single earlier event → **abbia perso**.", "en": "I'm sorry you missed the train yesterday." },
-        { "id": "C1-SEQ-02.e10", "type": "cloze", "difficulty": 4, "instruction": "Present main verb, but a past habit: complete with the correct form.", "prompt": "Si dice che da giovane il nonno ___ (suonare) la chitarra ogni sera nei locali.", "answers": ["suonasse"], "focus": ["suonasse"], "errorType": "tense-sequence", "traps": [{ "match": "abbia suonato", "errorType": "tense-sequence", "why": "*Ogni sera* describes a past **habit**: after a present main verb, past habits and states take the congiuntivo imperfetto, *suonasse*." }, { "match": "suoni", "errorType": "tense-sequence", "why": "*Da giovane* places it in the past: *suonasse*." }, { "match": "suonava", "errorType": "indicative-for-subjunctive", "why": "*Si dice che* (hearsay) takes the subjunctive in standard Italian: *suonasse*." }], "explanation": "Present main verb + past habit → congiuntivo imperfetto: **suonasse**.", "en": "They say Grandpa used to play guitar in clubs every night when he was young." },
-        { "id": "C1-SEQ-02.e11", "type": "cloze", "difficulty": 4, "instruction": "Complete with the correct form (more than one may be possible).", "prompt": "Pensavo che il treno ___ (partire) più tardi, e invece l'ho perso.", "answers": ["sarebbe partito", "partisse"], "focus": ["partito", "partisse"], "errorType": "tense-sequence", "traps": [{ "match": "parta", "errorType": "tense-sequence", "why": "*Pensavo* is past: no congiuntivo presente. Use *sarebbe partito* (later) or *partisse* (scheduled time)." }, { "match": "partirebbe", "errorType": "tense-sequence", "why": "'Would leave' from a past viewpoint → *sarebbe partito*, not the present conditional." }, { "match": "fosse partito", "errorType": "tense-sequence", "why": "The trapassato means 'had (already) left', which is the opposite of the meaning here." }], "explanation": "After a past main verb, a later event → **sarebbe partito** (condizionale passato); *partisse* is also natural for a timetable seen as simultaneous.", "en": "I thought the train would leave later, but I missed it." },
-        { "id": "C1-SEQ-02.e12", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian (informal 'you').", "prompt": "I wanted you to tell me the truth.", "answers": ["Volevo che [tu] mi dicessi la verità"], "focus": ["dicessi"], "errorType": "tense-sequence", "traps": [{ "contains": ["dica"], "errorType": "tense-sequence", "why": "*Volevo* is past → congiuntivo imperfetto, *dicessi*." }, { "contains": ["dicevi"], "errorType": "indicative-for-subjunctive", "why": "*Volere che* always takes the subjunctive: *dicessi*." }, { "contains": ["di", "dirmi"], "errorType": "infinitive-construction", "why": "Different subjects (I wanted, you tell), so English 'want you to' becomes *volere che* + subjunctive." }], "explanation": "*Volevo che* + congiuntivo imperfetto: **dicessi**.", "en": "I wanted you to tell me the truth." },
-        { "id": "C1-SEQ-02.e13", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "I'm afraid they've already left.", "answers": ["(Temo|Ho paura) che [loro] siano già (partiti|partite|usciti|uscite|andati via|andate via)", "(Temo|Ho paura) che se ne siano già (andati|andate)"], "focus": ["siano"], "errorType": "tense-sequence", "traps": [{ "contains": ["fossero"], "errorType": "tense-sequence", "why": "*Temo* is present: an earlier event takes the congiuntivo passato, *siano partiti*." }, { "contains": ["sono"], "errorType": "indicative-for-subjunctive", "why": "Fear (*temo che*) → subjunctive: *siano partiti*." }, { "contains": ["abbiano"], "errorType": "auxiliary", "why": "*Partire / andare via* take *essere*: *siano partiti*." }], "explanation": "Present main verb + earlier event → **siano partiti**.", "en": "I'm afraid they've already left." },
-        { "id": "C1-SEQ-02.e14", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian (informal 'you').", "prompt": "It would be better if you came tomorrow.", "answers": ["Sarebbe meglio (che|se) [tu] venissi domani", "Sarebbe meglio (che|se) domani [tu] venissi"], "focus": ["venissi"], "errorType": "tense-sequence", "traps": [{ "contains": ["venga"], "errorType": "tense-sequence", "why": "*Sarebbe meglio* is conditional → congiuntivo imperfetto, *venissi*." }, { "contains": ["verresti"], "errorType": "hypothetical", "why": "No conditional after *se* / *che* here: *venissi*." }, { "contains": ["vieni"], "errorType": "indicative-for-subjunctive", "why": "*Sarebbe meglio che* needs the subjunctive." }], "explanation": "Conditional main clause → **venissi**.", "en": "It would be better if you came tomorrow." },
-        { "id": "C1-SEQ-02.e15", "type": "transform", "difficulty": 4, "instruction": "Put the main verb in the past: start with 'Speravo che…'.", "prompt": "Spero che tu abbia capito.", "answers": ["Speravo che [tu] avessi capito"], "focus": ["avessi"], "errorType": "tense-sequence", "traps": [{ "contains": ["abbia"], "errorType": "tense-sequence", "why": "After a past main verb the congiuntivo passato becomes trapassato: *avessi capito*." }, { "contains": ["capissi"], "errorType": "tense-sequence", "why": "The understanding comes *before* the hoping (anteriority): *avessi capito*." }], "explanation": "Passato → trapassato when the main verb moves to the past: **avessi capito**.", "en": "I hoped you had understood." },
-        { "id": "C1-SEQ-02.e16", "type": "transform", "difficulty": 5, "instruction": "Rewrite starting with 'Era impossibile che…'.", "prompt": "È impossibile che lui lo sappia già.", "answers": ["Era impossibile che [lui] lo sapesse già"], "focus": ["sapesse"], "errorType": "tense-sequence", "traps": [{ "contains": ["sappia"], "errorType": "tense-sequence", "why": "Past main verb → congiuntivo imperfetto: *sapesse*." }, { "contains": ["sapeva"], "errorType": "indicative-for-subjunctive", "why": "*Era impossibile che* still needs the subjunctive." }, { "contains": ["sapessi"], "errorType": "verb-form", "why": "Third person (lui): *sapesse*." }], "explanation": "Present → imperfect subjunctive when the main verb is past: **sapesse**.", "en": "It was impossible that he already knew." },
-        { "id": "C1-SEQ-02.e17", "type": "transform", "difficulty": 5, "instruction": "Rewrite starting with 'Credevo che…' (the arrival is later than the believing).", "prompt": "Paolo arriverà presto.", "answers": ["Credevo che Paolo sarebbe arrivato presto"], "focus": ["sarebbe", "arrivato"], "errorType": "tense-sequence", "traps": [{ "contains": ["arrivi"], "errorType": "tense-sequence", "why": "Past main verb: no congiuntivo presente. Later action → *sarebbe arrivato*." }, { "contains": ["arriverebbe"], "errorType": "tense-sequence", "why": "'Would arrive' from a past viewpoint → condizionale passato." }, { "match": "Credevo che Paolo arrivasse presto", "ok": true, "why": "Also heard: the congiuntivo imperfetto can express a later action. *Sarebbe arrivato* makes posteriority explicit." }, { "match": "Credevo che Paolo fosse arrivato presto", "errorType": "tense-sequence", "why": "*Fosse arrivato* = 'had arrived' (before). The arrival is later: *sarebbe arrivato*." }], "explanation": "Past main verb + later event → **sarebbe arrivato**.", "en": "I thought Paolo would arrive soon." },
-        { "id": "C1-SEQ-02.e18", "type": "order", "difficulty": 3, "instruction": "Put the words in order.", "prompt": "I would have preferred them to tell me straight away.", "tokens": ["Avrei", "preferito", "che", "me", "lo", "dicessero", "subito"], "answers": ["Avrei preferito che me lo dicessero subito"], "errorType": "word-order", "explanation": "Conditional main verb → imperfetto *dicessero*; the combined pronoun *me lo* goes before the verb." },
-        { "id": "C1-SEQ-02.e19", "type": "speak", "difficulty": 4, "interaction": true, "instruction": "Say it in Italian.", "prompt": "A colleague says the meeting is today. Reply: \"I thought it was on Thursday.\"", "answers": ["(Pensavo|Credevo) [che] [la riunione] fosse (giovedì|di giovedì)"], "focus": ["fosse"], "errorType": "tense-sequence", "traps": [{ "contains": ["era"], "errorType": "indicative-for-subjunctive", "why": "You'll hear *pensavo che era*, but the standard form is *pensavo che fosse*." }, { "contains": ["sia"], "errorType": "tense-sequence", "why": "*Pensavo* is past → *fosse*." }], "explanation": "*Pensavo (che) fosse giovedì.* Dropping *che* after *pensavo / credevo* is very natural.", "en": "I thought it was on Thursday." },
-        { "id": "C1-SEQ-02.e20", "type": "free", "difficulty": 5, "instruction": "Write 50–90 words in Italian.", "prompt": "Before you started a new job, school or city, what did you expect? Describe at least three expectations that turned out to be wrong (Pensavo che…, Credevo che…, Speravo che…, Non immaginavo che…).", "minWords": 50, "maxWords": 90, "errorType": "writing", "rubric": [
-          { "label": "Uses a past opinion/hope verb + che", "anyOf": ["\\b(pensavo|credevo|immaginavo|speravo|temevo|ero convint[oa]|avevo paura)\\s+(che\\s+)?"], "min": 2, "errorType": "tense-sequence", "hint": "*Pensavo che…*, *Speravo che…*" },
-          { "label": "Uses the congiuntivo imperfetto or trapassato", "anyOf": ["\\b(fossi|fosse|fossimo|foste|fossero|avessi|avesse|avessimo|aveste|avessero|\\w+(assi|essi|issi|asse|esse|isse|assero|essero|issero))\\b"], "min": 2, "errorType": "tense-sequence", "hint": "After a past main verb: *fosse, avesse, potessi, ci fossero*…" },
-          { "label": "Uses the condizionale passato for a later expectation", "anyOf": ["\\b(avrei|avresti|avrebbe|avremmo|avreste|avrebbero|sarei|saresti|sarebbe|saremmo|sareste|sarebbero)\\s+\\w+"], "min": 1, "errorType": "tense-sequence", "hint": "*Pensavo che sarebbe stato facile.*" }
-        ], "model": "Prima di trasferirmi a Milano pensavo che la città fosse grigia e fredda, e credevo che la gente non avesse mai tempo per parlare. Speravo che trovare casa sarebbe stato facile, e invece ci ho messo tre mesi! Non immaginavo che ci fossero così tanti parchi, né che i colleghi mi avrebbero invitato a cena già la prima settimana.", "explanation": "Past main verb → imperfetto / trapassato subjunctive; later events → condizionale passato." }
+        {
+          "id": "C1-SEQ-02.e01",
+          "type": "cloze",
+          "difficulty": 1,
+          "instruction": "Complete with the correct subjunctive form.",
+          "prompt": "Penso che Giulia ___ (partire) ieri sera.",
+          "answers": [
+            "sia partita"
+          ],
+          "focus": [
+            "sia",
+            "partita"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "fosse partita",
+              "errorType": "tense-sequence",
+              "why": "The main verb is present (*penso*): an earlier event takes the congiuntivo **passato**, *sia partita*."
+            },
+            {
+              "match": "è partita",
+              "errorType": "indicative-for-subjunctive",
+              "why": "*Penso che* needs the subjunctive: *sia partita*."
+            },
+            {
+              "match": "sia partito",
+              "errorType": "agreement",
+              "why": "*Partire* takes *essere*: the participle agrees with Giulia → *partita*."
+            }
+          ],
+          "explanation": "Present main verb + earlier event → congiuntivo passato: **sia partita**.",
+          "en": "I think Giulia left last night."
+        },
+        {
+          "id": "C1-SEQ-02.e02",
+          "type": "cloze",
+          "difficulty": 1,
+          "instruction": "Complete with the correct subjunctive form.",
+          "prompt": "Pensavo che Giulia ___ (essere) a casa.",
+          "answers": [
+            "fosse"
+          ],
+          "focus": [
+            "fosse"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "sia",
+              "errorType": "tense-sequence",
+              "why": "The main verb is past (*pensavo*): same time → congiuntivo **imperfetto**, *fosse*."
+            },
+            {
+              "match": "era",
+              "errorType": "indicative-for-subjunctive",
+              "why": "Very common in speech, but standard Italian needs the subjunctive after *pensare che*: *fosse*."
+            }
+          ],
+          "explanation": "Past main verb + same time → **fosse**.",
+          "en": "I thought Giulia was at home."
+        },
+        {
+          "id": "C1-SEQ-02.e03",
+          "type": "cloze",
+          "difficulty": 2,
+          "instruction": "Complete with the correct subjunctive form.",
+          "prompt": "Credevo che i bambini ___ (cenare) prima del nostro arrivo.",
+          "answers": [
+            "avessero cenato"
+          ],
+          "focus": [
+            "avessero",
+            "cenato"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "abbiano cenato",
+              "errorType": "tense-sequence",
+              "why": "*Credevo* is past: an earlier event takes the congiuntivo **trapassato**, *avessero cenato*."
+            },
+            {
+              "match": "cenassero",
+              "errorType": "tense-sequence",
+              "why": "*Prima del nostro arrivo* = before. Before + past main verb → *avessero cenato*."
+            },
+            {
+              "match": "avevano cenato",
+              "errorType": "indicative-for-subjunctive",
+              "why": "*Credere che* takes the subjunctive: *avessero cenato*."
+            }
+          ],
+          "explanation": "Past main verb + earlier event → congiuntivo trapassato: **avessero cenato**.",
+          "en": "I thought the children had eaten before we arrived."
+        },
+        {
+          "id": "C1-SEQ-02.e04",
+          "type": "cloze",
+          "difficulty": 2,
+          "instruction": "Complete with the correct subjunctive form.",
+          "prompt": "Vorrei che tu mi ___ (ascoltare) almeno una volta.",
+          "answers": [
+            "ascoltassi"
+          ],
+          "focus": [
+            "ascoltassi"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "ascolti",
+              "errorType": "tense-sequence",
+              "why": "*Vorrei* is conditional: it always takes the congiuntivo **imperfetto**, *ascoltassi*."
+            },
+            {
+              "match": "ascolteresti",
+              "errorType": "wrong-mood",
+              "why": "No conditional after *che* here: *vorrei che* + congiuntivo imperfetto."
+            }
+          ],
+          "explanation": "Conditional main verb → congiuntivo imperfetto: **ascoltassi**.",
+          "en": "I wish you'd listen to me for once."
+        },
+        {
+          "id": "C1-SEQ-02.e05",
+          "type": "cloze",
+          "difficulty": 2,
+          "instruction": "Complete with the correct form.",
+          "prompt": "È probabile che domani ___ (nevicare) in montagna.",
+          "answers": [
+            "nevichi"
+          ],
+          "focus": [
+            "nevichi"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "nevicasse",
+              "errorType": "tense-sequence",
+              "why": "*È probabile* is present: a later event takes the congiuntivo **presente**, *nevichi*."
+            },
+            {
+              "match": "nevicherà",
+              "ok": true,
+              "why": "After a present main verb the future indicative is also used for later events, especially in speech. *Nevichi* is the more formal choice."
+            },
+            {
+              "match": "nevica",
+              "errorType": "indicative-for-subjunctive",
+              "why": "*È probabile che* takes the subjunctive."
+            }
+          ],
+          "explanation": "Present main verb + later event → congiuntivo presente **nevichi** (or futuro *nevicherà*).",
+          "en": "It'll probably snow in the mountains tomorrow."
+        },
+        {
+          "id": "C1-SEQ-02.e06",
+          "type": "cloze",
+          "difficulty": 3,
+          "instruction": "Complete with the correct subjunctive form.",
+          "prompt": "Mi sembrava strano che Marta non ___ (laurearsi) ancora.",
+          "answers": [
+            "si fosse laureata"
+          ],
+          "focus": [
+            "fosse",
+            "laureata"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "si sia laureata",
+              "errorType": "tense-sequence",
+              "why": "*Mi sembrava* is past: an earlier (non-)event takes the trapassato, *si fosse laureata*."
+            },
+            {
+              "match": "si laureasse",
+              "errorType": "tense-sequence",
+              "why": "*Non… ancora* refers to something that should already have happened: anteriority → *si fosse laureata*."
+            },
+            {
+              "match": "si fosse laureato",
+              "errorType": "agreement",
+              "why": "Reflexive verbs take *essere*: agree with Marta → *laureata*."
+            }
+          ],
+          "explanation": "Past main verb + anteriority → **si fosse laureata**.",
+          "en": "It seemed strange to me that Marta hadn't graduated yet."
+        },
+        {
+          "id": "C1-SEQ-02.e07",
+          "type": "choice",
+          "difficulty": 3,
+          "instruction": "Choose ALL the correct options (more than one may be right).",
+          "prompt": "Avrei voluto che tu ___ con noi ieri sera.",
+          "options": [
+            "venga",
+            "venissi",
+            "fossi venuto",
+            "verresti"
+          ],
+          "answer": [
+            1,
+            2
+          ],
+          "optionWhy": {
+            "0": "A conditional main verb never takes the congiuntivo presente.",
+            "2": "Also correct: the trapassato stresses the completed event ('that you had come').",
+            "3": "No conditional after *che* here."
+          },
+          "errorType": "tense-sequence",
+          "explanation": "*Avrei voluto che* + congiuntivo imperfetto (**venissi**) or trapassato (**fossi venuto**).",
+          "en": "I would have liked you to come with us last night."
+        },
+        {
+          "id": "C1-SEQ-02.e08",
+          "type": "cloze",
+          "difficulty": 3,
+          "instruction": "Complete with the correct subjunctive form.",
+          "prompt": "Bisognerebbe che il governo ___ (intervenire) subito.",
+          "answers": [
+            "intervenisse"
+          ],
+          "focus": [
+            "intervenisse"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "intervenga",
+              "errorType": "tense-sequence",
+              "why": "*Bisognerebbe* is conditional → congiuntivo **imperfetto**, *intervenisse*."
+            },
+            {
+              "match": "interverrebbe",
+              "errorType": "wrong-mood",
+              "why": "*Bisognerebbe che* needs the subjunctive, not the conditional."
+            }
+          ],
+          "explanation": "Conditional main clause → **intervenisse**.",
+          "en": "The government ought to step in immediately."
+        },
+        {
+          "id": "C1-SEQ-02.e09",
+          "type": "cloze",
+          "difficulty": 3,
+          "instruction": "Complete with the correct subjunctive form.",
+          "prompt": "Mi dispiace che ieri tu ___ (perdere) il treno.",
+          "answers": [
+            "abbia (perso|perduto)"
+          ],
+          "focus": [
+            "abbia"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "avessi (perso|perduto)",
+              "errorType": "tense-sequence",
+              "why": "The main verb is present (*mi dispiace*): a single earlier event takes the congiuntivo **passato**, *abbia perso*."
+            },
+            {
+              "match": "perdessi",
+              "errorType": "tense-sequence",
+              "why": "Missing a train is a single completed event, not a state or habit: *abbia perso*."
+            },
+            {
+              "match": "hai perso",
+              "errorType": "indicative-for-subjunctive",
+              "why": "Emotion (*mi dispiace che*) → subjunctive."
+            }
+          ],
+          "explanation": "Present main verb + single earlier event → **abbia perso**.",
+          "en": "I'm sorry you missed the train yesterday."
+        },
+        {
+          "id": "C1-SEQ-02.e10",
+          "type": "cloze",
+          "difficulty": 4,
+          "instruction": "Present main verb, but a past habit: complete with the correct form.",
+          "prompt": "Si dice che da giovane il nonno ___ (suonare) la chitarra ogni sera nei locali.",
+          "answers": [
+            "suonasse"
+          ],
+          "focus": [
+            "suonasse"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "abbia suonato",
+              "errorType": "tense-sequence",
+              "why": "*Ogni sera* describes a past **habit**: after a present main verb, past habits and states take the congiuntivo imperfetto, *suonasse*."
+            },
+            {
+              "match": "suoni",
+              "errorType": "tense-sequence",
+              "why": "*Da giovane* places it in the past: *suonasse*."
+            },
+            {
+              "match": "suonava",
+              "errorType": "indicative-for-subjunctive",
+              "why": "*Si dice che* (hearsay) takes the subjunctive in standard Italian: *suonasse*."
+            }
+          ],
+          "explanation": "Present main verb + past habit → congiuntivo imperfetto: **suonasse**.",
+          "en": "They say Grandpa used to play guitar in clubs every night when he was young."
+        },
+        {
+          "id": "C1-SEQ-02.e11",
+          "type": "cloze",
+          "difficulty": 4,
+          "instruction": "Complete with the correct form (more than one may be possible).",
+          "prompt": "Pensavo che il treno ___ (partire) più tardi, e invece l'ho perso.",
+          "answers": [
+            "sarebbe partito",
+            "partisse"
+          ],
+          "focus": [
+            "partito",
+            "partisse"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "match": "parta",
+              "errorType": "tense-sequence",
+              "why": "*Pensavo* is past: no congiuntivo presente. Use *sarebbe partito* (later) or *partisse* (scheduled time)."
+            },
+            {
+              "match": "partirebbe",
+              "errorType": "tense-sequence",
+              "why": "'Would leave' from a past viewpoint → *sarebbe partito*, not the present conditional."
+            },
+            {
+              "match": "fosse partito",
+              "errorType": "tense-sequence",
+              "why": "The trapassato means 'had (already) left', which is the opposite of the meaning here."
+            }
+          ],
+          "explanation": "After a past main verb, a later event → **sarebbe partito** (condizionale passato); *partisse* is also natural for a timetable seen as simultaneous.",
+          "en": "I thought the train would leave later, but I missed it."
+        },
+        {
+          "id": "C1-SEQ-02.e12",
+          "type": "translate",
+          "difficulty": 3,
+          "instruction": "Translate into Italian (informal 'you').",
+          "prompt": "I wanted you to tell me the truth.",
+          "answers": [
+            "Volevo che [tu] mi dicessi la verità"
+          ],
+          "focus": [
+            "dicessi"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "contains": [
+                "dica"
+              ],
+              "errorType": "tense-sequence",
+              "why": "*Volevo* is past → congiuntivo imperfetto, *dicessi*."
+            },
+            {
+              "contains": [
+                "dicevi"
+              ],
+              "errorType": "indicative-for-subjunctive",
+              "why": "*Volere che* always takes the subjunctive: *dicessi*."
+            },
+            {
+              "contains": [
+                "di",
+                "dirmi"
+              ],
+              "errorType": "infinitive-construction",
+              "why": "Different subjects (I wanted, you tell), so English 'want you to' becomes *volere che* + subjunctive."
+            }
+          ],
+          "explanation": "*Volevo che* + congiuntivo imperfetto: **dicessi**.",
+          "en": "I wanted you to tell me the truth."
+        },
+        {
+          "id": "C1-SEQ-02.e13",
+          "type": "translate",
+          "difficulty": 4,
+          "instruction": "Translate into Italian.",
+          "prompt": "I'm afraid they've already left.",
+          "answers": [
+            "(Temo|Ho paura) che [loro] siano già (partiti|partite|usciti|uscite|andati via|andate via)",
+            "(Temo|Ho paura) che se ne siano già (andati|andate)"
+          ],
+          "focus": [
+            "siano"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "contains": [
+                "fossero"
+              ],
+              "errorType": "tense-sequence",
+              "why": "*Temo* is present: an earlier event takes the congiuntivo passato, *siano partiti*."
+            },
+            {
+              "contains": [
+                "sono"
+              ],
+              "errorType": "indicative-for-subjunctive",
+              "why": "Fear (*temo che*) → subjunctive: *siano partiti*."
+            },
+            {
+              "contains": [
+                "abbiano"
+              ],
+              "errorType": "auxiliary",
+              "why": "*Partire / andare via* take *essere*: *siano partiti*."
+            }
+          ],
+          "explanation": "Present main verb + earlier event → **siano partiti**.",
+          "en": "I'm afraid they've already left."
+        },
+        {
+          "id": "C1-SEQ-02.e14",
+          "type": "translate",
+          "difficulty": 4,
+          "instruction": "Translate into Italian (informal 'you').",
+          "prompt": "It would be better if you came tomorrow.",
+          "answers": [
+            "Sarebbe meglio (che|se) [tu] venissi domani",
+            "Sarebbe meglio (che|se) domani [tu] venissi"
+          ],
+          "focus": [
+            "venissi"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "contains": [
+                "venga"
+              ],
+              "errorType": "tense-sequence",
+              "why": "*Sarebbe meglio* is conditional → congiuntivo imperfetto, *venissi*."
+            },
+            {
+              "contains": [
+                "verresti"
+              ],
+              "errorType": "hypothetical",
+              "why": "No conditional after *se* / *che* here: *venissi*."
+            },
+            {
+              "contains": [
+                "vieni"
+              ],
+              "errorType": "indicative-for-subjunctive",
+              "why": "*Sarebbe meglio che* needs the subjunctive."
+            }
+          ],
+          "explanation": "Conditional main clause → **venissi**.",
+          "en": "It would be better if you came tomorrow."
+        },
+        {
+          "id": "C1-SEQ-02.e15",
+          "type": "transform",
+          "difficulty": 4,
+          "instruction": "Put the main verb in the past: start with 'Speravo che…'.",
+          "prompt": "Spero che tu abbia capito.",
+          "answers": [
+            "Speravo che [tu] avessi capito"
+          ],
+          "focus": [
+            "avessi"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "contains": [
+                "abbia"
+              ],
+              "errorType": "tense-sequence",
+              "why": "After a past main verb the congiuntivo passato becomes trapassato: *avessi capito*."
+            },
+            {
+              "contains": [
+                "capissi"
+              ],
+              "errorType": "tense-sequence",
+              "why": "The understanding comes *before* the hoping (anteriority): *avessi capito*."
+            }
+          ],
+          "explanation": "Passato → trapassato when the main verb moves to the past: **avessi capito**.",
+          "en": "I hoped you had understood."
+        },
+        {
+          "id": "C1-SEQ-02.e16",
+          "type": "transform",
+          "difficulty": 5,
+          "instruction": "Rewrite starting with 'Era impossibile che…'.",
+          "prompt": "È impossibile che lui lo sappia già.",
+          "answers": [
+            "Era impossibile che [lui] lo sapesse già"
+          ],
+          "focus": [
+            "sapesse"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "contains": [
+                "sappia"
+              ],
+              "errorType": "tense-sequence",
+              "why": "Past main verb → congiuntivo imperfetto: *sapesse*."
+            },
+            {
+              "contains": [
+                "sapeva"
+              ],
+              "errorType": "indicative-for-subjunctive",
+              "why": "*Era impossibile che* still needs the subjunctive."
+            },
+            {
+              "contains": [
+                "sapessi"
+              ],
+              "errorType": "verb-form",
+              "why": "Third person (lui): *sapesse*."
+            }
+          ],
+          "explanation": "Present → imperfect subjunctive when the main verb is past: **sapesse**.",
+          "en": "It was impossible that he already knew."
+        },
+        {
+          "id": "C1-SEQ-02.e17",
+          "type": "transform",
+          "difficulty": 5,
+          "instruction": "Rewrite starting with 'Credevo che…' (the arrival is later than the believing).",
+          "prompt": "Paolo arriverà presto.",
+          "answers": [
+            "Credevo che Paolo sarebbe arrivato presto"
+          ],
+          "focus": [
+            "sarebbe",
+            "arrivato"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "contains": [
+                "arrivi"
+              ],
+              "errorType": "tense-sequence",
+              "why": "Past main verb: no congiuntivo presente. Later action → *sarebbe arrivato*."
+            },
+            {
+              "contains": [
+                "arriverebbe"
+              ],
+              "errorType": "tense-sequence",
+              "why": "'Would arrive' from a past viewpoint → condizionale passato."
+            },
+            {
+              "match": "Credevo che Paolo arrivasse presto",
+              "ok": true,
+              "why": "Also heard: the congiuntivo imperfetto can express a later action. *Sarebbe arrivato* makes posteriority explicit."
+            },
+            {
+              "match": "Credevo che Paolo fosse arrivato presto",
+              "errorType": "tense-sequence",
+              "why": "*Fosse arrivato* = 'had arrived' (before). The arrival is later: *sarebbe arrivato*."
+            }
+          ],
+          "explanation": "Past main verb + later event → **sarebbe arrivato**.",
+          "en": "I thought Paolo would arrive soon."
+        },
+        {
+          "id": "C1-SEQ-02.e18",
+          "type": "order",
+          "difficulty": 3,
+          "instruction": "Put the words in order.",
+          "prompt": "I would have preferred them to tell me straight away.",
+          "tokens": [
+            "Avrei",
+            "preferito",
+            "che",
+            "me",
+            "lo",
+            "dicessero",
+            "subito"
+          ],
+          "answers": [
+            "Avrei preferito che me lo dicessero subito"
+          ],
+          "errorType": "word-order",
+          "explanation": "Conditional main verb → imperfetto *dicessero*; the combined pronoun *me lo* goes before the verb."
+        },
+        {
+          "id": "C1-SEQ-02.e19",
+          "type": "speak",
+          "difficulty": 4,
+          "interaction": true,
+          "instruction": "Say it in Italian.",
+          "prompt": "A colleague says the meeting is today. Reply: \"I thought it was on Thursday.\"",
+          "answers": [
+            "(Pensavo|Credevo) [che] [la riunione] fosse (giovedì|di giovedì)"
+          ],
+          "focus": [
+            "fosse"
+          ],
+          "errorType": "tense-sequence",
+          "traps": [
+            {
+              "contains": [
+                "era"
+              ],
+              "errorType": "indicative-for-subjunctive",
+              "why": "You'll hear *pensavo che era*, but the standard form is *pensavo che fosse*."
+            },
+            {
+              "contains": [
+                "sia"
+              ],
+              "errorType": "tense-sequence",
+              "why": "*Pensavo* is past → *fosse*."
+            }
+          ],
+          "explanation": "*Pensavo (che) fosse giovedì.* Dropping *che* after *pensavo / credevo* is very natural.",
+          "en": "I thought it was on Thursday."
+        },
+        {
+          "id": "C1-SEQ-02.e20",
+          "type": "free",
+          "difficulty": 5,
+          "instruction": "Write 50–90 words in Italian.",
+          "prompt": "Before you started a new job, school or city, what did you expect? Describe at least three expectations that turned out to be wrong (Pensavo che…, Credevo che…, Speravo che…, Non immaginavo che…).",
+          "minWords": 50,
+          "maxWords": 90,
+          "errorType": "writing",
+          "rubric": [
+            {
+              "label": "Uses a past opinion/hope verb + che",
+              "anyOf": [
+                "\\b(pensavo|credevo|immaginavo|speravo|temevo|ero convint[oa]|avevo paura)\\s+(che\\s+)?"
+              ],
+              "min": 2,
+              "errorType": "tense-sequence",
+              "hint": "*Pensavo che…*, *Speravo che…*"
+            },
+            {
+              "label": "Uses the congiuntivo imperfetto or trapassato",
+              "anyOf": [
+                "\\b(fossi|fosse|fossimo|foste|fossero|avessi|avesse|avessimo|aveste|avessero|\\w+(assi|essi|issi|asse|esse|isse|assero|essero|issero))\\b"
+              ],
+              "min": 2,
+              "errorType": "tense-sequence",
+              "hint": "After a past main verb: *fosse, avesse, potessi, ci fossero*…"
+            },
+            {
+              "label": "Uses the condizionale passato for a later expectation",
+              "anyOf": [
+                "\\b(avrei|avresti|avrebbe|avremmo|avreste|avrebbero|sarei|saresti|sarebbe|saremmo|sareste|sarebbero)\\s+\\w+"
+              ],
+              "min": 1,
+              "errorType": "tense-sequence",
+              "hint": "*Pensavo che sarebbe stato facile.*"
+            }
+          ],
+          "model": "Prima di trasferirmi a Milano pensavo che la città fosse grigia e fredda, e credevo che la gente non avesse mai tempo per parlare. Speravo che trovare casa sarebbe stato facile, e invece ci ho messo tre mesi! Non immaginavo che ci fossero così tanti parchi, né che i colleghi mi avrebbero invitato a cena già la prima settimana.",
+          "explanation": "Past main verb → imperfetto / trapassato subjunctive; later events → condizionale passato."
+        }
       ]
     },
     {
@@ -219,7 +1654,10 @@
       "title": "Reported speech (discorso indiretto)",
       "cefr": "C1",
       "skill": "grammar",
-      "prereqs": ["B2-SEQ-01", "C1-SEQ-02"],
+      "prereqs": [
+        "B2-SEQ-01",
+        "C1-SEQ-02"
+      ],
       "rule": "With a past reporting verb, tenses shift back (presente → imperfetto, passato prossimo → trapassato, futuro → condizionale passato), persons and possessives change, and time/place words shift (qui → lì, domani → il giorno dopo). Commands become di + infinitive (or che + congiuntivo); yes/no questions are introduced by se.",
       "assessment": [
         "Shifts tenses correctly when the reporting verb is past",
@@ -235,23 +1673,53 @@
             "title": "Present reporting verb: no tense shift",
             "text": "With *dice, scrive, racconta, chiede* (present), only persons change: «Sono stanca» → *Dice che **è** stanca.* «Partirò domani» → *Dice che **partirà** domani.*",
             "examples": [
-              { "it": "Luca dice che verrà anche lui.", "en": "Luca says he'll come too." }
+              {
+                "it": "Luca dice che verrà anche lui.",
+                "en": "Luca says he'll come too."
+              }
             ]
           },
           {
             "title": "Past reporting verb: tenses move back",
             "text": "With *ha detto, disse, diceva, aveva detto, ha chiesto…*, the tenses of the original sentence move one step back.",
             "table": {
-              "head": ["Direct speech", "Reported (past reporting verb)"],
+              "head": [
+                "Direct speech",
+                "Reported (past reporting verb)"
+              ],
               "rows": [
-                ["presente: «Sono stanco»", "imperfetto: *che era stanco*"],
-                ["passato prossimo: «Ho finito»", "trapassato: *che aveva finito*"],
-                ["futuro: «Verrò»", "condizionale passato: *che sarebbe venuto*"],
-                ["imperfetto: «Ero solo»", "imperfetto (no change): *che era solo*"],
-                ["condizionale presente: «Mi piacerebbe»", "condizionale passato: *che gli sarebbe piaciuto*"],
-                ["congiuntivo presente: «Spero che tu venga»", "congiuntivo imperfetto: *che sperava che venissi*"],
-                ["congiuntivo passato: «Spero che tu abbia capito»", "congiuntivo trapassato: *che sperava che avessi capito*"],
-                ["imperativo: «Aspetta!»", "*di aspettare* / *che aspettassi*"]
+                [
+                  "presente: «Sono stanco»",
+                  "imperfetto: *che era stanco*"
+                ],
+                [
+                  "passato prossimo: «Ho finito»",
+                  "trapassato: *che aveva finito*"
+                ],
+                [
+                  "futuro: «Verrò»",
+                  "condizionale passato: *che sarebbe venuto*"
+                ],
+                [
+                  "imperfetto: «Ero solo»",
+                  "imperfetto (no change): *che era solo*"
+                ],
+                [
+                  "condizionale presente: «Mi piacerebbe»",
+                  "condizionale passato: *che gli sarebbe piaciuto*"
+                ],
+                [
+                  "congiuntivo presente: «Spero che tu venga»",
+                  "congiuntivo imperfetto: *che sperava che venissi*"
+                ],
+                [
+                  "congiuntivo passato: «Spero che tu abbia capito»",
+                  "congiuntivo trapassato: *che sperava che avessi capito*"
+                ],
+                [
+                  "imperativo: «Aspetta!»",
+                  "*di aspettare* / *che aspettassi*"
+                ]
               ]
             }
           },
@@ -259,17 +1727,47 @@
             "title": "Persons, possessives, time and place",
             "text": "Change the pointers to fit the new speaker, place and time. Time words shift only if the time has changed: if you report on the same day, *domani* is still *domani*.",
             "table": {
-              "head": ["Direct", "Reported"],
+              "head": [
+                "Direct",
+                "Reported"
+              ],
               "rows": [
-                ["io, mio, mi", "lui/lei, suo, gli/le"],
-                ["questo", "quello"],
-                ["qui / qua", "lì / là"],
-                ["oggi", "quel giorno"],
-                ["ieri", "il giorno prima"],
-                ["domani", "il giorno dopo / l'indomani / il giorno seguente"],
-                ["adesso / ora", "allora / in quel momento"],
-                ["la settimana prossima", "la settimana dopo / successiva"],
-                ["tre giorni fa", "tre giorni prima"]
+                [
+                  "io, mio, mi",
+                  "lui/lei, suo, gli/le"
+                ],
+                [
+                  "questo",
+                  "quello"
+                ],
+                [
+                  "qui / qua",
+                  "lì / là"
+                ],
+                [
+                  "oggi",
+                  "quel giorno"
+                ],
+                [
+                  "ieri",
+                  "il giorno prima"
+                ],
+                [
+                  "domani",
+                  "il giorno dopo / l'indomani / il giorno seguente"
+                ],
+                [
+                  "adesso / ora",
+                  "allora / in quel momento"
+                ],
+                [
+                  "la settimana prossima",
+                  "la settimana dopo / successiva"
+                ],
+                [
+                  "tre giorni fa",
+                  "tre giorni prima"
+                ]
               ]
             }
           },
@@ -277,25 +1775,57 @@
             "title": "Commands",
             "text": "An imperative becomes **di + infinitive** (most common) or **che + congiuntivo imperfetto** (more formal). Negative: *di non* + infinitive. Pronouns attach to the infinitive.",
             "examples": [
-              { "it": "«Chiamami!» → Mi ha detto **di chiamarlo**.", "en": "He told me to call him." },
-              { "it": "«Non toccate niente!» → Ci ha detto **di non toccare** niente / **che non toccassimo** niente.", "en": "She told us not to touch anything." }
+              {
+                "it": "«Chiamami!» → Mi ha detto **di chiamarlo**.",
+                "en": "He told me to call him."
+              },
+              {
+                "it": "«Non toccate niente!» → Ci ha detto **di non toccare** niente / **che non toccassimo** niente.",
+                "en": "She told us not to touch anything."
+              }
             ]
           },
           {
             "title": "Questions",
             "text": "Yes/no questions → **se**. Wh-questions keep the question word. After a past reporting verb the verb shifts back and can be indicative (everyday) or subjunctive (formal, written).",
             "examples": [
-              { "it": "«Hai fame?» → Mi ha chiesto **se avevo / avessi** fame.", "en": "She asked me if I was hungry." },
-              { "it": "«Dove abiti?» → Mi ha chiesto **dove abitavo / abitassi**.", "en": "He asked me where I lived." }
+              {
+                "it": "«Hai fame?» → Mi ha chiesto **se avevo / avessi** fame.",
+                "en": "She asked me if I was hungry."
+              },
+              {
+                "it": "«Dove abiti?» → Mi ha chiesto **dove abitavo / abitassi**.",
+                "en": "He asked me where I lived."
+              }
             ]
           }
         ],
         "mistakes": [
-          { "wrong": "Mi ha detto che verrebbe domani.", "right": "Mi ha detto che sarebbe venuto il giorno dopo.", "why": "Future → condizionale passato; and *domani* shifts if you're reporting on a different day." },
-          { "wrong": "Mi ha detto che chiudo la porta.", "right": "Mi ha detto di chiudere la porta.", "why": "Commands become *di* + infinitive." },
-          { "wrong": "Mi ha chiesto che avevo fame.", "right": "Mi ha chiesto se avevo fame.", "why": "Reported yes/no questions are introduced by *se* ('if/whether'), not *che*." },
-          { "wrong": "Luisa disse che era qui da un'ora.", "right": "Luisa disse che era lì da un'ora.", "why": "*Qui* refers to the original speaker's place: in reported speech it usually becomes *lì / là*." },
-          { "wrong": "Marco mi ha chiesto di chiamarmi.", "right": "Marco mi ha chiesto di chiamarlo.", "why": "«Chiamami» = call **him** (Marco): the pronoun must change to *lo*." }
+          {
+            "wrong": "Mi ha detto che verrebbe domani.",
+            "right": "Mi ha detto che sarebbe venuto il giorno dopo.",
+            "why": "Future → condizionale passato; and *domani* shifts if you're reporting on a different day."
+          },
+          {
+            "wrong": "Mi ha detto che chiudo la porta.",
+            "right": "Mi ha detto di chiudere la porta.",
+            "why": "Commands become *di* + infinitive."
+          },
+          {
+            "wrong": "Mi ha chiesto che avevo fame.",
+            "right": "Mi ha chiesto se avevo fame.",
+            "why": "Reported yes/no questions are introduced by *se* ('if/whether'), not *che*."
+          },
+          {
+            "wrong": "Luisa disse che era qui da un'ora.",
+            "right": "Luisa disse che era lì da un'ora.",
+            "why": "*Qui* refers to the original speaker's place: in reported speech it usually becomes *lì / là*."
+          },
+          {
+            "wrong": "Marco mi ha chiesto di chiamarmi.",
+            "right": "Marco mi ha chiesto di chiamarlo.",
+            "why": "«Chiamami» = call **him** (Marco): the pronoun must change to *lo*."
+          }
         ],
         "tips": [
           "Three checks every time: **tense** (shift?), **person** (who is 'I' now?), **pointers** (here/now/tomorrow).",
@@ -304,30 +1834,630 @@
         ]
       },
       "exercises": [
-        { "id": "C1-SEQ-03.e01", "type": "cloze", "difficulty": 1, "instruction": "Report the sentence. Complete with the correct form.", "prompt": "«Sono stanca.» → Ieri sera Anna mi ha detto che ___ (essere) stanca.", "answers": ["era"], "focus": ["era"], "errorType": "reported-speech", "traps": [{ "match": "è", "errorType": "tense-sequence", "why": "Past reporting verb + a statement about that moment: presente → imperfetto, *era*." }, { "match": "sarebbe stata", "errorType": "tense-sequence", "why": "Her tiredness was at the time she spoke, not later: *era*." }, { "match": "fosse", "errorType": "subjunctive-for-indicative", "why": "*Dire che* reporting a statement takes the indicative." }], "explanation": "Presente → **imperfetto** after a past reporting verb.", "en": "Last night Anna told me she was tired." },
-        { "id": "C1-SEQ-03.e02", "type": "cloze", "difficulty": 1, "instruction": "Report the sentence. Complete with the correct form.", "prompt": "«Arriverò alle dieci.» → Giulio ha scritto che ___ (arrivare) alle dieci.", "answers": ["sarebbe arrivato"], "focus": ["sarebbe", "arrivato"], "errorType": "reported-speech", "traps": [{ "match": "arriverebbe", "errorType": "tense-sequence", "why": "Futuro → condizionale **passato** in reported speech: *sarebbe arrivato*." }, { "match": "arriverà", "errorType": "tense-sequence", "why": "The reporting verb is past (*ha scritto*): the future shifts to *sarebbe arrivato*." }], "explanation": "Futuro → **condizionale passato**.", "en": "Giulio wrote that he would arrive at ten." },
-        { "id": "C1-SEQ-03.e03", "type": "cloze", "difficulty": 2, "instruction": "Report the sentence. Complete with the correct form.", "prompt": "«Ho perso le chiavi.» → Mia sorella mi ha detto che ___ (perdere) le chiavi.", "answers": ["aveva (perso|perduto)"], "focus": ["aveva"], "errorType": "reported-speech", "traps": [{ "match": "ha (perso|perduto)", "errorType": "tense-sequence", "why": "Passato prossimo → **trapassato** after a past reporting verb: *aveva perso*." }, { "match": "avrebbe (perso|perduto)", "errorType": "tense-sequence", "why": "She lost them *before* speaking: trapassato, not condizionale passato." }], "explanation": "Passato prossimo → **trapassato prossimo**.", "en": "My sister told me she had lost her keys." },
-        { "id": "C1-SEQ-03.e04", "type": "choice", "difficulty": 2, "instruction": "Choose the correct reported form.", "prompt": "«Chiudi la porta!» → Il professore mi ha detto ___ la porta.", "options": ["chiudi", "di chiudere", "che chiudo", "a chiudere"], "answer": 1, "optionWhy": { "0": "The imperative can't stay in reported speech.", "2": "*Che chiudo* reports a statement ('that I close'), not a command.", "3": "*Dire* takes *di* + infinitive, not *a*." }, "errorType": "reported-speech", "explanation": "Command → **di + infinitive**.", "en": "The teacher told me to close the door." },
-        { "id": "C1-SEQ-03.e05", "type": "cloze", "difficulty": 2, "instruction": "Report the sentence, shifting the time expression.", "prompt": "«Torno domani.» → La settimana scorsa Piero ha detto che sarebbe tornato ___.", "answers": ["(il giorno dopo|il giorno seguente|il giorno successivo|l'indomani)"], "errorType": "reported-speech", "traps": [{ "match": "domani", "errorType": "reported-speech", "why": "He spoke last week, so his 'tomorrow' is not our tomorrow: *il giorno dopo*." }, { "match": "il giorno prima", "errorType": "reported-speech", "why": "*Il giorno prima* replaces *ieri*. For *domani* use *il giorno dopo*." }], "explanation": "*Domani* → **il giorno dopo / l'indomani** when reported on a different day.", "en": "Last week Piero said he'd be back the next day." },
-        { "id": "C1-SEQ-03.e06", "type": "cloze", "difficulty": 2, "instruction": "Report the question.", "prompt": "«Hai fame?» → Mia nonna mi ha chiesto ___ avessi fame.", "answers": ["se"], "focus": ["se"], "errorType": "reported-speech", "traps": [{ "match": "che", "errorType": "reported-speech", "why": "Reported yes/no questions are introduced by *se* ('whether/if')." }, { "match": "si", "errorType": "spelling", "why": "That's Spanish! Italian 'if' is *se*." }], "explanation": "Yes/no question → **se**.", "en": "My grandmother asked me if I was hungry." },
-        { "id": "C1-SEQ-03.e07", "type": "transform", "difficulty": 3, "instruction": "Put into reported speech, starting with 'Luisa disse che…'.", "prompt": "«Sono qui da un'ora.»", "answers": ["Luisa disse che era (lì|là) da un'ora"], "focus": ["era"], "errorType": "reported-speech", "traps": [{ "contains": ["qui", "qua"], "errorType": "reported-speech", "why": "*Qui* is the speaker's place: in reported speech it becomes *lì / là*." }, { "contains": ["è"], "errorType": "tense-sequence", "why": "Past reporting verb: *è* → *era*." }, { "contains": ["ero", "sono"], "errorType": "pronoun", "why": "Luisa is now 'she': third person *era*." }], "explanation": "Present → imperfetto; *qui* → **lì**.", "en": "Luisa said she had been there for an hour." },
-        { "id": "C1-SEQ-03.e08", "type": "transform", "difficulty": 3, "instruction": "Put into reported speech, starting with 'Marco mi ha chiesto…'. (You're reporting it a week later.)", "prompt": "«Chiamami stasera!»", "answers": ["Marco mi ha chiesto (di chiamarlo|che lo chiamassi) quella [stessa] sera"], "focus": ["chiamarlo", "lo"], "errorType": "reported-speech", "traps": [{ "contains": ["chiamarmi", "mi chiamassi"], "errorType": "pronoun", "why": "«Chiamami» means 'call **him**' (Marco): the pronoun becomes *lo* → *di chiamarlo*." }, { "contains": ["stasera"], "errorType": "reported-speech", "why": "A week later, *stasera* is no longer tonight: *quella sera*." }, { "contains": ["chiamami", "chiama"], "errorType": "reported-speech", "why": "The imperative becomes *di* + infinitive." }], "explanation": "Command → *di chiamarlo*; *stasera* → **quella sera**.", "en": "Marco asked me to call him that evening." },
-        { "id": "C1-SEQ-03.e09", "type": "transform", "difficulty": 3, "instruction": "Put into reported speech, starting with 'Il poliziotto mi ha chiesto…'.", "prompt": "«Dove abita?»", "answers": ["Il poliziotto mi ha chiesto dove (abitavo|abitassi)"], "focus": ["dove"], "errorType": "reported-speech", "traps": [{ "contains": ["abita", "abiti"], "errorType": "tense-sequence", "why": "Past reporting verb and you are now the subject: *dove abitavo* (or formal *abitassi*)." }, { "contains": ["se"], "errorType": "reported-speech", "why": "Wh-questions keep the question word (*dove*); *se* is only for yes/no questions." }], "explanation": "Wh-question → keep *dove*; present → **abitavo / abitassi**.", "en": "The police officer asked me where I lived." },
-        { "id": "C1-SEQ-03.e10", "type": "transform", "difficulty": 4, "instruction": "Put into reported speech, starting with 'Carla mi disse che…'. (Reported weeks later.)", "prompt": "«Domani porterò mia figlia dal medico.»", "answers": ["Carla mi disse che (il giorno dopo|il giorno seguente|il giorno successivo|l'indomani) avrebbe portato sua figlia dal medico", "Carla mi disse che avrebbe portato sua figlia dal medico (il giorno dopo|il giorno seguente|il giorno successivo|l'indomani)"], "focus": ["avrebbe", "sua"], "errorType": "reported-speech", "traps": [{ "contains": ["mia"], "errorType": "pronoun", "why": "*Mia figlia* (Carla's) → *sua figlia* in reported speech." }, { "contains": ["domani"], "errorType": "reported-speech", "why": "Weeks later, *domani* → *il giorno dopo / l'indomani*." }, { "contains": ["porterebbe", "porterà"], "errorType": "tense-sequence", "why": "Futuro → condizionale passato: *avrebbe portato*." }], "explanation": "Three changes: **avrebbe portato**, **sua**, **il giorno dopo**.", "en": "Carla told me she would take her daughter to the doctor the next day." },
-        { "id": "C1-SEQ-03.e11", "type": "transform", "difficulty": 4, "instruction": "Put into reported speech, starting with 'La guida ci ha detto…'.", "prompt": "«Non toccate niente!»", "answers": ["La guida ci ha detto (di non toccare|che non toccassimo) niente"], "focus": ["non"], "errorType": "reported-speech", "traps": [{ "contains": ["toccate"], "errorType": "reported-speech", "why": "The imperative becomes *di non* + infinitive." }, { "contains": ["tocchiamo"], "errorType": "reported-speech", "why": "Reported commands use *di* + infinitive or *che* + congiuntivo imperfetto (*toccassimo*)." }], "explanation": "Negative command → **di non toccare** (or *che non toccassimo*).", "en": "The guide told us not to touch anything." },
-        { "id": "C1-SEQ-03.e12", "type": "transform", "difficulty": 4, "instruction": "The teacher was speaking to you. Report it, starting with 'L'insegnante mi disse che sperava…'.", "prompt": "«Spero che tu abbia capito.»", "answers": ["L'insegnante mi disse che sperava che [io] avessi capito"], "focus": ["avessi"], "errorType": "reported-speech", "traps": [{ "contains": ["abbia"], "errorType": "tense-sequence", "why": "Congiuntivo passato → congiuntivo **trapassato** after a past reporting verb: *avessi capito*." }, { "contains": ["tu"], "errorType": "pronoun", "why": "You are now reporting about yourself: *che (io) avessi capito*." }, { "contains": ["avesse"], "errorType": "pronoun", "why": "The teacher was speaking to **you**: first person *avessi*." }], "explanation": "Congiuntivo passato → **trapassato**; *tu* → *io*.", "en": "The teacher told me she hoped I had understood." },
-        { "id": "C1-SEQ-03.e13", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "He asked me whether I had seen the film.", "answers": ["[Lui] mi (ha chiesto|chiese|ha domandato|domandò) se (avevo|avessi) visto il film"], "focus": ["se"], "errorType": "reported-speech", "traps": [{ "contains": ["ho"], "errorType": "tense-sequence", "why": "«Hai visto?» → *se avevo visto* (trapassato) after a past reporting verb." }, { "contains": ["che"], "errorType": "reported-speech", "why": "Yes/no question → *se*, not *che*." }], "explanation": "Yes/no question → *se*; passato prossimo → **avevo / avessi visto**.", "en": "He asked me whether I had seen the film." },
-        { "id": "C1-SEQ-03.e14", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "She told us to wait outside.", "answers": ["[Lei] ci (ha detto|disse) (di aspettare|che aspettassimo) fuori"], "focus": ["aspettare", "aspettassimo"], "errorType": "reported-speech", "traps": [{ "contains": ["aspettate", "aspettiamo"], "errorType": "reported-speech", "why": "A reported command becomes *di* + infinitive: *di aspettare*." }, { "contains": ["a"], "errorType": "preposition", "why": "*Dire* + infinitive takes *di*, not *a*: *ci ha detto di aspettare*." }, { "contains": ["noi"], "errorType": "pronoun", "why": "'Us' as indirect object = *ci*, placed before the verb: *ci ha detto*." }], "explanation": "Command → **di aspettare**.", "en": "She told us to wait outside." },
-        { "id": "C1-SEQ-03.e15", "type": "choice", "difficulty": 3, "instruction": "Choose the correct form. Watch the reporting verb.", "prompt": "«Partirò domani.» → Ogni volta che lo vedo, Luca dice che ___ domani.", "options": ["partirà", "sarebbe partito", "partiva", "partisse"], "answer": 0, "optionWhy": { "1": "The reporting verb is **present** (*dice*): no shift.", "2": "No shift with a present reporting verb.", "3": "*Dire che* reporting a statement takes the indicative." }, "errorType": "tense-sequence", "explanation": "Present reporting verb → tenses stay as they were: **partirà**.", "en": "Every time I see him, Luca says he's leaving tomorrow." },
-        { "id": "C1-SEQ-03.e16", "type": "order", "difficulty": 3, "instruction": "Put the words in order.", "prompt": "She asked me if I wanted to stay for dinner.", "tokens": ["Mi", "ha", "chiesto", "se", "volessi", "restare", "a", "cena"], "answers": ["Mi ha chiesto se volessi restare a cena"], "errorType": "word-order", "explanation": "Reported yes/no question: *se* + congiuntivo imperfetto (formal) or imperfetto (*volevo*)." },
-        { "id": "C1-SEQ-03.e17", "type": "cloze", "difficulty": 5, "instruction": "Report the sentence, shifting the time expression.", "prompt": "«Ci rivediamo qui la settimana prossima.» → Il mese scorso Dario ci aveva detto che ci saremmo rivisti lì ___.", "answers": ["(la settimana dopo|la settimana successiva|la settimana seguente)"], "errorType": "reported-speech", "traps": [{ "match": "la settimana prossima", "errorType": "reported-speech", "why": "Reported a month later: *la settimana prossima* → *la settimana dopo / successiva*." }, { "match": "la settimana prima", "errorType": "reported-speech", "why": "*La settimana prima* replaces *la settimana scorsa*." }], "explanation": "*La settimana prossima* → **la settimana dopo / successiva**.", "en": "Last month Dario had told us we'd meet there again the following week." },
-        { "id": "C1-SEQ-03.e18", "type": "speak", "difficulty": 4, "interaction": true, "instruction": "Say it in Italian.", "prompt": "Your flatmate was out when the landlord called this morning. Tell her: \"He said he would come by tomorrow to fix the boiler.\"", "answers": ["Ha detto che (sarebbe passato|passerà) domani a (riparare|sistemare) la caldaia", "Ha detto che domani (sarebbe passato|passerà) a (riparare|sistemare) la caldaia"], "focus": ["domani"], "errorType": "reported-speech", "traps": [{ "contains": ["dopo", "seguente", "indomani"], "errorType": "reported-speech", "why": "Same day: his 'tomorrow' is still tomorrow, so *domani* stays." }, { "contains": ["passerebbe", "verrebbe"], "errorType": "tense-sequence", "why": "'Would come by' after a past verb → *sarebbe passato* (or *passerà*, since tomorrow is still ahead)." }], "explanation": "Same day → *domani* stays. *Sarebbe passato* is standard; *passerà* is fine because the event is still in the future.", "en": "He said he'd come by tomorrow to fix the boiler." },
-        { "id": "C1-SEQ-03.e19", "type": "free", "difficulty": 5, "instruction": "Write 60–100 words in Italian.", "prompt": "Report a recent conversation (with a boss, a friend, a doctor…). What did they tell you, ask you, and tell you to do? Use reported speech only, no quotation marks.", "minWords": 60, "maxWords": 100, "errorType": "writing", "rubric": [
-          { "label": "Reports a yes/no question with se", "anyOf": ["\\b(chiesto|chiese|domandato|domandò)\\s+(\\w+\\s+){0,2}se\\b"], "min": 1, "errorType": "reported-speech", "hint": "*Mi ha chiesto se…*" },
-          { "label": "Reports a command with di + infinitive", "anyOf": ["\\bdi\\s+(non\\s+)?\\w+(are|ere|ire|arl[oaie]|erl[oaie]|irl[oaie]|armi|ermi|irmi|arsi|ersi|irsi)\\b"], "min": 1, "errorType": "reported-speech", "hint": "*Mi ha detto di aspettare…*" },
-          { "label": "Shifts the tenses (imperfetto, trapassato or condizionale passato)", "anyOf": ["\\b(era|aveva|avevano|erano|avrebbe|sarebbe|avrebbero|sarebbero)\\b"], "min": 2, "errorType": "tense-sequence", "hint": "*Ha detto che era…, che aveva…, che avrebbe…*" },
-          { "label": "No quotation marks", "anyOf": ["^[^«»\"]*$"], "min": 1, "errorType": "task-completion", "hint": "Reported speech only: no direct quotes." }
-        ], "model": "Ieri il mio capo mi ha chiamato nel suo ufficio. Mi ha chiesto se avevo finito la relazione per il cliente e io gli ho detto che mi mancava ancora un capitolo. Allora mi ha detto di consegnarla entro venerdì e di non preoccuparmi per il resto. Ha aggiunto che la settimana dopo saremmo andati insieme a Torino e che lì avrei presentato il progetto. Mi ha anche chiesto quando sarei andato in ferie.", "explanation": "Past reporting verbs, *se* for questions, *di* + infinitive for commands, shifted tenses and pointers." }
+        {
+          "id": "C1-SEQ-03.e01",
+          "type": "cloze",
+          "difficulty": 1,
+          "instruction": "Report the sentence. Complete with the correct form.",
+          "prompt": "«Sono stanca.» → Ieri sera Anna mi ha detto che ___ (essere) stanca.",
+          "answers": [
+            "era"
+          ],
+          "focus": [
+            "era"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "match": "è",
+              "errorType": "tense-sequence",
+              "why": "Past reporting verb + a statement about that moment: presente → imperfetto, *era*."
+            },
+            {
+              "match": "sarebbe stata",
+              "errorType": "tense-sequence",
+              "why": "Her tiredness was at the time she spoke, not later: *era*."
+            },
+            {
+              "match": "fosse",
+              "errorType": "subjunctive-for-indicative",
+              "why": "*Dire che* reporting a statement takes the indicative."
+            }
+          ],
+          "explanation": "Presente → **imperfetto** after a past reporting verb.",
+          "en": "Last night Anna told me she was tired."
+        },
+        {
+          "id": "C1-SEQ-03.e02",
+          "type": "cloze",
+          "difficulty": 1,
+          "instruction": "Report the sentence. Complete with the correct form.",
+          "prompt": "«Arriverò alle dieci.» → Giulio ha scritto che ___ (arrivare) alle dieci.",
+          "answers": [
+            "sarebbe arrivato"
+          ],
+          "focus": [
+            "sarebbe",
+            "arrivato"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "match": "arriverebbe",
+              "errorType": "tense-sequence",
+              "why": "Futuro → condizionale **passato** in reported speech: *sarebbe arrivato*."
+            },
+            {
+              "match": "arriverà",
+              "errorType": "tense-sequence",
+              "why": "The reporting verb is past (*ha scritto*): the future shifts to *sarebbe arrivato*."
+            }
+          ],
+          "explanation": "Futuro → **condizionale passato**.",
+          "en": "Giulio wrote that he would arrive at ten."
+        },
+        {
+          "id": "C1-SEQ-03.e03",
+          "type": "cloze",
+          "difficulty": 2,
+          "instruction": "Report the sentence. Complete with the correct form.",
+          "prompt": "«Ho perso le chiavi.» → Mia sorella mi ha detto che ___ (perdere) le chiavi.",
+          "answers": [
+            "aveva (perso|perduto)"
+          ],
+          "focus": [
+            "aveva"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "match": "ha (perso|perduto)",
+              "errorType": "tense-sequence",
+              "why": "Passato prossimo → **trapassato** after a past reporting verb: *aveva perso*."
+            },
+            {
+              "match": "avrebbe (perso|perduto)",
+              "errorType": "tense-sequence",
+              "why": "She lost them *before* speaking: trapassato, not condizionale passato."
+            }
+          ],
+          "explanation": "Passato prossimo → **trapassato prossimo**.",
+          "en": "My sister told me she had lost her keys."
+        },
+        {
+          "id": "C1-SEQ-03.e04",
+          "type": "choice",
+          "difficulty": 2,
+          "instruction": "Choose the correct reported form.",
+          "prompt": "«Chiudi la porta!» → Il professore mi ha detto ___ la porta.",
+          "options": [
+            "chiudi",
+            "di chiudere",
+            "che chiudo",
+            "a chiudere"
+          ],
+          "answer": 1,
+          "optionWhy": {
+            "0": "The imperative can't stay in reported speech.",
+            "2": "*Che chiudo* reports a statement ('that I close'), not a command.",
+            "3": "*Dire* takes *di* + infinitive, not *a*."
+          },
+          "errorType": "reported-speech",
+          "explanation": "Command → **di + infinitive**.",
+          "en": "The teacher told me to close the door."
+        },
+        {
+          "id": "C1-SEQ-03.e05",
+          "type": "cloze",
+          "difficulty": 2,
+          "instruction": "Report the sentence, shifting the time expression.",
+          "prompt": "«Torno domani.» → La settimana scorsa Piero ha detto che sarebbe tornato ___.",
+          "answers": [
+            "(il giorno dopo|il giorno seguente|il giorno successivo|l'indomani)"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "match": "domani",
+              "errorType": "reported-speech",
+              "why": "He spoke last week, so his 'tomorrow' is not our tomorrow: *il giorno dopo*."
+            },
+            {
+              "match": "il giorno prima",
+              "errorType": "reported-speech",
+              "why": "*Il giorno prima* replaces *ieri*. For *domani* use *il giorno dopo*."
+            }
+          ],
+          "explanation": "*Domani* → **il giorno dopo / l'indomani** when reported on a different day.",
+          "en": "Last week Piero said he'd be back the next day."
+        },
+        {
+          "id": "C1-SEQ-03.e06",
+          "type": "cloze",
+          "difficulty": 2,
+          "instruction": "Report the question.",
+          "prompt": "«Hai fame?» → Mia nonna mi ha chiesto ___ avessi fame.",
+          "answers": [
+            "se"
+          ],
+          "focus": [
+            "se"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "match": "che",
+              "errorType": "reported-speech",
+              "why": "Reported yes/no questions are introduced by *se* ('whether/if')."
+            },
+            {
+              "match": "si",
+              "errorType": "spelling",
+              "why": "That's Spanish! Italian 'if' is *se*."
+            }
+          ],
+          "explanation": "Yes/no question → **se**.",
+          "en": "My grandmother asked me if I was hungry."
+        },
+        {
+          "id": "C1-SEQ-03.e07",
+          "type": "transform",
+          "difficulty": 3,
+          "instruction": "Put into reported speech, starting with 'Luisa disse che…'.",
+          "prompt": "«Sono qui da un'ora.»",
+          "answers": [
+            "Luisa disse che era (lì|là) da un'ora"
+          ],
+          "focus": [
+            "era"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "contains": [
+                "qui",
+                "qua"
+              ],
+              "errorType": "reported-speech",
+              "why": "*Qui* is the speaker's place: in reported speech it becomes *lì / là*."
+            },
+            {
+              "contains": [
+                "è"
+              ],
+              "errorType": "tense-sequence",
+              "why": "Past reporting verb: *è* → *era*."
+            },
+            {
+              "contains": [
+                "ero",
+                "sono"
+              ],
+              "errorType": "pronoun",
+              "why": "Luisa is now 'she': third person *era*."
+            }
+          ],
+          "explanation": "Present → imperfetto; *qui* → **lì**.",
+          "en": "Luisa said she had been there for an hour."
+        },
+        {
+          "id": "C1-SEQ-03.e08",
+          "type": "transform",
+          "difficulty": 3,
+          "instruction": "Put into reported speech, starting with 'Marco mi ha chiesto…'. (You're reporting it a week later.)",
+          "prompt": "«Chiamami stasera!»",
+          "answers": [
+            "Marco mi ha chiesto (di chiamarlo|che lo chiamassi) quella [stessa] sera"
+          ],
+          "focus": [
+            "chiamarlo",
+            "lo"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "contains": [
+                "chiamarmi"
+              ],
+              "errorType": "pronoun",
+              "why": "«Chiamami» means 'call **him**' (Marco): the pronoun becomes *lo* → *di chiamarlo*."
+            },
+            {
+              "contains": [
+                "stasera"
+              ],
+              "errorType": "reported-speech",
+              "why": "A week later, *stasera* is no longer tonight: *quella sera*."
+            },
+            {
+              "contains": [
+                "chiamami",
+                "chiama"
+              ],
+              "errorType": "reported-speech",
+              "why": "The imperative becomes *di* + infinitive."
+            }
+          ],
+          "explanation": "Command → *di chiamarlo*; *stasera* → **quella sera**.",
+          "en": "Marco asked me to call him that evening."
+        },
+        {
+          "id": "C1-SEQ-03.e09",
+          "type": "transform",
+          "difficulty": 3,
+          "instruction": "Put into reported speech, starting with 'Il poliziotto mi ha chiesto…'.",
+          "prompt": "«Dove abita?»",
+          "answers": [
+            "Il poliziotto mi ha chiesto dove (abitavo|abitassi)"
+          ],
+          "focus": [
+            "dove"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "contains": [
+                "abita",
+                "abiti"
+              ],
+              "errorType": "tense-sequence",
+              "why": "Past reporting verb and you are now the subject: *dove abitavo* (or formal *abitassi*)."
+            },
+            {
+              "contains": [
+                "se"
+              ],
+              "errorType": "reported-speech",
+              "why": "Wh-questions keep the question word (*dove*); *se* is only for yes/no questions."
+            }
+          ],
+          "explanation": "Wh-question → keep *dove*; present → **abitavo / abitassi**.",
+          "en": "The police officer asked me where I lived."
+        },
+        {
+          "id": "C1-SEQ-03.e10",
+          "type": "transform",
+          "difficulty": 4,
+          "instruction": "Put into reported speech, starting with 'Carla mi disse che…'. (Reported weeks later.)",
+          "prompt": "«Domani porterò mia figlia dal medico.»",
+          "answers": [
+            "Carla mi disse che (il giorno dopo|il giorno seguente|il giorno successivo|l'indomani) avrebbe portato sua figlia dal medico",
+            "Carla mi disse che avrebbe portato sua figlia dal medico (il giorno dopo|il giorno seguente|il giorno successivo|l'indomani)"
+          ],
+          "focus": [
+            "avrebbe",
+            "sua"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "contains": [
+                "mia"
+              ],
+              "errorType": "pronoun",
+              "why": "*Mia figlia* (Carla's) → *sua figlia* in reported speech."
+            },
+            {
+              "contains": [
+                "domani"
+              ],
+              "errorType": "reported-speech",
+              "why": "Weeks later, *domani* → *il giorno dopo / l'indomani*."
+            },
+            {
+              "contains": [
+                "porterebbe",
+                "porterà"
+              ],
+              "errorType": "tense-sequence",
+              "why": "Futuro → condizionale passato: *avrebbe portato*."
+            }
+          ],
+          "explanation": "Three changes: **avrebbe portato**, **sua**, **il giorno dopo**.",
+          "en": "Carla told me she would take her daughter to the doctor the next day."
+        },
+        {
+          "id": "C1-SEQ-03.e11",
+          "type": "transform",
+          "difficulty": 4,
+          "instruction": "Put into reported speech, starting with 'La guida ci ha detto…'.",
+          "prompt": "«Non toccate niente!»",
+          "answers": [
+            "La guida ci ha detto (di non toccare|che non toccassimo) niente"
+          ],
+          "focus": [
+            "non"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "contains": [
+                "toccate"
+              ],
+              "errorType": "reported-speech",
+              "why": "The imperative becomes *di non* + infinitive."
+            },
+            {
+              "contains": [
+                "tocchiamo"
+              ],
+              "errorType": "reported-speech",
+              "why": "Reported commands use *di* + infinitive or *che* + congiuntivo imperfetto (*toccassimo*)."
+            }
+          ],
+          "explanation": "Negative command → **di non toccare** (or *che non toccassimo*).",
+          "en": "The guide told us not to touch anything."
+        },
+        {
+          "id": "C1-SEQ-03.e12",
+          "type": "transform",
+          "difficulty": 4,
+          "instruction": "The teacher was speaking to you. Report it, starting with 'L'insegnante mi disse che sperava…'.",
+          "prompt": "«Spero che tu abbia capito.»",
+          "answers": [
+            "L'insegnante mi disse che sperava che [io] avessi capito"
+          ],
+          "focus": [
+            "avessi"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "contains": [
+                "abbia"
+              ],
+              "errorType": "tense-sequence",
+              "why": "Congiuntivo passato → congiuntivo **trapassato** after a past reporting verb: *avessi capito*."
+            },
+            {
+              "contains": [
+                "tu"
+              ],
+              "errorType": "pronoun",
+              "why": "You are now reporting about yourself: *che (io) avessi capito*."
+            },
+            {
+              "contains": [
+                "avesse"
+              ],
+              "errorType": "pronoun",
+              "why": "The teacher was speaking to **you**: first person *avessi*."
+            }
+          ],
+          "explanation": "Congiuntivo passato → **trapassato**; *tu* → *io*.",
+          "en": "The teacher told me she hoped I had understood."
+        },
+        {
+          "id": "C1-SEQ-03.e13",
+          "type": "translate",
+          "difficulty": 4,
+          "instruction": "Translate into Italian.",
+          "prompt": "He asked me whether I had seen the film.",
+          "answers": [
+            "[Lui] mi (ha chiesto|chiese|ha domandato|domandò) se (avevo|avessi) visto il film"
+          ],
+          "focus": [
+            "se"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "contains": [
+                "ho"
+              ],
+              "errorType": "tense-sequence",
+              "why": "«Hai visto?» → *se avevo visto* (trapassato) after a past reporting verb."
+            },
+            {
+              "contains": [
+                "che"
+              ],
+              "errorType": "reported-speech",
+              "why": "Yes/no question → *se*, not *che*."
+            }
+          ],
+          "explanation": "Yes/no question → *se*; passato prossimo → **avevo / avessi visto**.",
+          "en": "He asked me whether I had seen the film."
+        },
+        {
+          "id": "C1-SEQ-03.e14",
+          "type": "translate",
+          "difficulty": 4,
+          "instruction": "Translate into Italian.",
+          "prompt": "She told us to wait outside.",
+          "answers": [
+            "[Lei] ci (ha detto|disse) (di aspettare|che aspettassimo) fuori"
+          ],
+          "focus": [
+            "aspettare",
+            "aspettassimo"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "contains": [
+                "aspettate",
+                "aspettiamo"
+              ],
+              "errorType": "reported-speech",
+              "why": "A reported command becomes *di* + infinitive: *di aspettare*."
+            },
+            {
+              "contains": [
+                "a"
+              ],
+              "errorType": "preposition",
+              "why": "*Dire* + infinitive takes *di*, not *a*: *ci ha detto di aspettare*."
+            },
+            {
+              "contains": [
+                "noi"
+              ],
+              "errorType": "pronoun",
+              "why": "'Us' as indirect object = *ci*, placed before the verb: *ci ha detto*."
+            }
+          ],
+          "explanation": "Command → **di aspettare**.",
+          "en": "She told us to wait outside."
+        },
+        {
+          "id": "C1-SEQ-03.e15",
+          "type": "choice",
+          "difficulty": 3,
+          "instruction": "Choose the correct form. Watch the reporting verb.",
+          "prompt": "«Partirò domani.» → Ogni volta che lo vedo, Luca dice che ___ domani.",
+          "options": [
+            "partirà",
+            "sarebbe partito",
+            "partiva",
+            "partisse"
+          ],
+          "answer": 0,
+          "optionWhy": {
+            "1": "The reporting verb is **present** (*dice*): no shift.",
+            "2": "No shift with a present reporting verb.",
+            "3": "*Dire che* reporting a statement takes the indicative."
+          },
+          "errorType": "tense-sequence",
+          "explanation": "Present reporting verb → tenses stay as they were: **partirà**.",
+          "en": "Every time I see him, Luca says he's leaving tomorrow."
+        },
+        {
+          "id": "C1-SEQ-03.e16",
+          "type": "order",
+          "difficulty": 3,
+          "instruction": "Put the words in order.",
+          "prompt": "She asked me if I wanted to stay for dinner.",
+          "tokens": [
+            "Mi",
+            "ha",
+            "chiesto",
+            "se",
+            "volessi",
+            "restare",
+            "a",
+            "cena"
+          ],
+          "answers": [
+            "Mi ha chiesto se volessi restare a cena"
+          ],
+          "errorType": "word-order",
+          "explanation": "Reported yes/no question: *se* + congiuntivo imperfetto (formal) or imperfetto (*volevo*)."
+        },
+        {
+          "id": "C1-SEQ-03.e17",
+          "type": "cloze",
+          "difficulty": 5,
+          "instruction": "Report the sentence, shifting the time expression.",
+          "prompt": "«Ci rivediamo qui la settimana prossima.» → Il mese scorso Dario ci aveva detto che ci saremmo rivisti lì ___.",
+          "answers": [
+            "(la settimana dopo|la settimana successiva|la settimana seguente)"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "match": "la settimana prossima",
+              "errorType": "reported-speech",
+              "why": "Reported a month later: *la settimana prossima* → *la settimana dopo / successiva*."
+            },
+            {
+              "match": "la settimana prima",
+              "errorType": "reported-speech",
+              "why": "*La settimana prima* replaces *la settimana scorsa*."
+            }
+          ],
+          "explanation": "*La settimana prossima* → **la settimana dopo / successiva**.",
+          "en": "Last month Dario had told us we'd meet there again the following week."
+        },
+        {
+          "id": "C1-SEQ-03.e18",
+          "type": "speak",
+          "difficulty": 4,
+          "interaction": true,
+          "instruction": "Say it in Italian.",
+          "prompt": "Your flatmate was out when the landlord called this morning. Tell her: \"He said he would come by tomorrow to fix the boiler.\"",
+          "answers": [
+            "Ha detto che (sarebbe passato|passerà) domani a (riparare|sistemare) la caldaia",
+            "Ha detto che domani (sarebbe passato|passerà) a (riparare|sistemare) la caldaia"
+          ],
+          "focus": [
+            "domani"
+          ],
+          "errorType": "reported-speech",
+          "traps": [
+            {
+              "contains": [
+                "dopo",
+                "seguente",
+                "indomani"
+              ],
+              "errorType": "reported-speech",
+              "why": "Same day: his 'tomorrow' is still tomorrow, so *domani* stays."
+            },
+            {
+              "contains": [
+                "passerebbe",
+                "verrebbe"
+              ],
+              "errorType": "tense-sequence",
+              "why": "'Would come by' after a past verb → *sarebbe passato* (or *passerà*, since tomorrow is still ahead)."
+            }
+          ],
+          "explanation": "Same day → *domani* stays. *Sarebbe passato* is standard; *passerà* is fine because the event is still in the future.",
+          "en": "He said he'd come by tomorrow to fix the boiler."
+        },
+        {
+          "id": "C1-SEQ-03.e19",
+          "type": "free",
+          "difficulty": 5,
+          "instruction": "Write 60–100 words in Italian.",
+          "prompt": "Report a recent conversation (with a boss, a friend, a doctor…). What did they tell you, ask you, and tell you to do? Use reported speech only, no quotation marks.",
+          "minWords": 60,
+          "maxWords": 100,
+          "errorType": "writing",
+          "rubric": [
+            {
+              "label": "Reports a yes/no question with se",
+              "anyOf": [
+                "\\b(chiesto|chiese|domandato|domandò)\\s+(\\w+\\s+){0,2}se\\b"
+              ],
+              "min": 1,
+              "errorType": "reported-speech",
+              "hint": "*Mi ha chiesto se…*"
+            },
+            {
+              "label": "Reports a command with di + infinitive",
+              "anyOf": [
+                "\\bdi\\s+(non\\s+)?\\w+(are|ere|ire|arl[oaie]|erl[oaie]|irl[oaie]|armi|ermi|irmi|arsi|ersi|irsi)\\b"
+              ],
+              "min": 1,
+              "errorType": "reported-speech",
+              "hint": "*Mi ha detto di aspettare…*"
+            },
+            {
+              "label": "Shifts the tenses (imperfetto, trapassato or condizionale passato)",
+              "anyOf": [
+                "\\b\\w+(avo|evo|ivo|ava|eva|iva|avamo|evamo|ivamo|avate|evate|ivate|avano|evano|ivano)\\b",
+                "\\b(ero|eri|era|eravamo|eravate|erano)\\b",
+                "\\b\\w+(rei|resti|rebbe|remmo|reste|rebbero)\\s+\\w+(ato|uto|ito|ata|uta|ita|ati|ute|iti|ate|ite)\\b"
+              ],
+              "min": 2,
+              "errorType": "tense-sequence",
+              "hint": "*Ha detto che era…, che aveva…, che avrebbe…*"
+            },
+            {
+              "label": "No quotation marks",
+              "anyOf": [
+                "^[^«»\"]*$"
+              ],
+              "min": 1,
+              "errorType": "task-completion",
+              "hint": "Reported speech only: no direct quotes."
+            }
+          ],
+          "model": "Ieri il mio capo mi ha chiamato nel suo ufficio. Mi ha chiesto se avevo finito la relazione per il cliente e io gli ho detto che mi mancava ancora un capitolo. Allora mi ha detto di consegnarla entro venerdì e di non preoccuparmi per il resto. Ha aggiunto che la settimana dopo saremmo andati insieme a Torino e che lì avrei presentato il progetto. Mi ha anche chiesto quando sarei andato in ferie.",
+          "explanation": "Past reporting verbs, *se* for questions, *di* + infinitive for commands, shifted tenses and pointers."
+        }
       ]
     }
   ]

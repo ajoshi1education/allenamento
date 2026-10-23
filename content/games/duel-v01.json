@@ -1,0 +1,18 @@
+{
+  "id": "G-DUEL-02",
+  "type": "duel",
+  "title": "Duello dei modi di dire",
+  "subtitle": "Race Nonna Pina to translate idioms and everyday collocations. She's been saying them for eighty years.",
+  "conceptIds": [
+    "B2-IDIOM-01",
+    "C1-IDIOM-02",
+    "B2-VOC-02"
+  ],
+  "difficulty": 3,
+  "minutes": 5,
+  "seconds": 120,
+  "rival": {
+    "name": "Nonna Pina",
+    "avatar": "👵"
+  }
+}

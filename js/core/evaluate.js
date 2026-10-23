@@ -207,12 +207,25 @@ function evaluateWriting(item, text) {
 }
 
 // Writing tasks without AI: check required structures and length, give a checklist.
+// JavaScript's \b treats accented letters as non-word characters, so /\bperché\b/ never matches.
+// Rubric patterns are compiled with \b replaced by a Unicode-aware word boundary.
+const UB = "(?:(?<=[\\p{L}\\p{N}_])(?![\\p{L}\\p{N}_])|(?<![\\p{L}\\p{N}_])(?=[\\p{L}\\p{N}_]))";
+export function rubricRegex(p) {
+  return new RegExp(String(p).replace(/\\\\/g, "\u0000").replace(/\\b/g, UB).replace(/\u0000/g, "\\\\"), "iu");
+}
+// Number of occurrences of a pattern (so "min: 3" means three uses, not three patterns).
+function countMatches(p, text) {
+  const re = new RegExp(rubricRegex(p).source, "giu");
+  const seen = new Set();
+  for (const m of text.matchAll(re)) seen.add(m.index);
+  return seen.size;
+}
+
 export function checkWriting(task, text) {
   const t = normalize(text);
   const words = t ? t.split(" ").length : 0;
   const checks = (task.rubric || []).map(c => {
-    const pats = asList(c.anyOf).map(p => new RegExp(p, "i"));
-    const hits = pats.filter(re => re.test(text)).length;
+    const hits = asList(c.anyOf).reduce((n, p) => n + countMatches(p, String(text)), 0);
     return { label: c.label, ok: hits >= (c.min || 1), hits, errorType: c.errorType || "writing", hint: c.hint || "" };
   });
   const lengthOk = words >= (task.minWords || 0) && (!task.maxWords || words <= task.maxWords * 1.2);
