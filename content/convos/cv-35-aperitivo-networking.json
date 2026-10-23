@@ -1,0 +1,203 @@
+{
+  "id": "CV-35",
+  "title": "Aperitivo di networking",
+  "subtitle": "A finance networking drink in tu: small talk about your job, discourse markers, swapping contacts.",
+  "level": "B2",
+  "theme": "Lavoro e studio",
+  "conceptIds": [
+    "B2-INT-01",
+    "B2-PAST-01",
+    "B2-COND-01",
+    "B2-PRON-02",
+    "B2-CONN-01"
+  ],
+  "tutor": {
+    "name": "Davide",
+    "avatar": "🧔",
+    "gender": "male",
+    "register": "informal"
+  },
+  "setting": "You're at an aperitivo for young finance professionals on a rooftop in Milan. Davide, who works in risk management, comes up to chat.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Ciao! Non ci conosciamo, vero? Io sono Davide, lavoro nel risk management di una SGR. Tu di che cosa ti occupi?",
+      "en": "Hi! We haven't met, have we? I'm Davide, I work in risk management at an asset management company. What do you do?",
+      "task": "Introduce yourself informally: say what you do, using a discourse marker (allora, cioè, diciamo…).",
+      "hint": "Piacere! Allora, io lavoro in…, cioè mi occupo di…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Uses a discourse marker",
+            "anyOf": [
+              "\\b(allora|cioè|diciamo|insomma|beh|mah|ecco|praticamente|guarda|senti|tipo|in pratica|dunque|comunque|niente)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "B2-INT-01",
+            "hint": "*Allora…, cioè…, diciamo che…*"
+          },
+          {
+            "label": "Says what you do",
+            "anyOf": [
+              "\\b(lavoro|mi occupo|faccio|seguo|gestisco|sono)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*Lavoro in…, mi occupo di…*"
+          }
+        ]
+      },
+      "model": "Piacere! Allora, io lavoro in una banca qui a Milano, cioè mi occupo di finanziamenti alle piccole e medie imprese.",
+      "followOk": "Ah, figo! Quindi siamo quasi colleghi, più o meno.",
+      "followMiss": "Ah, interessante! Quindi, insomma, lavori anche tu nella finanza. Allora siamo quasi colleghi!"
+    },
+    {
+      "id": "t2",
+      "say": "E com'è lavorare lì? Cioè, ti trovi bene o sei già in cerca di altro?",
+      "en": "And what's it like working there? I mean, do you like it or are you already looking for something else?",
+      "task": "Give a pro and a con linked with però / anche se, then sum up with insomma or tutto sommato.",
+      "hint": "Mi trovo bene, anche se… Insomma, …",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Links a pro and a con",
+            "anyOf": [
+              "\\b(però|ma|tuttavia|nonostante|ciononostante|comunque|eppure|mentre|invece|sebbene|benché|d['’]altra parte|anche se)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…però…, anche se…*"
+          },
+          {
+            "label": "Sums up (insomma, tutto sommato…)",
+            "anyOf": [
+              "\\b(insomma|in generale|tutto sommato|alla fine|diciamo che|nel complesso|in fin dei conti)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "B2-INT-01",
+            "hint": "*Insomma…, tutto sommato…*"
+          }
+        ]
+      },
+      "model": "Mi trovo abbastanza bene, l'ambiente è giovane, però gli orari sono pesanti. Insomma, per ora resto, ma mi guardo intorno.",
+      "followOk": "Ti capisco benissimo, anche da noi si fanno orari assurdi.",
+      "followMiss": "Eh, ti capisco. Anch'io mi trovo bene, però si lavora tanto. Insomma, come dappertutto!"
+    },
+    {
+      "id": "t3",
+      "say": "Senti, ma tu sei milanese o sei qui per lavoro? Hai un accento che non riconosco.",
+      "en": "Listen, are you from Milan or are you here for work? You've got an accent I can't place.",
+      "task": "Say where you're from and when you moved, with the passato prossimo of a motion verb (essere!) and a time expression (… anni fa).",
+      "hint": "Sono inglese, mi sono trasferito/a qui… anni fa.",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Passato prossimo with essere",
+            "anyOf": [
+              "\\b(sono|siamo|mi sono|ci siamo)\\s+(\\p{L}+\\s+)?(trasferit\\p{L}|arrivat\\p{L}|venut\\p{L}|tornat\\p{L}|nat\\p{L}|cresciut\\p{L}|rimast\\p{L}|spostat\\p{L})\\b"
+            ],
+            "min": 1,
+            "errorType": "auxiliary",
+            "conceptId": "B2-PAST-01",
+            "hint": "*Mi sono trasferito/a…, sono arrivato/a…*"
+          },
+          {
+            "label": "Says when",
+            "anyOf": [
+              "\\b(\\p{L}+\\s+)?(anni|anno|mesi|mese|settimane)\\s+fa\\b",
+              "\\bnel\\s+(\\d{4}|duemila\\p{L}*)\\b",
+              "\\bda\\s+(circa\\s+|quasi\\s+|più\\s+di\\s+|oltre\\s+|almeno\\s+|ormai\\s+)?(\\d+|un|uno|una|due|tre|quattro|cinque|sei|sette|otto|nove|dieci|undici|dodici|quindici|venti|qualche|alcuni|parecchi|molti|tanti|diversi)\\s+(\\p{L}+\\s+)?(anni|anno|mesi|mese)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PREP-02",
+            "hint": "*…tre anni fa, nel 2022…*"
+          }
+        ]
+      },
+      "model": "No, sono inglese, ma mi sono trasferito a Milano tre anni fa per lavoro, e ormai mi sento quasi milanese.",
+      "followOk": "Però! Il tuo italiano è ottimo. Si vede che ti trovi bene qui.",
+      "followMiss": "Ah, bello! Io invece sono arrivato a Milano cinque anni fa, da Bari. All'inizio è stata dura!"
+    },
+    {
+      "id": "t4",
+      "say": "Comunque, sai che il mio capo sta cercando qualcuno con un profilo come il tuo? Ti interesserebbe?",
+      "en": "Anyway, did you know my boss is looking for someone with a profile like yours? Would you be interested?",
+      "task": "Show interest with the conditional (mi piacerebbe…, sarei interessato/a…) and ask for his contact details.",
+      "hint": "Sì, mi piacerebbe! Mi daresti il tuo…?",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Uses the conditional",
+            "anyOf": [
+              "\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Mi piacerebbe…, mi daresti…?*"
+          },
+          {
+            "label": "Asks for contact details",
+            "anyOf": [
+              "\\b(numero|contatto|contatti|email|e-mail|mail|biglietto|linkedin|cellulare|recapito|telefono)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*…il tuo numero, la tua email…*"
+          }
+        ]
+      },
+      "model": "Sì, mi piacerebbe molto saperne di più! Mi daresti il tuo numero o la tua email, così ti scrivo domani?",
+      "followOk": "Certo, ecco il mio biglietto da visita. Scrivimi pure quando vuoi.",
+      "followMiss": "Dai, ti lascio il mio biglietto da visita. Tu mi daresti il tuo numero, così ti faccio sapere?"
+    },
+    {
+      "id": "t5",
+      "say": "Ah, e giovedì c'è un evento sul fintech a Palazzo Mezzanotte, in Borsa. Ti andrebbe di venire?",
+      "en": "Oh, and on Thursday there's a fintech event at Palazzo Mezzanotte, at the stock exchange. Would you like to come?",
+      "task": "Accept or decline, using ci for the place (ci vengo volentieri / non ci posso venire) and a discourse marker.",
+      "hint": "Ah, ci vengo volentieri! Cioè…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Uses ci for the place",
+            "anyOf": [
+              "\\bci\\s+(vengo|verrei|verrò|vado|andrei|andrò|sarò|sarei|posso|potrei|riesco|riuscirei|riuscirò|passo|passerei|faccio)\\b",
+              "\\b(posso|potrei|riesco|riuscirei|vorrei)\\s+(\\p{L}+\\s+)?venirci\\b",
+              "\\bnon\\s+ci\\s+\\p{L}+"
+            ],
+            "min": 1,
+            "errorType": "ci-ne",
+            "conceptId": "B2-PRON-02",
+            "hint": "*Ci vengo volentieri / non ci posso venire.*"
+          },
+          {
+            "label": "Uses a discourse marker",
+            "anyOf": [
+              "\\b(allora|cioè|diciamo|insomma|beh|mah|ecco|praticamente|guarda|senti|tipo|in pratica|dunque|comunque|niente)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "B2-INT-01",
+            "hint": "*Cioè…, allora…, guarda…*"
+          }
+        ]
+      },
+      "model": "Ah, ci vengo volentieri! Cioè, giovedì pomeriggio dovrei avere una call, però dopo le sette sono libero.",
+      "followOk": "Grande! Allora ci vediamo giovedì, ti mando i dettagli.",
+      "followMiss": "Va bene, dai. Se ci riesci, ci vediamo lì. Insomma, fammi sapere!"
+    }
+  ],
+  "closing": "Ok, vado a salutare un collega. È stato un piacere, ci sentiamo presto!"
+}

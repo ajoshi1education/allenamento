@@ -1,0 +1,129 @@
+{
+  "id": "G-RDG-05",
+  "type": "reading",
+  "title": "Dante e la nascita dell'italiano",
+  "subtitle": "A narrative in the passato remoto: Dante's life, his exile and how a Florentine poem became the basis of Italian.",
+  "conceptIds": ["C1-READ-03", "C1-PAST-03"],
+  "difficulty": 4,
+  "minutes": 12,
+  "passage": {
+    "title": "Il padre della lingua",
+    "source": "invented",
+    "it": "Nel 1265, a Firenze, nacque in una famiglia della piccola nobiltà un bambino a cui fu dato il nome di Durante, presto abbreviato in Dante. Nessuno poteva immaginare che quel ragazzo avrebbe cambiato la lingua di un intero paese.\nA nove anni, come racconterà lui stesso, vide per la prima volta Beatrice, e da quell'incontro nacque un amore che lo accompagnò per tutta la vita, anche dopo la morte di lei, avvenuta nel 1290. Dante studiò, scrisse versi, combatté a Campaldino e si gettò nella politica cittadina, fino a diventare priore nel 1300. Fu proprio la politica a perderlo: nel 1302, mentre si trovava lontano dalla città, i suoi avversari lo condannarono all'esilio. Non rivide mai più Firenze.\nNegli anni dell'esilio, ospite ora di un signore ora di un altro, Dante si pose una domanda che oggi ci sembra ovvia, ma che allora non lo era affatto: in quale lingua scrivere? Gli uomini colti usavano il latino; il volgare, la lingua parlata dal popolo, era ritenuto adatto alle poesie d'amore, non alla filosofia. Dante la pensava diversamente. Nel trattato De vulgari eloquentia, scritto paradossalmente in latino, difese la dignità del volgare; con la Commedia lo dimostrò nei fatti.\nLa Commedia, a cui più tardi Boccaccio attribuì l'aggettivo «divina», racconta un viaggio attraverso l'Inferno, il Purgatorio e il Paradiso, in cento canti e in terzine incatenate. Vi trovarono posto la teologia e l'astronomia, ma anche le liti di quartiere e le parolacce. Fu proprio questa mescolanza a renderla straordinaria: per la prima volta il fiorentino si mostrò capace di dire tutto, dal sublime al volgare.\nDante morì a Ravenna nel 1321, poco dopo aver terminato il Paradiso. La sua lingua, però, gli sopravvisse. Petrarca e Boccaccio consolidarono il modello fiorentino, e quando, nell'Ottocento, Manzoni volle «risciacquare i panni in Arno», non fece che riconoscere un primato cominciato con lui. Per questo, ancora oggi, Dante viene chiamato il padre della lingua italiana."
+  },
+  "questions": [
+    {
+      "id": "G-RDG-05.q1", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What is the text mainly about?",
+      "options": [
+        "Dante's love story with Beatrice",
+        "How Dante's life and choice of the vernacular laid the foundations of the Italian language",
+        "The political struggles in thirteenth-century Florence",
+        "The structure of the three parts of the Commedia"
+      ],
+      "answer": 1,
+      "optionWhy": { "0": "Beatrice is one episode; the thread of the text is language, from the first paragraph (*avrebbe cambiato la lingua*) to the last (*il padre della lingua italiana*)." },
+      "explanation": "The text opens and closes on language: *avrebbe cambiato la lingua di un intero paese* … *il padre della lingua italiana*.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-05.q2", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "How did Dante come to be exiled?",
+      "options": [
+        "He left Florence of his own free will to follow Beatrice.",
+        "He was expelled after losing the battle of Campaldino.",
+        "His political opponents sentenced him to exile while he was away from the city.",
+        "He was banished for writing in the vernacular."
+      ],
+      "answer": 2,
+      "explanation": "*Nel 1302, mentre si trovava lontano dalla città, i suoi avversari lo condannarono all'esilio.* *Fu proprio la politica a perderlo* = it was politics that brought him down.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-05.q3", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Before Dante, what was the vernacular considered suitable for?",
+      "options": [
+        "Love poetry, but not philosophy",
+        "Philosophy and theology",
+        "Official documents of the Church",
+        "Nothing at all: it was never written down"
+      ],
+      "answer": 0,
+      "explanation": "*Il volgare… era ritenuto adatto alle poesie d'amore, non alla filosofia.*",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-05.q4", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why does the writer call the *De vulgari eloquentia* 'paradoxical'?",
+      "options": [
+        "Because Dante never finished it.",
+        "Because it was written in Florence during his exile.",
+        "Because it criticises Latin but praises Boccaccio.",
+        "Because it defends the vernacular but is written in Latin."
+      ],
+      "answer": 3,
+      "explanation": "*Scritto paradossalmente in latino, difese la dignità del volgare*: a defence of the vernacular written in the language of the learned elite.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-05.q5", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "According to the writer, what made the Commedia extraordinary?",
+      "options": [
+        "Its length: one hundred cantos",
+        "Its mixture of high and low subjects, which showed that Florentine could express anything",
+        "The fact that Boccaccio called it *divina*",
+        "Its religious subject matter"
+      ],
+      "answer": 1,
+      "explanation": "*Fu proprio questa mescolanza a renderla straordinaria: per la prima volta il fiorentino si mostrò capace di dire tutto, dal sublime al volgare.* The *fu… a* structure highlights the cause.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-05.q6", "type": "choice", "difficulty": 5,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What does the reference to Manzoni suggest?",
+      "options": [
+        "Manzoni rejected Dante's model and created a new language.",
+        "Manzoni was the real father of Italian.",
+        "Even in the nineteenth century, Florentine was still the model for written Italian, as it had been since Dante.",
+        "Manzoni wanted Italians to stop using dialects at home."
+      ],
+      "answer": 2,
+      "explanation": "Manzoni wanted to 'rinse his clothes in the Arno', i.e. adapt his novel to Florentine usage. The writer says he *non fece che riconoscere un primato cominciato con lui*: he simply confirmed a primacy that began with Dante.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-05.q7", "type": "cloze", "difficulty": 3,
+      "instruction": "Complete with the passato remoto, as in the text.",
+      "prompt": "Dante ___ (morire) a Ravenna nel 1321.",
+      "answers": ["morì"],
+      "focus": ["morì"],
+      "traps": [
+        { "match": "è morto", "errorType": "wrong-tense", "why": "Correct in conversation, but this narrative uses the *passato remoto* for distant historical events: *morì*." },
+        { "match": "morii", "errorType": "verb-form", "why": "*Morii* is the *io* form. Third person singular: *morì* (accent on the final *ì*)." }
+      ],
+      "explanation": "*Morire* is regular in the passato remoto: *morii, moristi, morì…* Note the final accent.",
+      "errorType": "verb-form"
+    },
+    {
+      "id": "G-RDG-05.q8", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«Dante si pose una domanda»*: what is the infinitive of *pose*?",
+      "options": [
+        "posare",
+        "potere",
+        "porre (porsi)",
+        "possedere"
+      ],
+      "answer": 2,
+      "optionWhy": { "0": "*Posare* (to put down) is regular: its passato remoto is *posò*." },
+      "explanation": "*Porre* has an irregular passato remoto: *posi, ponesti, pose, ponemmo, poneste, posero*. *Porsi una domanda* = to ask oneself a question.",
+      "errorType": "verb-form"
+    }
+  ]
+}

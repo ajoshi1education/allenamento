@@ -1,0 +1,200 @@
+{
+  "id": "CV-33",
+  "title": "Analisi trimestrale",
+  "subtitle": "Present quarterly results in Lei: figures and trends, the passive, si prevede che, nominal style.",
+  "level": "C1",
+  "theme": "Lavoro e studio",
+  "conceptIds": [
+    "B2-PASS-01",
+    "B2-SI-01",
+    "C1-SYN-02",
+    "B2-FUT-01",
+    "B2-CONN-01"
+  ],
+  "tutor": {
+    "name": "Dott.ssa Galli",
+    "avatar": "👩‍💼",
+    "gender": "female",
+    "register": "formal"
+  },
+  "setting": "You're an analyst at a bank in Milan presenting the third-quarter results to your head of department, Dottoressa Galli.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Allora, vediamo questi numeri del terzo trimestre. Mi dica subito: com'è andato il fatturato?",
+      "en": "So, let's look at these Q3 figures. Tell me straight away: how did revenue do?",
+      "task": "Give the headline figure: è aumentato / è diminuito del X% and a comparison (rispetto a…).",
+      "hint": "Il fatturato è aumentato del… per cento rispetto…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Change + del + figure",
+            "anyOf": [
+              "\\b(aumentat\\p{L}|cresciut\\p{L}|salit\\p{L}|diminuit\\p{L}|calat\\p{L}|scesa|sceso|migliorat\\p{L}|peggiorat\\p{L}|aumento|crescita|calo|diminuzione|incremento|flessione|contrazione|aument\\p{L}+|cresce|diminuisce|cala)\\s+(\\p{L}+\\s+){0,3}(del|dello|di un|di circa|di quasi|di oltre|di poco più|dell['’])"
+            ],
+            "min": 1,
+            "errorType": "preposition",
+            "conceptId": "C1-PREP-03",
+            "hint": "*è aumentato **del** sei per cento*"
+          },
+          {
+            "label": "Compares with a period",
+            "anyOf": [
+              "\\b(rispetto|in confronto|su base annua|anno su anno|sullo stesso periodo|sull['’]anno)"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "C1-SYN-02",
+            "hint": "*…rispetto allo stesso trimestre dell'anno scorso.*"
+          }
+        ]
+      },
+      "model": "Il fatturato è aumentato del sei per cento rispetto allo stesso trimestre dell'anno scorso, arrivando a quaranta milioni di euro.",
+      "followOk": "Bene, è un risultato superiore alle attese. E i margini hanno tenuto?",
+      "followMiss": "D'accordo. Ma mi dia sempre la cifra precisa, per esempio: «è cresciuto del cinque per cento rispetto all'anno scorso»."
+    },
+    {
+      "id": "t2",
+      "say": "E l'utile? Ho sentito che i costi del personale sono saliti parecchio.",
+      "en": "And profit? I heard staff costs have gone up quite a lot.",
+      "task": "Explain the profit figure with a passive (è stato compensato da…, è stato frenato da…) and a contrast connector.",
+      "hint": "L'utile è sceso un po', tuttavia l'aumento dei costi è stato compensato da…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Uses a passive (essere stato / venire + participle)",
+            "anyOf": [
+              "\\b(è stato|è stata|sono stati|sono state|viene|vengono|verrà|verranno|è venuto|è venuta)\\s+(\\p{L}+\\s+){0,2}\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|so|sa|si|se|sso|ssa)\\b"
+            ],
+            "min": 1,
+            "errorType": "passive",
+            "conceptId": "B2-PASS-01",
+            "hint": "*…è stato compensato da…, è stata frenata da…*"
+          },
+          {
+            "label": "Uses a contrast connector",
+            "anyOf": [
+              "\\b(però|ma|tuttavia|nonostante|ciononostante|comunque|eppure|mentre|invece|sebbene|benché|d['’]altra parte|anche se)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*tuttavia, però, nonostante…*"
+          }
+        ]
+      },
+      "model": "L'utile è sceso leggermente, tuttavia l'aumento dei costi del personale è stato in parte compensato dai ricavi delle commissioni.",
+      "followOk": "Chiaro. Quindi la redditività ha tenuto, nonostante tutto. Bene.",
+      "followMiss": "D'accordo. In questi casi direi così: «l'aumento dei costi è stato compensato da maggiori ricavi». Suona più professionale."
+    },
+    {
+      "id": "t3",
+      "say": "Passiamo alle previsioni. Che cosa ci aspettiamo per il quarto trimestre?",
+      "en": "Let's move on to the forecasts. What are we expecting for the fourth quarter?",
+      "task": "Forecast with si prevede che / si stima che (+ future or subjunctive) and a figure or trend.",
+      "hint": "Si prevede che il fatturato cresca / crescerà…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Impersonal si prevede / si stima",
+            "anyOf": [
+              "\\bsi\\s+(prevede|stima|ipotizza|ritiene|presume|attende|aspetta|calcola|prevedono|stimano|attendono)\\b"
+            ],
+            "min": 1,
+            "errorType": "passive",
+            "conceptId": "B2-SI-01",
+            "hint": "*Si prevede che…, si stima che…*"
+          },
+          {
+            "label": "Future or subjunctive in the forecast",
+            "anyOf": [
+              "\\b\\p{L}+(rò|rai|rà|remo|rete|ranno)\\b",
+              "\\b(possa|possano|sia|siano|cresca|crescano|aumenti|aumentino|diminuisca|diminuiscano|rimanga|rimangano|resti|restino|migliori|migliorino|scenda|scendano|chiuda|chiudano|raggiunga|raggiungano|si stabilizzi|tenga|tengano)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*…crescerà / cresca del tre per cento.*"
+          }
+        ]
+      },
+      "model": "Si prevede che il fatturato crescerà di un altro tre per cento, grazie soprattutto alla domanda di mutui, che è in ripresa.",
+      "followOk": "Mi sembra una stima prudente, e mi va bene così. Meglio non promettere troppo.",
+      "followMiss": "Va bene. Per le slide, però, userei una formula come «si prevede che i ricavi crescano del tre per cento»."
+    },
+    {
+      "id": "t4",
+      "say": "Ci sono dei rischi da segnalare? Il consiglio di amministrazione vorrà saperlo.",
+      "en": "Are there any risks to flag? The board will want to know.",
+      "task": "Flag a risk in nominal style (il rallentamento di…, un rialzo dei…, la riduzione dei…) and say what it could cause.",
+      "hint": "Il rischio principale è il rallentamento di…, che potrebbe…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Nominal style (noun instead of verb)",
+            "anyOf": [
+              "\\b(il|lo|la|l['’]|un|una|uno|un['’]|ulteriore)\\s*(ulteriore\\s+)?(rallentamento|aumento|calo|riduzione|diminuzione|crescita|peggioramento|volatilità|incertezza|rialzo|ribasso|discesa|contrazione|stretta|taglio|introduzione|perdita|chiusura|uscita|frenata|aumenti|tagli)\\b"
+            ],
+            "min": 1,
+            "errorType": "register",
+            "conceptId": "C1-SYN-02",
+            "hint": "*il rallentamento della domanda, un rialzo dei tassi*"
+          },
+          {
+            "label": "Says what it could cause",
+            "anyOf": [
+              "\\b(potrebbe|potrebbero|rischia|rischiano|rischierebbe|dipende|dipenderà|qualora|in caso di|dovesse|dovessero|comporterebbe|ridurre|frenare|pesare|incidere)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "C1-VOC-05",
+            "hint": "*…che potrebbe frenare la domanda.*"
+          }
+        ]
+      },
+      "model": "Il rischio principale è un ulteriore rialzo dei tassi d'interesse, che potrebbe frenare la domanda di mutui e ridurre i volumi.",
+      "followOk": "Giusto, lo inseriamo nella sezione dei rischi. Ottima osservazione.",
+      "followMiss": "Sì. Nella relazione scriverei qualcosa come «il rischio principale è il rallentamento della domanda»: in stile nominale rende meglio."
+    },
+    {
+      "id": "t5",
+      "say": "Ultima cosa: se dovesse riassumere il trimestre in una frase per il comunicato stampa, che cosa direbbe?",
+      "en": "One last thing: if you had to sum up the quarter in one sentence for the press release, what would you say?",
+      "task": "Sum it up in one formal sentence: a nominal phrase plus a passive or si-construction (si è chiuso con…, sono stati confermati…).",
+      "hint": "Il trimestre si è chiuso con una crescita…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Passive or si-construction",
+            "anyOf": [
+              "\\b(si\\s+è\\s+chius\\p{L}|si\\s+chiude|si\\s+conferma|si\\s+registra|si\\s+è\\s+registrat\\p{L}|è stato|è stata|sono stati|sono state|viene|vengono|chiude|ha chiuso|registrat\\p{L}|confermat\\p{L})\\b"
+            ],
+            "min": 1,
+            "errorType": "passive",
+            "conceptId": "B2-PASS-01",
+            "hint": "*Il trimestre si è chiuso con…, sono stati confermati…*"
+          },
+          {
+            "label": "Nominal phrase",
+            "anyOf": [
+              "\\b(crescita|aumento|calo|riduzione|miglioramento|incremento|tenuta|solidità|rafforzamento|risultato|risultati|progresso|ripresa)\\b"
+            ],
+            "min": 1,
+            "errorType": "register",
+            "conceptId": "C1-SYN-02",
+            "hint": "*…con una solida crescita dei ricavi*"
+          }
+        ]
+      },
+      "model": "Il trimestre si è chiuso con una solida crescita dei ricavi, nonostante l'aumento dei costi, e sono stati confermati gli obiettivi annuali.",
+      "followOk": "Perfetto, è proprio il tono giusto. La mando subito all'ufficio stampa.",
+      "followMiss": "Mh, la renderei più formale: «il trimestre si è chiuso con una crescita dei ricavi del sei per cento». Che ne dice?"
+    }
+  ],
+  "closing": "Ottimo lavoro. Mi mandi le slide entro venerdì sera, così le rivediamo insieme lunedì."
+}

@@ -1,0 +1,227 @@
+{
+  "id": "CV-24",
+  "title": "Volontariato",
+  "subtitle": "Talking about community volunteering: motivations, opinions with the subjunctive, si impersonale and passivante.",
+  "level": "B2",
+  "theme": "Società e attualità",
+  "conceptIds": [
+    "B2-COND-01",
+    "B2-PAST-01",
+    "B2-SUBJ-01",
+    "B2-SI-01",
+    "B2-FUT-01"
+  ],
+  "tutor": {
+    "name": "Elena",
+    "avatar": "🙋‍♀️",
+    "gender": "female",
+    "register": "informal"
+  },
+  "setting": "At a neighbourhood street festival in Padua, you stop at the stall of a local volunteer association that runs a food bank and an after-school club. Elena, who coordinates it, comes over to chat.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Ciao! Ti ho visto guardare il nostro banchetto. Ti interessa il volontariato?",
+      "en": "Hi! I saw you looking at our stall. Are you interested in volunteering?",
+      "task": "Say yes and explain your motivation with the conditional (mi piacerebbe…, vorrei…) and a reason.",
+      "hint": "Sì, mi piacerebbe… perché…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Conditional for wishes (mi piacerebbe, vorrei…)",
+            "anyOf": [
+              "\\b(mi piacerebbe|vorrei|mi interesserebbe|sarei contento|sarei contenta|avrei voglia|sarebbe bello)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Mi **piacerebbe** fare qualcosa per…*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|dal momento che|infatti|in quanto)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché…*"
+          }
+        ]
+      },
+      "model": "Sì, molto. Mi piacerebbe fare qualcosa per il quartiere, perché da quando sono arrivato non conosco quasi nessuno.",
+      "followOk": "Che bello! È proprio per questo che molti si avvicinano a noi.",
+      "followMiss": "Capisco. Molti vengono da noi perché vorrebbero rendersi utili e conoscere gente nuova."
+    },
+    {
+      "id": "t2",
+      "say": "Allora ti spiego un po' come funziona. Ma prima dimmi: hai mai fatto volontariato?",
+      "en": "Then I'll explain a bit about how it works. But first tell me: have you ever volunteered?",
+      "task": "Talk about past experience (or lack of it) with the passato prossimo, and say when or for how long.",
+      "hint": "Sì, quando studiavo ho aiutato per due anni in…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Passato prossimo",
+            "anyOf": [
+              "\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "*Ho aiutato…, ho fatto…*"
+          },
+          {
+            "label": "Says when or for how long",
+            "anyOf": [
+              "\\b(per\\s+(\\p{L}+\\s+)?(anni|anno|mesi|mese|settimane|estate|estati)|quando|mai|una volta|qualche volta|spesso|da ragazzo|da ragazza|all['’]università)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-PREP-02",
+            "hint": "*…per due anni, quando studiavo…*"
+          }
+        ]
+      },
+      "model": "Sì, quando studiavo all'università ho aiutato per due anni in una mensa per i senzatetto.",
+      "followOk": "Ottimo, allora hai già esperienza. Ci sarà utilissima.",
+      "followMiss": "Capisco. Comunque non importa: anch'io, prima di cominciare qui, non avevo mai fatto volontariato."
+    },
+    {
+      "id": "t3",
+      "say": "Noi raccogliamo cibo per le famiglie in difficoltà e aiutiamo i ragazzi con i compiti. Secondo te, in un quartiere come questo, di che cosa c'è più bisogno?",
+      "en": "We collect food for families in need and help kids with their homework. In your view, in a neighbourhood like this, what's most needed?",
+      "task": "Give your opinion with penso che / credo che + subjunctive (ci sia bisogno di…) and a reason.",
+      "hint": "Credo che ci sia soprattutto bisogno di… perché…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Penso che / credo che + subjunctive",
+            "anyOf": [
+              "\\b(penso|credo|ritengo|reputo|immagino|trovo|mi sembra|mi pare|sono convinto|sono convinta|non penso|non credo|dubito|sostengono|ritengono|pensano|credono|sostiene|ritiene)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}(sia|siano|abbia|abbiano|possa|possano|debba|debbano|vada|vadano|faccia|facciano|serva|servano|convenga|convengano|stia|stiano|venga|vengano|valga|valgano|sappia|sappiano|voglia|vogliano|occorra|bisogni|basti|bastino|costi|costino|funzioni|funzionino|porti|portino|rischi|rischino|aiuti|aiutino|renda|rendano|cambi|migliori|paghi|paghino|spenda|spendano|includa|includano|metta|mettano|tenga|tengano|dia|diano|conosca|conoscano|legga|scelga|scelgano|piaccia|piacciano|parli|parlino|chieda|chiedano|prenda|prendano|\\p{L}{3,}(?:ino|isca|iscano|iamo|iate)|fosse|fossero|fossi|avesse|avessero|avessi|\\p{L}{2,}(?:asse|esse|isse|assero|essero|issero|assi|essi|issi))\\b",
+              "\\b(è importante|è meglio|è fondamentale|è essenziale|è necessario|è giusto|non è giusto|è preferibile|è opportuno|bisogna|occorre|conviene|sarebbe meglio|sarebbe importante|sarebbe giusto|bisognerebbe|occorrerebbe|converrebbe)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}(sia|siano|abbia|abbiano|possa|possano|debba|debbano|vada|vadano|faccia|facciano|serva|servano|convenga|convengano|stia|stiano|venga|vengano|valga|valgano|sappia|sappiano|voglia|vogliano|occorra|bisogni|basti|bastino|costi|costino|funzioni|funzionino|porti|portino|rischi|rischino|aiuti|aiutino|renda|rendano|cambi|migliori|paghi|paghino|spenda|spendano|includa|includano|metta|mettano|tenga|tengano|dia|diano|conosca|conoscano|legga|scelga|scelgano|piaccia|piacciano|parli|parlino|chieda|chiedano|prenda|prendano|\\p{L}{3,}(?:ino|isca|iscano|iamo|iate)|fosse|fossero|fossi|avesse|avessero|avessi|\\p{L}{2,}(?:asse|esse|isse|assero|essero|issero|assi|essi|issi))\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Credo che ci **sia** bisogno di…*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|dal momento che|infatti|in quanto)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché…*"
+          }
+        ]
+      },
+      "model": "Credo che ci sia soprattutto bisogno di aiutare i ragazzi, perché molte famiglie non possono pagare le ripetizioni.",
+      "followOk": "Sono d'accordo. Infatti il doposcuola è il servizio più richiesto.",
+      "followMiss": "Mmh, io penso che ci sia bisogno soprattutto del doposcuola: è il servizio più richiesto."
+    },
+    {
+      "id": "t4",
+      "say": "Prova a indovinare: come ti immagini un sabato mattina al nostro banco alimentare?",
+      "en": "Have a guess: how do you picture a Saturday morning at our food bank?",
+      "task": "Describe how things are done with the si impersonale / passivante (si raccolgono…, si preparano…, si lavora…). Use it at least twice.",
+      "hint": "Immagino che prima si raccolgano…, poi si preparano…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Si + verb, at least twice (si raccolgono, si prepara…)",
+            "anyOf": [
+              "\\bsi\\s+\\p{L}+(no|a|e|à)\\b"
+            ],
+            "min": 2,
+            "errorType": "passive",
+            "conceptId": "B2-SI-01",
+            "hint": "*si raccolgono i prodotti, si preparano i pacchi…*"
+          }
+        ]
+      },
+      "model": "Immagino che prima si raccolgano i prodotti nei supermercati, poi si preparano i pacchi e si consegnano alle famiglie.",
+      "followOk": "Esatto, più o meno è così. E il lavoro si divide in turni di tre ore.",
+      "followMiss": "Più o meno: prima si raccolgono i prodotti, poi si preparano i pacchi e si consegnano alle famiglie."
+    },
+    {
+      "id": "t5",
+      "say": "Molti dicono che il volontariato dovrebbe essere obbligatorio per i ragazzi, come una specie di servizio civile. Tu che ne pensi?",
+      "en": "Many people say volunteering should be compulsory for young people, as a kind of civil service. What do you think?",
+      "task": "Give a nuanced opinion: non credo che / è giusto che + subjunctive, plus a contrast (però, anche se…).",
+      "hint": "Non credo che debba essere obbligatorio, però è importante che…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Opinion or impersonal + che + subjunctive",
+            "anyOf": [
+              "\\b(penso|credo|ritengo|reputo|immagino|trovo|mi sembra|mi pare|sono convinto|sono convinta|non penso|non credo|dubito|sostengono|ritengono|pensano|credono|sostiene|ritiene)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}(sia|siano|abbia|abbiano|possa|possano|debba|debbano|vada|vadano|faccia|facciano|serva|servano|convenga|convengano|stia|stiano|venga|vengano|valga|valgano|sappia|sappiano|voglia|vogliano|occorra|bisogni|basti|bastino|costi|costino|funzioni|funzionino|porti|portino|rischi|rischino|aiuti|aiutino|renda|rendano|cambi|migliori|paghi|paghino|spenda|spendano|includa|includano|metta|mettano|tenga|tengano|dia|diano|conosca|conoscano|legga|scelga|scelgano|piaccia|piacciano|parli|parlino|chieda|chiedano|prenda|prendano|\\p{L}{3,}(?:ino|isca|iscano|iamo|iate)|fosse|fossero|fossi|avesse|avessero|avessi|\\p{L}{2,}(?:asse|esse|isse|assero|essero|issero|assi|essi|issi))\\b",
+              "\\b(è importante|è meglio|è fondamentale|è essenziale|è necessario|è giusto|non è giusto|è preferibile|è opportuno|bisogna|occorre|conviene|sarebbe meglio|sarebbe importante|sarebbe giusto|bisognerebbe|occorrerebbe|converrebbe)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}(sia|siano|abbia|abbiano|possa|possano|debba|debbano|vada|vadano|faccia|facciano|serva|servano|convenga|convengano|stia|stiano|venga|vengano|valga|valgano|sappia|sappiano|voglia|vogliano|occorra|bisogni|basti|bastino|costi|costino|funzioni|funzionino|porti|portino|rischi|rischino|aiuti|aiutino|renda|rendano|cambi|migliori|paghi|paghino|spenda|spendano|includa|includano|metta|mettano|tenga|tengano|dia|diano|conosca|conoscano|legga|scelga|scelgano|piaccia|piacciano|parli|parlino|chieda|chiedano|prenda|prendano|\\p{L}{3,}(?:ino|isca|iscano|iamo|iate)|fosse|fossero|fossi|avesse|avessero|avessi|\\p{L}{2,}(?:asse|esse|isse|assero|essero|issero|assi|essi|issi))\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Non credo che **debba**…, è importante che le scuole lo **facciano**…*"
+          },
+          {
+            "label": "Contrast (però, anche se…)",
+            "anyOf": [
+              "\\b(però|ma|tuttavia|invece|d['’]altra parte|da un lato)\\b",
+              "\\banche se\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…però…*"
+          }
+        ]
+      },
+      "model": "Non credo che debba essere obbligatorio, però è importante che le scuole lo facciano conoscere ai ragazzi.",
+      "followOk": "Sono d'accordo con te: se diventa un obbligo, perde un po' di senso.",
+      "followMiss": "Mmh. Io non credo che debba essere obbligatorio, però è giusto che i ragazzi lo conoscano."
+    },
+    {
+      "id": "t6",
+      "say": "Allora, ti va di provare? Ci serve qualcuno il sabato mattina o il mercoledì pomeriggio.",
+      "en": "So, would you like to give it a try? We need someone on Saturday mornings or Wednesday afternoons.",
+      "task": "Accept and say when you'll come and what you'll do, using the future.",
+      "hint": "Sì, volentieri! Verrò il… così potrò…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Uses the future",
+            "anyOf": [
+              "\\b\\p{L}+(rò|rai|rà|remo|rete|ranno)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*Verrò…, potrò…*"
+          },
+          {
+            "label": "Says when",
+            "anyOf": [
+              "\\b(sabato|mercoledì|mattina|pomeriggio|settimana|tutti e due|entrambi)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-PREP-02",
+            "hint": "*…il mercoledì pomeriggio…*"
+          }
+        ]
+      },
+      "model": "Sì, volentieri! Verrò il mercoledì pomeriggio, così potrò aiutare i ragazzi con i compiti.",
+      "followOk": "Fantastico! Allora ti lascio il mio numero e ti presento gli altri volontari.",
+      "followMiss": "Benissimo! Allora ci vediamo presto: ti presenterò io gli altri volontari."
+    }
+  ],
+  "closing": "Grazie davvero, c'è sempre bisogno di persone come te. A presto!"
+}

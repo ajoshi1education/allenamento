@@ -1,0 +1,114 @@
+{
+  "id": "CV-17",
+  "title": "Ricordi d'infanzia",
+  "subtitle": "Childhood memories: imperfetto vs passato prossimo, describing people and places from the past.",
+  "level": "B2",
+  "theme": "Cultura e tempo libero",
+  "conceptIds": ["B2-PAST-01", "B2-SPEAK-01", "B2-CONN-01"],
+  "tutor": { "name": "Elena", "avatar": "👩‍🦱", "gender": "female", "register": "informal" },
+  "setting": "You're staying with your friend Elena at her parents' house in Lecce. After dinner she brings out an old box of family photos.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Guarda questa foto: qui avevo sei anni, eravamo al mare a Otranto. E tu, dove hai passato l'infanzia?",
+      "en": "Look at this photo: here I was six, we were at the seaside in Otranto. And you, where did you spend your childhood?",
+      "task": "Say where you grew up with 'quando ero piccolo/a' and describe the place in the imperfetto.",
+      "hint": "Quando ero piccolo/a vivevo a/in…: c'era…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Quando ero piccolo/a, da bambino/a…", "anyOf": ["\\b(quando ero piccolo|quando ero piccola|quando ero bambino|quando ero bambina|da piccolo|da piccola|da bambino|da bambina|da ragazzo|da ragazza|quando ero ragazzo|quando ero ragazza)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*Quando ero piccolo/a…*" },
+          { "label": "Imperfetto to describe the place", "anyOf": ["\\b(\\p{L}+(avo|ava|avamo|avano|evo|eva|evamo|evano|ivo|iva|ivamo|ivano)|era|erano)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*vivevo…, c'era…*" }
+        ]
+      },
+      "model": "Quando ero piccolo vivevo in un paesino di campagna: c'era una sola piazza e tutti si conoscevano.",
+      "followOk": "Che bello, sembra un posto da film! Io invece sono cresciuta qui, ma d'estate eravamo sempre al mare.",
+      "followMiss": "Ah, capito. Io, quando ero piccola, vivevo qui a Lecce, ma d'estate stavamo sempre al mare."
+    },
+    {
+      "id": "t2",
+      "say": "E la tua casa com'era? Te la ricordi bene?",
+      "en": "And what was your house like? Do you remember it well?",
+      "task": "Describe the house with at least two verbs in the imperfetto (era, c'era, aveva…).",
+      "hint": "Sì, era una casa…, e dietro c'era…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Imperfetto for description (twice)", "anyOf": ["\\b(\\p{L}+(avo|avi|ava|avamo|avano|evo|evi|eva|evamo|evano|ivo|ivi|iva|ivamo|ivano)|ero|eri|era|eravamo|erano)\\b"], "min": 2, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*era…, c'era…, aveva…*" }
+        ]
+      },
+      "model": "Sì, era una casa vecchia con un grande giardino, e dietro c'era un albero di fichi dove salivo sempre.",
+      "followOk": "Che meraviglia! Anche i miei nonni avevano un albero di fichi, ci passavo le ore.",
+      "followMiss": "Che bello. La mia invece era un appartamento piccolo, ma c'era un terrazzo enorme dove giocavo sempre."
+    },
+    {
+      "id": "t3",
+      "say": "E a scuola? C'era una maestra o un maestro che ti è rimasto nel cuore?",
+      "en": "And at school? Was there a teacher who has stayed in your heart?",
+      "task": "Describe a teacher's looks and personality in the imperfetto (era, aveva, portava…).",
+      "hint": "Sì, la maestra…: era…, aveva… e portava…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Imperfetto for description", "anyOf": ["\\b(era|erano|aveva|portava|sembrava|faceva|parlava|rideva|sorrideva|diceva|raccontava|leggeva|\\p{L}+(ava|eva|iva))\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*era alta, aveva i capelli…*" },
+          { "label": "Describes looks or character", "anyOf": ["\\b(alta|alto|bassa|basso|severa|severo|gentile|dolce|simpatica|simpatico|capelli|occhi|occhiali|paziente|buffa|buffo|magra|magro|bionda|biondo|bruna|bruno|giovane|anziana|anziano|allegra|allegro|brava|bravo|rigida|rigido|barba|baffi)\\b"], "min": 2, "errorType": "vocabulary", "conceptId": "B2-SPEAK-01", "hint": "*alta, severa, con gli occhiali…*" }
+        ]
+      },
+      "model": "Sì, la maestra Luisa: era alta, portava sempre gli occhiali ed era severa ma molto dolce con noi.",
+      "followOk": "Che ritratto! Mi sembra di vederla. La mia invece era giovanissima e ci faceva cantare tutti i giorni.",
+      "followMiss": "Io mi ricordo la maestra Anna: era bassa, aveva i capelli ricci ed era dolcissima."
+    },
+    {
+      "id": "t4",
+      "say": "Io dell'infanzia ricordo soprattutto le estati dai nonni. Voi che cosa facevate d'estate, di solito?",
+      "en": "What I remember most about childhood is the summers at my grandparents'. What did you usually do in the summer?",
+      "task": "Describe summer routines: di solito / ogni estate + two verbs in the imperfetto.",
+      "hint": "Di solito andavamo…, e ogni pomeriggio…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Expression of habit", "anyOf": ["\\b(di solito|ogni|sempre|spesso|tutti gli|tutte le|la domenica|d['’]?\\s?estate|abitualmente|normalmente)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*Di solito…, ogni estate…*" },
+          { "label": "Imperfetto for habits (twice)", "anyOf": ["\\b(\\p{L}+(avo|avi|ava|avamo|avate|avano|evo|evi|eva|evamo|evate|evano|ivo|ivi|iva|ivamo|ivate|ivano)|ero|eri|era|eravamo|erano)\\b"], "min": 2, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*andavamo…, giocavamo…*" }
+        ]
+      },
+      "model": "Di solito andavamo in montagna dai miei zii, e ogni pomeriggio giocavamo a calcio con i ragazzi del paese.",
+      "followOk": "Che bello! Noi invece passavamo le giornate in spiaggia e la sera mangiavamo il gelato in piazza.",
+      "followMiss": "Ah, capito. Noi di solito andavamo dai nonni, e ogni sera mangiavamo il gelato in piazza."
+    },
+    {
+      "id": "t5",
+      "say": "E c'è un episodio in particolare che ti ricordi? Qualcosa di divertente, o di strano?",
+      "en": "And is there a particular episode you remember? Something funny, or strange?",
+      "task": "Tell one episode: imperfetto for the background (mentre…) and passato prossimo for what happened.",
+      "hint": "Una volta, mentre…, ci siamo persi e…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Imperfetto for the background", "anyOf": ["\\b(\\p{L}+(avo|avi|ava|avamo|avate|avano|evo|evi|eva|evamo|evate|evano|ivo|ivi|iva|ivamo|ivate|ivano)|ero|eri|era|eravamo|erano)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*mentre giocavamo…*" },
+          { "label": "Passato prossimo for the event", "anyOf": ["\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*…ci siamo persi, mio zio ci ha cercati…*" }
+        ]
+      },
+      "model": "Una volta, mentre giocavamo nel bosco, ci siamo persi e mio zio ci ha cercati per tre ore!",
+      "followOk": "Che avventura! Chissà che paura avranno avuto i tuoi genitori.",
+      "followMiss": "Che ridere! Io invece una volta, mentre nuotavo, ho perso il costume in mezzo al mare!"
+    },
+    {
+      "id": "t6",
+      "say": "Ti manca qualcosa di quel periodo?",
+      "en": "Do you miss anything about that time?",
+      "task": "Say what you miss (mi manca / mi mancano) and explain with the imperfetto.",
+      "hint": "Sì, mi manca…: passavo le giornate… e non avevo…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Mi manca / mi mancano", "anyOf": ["\\bmi\\s+(manca|mancano|mancava|mancavano|mancherà)\\b"], "min": 1, "errorType": "vocabulary", "conceptId": "B2-SPEAK-01", "hint": "*Mi manca la libertà, mi mancano i miei nonni…*" },
+          { "label": "Imperfetto to explain", "anyOf": ["\\b(\\p{L}+(avo|avi|avamo|avate|avano|evo|evi|evamo|evate|evano|ivo|ivi|ivamo|ivate|ivano)|ero|eri|era|eravamo|erano|aveva|faceva|c['’]era)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*…passavo le giornate fuori…*" }
+        ]
+      },
+      "model": "Sì, mi manca la libertà che avevo: passavo le giornate fuori e non avevo nessuna preoccupazione.",
+      "followOk": "Ti capisco. A me mancano soprattutto le serate con i nonni, quando ci raccontavano le loro storie.",
+      "followMiss": "A me manca soprattutto la libertà: stavo fuori tutto il giorno e non avevo mai fretta."
+    }
+  ],
+  "closing": "Che bei ricordi. La prossima volta porti tu le tue foto, così le guardiamo insieme!"
+}

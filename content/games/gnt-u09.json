@@ -1,0 +1,11 @@
+{
+  "id": "G-GNT-09",
+  "type": "gauntlet",
+  "title": "Gauntlet: connettivi e sintassi",
+  "subtitle": "Two minutes, three lives: siccome or perché, sebbene + subjunctive, È stato lui a…, la decisione di. How far can you get?",
+  "conceptIds": ["B2-CONN-01", "C1-CONN-02", "C1-SYN-01", "C1-SYN-02"],
+  "difficulty": 4,
+  "minutes": 3,
+  "seconds": 120,
+  "lives": 3
+}

@@ -1,0 +1,112 @@
+{
+  "id": "CV-25",
+  "title": "Un libro che ti ha cambiato",
+  "subtitle": "Talking about a book that mattered: retelling the plot, opinions with the subjunctive, il cui.",
+  "level": "C1",
+  "theme": "Cultura e tempo libero",
+  "conceptIds": ["B2-PAST-01", "C1-PAST-03", "B2-SUBJ-01", "B2-REL-01", "C1-SUBJ-05"],
+  "tutor": { "name": "Chiara", "avatar": "👩‍🦱", "gender": "female", "register": "informal" },
+  "setting": "Your friend Chiara runs a small book club in Turin. She's choosing the books for next season and asks you for a suggestion.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Per il gruppo di lettura, ognuno deve portare un libro che gli ha cambiato la vita. Tu quale porteresti?",
+      "en": "For the book club, everyone has to bring a book that changed their life. Which one would you bring?",
+      "task": "Name the book and say when you read it: passato prossimo for reading it, imperfetto for your situation then.",
+      "hint": "Porterei… L'ho letto quando avevo…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Passato prossimo (l'ho letto, l'ho scoperto…)", "anyOf": ["\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*L'ho letto…, l'ho scoperto…*" },
+          { "label": "Imperfetto for the background (avevo, studiavo, ero…)", "anyOf": ["\\b(avevo|ero|eravamo|stavo|vivevo|dormivo|finivo|partivo|capivo|preferivo|seguivo|frequentavo|\\p{L}{2,}(avo|evo|avamo|evamo))\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*…quando avevo vent'anni / quando vivevo…*" }
+        ]
+      },
+      "model": "Porterei Il Gattopardo. L'ho letto quando avevo vent'anni e studiavo all'università.",
+      "followOk": "Ottima scelta! I libri letti a quell'età ti restano dentro per sempre.",
+      "followMiss": "Ah, interessante. Io porterei un romanzo che ho letto quando avevo diciott'anni e che non ho più dimenticato."
+    },
+    {
+      "id": "t2",
+      "say": "Di che cosa parla? Raccontami un po' la trama, senza svelare troppo.",
+      "en": "What's it about? Tell me a bit about the plot, without giving too much away.",
+      "task": "Tell the start of the story: imperfetto for the background, passato prossimo for what happens.",
+      "hint": "Il protagonista era…, ma un giorno ha deciso di…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Imperfetto for the background", "anyOf": ["\\b(era|erano|c['’]era|c['’]erano|\\p{L}+(ava|avano|eva|evano|iva|ivano))\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*era, viveva, c'era…*" },
+          { "label": "Passato prossimo for the events", "anyOf": ["\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*…un giorno ha deciso / ha scoperto…*" }
+        ]
+      },
+      "model": "Il protagonista era un principe siciliano che viveva in un mondo che stava cambiando, e alla fine ha accettato di adattarsi ai tempi nuovi.",
+      "followOk": "Sembra affascinante. Mi piacciono le storie in cui il mondo cambia intorno ai personaggi.",
+      "followMiss": "Ah, quindi all'inizio il protagonista viveva in un certo modo, e poi è successo qualcosa che ha cambiato tutto."
+    },
+    {
+      "id": "t3",
+      "say": "Senti come comincia il romanzo che sto leggendo io: «Quella sera Marco uscì di casa e non tornò più.» Come lo racconteresti a voce?",
+      "en": "Listen to how the novel I'm reading begins: 'That evening Marco left home and never came back.' How would you tell it in conversation?",
+      "task": "The sentence is in the passato remoto. Retell it as you would in speech, in the passato prossimo (with essere).",
+      "hint": "Quella sera Marco è uscito di casa e…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          { "label": "è uscito (passato prossimo with essere)", "anyOf": ["\\b(è|sono)\\s+(\\p{L}+\\s+)?(uscito|uscita|andato|andata|partito|partita)\\b", "\\bse\\s+n['’]è\\s+andat[oa]\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "C1-PAST-03", "hint": "*uscì → è uscito*" },
+          { "label": "non è più tornato", "anyOf": ["\\b(è|sono)\\s+(\\p{L}+\\s+)?(tornato|tornata|ritornato|ritornata|rientrato|rientrata)\\b"], "min": 1, "errorType": "auxiliary", "conceptId": "C1-PAST-03", "hint": "*non tornò più → non è più tornato*" }
+        ]
+      },
+      "model": "Quella sera Marco è uscito di casa e non è più tornato. Forse gli è successo qualcosa.",
+      "followOk": "Esatto! Nei romanzi si usa il passato remoto, ma a voce quasi tutti dicono così.",
+      "followMiss": "Io lo direi così: quella sera Marco è uscito di casa e non è più tornato."
+    },
+    {
+      "id": "t4",
+      "say": "Torniamo al tuo libro. Perché ti ha colpito così tanto, secondo te? Che cosa ha di speciale?",
+      "en": "Back to your book. Why do you think it struck you so much? What's special about it?",
+      "task": "Give your opinion with credo che / mi sembra che / ho l'impressione che + subjunctive.",
+      "hint": "Credo che l'autore riesca a…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Opinion verb + che + subjunctive", "anyOf": ["\\b(penso|credo|mi sembra|mi pare|trovo|ho l['’]impressione|direi|immagino)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}?(sia|siano|abbia|abbiano|possa|possano|riesca|riescano|sappia|sappiano|faccia|facciano|parli|parlino|racconti|raccontino|descriva|descrivano|mostri|mostrino|tocchi|tocchino|colpisca|spieghi|metta|mettano|dica|dicano|renda|rendano|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Credo che l'autore **riesca**…, mi sembra che **parli**…*" }
+        ]
+      },
+      "model": "Credo che l'autore riesca a descrivere un'epoca intera attraverso una sola famiglia, e mi sembra che parli anche di noi oggi.",
+      "followOk": "Hai ragione, i grandi libri parlano sempre anche del presente.",
+      "followMiss": "Capisco. Io credo che un libro ci cambi quando riesce a parlare anche della nostra vita."
+    },
+    {
+      "id": "t5",
+      "say": "E c'è un personaggio che ti è rimasto impresso? Descrivimelo un po'.",
+      "en": "And is there a character who stayed with you? Describe them a little.",
+      "task": "Describe the character using il cui / la cui / i cui (whose).",
+      "hint": "È un personaggio il cui…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Uses il cui / la cui / i cui / le cui", "anyOf": ["\\b(il|la|i|le)\\s+cui\\b"], "min": 1, "errorType": "relative", "conceptId": "B2-REL-01", "hint": "*…il principe, **il cui** orgoglio…*" }
+        ]
+      },
+      "model": "Mi è rimasto impresso il principe, il cui orgoglio gli impedisce di accettare fino in fondo il cambiamento.",
+      "followOk": "Bellissimo. I personaggi i cui difetti ci somigliano sono sempre i più veri.",
+      "followMiss": "Capisco. Io penso spesso a un personaggio il cui coraggio, alla fine, cambia tutta la storia."
+    },
+    {
+      "id": "t6",
+      "say": "Mi hai convinta, lo leggerò. Ma tu a che tipo di lettore lo consiglieresti?",
+      "en": "You've convinced me, I'll read it. But what kind of reader would you recommend it to?",
+      "task": "Say who you'd recommend it to with a relative clause in the subjunctive: a qualcuno che abbia… / a chiunque ami…",
+      "hint": "Lo consiglierei a qualcuno che abbia…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Relative clause + subjunctive (qualcuno che abbia…)", "anyOf": ["\\b(qualcuno|chiunque|persona|persone|lettore|lettori|lettrice|lettrici)\\s+(che\\s+)?([\\p{L}'’]+\\s+){0,3}?(sia|siano|abbia|abbiano|ami|amino|voglia|vogliano|sappia|sappiano|cerchi|cerchino|possa|possano|apprezzi|apprezzino|preferisca|preferiscano|creda|credano)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "C1-SUBJ-05", "hint": "*…a qualcuno che **abbia** pazienza / che **ami**…*" }
+        ]
+      },
+      "model": "Lo consiglierei a qualcuno che abbia pazienza e che ami le storie lente, piene di dettagli.",
+      "followOk": "Allora è perfetto per me: la pazienza non mi manca!",
+      "followMiss": "Io i libri così li consiglio sempre a qualcuno che abbia tempo e voglia di rallentare."
+    }
+  ],
+  "closing": "Grazie, è stata una bella chiacchierata. Ci vediamo giovedì al gruppo di lettura!"
+}

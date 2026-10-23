@@ -1,0 +1,77 @@
+{
+  "id": "G-DBT-01",
+  "type": "debate",
+  "title": "Lo smart working fa bene o male?",
+  "subtitle": "A sceptical manager wants everyone back in the office. Answer him with concessive, contrast and formal connectors, then write it up like a report.",
+  "conceptIds": ["B2-CONN-01", "C1-CONN-02", "C1-SYN-02"],
+  "difficulty": 4,
+  "minutes": 15,
+  "topic": "Lo smart working fa bene o male ai lavoratori e alle aziende?",
+  "stance": "Lo smart working isola le persone, rende difficile il lavoro di squadra e fa calare la produttività. Secondo me bisogna tornare tutti in ufficio, cinque giorni su cinque.",
+  "opponent": { "name": "Dott. Ferretti", "avatar": "👔" },
+  "prompts": [
+    {
+      "id": "G-DBT-01.p1",
+      "conceptId": "B2-CONN-01",
+      "type": "free",
+      "difficulty": 3,
+      "instruction": "Reply to Dott. Ferretti in Italian (60–120 words). Acknowledge one of his points, then argue that remote working has real advantages. Use at least one concessive connector, one contrast connector and one cause connector.",
+      "prompt": "Ferretti: «Lavorando da casa la gente si isola e lavora di meno. È un esperimento fallito.» Rispondigli.",
+      "minWords": 60,
+      "maxWords": 120,
+      "errorType": "writing",
+      "rubric": [
+        { "label": "Uses a concessive connector (sebbene, benché, nonostante, malgrado, anche se, pur + gerund)", "anyOf": ["\\b(sebbene|benché|nonostante|malgrado|anche se)", "\\bpur\\s+\\w+(ando|endo)\\b"], "min": 1, "errorType": "connector", "hint": "Concede his point first: *Sebbene sia vero che…*, *Anche se…*, *Pur riconoscendo che…*" },
+        { "label": "Uses a contrast connector (tuttavia, eppure, però, invece, mentre, ciononostante)", "anyOf": ["\\b(tuttavia|eppure|però|invece|mentre|ciononostante|ciò nonostante|nondimeno)"], "min": 1, "errorType": "connector", "hint": "Turn the argument with *tuttavia* or *eppure*." },
+        { "label": "Uses a cause connector (siccome, poiché, dato che, visto che, in quanto)", "anyOf": ["\\b(siccome|poiché|dato che|visto che|in quanto)"], "min": 1, "errorType": "connector", "hint": "Justify a claim: *visto che non si perde tempo negli spostamenti…*" },
+        { "label": "Uses the subjunctive after sebbene / benché / nonostante / malgrado", "anyOf": ["(sebbene|benché|nonostante|malgrado)[^.;]*\\b(sia|siano|abbia|abbiano|fosse|fossero|possa|possano|debba|debbano|faccia|facciano|renda|rendano|presenti|presentino|permetta|permettano|comporti|comportino|riduca|riducano|aumenti|aumentino|\\w+essero|\\w+issero|\\w+asse|\\w+esse|\\w+isse)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "hint": "*Sebbene / benché / nonostante* + congiuntivo: *sebbene ci siano dei rischi…*" }
+      ],
+      "model": "Capisco la sua preoccupazione: è vero che, lavorando da casa, si rischia di sentirsi isolati. Tuttavia, i dati raccontano un'altra storia. Sebbene molti manager abbiano paura di un calo della produttività, diversi studi mostrano che chi lavora da remoto è spesso più concentrato, visto che non viene interrotto di continuo. Inoltre, siccome non deve spostarsi, risparmia ogni giorno tempo e denaro. Eppure nessuno propone di chiudere gli uffici: anche se lo smart working non è perfetto, una formula mista permette di conservare i rapporti tra colleghi senza rinunciare alla flessibilità.",
+      "explanation": "A strong reply concedes first (*sebbene* + subjunctive, *anche se* + indicative), then turns the argument (*tuttavia, eppure*) and backs each claim with a cause (*visto che, siccome*)."
+    },
+    {
+      "id": "G-DBT-01.p2",
+      "conceptId": "C1-CONN-02",
+      "type": "free",
+      "difficulty": 5,
+      "instruction": "Ferretti asks you for the conclusion of a short written report for the board (60–120 words, formal register). Weigh pros and cons and make a recommendation. Use at least two formal connectors (pertanto, ciononostante, in quanto, qualora, laddove, ossia…), one concessive connector, and some nominalisations.",
+      "prompt": "Ferretti: «Va bene, mi ha quasi convinto. Mi scriva la conclusione del rapporto per il consiglio di amministrazione.»",
+      "minWords": 60,
+      "maxWords": 120,
+      "errorType": "writing",
+      "rubric": [
+        { "label": "Uses at least two formal connectors (pertanto, ciononostante, in quanto, qualora, laddove, ossia, ovvero)", "anyOf": ["\\bpertanto\\b", "\\b(ciononostante|ciò nonostante|nondimeno)\\b", "\\bin quanto\\b", "\\bqualora\\b", "\\bladdove\\b", "\\b(ossia|ovvero)\\b"], "min": 2, "errorType": "connector", "hint": "Try *pertanto* for the recommendation and *ossia* to clarify a point." },
+        { "label": "Uses a concessive connector (sebbene, benché, nonostante, malgrado, pur + gerund)", "anyOf": ["\\b(sebbene|benché|nonostante|malgrado)", "\\bpur\\s+\\w+(ando|endo)\\b"], "min": 1, "errorType": "connector", "hint": "Acknowledge the drawbacks: *Sebbene il lavoro agile presenti alcune criticità…*" },
+        { "label": "Uses nominalisations (-zione, -mento…) typical of formal writing", "anyOf": ["\\b\\w{3,}(zione|zioni|mento|menti)\\b"], "min": 1, "errorType": "register", "hint": "Turn verbs into nouns: *la riduzione dei costi, l'adozione di un modello ibrido*." },
+        { "label": "Uses the subjunctive after qualora / sebbene / benché / nonostante", "anyOf": ["(qualora|sebbene|benché|nonostante|malgrado)[^.;]*\\b(sia|siano|abbia|abbiano|fosse|fossero|possa|possano|debba|debbano|presenti|presentino|emergano|emergessero|comporti|comportino|\\w+essero|\\w+issero|\\w+asse|\\w+esse|\\w+isse)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "hint": "*Qualora* and *sebbene* take the subjunctive: *qualora emergessero difficoltà…*" },
+        { "label": "Avoids informal markers (tipo, cioè, un sacco, comunque sia)", "anyOf": ["^(?![\\s\\S]*\\b(tipo|un sacco|cioè|boh|ok)\\b)"], "min": 1, "errorType": "register", "hint": "Keep the register formal: *ossia* instead of *cioè*, *molto* instead of *un sacco*." }
+      ],
+      "model": "In conclusione, sebbene il lavoro agile presenti alcune criticità, ossia il rischio di isolamento e la difficoltà di separare vita privata e lavoro, i benefici risultano nel complesso superiori. La riduzione degli spostamenti comporta un notevole risparmio di tempo per i dipendenti e una diminuzione dei costi di gestione per l'azienda. Si propone pertanto l'adozione di un modello ibrido, con due giorni di presenza settimanali. Qualora emergessero difficoltà organizzative, si procederà a una verifica del modello dopo sei mesi.",
+      "explanation": "Formal conclusions concede (*sebbene* + subjunctive), clarify (*ossia*), conclude (*pertanto*) and plan for contingencies (*qualora* + subjunctive), mostly through nouns (*riduzione, adozione, verifica*)."
+    },
+    {
+      "id": "G-DBT-01.p3",
+      "conceptId": "C1-SYN-02",
+      "type": "transform",
+      "difficulty": 4,
+      "instruction": "Rewrite Ferretti's colleague's colloquial remark for the report. Start with 'La diffusione del lavoro da casa ha…' and turn 'il traffico è diminuito' into a noun phrase.",
+      "prompt": "Siccome tanti lavorano da casa, il traffico è diminuito.",
+      "answers": [
+        "La diffusione del lavoro da casa ha (comportato|determinato|causato|prodotto|provocato) (una|la) (diminuzione|riduzione) del traffico",
+        "La diffusione del lavoro da casa ha (comportato|determinato|causato|prodotto|provocato) un calo del traffico",
+        "La diffusione del lavoro da casa ha portato (a una|ad una|alla) (diminuzione|riduzione) del traffico",
+        "La diffusione del lavoro da casa ha portato a un calo del traffico"
+      ],
+      "focus": ["diminuzione", "riduzione", "calo"],
+      "errorType": "word-formation",
+      "traps": [
+        { "contains": ["diminuito"], "errorType": "word-formation", "why": "Turn the verb into a noun: *una diminuzione* (or *riduzione*, *un calo*) *del traffico*." },
+        { "contains": ["diminuimento", "diminuazione"], "errorType": "word-formation", "why": "The noun from *diminuire* is *la diminuzione*." },
+        { "match": "La diffusione del lavoro da casa ha portato a la (diminuzione|riduzione) del traffico", "errorType": "preposition", "why": "*A* + *la* combines: *alla*, or use the indefinite article: *a una diminuzione*." },
+        { "contains": ["siccome"], "errorType": "register", "why": "The causal link is now carried by the verb (*ha comportato*), so *siccome* disappears." }
+      ],
+      "explanation": "Cause → subject noun (*la diffusione del lavoro da casa*), effect → object noun (*una diminuzione del traffico*), linked by a formal verb (*comportare, determinare*).",
+      "en": "The spread of working from home has led to a reduction in traffic."
+    }
+  ]
+}

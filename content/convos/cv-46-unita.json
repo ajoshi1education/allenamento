@@ -1,0 +1,202 @@
+{
+  "id": "CV-46",
+  "title": "L'Unità d'Italia",
+  "subtitle": "A lesson on the Risorgimento: cause and consequence connectors, reported speech, and hypotheticals in the past.",
+  "level": "C1",
+  "theme": "Società e attualità",
+  "conceptIds": [
+    "B2-CONN-01",
+    "C1-SEQ-03",
+    "B2-HYP-02",
+    "B2-SUBJ-01",
+    "B2-PASS-01"
+  ],
+  "tutor": {
+    "name": "Professoressa Ferri",
+    "avatar": "👩‍🏫",
+    "gender": "female",
+    "register": "formal"
+  },
+  "setting": "You're taking a one-to-one history lesson in Turin with Professoressa Ferri, a secondary-school teacher, on how Italy was unified.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Oggi parliamo del Risorgimento. Il 17 marzo 1861, a Torino, fu proclamato il Regno d'Italia. Lei sa perché proprio Torino fu la prima capitale?",
+      "en": "Today we're talking about the Risorgimento. On 17 March 1861, in Turin, the Kingdom of Italy was proclaimed. Do you know why Turin in particular was the first capital?",
+      "task": "Suggest the cause with a connector (perché, dato che, poiché, in quanto).",
+      "hint": "Immagino che sia stata scelta perché…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Cause connector",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti|dal momento che|in quanto|grazie a|grazie al|grazie alla|grazie ai)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché / dato che il re…*"
+          },
+          {
+            "label": "Mentions Piedmont, the king or the Savoy",
+            "anyOf": [
+              "\\b(piemonte|piemontes\\p{L}*|savoia|sardegna|re|vittorio emanuele|cavour|sabaud\\p{L}*)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…il Piemonte, i Savoia, il re…*"
+          }
+        ]
+      },
+      "model": "Immagino che sia stata scelta perché il re, Vittorio Emanuele II, era un Savoia, e il Piemonte aveva guidato l'unificazione.",
+      "followOk": "Esatto. Poi la capitale passò a Firenze nel 1865, e solo nel 1871 arrivò finalmente a Roma.",
+      "followMiss": "La ragione è semplice: dato che l'unificazione era stata guidata dal Regno di Sardegna, la capitale fu Torino, la città dei Savoia."
+    },
+    {
+      "id": "t2",
+      "say": "Nel 1860 Garibaldi partì da Quarto, vicino a Genova, con circa mille volontari e conquistò il Regno delle Due Sicilie. Come lo racconterebbe con parole sue?",
+      "en": "In 1860 Garibaldi set off from Quarto, near Genoa, with about a thousand volunteers and conquered the Kingdom of the Two Sicilies. How would you tell it in your own words?",
+      "task": "Retell the events in the passato prossimo, linking them with a consequence connector (quindi, di conseguenza, perciò).",
+      "hint": "Garibaldi è partito… ha conquistato…, quindi…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Passato prossimo",
+            "anyOf": [
+              "\\b(ho|hai|ha|abbiamo|avete|hanno|sono|sei|è|siamo|siete)\\s+(\\p{L}+\\s+)?\\p{L}+(at|ut|it|tt|st|ss|nt|rs|rt|lt|es|is|os|us)[oaie]\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "C1-PAST-03",
+            "hint": "*partì → **è partito**, conquistò → **ha conquistato***"
+          },
+          {
+            "label": "Consequence connector",
+            "anyOf": [
+              "\\b(quindi|di conseguenza|perciò|per questo|così|dunque|tanto che|per cui|ragion per cui)\\b",
+              "\\b(alla fine|in seguito|dopodiché)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…**quindi** il Regno è caduto*"
+          }
+        ]
+      },
+      "model": "Garibaldi è partito da Quarto con mille volontari, è sbarcato in Sicilia e ha conquistato il Sud, quindi il Regno delle Due Sicilie è caduto.",
+      "followOk": "Molto bene. Sbarcarono a Marsala l'11 maggio e in pochi mesi arrivarono fino a Napoli.",
+      "followMiss": "Riassumendo: Garibaldi è partito con i suoi volontari, ha conquistato la Sicilia e poi Napoli, e di conseguenza il Regno borbonico è crollato."
+    },
+    {
+      "id": "t3",
+      "say": "A Massimo d'Azeglio viene attribuita questa frase: «Abbiamo fatto l'Italia, ora dobbiamo fare gli italiani». Come la riferirebbe in discorso indiretto?",
+      "en": "This sentence is attributed to Massimo d'Azeglio: 'We have made Italy, now we must make Italians.' How would you report it in indirect speech?",
+      "task": "Report it with disse che and shift the tenses (abbiamo fatto → avevano fatto, dobbiamo → dovevano, ora → allora).",
+      "hint": "D'Azeglio disse che avevano fatto… e che…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Reporting verb + che",
+            "anyOf": [
+              "\\b(disse|ha detto|diceva|affermò|ha affermato|sostenne|ha sostenuto|dichiarò|ha dichiarato|avrebbe detto|scrisse|ha scritto)\\s+che\\b"
+            ],
+            "min": 1,
+            "errorType": "reported-speech",
+            "conceptId": "C1-SEQ-03",
+            "hint": "*D'Azeglio **disse che**…*"
+          },
+          {
+            "label": "Shifts the tenses (avevano fatto, dovevano)",
+            "anyOf": [
+              "\\b(avevano|aveva|avevamo)\\s+fatto\\b",
+              "\\b(dovevano|bisognava|occorreva|si doveva|dovessero)\\b"
+            ],
+            "min": 2,
+            "errorType": "tense-sequence",
+            "conceptId": "C1-SEQ-03",
+            "hint": "*…**avevano fatto** l'Italia e che **dovevano** fare gli italiani*"
+          }
+        ]
+      },
+      "model": "D'Azeglio disse che avevano fatto l'Italia, ma che allora dovevano fare gli italiani.",
+      "followOk": "Perfetto. E aveva ragione: nel 1861 solo una piccola minoranza degli abitanti parlava davvero l'italiano.",
+      "followMiss": "In discorso indiretto: d'Azeglio disse che avevano fatto l'Italia e che allora dovevano fare gli italiani."
+    },
+    {
+      "id": "t4",
+      "say": "Molti storici pensano che senza Cavour e la sua alleanza con la Francia l'unificazione sarebbe stata impossibile. Lei che ne pensa?",
+      "en": "Many historians think that without Cavour and his alliance with France, unification would have been impossible. What do you think?",
+      "task": "Answer with a past hypothetical: se + congiuntivo trapassato, then the condizionale passato.",
+      "hint": "Se Cavour non avesse…, il Piemonte non avrebbe…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "se + congiuntivo trapassato",
+            "anyOf": [
+              "\\bse\\s+(\\S+\\s+){0,3}?(fosse|fossero|avesse|avessero)\\s+\\p{L}+(at|ut|it|tt|st|ss|nt|rs|rt|lt|es|is|os|us)[oaie]\\b"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-HYP-02",
+            "hint": "***Se** Cavour non **avesse convinto**…*"
+          },
+          {
+            "label": "Condizionale passato",
+            "anyOf": [
+              "\\b(sarebbe|sarebbero|avrebbe|avrebbero|avremmo|saremmo)\\s+(\\S+\\s+)?\\p{L}+(at|ut|it|tt|st|ss|nt|rs|rt|lt|es|is|os|us)[oaie]\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-HYP-02",
+            "hint": "*…non **avrebbe vinto**, **sarebbe stata** impossibile*"
+          }
+        ]
+      },
+      "model": "Probabilmente hanno ragione: se Cavour non avesse convinto Napoleone III, il Piemonte non avrebbe mai vinto la guerra contro l'Austria.",
+      "followOk": "Concordo. Cavour era un diplomatico abilissimo, ma morì nel giugno del 1861, pochi mesi dopo l'Unità.",
+      "followMiss": "Si potrebbe dire così: se non ci fosse stato Cavour, la Francia non avrebbe aiutato il Piemonte e l'Austria avrebbe vinto."
+    },
+    {
+      "id": "t5",
+      "say": "Ultima domanda: oggi si parla ancora del divario tra Nord e Sud. Secondo Lei, è anche una conseguenza del modo in cui è avvenuta l'unificazione?",
+      "en": "Last question: people still talk today about the North–South divide. In your view, is it partly a consequence of the way unification happened?",
+      "task": "Argue your view with credo che / è possibile che + subjunctive and a cause or consequence connector.",
+      "hint": "Credo che in parte lo sia, perché… e di conseguenza…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Opinion + che + subjunctive",
+            "anyOf": [
+              "\\b(penso|credo|mi sembra|mi pare|immagino|ritengo|dubito|spero|suppongo|non è detto|è possibile|è probabile|può darsi)\\s+che\\s+(\\S+\\s+){0,5}?(sia|siano|abbia|abbiano|possa|possano|fosse|fossero|avesse|avessero|faccia|facciano|vada|vadano|venga|vengano|debba|debbano|stia|stiano|riesca|riescano|diventi|diventino|cresca|crescano|piaccia|piacciano|torni|tornino|porti|portino|serva|servano|\\p{L}+(assi|asse|essi|esse|issi|isse|assimo|essimo|issimo|assero|essero|issero))\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Credo che in parte lo **sia**…*"
+          },
+          {
+            "label": "Cause / consequence connector",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti|dal momento che|in quanto|grazie a|grazie al|grazie alla|grazie ai)\\b",
+              "\\b(quindi|di conseguenza|perciò|per questo|così|dunque|tanto che|per cui|ragion per cui)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché…, di conseguenza…*"
+          }
+        ]
+      },
+      "model": "Credo che in parte lo sia, perché il Sud fu unito in fretta e, di conseguenza, molti problemi economici non furono mai risolti.",
+      "followOk": "È una lettura condivisa da molti storici, anche se il dibattito è ancora aperto. Ottimo lavoro, oggi.",
+      "followMiss": "Molti pensano che sia così: l'unificazione fu rapida, e di conseguenza le differenze tra Nord e Sud non furono mai davvero colmate."
+    }
+  ],
+  "closing": "Grazie, la lezione è finita. Per la prossima volta, ascolti l'inno di Mameli e mi dica che cosa pensa del testo."
+}

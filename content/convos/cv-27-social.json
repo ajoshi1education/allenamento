@@ -1,0 +1,113 @@
+{
+  "id": "CV-27",
+  "title": "Tecnologia e social",
+  "subtitle": "A podcast interview on social media: sebbene / nonostante + subjunctive, è vero che… ma, nominal style.",
+  "level": "C1",
+  "theme": "Società e attualità",
+  "conceptIds": ["B2-SUBJ-04", "C1-CONN-02", "C1-SYN-02", "C1-INT-02", "B2-COND-01"],
+  "tutor": { "name": "Marta Ferri", "avatar": "👩‍💼", "gender": "female", "register": "formal" },
+  "setting": "Marta Ferri hosts a podcast about technology and society. She has invited you as a guest to talk about the pros and cons of social media.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Grazie di essere qui. Partiamo da Lei: quanto tempo passa sui social, e per fare che cosa?",
+      "en": "Thank you for being here. Let's start with you: how much time do you spend on social media, and doing what?",
+      "task": "Describe your habits and add a concession with sebbene / benché / nonostante + subjunctive.",
+      "hint": "Sebbene cerchi di limitarmi, passo…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "sebbene / benché / nonostante + subjunctive", "anyOf": ["\\b(sebbene|benché|nonostante|malgrado|per quanto)\\s+([\\p{L}'’]+\\s+){0,4}?(sia|siano|abbia|abbiano|cerchi|cerchino|sappia|sappiano|provi|provino|voglia|vogliano|possa|possano|usi|usino|dica|dicano|faccia|facciano|passi|passino|stia|stiano|debba|debbano|lavori|lavorino|trovi|trovino|preferisca|preferiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-04", "hint": "*Sebbene **cerchi** di limitarmi… / Benché **sappia** che…*" }
+        ]
+      },
+      "model": "Sebbene cerchi di limitarmi, passo almeno un'ora al giorno su Instagram, soprattutto per seguire le notizie.",
+      "followOk": "Una risposta sincera. Credo che molti ascoltatori si riconoscano.",
+      "followMiss": "Capisco. Sebbene molti cerchino di limitarsi, alla fine quasi tutti passano più tempo del previsto sui social."
+    },
+    {
+      "id": "t2",
+      "say": "Molti sostengono che i social ci isolino, invece di avvicinarci. Lei è d'accordo?",
+      "en": "Many people argue that social media isolates us instead of bringing us closer. Do you agree?",
+      "task": "Concede a point, then counter it: è vero che… ma (è anche vero che)…",
+      "hint": "È vero che…, ma è anche vero che…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          { "label": "Concedes (è vero che, non si può negare che…)", "anyOf": ["\\b(è vero che|è anche vero che|certo|indubbiamente|senz['’]altro|non si può negare che|è innegabile che|ammetto che|bisogna ammettere che)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "C1-INT-02", "hint": "*È vero che…*" },
+          { "label": "Counters (ma, tuttavia, d'altra parte…)", "anyOf": ["\\b(ma|però|tuttavia|eppure|d['’]altra parte|al tempo stesso|allo stesso tempo|d['’]altro canto)\\b"], "min": 1, "errorType": "connector", "conceptId": "C1-CONN-02", "hint": "*…ma è anche vero che…*" }
+        ]
+      },
+      "model": "È vero che a volte passiamo più tempo con il telefono che con le persone, ma è anche vero che i social ci permettono di restare in contatto con chi vive lontano.",
+      "followOk": "Un'argomentazione equilibrata. Passiamo però agli aspetti più critici.",
+      "followMiss": "Capisco. È vero che i social possono isolarci, ma è anche vero che ci tengono in contatto con chi è lontano."
+    },
+    {
+      "id": "t3",
+      "say": "Se dovesse riassumere in un titolo di giornale i principali rischi dei social, che cosa scriverebbe?",
+      "en": "If you had to sum up the main risks of social media in a newspaper headline, what would you write?",
+      "task": "Name two or three risks in nominal style, like a headline: nouns instead of verbs (la diffusione di…, la dipendenza da…).",
+      "hint": "La diffusione di…, la dipendenza da…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Nominal style: abstract nouns (twice)", "anyOf": ["\\b\\p{L}+(zione|zioni|sione|sioni|mento|menti|enza|enze|anza|anze|ità|ura|ure)\\b"], "min": 2, "errorType": "text-structure", "conceptId": "C1-SYN-02", "hint": "*la **diffusione** di…, la **dipendenza** da…, la **polarizzazione** di…*" }
+        ]
+      },
+      "model": "Scriverei: la diffusione delle notizie false, la dipendenza dagli schermi e la polarizzazione del dibattito pubblico.",
+      "followOk": "Un titolo da prima pagina. E quale di questi rischi Le sembra il più grave?",
+      "followMiss": "Io lo scriverei così: la diffusione di notizie false, la dipendenza dagli schermi e la perdita di attenzione."
+    },
+    {
+      "id": "t4",
+      "say": "Eppure i giovani continuano a usarli moltissimo, anche quando ne conoscono i rischi. Come se lo spiega?",
+      "en": "And yet young people keep using them a great deal, even when they know the risks. How do you explain it?",
+      "task": "Explain with nonostante + subjunctive (nonostante ne conoscano i rischi…) and give a cause.",
+      "hint": "Nonostante ne conoscano i rischi, li usano perché…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "nonostante / sebbene + subjunctive", "anyOf": ["\\b(sebbene|benché|nonostante|malgrado|per quanto|anche se)\\s+([\\p{L}'’]+\\s+){0,4}?(sia|siano|abbia|abbiano|sappia|sappiano|conosca|conoscano|capisca|capiscano|veda|vedano|si renda conto|si rendano conto|legga|leggano|senta|sentano|possa|possano|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-04", "hint": "*Nonostante ne **conoscano** i rischi…*" },
+          { "label": "Gives a cause", "anyOf": ["\\b(perché|poiché|dato che|visto che|in quanto|dal momento che|siccome|per paura|per via)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…perché nessuno vuole sentirsi escluso.*" }
+        ]
+      },
+      "model": "Nonostante ne conoscano i rischi, li usano lo stesso, perché nessuno vuole sentirsi escluso dal proprio gruppo di amici.",
+      "followOk": "La paura di essere esclusi, certo. Ci sono parecchi studi che lo confermano.",
+      "followMiss": "Forse perché, nonostante ne conoscano i rischi, nessuno vuole sentirsi escluso dal gruppo."
+    },
+    {
+      "id": "t5",
+      "say": "Secondo Lei, le piattaforme andrebbero regolamentate di più, o è meglio lasciare libertà agli utenti?",
+      "en": "In your view, should the platforms be regulated more, or is it better to leave users free?",
+      "task": "Take a position with ritengo che / non credo che + subjunctive, and qualify it with a concession (pur sapendo che, anche se, tuttavia).",
+      "hint": "Ritengo che una regolamentazione sia…, pur sapendo che…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          { "label": "Opinion + che + subjunctive", "anyOf": ["\\b(penso|credo|ritengo|mi sembra|mi pare|trovo|ho l['’]impressione|non credo|non penso|direi|è giusto|è necessario|sarebbe giusto|sarebbe opportuno|bisognerebbe)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}?(sia|siano|debba|debbano|vengano|venga|abbia|abbiano|possa|possano|servano|serva|intervenga|intervengano|faccia|facciano|controlli|controllino|vada|vadano|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Ritengo che **sia** necessaria…*" },
+          { "label": "Qualifies with a concession", "anyOf": ["\\b(pur|sebbene|benché|nonostante|anche se|tuttavia|ciononostante|d['’]altra parte|però|eppure)\\b"], "min": 1, "errorType": "connector", "conceptId": "C1-CONN-02", "hint": "*…pur sapendo che… / …tuttavia…*" }
+        ]
+      },
+      "model": "Ritengo che una regolamentazione sia necessaria, pur sapendo che limitare la libertà di espressione è sempre rischioso.",
+      "followOk": "Una posizione prudente, che in parte condivido.",
+      "followMiss": "Capisco. Io ritengo che qualche regola sia necessaria, pur sapendo che il confine con la censura è sottile."
+    },
+    {
+      "id": "t6",
+      "say": "Per chiudere: che consiglio darebbe a chi ci ascolta, per usare i social in modo più consapevole?",
+      "en": "To finish: what advice would you give our listeners for using social media more mindfully?",
+      "task": "Give advice with the conditional (consiglierei di…) and a condition with purché / a patto che + subjunctive.",
+      "hint": "Consiglierei di…, purché non…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Advice in the conditional", "anyOf": ["\\b(consiglierei|suggerirei|direi|proporrei|bisognerebbe|sarebbe meglio|converrebbe|basterebbe|potrebbe|dovrebbe|dovremmo|potremmo)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Consiglierei di…*" },
+          { "label": "purché / a patto che + subjunctive", "anyOf": ["\\b(purché|a patto che|a condizione che|sempre che|senza che|affinché|in modo che|così che)\\s+([\\p{L}'’]+\\s+){0,4}?(sia|siano|abbia|abbiano|diventi|diventino|sostituisca|sostituiscano|resti|restino|serva|servano|rubi|rubino|occupi|occupino|tolga|tolgano|faccia|facciano|prenda|prendano|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-04", "hint": "*…purché non **diventino**…*" }
+        ]
+      },
+      "model": "Consiglierei di usarli pure, purché non diventino l'unica fonte di informazione o di relazione.",
+      "followOk": "Un consiglio semplice ma prezioso. Grazie mille per la Sua disponibilità.",
+      "followMiss": "Ottimo. Insomma: usarli sì, purché non diventino l'unica finestra sul mondo."
+    }
+  ],
+  "closing": "Grazie per questa conversazione. E a chi ci ascolta, arrivederci alla prossima puntata!"
+}

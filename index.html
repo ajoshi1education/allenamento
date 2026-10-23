@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Allenamento · Italiano B2→C1</title>
+  <meta name="description" content="Adaptive Italian B2–C1 trainer with a permanent Error Bank.">
+  <meta name="theme-color" content="#2fb36b">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Allenamento">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="app"><div class="loading">Caricamento…</div></div>
+  <script type="module" src="js/app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator && location.hostname !== "localhost") {
+      // When a new version is published, switch to it straight away (once) instead of on the next visit.
+      const hadController = !!navigator.serviceWorker.controller;
+      let reloaded = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => { if (hadController && !reloaded && !document.body.classList.contains("in-session")) { reloaded = true; location.reload(); } });
+      navigator.serviceWorker.register("sw.js").then(r => r.update()).catch(() => {});
+    }
+  </script>
+</body>
+</html>

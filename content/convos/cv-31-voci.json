@@ -1,0 +1,114 @@
+{
+  "id": "CV-31",
+  "title": "Voci di corridoio",
+  "subtitle": "Office gossip, handled with care: si dice che + subjunctive, hearsay conditional, reported speech, hedging.",
+  "level": "C1",
+  "theme": "Lavoro e studio",
+  "conceptIds": ["B2-SUBJ-01", "B2-COND-02", "C1-SEQ-03", "C1-SEQ-02", "C1-INT-02"],
+  "tutor": { "name": "Federico", "avatar": "👨‍💼", "gender": "male", "register": "informal" },
+  "setting": "At the coffee machine, your colleague Federico lowers his voice: there are rumours that the director is about to leave the company.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Hai sentito le ultime? Dicono che il direttore stia per lasciare l'azienda. Tu ne sai qualcosa?",
+      "en": "Have you heard the latest? They say the director is about to leave the company. Do you know anything about it?",
+      "task": "Pass on what you've heard with si dice che / dicono che + subjunctive, and hedge it (non so se…, forse).",
+      "hint": "Si dice che abbia…, ma non so se…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "si dice che / dicono che + subjunctive", "anyOf": ["\\b(si dice|dicono|pare|sembra|si vocifera|gira voce|corre voce|ho sentito dire)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}?(sia|siano|stia|stiano|abbia|abbiano|voglia|vogliano|vada|vadano|debba|debbano|possa|possano|lasci|lascino|cerchi|cerchino|arrivi|arrivino|venga|vengano|parta|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Si dice che **abbia** ricevuto…*" },
+          { "label": "Hedges (non so se, forse, a quanto pare…)", "anyOf": ["\\b(non so|forse|magari|chissà|a quanto pare|non è detto|per ora|non ne sono sicur\\p{L}*|non sono sicur\\p{L}*|non è confermato|non ci giurerei|con le pinze)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "C1-INT-02", "hint": "*…ma non so se sia vero.*" }
+        ]
+      },
+      "model": "Qualcosa sì: si dice che abbia ricevuto un'offerta da un concorrente, ma non so se sia vero.",
+      "followOk": "Ah, interessante! Chissà chi prenderà il suo posto, allora.",
+      "followMiss": "Eh, si dice che abbia ricevuto un'offerta importante, ma per ora sono solo chiacchiere."
+    },
+    {
+      "id": "t2",
+      "say": "Io ho sentito un'altra versione: avrebbe litigato con il consiglio di amministrazione. Tu cos'altro hai sentito?",
+      "en": "I heard another version: apparently he fell out with the board. What else have you heard?",
+      "task": "Report another rumour with the hearsay conditional (avrebbe detto, sarebbe stato…) and name the source.",
+      "hint": "Secondo…, avrebbe detto che…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Hearsay conditional (avrebbe detto, sarebbe stato…)", "anyOf": ["\\b(avrei|avresti|avrebbe|avremmo|avreste|avrebbero|sarei|saresti|sarebbe|saremmo|sareste|sarebbero)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-02", "hint": "*…**avrebbe detto** che…*" },
+          { "label": "Names the source", "anyOf": ["\\b(secondo|stando a|a quanto pare|pare|sembra|sembrerebbe|si dice|dicono|ho sentito|mi hanno detto|mi ha detto|da quello che)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "C1-INT-02", "hint": "*Secondo la segretaria… / Mi hanno detto che…*" }
+        ]
+      },
+      "model": "Secondo la segretaria, avrebbe detto a tutti che si sentiva sottovalutato e che non vedeva l'ora di cambiare.",
+      "followOk": "Mamma mia, se fosse vero sarebbe un bel colpo per tutti.",
+      "followMiss": "Io ho sentito che avrebbe litigato con qualcuno ai piani alti, ma chissà se è vero."
+    },
+    {
+      "id": "t3",
+      "say": "E la nuova responsabile del marketing? Gira voce che sia la sua candidata preferita.",
+      "en": "And the new head of marketing? Word is she's his favourite candidate.",
+      "task": "Make a cautious inference with sembrerebbe che / parrebbe che + subjunctive, and distance yourself from it.",
+      "hint": "Sembrerebbe che…, però non ne sono sicuro/a.",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "sembrerebbe che / parrebbe che + subjunctive", "anyOf": ["\\b(sembrerebbe|parrebbe|si direbbe)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}?(sia|siano|stia|stiano|abbia|abbiano|fosse|fossero|avesse|avessero|voglia|possa|debba|conosca|conoscano|frequenti|frequentino|lavori|lavorino|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-COND-01", "hint": "***Sembrerebbe** che si **conoscano**…*" },
+          { "label": "Distances yourself (non ne sono sicuro/a, prendila con le pinze…)", "anyOf": ["\\b(non ne sono sicur\\p{L}*|non sono sicur\\p{L}*|con le pinze|forse|magari|non so|chissà|non è detto|a quanto pare|non è confermato|non ci giurerei|non ci metterei la mano sul fuoco|sono solo voci|ufficialmente)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "C1-INT-02", "hint": "*…però non ne sono sicuro/a, prendila con le pinze.*" }
+        ]
+      },
+      "model": "Sembrerebbe che si conoscano da anni, però non ne sono sicuro, quindi prendila con le pinze.",
+      "followOk": "Giusto, meglio non dare niente per scontato.",
+      "followMiss": "Mah, sembrerebbe che si conoscano da tempo, ma io non ci metterei la mano sul fuoco."
+    },
+    {
+      "id": "t4",
+      "say": "Stamattina in riunione il direttore ha detto: «Non ho nessuna intenzione di andarmene.» Tu c'eri?",
+      "en": "This morning in the meeting the director said: 'I have no intention of leaving.' Were you there?",
+      "task": "Report what he said in indirect speech: ha detto che non aveva intenzione di andarsene.",
+      "hint": "Sì, c'ero: ha detto che non aveva…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Reporting verb + che", "anyOf": ["\\b(ha|aveva)\\s+(detto|dichiarato|assicurato|spiegato|ripetuto|giurato|affermato|garantito|ribadito)\\s+(a tutti\\s+|chiaramente\\s+)?che\\b"], "min": 1, "errorType": "reported-speech", "conceptId": "C1-SEQ-03", "hint": "*Ha detto che…*" },
+          { "label": "Present → imperfetto (ho → aveva)", "anyOf": ["\\bche\\s+([\\p{L}'’]+\\s+){0,3}?(aveva|avesse|voleva|pensava|era|stava)\\b"], "min": 1, "errorType": "tense-sequence", "conceptId": "C1-SEQ-03", "hint": "*non ho → non **aveva***" }
+        ]
+      },
+      "model": "Sì, c'ero: ha detto che non aveva nessuna intenzione di andarsene, ma non sembrava molto convinto.",
+      "followOk": "Esatto. E il tono, secondo me, diceva tutto il contrario.",
+      "followMiss": "Sì, ha detto che non aveva nessuna intenzione di andarsene. Ma chi ci crede?"
+    },
+    {
+      "id": "t5",
+      "say": "Che dici, lo raccontiamo agli altri del team? Tanto prima o poi lo verranno a sapere.",
+      "en": "What do you reckon, shall we tell the others on the team? They'll find out sooner or later anyway.",
+      "task": "Advise caution with non vorrei che / sarebbe meglio che + congiuntivo imperfetto.",
+      "hint": "Io aspetterei: non vorrei che…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "non vorrei che / sarebbe meglio che + congiuntivo imperfetto", "anyOf": ["\\b(sarebbe meglio|non vorrei|preferirei|bisognerebbe|sarebbe il caso|eviterei|sarebbe un peccato)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}?(fosse|fossero|avesse|avessero|desse|dessero|stesse|stessero|\\p{L}+(asse|assero|esse|essero|isse|issero))\\b"], "min": 1, "errorType": "tense-sequence", "conceptId": "C1-SEQ-02", "hint": "*Non vorrei che **girassero** voci false…*" }
+        ]
+      },
+      "model": "Io aspetterei: non vorrei che girassero voci false e che qualcuno ci rimanesse male.",
+      "followOk": "Hai ragione, è meglio non mettere in giro voci non confermate.",
+      "followMiss": "Forse hai ragione: non vorrei che girassero voci false e che qualcuno ci rimanesse male."
+    },
+    {
+      "id": "t6",
+      "say": "E se fosse vero, secondo te chi prenderebbe il suo posto?",
+      "en": "And if it were true, who do you think would take his place?",
+      "task": "Speculate cautiously: a conditional plus immagino che / può darsi che + subjunctive.",
+      "hint": "Non saprei, ma immagino che…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Uses the conditional", "anyOf": ["\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Non **saprei**… / **potrebbe** essere…*" },
+          { "label": "Hedge + che + subjunctive", "anyOf": ["\\b(immagino|suppongo|può darsi|potrebbe darsi|è probabile|è possibile|non escludo|non è escluso|direi|credo|penso|ho l['’]impressione)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}?(sia|siano|abbia|abbiano|scelgano|scelga|possa|possano|tocchi|venga|vengano|arrivi|prenda|prendano|diventi|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "C1-INT-02", "hint": "*Immagino che **sia**… / può darsi che **scelgano**…*" }
+        ]
+      },
+      "model": "Non saprei, ma immagino che il candidato più probabile sia la vicedirettrice, che conosce bene l'azienda.",
+      "followOk": "Vedremo. Intanto, acqua in bocca, mi raccomando!",
+      "followMiss": "Mah, immagino che scelgano qualcuno di interno, ma non ci giurerei."
+    }
+  ],
+  "closing": "Ok, torniamo al lavoro prima che qualcuno ci senta. Ne riparliamo a pranzo!"
+}

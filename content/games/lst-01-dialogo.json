@@ -1,0 +1,134 @@
+{
+  "id": "G-LST-01",
+  "type": "listening",
+  "title": "Che si fa nel weekend?",
+  "subtitle": "Two friends plan a weekend: follow the changes of plan and the final decisions.",
+  "conceptIds": [
+    "B2-LIST-01"
+  ],
+  "difficulty": 2,
+  "minutes": 8,
+  "passage": {
+    "title": "Il fine settimana",
+    "source": "invented",
+    "it": "— Allora, Giulia, per il fine settimana come facciamo? Ancora il lago?\n— Mah, il lago con questo tempo… Hai visto le previsioni? Sabato danno pioggia tutto il giorno.\n— Sabato sì, però domenica dovrebbe uscire il sole. Potremmo partire domenica mattina presto.\n— Presto quanto? Non dirmi alle sei come l'ultima volta.\n— Ma no, dai. Diciamo alle otto. In un'ora e mezza siamo là.\n— Alle otto ci sto. E sabato che facciamo? Restiamo a casa a guardare la pioggia?\n— Sabato sera c'è il compleanno di Marco, te lo sei dimenticata?\n— Oddio, è vero! E il regalo? Non abbiamo ancora preso niente.\n— Appunto. Sabato mattina potremmo fare un salto in centro. Avevo pensato a un libro di cucina, visto che si è messo in testa di imparare a fare il pane.\n— Un libro di cucina… mah, ne avrà già dieci. Piuttosto, perché non gli regaliamo un corso? Ho visto che il forno di via Roma organizza lezioni il giovedì sera.\n— Non è una cattiva idea. Costa tanto?\n— Sessanta euro per quattro lezioni. Se lo dividiamo con Sara e Paolo, fanno quindici euro a testa.\n— Perfetto. Li chiami tu?\n— Li chiamo io, tranquillo. Tu intanto pensa a dove mangiare domenica, che l'ultima volta siamo finiti in quel posto carissimo.\n— Ricevuto. Cerco qualcosa di più economico, magari con vista sul lago."
+  },
+  "questions": [
+    {
+      "id": "G-LST-01.q1",
+      "type": "choice",
+      "difficulty": 1,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why won't they go to the lake on Saturday?",
+      "options": [
+        "Rain is forecast all day.",
+        "They have to work.",
+        "The car is broken.",
+        "The lake is too far for one day."
+      ],
+      "answer": 0,
+      "explanation": "*Sabato danno pioggia tutto il giorno*: *danno* here = they forecast (*le previsioni danno…*).",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-01.q2",
+      "type": "choice",
+      "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What time will they leave on Sunday?",
+      "options": [
+        "At eight",
+        "At six",
+        "At half past nine",
+        "At half past seven"
+      ],
+      "answer": 0,
+      "optionWhy": {
+        "1": "*Non dirmi alle sei come l'ultima volta*: six is rejected."
+      },
+      "explanation": "*Diciamo alle otto… Alle otto ci sto.* Six was last time's time, which Giulia refuses.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-01.q3",
+      "type": "choice",
+      "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What is happening on Saturday evening?",
+      "options": [
+        "Marco's birthday",
+        "A cookery class",
+        "Dinner at the lake",
+        "Sara and Paolo's party"
+      ],
+      "answer": 0,
+      "explanation": "*Sabato sera c'è il compleanno di Marco.*",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-01.q4",
+      "type": "choice",
+      "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why does Giulia reject the idea of a cookbook?",
+      "options": [
+        "Marco probably has lots of them already.",
+        "It's too expensive.",
+        "Marco doesn't like cooking.",
+        "The bookshop is closed on Saturday."
+      ],
+      "answer": 0,
+      "explanation": "*Ne avrà già dieci*: the future *avrà* expresses a supposition (he must have ten already).",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-01.q5",
+      "type": "cloze",
+      "difficulty": 3,
+      "instruction": "Complete with a number.",
+      "prompt": "Per il regalo ognuno pagherà ___ euro.",
+      "answers": [
+        "15",
+        "quindici"
+      ],
+      "focus": [
+        "15",
+        "quindici"
+      ],
+      "errorType": "listening",
+      "explanation": "*Sessanta euro… se lo dividiamo con Sara e Paolo, fanno quindici euro a testa*: 60 divided by four people."
+    },
+    {
+      "id": "G-LST-01.q6",
+      "type": "choice",
+      "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Who will do what?",
+      "options": [
+        "Giulia will call Sara and Paolo; her friend will look for a cheaper place to eat on Sunday.",
+        "Her friend will call Sara and Paolo; Giulia will book the restaurant.",
+        "Giulia will buy the cookbook; her friend will book the course.",
+        "Both of them will go to the bakery on Thursday."
+      ],
+      "answer": 0,
+      "explanation": "*Li chiami tu? — Li chiamo io, tranquillo. Tu intanto pensa a dove mangiare domenica… — Ricevuto. Cerco qualcosa di più economico.*",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-01.q7",
+      "type": "choice",
+      "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«Appunto.»* What does Giulia's friend mean?",
+      "options": [
+        "Exactly, that's my point.",
+        "Let me write that down.",
+        "On the contrary.",
+        "Just a moment."
+      ],
+      "answer": 0,
+      "explanation": "*Appunto* agrees and stresses that the speaker was heading there: the present still needs buying, so let's go into town.",
+      "errorType": "discourse-marker"
+    }
+  ]
+}

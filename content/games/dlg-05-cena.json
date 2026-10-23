@@ -1,0 +1,97 @@
+{
+  "id": "G-DLG-05",
+  "type": "dialogue",
+  "title": "Cena tra amici",
+  "subtitle": "Giulia wants the sea, Marco wants the mountains, and you're in the middle. Use discourse markers and hedging to land a plan everyone accepts.",
+  "conceptIds": ["B2-INT-01", "C1-INT-02", "C1-SPEAK-02"],
+  "difficulty": 3,
+  "minutes": 7,
+  "characters": {
+    "giulia": { "name": "Giulia", "role": "amica, fan del mare", "avatar": "👩" },
+    "marco": { "name": "Marco", "role": "amico, fan della montagna", "avatar": "🧔" }
+  },
+  "setting": "Roma, a cena a casa di Giulia. Si parla delle vacanze di agosto: Giulia vuole andare al mare, Marco in montagna, e toccherà a te fare da mediatore.",
+  "start": "G-DLG-05.n1",
+  "nodes": [
+    {
+      "id": "G-DLG-05.n1", "speaker": "giulia", "conceptId": "B2-INT-01", "difficulty": 2,
+      "line": "Allora, ragazzi, dobbiamo decidere: ad agosto mare o montagna? Io voto mare, ovviamente!",
+      "explanation": "Among friends: a relaxed marker (*mah*, *dipende*) and pass the turn to Marco.",
+      "choices": [
+        { "text": "Mah, dipende… Tu, Marco, che ne pensi?", "ok": true, "next": "G-DLG-05.n2" },
+        { "text": "Gentile Giulia, mi permetta di esprimere la mia opinione.", "ok": false, "errorType": "register", "why": "Lei and *mi permetta* at a dinner with friends sound absurdly stiff.", "next": "G-DLG-05.n1b" },
+        { "text": "Infatti, hai torto.", "ok": false, "errorType": "discourse-marker", "why": "*Infatti* confirms what was said; it can't introduce disagreement. And *hai torto* is blunt.", "next": "G-DLG-05.n1b" }
+      ]
+    },
+    {
+      "id": "G-DLG-05.n1b", "speaker": "giulia", "conceptId": "B2-INT-01", "difficulty": 2,
+      "line": "Ahah, ma come parli? Dai, siamo tra amici! Dimmi cosa ne pensi.",
+      "explanation": "Laugh it off and use a summing-up marker in a friendly register.",
+      "choices": [
+        { "text": "Scusa, hai ragione! Insomma, per me va bene tutto. Sentiamo Marco.", "ok": true, "next": "G-DLG-05.n2" },
+        { "text": "Mi scusi, signora, sentiamo Marco.", "ok": false, "errorType": "register", "why": "*Mi scusi, signora* to a close friend is still far too formal.", "next": "G-DLG-05.n2" }
+      ]
+    },
+    {
+      "id": "G-DLG-05.n2", "speaker": "marco",
+      "line": "Per me montagna. Al mare c'è troppa gente, fa un caldo pazzesco e la notte non si dorme.",
+      "item": { "id": "G-DLG-05.i1", "conceptId": "B2-INT-01", "type": "cloze", "difficulty": 2, "interaction": true, "instruction": "Complete your reply with the marker that reinforces the negative ('not exactly').", "prompt": "Beh, non è ___ sbagliato quello che dici.", "answers": ["mica"], "focus": ["mica"], "errorType": "discourse-marker", "traps": [{ "match": "magari", "errorType": "discourse-marker", "why": "*Magari* means 'maybe' or 'I wish'. To reinforce *non* use *mica*." }, { "match": "infatti", "errorType": "discourse-marker", "why": "*Infatti* confirms; it doesn't fit inside a negative like this." }, { "match": ["affatto", "per niente"], "ok": true, "why": "Grammatical: *non è affatto sbagliato* = 'it's not at all wrong'. *Mica* is the more colloquial choice." }], "explanation": "*Non… mica* = not exactly / not at all, typical of relaxed conversation." },
+      "next": "G-DLG-05.n3", "nextFail": "G-DLG-05.n3"
+    },
+    {
+      "id": "G-DLG-05.n3", "speaker": "giulia", "conceptId": "C1-INT-02", "difficulty": 3,
+      "line": "Ma dai! In montagna ci si annoia, la sera non c'è niente da fare.",
+      "explanation": "Concede part of Giulia's point, then add a counter-argument.",
+      "choices": [
+        { "text": "Su questo hai ragione, però in montagna si spende molto meno.", "ok": true, "next": "G-DLG-05.n4" },
+        { "text": "Capisco il tuo punto di vista, ma non sono del tutto d'accordo: d'estate ci sono un sacco di sagre.", "ok": true, "next": "G-DLG-05.n4" },
+        { "text": "Sei giusta, Giulia.", "ok": false, "errorType": "idiom", "why": "Calque of 'you're right'. In Italian: *Hai ragione*.", "next": "G-DLG-05.n4" }
+      ]
+    },
+    {
+      "id": "G-DLG-05.n4", "speaker": "marco",
+      "line": "Ecco, appunto! Comunque così non ne usciamo. Tu cosa proponi?",
+      "item": { "id": "G-DLG-05.i2", "conceptId": "C1-INT-02", "type": "speak", "difficulty": 3, "interaction": true, "instruction": "Answer in Italian.", "prompt": "Propose a compromise: what if we did one week at the seaside and one in the mountains?", "answers": ["(E se facessimo|Perché non facciamo|Facciamo|Che ne dite di fare|Che ne dite di) una settimana al mare e una [settimana ]in montagna"], "focus": ["facessimo", "facciamo", "dite"], "errorType": "hypothetical", "traps": [{ "match": "E se facciamo una settimana al mare e una [settimana ]in montagna", "ok": true, "why": "Very common in speech. The standard form is *E se facessimo…?* (imperfect subjunctive)." }, { "match": "E se (faremmo|faremo) una settimana al mare e una [settimana ]in montagna", "errorType": "hypothetical", "why": "After *se* never use the conditional: *E se facessimo…?*" }, { "contains": ["dici"], "errorType": "agreement", "why": "You're asking both friends: *Che ne dite…?*" }], "explanation": "*E se facessimo…?* / *Perché non facciamo…?* / *Che ne dite di…?* all propose a compromise." },
+      "next": "G-DLG-05.n5", "nextFail": "G-DLG-05.n4b"
+    },
+    {
+      "id": "G-DLG-05.n4b", "speaker": "giulia", "conceptId": "B2-INT-01", "difficulty": 2,
+      "line": "Eh? Non ho capito bene. Spiegati meglio!",
+      "explanation": "Rephrase clearly, starting with the reformulation marker *cioè*.",
+      "choices": [
+        { "text": "Cioè, voglio dire: facciamo metà vacanza al mare e metà in montagna.", "ok": true, "next": "G-DLG-05.n5" },
+        { "text": "Tipo, boh… vedete voi.", "ok": false, "errorType": "discourse-marker", "why": "*Tipo* and *boh* are filler: you've given up the mediator role.", "next": "G-DLG-05.endMeh" }
+      ]
+    },
+    {
+      "id": "G-DLG-05.n5", "speaker": "marco", "conceptId": "B2-INT-01", "difficulty": 3,
+      "line": "Mah… una settimana sola in montagna mi sembra poco.",
+      "explanation": "Encourage Marco (*dai*) and float an alternative with *magari* ('maybe').",
+      "choices": [
+        { "text": "Dai, Marco, vienici incontro! Magari facciamo dieci giorni in montagna e quattro al mare.", "ok": true, "next": "G-DLG-05.n6" },
+        { "text": "Mica, Marco, è abbastanza.", "ok": false, "errorType": "discourse-marker", "why": "*Mica* reinforces a negative (*non è mica poco*); it can't stand in for 'no'.", "next": "G-DLG-05.n6" },
+        { "text": "Insomma, fai sempre così, sei impossibile!", "ok": false, "errorType": "register", "why": "Here *insomma* turns into irritation and a personal attack: the evening goes sour.", "next": "G-DLG-05.endBad" }
+      ]
+    },
+    {
+      "id": "G-DLG-05.n6", "speaker": "giulia",
+      "line": "Ok, mi sta bene. Ma chi organizza? Io quest'estate non ho tempo.",
+      "item": { "id": "G-DLG-05.i3", "conceptId": "C1-SPEAK-02", "type": "order", "difficulty": 3, "interaction": true, "instruction": "Put the words in order to present the plan in two steps.", "prompt": "First I'll book the house in the mountains, and secondly Marco looks for the hotel at the seaside.", "tokens": ["luogo", "Innanzitutto", "cerca", "prenoto", "l'albergo", "io", "montagna", "secondo", "la", "mare", "Marco", "in", "casa", "al", "e", "in"], "answers": ["Innanzitutto io prenoto la casa in montagna e in secondo luogo Marco cerca l'albergo al mare", "Innanzitutto prenoto io la casa in montagna e in secondo luogo Marco cerca l'albergo al mare"], "errorType": "connector", "explanation": "*Innanzitutto… in secondo luogo…* structures even a casual plan." },
+      "next": "G-DLG-05.n7", "nextFail": "G-DLG-05.n7"
+    },
+    {
+      "id": "G-DLG-05.n7", "speaker": "marco", "conceptId": "B2-INT-01", "difficulty": 3,
+      "line": "Va bene, ci sto. Però l'anno prossimo decido io!",
+      "explanation": "Close on a light note with the right marker.",
+      "choices": [
+        { "text": "Magari! Così non devo più fare da mediatore.", "ok": true, "next": "G-DLG-05.endGood" },
+        { "text": "Va bene, dai, l'anno prossimo decidi tu. Comunque, brindiamo!", "ok": true, "next": "G-DLG-05.endGood" },
+        { "text": "In effetti, cioè, mica decidi tu.", "ok": false, "errorType": "discourse-marker", "why": "A pile-up of markers that contradict each other: it means nothing.", "next": "G-DLG-05.endOk" }
+      ]
+    },
+    { "id": "G-DLG-05.endGood", "speaker": "giulia", "line": "Perfetto! Allora brindiamo: alle vacanze!", "end": true, "outcome": "You conceded, encouraged and proposed: a plan everyone likes, and the evening ends with a toast." },
+    { "id": "G-DLG-05.endOk", "speaker": "marco", "line": "Ehm… va be', comunque brindiamo.", "end": true, "outcome": "The plan is set, but your last line confused everyone. Each marker has one job: pick one." },
+    { "id": "G-DLG-05.endMeh", "speaker": "marco", "line": "Va be', allora montagna, e Giulia si arrangia.", "end": true, "outcome": "You stepped back, so Marco decided for everyone and Giulia is sulking. Rephrase with *cioè* instead of giving up." },
+    { "id": "G-DLG-05.endBad", "speaker": "giulia", "line": "Ragazzi, basta, ne riparliamo un'altra volta.", "end": true, "outcome": "The discussion became personal and the plan fell apart. Disagree with the idea, not the person: *Capisco, però…*" }
+  ]
+}

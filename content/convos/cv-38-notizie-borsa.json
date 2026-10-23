@@ -1,0 +1,210 @@
+{
+  "id": "CV-38",
+  "title": "Notizie dalla Borsa",
+  "subtitle": "Discuss financial news in tu: the hearsay conditional, reported speech, opinions and doubts with the subjunctive.",
+  "level": "C1",
+  "theme": "Lavoro e studio",
+  "conceptIds": [
+    "B2-COND-02",
+    "C1-SEQ-03",
+    "B2-SUBJ-01",
+    "B2-HYP-01",
+    "C1-INT-02"
+  ],
+  "tutor": {
+    "name": "Valentina",
+    "avatar": "👩",
+    "gender": "female",
+    "register": "informal"
+  },
+  "setting": "During the coffee break at work, your colleague Valentina wants to talk about this morning's financial news.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Hai letto le notizie stamattina? Pare che la BCE abbia tagliato di nuovo i tassi. Tu che cosa hai sentito?",
+      "en": "Did you read the news this morning? It seems the ECB has cut rates again. What have you heard?",
+      "task": "Report the news with the hearsay conditional (la BCE avrebbe deciso…, secondo i giornali…).",
+      "hint": "Sì, secondo i giornali la BCE avrebbe…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Hearsay conditional",
+            "anyOf": [
+              "\\b(avrebbe|avrebbero|sarebbe|sarebbero|starebbe|starebbero|dovrebbe|dovrebbero|potrebbe|potrebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-02",
+            "hint": "*La BCE **avrebbe tagliato**…*"
+          },
+          {
+            "label": "Names the source",
+            "anyOf": [
+              "\\b(secondo|a quanto pare|pare che|sembra che|dicono che|ho letto che|ho sentito che|stando a|si dice|si legge)\\b"
+            ],
+            "min": 1,
+            "errorType": "reported-speech",
+            "conceptId": "C1-SEQ-03",
+            "hint": "*Secondo il Sole 24 Ore…, a quanto pare…*"
+          }
+        ]
+      },
+      "model": "Sì, secondo i giornali la BCE avrebbe tagliato i tassi di un quarto di punto, e altri tagli sarebbero previsti entro la primavera.",
+      "followOk": "Esatto, anch'io ho letto la stessa cosa. Bisogna vedere se lo confermano, però.",
+      "followMiss": "Sì, anch'io ho letto che la BCE avrebbe tagliato i tassi. Ma la notizia non è ancora ufficiale."
+    },
+    {
+      "id": "t2",
+      "say": "E Piazza Affari come ha reagito? Io ho visto solo il titolo, non ho letto l'articolo.",
+      "en": "And how did the Milan stock exchange react? I only saw the headline, I didn't read the article.",
+      "task": "Say how the market moved, and report what an analyst said (ha detto che…, ha spiegato che…).",
+      "hint": "Ha chiuso in rialzo… Un analista ha detto che…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Reported speech (ha detto che…)",
+            "anyOf": [
+              "\\b(ha detto|hanno detto|ha dichiarato|hanno dichiarato|ha spiegato|hanno spiegato|ha affermato|ha sottolineato|hanno sottolineato|ha commentato|ha precisato|ha aggiunto|ha osservato|si legge|scrive|scrivono)\\s+che\\b"
+            ],
+            "min": 1,
+            "errorType": "reported-speech",
+            "conceptId": "C1-SEQ-03",
+            "hint": "*Un analista **ha detto che** il mercato se lo aspettava.*"
+          },
+          {
+            "label": "Describes the market move",
+            "anyOf": [
+              "\\b(salit\\p{L}|cresciut\\p{L}|guadagnat\\p{L}|chius\\p{L}+|pers\\p{L}|scesa|sceso|calat\\p{L}|rialzo|ribasso|aumento|calo|positiv\\p{L}+|negativ\\p{L}+|per cento|punti)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-READ-01",
+            "hint": "*Ha chiuso in rialzo dell'uno per cento.*"
+          }
+        ]
+      },
+      "model": "Piazza Affari ha chiuso in rialzo dell'uno e mezzo per cento, trainata dalle banche. Un analista ha detto che il mercato se lo aspettava già da settimane.",
+      "followOk": "Interessante. Le banche, poi, con i tassi più bassi di solito soffrono. Strano, no?",
+      "followMiss": "Ah, ok. Ho sentito un commentatore alla radio: ha detto che le banche avevano già scontato il taglio da settimane."
+    },
+    {
+      "id": "t3",
+      "say": "Secondo te, perché le banche sono salite anche con i tassi in calo? Di solito succede il contrario.",
+      "en": "Why do you think the banks went up even with rates falling? Usually the opposite happens.",
+      "task": "Give a hypothesis with penso che / è possibile che / può darsi che + congiuntivo, and a reason.",
+      "hint": "Penso che il mercato abbia già…, visto che…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Opinion or hypothesis + subjunctive",
+            "anyOf": [
+              "\\b(penso|credo|immagino|suppongo|ritengo|mi sembra|mi pare|è possibile|è probabile|può darsi|può essere|non escludo|ho l['’]impressione|sospetto)\\s+che\\s+(\\p{L}+['’]?\\s*){0,4}(sia|siano|abbia|abbiano|possa|possano|fosse|fossero|avesse|avessero|stia|stiano|si aspettino|si aspetti|aspettino|prevedano|preveda|credano|creda|puntino|punti|contino|guardino|guardi|vedano|veda|scommettano|ritengano)\\b",
+              "\\b(penso|credo|immagino|suppongo|ritengo|mi sembra|mi pare|è possibile|è probabile|può darsi|può essere|non escludo|sospetto)\\s+che\\s+(\\p{L}+['’]?\\s*){0,4}\\p{L}+(isca|iscano|esse|essero|asse|assero|isse|issero)\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Penso che il mercato **abbia** già scontato…*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti|considerato che|dal momento che)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…visto che i mutui costeranno meno.*"
+          }
+        ]
+      },
+      "model": "Penso che il mercato abbia già scontato il taglio da tempo, e può darsi che gli investitori si aspettino più mutui, visto che costeranno meno.",
+      "followOk": "È un'ipotesi sensata. Anche il mio collega la pensa così.",
+      "followMiss": "Boh, io credo che il mercato si aspettasse già il taglio. Può darsi che gli investitori guardino più avanti."
+    },
+    {
+      "id": "t4",
+      "say": "E l'inflazione? Il governatore sostiene che tornerà sotto il due per cento entro l'anno. Tu ci credi?",
+      "en": "And inflation? The governor claims it'll fall back below two per cent within the year. Do you believe it?",
+      "task": "Express doubt with dubito che / non sono sicuro/a che / non credo che + congiuntivo, and back it up.",
+      "hint": "Dubito che l'inflazione scenda così in fretta, visto che…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Doubt + subjunctive",
+            "anyOf": [
+              "\\b(dubito|non sono sicur\\p{L}|non credo|non penso|non è detto|non mi sembra|non mi pare|temo|ho paura|non sono convint\\p{L})\\s+che\\s+(\\p{L}+['’]?\\s*){0,4}(sia|siano|abbia|abbiano|possa|possano|torni|tornino|scenda|scendano|rientri|rientrino|cali|calino|resti|restino|rimanga|rimangano|vada|vadano|basti|bastino|riesca|riescano|\\p{L}+isca|\\p{L}+iscano)\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Dubito che **scenda**…, non credo che **torni**…*"
+          },
+          {
+            "label": "Backs it up with an example",
+            "anyOf": [
+              "\\b(prezzi|energia|salari|stipendi|petrolio|gas|bollette|domanda|consumi|carrello|spesa|affitti|tassi|costi)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-READ-01",
+            "hint": "*…i prezzi dell'energia, i salari…*"
+          }
+        ]
+      },
+      "model": "Dubito che l'inflazione scenda così in fretta, visto che i prezzi dell'energia restano alti e i salari stanno finalmente crescendo.",
+      "followOk": "Sono d'accordo. Al supermercato, di certo, non mi sembra che i prezzi stiano scendendo!",
+      "followMiss": "Mah, anch'io dubito che l'inflazione scenda così in fretta. Le bollette sono ancora carissime."
+    },
+    {
+      "id": "t5",
+      "say": "Ma tu, con i tassi in calo, sposteresti i tuoi risparmi? Io ho ancora tutto sul conto deposito.",
+      "en": "But would you move your savings, with rates falling? I've still got everything in a savings account.",
+      "task": "Give advice with se fossi in te + the conditional, and name a product (BTP, ETF, obbligazioni…).",
+      "hint": "Se fossi in te, sposterei una parte in…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "se + congiuntivo imperfetto",
+            "anyOf": [
+              "\\bse\\s+(\\p{L}+\\s+){0,3}\\p{L}+(ssi|sse|ssimo|ssero|aste|este|iste)\\b"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-HYP-01",
+            "hint": "*Se fossi in te…*"
+          },
+          {
+            "label": "Uses the conditional",
+            "anyOf": [
+              "\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-HYP-01",
+            "hint": "*…sposterei, investirei…*"
+          },
+          {
+            "label": "Names a product",
+            "anyOf": [
+              "\\b(btp|titoli di stato|etf|obbligazion\\p{L}*|azioni|fondi|fondo|conto deposito|liquidità|portafoglio|oro|pac|bot)\\b"
+            ],
+            "min": 1,
+            "errorType": "vocabulary",
+            "conceptId": "C1-VOC-05",
+            "hint": "*BTP, ETF obbligazionario, fondi…*"
+          }
+        ]
+      },
+      "model": "Se fossi in te, sposterei una parte della liquidità in BTP o in un ETF obbligazionario, perché il conto deposito renderà sempre meno.",
+      "followOk": "Forse hai ragione. Ne parlerò con il mio consulente la settimana prossima.",
+      "followMiss": "Capito. Mio padre mi dice sempre: «se fossi in te, comprerei qualche BTP». Forse ha ragione anche lui."
+    }
+  ],
+  "closing": "Bene, ora devo proprio scappare. Grazie della chiacchierata, mi sento quasi un'esperta di finanza!"
+}

@@ -1,0 +1,198 @@
+{
+  "id": "CV-42",
+  "title": "Un viaggio in Sicilia",
+  "subtitle": "Planning a Sicily trip with a friend from Palermo: the future, se avessi…, past hypotheticals, and Greek, Arab and Norman history.",
+  "level": "C1",
+  "theme": "Cultura e tempo libero",
+  "conceptIds": [
+    "B2-FUT-01",
+    "B2-HYP-01",
+    "B2-HYP-02",
+    "B2-SUBJ-02"
+  ],
+  "tutor": {
+    "name": "Salvo",
+    "avatar": "🧔",
+    "gender": "male",
+    "register": "informal"
+  },
+  "setting": "You're on a video call with your friend Salvo, who grew up in Palermo, to plan your first trip to Sicily.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Allora, finalmente vieni in Sicilia! Quanti giorni starai, e da dove pensi di cominciare?",
+      "en": "So, you're finally coming to Sicily! How many days will you stay, and where are you thinking of starting?",
+      "task": "Outline your itinerary with at least two verbs in the future (starò, arriverò, andrò…).",
+      "hint": "Starò… giorni: arriverò a… e poi andrò…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Future (twice)",
+            "anyOf": [
+              "\\b\\w+(rò|rai|rà|remo|rete|ranno)\\b"
+            ],
+            "min": 2,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "***Starò** dieci giorni, **arriverò** a Palermo…*"
+          },
+          {
+            "label": "Sequences the stages",
+            "anyOf": [
+              "\\b(poi|prima|dopo|infine|alla fine|quindi|da lì|e poi)\\b"
+            ],
+            "min": 1,
+            "errorType": "text-structure",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*Prima…, poi…, infine…*"
+          }
+        ]
+      },
+      "model": "Starò dieci giorni: arriverò a Palermo, poi andrò verso Agrigento e finirò il viaggio a Siracusa.",
+      "followOk": "Ottimo giro! Palermo merita almeno tre giorni, credimi: è una città che non si lascia capire subito.",
+      "followMiss": "Ti consiglio di partire da Palermo: ci starai tre giorni, poi andrai verso sud. Vedrai, te ne innamorerai."
+    },
+    {
+      "id": "t2",
+      "say": "A Palermo devi vedere la Cappella Palatina, voluta dal re normanno Ruggero II: mosaici bizantini e un soffitto in legno di artigiani arabi. Ti incuriosisce?",
+      "en": "In Palermo you must see the Palatine Chapel, commissioned by the Norman king Roger II: Byzantine mosaics and a wooden ceiling by Arab craftsmen. Does it intrigue you?",
+      "task": "React with trovo affascinante che / mi colpisce che + congiuntivo (present or past).",
+      "hint": "Trovo affascinante che… abbiano…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Evaluative phrase + che",
+            "anyOf": [
+              "\\b(trovo|è|mi sembra|mi colpisce|mi affascina|mi incuriosisce)\\s+(\\p{L}+\\s+)?che\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Trovo affascinante che…, è incredibile che…*"
+          },
+          {
+            "label": "Subjunctive after it",
+            "anyOf": [
+              "\\bche\\s+(\\S+\\s+){0,6}?(abbiano|abbia|siano|sia|fossero|fosse|avessero|convivessero|convivano|lavorassero|lavorino|si mescolassero|si mescolino|ci sia|possano)\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-02",
+            "hint": "*…che arabi e normanni **abbiano lavorato** insieme.*"
+          }
+        ]
+      },
+      "model": "Sì, trovo affascinante che arabi, bizantini e normanni abbiano lavorato insieme nello stesso edificio.",
+      "followOk": "Esatto. I normanni furono intelligenti: invece di cacciare gli artigiani arabi e bizantini, li misero al lavoro.",
+      "followMiss": "Anch'io trovo incredibile che culture così diverse abbiano creato insieme un capolavoro del genere."
+    },
+    {
+      "id": "t3",
+      "say": "Poi c'è la Sicilia greca: la Valle dei Templi ad Agrigento e il teatro di Siracusa. Se avessi qualche giorno in più, cosa aggiungeresti?",
+      "en": "Then there's Greek Sicily: the Valley of the Temples in Agrigento and the theatre in Syracuse. If you had a few more days, what would you add?",
+      "task": "Answer with se + congiuntivo imperfetto and the conditional.",
+      "hint": "Se avessi più tempo, andrei anche…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "se + congiuntivo imperfetto",
+            "anyOf": [
+              "\\bse\\s+(\\p{L}+\\s+){0,2}?(avessi|fossi|potessi|avessimo|potessimo|restassi|rimanessi|avesse)\\b"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-HYP-01",
+            "hint": "***Se avessi** più tempo…*"
+          },
+          {
+            "label": "Conditional",
+            "anyOf": [
+              "\\b\\w+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-HYP-01",
+            "hint": "*…**andrei** a Segesta, **passerei**…*"
+          }
+        ]
+      },
+      "model": "Se avessi più tempo, andrei anche a Segesta e passerei una giornata intera a Ortigia, il centro storico di Siracusa.",
+      "followOk": "Ottima idea. Pensa che Siracusa, ai tempi di Archimede, era una delle città più potenti del Mediterraneo.",
+      "followMiss": "Io, se avessi qualche giorno in più, andrei a Segesta: il tempio dorico in mezzo alle colline è spettacolare."
+    },
+    {
+      "id": "t4",
+      "say": "Sai che furono gli arabi a portare in Sicilia gli agrumi e la canna da zucchero? Senza di loro, forse niente cassata e niente cannoli!",
+      "en": "Did you know it was the Arabs who brought citrus fruit and sugar cane to Sicily? Without them, maybe no cassata and no cannoli!",
+      "task": "Speculate about the past with se + congiuntivo trapassato and the conditional (se gli arabi non fossero arrivati, …).",
+      "hint": "Se gli arabi non fossero arrivati, la cucina siciliana sarebbe…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "se + congiuntivo trapassato",
+            "anyOf": [
+              "\\bse\\s+(\\S+\\s+){0,3}?(fosse|fossero|avesse|avessero)\\s+\\p{L}+(at|ut|it|tt|st|ss|nt|rs|rt|lt|es|is|os|us)[oaie]\\b"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-HYP-02",
+            "hint": "***Se** gli arabi non **fossero arrivati**…*"
+          },
+          {
+            "label": "Conditional in the result",
+            "anyOf": [
+              "\\b(sarebbe|sarebbero|avrebbe|avrebbero|avremmo|saremmo|mangeremmo|esisterebbe|esisterebbero|ci sarebbe|ci sarebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-HYP-02",
+            "hint": "*…la cucina **sarebbe** più povera, non **avremmo**…*"
+          }
+        ]
+      },
+      "model": "Davvero? Se gli arabi non fossero arrivati, la cucina siciliana sarebbe molto più povera, e oggi non avremmo i cannoli.",
+      "followOk": "Proprio così. E anche tante parole siciliane vengono dall'arabo, come zagara, il fiore degli agrumi.",
+      "followMiss": "Pensa: se gli arabi non fossero arrivati, oggi forse non avremmo né la cassata né le arance di Sicilia."
+    },
+    {
+      "id": "t5",
+      "say": "Ultima cosa: appena arrivi a Palermo, che cosa vorrai mangiare per primo? Ti avverto: qui si dice arancina, non arancino!",
+      "en": "Last thing: as soon as you get to Palermo, what will you want to eat first? I warn you: here we say arancina, not arancino!",
+      "task": "Answer with appena / quando + futuro anteriore or future, then the future (appena sarò arrivato/a, mangerò…).",
+      "hint": "Appena sarò arrivato/a, mangerò…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "appena / quando",
+            "anyOf": [
+              "\\b(appena|non appena|quando|dopo che)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-FUT-01",
+            "hint": "***Appena** sarò arrivato/a…*"
+          },
+          {
+            "label": "Future",
+            "anyOf": [
+              "\\b\\w+(rò|rai|rà|remo|rete|ranno)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*…**mangerò** un'arancina…*"
+          }
+        ]
+      },
+      "model": "Appena sarò arrivato a Palermo, mangerò un'arancina al ragù e poi proverò il pane con la milza.",
+      "followOk": "Coraggioso! Ti porto io al mercato di Ballarò: lì si mangia lo street food migliore della città.",
+      "followMiss": "Appena arriverai, ti porterò a mangiare un'arancina al mercato di Ballarò. E poi un cannolo, ovviamente!"
+    }
+  ],
+  "closing": "Allora ci vediamo a Palermo! Preparati: in Sicilia si mangia tanto e si parla ancora di più."
+}

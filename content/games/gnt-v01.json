@@ -1,0 +1,20 @@
+{
+  "id": "G-GNT-10",
+  "type": "gauntlet",
+  "title": "La sfida del lessico",
+  "subtitle": "False friends, collocations, idioms, word formation and phrasal verbs against the clock. Three lives.",
+  "conceptIds": [
+    "B2-VOC-01",
+    "B2-VOC-02",
+    "C1-VOC-03",
+    "B2-IDIOM-01",
+    "C1-IDIOM-02",
+    "B2-VOC-04",
+    "C1-VOC-05",
+    "B2-VOC-06"
+  ],
+  "difficulty": 3,
+  "minutes": 4,
+  "seconds": 150,
+  "lives": 3
+}

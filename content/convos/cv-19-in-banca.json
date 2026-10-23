@@ -1,0 +1,212 @@
+{
+  "id": "CV-19",
+  "title": "In banca",
+  "subtitle": "A formal phone call to your bank about a blocked card and a charge you don't recognise.",
+  "level": "B2",
+  "theme": "Vita quotidiana",
+  "conceptIds": [
+    "B2-REG-01",
+    "B2-COND-01",
+    "B2-PAST-01",
+    "B2-REL-01",
+    "B2-HYP-01"
+  ],
+  "tutor": {
+    "name": "Federica",
+    "avatar": "👩‍💻",
+    "gender": "female",
+    "register": "formal"
+  },
+  "setting": "You're on holiday in Spain and your card has just been refused. You phone your Italian bank's customer service; Federica answers.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Banca Adriatica, buongiorno, sono Federica. In che cosa posso esserLe utile?",
+      "en": "Banca Adriatica, good morning, this is Federica. How can I help you?",
+      "task": "Greet her formally and say why you're calling (La chiamo perché…).",
+      "hint": "Buongiorno, La chiamo perché…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Formal greeting",
+            "anyOf": [
+              "\\b(buongiorno|buonasera|salve|mi scusi|senta)\\b"
+            ],
+            "min": 1,
+            "errorType": "register",
+            "conceptId": "B2-REG-01",
+            "hint": "*Buongiorno…*"
+          },
+          {
+            "label": "Says why you're calling",
+            "anyOf": [
+              "\\b(la chiamo|chiamo perché|chiamo per|telefono perché|la contatto|vi chiamo|ho un problema|avrei un problema|c['’]è un problema)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-REG-01",
+            "hint": "*La chiamo perché ho un problema con…*"
+          }
+        ]
+      },
+      "model": "Buongiorno, sono un vostro cliente e La chiamo perché ho un problema con la mia carta.",
+      "followOk": "Certo, mi dispiace. Mi spiega meglio che cosa è successo?",
+      "followMiss": "Ho capito, ha un problema con la carta. Mi dica pure che cosa è successo."
+    },
+    {
+      "id": "t2",
+      "say": "Mi dica pure: che cosa è successo, esattamente?",
+      "en": "Go ahead: what happened, exactly?",
+      "task": "Explain what happened: mentre + imperfetto for the situation, then the passato prossimo for the event.",
+      "hint": "Ieri, mentre ero…, ho provato a pagare, ma…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Imperfetto for the situation (mentre ero…, stavo…)",
+            "anyOf": [
+              "\\b(mentre|quando)\\s+([\\p{L}'’]+\\s+){0,3}(ero|eri|era|eravamo|stavo|stava|stavamo|\\p{L}+(avo|evo|ivo|ava|eva|iva|avamo|evamo|ivamo))\\b",
+              "\\b(ero|eravamo|stavo|stavamo|c['’]era)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "*Mentre **ero** al ristorante…*"
+          },
+          {
+            "label": "Passato prossimo for the event",
+            "anyOf": [
+              "\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "*…ho provato a pagare, la carta è stata rifiutata.*"
+          }
+        ]
+      },
+      "model": "Ieri sera, mentre ero in vacanza in Spagna, ho provato a pagare al ristorante, ma la carta è stata rifiutata.",
+      "followOk": "Capisco, che disagio. Probabilmente il sistema l'ha bloccata per motivi di sicurezza.",
+      "followMiss": "Capisco: mentre stava pagando, la carta è stata rifiutata. Probabilmente è un blocco di sicurezza."
+    },
+    {
+      "id": "t3",
+      "say": "Sì, in effetti vedo che la carta risulta bloccata. Come posso aiutarLa?",
+      "en": "Yes, I can indeed see that the card is blocked. How can I help you?",
+      "task": "Ask for a solution with the conditional of politeness (potrebbe…?, vorrei…, sarebbe possibile…?).",
+      "hint": "Potrebbe sbloccarla oggi stesso? Mi servirebbe…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          {
+            "label": "Polite conditional",
+            "anyOf": [
+              "\\b(vorrei|potrei|potrebbe|mi potrebbe|potreste|sarebbe possibile|non sarebbe possibile|gradirei|preferirei|le dispiacerebbe|mi farebbe|avrei bisogno|mi servirebbe)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Potrebbe…?, vorrei…, sarebbe possibile…?*"
+          },
+          {
+            "label": "Asks for a solution (sbloccare, riattivare…)",
+            "anyOf": [
+              "\\b(sbloccare|sbloccarla|sbloccata|riattivare|riattivarla|riattivata|nuova carta|sostituire|sostituirla|attivare|attivarla)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-COND-01",
+            "hint": "*…sbloccarla, riattivarla…*"
+          }
+        ]
+      },
+      "model": "Potrebbe sbloccarla oggi stesso, per favore? Sono ancora all'estero e mi servirebbe per pagare l'albergo.",
+      "followOk": "Certamente, posso sbloccarla subito. Un attimo solo, per cortesia.",
+      "followMiss": "Certo, Lei vorrebbe che la carta venisse sbloccata subito. Posso farlo io adesso, un attimo."
+    },
+    {
+      "id": "t4",
+      "say": "Ecco fatto, la carta è di nuovo attiva. Posso fare qualcos'altro per Lei?",
+      "en": "There you go, the card is active again. Can I do anything else for you?",
+      "task": "Mention a charge you don't recognise. Use the passato prossimo and a relative clause (un addebito che non riconosco…).",
+      "hint": "Sì, ho notato un addebito che non…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Names the charge (addebito, pagamento…)",
+            "anyOf": [
+              "\\b(addebito|addebiti|spesa|pagamento|transazione|movimento|importo|prelievo)\\b"
+            ],
+            "min": 1,
+            "errorType": "vocabulary",
+            "conceptId": "B2-WRIT-01",
+            "hint": "*un addebito, un pagamento…*"
+          },
+          {
+            "label": "Relative clause (che non…, di cui non…)",
+            "anyOf": [
+              "\\b(che|di cui|il quale|la quale)\\s+(io\\s+)?(non|mai)\\b"
+            ],
+            "min": 1,
+            "errorType": "relative",
+            "conceptId": "B2-REL-01",
+            "hint": "*…un addebito **che** non riconosco.*"
+          },
+          {
+            "label": "Passato prossimo (ho notato, ho visto…)",
+            "anyOf": [
+              "\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "*Ho notato…*"
+          }
+        ]
+      },
+      "model": "Sì, ho notato sul conto un addebito di duecento euro che non riconosco e che non ho mai fatto.",
+      "followOk": "Mi dispiace. Allora apriamo subito una contestazione per quell'importo.",
+      "followMiss": "Capisco, c'è un addebito che Lei non riconosce. Apriamo subito una contestazione."
+    },
+    {
+      "id": "t5",
+      "say": "Le mando il modulo per la contestazione via email. Di solito il rimborso arriva entro trenta giorni.",
+      "en": "I'll email you the form for the dispute. The refund usually arrives within thirty days.",
+      "task": "Ask politely what happens if the refund doesn't arrive: nel caso in cui + subjunctive, or e se…?",
+      "hint": "Mi può dire che cosa succede nel caso in cui il rimborso non…?",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Nel caso in cui + subjunctive / e se…?",
+            "anyOf": [
+              "\\b(nel caso in cui|nel caso che|qualora)\\s+([\\p{L}'’]+\\s+){0,4}(arrivi|arrivino|arrivasse|dovesse|dovessero|ci sia|ci fosse|sia|siano|abbia|abbiano|possa|possano|debba|debbano|vada|vadano|faccia|facciano|serva|servano|convenga|convengano|stia|stiano|venga|vengano|valga|valgano|sappia|sappiano|voglia|vogliano|occorra|bisogni|basti|bastino|costi|costino|funzioni|funzionino|porti|portino|rischi|rischino|aiuti|aiutino|renda|rendano|cambi|migliori|paghi|paghino|spenda|spendano|includa|includano|metta|mettano|tenga|tengano|dia|diano|conosca|conoscano|legga|scelga|scelgano|piaccia|piacciano|parli|parlino|chieda|chiedano|prenda|prendano|\\p{L}{3,}(?:ino|isca|iscano|iamo|iate)|fosse|fossero|fossi|avesse|avessero|avessi|\\p{L}{2,}(?:asse|esse|isse|assero|essero|issero|assi|essi|issi))\\b",
+              "\\be se\\s+([\\p{L}'’]+\\s+){0,4}(arriva|arrivasse|dovesse|succede|ci sono|c['’]è|ci fosse)\\b",
+              "\\bse\\s+([\\p{L}'’]+\\s+){0,3}non\\s+(arriva|arrivasse|dovesse)\\b"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-HYP-01",
+            "hint": "*…nel caso in cui il rimborso non **arrivi**?*"
+          },
+          {
+            "label": "Polite question (mi può dire…, vorrei sapere…)",
+            "anyOf": [
+              "\\b(mi può dire|può dirmi|mi potrebbe dire|potrebbe dirmi|mi sa dire|sa dirmi|vorrei sapere|volevo sapere|vorrei chiederle|mi scusi)\\b"
+            ],
+            "min": 1,
+            "errorType": "register",
+            "conceptId": "B2-REG-01",
+            "hint": "*Mi può dire…? / Vorrei sapere…*"
+          }
+        ]
+      },
+      "model": "Va bene, grazie. Ma mi può dire che cosa succede nel caso in cui il rimborso non arrivi entro trenta giorni?",
+      "followOk": "In quel caso mi richiami pure: aprirò io un sollecito con priorità.",
+      "followMiss": "Glielo dico subito: nel caso in cui il rimborso non arrivi, mi richiami e faremo un sollecito."
+    }
+  ],
+  "closing": "Bene, allora è tutto risolto. Grazie per aver chiamato e buona continuazione di vacanza!"
+}

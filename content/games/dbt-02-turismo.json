@@ -1,0 +1,228 @@
+{
+  "id": "G-DBT-02",
+  "type": "debate",
+  "title": "Il turismo di massa va limitato?",
+  "subtitle": "A heritage professor wants strict limits on tourism. Argue back in writing, then put it in a formal email.",
+  "conceptIds": [
+    "C1-WRIT-02",
+    "B2-WRIT-01"
+  ],
+  "difficulty": 4,
+  "minutes": 25,
+  "topic": "Il turismo di massa va limitato?",
+  "stance": "Assolutamente sì. Le nostre città d'arte stanno diventando parchi a tema: i residenti se ne vanno, gli affitti brevi svuotano i quartieri e i negozi vendono solo souvenir. Servono il numero chiuso, un biglietto d'ingresso per i centri storici e limiti severi agli affitti turistici, anche a costo di perdere qualche euro.",
+  "opponent": {
+    "name": "Prof.ssa Rinaldi",
+    "avatar": "🏛️"
+  },
+  "prompts": [
+    {
+      "id": "G-DBT-02.p1",
+      "type": "free",
+      "difficulty": 4,
+      "instruction": "Reply to Professoressa Rinaldi in Italian (80–150 words).",
+      "prompt": "Do you agree with her? State your position, give two ordered arguments, and concede one point she makes before answering it.",
+      "minWords": 80,
+      "maxWords": 150,
+      "errorType": "text-structure",
+      "rubric": [
+        {
+          "label": "States a clear position",
+          "anyOf": [
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))(a mio (avviso|parere)|ritengo|sono convint[oa]|credo che|penso che|secondo me|sono (d'accordo|favorevole|contrari[oa]))(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))non sono d'accordo(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))condivido(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))"
+          ],
+          "min": 1,
+          "errorType": "text-structure",
+          "hint": "Say where you stand: *Condivido solo in parte…*, *A mio avviso…*."
+        },
+        {
+          "label": "Orders the arguments",
+          "anyOf": [
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))(in primo luogo|innanzitutto|anzitutto|prima di tutto)(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))(in secondo luogo|inoltre|per di più|oltre a ciò)(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))"
+          ],
+          "min": 2,
+          "errorType": "connector",
+          "hint": "Use *In primo luogo… Inoltre…*."
+        },
+        {
+          "label": "Concedes a point",
+          "anyOf": [
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))è vero che(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))certo(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))non si può negare(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))nessuno nega(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))sebbene(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))benché(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))pur(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))ammetto(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))ha ragione(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))"
+          ],
+          "min": 1,
+          "errorType": "text-structure",
+          "hint": "Concede first: *È vero che i residenti se ne vanno…*."
+        },
+        {
+          "label": "Then answers it (contrast connector)",
+          "anyOf": [
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))tuttavia(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))ciononostante(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))eppure(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))d'altra parte(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))d'altro canto(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))resta il fatto(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))ma(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))"
+          ],
+          "min": 1,
+          "errorType": "connector",
+          "hint": "Rebut with *Tuttavia…*."
+        }
+      ],
+      "model": "Condivido solo in parte la sua posizione. È vero che in alcune città i residenti se ne vanno e che i negozi tradizionali stanno scomparendo. Tuttavia, il numero chiuso mi sembra una soluzione eccessiva. In primo luogo, il turismo dà lavoro a migliaia di persone, spesso giovani, che non avrebbero alternative. Inoltre, un biglietto d'ingresso trasformerebbe davvero il centro storico in un museo a pagamento, cioè proprio nel parco a tema che lei teme. A mio avviso bisognerebbe piuttosto regolare gli affitti brevi e distribuire meglio i flussi nell'arco dell'anno.",
+      "explanation": "A good reply takes a nuanced position, concedes something real (*È vero che…*) and then rebuts it (*Tuttavia…*), with ordered arguments."
+    },
+    {
+      "id": "G-DBT-02.p2",
+      "type": "free",
+      "difficulty": 5,
+      "instruction": "Propose an alternative in Italian (80–150 words).",
+      "prompt": "Propose one concrete alternative to the 'numero chiuso' and argue for it. Use at least one hypothetical sentence (*se* + imperfect subjunctive + conditional) and a concessive clause (*sebbene / benché / nonostante* + subjunctive, or *pur* + gerund).",
+      "minWords": 80,
+      "maxWords": 150,
+      "errorType": "text-structure",
+      "rubric": [
+        {
+          "label": "Makes a concrete proposal",
+          "anyOf": [
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))propon",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))suggerisc",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))bisognerebbe(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))sarebbe (meglio|opportuno|utile)(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))si potrebbe(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))andrebbe(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))dovrebbe(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))"
+          ],
+          "min": 1,
+          "errorType": "task-completion",
+          "hint": "Introduce it: *Propongo di…*, *Sarebbe più utile…*."
+        },
+        {
+          "label": "Hypothetical: se + imperfect subjunctive",
+          "anyOf": [
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))se\\s+(\\S+\\s+){0,4}?\\S+(ssi|sse|ssimo|ste|ssero)(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))"
+          ],
+          "min": 1,
+          "errorType": "hypothetical",
+          "hint": "E.g. *Se i musei restassero aperti fino a tardi, i visitatori si distribuirebbero meglio.*"
+        },
+        {
+          "label": "Conditional in the main clause",
+          "anyOf": [
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))\\S+(rei|rebbe|remmo|rebbero|reste)(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))"
+          ],
+          "min": 1,
+          "errorType": "conditional-form",
+          "hint": "Pair the *se*-clause with a conditional: *…si ridurrebbero le code*."
+        },
+        {
+          "label": "Concessive clause",
+          "anyOf": [
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))(sebbene|benché|nonostante|malgrado|pur)(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))"
+          ],
+          "min": 1,
+          "errorType": "connector",
+          "hint": "Add *Sebbene* + subjunctive or *pur* + gerund."
+        }
+      ],
+      "model": "Propongo di puntare sulla distribuzione dei flussi invece che sul numero chiuso. Se le città promuovessero anche i quartieri periferici e i borghi vicini, i turisti non si concentrerebbero tutti negli stessi cento metri. Inoltre, se i musei restassero aperti la sera e i grandi eventi venissero organizzati in bassa stagione, le presenze si distribuirebbero in modo più equilibrato durante l'anno. Sebbene questa strategia richieda tempo e investimenti, avrebbe un vantaggio decisivo: non escluderebbe nessuno e permetterebbe ai residenti di continuare a vivere del turismo senza esserne travolti.",
+      "explanation": "The model links proposal and consequence with *se* + imperfect subjunctive + conditional (*Se le città promuovessero…, i turisti non si concentrerebbero…*) and concedes the cost with *Sebbene* + subjunctive."
+    },
+    {
+      "id": "G-DBT-02.p3",
+      "conceptId": "B2-WRIT-01",
+      "type": "free",
+      "difficulty": 4,
+      "instruction": "Write a formal email in Italian (100–150 words).",
+      "prompt": "You live in the historic centre of a tourist town. Write a formal email to the mayor (*il Sindaco*): describe one concrete problem caused by mass tourism, propose a measure, and ask for a meeting or a reply.",
+      "minWords": 100,
+      "maxWords": 150,
+      "errorType": "register",
+      "rubric": [
+        {
+          "label": "Formal greeting",
+          "anyOf": [
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))(Gentile|Egregio|Illustre|Spettabile)(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))Signor Sindaco(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))"
+          ],
+          "min": 1,
+          "errorType": "register",
+          "hint": "Open with *Egregio Signor Sindaco,* or *Gentile Sindaco,*."
+        },
+        {
+          "label": "Formal opening formula",
+          "anyOf": [
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))(Le|Vi) scrivo(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))con la presente(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))in (merito|riferimento|relazione) a"
+          ],
+          "min": 1,
+          "errorType": "register",
+          "hint": "Start with *Le scrivo in qualità di residente…* or *Con la presente…*."
+        },
+        {
+          "label": "Addresses the mayor with Lei",
+          "anyOf": [
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))(Le|La) (chiedo|scrivo|ringrazio|prego|sarei)(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))(potrebbe|potesse|vorrebbe)(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))Su[oa](?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))"
+          ],
+          "min": 1,
+          "errorType": "register",
+          "hint": "Use *Lei* forms: *Le chiedo*, *potrebbe*, *la Sua disponibilità*."
+        },
+        {
+          "label": "Proposes a measure",
+          "anyOf": [
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))propon",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))suggeri",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))sarebbe (utile|opportuno)(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))bisognerebbe(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))si potrebbe(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))"
+          ],
+          "min": 1,
+          "errorType": "task-completion",
+          "hint": "Make the proposal explicit: *Propongo di…*."
+        },
+        {
+          "label": "Asks for a meeting or a reply",
+          "anyOf": [
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))incontro(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))riscontro(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))risposta(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))ricevere(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))colloquio(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))"
+          ],
+          "min": 1,
+          "errorType": "task-completion",
+          "hint": "Ask for *un incontro* or *un Suo cortese riscontro*."
+        },
+        {
+          "label": "Formal closing",
+          "anyOf": [
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))(distinti|cordiali) saluti(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))in attesa d",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))porgo(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))",
+            "(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))La ringrazio(?:(?<![\\wÀ-ÿ])(?=[\\wÀ-ÿ])|(?<=[\\wÀ-ÿ])(?![\\wÀ-ÿ]))"
+          ],
+          "min": 1,
+          "errorType": "register",
+          "hint": "End with *In attesa di un Suo cortese riscontro, porgo distinti saluti.*"
+        }
+      ],
+      "model": "Egregio Signor Sindaco,\n\nLe scrivo in qualità di residente del centro storico per segnalarLe un problema che negli ultimi anni è diventato sempre più grave. Nella mia via, su venti appartamenti, quattordici sono ormai affittati ai turisti: di conseguenza le famiglie se ne vanno, e l'ultimo negozio di alimentari ha chiuso il mese scorso.\n\nPropongo pertanto di introdurre un limite al numero di giorni all'anno in cui un appartamento può essere affittato per brevi periodi, come già avviene in altre città europee. Una parte della tassa di soggiorno potrebbe inoltre sostenere i negozi di vicinato.\n\nLe sarei grato se potesse concedere un breve incontro a una delegazione di residenti per discutere la proposta.\n\nIn attesa di un Suo cortese riscontro, porgo distinti saluti.\n\nLuca Martini",
+      "explanation": "The email follows the formal pattern: greeting, reason for writing, precise facts, a concrete proposal, a polite request (*Le sarei grato se potesse…*) and a formal closing."
+    }
+  ]
+}

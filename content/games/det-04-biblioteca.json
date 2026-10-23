@@ -1,0 +1,75 @@
+{
+  "id": "G-DET-04",
+  "type": "detective",
+  "title": "Il furto in biblioteca",
+  "subtitle": "A rare manuscript has vanished from a city library. Newspaper and police reports are written in the passive, so get the forms right and the clues sharpen.",
+  "conceptIds": ["B2-PASS-01", "C1-PASS-02", "B2-SI-01"],
+  "difficulty": 3,
+  "minutes": 10,
+  "characters": {
+    "commissario": { "name": "Lei (Commissaria/o)", "role": "you" },
+    "giornale": { "name": "La Gazzetta di Pietralta", "role": "articolo di giornale", "avatar": "📰" },
+    "verbale": { "name": "Verbale della Scientifica", "role": "rapporto di polizia", "avatar": "📋" },
+    "orsini": { "name": "Marta Orsini", "role": "direttrice della biblioteca", "avatar": "📚" },
+    "ferri": { "name": "Giorgio Ferri", "role": "custode notturno", "avatar": "🔦" },
+    "chiara": { "name": "Chiara Bassi", "role": "dottoranda in paleografia", "avatar": "🎓" },
+    "rinaldi": { "name": "Paolo Rinaldi", "role": "vicedirettore", "avatar": "🗂️" }
+  },
+  "intro": "Biblioteca Civica di Pietralta, lunedì mattina. Il Codice Malvezzi, un manoscritto miniato del Quattrocento, non è più nella sua teca. La teca è intatta, l'edificio è chiuso nel fine settimana. Sul suo tavolo ci sono un articolo di giornale, il verbale della Scientifica e quattro persone da interrogare.",
+  "scenes": [
+    {
+      "speaker": "giornale",
+      "line": "FURTO ALLA CIVICA. Il prezioso Codice Malvezzi ___ (rubare) nel fine settimana dalla Biblioteca Civica.",
+      "item": { "id": "G-DET-04.s1", "conceptId": "B2-PASS-01", "type": "cloze", "difficulty": 2, "instruction": "Complete the headline story with the passive (passato prossimo).", "prompt": "Il prezioso Codice Malvezzi ___ (rubare) nel fine settimana.", "answers": ["è stato rubato"], "focus": ["stato", "rubato"], "errorType": "passive", "traps": [{ "match": "è venuto rubato", "errorType": "passive", "why": "*Venire* can't form compound tenses: *è stato rubato*." }, { "match": "ha stato rubato", "errorType": "auxiliary", "why": "*Stato* goes with *essere*: *è stato rubato*." }, { "match": "ha rubato", "errorType": "passive", "why": "The codex didn't steal anything: it *was stolen*, *è stato rubato*." }], "explanation": "Passato prossimo passive: *è stato* + participle agreeing with *il codice*: **è stato rubato**." },
+      "clue": "Secondo l'articolo, il codice è stato visto per l'ultima volta venerdì alle 18, all'ora di chiusura. Il furto è stato scoperto lunedì alle 9.",
+      "clueBlurred": "L'articolo parla di un orario… ma la stampa è sbavata."
+    },
+    {
+      "speaker": "verbale",
+      "line": "Rilievi: la teca non presenta segni di effrazione. La serratura ___ (aprire) con la chiave originale.",
+      "item": { "id": "G-DET-04.s2", "conceptId": "B2-PASS-01", "type": "cloze", "difficulty": 2, "instruction": "Complete the police report with the passive (passato prossimo).", "prompt": "La serratura ___ (aprire) con la chiave originale.", "answers": ["è stata aperta"], "focus": ["stata", "aperta"], "errorType": "passive", "traps": [{ "match": "è stato aperto", "errorType": "agreement", "why": "*La serratura* is feminine: *è stata aperta*." }, { "match": "è venuta aperta", "errorType": "passive", "why": "No *venire* in compound tenses: *è stata aperta*." }, { "match": "è stata aprita", "errorType": "verb-form", "why": "*Aprire* has an irregular participle: *aperto / aperta*." }], "explanation": "*La serratura* (f.) → **è stata aperta** (irregular participle *aperto*)." },
+      "clue": "Le chiavi della teca sono custodite soltanto da due persone: la direttrice Orsini e il vicedirettore Rinaldi. Il custode e gli studiosi non le hanno.",
+      "clueBlurred": "Il verbale nomina chi ha le chiavi della teca… ma la riga è coperta da una macchia di caffè."
+    },
+    {
+      "speaker": "orsini",
+      "line": "Commissario, il regolamento è chiaro: le chiavi della teca ___ (andare) custodite in cassaforte. Io sono partita venerdì alle 15 per un convegno a Vienna.",
+      "item": { "id": "G-DET-04.s3", "conceptId": "C1-PASS-02", "type": "cloze", "difficulty": 3, "instruction": "Complete the director's line with andare (present) to express obligation.", "prompt": "Le chiavi della teca ___ custodite in cassaforte.", "answers": ["vanno"], "focus": ["vanno"], "errorType": "passive", "traps": [{ "match": "va", "errorType": "agreement", "why": "*Le chiavi* is plural: *vanno custodite*." }, { "match": "sono andate", "errorType": "passive", "why": "Obligation-*andare* only works in simple tenses, and here the rule is general: *vanno custodite* ('must be kept')." }], "explanation": "*Andare* + participle = obligation: **vanno custodite** = 'must be kept'." },
+      "clue": "L'hotel di Vienna e gli organizzatori del convegno confermano: la direttrice è rimasta in Austria da venerdì sera a domenica sera.",
+      "clueBlurred": "La direttrice parla di un viaggio… ma non si capisce quando sia tornata."
+    },
+    {
+      "speaker": "ferri",
+      "line": "Io faccio il giro ogni due ore. Sabato sera, verso le dieci, ___ (sentire) dei rumori al primo piano, ma pensavo fosse il vento.",
+      "item": { "id": "G-DET-04.s4", "conceptId": "B2-SI-01", "type": "cloze", "difficulty": 3, "instruction": "Ferri speaks impersonally. Complete with si + sentire in the passato prossimo.", "prompt": "Sabato sera ___ (sentire) dei rumori al primo piano.", "answers": ["si sono sentiti"], "focus": ["sono", "sentiti"], "errorType": "passive", "traps": [{ "match": "si è sentito", "errorType": "agreement", "why": "*Dei rumori* is plural and is the real subject: *si sono sentiti*." }, { "match": "si hanno sentito", "errorType": "auxiliary", "why": "*Si* constructions always take *essere*." }, { "match": "si sono sentito", "errorType": "agreement", "why": "The participle agrees with *rumori*: *sentiti*." }], "explanation": "Si passivante in a compound tense: *essere* + participle agreeing with the object: **si sono sentiti** (dei rumori)." },
+      "clue": "Dal registro dell'allarme: l'allarme è stato disattivato sabato alle 22:10 con il codice personale del vicedirettore Rinaldi, non con quello del custode.",
+      "clueBlurred": "Il registro dell'allarme segna un orario… ma il codice usato è illeggibile."
+    },
+    {
+      "speaker": "chiara",
+      "line": "Sì, avevo chiesto di consultare il codice e la richiesta mi è stata respinta. Ma sabato ero a Bologna per un seminario: ___ (lavorare) fino a mezzanotte, chieda pure ai colleghi.",
+      "item": { "id": "G-DET-04.s5", "conceptId": "B2-SI-01", "type": "cloze", "difficulty": 3, "instruction": "Complete with impersonal si + lavorare in the passato prossimo.", "prompt": "Sabato a Bologna ___ (lavorare) fino a mezzanotte.", "answers": ["si è lavorato"], "focus": ["è", "lavorato"], "errorType": "passive", "traps": [{ "match": "si ha lavorato", "errorType": "auxiliary", "why": "Even verbs that normally take *avere* switch to *essere* with *si*: *si è lavorato*." }, { "match": ["si sono lavorati", "si è lavorati"], "errorType": "agreement", "why": "No object, and *lavorare* normally takes *avere*: the participle stays in *-o*, *si è lavorato*." }], "explanation": "Si impersonale + an avere-verb → *si è* + participle in **-o**: *si è lavorato*." },
+      "clue": "Sei colleghi e il registro del seminario confermano: Chiara è rimasta a Bologna da sabato mattina a domenica pomeriggio. Ha un movente, ma non l'occasione.",
+      "clueBlurred": "Chiara ha un movente… ma dove fosse sabato sera non è chiaro."
+    },
+    {
+      "speaker": "rinaldi",
+      "line": "Sabato sera? Ero al concerto del Teatro Verdi. Il biglietto, purtroppo, ___ perso. Ma è assurdo sospettare di me!",
+      "item": { "id": "G-DET-04.s6", "conceptId": "C1-PASS-02", "type": "cloze", "difficulty": 4, "instruction": "Complete with andare in the passato prossimo ('got lost').", "prompt": "Il biglietto, purtroppo, ___ perso.", "answers": ["è andato"], "focus": ["andato"], "errorType": "passive", "traps": [{ "match": "è stato", "ok": true, "errorType": "passive", "why": "Grammatical, but the natural way to say something 'got lost' is *è andato perso*." }, { "match": "ha andato", "errorType": "auxiliary", "why": "*Andare* takes *essere*: *è andato*." }, { "match": "è stato andato", "errorType": "passive", "why": "*È stato andato* doesn't exist: *è andato perso*." }, { "match": "va", "errorType": "wrong-tense", "why": "*Va perso* is present (or 'must be lost'). Rinaldi means it got lost: *è andato perso*." }], "explanation": "With verbs of loss, *andare* is a plain passive and compound tenses are fine: **è andato perso**." },
+      "clue": "Una telefonata al Teatro Verdi: il concerto di sabato era stato annullato giovedì per uno sciopero dei musicisti. Nessuno spettatore è stato fatto entrare.",
+      "clueBlurred": "Rinaldi parla di un concerto… ma non riesce a verificare se si sia svolto davvero."
+    }
+  ],
+  "accusation": {
+    "question": "Chi ha rubato il Codice Malvezzi?",
+    "options": [
+      { "id": "orsini", "label": "Marta Orsini, la direttrice" },
+      { "id": "ferri", "label": "Giorgio Ferri, il custode" },
+      { "id": "chiara", "label": "Chiara Bassi, la dottoranda" },
+      { "id": "rinaldi", "label": "Paolo Rinaldi, il vicedirettore" }
+    ],
+    "answer": "rinaldi",
+    "solved": "Esatto! La teca è stata aperta con la chiave, che solo la direttrice e Rinaldi possedevano. La direttrice era a Vienna, l'allarme è stato disattivato con il codice di Rinaldi e il suo alibi non regge: il concerto era stato annullato. Il codice è stato ritrovato nel suo garage, pronto per essere venduto all'estero.",
+    "wrong": "Non regge: rileggi gli indizi. Chi aveva la chiave della teca, chi ha disattivato l'allarme e quale alibi è crollato?"
+  }
+}

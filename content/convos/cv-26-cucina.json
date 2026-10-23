@@ -1,0 +1,113 @@
+{
+  "id": "CV-26",
+  "title": "Cucina e tradizioni",
+  "subtitle": "Cooking a family recipe together: si passivante, the imperative, ci vuole / ci vogliono.",
+  "level": "B2",
+  "theme": "Cultura e tempo libero",
+  "conceptIds": ["B2-SI-01", "B2-PRON-04", "B2-PRON-02", "B2-PAST-01"],
+  "tutor": { "name": "Davide", "avatar": "👨‍🍳", "gender": "male", "register": "informal" },
+  "setting": "Your friend Davide has invited people round for dinner in Lecce. This time you're in charge of the kitchen, and he's your assistant.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Allora, stasera tocca a te: che piatto ci prepari? È una ricetta della tua famiglia?",
+      "en": "So, tonight it's your turn: what dish are you making us? Is it a family recipe?",
+      "task": "Name the dish and say who used to make it, with the imperfetto of habit.",
+      "hint": "Vi preparo… Mia nonna lo faceva sempre…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Imperfetto of habit (faceva, preparava…)", "anyOf": ["\\b(era|erano|c['’]era|si\\s+faceva|\\p{L}+(ava|avano|eva|evano|iva|ivano|avamo|evamo|ivamo))\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*Mia nonna lo **faceva** / lo **preparava** sempre…*" }
+        ]
+      },
+      "model": "Vi preparo il crumble di mele: mia nonna lo faceva ogni domenica d'autunno.",
+      "followOk": "Che bello, i piatti della nonna sono sempre i migliori.",
+      "followMiss": "Ah, una ricetta di famiglia! Anche mia nonna preparava sempre lo stesso piatto la domenica."
+    },
+    {
+      "id": "t2",
+      "say": "Perfetto. Che cosa ci serve? Dimmi gli ingredienti, così controllo se abbiamo tutto.",
+      "en": "Perfect. What do we need? Tell me the ingredients, so I can check we have everything.",
+      "task": "List the ingredients with ci vuole (one thing) and ci vogliono (several things).",
+      "hint": "Ci vogliono… e poi ci vuole…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "ci vuole / ci vogliono (twice)", "anyOf": ["\\bci\\s+(vuole|vogliono)\\b"], "min": 2, "errorType": "ci-ne", "conceptId": "B2-PRON-02", "hint": "*Ci **vogliono** sei mele… ci **vuole** un pizzico di…*" },
+          { "label": "Gives quantities", "anyOf": ["\\b(grammi|chili|chilo|etti|etto|litro|litri|cucchiai|cucchiaio|cucchiaino|bicchiere|bicchieri|tazza|tazze|pizzico|mezzo|mezza|due|tre|quattro|cinque|sei|sette|otto|dieci|cento|duecento|trecento|mille|\\d+)\\b"], "min": 1, "errorType": "vocabulary", "conceptId": "B2-SPEAK-01", "hint": "*duecento grammi di…, un pizzico di…*" }
+        ]
+      },
+      "model": "Ci vogliono sei mele, duecento grammi di farina e cento grammi di zucchero, e poi ci vuole un pizzico di cannella.",
+      "followOk": "Perfetto, mi sembra che ci sia tutto. Controllo solo la dispensa.",
+      "followMiss": "Va bene. Quindi ci vogliono questi ingredienti, e ci vuole anche tanta pazienza, immagino!"
+    },
+    {
+      "id": "t3",
+      "say": "E come si prepara? Spiegami i passaggi principali, in generale.",
+      "en": "And how is it made? Explain the main steps, in general.",
+      "task": "Explain the method with the si passivante (si tagliano, si mescola, si cuoce…) and sequencing words.",
+      "hint": "Prima si tagliano…, poi si mette…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Si passivante (twice)", "anyOf": ["\\bsi\\s+\\p{L}+(a|ano|e|ono)\\b"], "min": 2, "errorType": "passive", "conceptId": "B2-SI-01", "hint": "*si **tagliano** le mele, si **mescola** la farina…*" },
+          { "label": "Sequencing words (prima, poi, infine…)", "anyOf": ["\\b(prima|poi|dopo|quindi|infine|alla fine|a questo punto|per ultimo|intanto|nel frattempo)\\b"], "min": 1, "errorType": "text-structure", "conceptId": "B2-SPEAK-01", "hint": "*Prima…, poi…, infine…*" }
+        ]
+      },
+      "model": "Prima si sbucciano e si tagliano le mele, poi si mescolano farina, zucchero e burro, e infine si cuoce tutto in forno.",
+      "followOk": "Chiarissimo. Sembra facile, ma scommetto che il segreto è nei dettagli.",
+      "followMiss": "Ho capito, più o meno: prima si preparano gli ingredienti, poi si mescola tutto e si cuoce. Giusto?"
+    },
+    {
+      "id": "t4",
+      "say": "Ok, io sono il tuo aiutante. Dimmi che cosa devo fare adesso, passo per passo!",
+      "en": "OK, I'm your assistant. Tell me what I need to do now, step by step!",
+      "task": "Give him two or three instructions with the tu imperative, with a pronoun if you can (tagliale, mettilo…).",
+      "hint": "Accendi il forno, poi prendi…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Tu imperative (two instructions)", "anyOf": ["\\b(accendi|prendi|prendile|prendilo|taglia|tagliale|tagliali|taglialo|tagliala|metti|mettilo|mettila|mettile|mettili|mescola|mescolale|mescolali|mescolalo|aggiungi|aggiungilo|aggiungila|versa|versalo|versala|sbuccia|sbucciale|sbuccialo|lava|lavale|lavali|scalda|gira|giralo|girala|apri|aprilo|chiudi|lascia|lascialo|lasciala|passami|dammi|fai|fa['’]|stendi|sciogli|scioglilo|sbatti|impasta|controlla|cuoci|cuocilo|inforna|infornalo|copri|coprilo|aspetta|usa|pesa|grattugia|trita|condisci|assaggia|sala|pela|spegni|togli|toglilo|preriscalda|imburra|spolvera|mescolate|tieni)\\b"], "min": 2, "errorType": "verb-form", "conceptId": "B2-PRON-04", "hint": "*Accendi il forno, sbuccia le mele e **tagliale**…*" }
+        ]
+      },
+      "model": "Accendi il forno a centottanta gradi, poi sbuccia le mele e tagliale a pezzetti piccoli.",
+      "followOk": "Agli ordini, chef! Tu però controlla che non sbagli niente.",
+      "followMiss": "Va bene, dammi pure gli ordini: accendo il forno, prendo una ciotola e comincio a tagliare?"
+    },
+    {
+      "id": "t5",
+      "say": "E da voi questo piatto è legato a una festa o a una tradizione? Com'era a casa tua, anni fa?",
+      "en": "And where you're from, is this dish tied to a festival or a tradition? What was it like at your home, years ago?",
+      "task": "Describe a family tradition with the imperfetto of habit and si impersonale (si mangiava, ci si riuniva).",
+      "hint": "Da noi si preparava…, ci si riuniva…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Imperfetto of habit (twice)", "anyOf": ["\\b(era|erano|c['’]era|c['’]erano|\\p{L}+(ava|avano|eva|evano|iva|ivano|avamo|evamo|ivamo))\\b"], "min": 2, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*si **preparava**, ci si **riuniva**…*" },
+          { "label": "Si + imperfetto (si mangiava, ci si riuniva)", "anyOf": ["\\b(ci\\s+si|si)\\s+\\p{L}+(ava|eva|iva|avano|evano|ivano)\\b"], "min": 1, "errorType": "passive", "conceptId": "B2-SI-01", "hint": "*si **mangiava**, ci si **riuniva**…*" }
+        ]
+      },
+      "model": "Sì, da noi si preparava sempre in autunno: ci si riuniva tutti dai nonni e si mangiava fino a tardi.",
+      "followOk": "Che bel ricordo. Anche da noi le feste erano soprattutto un'occasione per mangiare insieme.",
+      "followMiss": "Che bello. Da noi a Natale ci si riuniva dai nonni e si mangiava per ore."
+    },
+    {
+      "id": "t6",
+      "say": "Ultima domanda: quanto tempo ci vuole in tutto? Ce la facciamo prima che arrivino gli altri?",
+      "en": "Last question: how long does it take in total? Will we make it before the others arrive?",
+      "task": "Say how long it takes with ci vuole / ci vogliono, then add an instruction with the imperative.",
+      "hint": "Ci vogliono circa… quindi accendi…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "ci vuole / ci vogliono for time", "anyOf": ["\\bci\\s+(vuole|vogliono|vorrà|vorranno)\\b"], "min": 1, "errorType": "ci-ne", "conceptId": "B2-PRON-02", "hint": "*Ci **vuole** un'ora / ci **vogliono** quaranta minuti.*" },
+          { "label": "Says how long", "anyOf": ["\\b(ora|ore|minuti|minuto|mezz['’]ora|quarto d['’]ora|un['’]ora|oretta)\\b"], "min": 1, "errorType": "vocabulary", "conceptId": "B2-SPEAK-01", "hint": "*…un'ora, quaranta minuti…*" }
+        ]
+      },
+      "model": "Ci vogliono circa cinquanta minuti in tutto, quindi sbrighiamoci e accendi subito il forno.",
+      "followOk": "Perfetto, ce la facciamo. Intanto apro una bottiglia di vino.",
+      "followMiss": "Bene, allora sbrighiamoci: ci vuole un po' di tempo e gli altri arrivano alle otto."
+    }
+  ],
+  "closing": "Grazie, chef! Se è buono come dici, lo rifaremo a ogni festa."
+}

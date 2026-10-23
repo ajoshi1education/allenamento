@@ -1,0 +1,200 @@
+{
+  "id": "CV-36",
+  "title": "Il collega in smart working",
+  "subtitle": "A video call in tu: deadlines with the futuro anteriore, bisogna che + congiuntivo, polite requests.",
+  "level": "B2",
+  "theme": "Lavoro e studio",
+  "conceptIds": [
+    "B2-FUT-01",
+    "B2-SUBJ-01",
+    "B2-COND-01",
+    "B2-PRON-01",
+    "B2-PRON-02"
+  ],
+  "tutor": {
+    "name": "Chiara",
+    "avatar": "👩‍💻",
+    "gender": "female",
+    "register": "informal"
+  },
+  "setting": "You and your colleague Chiara are both working from home. She calls you on Teams about the liquidity report the director wants this week.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Ciao! Mi senti? La connessione oggi fa i capricci. Senti, a che punto sei con il report sulla liquidità?",
+      "en": "Hi! Can you hear me? The connection's playing up today. Listen, how far along are you with the liquidity report?",
+      "task": "Say how far you've got and when you'll be done, with the futuro anteriore (entro… avrò finito).",
+      "hint": "Sono a metà; entro… avrò finito…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Uses the futuro anteriore",
+            "anyOf": [
+              "\\b(avrò|avrai|avrà|avremo|avrete|avranno|sarò|sarai|sarà|saremo|sarete|saranno)\\s+(già\\s+|anche\\s+|sicuramente\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|so|sa|si|se|sso|ssa)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*Entro giovedì **avrò finito**.*"
+          },
+          {
+            "label": "Gives a deadline",
+            "anyOf": [
+              "\\b(entro|prima di|domani|stasera|stanotte|venerdì|lunedì|martedì|mercoledì|giovedì|fine settimana|fine giornata)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-PREP-02",
+            "hint": "*entro giovedì, prima di venerdì…*"
+          }
+        ]
+      },
+      "model": "Sono più o meno a metà: ho già sistemato i dati di cassa, ed entro giovedì sera avrò finito anche l'analisi delle scadenze.",
+      "followOk": "Perfetto, allora siamo nei tempi. Meno male!",
+      "followMiss": "Ok. A me basta sapere una cosa: entro quando avrai finito? Tipo giovedì?"
+    },
+    {
+      "id": "t2",
+      "say": "Il problema è che il direttore lo vuole entro venerdì mattina, non pomeriggio. Ce la facciamo?",
+      "en": "The problem is the director wants it by Friday morning, not afternoon. Can we make it?",
+      "task": "Say what needs to happen, with bisogna che / è necessario che + congiuntivo.",
+      "hint": "Ce la facciamo, ma bisogna che tu mi mandi…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "bisogna che / è necessario che + subjunctive",
+            "anyOf": [
+              "\\b(bisogna|è necessario|è importante|è meglio|occorre|serve|è fondamentale)\\s+che\\s+(\\p{L}+\\s+){0,3}(sia|siano|abbia|abbiano|faccia|facciano|possa|possano|dia|diano|dica|dicano|vada|vadano|stia|venga|vengano|mandi|mandino|finisca|finiscano|prepari|preparino|controlli|controllino|chieda|chiedano|lavori|lavorino|sistemi|sistemino|consegni|consegnino|anticipi|cominci|inizi|rimandi|aiuti|parli|recuperi|giri|riceva|ricevano|\\p{L}+iamo|\\p{L}+isca|\\p{L}+iscano)\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Bisogna che tu mi **mandi**…, è necessario che **finiamo**…*"
+          },
+          {
+            "label": "Adds a deadline or purpose",
+            "anyOf": [
+              "\\b(entro|prima di|così|altrimenti|in modo che|in modo da|per poter|domani|stasera)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…entro mercoledì, così…*"
+          }
+        ]
+      },
+      "model": "Ce la facciamo, ma bisogna che tu mi mandi i dati del fondo entro mercoledì, così ho il tempo di controllarli.",
+      "followOk": "D'accordo, te li mando domani in mattinata, promesso.",
+      "followMiss": "Mh, allora bisogna che ci organizziamo bene: è necessario che io ti mandi i dati prima, giusto?"
+    },
+    {
+      "id": "t3",
+      "say": "Ah, e un'altra cosa: domani alle dieci c'è la call con il cliente, ma io ho il dentista. Ci potresti andare tu?",
+      "en": "Oh, and another thing: tomorrow at ten there's the call with the client, but I've got the dentist. Could you go instead?",
+      "task": "Accept using ci (ci vado io), then make a polite request of your own with the conditional (mi potresti…?).",
+      "hint": "Sì, ci vado io. Però mi potresti mandare…?",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Uses ci (ci vado io…)",
+            "anyOf": [
+              "\\bci\\s+(vado|andrò|andrei|penso|penserò|posso|potrei|sarò|entro|partecipo|parteciperò|vengo)\\b",
+              "\\b(posso|potrei)\\s+andarci\\b"
+            ],
+            "min": 1,
+            "errorType": "ci-ne",
+            "conceptId": "B2-PRON-02",
+            "hint": "*Ci vado io, ci penso io.*"
+          },
+          {
+            "label": "Polite request in the conditional",
+            "anyOf": [
+              "\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Mi potresti mandare…? Mi faresti un favore?*"
+          }
+        ]
+      },
+      "model": "Sì, tranquilla, ci vado io. Però mi potresti mandare le slide stasera, così me le guardo con calma?",
+      "followOk": "Grazie mille, mi salvi! Te le mando entro le sei.",
+      "followMiss": "Dai, se ci vai tu mi fai un favore enorme. Ti potrei mandare le slide stasera, se vuoi."
+    },
+    {
+      "id": "t4",
+      "say": "Senti, e quando avrai finito il report, me lo giri prima di mandarlo al direttore?",
+      "en": "Listen, and when you've finished the report, will you forward it to me before sending it to the director?",
+      "task": "Promise with quando / appena + futuro anteriore, and a combined pronoun (te lo mando, te lo giro).",
+      "hint": "Certo, appena l'avrò finito, te lo…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "quando / appena + futuro anteriore",
+            "anyOf": [
+              "\\b(quando|appena|non appena|dopo che|una volta che)\\s+(\\p{L}+['’]|\\p{L}+\\s+){0,2}(avrò|avremo|sarò|saremo)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*Appena **l'avrò finito**…*"
+          },
+          {
+            "label": "Combined pronoun (te lo, glielo…)",
+            "anyOf": [
+              "\\b(te|ce|me|glie)\\s*(lo|la|li|le|ne)\\b"
+            ],
+            "min": 1,
+            "errorType": "pronoun",
+            "conceptId": "B2-PRON-01",
+            "hint": "*…te lo giro, te lo mando.*"
+          }
+        ]
+      },
+      "model": "Certo, appena l'avrò finito te lo giro, e lo manderemo al direttore quando avrai fatto le tue correzioni.",
+      "followOk": "Perfetto, così facciamo un controllo incrociato. Mi sento più tranquilla.",
+      "followMiss": "Ok, allora facciamo così: appena avrai finito, me lo mandi, e quando l'avrò riletto lo giriamo al direttore."
+    },
+    {
+      "id": "t5",
+      "say": "Ultima cosa, scusa: ti dispiacerebbe aggiornare anche il file condiviso? Lo guardano tutti.",
+      "en": "One last thing, sorry: would you mind updating the shared file too? Everyone looks at it.",
+      "task": "Agree, then ask her a favour back with a polite request (ti dispiacerebbe…?, potresti…?).",
+      "hint": "Figurati! Però tu potresti…?",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Agrees",
+            "anyOf": [
+              "\\b(certo|nessun problema|figurati|va bene|d['’]accordo|sì|ok|senz['’]altro|volentieri|tranquilla)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "C1-INT-02",
+            "hint": "*Figurati, nessun problema…*"
+          },
+          {
+            "label": "Polite request back",
+            "anyOf": [
+              "\\b(ti dispiacerebbe|potresti|mi faresti|ti andrebbe|sarebbe possibile|mi daresti|riusciresti|mi manderesti|ricorderesti)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Però tu potresti…? Ti dispiacerebbe…?*"
+          }
+        ]
+      },
+      "model": "Figurati, lo aggiorno stasera. Però tu potresti ricordare al team di non modificare i numeri senza avvisarmi?",
+      "followOk": "Certo, lo scrivo subito nella chat del gruppo. Grazie, sei un tesoro.",
+      "followMiss": "Grazie! E se ti serve qualcosa da me, chiedi pure: ti darei una mano volentieri."
+    }
+  ],
+  "closing": "Ok, ti lascio lavorare. Ci sentiamo domani dopo la call, buon lavoro!"
+}

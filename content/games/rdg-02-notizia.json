@@ -1,0 +1,154 @@
+{
+  "id": "G-RDG-02",
+  "type": "reading",
+  "title": "Domeniche senza auto",
+  "subtitle": "A local news report on car-free Sundays: find the gist, the details and what's only claimed.",
+  "conceptIds": [
+    "B2-READ-01"
+  ],
+  "difficulty": 2,
+  "minutes": 10,
+  "passage": {
+    "title": "Valmonte, il centro chiude alle auto una domenica al mese",
+    "source": "invented",
+    "it": "VALMONTE – A partire da marzo, la prima domenica di ogni mese il centro di Valmonte sarà chiuso al traffico dalle 9 alle 19. Lo ha deciso ieri sera il consiglio comunale, con diciotto voti a favore e sette contrari, al termine di una seduta durata oltre quattro ore. La sperimentazione riguarderà quattro domeniche, da marzo a giugno; a luglio la giunta valuterà i risultati e deciderà se rendere il provvedimento definitivo.\n«Non vogliamo punire chi usa la macchina, ma restituire le strade a chi le vive», ha dichiarato il sindaco Paolo Ferrante, che ha fatto della mobilità sostenibile uno dei punti principali del suo programma. Durante le domeniche ecologiche gli autobus urbani saranno gratuiti e il Comune metterà a disposizione duecento biciclette a noleggio a prezzo ridotto. Il costo dell'operazione, circa trentamila euro per le quattro giornate, sarà coperto in parte da un contributo regionale. Potranno circolare soltanto i residenti muniti di permesso, i mezzi di soccorso e i veicoli delle persone con disabilità.\nLa decisione non ha convinto tutti. I commercianti di via Garibaldi, la principale via dello shopping cittadino, temono un calo degli incassi: secondo la loro associazione, nelle città che hanno adottato misure simili le vendite sarebbero diminuite fino al venti per cento nei primi mesi. «Chi arriva dai paesi vicini andrà a fare acquisti al centro commerciale», sostiene la presidente dell'associazione, Marta Gallo, che chiede almeno parcheggi gratuiti ai margini della zona chiusa.\nDi parere opposto i ristoratori, che sperano in un aumento dei clienti: senza traffico, i tavolini all'aperto potrebbero occupare parte della carreggiata. Anche le associazioni ambientaliste hanno accolto la notizia con favore, pur giudicandola «un primo passo timido»: per loro le domeniche senza auto dovrebbero essere almeno due al mese. Più divisi i residenti: c'è chi apprezza la prospettiva di una domenica tranquilla e chi teme disagi per parenti e amici in arrivo da fuori.\nIl primo appuntamento è fissato per domenica 2 marzo. Per l'occasione, in piazza del Duomo, sono previsti un mercato di prodotti locali e un percorso in bicicletta per bambini."
+  },
+  "questions": [
+    {
+      "id": "G-RDG-02.q1",
+      "type": "choice",
+      "difficulty": 1,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What is the article mainly about?",
+      "options": [
+        "The town council has approved a trial of car-free Sundays in the town centre.",
+        "Shopkeepers are protesting against a new shopping centre.",
+        "The mayor has resigned after a four-hour council meeting.",
+        "The town centre will be closed to traffic every Sunday from now on."
+      ],
+      "answer": 0,
+      "optionWhy": {
+        "3": "Only the first Sunday of the month, and only as a four-month trial."
+      },
+      "explanation": "The opening paragraph gives the gist: *il centro… sarà chiuso al traffico* on the first Sunday of each month, approved by *il consiglio comunale* as a *sperimentazione*.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-02.q2",
+      "type": "choice",
+      "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "How many car-free Sundays does the trial include?",
+      "options": [
+        "Four: the first Sunday of each month from March to June",
+        "Two per month from March",
+        "Every Sunday in March",
+        "Eighteen"
+      ],
+      "answer": 0,
+      "optionWhy": {
+        "1": "Two per month is what the environmental groups would like, not what was decided.",
+        "3": "Eighteen is the number of votes in favour."
+      },
+      "explanation": "*La sperimentazione riguarderà quattro domeniche, da marzo a giugno.*",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-02.q3",
+      "type": "choice",
+      "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Who will still be allowed to drive in the centre?",
+      "options": [
+        "Residents with a permit, emergency vehicles and vehicles of people with disabilities",
+        "Only buses and taxis",
+        "Shopkeepers delivering goods",
+        "Anyone who parks at the edge of the closed area"
+      ],
+      "answer": 0,
+      "explanation": "*Potranno circolare soltanto i residenti muniti di permesso, i mezzi di soccorso e i veicoli delle persone con disabilità.*",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-02.q4",
+      "type": "cloze",
+      "difficulty": 2,
+      "instruction": "Complete with one word from the article.",
+      "prompt": "Durante le domeniche ecologiche gli autobus urbani saranno ___.",
+      "answers": [
+        "gratuiti",
+        "gratis"
+      ],
+      "focus": [
+        "gratuiti",
+        "gratis"
+      ],
+      "errorType": "comprehension",
+      "explanation": "*Gli autobus urbani saranno gratuiti* = city buses will be free."
+    },
+    {
+      "id": "G-RDG-02.q5",
+      "type": "choice",
+      "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "The shopkeepers fear *«un calo degli incassi»*. What are *incassi*?",
+      "options": [
+        "takings, the money shops make from sales",
+        "customers",
+        "deliveries",
+        "fines"
+      ],
+      "answer": 0,
+      "explanation": "*Incassare* = to cash in; *gli incassi* = takings, revenue. *Un calo* = a drop.",
+      "errorType": "vocabulary"
+    },
+    {
+      "id": "G-RDG-02.q6",
+      "type": "choice",
+      "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What does the shopkeepers' association say about other cities?",
+      "options": [
+        "Sales reportedly fell by up to 20% in the first months, though the article doesn't confirm it.",
+        "Sales definitely fell by exactly 20%.",
+        "Sales rose by 20% thanks to the pedestrians.",
+        "Other cities cancelled the measure after a few months."
+      ],
+      "answer": 0,
+      "explanation": "*Secondo la loro associazione… le vendite sarebbero diminuite fino al venti per cento*: *secondo* + conditional = a reported claim. *Fino al* = up to.",
+      "errorType": "wrong-mood"
+    },
+    {
+      "id": "G-RDG-02.q7",
+      "type": "choice",
+      "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "How have the environmental groups reacted?",
+      "options": [
+        "They welcome it, but think it doesn't go far enough.",
+        "They're against it because cars will crowd the edge of the centre.",
+        "They're completely satisfied.",
+        "They haven't commented yet."
+      ],
+      "answer": 0,
+      "explanation": "*Hanno accolto la notizia con favore, pur giudicandola «un primo passo timido»*: they'd like at least two Sundays a month.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-02.q8",
+      "type": "choice",
+      "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why does Marta Gallo ask for free parking at the edge of the closed area?",
+      "options": [
+        "So that people from nearby towns keep coming to shop in the centre instead of going to the shopping mall.",
+        "So that residents have somewhere to leave their cars.",
+        "To raise money for the town council.",
+        "To make room for restaurant tables."
+      ],
+      "answer": 0,
+      "explanation": "She fears that *chi arriva dai paesi vicini andrà a fare acquisti al centro commerciale*. Free parking nearby would make it easy to reach the shops on foot. The link is implied, not stated.",
+      "errorType": "comprehension"
+    }
+  ]
+}

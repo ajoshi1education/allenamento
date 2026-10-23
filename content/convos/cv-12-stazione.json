@@ -1,0 +1,115 @@
+{
+  "id": "CV-12",
+  "title": "Alla stazione",
+  "subtitle": "Buying a train ticket, coping with a delay, asking about connections and platforms.",
+  "level": "B2",
+  "theme": "Vita quotidiana",
+  "conceptIds": ["B2-COND-01", "B2-FUT-01", "B2-CONN-01", "B2-REG-01"],
+  "tutor": { "name": "Lucia", "avatar": "👩‍💼", "gender": "female", "register": "formal" },
+  "setting": "You're at the ticket office in Milano Centrale. You need to get to Verona this afternoon, and then on to Trento. Lucia is behind the counter.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Buongiorno, mi dica.",
+      "en": "Good morning, how can I help?",
+      "task": "Ask for a ticket politely with vorrei, saying where to, and whether it's one-way or return.",
+      "hint": "Buongiorno, vorrei un biglietto di andata e ritorno per…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          { "label": "Polite request (vorrei, mi servirebbe…)", "anyOf": ["\\b(vorrei|volevo|mi servirebbe|avrei bisogno|potrei avere|prenderei|mi dà|mi darebbe)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Vorrei un biglietto…*" },
+          { "label": "Ticket type and destination", "anyOf": ["\\b(andata|ritorno|solo andata|biglietto|biglietti)\\b"], "min": 1, "errorType": "vocabulary", "conceptId": "B2-REG-01", "hint": "*…di andata e ritorno per Verona.*" }
+        ]
+      },
+      "model": "Buongiorno, vorrei un biglietto di andata e ritorno per Verona, per oggi pomeriggio.",
+      "followOk": "Certo. Per oggi pomeriggio ho due soluzioni.",
+      "followMiss": "Quindi vorrebbe un biglietto di andata e ritorno per Verona, giusto? Allora, ho due soluzioni."
+    },
+    {
+      "id": "t2",
+      "say": "C'è un Frecciarossa alle tre e dieci, che costa ventidue euro, e un regionale alle tre e venticinque, che ne costa dodici. Quale preferisce?",
+      "en": "There's a Frecciarossa at 3:10, costing 22 euros, and a regional train at 3:25, costing 12. Which do you prefer?",
+      "task": "Choose one with a conditional (preferirei, prenderei) and give a reason (perché, visto che…).",
+      "hint": "Preferirei il regionale, perché…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          { "label": "Chooses with a conditional", "anyOf": ["\\b(preferirei|prenderei|sceglierei|mi converrebbe|sarebbe meglio|andrebbe bene|vorrei)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Preferirei…, prenderei…*" },
+          { "label": "Gives a reason", "anyOf": ["\\b(perché|visto che|dato che|siccome|poiché|tanto|così)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…perché costa meno.*" }
+        ]
+      },
+      "model": "Preferirei il regionale, perché costa meno e oggi non ho fretta.",
+      "followOk": "D'accordo, allora il regionale. Un attimo che controllo.",
+      "followMiss": "D'accordo: preferirebbe il regionale, perché costa meno. Un attimo che controllo."
+    },
+    {
+      "id": "t3",
+      "say": "Ah, guardi, purtroppo il regionale delle tre e venticinque è appena stato segnalato con quaranta minuti di ritardo.",
+      "en": "Oh, look, unfortunately the 3:25 regional has just been announced as forty minutes late.",
+      "task": "Ask what time it will arrive and whether you'll make your connection to Trento. Use the future.",
+      "hint": "Accidenti! A che ora arriverà? Farò in tempo a prendere la coincidenza…?",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Uses the future", "anyOf": ["\\b\\p{L}+(rò|rai|rà|remo|rete|ranno)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-FUT-01", "hint": "*Arriverà…, farò in tempo…*" },
+          { "label": "Asks about the arrival or the connection", "anyOf": ["\\b(coincidenza|coincidenze|cambio|cambiare|in tempo|a che ora|arrivo|arriva|arriverà|trento|verona)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-REG-01", "hint": "*…la coincidenza per Trento?*" }
+        ]
+      },
+      "model": "Accidenti! E a che ora arriverà a Verona? Farò in tempo a prendere la coincidenza per Trento?",
+      "followOk": "Temo di no: arriverà verso le cinque e venti, e la coincidenza parte alle cinque e un quarto.",
+      "followMiss": "Vuole sapere se farà in tempo per la coincidenza? Temo di no: il treno arriverà verso le cinque e venti."
+    },
+    {
+      "id": "t4",
+      "say": "Se vuole, però, può cambiare il biglietto senza penale. Che cosa preferisce fare?",
+      "en": "If you like, though, you can change the ticket at no extra charge. What would you rather do?",
+      "task": "Decide what to do, using the conditional (preferirei, cambierei…) and a contrast (anche se, però).",
+      "hint": "In questo caso preferirei…, anche se…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Uses the conditional", "anyOf": ["\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Preferirei cambiare…, prenderei…*" },
+          { "label": "Adds a contrast or condition", "anyOf": ["\\b(anche se|però|ma|comunque|tuttavia|in questo caso|allora|quindi)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…anche se costa di più.*" }
+        ]
+      },
+      "model": "In questo caso preferirei cambiare il biglietto e prendere il Frecciarossa, anche se costa un po' di più.",
+      "followOk": "Ottima scelta, così arriverà in orario. Sono dieci euro di differenza.",
+      "followMiss": "Allora, se ho capito bene, preferirebbe prendere il Frecciarossa. Sono dieci euro di differenza."
+    },
+    {
+      "id": "t5",
+      "say": "Ecco a Lei il biglietto nuovo. Ha bisogno di qualche altra informazione?",
+      "en": "Here's your new ticket. Do you need any other information?",
+      "task": "Ask which platform the train leaves from and whether you have to validate the ticket (devo convalidare…?).",
+      "hint": "Da quale binario parte? E devo convalidare il biglietto…?",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Asks about the platform", "anyOf": ["\\b(binario|binari)\\b"], "min": 1, "errorType": "vocabulary", "conceptId": "B2-REG-01", "hint": "*Da quale binario parte?*" },
+          { "label": "Asks about validating the ticket", "anyOf": ["\\b(convalidare|convalidarlo|convalida|timbrare|timbrarlo|obliterare|obliterarlo|validare)\\b"], "min": 1, "errorType": "vocabulary", "conceptId": "B2-REG-01", "hint": "*Devo convalidare il biglietto?*" }
+        ]
+      },
+      "model": "Sì, da quale binario parte il treno? E devo convalidare il biglietto prima di salire?",
+      "followOk": "Parte dal binario dodici. E no, non serve convalidarlo: il posto è già assegnato.",
+      "followMiss": "Il treno parte dal binario dodici, e questo biglietto non va convalidato, perché ha già il posto assegnato."
+    },
+    {
+      "id": "t6",
+      "say": "Ha ancora quaranta minuti prima della partenza. Che cosa farà nel frattempo?",
+      "en": "You still have forty minutes before departure. What will you do in the meantime?",
+      "task": "Say what you'll do while you wait. Use the future and a time connector (nel frattempo, prima, poi).",
+      "hint": "Nel frattempo andrò…, e poi…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Uses the future", "anyOf": ["\\b\\p{L}+(rò|rai|rà|remo|rete|ranno)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-FUT-01", "hint": "*Andrò al bar, comprerò…*" },
+          { "label": "Time connector", "anyOf": ["\\b(nel frattempo|intanto|prima|poi|dopo|mentre|finché|appena)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*Nel frattempo…, poi…*" }
+        ]
+      },
+      "model": "Nel frattempo andrò al bar a prendere un caffè, e poi comprerò un giornale da leggere in treno.",
+      "followOk": "Ottima idea. Il bar al primo piano fa un caffè niente male.",
+      "followMiss": "Capisco. Magari nel frattempo andrà al bar: quello al primo piano fa un caffè niente male."
+    }
+  ],
+  "closing": "Allora, buon viaggio, e mi scusi ancora per il disagio. Arrivederci!"
+}

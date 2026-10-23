@@ -1,0 +1,11 @@
+{
+  "id": "G-GNT-04",
+  "type": "gauntlet",
+  "title": "Gauntlet: passato e futuro",
+  "subtitle": "Imperfetto or passato prossimo, trapassato, passato remoto and the future of supposition, against the clock. Three lives.",
+  "conceptIds": ["B2-PAST-01", "B2-PAST-02", "C1-PAST-03", "C1-PAST-04", "B2-FUT-01"],
+  "difficulty": 4,
+  "minutes": 3,
+  "seconds": 150,
+  "lives": 3
+}

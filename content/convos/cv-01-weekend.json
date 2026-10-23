@@ -1,0 +1,177 @@
+{
+  "id": "CV-01",
+  "title": "Un caffè con Giulia",
+  "subtitle": "Small talk with a friend: your weekend, plans and opinions.",
+  "level": "B2",
+  "theme": "Vita quotidiana",
+  "conceptIds": [
+    "B2-PAST-01",
+    "B2-FUT-01",
+    "B2-SUBJ-01"
+  ],
+  "tutor": {
+    "name": "Giulia",
+    "avatar": "👩‍🦰",
+    "gender": "female",
+    "register": "informal"
+  },
+  "setting": "You meet your Italian friend Giulia for a coffee on Monday morning in a bar in Bologna.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Ciao! Che piacere vederti. Allora, com'è andato il weekend? Che cosa hai fatto di bello?",
+      "en": "Hi! Great to see you. So, how was the weekend? What did you get up to?",
+      "task": "Tell her two things you did at the weekend. Use the passato prossimo.",
+      "hint": "Sabato sono andato/a… e domenica ho…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Uses the passato prossimo",
+            "anyOf": [
+              "\\b(sono|siamo|ho|abbiamo)\\s+(\\w+\\s+)?\\w+(ato|ata|ati|ate|uto|uta|uti|ito|ita|iti|tto|tta|sto|sta|so|sa)\\b"
+            ],
+            "min": 2,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "Two actions: *sono andato…, ho visto…*"
+          },
+          {
+            "label": "Says when (sabato, domenica, venerdì sera…)",
+            "anyOf": [
+              "\\b(sabato|domenica|venerdì|ieri|stamattina|weekend|fine settimana)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-PAST-01",
+            "hint": "*Sabato…, domenica…*"
+          }
+        ]
+      },
+      "model": "Sabato sono andato al mare con degli amici e domenica ho finalmente finito il libro che stavo leggendo.",
+      "followOk": "Che bello! Io invece sono rimasta a casa a studiare, che noia.",
+      "followMiss": "Ah, capito. Io sabato sono andata al mercato e domenica ho dormito tutto il giorno!"
+    },
+    {
+      "id": "t2",
+      "say": "E com'era il tempo da voi? Qui pioveva tutto il giorno.",
+      "en": "And what was the weather like where you were? Here it rained all day.",
+      "task": "Describe the weather and the atmosphere. Use the imperfetto for the background.",
+      "hint": "Faceva caldo, c'era il sole…",
+      "expect": {
+        "minWords": 6,
+        "rubric": [
+          {
+            "label": "Uses the imperfetto for description",
+            "anyOf": [
+              "\\b(faceva|era|c'era|c'erano|tirava|pioveva|nevicava|erano|sembrava)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "Background → imperfetto: *faceva caldo, c'era il sole*."
+          }
+        ]
+      },
+      "model": "Da noi faceva caldo e c'era un sole bellissimo, ma la sera tirava un po' di vento.",
+      "followOk": "Beati voi! Io avevo bisogno proprio di un po' di sole.",
+      "followMiss": "Ah sì? Qui invece faceva freddo e c'era un vento terribile."
+    },
+    {
+      "id": "t3",
+      "say": "Senti, e il prossimo fine settimana? Hai già qualche programma?",
+      "en": "Listen, and next weekend? Do you already have any plans?",
+      "task": "Say what you will do next weekend, and what you'll do once something else has happened (futuro anteriore).",
+      "hint": "Andrò…; quando avrò finito…, …",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Uses the future",
+            "anyOf": [
+              "\\b\\w+(rò|rai|rà|remo|rete|ranno)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*Andrò, farò, vedrò…*"
+          },
+          {
+            "label": "Uses the futuro anteriore (quando/appena avrò…)",
+            "anyOf": [
+              "\\b(avrò|avremo|sarò|saremo)\\s+\\w+(ato|ata|ati|ate|uto|uta|uti|ito|ita|iti|tto|tta)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*Quando avrò finito di lavorare, …*"
+          }
+        ]
+      },
+      "model": "Sabato andrò a trovare i miei genitori, e quando avrò finito di lavorare domenica, forse andrò al cinema.",
+      "followOk": "Ottimo programma! Salutami i tuoi genitori.",
+      "followMiss": "Bello. Io sabato andrò in montagna, e quando sarò tornata, ti chiamo."
+    },
+    {
+      "id": "t4",
+      "say": "Sai che vogliono chiudere il centro storico alle macchine? Tu che ne pensi?",
+      "en": "Did you know they want to close the old town to cars? What do you think about it?",
+      "task": "Give your opinion with 'penso che / credo che' + subjunctive, and give a reason.",
+      "hint": "Penso che sia una buona idea perché…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Opinion verb + che + subjunctive",
+            "anyOf": [
+              "\\b(penso|credo|mi sembra|mi pare|immagino|ritengo)\\s+che\\s+(\\w+\\s+){0,3}(sia|siano|abbia|abbiano|possa|possano|faccia|facciano|vada|vadano|debba|debbano|serva|servano|migliori|aiuti|renda|crei|risolva)\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Penso che **sia**…, credo che **possa**…*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché…*"
+          }
+        ]
+      },
+      "model": "Penso che sia una buona idea, perché in centro c'è troppo traffico e l'aria è irrespirabile.",
+      "followOk": "Sono d'accordo con te. Anche se i negozianti non saranno contenti!",
+      "followMiss": "Mmh. Io credo che sia una buona idea, anche se molti non sono d'accordo."
+    },
+    {
+      "id": "t5",
+      "say": "Ma tu, se potessi vivere in qualsiasi città italiana, quale sceglieresti?",
+      "en": "But you, if you could live in any Italian city, which would you choose?",
+      "task": "Answer with a hypothetical: se + congiuntivo imperfetto, then the conditional.",
+      "hint": "Se potessi, vivrei a…, perché…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          {
+            "label": "Uses the conditional",
+            "anyOf": [
+              "\\b\\w+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-HYP-01",
+            "hint": "*Vivrei, sceglierei…*"
+          }
+        ]
+      },
+      "model": "Se potessi scegliere, vivrei a Napoli, perché mi piace la sua energia e si mangia benissimo.",
+      "followOk": "Napoli! Ottima scelta. Io sceglierei Trieste, adoro il mare d'inverno.",
+      "followMiss": "Io, se potessi, vivrei a Trieste. E tu? Dove vivresti?"
+    }
+  ],
+  "closing": "Va bene, devo scappare. È stato bello chiacchierare con te. A presto!"
+}

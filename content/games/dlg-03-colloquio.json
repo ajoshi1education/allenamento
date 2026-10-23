@@ -1,0 +1,103 @@
+{
+  "id": "G-DLG-03",
+  "type": "dialogue",
+  "title": "Il colloquio di lavoro",
+  "subtitle": "A formal job interview in Milan. Keep to Lei, sell your experience and negotiate the salary without losing the room.",
+  "conceptIds": ["B2-REG-01", "C1-INT-02", "B2-SPEAK-01"],
+  "difficulty": 3,
+  "minutes": 8,
+  "characters": {
+    "ferraro": { "name": "Dott.ssa Ferraro", "role": "responsabile delle risorse umane", "avatar": "👩‍💼" }
+  },
+  "setting": "Milano, sede di una società di logistica. Lei si è candidato/a per un posto di project manager e la dottoressa Ferraro la riceve nel suo ufficio.",
+  "start": "G-DLG-03.n1",
+  "nodes": [
+    {
+      "id": "G-DLG-03.n1", "speaker": "ferraro", "conceptId": "B2-REG-01", "difficulty": 1,
+      "line": "Buongiorno, si accomodi pure. Ha trovato facilmente la sede?",
+      "explanation": "With an interviewer you use Lei throughout: *È molto gentile*.",
+      "choices": [
+        { "text": "Sì, grazie, nessun problema. È molto gentile.", "ok": true, "next": "G-DLG-03.n2" },
+        { "text": "Sì, grazie! E tu, tutto bene?", "ok": false, "errorType": "register", "why": "*Tu* with an interviewer you've just met is far too familiar. Use Lei.", "next": "G-DLG-03.n1b" },
+        { "text": "Sì, grazie, nessun problema. Sei molto gentile.", "ok": false, "errorType": "register", "why": "*Sei* is the *tu* form. To the interviewer: *È molto gentile*.", "next": "G-DLG-03.n1b" }
+      ]
+    },
+    {
+      "id": "G-DLG-03.n1b", "speaker": "ferraro", "conceptId": "B2-REG-01", "difficulty": 2,
+      "line": "Ehm… preferirei che ci dessimo del Lei, se non le dispiace. Allora, mi parli un po' di sé.",
+      "explanation": "Apologise and switch to Lei immediately; keep the answer professional.",
+      "choices": [
+        { "text": "Certo, mi scusi. Lavoro da cinque anni nel settore della logistica.", "ok": true, "next": "G-DLG-03.n3" },
+        { "text": "Ok, scusa! Allora ti dico tutto: lavoro nella logistica.", "ok": false, "errorType": "register", "why": "She has just asked for Lei, and you used *scusa* and *ti dico* again.", "next": "G-DLG-03.endBad" }
+      ]
+    },
+    {
+      "id": "G-DLG-03.n2", "speaker": "ferraro",
+      "line": "Bene. Mi parli un po' della Sua esperienza.",
+      "item": { "id": "G-DLG-03.i1", "conceptId": "B2-SPEAK-01", "type": "speak", "difficulty": 2, "interaction": true, "instruction": "Answer in Italian.", "prompt": "Say you've been working in logistics for five years.", "answers": ["Lavoro (nella logistica|nel settore della logistica) da cinque anni", "Da cinque anni lavoro (nella logistica|nel settore della logistica)", "Sono cinque anni che lavoro (nella logistica|nel settore della logistica)"], "focus": ["lavoro"], "errorType": "wrong-tense", "traps": [{ "match": ["Ho lavorato (nella logistica|nel settore della logistica) da cinque anni", "Da cinque anni ho lavorato (nella logistica|nel settore della logistica)"], "errorType": "wrong-tense", "why": "For something that started in the past and is still going on, Italian uses the present + *da*: *lavoro da cinque anni*." }, { "match": "Lavoro (nella logistica|nel settore della logistica) per cinque anni", "errorType": "preposition", "why": "Ongoing duration = *da*, not *per*: *lavoro da cinque anni*." }], "explanation": "Present tense + *da* for an action still in progress: *Lavoro nella logistica da cinque anni*." },
+      "next": "G-DLG-03.n3", "nextFail": "G-DLG-03.n3"
+    },
+    {
+      "id": "G-DLG-03.n3", "speaker": "ferraro",
+      "line": "Interessante. E perché vorrebbe lavorare proprio da noi?",
+      "item": { "id": "G-DLG-03.i2", "conceptId": "B2-SPEAK-01", "type": "speak", "difficulty": 2, "interaction": true, "instruction": "Answer in Italian, politely (conditional).", "prompt": "Say you would like to work in an international environment.", "answers": ["Vorrei lavorare in un (ambiente|contesto) internazionale", "Mi piacerebbe lavorare in un (ambiente|contesto) internazionale"], "focus": ["vorrei", "piacerebbe"], "errorType": "conditional-form", "traps": [{ "match": "Voglio lavorare in un (ambiente|contesto) internazionale", "ok": true, "why": "Understandable, but *vorrei / mi piacerebbe* sounds less demanding in an interview." }, { "contains": ["internationale"], "errorType": "spelling", "why": "Italian spelling: *internazionale*." }], "explanation": "*Vorrei* or *mi piacerebbe* + infinitive: the polite way to state a wish." },
+      "next": "G-DLG-03.n4", "nextFail": "G-DLG-03.n4"
+    },
+    {
+      "id": "G-DLG-03.n4", "speaker": "ferraro", "conceptId": "C1-INT-02", "difficulty": 3,
+      "line": "Devo essere sincera: qui si lavora spesso sotto pressione, a volte anche nel weekend. Per Lei è un problema?",
+      "explanation": "Acknowledge her point, then state your limit politely: that keeps your bargaining position.",
+      "choices": [
+        { "text": "Capisco l'esigenza, ma preferirei che il lavoro nel weekend restasse un'eccezione. Possiamo parlarne?", "ok": true, "next": "G-DLG-03.n5" },
+        { "text": "Assolutamente no, lavoro volentieri anche la domenica, sempre!", "ok": true, "why": "Correct Italian, but you've given away weekends before talking money.", "next": "G-DLG-03.n6" },
+        { "text": "Ma siete matti? Nel weekend io non lavoro.", "ok": false, "errorType": "register", "why": "Colloquial and aggressive (*siete matti?*): the interview is over.", "next": "G-DLG-03.endBad" }
+      ]
+    },
+    {
+      "id": "G-DLG-03.n5", "speaker": "ferraro",
+      "line": "Certo, ne possiamo parlare. Ha qualche domanda per me?",
+      "item": { "id": "G-DLG-03.i3", "conceptId": "B2-REG-01", "type": "cloze", "difficulty": 2, "interaction": true, "instruction": "Complete your question with the verb in brackets (Lei).", "prompt": "Sì, se mi ___ (permettere), vorrei sapere com'è organizzato il team.", "answers": ["permette"], "focus": ["permette"], "errorType": "register", "traps": [{ "match": "permetti", "errorType": "register", "why": "*Permetti* is the *tu* form. With the interviewer: *se mi permette*." }, { "match": "permettete", "errorType": "register", "why": "You're speaking to one person: *se mi permette*." }, { "match": "permetta", "errorType": "subjunctive-for-indicative", "why": "After *se* use the indicative: *se mi permette*. (*Mi permetta* is the imperative.)" }], "explanation": "*Se* + indicative, Lei form: *se mi permette*." },
+      "next": "G-DLG-03.n6", "nextFail": "G-DLG-03.n6"
+    },
+    {
+      "id": "G-DLG-03.n6", "speaker": "ferraro", "conceptId": "C1-INT-02", "difficulty": 3,
+      "line": "Il team è di otto persone, tutte molto giovani. Parliamo di retribuzione: per questa posizione offriamo 32.000 euro lordi annui.",
+      "explanation": "You hoped for about 36,000. Concede, then ask her politely to meet you halfway.",
+      "choices": [
+        { "text": "La ringrazio. Considerata la mia esperienza, però, speravo in qualcosa di più. Potrebbe venirmi incontro?", "ok": true, "next": "G-DLG-03.n7" },
+        { "text": "Va bene, accetto.", "ok": true, "why": "Polite, but you accepted the lowest figure without negotiating.", "next": "G-DLG-03.endMeh" },
+        { "text": "È troppo poco. Dai, vienimi incontro!", "ok": false, "errorType": "register", "why": "*Dai, vienimi* is informal. In Lei: *Potrebbe venirmi incontro?* / *Mi venga incontro*.", "next": "G-DLG-03.n6b" }
+      ]
+    },
+    {
+      "id": "G-DLG-03.n6b", "speaker": "ferraro",
+      "line": "Come, scusi? … Mi faccia una proposta concreta, per favore.",
+      "item": { "id": "G-DLG-03.i4", "conceptId": "C1-INT-02", "type": "speak", "difficulty": 3, "interaction": true, "instruction": "Answer in Italian, formally and with the conditional.", "prompt": "Repair the situation: ask politely whether she could go up to 35,000 euros.", "answers": ["(Potrebbe arrivare a|Sarebbe possibile arrivare a) (35.000|35000|trentacinquemila)[ euro]", "Mi scusi (potrebbe arrivare a|sarebbe possibile arrivare a) (35.000|35000|trentacinquemila)[ euro]"], "focus": ["potrebbe", "sarebbe"], "errorType": "conditional-form", "traps": [{ "contains": ["potresti", "puoi"], "errorType": "register", "why": "Still *tu*. To the interviewer: *Potrebbe arrivare a 35.000?*" }, { "contains": ["può", "puo"], "errorType": "conditional-form", "why": "*Può* is correct but blunt; the conditional *potrebbe* is the norm in a negotiation." }], "explanation": "*Potrebbe arrivare a…?* = Could you go up to…? The conditional softens the request." },
+      "next": "G-DLG-03.n7", "nextFail": "G-DLG-03.endMeh"
+    },
+    {
+      "id": "G-DLG-03.n7", "speaker": "ferraro", "conceptId": "C1-INT-02", "difficulty": 4,
+      "line": "Capisco. Potrei arrivare a 34.000, ma non oltre.",
+      "explanation": "A compromise that adds a non-salary benefit is the classic way to close.",
+      "choices": [
+        { "text": "Che ne dice di una via di mezzo: 34.000 più lo smart working il venerdì?", "ok": true, "next": "G-DLG-03.n8" },
+        { "text": "D'accordo, 34.000 mi sembra una proposta ragionevole.", "ok": true, "next": "G-DLG-03.n8" },
+        { "text": "No, o 36.000 o niente.", "ok": false, "errorType": "register", "why": "An ultimatum ends the negotiation. Hedge and propose: *Che ne dice di…?*", "next": "G-DLG-03.endBad" }
+      ]
+    },
+    {
+      "id": "G-DLG-03.n8", "speaker": "ferraro", "conceptId": "B2-REG-01", "difficulty": 2,
+      "line": "Mi sembra fattibile. Le faremo sapere entro venerdì.",
+      "explanation": "Close formally: thank her and use a formal formula with *Suo*.",
+      "choices": [
+        { "text": "La ringrazio per il Suo tempo. Resto in attesa di un Suo riscontro.", "ok": true, "next": "G-DLG-03.endGood" },
+        { "text": "Grazie, ciao, a presto!", "ok": false, "errorType": "register", "why": "*Ciao* is informal. Close with *La ringrazio* and *Arrivederci* or *Resto in attesa di un Suo riscontro*.", "next": "G-DLG-03.endOk" },
+        { "text": "Ti ringrazio, aspetto tue notizie.", "ok": false, "errorType": "register", "why": "*Ti* and *tue* are *tu* forms. Lei: *La ringrazio… un Suo riscontro*.", "next": "G-DLG-03.endOk" }
+      ]
+    },
+    { "id": "G-DLG-03.endGood", "speaker": "ferraro", "line": "È stato un piacere conoscerLa. Arrivederci!", "end": true, "outcome": "You kept the Lei register, negotiated firmly but politely and closed professionally. Friday's email: you got the job, with a better salary." },
+    { "id": "G-DLG-03.endOk", "speaker": "ferraro", "line": "Ehm… sì, arrivederci.", "end": true, "outcome": "The negotiation went well, but the informal goodbye left an odd impression. You get an offer, with a note about 'communication style' in the feedback." },
+    { "id": "G-DLG-03.endMeh", "speaker": "ferraro", "line": "Perfetto, allora prepariamo il contratto a 32.000 euro.", "end": true, "outcome": "You got the job, but at the lowest salary on offer. Next time, concede first and then ask her to meet you halfway (*Potrebbe venirmi incontro?*)." },
+    { "id": "G-DLG-03.endBad", "speaker": "ferraro", "line": "Bene… direi che possiamo chiudere qui. La ringrazio per essere venuto/a.", "end": true, "outcome": "The interviewer closed the meeting early. The tone (informal or confrontational) cost you the job. Review formal Lei and polite disagreement." }
+  ]
+}

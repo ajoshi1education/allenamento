@@ -1,0 +1,133 @@
+{
+  "id": "G-RDG-06",
+  "type": "reading",
+  "title": "Il miracolo economico",
+  "subtitle": "A feature on Italy's post-war boom: its causes, its symbols, its hidden costs, and the passive with andare.",
+  "conceptIds": ["B2-READ-01", "C1-PASS-02"],
+  "difficulty": 3,
+  "minutes": 12,
+  "passage": {
+    "title": "Vespe, utilitarie e valigie di cartone",
+    "source": "invented",
+    "it": "Tra la metà degli anni Cinquanta e la metà degli anni Sessanta l'Italia cambiò volto più rapidamente che in qualsiasi altro periodo della sua storia. Un paese ancora in gran parte agricolo, uscito dalla guerra povero e in parte distrutto, diventò in poco più di un decennio una delle principali potenze industriali del mondo. Si parlò di «miracolo economico», ma va detto subito che di miracoloso c'era ben poco: il boom fu il risultato di salari bassi, di forti investimenti, degli aiuti del Piano Marshall e dell'apertura ai mercati europei dopo i Trattati di Roma del 1957.\nI simboli di quegli anni sono noti a tutti. La Vespa, prodotta dalla Piaggio dal 1946, diede a milioni di giovani la libertà di spostarsi a basso costo. Nel 1957 arrivò la Fiat Nuova 500: piccola, economica, pensata per famiglie che fino ad allora non avevano mai posseduto un'automobile. Negli stessi anni si costruiva l'Autostrada del Sole, mentre la televisione, arrivata nel 1954, entrava nelle case e diffondeva una lingua comune in un paese che parlava soprattutto dialetto. Nel 1960 il Financial Times assegnò alla lira l'«Oscar delle monete» per la sua stabilità.\nC'è però un'altra faccia del miracolo che non va dimenticata. Milioni di persone lasciarono il Sud e il Nord-Est per trasferirsi nel cosiddetto triangolo industriale, tra Milano, Torino e Genova. Arrivavano con la valigia di cartone, spesso senza una casa, e non di rado trovavano cartelli con la scritta «Non si affitta ai meridionali». Le periferie crebbero in modo disordinato e i servizi non riuscirono a tenere il passo.\nIl boom, insomma, va letto con attenzione: portò benessere, frigoriferi e lavatrici, ma accentuò anche squilibri tra Nord e Sud che non sono ancora stati superati. Va ricordato, infine, che la crescita rallentò già intorno al 1963-64, quando inflazione e tensioni sociali cominciarono a farsi sentire."
+  },
+  "questions": [
+    {
+      "id": "G-RDG-06.q1", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What is the main idea of the article?",
+      "options": [
+        "Italy's rapid post-war growth brought prosperity, but it had concrete causes and real social costs.",
+        "Italy's boom was a lucky accident that nobody could explain.",
+        "The Vespa and the Fiat 500 were the main causes of the boom.",
+        "The boom lasted until the end of the twentieth century."
+      ],
+      "answer": 0,
+      "optionWhy": {
+        "1": "The writer says the opposite: *di miracoloso c'era ben poco* and lists the causes.",
+        "3": "Growth slowed *già intorno al 1963-64*."
+      },
+      "explanation": "The article explains the causes (paragraph 1), the symbols (2) and *un'altra faccia del miracolo* (3–4).",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-06.q2", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Which of these is NOT given as a cause of the boom?",
+      "options": [
+        "Low wages",
+        "Marshall Plan aid",
+        "The discovery of oil in southern Italy",
+        "Opening up to European markets"
+      ],
+      "answer": 2,
+      "explanation": "The causes listed are *salari bassi, forti investimenti, gli aiuti del Piano Marshall* and *l'apertura ai mercati europei*. Oil isn't mentioned.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-06.q3", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Who was the Fiat Nuova 500 designed for?",
+      "options": [
+        "Young people who wanted a sports car",
+        "Families who had never owned a car before",
+        "Foreign tourists",
+        "Workers commuting on the Autostrada del Sole"
+      ],
+      "answer": 1,
+      "explanation": "*Pensata per famiglie che fino ad allora non avevano mai posseduto un'automobile.* The Vespa is the one linked to *giovani*.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-06.q4", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What role does the article give to television?",
+      "options": [
+        "It advertised Fiat cars.",
+        "It spread a common language in a country where most people spoke dialect.",
+        "It replaced the cinema.",
+        "It encouraged people to emigrate abroad."
+      ],
+      "answer": 1,
+      "explanation": "*Diffondeva una lingua comune in un paese che parlava soprattutto dialetto.*",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-06.q5", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«I servizi non riuscirono a tenere il passo.»* What does *tenere il passo* mean here?",
+      "options": [
+        "to block the way",
+        "to keep up (with the growth)",
+        "to stay still",
+        "to keep a secret"
+      ],
+      "answer": 1,
+      "explanation": "*Tenere il passo (con)* = to keep pace, keep up. The suburbs grew so fast that services (schools, transport, housing) couldn't keep up.",
+      "errorType": "vocabulary"
+    },
+    {
+      "id": "G-RDG-06.q6", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why does the writer quote the sign *«Non si affitta ai meridionali»*?",
+      "options": [
+        "To show that there were no flats left in northern cities",
+        "To show that southern migrants faced discrimination in the North",
+        "To explain a law that protected northern landlords",
+        "To show that southerners preferred to buy rather than rent"
+      ],
+      "answer": 1,
+      "explanation": "The sign ('We don't rent to southerners') illustrates the hostility migrants met. It's part of *l'altra faccia del miracolo*; the writer lets the example speak rather than stating it.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-06.q7", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«C'è però un'altra faccia del miracolo che non va dimenticata.»* What does *non va dimenticata* mean?",
+      "options": [
+        "that doesn't go away",
+        "that must not be forgotten",
+        "that isn't being forgotten",
+        "that hasn't been forgotten"
+      ],
+      "answer": 1,
+      "optionWhy": { "0": "*Andare* + past participle is a passive of obligation, not a verb of movement." },
+      "explanation": "*Andare* + past participle = passive + necessity: *va dimenticata* = *deve essere dimenticata*. With the negative: must not be forgotten. Same pattern in *va detto*, *va letto*, *va ricordato*.",
+      "errorType": "passive"
+    },
+    {
+      "id": "G-RDG-06.q8", "type": "transform", "difficulty": 4,
+      "instruction": "Rewrite the sentence with *andare* + past participle, as the writer does.",
+      "prompt": "Bisogna leggere il boom con attenzione.",
+      "answers": ["Il boom va letto con attenzione", "Va letto con attenzione, il boom"],
+      "traps": [
+        { "match": "Il boom viene letto con attenzione", "errorType": "passive", "why": "*Venire* + participle is a plain passive (it is read). The obligation (*bisogna*) needs *andare*: *va letto*." },
+        { "match": "Il boom deve essere letto con attenzione", "errorType": "passive", "ok": true, "why": "Correct meaning, but the task asks for *andare*: *va letto*." },
+        { "match": "Il boom va leggere con attenzione", "errorType": "passive", "why": "*Andare* takes the past participle here: *va letto*." }
+      ],
+      "focus": ["va", "letto"],
+      "explanation": "*Bisogna leggere X* → *X va letto*. The participle agrees with the subject: *il boom va letto*, *la storia va letta*.",
+      "errorType": "passive"
+    }
+  ]
+}

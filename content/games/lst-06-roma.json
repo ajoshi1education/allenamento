@@ -1,0 +1,129 @@
+{
+  "id": "G-LST-06",
+  "type": "listening",
+  "title": "Una guida nella Roma antica",
+  "subtitle": "A tour guide answers tourists' questions above the Roman Forum: follow the history and the passives.",
+  "conceptIds": ["B2-LIST-01", "B2-PASS-01"],
+  "difficulty": 3,
+  "minutes": 10,
+  "passage": {
+    "title": "Dalla terrazza del Campidoglio",
+    "source": "invented",
+    "it": "— Allora, signori, avvicinatevi pure, così mi sentono anche quelli in fondo. Siamo sulla terrazza del Campidoglio e sotto di noi c'è il Foro Romano. Vedete quelle colonne? Ecco, dovete immaginare che all'inizio qui non c'era niente: era una valle paludosa tra due colli, il Campidoglio, dove siamo noi, e il Palatino, quello lì a destra. Secondo la tradizione, Roma fu fondata da Romolo proprio sul Palatino, nel 753 avanti Cristo.\n— Scusi, ma come hanno fatto a costruire su una palude?\n— Ottima domanda. La zona venne bonificata con un grande canale, la Cloaca Massima, che in parte funziona ancora oggi. Una volta prosciugata, la valle diventò il cuore della città: qui si facevano affari, si tenevano i processi, si discuteva di politica. Quell'edificio di mattoni, per esempio, è la Curia, dove si riuniva il Senato. E la strada che vedete in mezzo è la Via Sacra, che veniva percorsa dai generali vittoriosi durante i trionfi.\n— E il Colosseo, invece, quando fu costruito?\n— Molto più tardi. Il Colosseo, che in realtà si chiamava Anfiteatro Flavio, fu voluto dall'imperatore Vespasiano intorno al 70 dopo Cristo e venne inaugurato da suo figlio Tito nell'80, con cento giorni di giochi. E pensate che fu costruito dove prima c'era il lago artificiale della Domus Aurea, l'enorme villa di Nerone. Era un messaggio politico: lo spazio privato del tiranno veniva restituito al popolo.\n— Quante persone ci stavano?\n— Si stima che fossero almeno cinquantamila. E quando il sole picchiava, gli spettatori venivano protetti da un enorme telone, il velario, manovrato dai marinai della flotta.\n— Incredibile.\n— Ecco, da qui si capisce bene come crebbe Roma: da villaggio di capanne sul Palatino a città di forse un milione di abitanti. Augusto diceva di aver trovato una città di mattoni e di averla lasciata di marmo. Esagerava un po', ma non troppo. Bene, adesso scendiamo. Attenzione ai gradini, che sono scivolosi!"
+  },
+  "questions": [
+    {
+      "id": "G-LST-06.q1", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Where are the guide and the tourists standing?",
+      "options": [
+        "Inside the Colosseum",
+        "On the Palatine Hill",
+        "On a terrace on the Capitoline Hill, above the Forum",
+        "On the Via Sacra"
+      ],
+      "answer": 2,
+      "explanation": "*Siamo sulla terrazza del Campidoglio e sotto di noi c'è il Foro Romano.* The Palatine is *quello lì a destra*.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-06.q2", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What was the area of the Forum like originally?",
+      "options": [
+        "A marshy valley between two hills",
+        "A forest",
+        "A village of huts",
+        "A lake created by Nero"
+      ],
+      "answer": 0,
+      "optionWhy": { "2": "The village of huts was on the Palatine.", "3": "Nero's lake was where the Colosseum now stands." },
+      "explanation": "*Era una valle paludosa tra due colli.*",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-06.q3", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "How was the area made usable?",
+      "options": [
+        "It was filled with earth from the hills.",
+        "It was drained by a large canal, the Cloaca Maxima.",
+        "It was paved with marble by Augustus.",
+        "It was raised on wooden stilts."
+      ],
+      "answer": 1,
+      "explanation": "*La zona venne bonificata con un grande canale, la Cloaca Massima.* *Bonificare* = to reclaim (land), drain.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-06.q4", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What was the Curia?",
+      "options": [
+        "The emperor's house",
+        "A temple",
+        "The building where the Senate met",
+        "A market"
+      ],
+      "answer": 2,
+      "explanation": "*La Curia, dove si riuniva il Senato.*",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-06.q5", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Which is true of the Colosseum, according to the guide?",
+      "options": [
+        "It was begun by Vespasian and inaugurated by his son Titus in AD 80.",
+        "It was built by Nero as part of his villa.",
+        "It was built at the same time as the Forum.",
+        "It was inaugurated by Augustus."
+      ],
+      "answer": 0,
+      "explanation": "*Fu voluto dall'imperatore Vespasiano intorno al 70 dopo Cristo e venne inaugurato da suo figlio Tito nell'80.*",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-06.q6", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why was building the Colosseum on the site of Nero's lake a 'political message'?",
+      "options": [
+        "It showed that Rome had plenty of water.",
+        "It returned land taken for the tyrant's private pleasure to the people.",
+        "It honoured Nero's memory.",
+        "It proved that the emperors were good engineers."
+      ],
+      "answer": 1,
+      "explanation": "*Lo spazio privato del tiranno veniva restituito al popolo.*",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-06.q7", "type": "cloze", "difficulty": 3,
+      "instruction": "Complete with the passive auxiliary in the passato remoto (one word).",
+      "prompt": "Il Colosseo ___ inaugurato da Tito nell'80 dopo Cristo.",
+      "answers": ["fu", "venne"],
+      "focus": ["fu", "venne"],
+      "traps": [
+        { "match": "è stato", "errorType": "wrong-tense", "ok": true, "why": "Grammatically fine in conversation, but the task asks for one word in the passato remoto: *fu* or *venne*." },
+        { "match": "ha", "errorType": "passive", "why": "The passive is formed with *essere* or *venire* + past participle, never *avere*." },
+        { "match": "era", "errorType": "wrong-tense", "why": "*Era inaugurato* describes a state, not a one-off event. For a completed event in the past: *fu / venne inaugurato*." }
+      ],
+      "explanation": "Both *fu inaugurato* and *venne inaugurato* are correct; the guide says *venne inaugurato*. *Venire* can replace *essere* in simple tenses of the passive.",
+      "errorType": "passive"
+    },
+    {
+      "id": "G-LST-06.q8", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What protected spectators from the sun?",
+      "options": [
+        "Trees planted around the arena",
+        "A huge awning, the velarium, operated by sailors from the fleet",
+        "A wooden roof",
+        "Umbrellas handed out at the entrance"
+      ],
+      "answer": 1,
+      "explanation": "*Gli spettatori venivano protetti da un enorme telone, il velario, manovrato dai marinai della flotta.* Note the passive *venivano protetti*.",
+      "errorType": "listening"
+    }
+  ]
+}

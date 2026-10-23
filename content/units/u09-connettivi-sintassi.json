@@ -1,0 +1,373 @@
+{
+  "unit": "U09",
+  "title": "Connettivi e sintassi",
+  "cefr": "C1",
+  "concepts": [
+    {
+      "id": "B2-CONN-01",
+      "title": "Connectors of cause, consequence and contrast",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": [],
+      "rule": "Cause: siccome (at the start of the sentence), poiché, dato che, visto che, perché (after the main clause). Consequence: quindi, perciò, dunque, per cui. Contrast: però / ma (but), invece (instead, on the other hand), mentre (whereas), eppure (and yet: surprising), tuttavia (however: formal).",
+      "assessment": [
+        "Chooses an appropriate cause connector and puts siccome at the start of the sentence",
+        "Links cause and effect with quindi, perciò, dunque or per cui",
+        "Distinguishes però, invece, mentre, eppure and tuttavia by meaning and register",
+        "Avoids translating causal 'since' as da quando"
+      ],
+      "lesson": {
+        "intro": "Connectors are what turn a list of sentences into an argument. English speakers usually know *perché* and *ma*, and then overuse them. A B2 speaker varies cause, consequence and contrast, and knows the small differences: *siccome* opens the sentence, *eppure* signals surprise, *mentre* compares two subjects, and 'since' is not *da quando*.",
+        "rules": [
+          {
+            "title": "Cause: siccome, poiché, dato che, visto che, perché",
+            "text": "*Siccome* introduces a known cause and normally comes **first**: *Siccome pioveva, sono rimasto a casa*. *Dato che* and *visto che* ('given that / seeing that') can go first or second. *Poiché* is more formal. *Perché* usually follows the main clause. Causal 'since' is **never** *da quando*, which means 'since (a time)'.",
+            "examples": [
+              { "it": "**Siccome** era tardi, abbiamo preso un taxi.", "en": "Since it was late, we took a taxi." },
+              { "it": "Non è venuto **perché** stava male.", "en": "He didn't come because he was ill." },
+              { "it": "**Visto che** sei qui, aiutami.", "en": "Seeing that you're here, help me." }
+            ]
+          },
+          {
+            "title": "Consequence: quindi, perciò, dunque, per cui",
+            "text": "*Quindi* and *perciò* are the everyday 'so / therefore'. *Dunque* is slightly more formal or reflective. *Per cui* ('which is why') links two clauses in speech and writing. *Così* ('so') is informal.",
+            "examples": [
+              { "it": "Ho studiato tanto, **quindi** ho superato l'esame.", "en": "I studied a lot, so I passed the exam." },
+              { "it": "Il treno era in ritardo, **per cui** sono arrivato tardi.", "en": "The train was late, which is why I arrived late." }
+            ]
+          },
+          {
+            "title": "Contrast: però, ma, invece, mentre",
+            "text": "*Ma* and *però* = 'but'. *Però* can also go after the word it contrasts (*È caro; è buono, però*). *Invece* = 'instead / on the other hand' and often follows the new subject (*io invece*). *Mentre* = 'whereas', comparing two subjects.",
+            "examples": [
+              { "it": "Marco ama il mare, **mentre** sua sorella preferisce la montagna.", "en": "Marco loves the sea, whereas his sister prefers the mountains." },
+              { "it": "Pensavo di uscire; **invece** sono rimasto a casa.", "en": "I was planning to go out; instead I stayed at home." }
+            ]
+          },
+          {
+            "title": "Eppure and tuttavia",
+            "text": "*Eppure* = 'and yet': the second fact is **surprising** given the first. *Tuttavia* = 'however / nevertheless': a neutral, more **formal** contrast, typical of writing.",
+            "examples": [
+              { "it": "Ho dormito dieci ore, **eppure** sono ancora stanco.", "en": "I slept ten hours, and yet I'm still tired." },
+              { "it": "Il progetto è ambizioso; **tuttavia**, i fondi sono limitati.", "en": "The project is ambitious; however, funds are limited." }
+            ],
+            "table": {
+              "head": ["Connector", "Meaning", "Register"],
+              "rows": [
+                ["ma / però", "but", "neutral"],
+                ["invece", "instead, on the other hand", "neutral"],
+                ["mentre", "whereas", "neutral"],
+                ["eppure", "and yet (surprise)", "neutral"],
+                ["tuttavia", "however, nevertheless", "formal"]
+              ]
+            }
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Da quando era tardi, abbiamo preso un taxi.", "right": "Siccome era tardi, abbiamo preso un taxi.", "why": "*Da quando* is time-'since' (since 2010). Causal 'since' is *siccome / dato che / visto che*." },
+          { "wrong": "Sono rimasto a casa siccome pioveva.", "right": "Sono rimasto a casa perché pioveva. / Siccome pioveva, sono rimasto a casa.", "why": "In standard Italian *siccome* opens the sentence. After the main clause use *perché* or *dato che*." },
+          { "wrong": "È ricco, e ancora non è felice.", "right": "È ricco, eppure non è felice.", "why": "'And yet' is *eppure*. *E ancora* means 'and again / and still more'." },
+          { "wrong": "Io lavoro, invece lui dorme.", "right": "Io lavoro, mentre lui dorme. / Io lavoro, lui invece dorme.", "why": "To compare two subjects, use *mentre*, or put *invece* after the second subject." }
+        ],
+        "tips": [
+          "Rotate your connectors: *perché → dato che → visto che → poiché*. Repetition is what makes writing sound B1.",
+          "If you could say 'and yet' or 'even so' in English, *eppure* is probably right.",
+          "In emails and reports, *tuttavia* sounds more professional than *però*."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-CONN-01.e01", "type": "choice", "difficulty": 1, "instruction": "Choose the right connector.", "prompt": "___ pioveva, siamo rimasti a casa.", "options": ["Siccome", "Perché", "Quindi", "Però"], "answer": 0, "optionWhy": { "1": "*Perché* normally follows the main clause. At the start, use *siccome*.", "2": "*Quindi* introduces a consequence, not a cause.", "3": "*Però* expresses contrast." }, "errorType": "connector", "explanation": "A cause placed **before** the main clause → **siccome**.", "en": "Since it was raining, we stayed at home." },
+        { "id": "B2-CONN-01.e02", "type": "choice", "difficulty": 1, "instruction": "Choose the right connector.", "prompt": "Ho studiato tanto, ___ ho superato l'esame.", "options": ["quindi", "siccome", "mentre", "invece"], "answer": 0, "optionWhy": { "1": "*Siccome* introduces a cause, but passing the exam is the result.", "2": "*Mentre* compares or means 'while'.", "3": "*Invece* expresses contrast." }, "errorType": "connector", "explanation": "Cause → result: **quindi**.", "en": "I studied a lot, so I passed the exam." },
+        { "id": "B2-CONN-01.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with a connector meaning 'whereas'.", "prompt": "Marco ama il mare, ___ sua sorella preferisce la montagna.", "answers": ["mentre"], "focus": ["mentre"], "errorType": "connector", "traps": [{ "match": "invece", "ok": true, "errorType": "connector", "why": "Possible in speech, but more natural is *sua sorella invece preferisce…* or *mentre*." }, { "match": "però", "errorType": "connector", "why": "*Però* is 'but'; comparing two people's preferences calls for *mentre* ('whereas')." }, { "match": "eppure", "errorType": "connector", "why": "*Eppure* signals surprise ('and yet'). There's nothing surprising here, just a comparison." }], "explanation": "Comparing two subjects → **mentre** ('whereas').", "en": "Marco loves the sea, whereas his sister prefers the mountains." },
+        { "id": "B2-CONN-01.e04", "type": "choice", "difficulty": 2, "instruction": "Choose the right connector.", "prompt": "Ho dormito dieci ore, ___ sono ancora stanchissimo.", "options": ["eppure", "perciò", "siccome", "invece"], "answer": 0, "optionWhy": { "1": "*Perciò* would make tiredness the logical result of sleeping ten hours.", "2": "*Siccome* introduces a cause.", "3": "*Invece* means 'instead', which doesn't fit here." }, "errorType": "connector", "explanation": "The second fact is surprising given the first → **eppure** ('and yet').", "en": "I slept ten hours, and yet I'm still exhausted." },
+        { "id": "B2-CONN-01.e05", "type": "translate", "difficulty": 2, "instruction": "Translate into Italian.", "prompt": "Since it was late, we took a taxi.", "answers": ["(Siccome|Dato che|Visto che|Poiché) era tardi[,] abbiamo preso un taxi", "Abbiamo preso un taxi (perché|dato che|visto che|poiché) era tardi"], "focus": ["siccome", "dato", "visto", "poiché", "perché"], "errorType": "connector", "traps": [{ "contains": ["quando"], "errorType": "false-friend", "why": "*Da quando* means 'since' in time (since Monday). Causal 'since' = *siccome / dato che / visto che*." }, { "match": "Era tardi[,] (quindi|perciò|per cui) abbiamo preso un taxi", "ok": true, "errorType": "connector", "why": "Correct, though it shifts the focus to the consequence. A cause connector (*siccome…*) matches the English more closely." }], "explanation": "Causal 'since' → *siccome* (at the start), *dato che*, *visto che* or *poiché*.", "en": "Since it was late, we took a taxi." },
+        { "id": "B2-CONN-01.e06", "type": "cloze", "difficulty": 2, "instruction": "Complete with a connector of consequence.", "prompt": "Non avevo l'ombrello, ___ mi sono bagnato tutto.", "answers": ["(quindi|perciò|per cui|dunque|così)"], "focus": ["quindi", "perciò", "cui", "dunque", "così"], "errorType": "connector", "traps": [{ "match": "perché", "errorType": "connector", "why": "*Perché* introduces a cause. Getting wet is the consequence: *quindi / perciò / per cui*." }, { "match": "siccome", "errorType": "connector", "why": "*Siccome* introduces a cause, not a consequence." }], "explanation": "No umbrella → I got wet: a consequence, so **quindi / perciò / per cui**.", "en": "I didn't have an umbrella, so I got soaked." },
+        { "id": "B2-CONN-01.e07", "type": "transform", "difficulty": 3, "instruction": "Rewrite the sentence starting with 'Siccome…'.", "prompt": "Siamo rimasti a casa perché faceva freddo.", "answers": ["Siccome faceva freddo[,] siamo rimasti a casa"], "focus": ["siccome"], "errorType": "connector", "traps": [{ "match": "Siccome siamo rimasti a casa[,] faceva freddo", "errorType": "connector", "why": "*Siccome* introduces the cause (the cold), not the result." }], "explanation": "*Siccome* + cause comes first, then the main clause.", "en": "Since it was cold, we stayed at home." },
+        { "id": "B2-CONN-01.e08", "type": "transform", "difficulty": 3, "instruction": "Join the two sentences with 'per cui'.", "prompt": "Il treno era in ritardo. Sono arrivato tardi alla riunione.", "answers": ["Il treno era in ritardo[,] per cui sono arrivato tardi alla riunione"], "focus": ["cui"], "errorType": "connector", "traps": [{ "contains": ["che"], "errorType": "connector", "why": "The connector is *per cui* ('which is why'), not *per che*." }], "explanation": "*Per cui* introduces the consequence: 'which is why'.", "en": "The train was late, which is why I arrived late for the meeting." },
+        { "id": "B2-CONN-01.e09", "type": "choice", "difficulty": 3, "instruction": "Choose the most suitable connector for a formal report.", "prompt": "Il progetto è ambizioso; ___, i fondi a disposizione sono limitati.", "options": ["tuttavia", "dunque", "siccome", "visto che"], "answer": 0, "optionWhy": { "1": "*Dunque* introduces a consequence, but limited funds aren't a result of ambition.", "2": "*Siccome* introduces a cause and can't follow a semicolon like this.", "3": "*Visto che* introduces a cause." }, "errorType": "connector", "explanation": "Formal contrast → **tuttavia** ('however').", "en": "The project is ambitious; however, the available funds are limited." },
+        { "id": "B2-CONN-01.e10", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "Seeing that you're here, help me cook.", "tokens": ["Visto", "che", "sei", "qui", "aiutami", "a", "cucinare"], "answers": ["Visto che sei qui aiutami a cucinare"], "errorType": "word-order", "explanation": "*Visto che* + cause comes first, then the main clause (here an imperative)." },
+        { "id": "B2-CONN-01.e11", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "My brother works a lot, whereas I prefer to rest.", "answers": ["Mio fratello lavora (molto|tanto)[,] mentre io preferisco (riposare|riposarmi)", "Mio fratello lavora (molto|tanto)[,] io invece preferisco (riposare|riposarmi)"], "focus": ["mentre", "invece"], "errorType": "connector", "traps": [{ "contains": ["dove"], "errorType": "false-friend", "why": "'Whereas' isn't related to *dove*. Use *mentre* or *invece*." }, { "match": "Mio fratello lavora (molto|tanto)[,] invece io preferisco (riposare|riposarmi)", "ok": true, "errorType": "connector", "why": "Acceptable in speech; more natural is *io invece preferisco…* or *mentre io preferisco…*." }, { "contains": ["eppure"], "errorType": "connector", "why": "*Eppure* signals surprise ('and yet'). A plain comparison needs *mentre*." }], "explanation": "Comparing two people → **mentre**, or *invece* after the second subject.", "en": "My brother works a lot, whereas I prefer to rest." },
+        { "id": "B2-CONN-01.e12", "type": "choice", "difficulty": 4, "instruction": "Which sentence is correct, natural standard Italian?", "prompt": "Choose the best sentence.", "options": ["Siccome era tardi, sono andato a letto.", "Sono andato a letto siccome che era tardi.", "Era tardi siccome sono andato a letto.", "Da quando era tardi, sono andato a letto."], "answer": 0, "optionWhy": { "1": "*Siccome che* doesn't exist, and *siccome* should open the sentence.", "2": "This reverses cause and effect.", "3": "*Da quando* is temporal 'since', not causal." }, "errorType": "connector", "explanation": "*Siccome* + cause, at the start of the sentence.", "en": "Since it was late, I went to bed." },
+        { "id": "B2-CONN-01.e13", "type": "speak", "difficulty": 3, "instruction": "Say it in Italian, starting with 'Siccome'.", "prompt": "Tell a friend you can't come because you have to work.", "answers": ["Siccome devo lavorare[,] non (posso|riesco a) venire"], "focus": ["siccome"], "errorType": "connector", "traps": [{ "match": "Non (posso|riesco a) venire siccome devo lavorare", "errorType": "connector", "why": "*Siccome* opens the sentence. After the main clause use *perché*." }], "explanation": "*Siccome* + cause, then the main clause.", "en": "Since I have to work, I can't come." },
+        { "id": "B2-CONN-01.e14", "type": "transform", "difficulty": 4, "instruction": "Make the sentence more formal: replace 'però' with 'tuttavia'.", "prompt": "Il prezzo è alto, però la qualità è ottima.", "answers": ["Il prezzo è alto[,] tuttavia la qualità è ottima", "Il prezzo è alto[,] la qualità è tuttavia ottima"], "focus": ["tuttavia"], "errorType": "register", "traps": [{ "contains": ["però"], "errorType": "register", "why": "Replace *però* with *tuttavia*." }], "explanation": "*Tuttavia* is the formal 'however'. In writing it's often preceded by a semicolon: *Il prezzo è alto; tuttavia, la qualità è ottima*.", "en": "The price is high; however, the quality is excellent." },
+        { "id": "B2-CONN-01.e15", "type": "cloze", "difficulty": 5, "instruction": "Complete with a cause connector that can follow the main clause.", "prompt": "Non è venuto alla festa ___ non stava bene.", "answers": ["(perché|poiché|dato che|visto che|in quanto)"], "focus": ["perché", "poiché", "dato", "visto", "quanto"], "errorType": "connector", "traps": [{ "match": "siccome", "errorType": "connector", "why": "In standard Italian *siccome* opens the sentence. After the main clause use *perché, dato che, visto che*." }, { "match": "quindi", "errorType": "connector", "why": "*Quindi* introduces a consequence. Not feeling well is the cause." }], "explanation": "After the main clause: *perché, poiché, dato che, visto che, in quanto*.", "en": "He didn't come to the party because he wasn't well." },
+        { "id": "B2-CONN-01.e16", "type": "translate", "difficulty": 5, "instruction": "Translate into Italian.", "prompt": "He's rich, and yet he's never happy.", "answers": ["[Lui] è ricco[,] eppure non è mai (felice|contento)"], "focus": ["eppure"], "errorType": "connector", "traps": [{ "contains": ["ancora"], "errorType": "connector", "why": "'And yet' = *eppure*. *E ancora* means 'and again' or 'and still more'." }, { "match": "[Lui] è ricco[,] (ma|però|tuttavia) non è mai (felice|contento)", "ok": true, "errorType": "connector", "why": "Correct, but *eppure* captures the surprise in 'and yet'." }], "explanation": "Surprising contrast → **eppure**.", "en": "He's rich, and yet he's never happy." }
+      ]
+    },
+    {
+      "id": "C1-CONN-02",
+      "title": "Concessive and formal connectors",
+      "cefr": "C1",
+      "skill": "grammar",
+      "prereqs": ["B2-CONN-01", "B2-SUBJ-01"],
+      "rule": "Sebbene, benché, nonostante (che) and malgrado (che) take the subjunctive; anche se takes the indicative; nonostante / malgrado can also take a noun; pur + gerund needs the same subject. Formal connectors: pertanto (therefore), ciononostante (nevertheless), in quanto (because, as), qualora + subjunctive (if, should), laddove (whereas / where), ossia / ovvero (that is).",
+      "assessment": [
+        "Uses the subjunctive after sebbene, benché, nonostante and malgrado, and the indicative after anche se",
+        "Uses pur + gerund when both clauses share the subject",
+        "Uses nonostante / malgrado + noun without di",
+        "Chooses formal connectors (pertanto, ciononostante, in quanto, qualora, laddove, ossia) appropriately in written texts"
+      ],
+      "lesson": {
+        "intro": "Concessive clauses ('although…') are where C1 writing shows. English uses the same verb form after 'although' and 'even if'; Italian splits them: *sebbene / benché / nonostante* + **subjunctive**, but *anche se* + **indicative**. Add a handful of formal connectors (*pertanto, ciononostante, qualora, laddove*) and your essays and emails gain the register an examiner looks for.",
+        "rules": [
+          {
+            "title": "Sebbene, benché, nonostante, malgrado + subjunctive",
+            "text": "These all mean 'although' and require the **subjunctive**, following the sequence of tenses (present main clause → *sia*; past main clause → *fosse*). *Nonostante* and *malgrado* may add *che*: *nonostante che*.",
+            "examples": [
+              { "it": "**Sebbene sia** stanca, Giulia continua a lavorare.", "en": "Although she's tired, Giulia keeps working." },
+              { "it": "**Nonostante fosse** tardi, siamo usciti.", "en": "Although it was late, we went out." }
+            ]
+          },
+          {
+            "title": "Anche se + indicative",
+            "text": "*Anche se* ('even if / although') takes the **indicative** for real facts. It's the most common concessive in speech.",
+            "examples": [
+              { "it": "**Anche se piove**, andiamo al mare.", "en": "Even though it's raining, we're going to the beach." }
+            ]
+          },
+          {
+            "title": "Nonostante / malgrado + noun, and pur + gerund",
+            "text": "*Nonostante* and *malgrado* can be followed directly by a noun, with **no** *di*: *nonostante la pioggia*. *Pur* + gerund ('while being / despite having') works only when both clauses share the **same subject**.",
+            "examples": [
+              { "it": "**Nonostante la pioggia**, la partita si è giocata.", "en": "Despite the rain, the match went ahead." },
+              { "it": "**Pur essendo** stanco, ha finito il lavoro.", "en": "Although he was tired, he finished the work." }
+            ]
+          },
+          {
+            "title": "Formal connectors",
+            "text": "These belong to written, formal Italian: reports, emails, essays.",
+            "table": {
+              "head": ["Connector", "Meaning", "Note"],
+              "rows": [
+                ["pertanto", "therefore", "formal *quindi*"],
+                ["ciononostante", "nevertheless", "also *ciò nonostante*; needs *ciò*"],
+                ["in quanto", "because, since; in one's role as", "follows the main clause"],
+                ["qualora", "if, should, in the event that", "+ subjunctive"],
+                ["laddove", "whereas; where; if", "very formal"],
+                ["ossia / ovvero", "that is, i.e.", "introduces a clarification"]
+              ]
+            },
+            "examples": [
+              { "it": "**Qualora** ci fossero problemi, contatti l'assistenza.", "en": "Should there be any problems, contact support." },
+              { "it": "Non posso firmare **in quanto** non sono il responsabile.", "en": "I can't sign, as I'm not the person in charge." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Nonostante è tardi, usciamo.", "right": "Nonostante sia tardi, usciamo.", "why": "*Nonostante* + clause requires the subjunctive." },
+          { "wrong": "Anche se sia stanco, vengo.", "right": "Anche se sono stanco, vengo.", "why": "*Anche se* takes the indicative for real facts." },
+          { "wrong": "Nonostante di tutto, siamo felici.", "right": "Nonostante tutto, siamo felici.", "why": "*Nonostante* + noun or pronoun takes no preposition (English 'in spite of' is not *nonostante di*)." },
+          { "wrong": "Pur essendo tardi, Marco è uscito.", "right": "Anche se era tardi, Marco è uscito.", "why": "*Pur* + gerund needs the same subject in both clauses. 'It was late' and 'Marco went out' have different subjects." },
+          { "wrong": "Qualora hai bisogno, chiamami.", "right": "Qualora avessi (or abbia) bisogno, chiamami.", "why": "*Qualora* always takes the subjunctive." }
+        ],
+        "tips": [
+          "Mnemonic: 'S-B-N-M' (*sebbene, benché, nonostante, malgrado*) → subjunctive. *Anche se* → indicative.",
+          "*Ciononostante* starts a new sentence ('Nevertheless, …'); *nonostante* introduces a clause or noun.",
+          "Don't overload a text with formal connectors: one or two per paragraph is enough."
+        ]
+      },
+      "exercises": [
+        { "id": "C1-CONN-02.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Sebbene ___ (essere) stanca, Giulia è uscita con gli amici.", "answers": ["fosse"], "focus": ["fosse"], "errorType": "indicative-for-subjunctive", "traps": [{ "match": "era", "errorType": "indicative-for-subjunctive", "why": "*Sebbene* requires the subjunctive." }, { "match": "sia", "errorType": "tense-sequence", "why": "The main clause is past (*è uscita*), so use the imperfect subjunctive: *fosse*." }], "explanation": "*Sebbene* + congiuntivo; past main clause → **fosse**.", "en": "Although she was tired, Giulia went out with her friends." },
+        { "id": "C1-CONN-02.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct form of the verb in brackets (present).", "prompt": "Anche se ___ (piovere), andiamo al mare.", "answers": ["piove"], "focus": ["piove"], "errorType": "subjunctive-for-indicative", "traps": [{ "match": "piova", "errorType": "subjunctive-for-indicative", "why": "*Anche se* takes the indicative for real facts: *piove*." }], "explanation": "*Anche se* + indicativo: **piove**.", "en": "Even though it's raining, we're going to the beach." },
+        { "id": "C1-CONN-02.e03", "type": "choice", "difficulty": 2, "instruction": "Choose the correct form.", "prompt": "Nonostante ___ tardi, siamo andati a cena fuori.", "options": ["fosse", "era", "sarebbe", "sia stato"], "answer": 0, "optionWhy": { "1": "*Nonostante* + clause needs the subjunctive. *Nonostante era* is a common slip.", "2": "The conditional doesn't fit a real concession.", "3": "The lateness is simultaneous, not earlier: *fosse*." }, "errorType": "indicative-for-subjunctive", "explanation": "*Nonostante* + congiuntivo imperfetto (past main clause): **fosse**.", "en": "Although it was late, we went out for dinner." },
+        { "id": "C1-CONN-02.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with pur + the gerund of essere.", "prompt": "___ stanco, Luca ha finito il lavoro.", "answers": ["pur essendo"], "focus": ["pur", "essendo"], "errorType": "implicit-form", "traps": [{ "match": "pur essere", "errorType": "implicit-form", "why": "*Pur* is followed by the gerund: *pur essendo*." }, { "match": "pure essendo", "errorType": "implicit-form", "why": "The fixed form is *pur* (shortened) + gerund: *pur essendo*." }], "explanation": "Same subject (Luca… Luca) → **pur** + gerundio.", "en": "Although he was tired, Luca finished the work." },
+        { "id": "C1-CONN-02.e05", "type": "transform", "difficulty": 3, "instruction": "Rewrite with 'anche se'.", "prompt": "Benché faccia freddo, usciamo.", "answers": ["Anche se fa freddo[,] usciamo"], "focus": ["fa"], "errorType": "subjunctive-for-indicative", "traps": [{ "contains": ["faccia"], "errorType": "subjunctive-for-indicative", "why": "*Anche se* takes the indicative: *fa freddo*." }], "explanation": "*Benché* + subjunctive → *anche se* + **indicative**.", "en": "Even though it's cold, we're going out." },
+        { "id": "C1-CONN-02.e06", "type": "transform", "difficulty": 3, "instruction": "Rewrite with pur + gerund.", "prompt": "Anche se era malato, è andato al lavoro.", "answers": ["Pur essendo malato[,] [lui] è andato al lavoro"], "focus": ["pur", "essendo"], "errorType": "implicit-form", "traps": [{ "contains": ["era"], "errorType": "implicit-form", "why": "*Pur* takes the gerund: *pur essendo malato*." }, { "contains": ["essere"], "errorType": "implicit-form", "why": "*Pur* + gerund: *essendo*, not the infinitive." }], "explanation": "Same subject → **pur essendo** + adjective.", "en": "Although he was ill, he went to work." },
+        { "id": "C1-CONN-02.e07", "type": "transform", "difficulty": 3, "instruction": "Rewrite with 'sebbene'.", "prompt": "Anche se studia molto, non prende bei voti.", "answers": ["Sebbene studi molto[,] non prende bei voti"], "focus": ["studi"], "errorType": "indicative-for-subjunctive", "traps": [{ "contains": ["studia"], "errorType": "indicative-for-subjunctive", "why": "*Sebbene* requires the subjunctive: *studi*." }, { "contains": ["prenda"], "errorType": "subjunctive-for-indicative", "why": "Only the *sebbene* clause takes the subjunctive; the main clause stays indicative: *prende*." }], "explanation": "*Sebbene* + congiuntivo presente: *studiare* → **studi**.", "en": "Although he studies a lot, he doesn't get good marks." },
+        { "id": "C1-CONN-02.e08", "type": "choice", "difficulty": 3, "instruction": "Choose the word that can be followed directly by a noun.", "prompt": "___ la pioggia, la partita si è giocata lo stesso.", "options": ["Nonostante", "Sebbene", "Anche se", "Benché"], "answer": 0, "optionWhy": { "1": "*Sebbene* needs a verb: *sebbene piovesse*.", "2": "*Anche se* needs a verb: *anche se pioveva*.", "3": "*Benché* needs a verb: *benché piovesse*." }, "errorType": "connector", "explanation": "Only *nonostante* (and *malgrado*) can take a noun directly: **nonostante la pioggia**.", "en": "Despite the rain, the match went ahead anyway." },
+        { "id": "C1-CONN-02.e09", "type": "choice", "difficulty": 4, "instruction": "Choose the correct form.", "prompt": "Qualora ___ problemi, contatti l'assistenza clienti.", "options": ["ci fossero", "ci sono", "ci saranno", "ci sarebbero"], "answer": 0, "optionWhy": { "1": "*Qualora* always takes the subjunctive.", "2": "*Qualora* doesn't take the future.", "3": "*Qualora* takes the subjunctive, not the conditional." }, "errorType": "indicative-for-subjunctive", "explanation": "*Qualora* ('should / in the event that') + congiuntivo: **ci fossero** (or *ci siano*).", "en": "Should there be any problems, contact customer support." },
+        { "id": "C1-CONN-02.e10", "type": "choice", "difficulty": 4, "instruction": "Choose the right connector.", "prompt": "Il documento va consegnato entro il 30, ___ entro la fine del mese.", "options": ["ossia", "pertanto", "laddove", "ciononostante"], "answer": 0, "optionWhy": { "1": "*Pertanto* = 'therefore', a consequence.", "2": "*Laddove* = 'whereas' or 'where'.", "3": "*Ciononostante* = 'nevertheless'." }, "errorType": "connector", "explanation": "A clarification ('that is') → **ossia** (or *ovvero*).", "en": "The document must be handed in by the 30th, that is, by the end of the month." },
+        { "id": "C1-CONN-02.e11", "type": "cloze", "difficulty": 4, "instruction": "Complete with a formal connector meaning 'therefore'.", "prompt": "Il candidato non possiede i requisiti richiesti; ___, la sua domanda non può essere accolta.", "answers": ["(pertanto|di conseguenza)"], "focus": ["pertanto", "conseguenza"], "errorType": "connector", "traps": [{ "match": "(quindi|perciò|dunque)", "ok": true, "errorType": "register", "why": "Correct meaning, but *pertanto* fits the formal register of an official letter better." }, { "match": "tuttavia", "errorType": "connector", "why": "*Tuttavia* = 'however'. Here the rejection is a consequence: *pertanto*." }], "explanation": "Formal 'therefore' → **pertanto**.", "en": "The candidate does not meet the requirements; therefore, the application cannot be accepted." },
+        { "id": "C1-CONN-02.e12", "type": "cloze", "difficulty": 4, "instruction": "Complete with a formal connector meaning 'nevertheless'.", "prompt": "Il piano era rischioso. ___, il consiglio lo ha approvato.", "answers": ["(ciononostante|ciò nonostante|tuttavia|nondimeno)"], "focus": ["ciononostante", "ciò", "tuttavia", "nondimeno"], "errorType": "connector", "traps": [{ "match": "nonostante", "errorType": "connector", "why": "*Nonostante* alone needs a following noun or clause. At the start of a sentence, 'nevertheless' is *ciononostante* (= *nonostante ciò*)." }, { "match": "pertanto", "errorType": "connector", "why": "*Pertanto* = 'therefore'. Approving a risky plan is a contrast, not a consequence." }], "explanation": "'Nevertheless' → **ciononostante** (or *tuttavia*).", "en": "The plan was risky. Nevertheless, the board approved it." },
+        { "id": "C1-CONN-02.e13", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "Although he is young, he is very experienced.", "answers": ["(Sebbene|Benché|Nonostante|Malgrado) sia giovane[,] (è molto esperto|ha molta esperienza)", "(Pur essendo giovane|Anche se è giovane)[,] (è molto esperto|ha molta esperienza)"], "focus": ["sia", "essendo", "è"], "errorType": "indicative-for-subjunctive", "traps": [{ "match": "(Sebbene|Benché|Nonostante|Malgrado) è giovane[,] (è molto esperto|ha molta esperienza)", "errorType": "indicative-for-subjunctive", "why": "*Sebbene / benché / nonostante* require the subjunctive: *sia giovane*." }, { "match": "Anche se sia giovane[,] (è molto esperto|ha molta esperienza)", "errorType": "subjunctive-for-indicative", "why": "*Anche se* takes the indicative: *anche se è giovane*." }, { "contains": ["sperimentato"], "errorType": "false-friend", "why": "'Experienced' (of a person) is *esperto* or *ha esperienza*." }], "explanation": "*Sebbene / benché / nonostante* + **sia**, or *anche se* + **è**, or *pur essendo*.", "en": "Although he is young, he is very experienced." },
+        { "id": "C1-CONN-02.e14", "type": "translate", "difficulty": 5, "instruction": "Translate into Italian with 'qualora' (formal Lei).", "prompt": "Should you need help, call me.", "answers": ["Qualora (avesse|abbia) bisogno di (aiuto|una mano)[,] mi chiami"], "focus": ["qualora", "avesse", "abbia"], "errorType": "indicative-for-subjunctive", "traps": [{ "contains": ["ha"], "errorType": "indicative-for-subjunctive", "why": "*Qualora* takes the subjunctive: *avesse* or *abbia bisogno*." }, { "contains": ["avrà"], "errorType": "indicative-for-subjunctive", "why": "*Qualora* doesn't take the future: use the subjunctive *avesse*." }, { "contains": ["chiamami", "avessi"], "errorType": "register", "why": "The instruction asks for formal *Lei*: *(Lei) avesse… mi chiami*." }], "explanation": "*Qualora* + congiuntivo (*avesse* / *abbia*), formal imperative *mi chiami*.", "en": "Should you need help, call me." },
+        { "id": "C1-CONN-02.e15", "type": "transform", "difficulty": 3, "instruction": "Make the sentence more formal: replace 'perché' with 'in quanto'.", "prompt": "Non posso firmare perché non sono il responsabile.", "answers": ["Non posso firmare in quanto non sono il responsabile"], "focus": ["quanto"], "errorType": "connector", "traps": [{ "contains": ["sia"], "errorType": "subjunctive-for-indicative", "why": "*In quanto* (causal) takes the indicative: *non sono*." }], "explanation": "*In quanto* = formal 'because / as', with the indicative.", "en": "I can't sign, as I'm not the person in charge." },
+        { "id": "C1-CONN-02.e16", "type": "order", "difficulty": 3, "instruction": "Put the words in order.", "prompt": "Although he was right, he preferred to keep quiet.", "tokens": ["Pur", "avendo", "ragione", "ha", "preferito", "tacere"], "answers": ["Pur avendo ragione ha preferito tacere"], "errorType": "word-order", "explanation": "*Pur* + gerund (*avendo ragione*) opens the sentence; same subject in both clauses." },
+        { "id": "C1-CONN-02.e17", "type": "choice", "difficulty": 5, "instruction": "Choose the formal connector meaning 'whereas'.", "prompt": "Alcuni studi confermano l'ipotesi, ___ altri la smentiscono.", "options": ["laddove", "pertanto", "ossia", "qualora"], "answer": 0, "optionWhy": { "1": "*Pertanto* = 'therefore'.", "2": "*Ossia* = 'that is'.", "3": "*Qualora* = 'if / should' and takes the subjunctive." }, "errorType": "connector", "explanation": "**Laddove** = formal 'whereas' (here equivalent to *mentre*).", "en": "Some studies confirm the hypothesis, whereas others refute it." }
+      ]
+    },
+    {
+      "id": "C1-SYN-01",
+      "title": "Dislocation and cleft sentences",
+      "cefr": "C1",
+      "skill": "grammar",
+      "prereqs": [],
+      "rule": "To put a known topic first, move it to the front and repeat it with a clitic pronoun: La pizza l'ho mangiata, Di libri ne ho comprati tre (the participle agrees). To highlight who or what, use a cleft: È stato Marco a dirmelo / È Marco che me l'ha detto, never chi.",
+      "assessment": [
+        "Fronts a direct object and resumes it with lo / la / li / le, with participle agreement",
+        "Uses ne to resume a partitive topic (Di libri ne ho comprati tre)",
+        "Builds right dislocations typical of speech (L'ho vista ieri, Maria; Ce l'hai la penna?)",
+        "Forms cleft sentences with essere + a + infinitive or essere + che, agreeing essere with the focus"
+      ],
+      "lesson": {
+        "intro": "English mostly marks emphasis with stress and intonation. Italian moves words around. In conversation, the topic often goes first and is then **repeated with a pronoun**: *Il caffè lo prendo amaro*. To single out who did something, Italian uses a **cleft**: *È stato Marco a dirmelo*. Without these patterns your Italian sounds correct but stiff; misuse them and it sounds broken.",
+        "rules": [
+          {
+            "title": "Left dislocation: topic first, pronoun after",
+            "text": "When a direct object moves to the front as the topic, it must be **resumed** by a clitic (*lo, la, li, le*). In compound tenses the participle **agrees** with the pronoun.",
+            "examples": [
+              { "it": "**La pizza l'ho** mangiata ieri.", "en": "The pizza, I ate it yesterday. (= I had the pizza yesterday.)" },
+              { "it": "**Le chiavi le** ho lasciate in macchina.", "en": "I left the keys in the car." },
+              { "it": "**Il caffè lo** prendo senza zucchero.", "en": "I take my coffee without sugar." }
+            ]
+          },
+          {
+            "title": "Partitives with ne, places with ci",
+            "text": "A fronted partitive or quantity (*di libri, di caffè*) is resumed with **ne**, and the participle agrees with the quantity. A fronted place is resumed with **ci**.",
+            "examples": [
+              { "it": "**Di libri ne** ho comprati tre.", "en": "I bought three books." },
+              { "it": "**A Roma ci** vado domani.", "en": "I'm going to Rome tomorrow." }
+            ]
+          },
+          {
+            "title": "Right dislocation: pronoun first, topic after",
+            "text": "Very common in speech: the pronoun comes first and the topic is added at the end, like an afterthought: *L'ho vista ieri, Maria*. Note *Ce l'hai la penna?* ('Have you got the pen?').",
+            "examples": [
+              { "it": "**Non l'ho mai capita, questa regola.**", "en": "I've never understood this rule." },
+              { "it": "**Ce l'hai** la macchina oggi?", "en": "Have you got the car today?" }
+            ]
+          },
+          {
+            "title": "Cleft sentences (frasi scisse)",
+            "text": "To focus on one element: *essere* + focus + **a** + infinitive (implicit) or + **che** + finite verb (explicit). For past events use *è stato / è stata / sono stati*, agreeing with the focus. Never *chi* here. Common fixed clefts: *È per questo che…*, *È qui che…*.",
+            "examples": [
+              { "it": "**È stato Marco a** dirmelo.", "en": "It was Marco who told me." },
+              { "it": "**Sono state** Giulia e Paola **a** organizzare la festa.", "en": "It was Giulia and Paola who organised the party." },
+              { "it": "**È per questo che** ti ho chiamato.", "en": "That's why I called you." }
+            ],
+            "table": {
+              "head": ["Pattern", "Example"],
+              "rows": [
+                ["è stato/a + noun + a + infinitive", "È stata Anna a rompere il vaso."],
+                ["è + noun + che + indicative", "È Anna che ha rotto il vaso."],
+                ["sono + io/tu… + che + matching verb", "Sono io che ho pagato."],
+                ["è + adverbial + che", "È qui che ci siamo conosciuti."]
+              ]
+            }
+          }
+        ],
+        "mistakes": [
+          { "wrong": "La pizza ho mangiato.", "right": "La pizza l'ho mangiata.", "why": "A fronted object must be resumed by a pronoun, and the participle then agrees." },
+          { "wrong": "La lettera l'ho scritto.", "right": "La lettera l'ho scritta.", "why": "*L'* stands for *la* (feminine), so the participle agrees: *scritta*." },
+          { "wrong": "È Marco chi me l'ha detto.", "right": "È Marco che me l'ha detto. / È stato Marco a dirmelo.", "why": "Cleft sentences use *che* (or *a* + infinitive), never *chi*." },
+          { "wrong": "È stato Giulia a chiamare.", "right": "È stata Giulia a chiamare.", "why": "*Stato* agrees with the focus: *stata Giulia*, *stati loro*." },
+          { "wrong": "Sono io che ha pagato.", "right": "Sono io che ho pagato.", "why": "The verb after *che* agrees with the focused pronoun (*io → ho*)." }
+        ],
+        "tips": [
+          "Dislocation is natural in speech and informal writing; in formal reports prefer plain word order or the passive.",
+          "Hear a fronted noun? Expect a pronoun right after it: *Il libro… lo*, *Di soldi… ne*.",
+          "The *a* + infinitive cleft (*È stato lui a farlo*) is more elegant than the *che* version in writing."
+        ]
+      },
+      "exercises": [
+        { "id": "C1-SYN-01.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the resumptive pronoun.", "prompt": "Il caffè ___ prendo senza zucchero.", "answers": ["lo"], "focus": ["lo"], "errorType": "pronoun", "traps": [{ "match": "gli", "errorType": "pronoun", "why": "*Il caffè* is a direct object: *lo*." }, { "match": "ne", "errorType": "ci-ne", "why": "*Ne* is for partitives (*di caffè ne bevo tanto*). A definite object takes *lo*." }], "explanation": "Fronted direct object (*il caffè*) → resumed by **lo**.", "en": "I take my coffee without sugar." },
+        { "id": "C1-SYN-01.e02", "type": "cloze", "difficulty": 2, "instruction": "Complete with the resumptive pronoun.", "prompt": "Le chiavi ___ ho lasciate in macchina.", "answers": ["le"], "focus": ["le"], "errorType": "pronoun", "traps": [{ "match": "li", "errorType": "pronoun", "why": "*Le chiavi* is feminine plural: *le*." }, { "match": "la", "errorType": "pronoun", "why": "*Le chiavi* is plural: *le*." }], "explanation": "Feminine plural object → **le** (and the participle *lasciate* agrees).", "en": "I left the keys in the car." },
+        { "id": "C1-SYN-01.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the resumptive pronoun.", "prompt": "Di libri, ___ ho comprati tre.", "answers": ["ne"], "focus": ["ne"], "errorType": "ci-ne", "traps": [{ "match": "li", "errorType": "ci-ne", "why": "With a quantity (*tre*), the partitive pronoun is *ne*: *ne ho comprati tre*." }], "explanation": "Partitive topic + quantity → **ne**.", "en": "As for books, I bought three." },
+        { "id": "C1-SYN-01.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the past participle of the verb in brackets.", "prompt": "La lettera l'ho ___ (scrivere) ieri sera.", "answers": ["scritta"], "focus": ["scritta"], "errorType": "agreement", "traps": [{ "match": "scritto", "errorType": "agreement", "why": "*L'* stands for *la (lettera)*, so the participle agrees: *scritta*." }], "explanation": "A direct object pronoun before *avere* → participle agrees: **scritta**.", "en": "I wrote the letter last night." },
+        { "id": "C1-SYN-01.e05", "type": "transform", "difficulty": 2, "instruction": "Put 'quel film' at the start of the sentence.", "prompt": "Ho già visto quel film.", "answers": ["Quel film l'ho già visto"], "focus": ["l'ho", "visto"], "errorType": "pronoun", "traps": [{ "match": "Quel film ho già visto", "errorType": "pronoun", "why": "A fronted object needs a resumptive pronoun: *Quel film l'ho già visto*." }, { "match": "Quel film lo ho già visto", "ok": true, "errorType": "pronoun", "why": "Correct but unusual: *lo ho* is normally elided to *l'ho*." }], "explanation": "Topic first + resumptive *lo* (elided to *l'*): **Quel film l'ho già visto**.", "en": "I've already seen that film." },
+        { "id": "C1-SYN-01.e06", "type": "transform", "difficulty": 3, "instruction": "Rewrite starting with 'Di caffè…'.", "prompt": "Ho bevuto due caffè.", "answers": ["Di caffè ne ho bevuti due"], "focus": ["ne", "bevuti"], "errorType": "ci-ne", "traps": [{ "match": "Di caffè ne ho bevuto due", "errorType": "agreement", "why": "With *ne* + quantity, the participle agrees with what's counted: *bevuti* (two coffees). *Bevuto* is common in speech but not standard." }, { "match": "Di caffè ho bevuto due", "errorType": "ci-ne", "why": "The fronted partitive must be resumed by *ne*." }, { "match": "Di caffè li ho bevuti due", "errorType": "ci-ne", "why": "With a quantity, use *ne*, not *li*." }], "explanation": "Partitive topic → **ne**, participle agreeing with the quantity: *bevuti*.", "en": "I've had two coffees." },
+        { "id": "C1-SYN-01.e07", "type": "transform", "difficulty": 3, "instruction": "Rewrite as a cleft sentence to stress who did it.", "prompt": "Marco mi ha detto la verità.", "answers": ["È stato Marco a dirmi la verità", "È stato Marco che mi ha detto la verità", "È Marco che mi ha detto la verità"], "focus": ["stato", "a", "che"], "errorType": "word-order", "traps": [{ "contains": ["chi"], "errorType": "relative", "why": "Cleft sentences use *che* or *a* + infinitive, never *chi*." }], "explanation": "Cleft: **È stato Marco a** + infinitive (or *che* + verb).", "en": "It was Marco who told me the truth." },
+        { "id": "C1-SYN-01.e08", "type": "transform", "difficulty": 4, "instruction": "Rewrite as a cleft sentence with 'a' + infinitive.", "prompt": "Giulia e Paola hanno organizzato la festa.", "answers": ["Sono state Giulia e Paola (a|ad) organizzare la festa"], "focus": ["sono", "state"], "errorType": "agreement", "traps": [{ "contains": ["è"], "errorType": "agreement", "why": "The focus is plural (*Giulia e Paola*), so *essere* is plural: *sono state*." }, { "contains": ["stati"], "errorType": "agreement", "why": "Giulia and Paola are both women: *state*." }, { "contains": ["organizzato"], "errorType": "implicit-form", "why": "The *a* version takes the infinitive: *a organizzare*." }], "explanation": "Plural feminine focus → **Sono state** Giulia e Paola **a** organizzare.", "en": "It was Giulia and Paola who organised the party." },
+        { "id": "C1-SYN-01.e09", "type": "choice", "difficulty": 1, "instruction": "Choose the correct form.", "prompt": "___ per questo che ti ho chiamato.", "options": ["È", "Sono", "C'è", "Ha"], "answer": 0, "optionWhy": { "1": "The fixed cleft is singular: *È per questo che…*.", "2": "*C'è* means 'there is'.", "3": "Clefts use *essere*." }, "errorType": "word-order", "explanation": "Fixed cleft: **È per questo che…** = 'That's why…'.", "en": "That's why I called you." },
+        { "id": "C1-SYN-01.e10", "type": "choice", "difficulty": 3, "instruction": "Choose the natural spoken way to ask 'Have you got the car?'.", "prompt": "___ la macchina oggi?", "options": ["Ce l'hai", "Ce hai", "La hai", "Ci la hai"], "answer": 0, "optionWhy": { "1": "With *avere* meaning 'to have got', speech adds *ci* + the object pronoun: *ce l'hai*.", "2": "*La* before *hai* elides (*l'hai*), and spoken Italian adds *ce*: *ce l'hai*.", "3": "*Ci* becomes *ce* before *lo / la*: *ce l'hai*." }, "errorType": "pronoun", "explanation": "Right dislocation with *averci*: **Ce l'hai** la macchina?", "en": "Have you got the car today?" },
+        { "id": "C1-SYN-01.e11", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian using a cleft sentence.", "prompt": "It was my sister who told me.", "answers": ["È stata mia sorella a dirmelo", "È stata mia sorella che me l'ha detto", "È mia sorella che me l'ha detto"], "focus": ["stata", "a", "che"], "errorType": "agreement", "traps": [{ "contains": ["chi"], "errorType": "relative", "why": "Clefts use *che* or *a* + infinitive, never *chi*." }, { "match": "È stato mia sorella (a dirmelo|che me l'ha detto)", "errorType": "agreement", "why": "*Stato* agrees with the focus: *è stata mia sorella*." }, { "match": "Era mia sorella (a dirmelo|che me l'ha detto|chi me l'ha detto)", "errorType": "wrong-tense", "why": "For a completed past event, the cleft uses *è stata*, not *era*." }], "explanation": "**È stata** mia sorella **a** dirmelo (or *che me l'ha detto*).", "en": "It was my sister who told me." },
+        { "id": "C1-SYN-01.e12", "type": "translate", "difficulty": 4, "instruction": "Translate, putting 'those books' first.", "prompt": "I've already read those books.", "answers": ["Quei libri li ho già letti"], "focus": ["li", "letti"], "errorType": "pronoun", "traps": [{ "match": "Quei libri ho già letto", "errorType": "pronoun", "why": "A fronted object is resumed by a pronoun: *li ho già letti*." }, { "match": "Quei libri li ho già letto", "errorType": "agreement", "why": "With *li* before *avere*, the participle agrees: *letti*." }, { "contains": ["questi"], "errorType": "vocabulary", "why": "'Those' = *quei*; *questi* = 'these'." }], "explanation": "Topic + *li* + participle agreeing (*letti*).", "en": "I've already read those books." },
+        { "id": "C1-SYN-01.e13", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "I'm going to Rome tomorrow (Rome is the topic).", "tokens": ["A", "Roma", "ci", "vado", "domani"], "answers": ["A Roma ci vado domani"], "errorType": "word-order", "explanation": "Fronted place (*a Roma*) resumed by **ci**." },
+        { "id": "C1-SYN-01.e14", "type": "transform", "difficulty": 4, "instruction": "Rewrite with right dislocation: pronoun first, 'questa regola' at the end.", "prompt": "Non ho mai capito questa regola.", "answers": ["Non l'ho mai capita[,] questa regola"], "focus": ["capita"], "errorType": "agreement", "traps": [{ "match": "Non l'ho mai capito[,] questa regola", "errorType": "agreement", "why": "*L'* = *la (regola)*, so the participle agrees: *capita*." }, { "match": "Non ho mai capito[,] questa regola", "errorType": "pronoun", "why": "Right dislocation needs the pronoun in the main clause: *Non l'ho mai capita*." }], "explanation": "Pronoun *l'* (= *la*) in the clause, topic at the end; participle agrees: **capita**.", "en": "I've never understood this rule." },
+        { "id": "C1-SYN-01.e15", "type": "speak", "difficulty": 4, "instruction": "Say it in Italian with a cleft sentence.", "prompt": "Correct someone: it wasn't Luca who broke the vase, it was Anna.", "answers": ["Non è stato Luca a rompere il vaso[,] (è stata Anna|ma Anna)", "Non è stato Luca che ha rotto il vaso[,] (è stata Anna|ma Anna)"], "focus": ["stato", "stata"], "errorType": "agreement", "traps": [{ "contains": ["chi"], "errorType": "relative", "why": "Clefts use *a* + infinitive or *che*, never *chi*." }, { "match": "Non è stato Luca a rompere il vaso[,] è stato Anna", "errorType": "agreement", "why": "Anna is a woman: *è stata Anna*." }], "explanation": "*Non è stato Luca a* + infinitive, *è stata Anna*: *stato / stata* agrees with each focus.", "en": "It wasn't Luca who broke the vase, it was Anna." },
+        { "id": "C1-SYN-01.e16", "type": "choice", "difficulty": 5, "instruction": "Which cleft sentence is correct standard Italian?", "prompt": "Choose the correct sentence.", "options": ["Sono io che ho pagato il conto.", "Sono io che ha pagato il conto.", "È io che ho pagato il conto.", "Sono io chi ho pagato il conto."], "answer": 0, "optionWhy": { "1": "Heard in speech, but in standard Italian the verb agrees with *io*: *ho pagato*.", "2": "*Essere* agrees with *io*: *sono io*.", "3": "Clefts use *che*, not *chi*." }, "errorType": "agreement", "explanation": "*Sono io* + *che* + verb agreeing with *io*: **ho pagato**.", "en": "I'm the one who paid the bill." },
+        { "id": "C1-SYN-01.e17", "type": "cloze", "difficulty": 5, "instruction": "Complete with the resumptive pronoun (spoken register).", "prompt": "A tuo fratello, ___ hai già parlato?", "answers": ["gli"], "focus": ["gli"], "errorType": "pronoun", "traps": [{ "match": "lo", "errorType": "pronoun", "why": "*Parlare a qualcuno*: the person is an indirect object, so *gli*." }, { "match": "ci", "errorType": "ci-ne", "why": "*Ci* resumes places or *a* + thing. A person (*a tuo fratello*) takes *gli*." }], "explanation": "Fronted indirect object (*a tuo fratello*) resumed by **gli**: typical of spoken Italian.", "en": "Have you spoken to your brother yet?" }
+      ]
+    },
+    {
+      "id": "C1-SYN-02",
+      "title": "Nominalisation and formal style",
+      "cefr": "C1",
+      "skill": "grammar",
+      "prereqs": ["B2-PASS-01"],
+      "rule": "Formal written Italian prefers nouns to verbs: dopo che il treno è arrivato → dopo l'arrivo del treno; il governo ha deciso → la decisione del governo. The subject becomes di / da parte di, adverbs become adjectives, and verbs like procedere a, provvedere a, effettuare carry the action (Si procede alla verifica).",
+      "assessment": [
+        "Forms nouns from verbs with the right suffix (-zione, -mento, -enza, -tura, zero suffix)",
+        "Turns subordinate clauses into prepositional noun phrases (dopo l'arrivo, a causa dell'aumento, al termine di)",
+        "Uses formal support verbs (procedere a, provvedere a, effettuare) and impersonal si in reports",
+        "Avoids calques and wrong collocations (fare una decisione, basato a Milano)"
+      ],
+      "lesson": {
+        "intro": "Open any Italian report, news article or official letter and you'll see far more nouns than in speech: *in seguito all'approvazione del bilancio*, *si procede alla verifica*. This nominal style is what makes written Italian sound formal and compact. English does it too ('following the approval of…'), but Italian goes further, and the noun forms, prepositions and collocations need to be exact.",
+        "rules": [
+          {
+            "title": "Verb → noun",
+            "text": "Learn the noun with its verb. Common patterns: *-zione* (decidere → decisione, approvare → approvazione), *-mento* (aumentare → aumento, cambiare → cambiamento), *-enza / -anza* (partire → partenza), *-tura* (chiudere → chiusura), and the zero suffix (arrivare → arrivo, verificare → verifica, scegliere → scelta, spendere → spesa).",
+            "table": {
+              "head": ["Verb", "Noun"],
+              "rows": [
+                ["decidere", "la decisione"],
+                ["arrivare / partire", "l'arrivo / la partenza"],
+                ["verificare", "la verifica"],
+                ["ridurre / aumentare", "la riduzione / l'aumento"],
+                ["chiudere / aprire", "la chiusura / l'apertura"],
+                ["approvare", "l'approvazione"],
+                ["dimettersi", "le dimissioni (plural)"],
+                ["completare", "il completamento"]
+              ]
+            }
+          },
+          {
+            "title": "Clause → prepositional phrase",
+            "text": "Replace a subordinate clause with a preposition + noun: *dopo che / quando* → *dopo, al termine di*; *perché* → *a causa di, in seguito a, per via di*; *prima che* → *prima di*. The old subject becomes a **di** complement.",
+            "examples": [
+              { "it": "Dopo che il treno è arrivato… → **Dopo l'arrivo del treno**…", "en": "After the train arrived… → After the train's arrival…" },
+              { "it": "Poiché i prezzi sono aumentati… → **A causa dell'aumento dei prezzi**…", "en": "Because prices rose… → Due to the rise in prices…" }
+            ]
+          },
+          {
+            "title": "Subject → di / da parte di; adverb → adjective",
+            "text": "*Il governo ha deciso* → *la decisione del governo* (or *da parte del governo*). An adverb becomes an adjective: *ridurre drasticamente* → *una drastica riduzione*.",
+            "examples": [
+              { "it": "**La decisione del comune** di chiudere la piscina ha suscitato proteste.", "en": "The council's decision to close the pool caused protests." },
+              { "it": "C'è stata **una drastica riduzione** dei prezzi.", "en": "There has been a drastic price reduction." }
+            ]
+          },
+          {
+            "title": "Formal support verbs and impersonal si",
+            "text": "Reports and notices often use a general verb + action noun: *procedere a* (to proceed with), *provvedere a* (to see to), *effettuare* (to carry out), *svolgere*. Combined with impersonal *si*: *Si procede alla verifica dei dati*, *Si è provveduto all'invio della fattura*.",
+            "examples": [
+              { "it": "**Si procede alla verifica** dei dati.", "en": "The data are now being checked." },
+              { "it": "**Si è provveduto all'invio** della fattura.", "en": "The invoice has been sent." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Dobbiamo fare una decisione.", "right": "Dobbiamo prendere una decisione.", "why": "Collocation: in Italian you *prendere* (take) a decision." },
+          { "wrong": "L'azienda è basata a Milano.", "right": "L'azienda ha sede a Milano.", "why": "Calque of 'based in'. *Basato su* is fine for ideas (*un film basato su una storia vera*), but for companies say *ha sede a*." },
+          { "wrong": "Prima della partita, controllate i documenti.", "right": "Prima della partenza, controllate i documenti.", "why": "*Partenza* = departure; *partita* = match, game." },
+          { "wrong": "Dopo la dimissione del direttore…", "right": "Dopo le dimissioni del direttore…", "why": "'Resignation' is always plural in Italian: *le dimissioni*." },
+          { "wrong": "Dopo il treno è arrivato, siamo saliti.", "right": "Dopo che il treno è arrivato… / Dopo l'arrivo del treno…", "why": "*Dopo* + clause needs *che*; or nominalise: *dopo l'arrivo*." }
+        ],
+        "tips": [
+          "Don't overdo it: three nominalisations in one sentence is bureaucratic (*burocratese*). Use it in reports and formal emails, not in chat.",
+          "When you learn a verb, learn its noun too: *aumentare – l'aumento*, *ridurre – la riduzione*.",
+          "*A causa di* is neutral or negative; *grazie a* is positive: *grazie all'introduzione del lavoro agile*."
+        ]
+      },
+      "exercises": [
+        { "id": "C1-SYN-02.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the noun formed from the verb in brackets.", "prompt": "Il governo ha preso la ___ (decidere) di abbassare le tasse.", "answers": ["decisione"], "focus": ["decisione"], "errorType": "word-formation", "traps": [{ "match": "decidenza", "errorType": "word-formation", "why": "The noun from *decidere* is *decisione*." }], "explanation": "*Decidere* → **la decisione**; collocation *prendere una decisione*.", "en": "The government made the decision to lower taxes." },
+        { "id": "C1-SYN-02.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the noun formed from the verb in brackets.", "prompt": "Dopo l'___ (arrivare) del treno, i passeggeri sono scesi.", "answers": ["arrivo"], "focus": ["arrivo"], "errorType": "word-formation", "traps": [{ "match": "arrivata", "errorType": "word-formation", "why": "*L'arrivata* isn't used. The noun is *l'arrivo*." }], "explanation": "*Arrivare* → **l'arrivo** (zero suffix).", "en": "After the train's arrival, the passengers got off." },
+        { "id": "C1-SYN-02.e03", "type": "choice", "difficulty": 2, "instruction": "Choose the right verb.", "prompt": "Dobbiamo ___ una decisione entro domani.", "options": ["prendere", "fare", "dare", "avere"], "answer": 0, "optionWhy": { "1": "Calque of 'make a decision'. In Italian you *prendere* a decision.", "2": "*Dare una decisione* isn't idiomatic.", "3": "*Avere una decisione* isn't idiomatic." }, "errorType": "collocation", "explanation": "Collocation: **prendere** una decisione.", "en": "We have to make a decision by tomorrow." },
+        { "id": "C1-SYN-02.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the noun formed from the verb in brackets.", "prompt": "Prima della ___ (partire), controllate i documenti.", "answers": ["partenza"], "focus": ["partenza"], "errorType": "word-formation", "traps": [{ "match": "partita", "errorType": "false-friend", "why": "*Partita* = match / game. Departure is *partenza*." }], "explanation": "*Partire* → **la partenza**.", "en": "Before departure, check your documents." },
+        { "id": "C1-SYN-02.e05", "type": "transform", "difficulty": 3, "instruction": "Replace the 'dopo che' clause with a noun phrase.", "prompt": "Dopo che la riunione è finita, abbiamo pranzato.", "answers": ["(Dopo la fine|Alla fine|Al termine) della riunione[,] abbiamo pranzato"], "focus": ["fine", "termine"], "errorType": "word-formation", "traps": [{ "contains": ["finita"], "errorType": "word-formation", "why": "Turn the verb into a noun: *la fine* or *il termine della riunione*." }, { "contains": ["di"], "errorType": "preposition", "why": "*Di* + *la* combines: *della riunione*." }], "explanation": "*Dopo che la riunione è finita* → **Dopo la fine / Al termine della riunione**.", "en": "After the meeting ended, we had lunch." },
+        { "id": "C1-SYN-02.e06", "type": "transform", "difficulty": 3, "instruction": "Replace the 'poiché' clause with 'A causa di…' + noun.", "prompt": "Poiché i prezzi sono aumentati, le vendite sono calate.", "answers": ["A causa dell'aumento dei prezzi[,] le vendite sono calate"], "focus": ["aumento"], "errorType": "word-formation", "traps": [{ "match": "A causa di l'aumento dei prezzi[,] le vendite sono calate", "errorType": "preposition", "why": "*Di* + *l'* combines: *dell'aumento*." }, { "contains": ["aumentazione"], "errorType": "word-formation", "why": "The noun from *aumentare* is *l'aumento*." }, { "match": ["In seguito all'aumento dei prezzi[,] le vendite sono calate", "Per via dell'aumento dei prezzi[,] le vendite sono calate"], "ok": true, "errorType": "connector", "why": "Correct and formal. The task asked for *a causa di*." }], "explanation": "*Aumentare* → *l'aumento*; *a causa di + l'* → **a causa dell'aumento**.", "en": "Due to the rise in prices, sales fell." },
+        { "id": "C1-SYN-02.e07", "type": "transform", "difficulty": 3, "instruction": "Rewrite in formal style: 'Si procede alla…' + noun.", "prompt": "Verifichiamo i dati.", "answers": ["Si procede alla verifica dei dati"], "focus": ["alla", "verifica"], "errorType": "word-formation", "traps": [{ "match": "Si procede a la verifica dei dati", "errorType": "preposition", "why": "*A* + *la* combines: *alla verifica*." }, { "match": "Si procede alla verificazione dei dati", "errorType": "word-formation", "why": "*Verificazione* is rare; the usual noun is *la verifica*." }, { "match": "Si procede con la verifica dei dati", "ok": true, "errorType": "preposition", "why": "Also used. The classic formal pattern is *procedere a*: *si procede alla verifica*." }], "explanation": "*Procedere a* + action noun: **Si procede alla verifica dei dati**.", "en": "The data are now being checked." },
+        { "id": "C1-SYN-02.e08", "type": "transform", "difficulty": 4, "instruction": "Turn the sentence into a noun phrase and use it as the subject of '… ha suscitato proteste'.", "prompt": "Il comune ha deciso di chiudere la piscina.", "answers": ["La decisione del comune di chiudere la piscina ha suscitato proteste", "La chiusura della piscina decisa dal comune ha suscitato proteste"], "focus": ["decisione", "chiusura"], "errorType": "word-formation", "traps": [{ "contains": ["deciso"], "errorType": "word-formation", "why": "Turn the verb into a noun: *la decisione del comune*." }, { "match": "La decisione dal comune di chiudere la piscina ha suscitato proteste", "errorType": "preposition", "why": "The subject of the action becomes a *di* complement: *del comune*." }], "explanation": "*Il comune ha deciso* → **la decisione del comune** (subject → *di*).", "en": "The council's decision to close the pool caused protests." },
+        { "id": "C1-SYN-02.e09", "type": "choice", "difficulty": 3, "instruction": "Choose the most formal, written version of 'Abbiamo mandato la fattura'.", "prompt": "Abbiamo mandato la fattura.", "options": ["Si è provveduto all'invio della fattura.", "Abbiamo spedito la fattura.", "La fattura l'abbiamo mandata.", "Ci si è mandati la fattura."], "answer": 0, "optionWhy": { "1": "Correct but neutral, not formal.", "2": "Dislocation is typical of speech, not formal writing.", "3": "Ungrammatical, and *ci si* is for reflexive verbs." }, "errorType": "register", "explanation": "*Provvedere a* + noun + impersonal *si* = formal report style.", "en": "The invoice has been sent." },
+        { "id": "C1-SYN-02.e10", "type": "cloze", "difficulty": 4, "instruction": "Complete with the noun formed from the verb in brackets.", "prompt": "La ___ (ridurre) dei costi è la nostra priorità.", "answers": ["riduzione"], "focus": ["riduzione"], "errorType": "word-formation", "traps": [{ "match": ["riducimento", "riduzimento", "riducenza"], "errorType": "word-formation", "why": "*Ridurre* (from Latin *reducere*) → *la riduzione*, like *produrre → produzione*." }], "explanation": "*Ridurre* → **la riduzione** (cf. *produrre → produzione, tradurre → traduzione*).", "en": "Cutting costs is our priority." },
+        { "id": "C1-SYN-02.e11", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "The company is based in Milan.", "answers": ["(L'azienda|La società|La ditta) ha (sede|la sua sede|la propria sede) a Milano"], "focus": ["sede"], "errorType": "collocation", "traps": [{ "contains": ["basata"], "errorType": "collocation", "why": "Calque of 'based in'. For companies, Italian says *ha sede a Milano*." }, { "match": "(L'azienda|La società|La ditta) si trova a Milano", "ok": true, "errorType": "collocation", "why": "Correct and simple. The formal idiom is *ha sede a*." }, { "contains": ["in"], "errorType": "preposition", "why": "With cities, use *a*: *a Milano*." }], "explanation": "'Based in' (company) → **ha sede a**.", "en": "The company is based in Milan." },
+        { "id": "C1-SYN-02.e12", "type": "transform", "difficulty": 4, "instruction": "Rewrite as 'C'è stata una … riduzione dei prezzi', turning the adverb into an adjective.", "prompt": "I prezzi sono stati ridotti drasticamente.", "answers": ["C'è stata una (drastica riduzione|riduzione drastica) dei prezzi"], "focus": ["drastica", "riduzione"], "errorType": "word-formation", "traps": [{ "contains": ["drasticamente"], "errorType": "word-formation", "why": "With a noun, the adverb becomes an adjective: *una drastica riduzione*." }, { "contains": ["drastico"], "errorType": "agreement", "why": "The adjective agrees with *riduzione* (feminine): *drastica*." }], "explanation": "Adverb → adjective: *drasticamente* → **una drastica riduzione**.", "en": "There has been a drastic price reduction." },
+        { "id": "C1-SYN-02.e13", "type": "order", "difficulty": 3, "instruction": "Put the words in order.", "prompt": "The account has been closed. (formal report style)", "tokens": ["Si", "è", "proceduto", "alla", "chiusura", "del", "conto"], "answers": ["Si è proceduto alla chiusura del conto"], "errorType": "word-order", "explanation": "Impersonal *si* + *procedere a* + action noun (*chiusura*)." },
+        { "id": "C1-SYN-02.e14", "type": "choice", "difficulty": 5, "instruction": "Choose the correct nominalisation of 'Dopo che il direttore si è dimesso…'.", "prompt": "___, l'azienda ha cambiato strategia.", "options": ["Dopo le dimissioni del direttore", "Dopo la dimissione del direttore", "Dopo il dimettersi del direttore", "Dopo le dimissioni dal direttore"], "answer": 0, "optionWhy": { "1": "'Resignation' is always plural: *le dimissioni*.", "2": "The nominalised infinitive is unnatural here; the noun is *le dimissioni*.", "3": "The person resigning is a *di* complement: *del direttore*." }, "errorType": "word-formation", "explanation": "*Dimettersi* → **le dimissioni** (plural), subject → *del direttore*.", "en": "After the director's resignation, the company changed strategy." },
+        { "id": "C1-SYN-02.e15", "type": "transform", "difficulty": 5, "instruction": "Replace the 'quando' clause with a noun phrase starting with 'Al…'.", "prompt": "Quando i lavori saranno completati, l'edificio riaprirà.", "answers": ["(Al completamento|Al termine) dei lavori[,] l'edificio riaprirà"], "focus": ["completamento", "termine"], "errorType": "word-formation", "traps": [{ "contains": ["completazione"], "errorType": "word-formation", "why": "The noun from *completare* is *il completamento*." }, { "contains": ["completati"], "errorType": "word-formation", "why": "Turn the verb into a noun: *al completamento dei lavori*." }], "explanation": "*Quando… saranno completati* → **Al completamento / Al termine dei lavori**.", "en": "When the work is completed, the building will reopen." },
+        { "id": "C1-SYN-02.e16", "type": "translate", "difficulty": 5, "instruction": "Translate into Italian using a noun as the subject.", "prompt": "The approval of the budget has been postponed.", "answers": ["L'approvazione del (bilancio|budget) è stata (rinviata|rimandata|posticipata)"], "focus": ["approvazione", "stata"], "errorType": "word-formation", "traps": [{ "contains": ["venuta"], "errorType": "passive", "why": "No *venire* in compound tenses: *è stata rinviata*." }, { "contains": ["rinviato", "rimandato", "posticipato"], "errorType": "agreement", "why": "The subject is *l'approvazione* (feminine): *rinviata*." }, { "contains": ["approvamento"], "errorType": "word-formation", "why": "The noun from *approvare* is *l'approvazione*." }], "explanation": "*Approvare* → **l'approvazione** (feminine), so *è stata rinviata*.", "en": "The approval of the budget has been postponed." }
+      ]
+    }
+  ]
+}

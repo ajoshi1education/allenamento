@@ -1,0 +1,107 @@
+{
+  "id": "G-DLG-04",
+  "type": "dialogue",
+  "title": "Il reclamo",
+  "subtitle": "Your electricity bill is €480 instead of €90. Phone customer service, stay polite, escalate if you must and negotiate a refund.",
+  "conceptIds": ["C1-REG-02", "C1-INT-02", "B2-REG-01"],
+  "difficulty": 4,
+  "minutes": 8,
+  "characters": {
+    "davide": { "name": "Davide", "role": "operatore del servizio clienti LuceViva", "avatar": "🎧" },
+    "galli": { "name": "Elena Galli", "role": "responsabile del servizio clienti", "avatar": "👩‍💼" }
+  },
+  "setting": "Le è arrivata una bolletta della luce di 480 euro invece dei soliti 90, già addebitata sul conto. Chiama il servizio clienti di LuceViva.",
+  "start": "G-DLG-04.n1",
+  "nodes": [
+    {
+      "id": "G-DLG-04.n1", "speaker": "davide", "conceptId": "C1-REG-02", "difficulty": 2,
+      "line": "LuceViva, buongiorno, sono Davide. In cosa posso esserLe utile?",
+      "explanation": "State the problem in a neutral-formal register: *riscontrare un errore*.",
+      "choices": [
+        { "text": "Buongiorno. La chiamo perché ho riscontrato un errore nell'ultima bolletta.", "ok": true, "next": "G-DLG-04.n2" },
+        { "text": "Senta, mi avete fregato con la bolletta!", "ok": false, "errorType": "register", "why": "*Fregare* (rip off) is colloquial and accusatory. Neutral: *ho riscontrato un errore*.", "next": "G-DLG-04.n1b" },
+        { "text": "Ciao Davide, c'è un casino con la mia bolletta.", "ok": false, "errorType": "register", "why": "*Ciao* and *un casino* are far too informal for a customer-service call.", "next": "G-DLG-04.n1b" }
+      ]
+    },
+    {
+      "id": "G-DLG-04.n1b", "speaker": "davide", "conceptId": "C1-REG-02", "difficulty": 2,
+      "line": "Capisco il Suo disappunto, ma La prego di mantenere la calma. Mi spieghi il problema.",
+      "explanation": "Apologise briefly and restate the facts neutrally.",
+      "choices": [
+        { "text": "Ha ragione, mi scusi. Mi è arrivata una bolletta di 480 euro invece dei soliti 90.", "ok": true, "next": "G-DLG-04.n2" },
+        { "text": "Il problema siete voi, punto e basta!", "ok": false, "errorType": "register", "why": "Aggression gives the operator every reason to end the call.", "next": "G-DLG-04.endBad" }
+      ]
+    },
+    {
+      "id": "G-DLG-04.n2", "speaker": "davide",
+      "line": "Mi dispiace. Mi può dare il numero cliente e dirmi l'ultima lettura del contatore?",
+      "item": { "id": "G-DLG-04.i1", "conceptId": "C1-REG-02", "type": "cloze", "difficulty": 3, "interaction": true, "instruction": "Complete the formal expression *fare presente* ('to point out') with the right form of *fare*.", "prompt": "Certo, il numero è 45720. Le ___ (fare) presente che il contatore segnava 3.200 kWh.", "answers": ["faccio"], "focus": ["faccio"], "errorType": "verb-form", "traps": [{ "match": "fa", "errorType": "verb-form", "why": "You're the one pointing it out: first person *(io) faccio*." }, { "match": "fai", "errorType": "verb-form", "why": "*Fai* is the *tu* form. You need *(io) faccio*." }, { "match": "facci", "errorType": "verb-form", "why": "*Fare* → *(io) faccio*." }], "explanation": "*Le faccio presente che…* = I'd like to point out that… (formal)." },
+      "next": "G-DLG-04.n3", "nextFail": "G-DLG-04.n3"
+    },
+    {
+      "id": "G-DLG-04.n3", "speaker": "davide", "conceptId": "C1-INT-02", "difficulty": 3,
+      "line": "Vedo… In effetti la bolletta è stata calcolata su una stima dei consumi. Purtroppo però per il sistema l'importo è corretto.",
+      "explanation": "Acknowledge, then insist courteously: *Capisco, ma… / Mi permetta di insistere*.",
+      "choices": [
+        { "text": "Capisco, ma i consumi stimati non corrispondono a quelli reali. Mi permetta di insistere: vorrei una verifica.", "ok": true, "next": "G-DLG-04.n4" },
+        { "text": "Ah, va bene allora. Pazienza, pago.", "ok": true, "why": "Polite, but you've just accepted paying €390 too much.", "next": "G-DLG-04.endMeh" },
+        { "text": "Lei non capisce niente!", "ok": false, "errorType": "register", "why": "A personal attack. Disagree with the facts, not the person: *Capisco, ma…*", "next": "G-DLG-04.n4b" }
+      ]
+    },
+    {
+      "id": "G-DLG-04.n4", "speaker": "davide",
+      "line": "D'accordo, apro una segnalazione per la verifica. Ci vorranno circa sessanta giorni.",
+      "item": { "id": "G-DLG-04.i2", "conceptId": "C1-REG-02", "type": "speak", "difficulty": 3, "interaction": true, "instruction": "Answer in Italian, politely, using the conditional.", "prompt": "Ask whether it would be possible to suspend the payment in the meantime.", "answers": ["[Nel frattempo ](sarebbe possibile|si potrebbe) sospendere il pagamento[ (nel frattempo|intanto)]", "[Nel frattempo ](potrei|potreste) sospendere il pagamento[ (nel frattempo|intanto)]"], "focus": ["sarebbe", "potrebbe", "potrei", "potreste", "sospendere"], "errorType": "conditional-form", "traps": [{ "contains": ["è", "posso", "può", "potete"], "errorType": "conditional-form", "why": "Grammatically fine, but softer with the conditional: *sarebbe possibile…?*" }, { "contains": ["voglio"], "errorType": "register", "why": "*Voglio* sounds like a demand; ask with *sarebbe possibile*." }], "explanation": "*Sarebbe possibile* + infinitive is the most polite way to make a request on the phone." },
+      "next": "G-DLG-04.n5", "nextFail": "G-DLG-04.n4b"
+    },
+    {
+      "id": "G-DLG-04.n4b", "speaker": "davide", "conceptId": "B2-REG-01", "difficulty": 2,
+      "line": "Mi dispiace, da qui io non posso fare altro.",
+      "explanation": "Escalate politely: ask, in Lei, to speak to a manager.",
+      "choices": [
+        { "text": "Capisco. Allora La prego di passarmi un responsabile.", "ok": true, "next": "G-DLG-04.n5" },
+        { "text": "Allora passami il tuo capo, dai.", "ok": false, "errorType": "register", "why": "*Passami* and *tuo* are *tu* forms, and *dai* is familiar. Lei: *mi passi il Suo responsabile*.", "next": "G-DLG-04.n5" },
+        { "text": "Allora chiudo il contratto e basta!", "ok": false, "errorType": "register", "why": "Threatening instead of escalating means you lose the chance of a refund.", "next": "G-DLG-04.endBad" }
+      ]
+    },
+    {
+      "id": "G-DLG-04.n5", "speaker": "galli", "conceptId": "B2-REG-01", "difficulty": 2,
+      "line": "Buongiorno, sono Elena Galli, responsabile del servizio clienti. Mi dica pure.",
+      "explanation": "New person, same register: greet her formally and introduce the problem.",
+      "choices": [
+        { "text": "Buongiorno, signora Galli. Le spiego brevemente la situazione.", "ok": true, "next": "G-DLG-04.n6" },
+        { "text": "Ciao Elena, allora ti spiego.", "ok": false, "errorType": "register", "why": "First name, *ciao* and *ti*: far too familiar with a manager you've never met.", "next": "G-DLG-04.n6" },
+        { "text": "Buongiorno, signora Galli. La spiego brevemente la situazione.", "ok": false, "errorType": "pronoun", "why": "*Spiegare qualcosa a qualcuno*: indirect object, so *Le spiego*.", "next": "G-DLG-04.n6" }
+      ]
+    },
+    {
+      "id": "G-DLG-04.n6", "speaker": "galli", "conceptId": "C1-INT-02", "difficulty": 4,
+      "line": "Ho verificato: c'è stato effettivamente un errore di stima. Possiamo riemettere la bolletta corretta il mese prossimo.",
+      "explanation": "Thank her, then negotiate: the money has already been taken from your account.",
+      "choices": [
+        { "text": "La ringrazio. Tuttavia l'importo mi è già stato addebitato: mi venga incontro, sarebbe possibile un rimborso immediato?", "ok": true, "next": "G-DLG-04.n7" },
+        { "text": "Perfetto, grazie mille.", "ok": true, "why": "Polite, but you'll wait a month for €390 that's already left your account.", "next": "G-DLG-04.endOk" },
+        { "text": "Rimborsatemi subito, sennò vi denuncio!", "ok": false, "errorType": "register", "why": "A threat in colloquial register (*sennò*) shuts down the negotiation.", "next": "G-DLG-04.endBad" }
+      ]
+    },
+    {
+      "id": "G-DLG-04.n7", "speaker": "galli",
+      "line": "Il rimborso immediato non è previsto… però potrei proporLe un accredito sulla prossima bolletta, più un bonus di 20 euro per il disagio.",
+      "item": { "id": "G-DLG-04.i3", "conceptId": "C1-INT-02", "type": "speak", "difficulty": 4, "interaction": true, "instruction": "Answer in Italian, formally.", "prompt": "Accept the offer, but ask whether she could send you a written confirmation.", "answers": ["(Va bene|D'accordo|Accetto)[ grazie] (ma|però) (potrebbe (mandarmi|inviarmi)|mi potrebbe (mandare|inviare)) una conferma (scritta|per iscritto|via email|per email)"], "focus": ["potrebbe"], "errorType": "conditional-form", "traps": [{ "contains": ["potresti", "mandami", "inviami"], "errorType": "register", "why": "That's the *tu* form. To Ms Galli: *potrebbe inviarmi…?*" }, { "contains": ["può", "puo"], "errorType": "conditional-form", "why": "Fine, but the conditional *potrebbe* is the polite norm for a request." }], "explanation": "Accept + *ma / però* + softened request: *potrebbe inviarmi una conferma scritta?*" },
+      "next": "G-DLG-04.n8", "nextFail": "G-DLG-04.n8"
+    },
+    {
+      "id": "G-DLG-04.n8", "speaker": "galli", "conceptId": "B2-REG-01", "difficulty": 2,
+      "line": "Certamente, Le invio subito un'email di conferma. Posso fare altro per Lei?",
+      "explanation": "Close formally: thank her for her help.",
+      "choices": [
+        { "text": "No, La ringrazio per la disponibilità. Buona giornata.", "ok": true, "next": "G-DLG-04.endGood" },
+        { "text": "No, a posto così. Ciao!", "ok": false, "errorType": "register", "why": "*Ciao* is informal. *La ringrazio, buona giornata* closes the call properly.", "next": "G-DLG-04.endOk" }
+      ]
+    },
+    { "id": "G-DLG-04.endGood", "speaker": "galli", "line": "Grazie a Lei. Buona giornata!", "end": true, "outcome": "Excellent: you stayed calm, escalated politely and negotiated a credit plus a €20 bonus, with written confirmation." },
+    { "id": "G-DLG-04.endOk", "speaker": "galli", "line": "Arrivederci.", "end": true, "outcome": "The bill will be corrected, but you either settled for the slower solution or slipped out of the formal register at the end. Not bad, but you could have got more." },
+    { "id": "G-DLG-04.endMeh", "speaker": "davide", "line": "Perfetto, allora La saluto. Buona giornata.", "end": true, "outcome": "You gave up too soon and paid €390 too much. Concede, then insist: *Capisco, ma… Mi permetta di insistere*." },
+    { "id": "G-DLG-04.endBad", "speaker": "davide", "line": "Mi dispiace, ma in questi toni non posso proseguire la conversazione. Arrivederci.", "end": true, "outcome": "The call was ended. Aggressive or slangy language gave the company an easy way out. Review neutral and formal register and polite disagreement." }
+  ]
+}
