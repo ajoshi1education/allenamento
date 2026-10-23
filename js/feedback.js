@@ -24,7 +24,7 @@ export function context(extra = {}) {
 export function kindOf(text) {
   const t = text.toLowerCase();
   if (/\b(bug|broken|doesn'?t work|not working|error|crash|wrong answer|marked wrong|incorrect|typo|mistake in)\b/.test(t)) return "bug";
-  if (/\b(italian|translation|grammar|answer should|should be accepted|unnatural)\b/.test(t)) return "content";
+  if (/\b(italian|translation|grammar|unnatural)\b|should (also )?be (accepted|correct)|marked (as )?wrong|answer .* should/.test(t)) return "content";
   return "idea";
 }
 
