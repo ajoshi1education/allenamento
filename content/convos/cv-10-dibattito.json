@@ -17,7 +17,7 @@
         "minWords": 10,
         "rubric": [
           { "label": "Argumentative opener", "anyOf": ["\\b(a mio avviso|a mio parere|dal mio punto di vista|secondo me|ritengo|sono convinto|sono convinta|sono dell['’]avviso|personalmente)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "C1-VOC-05", "hint": "*Dal mio punto di vista… / A mio avviso…*" },
-          { "label": "Ritengo che / sono convinto che + subjunctive", "anyOf": ["\\b(ritengo|credo|penso|sono convinto|sono convinta|reputo|trovo|mi sembra)\\s+che\\s+(\\p{L}+\\s+){0,4}(sia|siano|vada|vadano|debba|debbano|possa|possano|abbia|abbiano|serva|servano|occorra|bisogni|porti|portino|rappresenti|rappresentino|danneggi|danneggino|faccia|facciano|stia|stiano|rischi|rischino)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Ritengo che il turismo **vada** regolato.*" }
+          { "label": "Ritengo che / sono convinto che + subjunctive", "anyOf": ["\\b(ritengo|credo|penso|sono convinto|sono convinta|reputo|trovo|mi sembra)\\s+che\\s+(\\p{L}+\\s+){0,4}(sia|siano|vada|vadano|debba|debbano|possa|possano|abbia|abbiano|serva|servano|occorra|bisogni|porti|portino|rappresenti|rappresentino|danneggi|danneggino|faccia|facciano|stia|stiano|rischi|rischino|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Ritengo che il turismo **vada** regolato.*" }
         ]
       },
       "model": "Dal mio punto di vista, sono convinto che il turismo di massa vada regolato, altrimenti i centri storici si svuoteranno.",
@@ -33,7 +33,7 @@
       "expect": {
         "minWords": 12,
         "rubric": [
-          { "label": "Concessive + subjunctive", "anyOf": ["\\b(sebbene|benché|nonostante|malgrado|per quanto|ammesso che|anche ammesso che)\\s+(\\p{L}+\\s+){0,4}(sia|siano|porti|portino|crei|creino|abbia|abbiano|produca|producano|generi|generino|rappresenti|rappresentino|dia|diano|faccia|facciano|garantisca|garantiscano|possa|possano|offra|offrano)\\b"], "min": 1, "errorType": "connector", "conceptId": "C1-CONN-02", "hint": "*Sebbene il turismo **porti** lavoro, …*" }
+          { "label": "Concessive + subjunctive", "anyOf": ["\\b(sebbene|benché|nonostante|malgrado|per quanto|ammesso che|anche ammesso che)\\s+(\\p{L}+\\s+){0,4}(sia|siano|porti|portino|crei|creino|abbia|abbiano|produca|producano|generi|generino|rappresenti|rappresentino|dia|diano|faccia|facciano|garantisca|garantiscano|possa|possano|offra|offrano|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "connector", "conceptId": "C1-CONN-02", "hint": "*Sebbene il turismo **porti** lavoro, …*" }
         ]
       },
       "model": "Sebbene il turismo porti lavoro a molte famiglie, i guadagni spesso finiscono nelle mani di pochi grandi operatori.",

@@ -66,7 +66,7 @@
       "expect": {
         "minWords": 10,
         "rubric": [
-          { "label": "Hedge + che + subjunctive", "anyOf": ["\\b(è probabile|è possibile|può darsi|può anche darsi|non è escluso|immagino|suppongo|credo|penso|mi sembra|ho l['’]impressione)\\s+che\\s+(\\p{L}+\\s+){0,4}(sia|siano|abbia|abbiano|manchino|manchi|possa|possano|servano|serva|costi|costino|debba|debbano|spendano|spenda|investano|investa|vogliano|voglia)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Può darsi che **manchino** i soldi.*" },
+          { "label": "Hedge + che + subjunctive", "anyOf": ["\\b(è probabile|è possibile|può darsi|può anche darsi|non è escluso|immagino|suppongo|credo|penso|mi sembra|ho l['’]impressione)\\s+che\\s+(\\p{L}+\\s+){0,4}(sia|siano|abbia|abbiano|manchino|manchi|possa|possano|servano|serva|costi|costino|debba|debbano|spendano|spenda|investano|investa|vogliano|voglia|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Può darsi che **manchino** i soldi.*" },
           { "label": "Gives a cause", "anyOf": ["\\b(perché|poiché|dato che|visto che|siccome|a causa|per via|per mancanza)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…perché la sicurezza costa.*" }
         ]
       },

@@ -50,7 +50,7 @@
       "expect": {
         "minWords": 9,
         "rubric": [
-          { "label": "Opinion verb + che + subjunctive", "anyOf": ["\\b(penso|credo|mi sembra|mi pare|trovo|ho l['’]impressione)\\s+che\\s+(\\p{L}+\\s+){0,3}(sia|siano|abbia|abbiano|possa|possano|faccia|facciano|funzioni|funzionino|arrivi|arrivino|finisca|manchi|sia stato|sia stata)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Penso che il finale **sia**…*" },
+          { "label": "Opinion verb + che + subjunctive", "anyOf": ["\\b(penso|credo|mi sembra|mi pare|trovo|ho l['’]impressione)\\s+che\\s+(\\p{L}+\\s+){0,3}(sia|siano|abbia|abbiano|possa|possano|faccia|facciano|funzioni|funzionino|arrivi|arrivino|finisca|manchi|sia stato|sia stata|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Penso che il finale **sia**…*" },
           { "label": "Contrast with però / eppure / ma", "anyOf": ["\\b(però|eppure|tuttavia|ma|anche se|comunque)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…però gli attori sono bravissimi.*" }
         ]
       },

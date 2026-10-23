@@ -67,7 +67,7 @@
       "expect": {
         "minWords": 9,
         "rubric": [
-          { "label": "Judgement + che + subjunctive", "anyOf": ["\\b(non mi sembra giusto|non mi pare giusto|non è giusto|è inaccettabile|non è accettabile|mi sembra assurdo|è assurdo|trovo strano|trovo assurdo|non trovo normale|mi stupisce|mi sorprende)\\s+che\\s+(\\p{L}+\\s+){0,4}(sia|siano|debba|debbano|possa|possano|abbia|abbiano|venga|vengano|dorma|resti|stia|funzioni|faccia)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Non mi sembra giusto che io **debba**…*" },
+          { "label": "Judgement + che + subjunctive", "anyOf": ["\\b(non mi sembra giusto|non mi pare giusto|non è giusto|è inaccettabile|non è accettabile|mi sembra assurdo|è assurdo|trovo strano|trovo assurdo|non trovo normale|mi stupisce|mi sorprende)\\s+che\\s+(\\p{L}+\\s+){0,4}(sia|siano|debba|debbano|possa|possano|abbia|abbiano|venga|vengano|dorma|resti|stia|funzioni|faccia|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Non mi sembra giusto che io **debba**…*" },
           { "label": "Concedes then objects (capisco, però…)", "anyOf": ["\\b(però|tuttavia|ma|comunque|eppure)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*Capisco, però…*" }
         ]
       },
