@@ -20,7 +20,7 @@ export async function render(view, { store }) {
         <label class="small">Italian voice<select id="voiceIt"></select></label>
         <label class="small">English voice (instructions)<select id="voiceEn"></select></label>
       </div>
-      <div class="row-actions"><button class="btn small" id="testVoice">🔊 Test the voice</button><button class="btn small" id="testMic" ${speech.hasRecognition() ? "" : "disabled"}>🎤 Test the microphone</button></div>
+      <div class="row-actions"><button class="btn small" id="testBeep">🔔 Test sound</button><button class="btn small" id="testVoice">🔊 Test the voice</button><button class="btn small" id="testMic" ${speech.hasRecognition() ? "" : "disabled"}>🎤 Test the microphone</button></div>
       <p class="small muted" id="audioStatus">Italian voice: ${speech.hasItalianVoice() ? "available ✓" : "none found. Chrome includes 'Google italiano'; on Windows you can add Italian under Settings › Time & language › Speech"} · Speech recognition: ${speech.hasRecognition() ? "available ✓ (Chrome / Edge, needs internet)" : "not available in this browser. Use Chrome or Edge"}</p></div>
     <div class="card"><h3>Daily goal</h3>
       <select id="goal"><option value="20">Relaxed: 20 XP a day (about 5 minutes)</option><option value="50">Regular: 50 XP (about 15 minutes)</option><option value="100">Serious: 100 XP (about 30 minutes)</option><option value="200">Intense: 200 XP (an hour)</option></select></div>
@@ -65,6 +65,17 @@ export async function render(view, { store }) {
   };
   fillVoices();
   if (typeof speechSynthesis !== "undefined") speechSynthesis.addEventListener?.("voiceschanged", fillVoices);
+  // A plain beep: if you can't hear this, Chrome or Windows is muting this site (not an app problem).
+  view.querySelector("#testBeep").onclick = async () => {
+    const st = view.querySelector("#audioStatus");
+    try {
+      const ac = new AudioContext(); await ac.resume();
+      const o = ac.createOscillator(), g = ac.createGain();
+      o.frequency.value = 660; g.gain.setValueAtTime(0.25, ac.currentTime); g.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + 0.8);
+      o.connect(g).connect(ac.destination); o.start(); o.stop(ac.currentTime + 0.8);
+      st.innerHTML = "You should hear a beep. <b>No beep?</b> Sound is muted for this site: right-click this Chrome tab → <i>Unmute site</i>; or click the icon left of the address → <i>Site settings</i> → <i>Sound: Allow</i>; and check the Windows volume mixer (Chrome) and your output device.";
+    } catch (e) { st.textContent = "Couldn't play a test sound: " + e.message; }
+  };
   view.querySelector("#testVoice").onclick = async () => {
     const was = speech.getMode(); if (was === "silent") speech.setMode("listen");
     await speech.sayAll([{ text: "Ciao! Questa è la voce che sentirai durante le lezioni.", lang: "it-IT" }, { text: "And this is the English voice.", lang: "en-GB" }]);
