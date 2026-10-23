@@ -1,33 +1,170 @@
 {
-  "indicative-for-subjunctive": { "label": "Indicative instead of subjunctive", "skill": "grammar" },
-  "subjunctive-for-indicative": { "label": "Subjunctive where Italian needs the indicative", "skill": "grammar" },
-  "verb-form": { "label": "Wrong verb form / conjugation", "skill": "grammar" },
-  "tense-sequence": { "label": "Sequence of tenses (concordanza)", "skill": "grammar" },
-  "wrong-tense": { "label": "Wrong tense", "skill": "grammar" },
-  "wrong-mood": { "label": "Wrong mood (indicative / subjunctive / conditional)", "skill": "grammar" },
-  "conditional-form": { "label": "Conditional form or use", "skill": "grammar" },
-  "hypothetical": { "label": "If-clause (periodo ipotetico)", "skill": "grammar" },
-  "auxiliary": { "label": "Wrong auxiliary (essere / avere)", "skill": "grammar" },
-  "agreement": { "label": "Agreement (gender / number / participle)", "skill": "grammar" },
-  "pronoun": { "label": "Pronoun choice or position", "skill": "grammar" },
-  "preposition": { "label": "Preposition", "skill": "grammar" },
-  "article": { "label": "Article", "skill": "grammar" },
-  "relative": { "label": "Relative pronoun", "skill": "grammar" },
-  "passive": { "label": "Passive / si construction", "skill": "grammar" },
-  "connector": { "label": "Connector / linking word", "skill": "grammar" },
-  "word-order": { "label": "Word order", "skill": "grammar" },
-  "vocabulary": { "label": "Word choice / meaning", "skill": "vocabulary" },
-  "false-friend": { "label": "False friend", "skill": "vocabulary" },
-  "collocation": { "label": "Collocation", "skill": "vocabulary" },
-  "idiom": { "label": "Idiom / fixed expression", "skill": "vocabulary" },
-  "register": { "label": "Register (formal / informal)", "skill": "interaction" },
-  "comprehension": { "label": "Reading or listening comprehension", "skill": "reading" },
-  "listening": { "label": "Listening comprehension", "skill": "listening" },
-  "writing": { "label": "Writing task requirement", "skill": "writing" },
-  "spelling": { "label": "Spelling", "skill": "vocabulary" },
-  "accent": { "label": "Accent marks", "skill": "vocabulary" },
-  "no-answer": { "label": "Skipped / no answer", "skill": "grammar" },
-  "wrong-choice": { "label": "Wrong option", "skill": "grammar" },
-  "infinitive-construction": { "label": "Che + verb vs di + infinitive", "skill": "grammar" },
-  "grammar": { "label": "Grammar (general)", "skill": "grammar" }
+  "indicative-for-subjunctive": {
+    "label": "Indicative instead of subjunctive",
+    "skill": "grammar"
+  },
+  "subjunctive-for-indicative": {
+    "label": "Subjunctive where Italian needs the indicative",
+    "skill": "grammar"
+  },
+  "verb-form": {
+    "label": "Wrong verb form / conjugation",
+    "skill": "grammar"
+  },
+  "tense-sequence": {
+    "label": "Sequence of tenses (concordanza)",
+    "skill": "grammar"
+  },
+  "wrong-tense": {
+    "label": "Wrong tense",
+    "skill": "grammar"
+  },
+  "wrong-mood": {
+    "label": "Wrong mood (indicative / subjunctive / conditional)",
+    "skill": "grammar"
+  },
+  "conditional-form": {
+    "label": "Conditional form or use",
+    "skill": "grammar"
+  },
+  "hypothetical": {
+    "label": "If-clause (periodo ipotetico)",
+    "skill": "grammar"
+  },
+  "auxiliary": {
+    "label": "Wrong auxiliary (essere / avere)",
+    "skill": "grammar"
+  },
+  "agreement": {
+    "label": "Agreement (gender / number / participle)",
+    "skill": "grammar"
+  },
+  "pronoun": {
+    "label": "Pronoun choice or position",
+    "skill": "grammar"
+  },
+  "preposition": {
+    "label": "Preposition",
+    "skill": "grammar"
+  },
+  "article": {
+    "label": "Article",
+    "skill": "grammar"
+  },
+  "relative": {
+    "label": "Relative pronoun",
+    "skill": "grammar"
+  },
+  "passive": {
+    "label": "Passive / si construction",
+    "skill": "grammar"
+  },
+  "connector": {
+    "label": "Connector / linking word",
+    "skill": "grammar"
+  },
+  "word-order": {
+    "label": "Word order",
+    "skill": "grammar"
+  },
+  "vocabulary": {
+    "label": "Word choice / meaning",
+    "skill": "vocabulary"
+  },
+  "false-friend": {
+    "label": "False friend",
+    "skill": "vocabulary"
+  },
+  "collocation": {
+    "label": "Collocation",
+    "skill": "vocabulary"
+  },
+  "idiom": {
+    "label": "Idiom / fixed expression",
+    "skill": "vocabulary"
+  },
+  "register": {
+    "label": "Register (formal / informal)",
+    "skill": "interaction"
+  },
+  "comprehension": {
+    "label": "Reading or listening comprehension",
+    "skill": "reading"
+  },
+  "listening": {
+    "label": "Listening comprehension",
+    "skill": "listening"
+  },
+  "writing": {
+    "label": "Writing task requirement",
+    "skill": "writing"
+  },
+  "spelling": {
+    "label": "Spelling",
+    "skill": "vocabulary"
+  },
+  "accent": {
+    "label": "Accent marks",
+    "skill": "vocabulary"
+  },
+  "no-answer": {
+    "label": "Skipped / no answer",
+    "skill": "grammar"
+  },
+  "wrong-choice": {
+    "label": "Wrong option",
+    "skill": "grammar"
+  },
+  "infinitive-construction": {
+    "label": "Che + verb vs di + infinitive",
+    "skill": "grammar"
+  },
+  "pronoun-position": {
+    "label": "Pronoun position",
+    "skill": "grammar"
+  },
+  "ci-ne": {
+    "label": "Use of ci / ne",
+    "skill": "grammar"
+  },
+  "implicit-form": {
+    "label": "Gerund / participle / infinitive construction",
+    "skill": "grammar"
+  },
+  "causative": {
+    "label": "Causative fare / lasciare",
+    "skill": "grammar"
+  },
+  "reported-speech": {
+    "label": "Reported speech transformation",
+    "skill": "grammar"
+  },
+  "negation": {
+    "label": "Negation",
+    "skill": "grammar"
+  },
+  "discourse-marker": {
+    "label": "Discourse marker",
+    "skill": "interaction"
+  },
+  "word-formation": {
+    "label": "Word formation (prefix / suffix)",
+    "skill": "vocabulary"
+  },
+  "text-structure": {
+    "label": "Text structure / organisation",
+    "skill": "writing"
+  },
+  "task-completion": {
+    "label": "Task not fully completed",
+    "skill": "writing"
+  },
+  "fluency": {
+    "label": "Spoken response",
+    "skill": "speaking"
+  },
+  "grammar": {
+    "label": "Grammar (general)",
+    "skill": "grammar"
+  }
 }
