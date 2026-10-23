@@ -15,10 +15,10 @@ export async function render(view, { store, content }) {
       <li>Mistakes go to your Error Bank like anywhere else.</li>
       <li>It works fully in silent mode.</li></ul>
       <div class="row-actions"><button class="btn primary" data-start>${done ? "Retake the test" : "Start"}</button>
-      ${done ? `<a class="btn ghost" href="#/learn">Back to Learn</a>` : `<button class="btn ghost" data-skip>Skip for now</button>`}</div></div>
+      ${done ? `<a class="btn ghost" href="#/path">Back to the path</a>` : `<button class="btn ghost" data-skip>Skip for now</button>`}</div></div>
     ${last ? `<div class="card"><h3>Last result: ${esc(last.overall || "–")}</h3><p class="small muted">${new Date(last.t).toLocaleDateString()} · ${last.correct}/${last.asked} correct</p></div>` : ""}
     <div id="diag"></div></section>`));
-  view.querySelector("[data-skip]")?.addEventListener("click", async () => { await store.setSetting("diagnosticDone", true); location.hash = "#/learn"; });
+  view.querySelector("[data-skip]")?.addEventListener("click", async () => { await store.setSetting("diagnosticDone", true); location.hash = "#/path"; });
   view.querySelector("[data-start]").addEventListener("click", () => run(view, store, content));
 }
 
@@ -46,11 +46,11 @@ async function run(view, store, content) {
     <div class="card"><h3>Skip what you already know</h3>
       <p class="small muted">You answered these correctly on harder items. Ticked concepts are marked as known and skipped, with a short check-up in 30 days.</p>
       ${known.length ? `<ul class="skip-list">${known.map(id => `<li><label class="toggle"><input type="checkbox" value="${esc(id)}" checked> ${esc(content.concepts.get(id)?.title || id)} <span class="cid">${esc(id)}</span></label></li>`).join("")}</ul>` : `<p>Nothing to skip yet. Starting from the top is a good plan.</p>`}
-      <div class="row-actions"><button class="btn primary" data-save>Save and go to Learn</button></div></div>`;
+      <div class="row-actions"><button class="btn primary" data-save>Save and go to the path</button></div></div>`;
   page.querySelector("[data-save]").addEventListener("click", async () => {
     const ids = [...page.querySelectorAll(".skip-list input:checked")].map(i => i.value);
     for (const id of ids) await store.setKnown(id, "known", 30);
     toast(ids.length ? `${ids.length} concept${ids.length > 1 ? "s" : ""} marked as known` : "Saved");
-    location.hash = "#/learn";
+    location.hash = "#/path";
   });
 }

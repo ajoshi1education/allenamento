@@ -6,17 +6,21 @@ import { createStore } from "./store.js";
 import { now } from "./core/clock.js";
 import * as speech from "./speech.js";
 import { h, esc } from "./ui.js";
+import { xpSummary } from "./core/path.js";
 
+// Main mode is the guided path; Esplora is the free mode that opens everything else.
 const TABS = [
-  { id: "learn", label: "Learn", icon: "📘" },
-  { id: "play", label: "Play", icon: "🎲" },
-  { id: "vocab", label: "Vocab", icon: "🗂️" },
-  { id: "translate", label: "Translate", icon: "🔁" },
-  { id: "errors", label: "Errors", icon: "🧭" },
-  { id: "progress", label: "Progress", icon: "📈" }
+  { id: "path", label: "Percorso", icon: "🛤️" },
+  { id: "review", label: "Ripasso", icon: "🔁" },
+  { id: "explore", label: "Esplora", icon: "🗺️" },
+  { id: "progress", label: "Progressi", icon: "📈" }
 ];
+const TAB_OF = { learn: "explore", play: "explore", vocab: "explore", translate: "explore", errors: "review", diagnostic: "explore", settings: "" };
 
 const VIEWS = {
+  path: () => import("./views/path.js"),
+  review: () => import("./views/review.js"),
+  explore: () => import("./views/explore.js"),
   learn: () => import("./views/learn.js"),
   play: () => import("./views/play.js"),
   vocab: () => import("./views/vocab.js"),
@@ -53,9 +57,11 @@ async function main() {
 
   root.replaceChildren(h(`<div class="shell">
     <header class="topbar">
-      <a class="brand" href="#/learn"><span class="logo">A</span><span>Allenamento</span><span class="lvl">B2→C1</span></a>
+      <a class="brand" href="#/path"><span class="logo">A</span><span class="brand-name">Allenamento</span></a>
       <nav class="tabs">${TABS.map(t => `<a href="#/${t.id}" data-tab="${t.id}"><span class="ti">${t.icon}</span><span class="tl">${t.label}</span><span class="badge" hidden></span></a>`).join("")}</nav>
       <div class="top-actions">
+        <a class="pill fire" href="#/progress" id="streakPill" title="Day streak">🔥 <b>0</b></a>
+        <a class="pill gold" href="#/progress" id="xpPill" title="XP today / daily goal">⭐ <b>0</b></a>
         <button class="icon-btn" id="silentBtn" title="Silent mode: text only, no audio"></button>
         <a class="icon-btn" href="#/settings" title="Settings and backup">⚙️</a>
       </div>
@@ -69,10 +75,14 @@ async function main() {
   paintSilent();
 
   async function badges() {
-    const errs = await store.errors();
+    const [errs, events, goal] = await Promise.all([store.errors(), store.events(), store.setting("dailyGoal", 50)]);
     const due = errs.filter(e => (e.nextReview || 0) <= now()).length;
-    const b = document.querySelector('[data-tab="errors"] .badge');
-    b.hidden = !due; b.textContent = due;
+    const b = document.querySelector('[data-tab="review"] .badge');
+    b.hidden = !due; b.textContent = due > 99 ? "99+" : due;
+    const x = xpSummary(events, now(), goal);
+    document.querySelector("#streakPill b").textContent = x.streak;
+    document.querySelector("#xpPill b").textContent = `${x.todayXp}/${x.goal}`;
+    document.querySelector("#xpPill").classList.toggle("met", x.goalMet);
   }
   store.on(() => badges());
   badges();
@@ -80,12 +90,14 @@ async function main() {
   let current = null;
   async function route() {
     const [path, qs = ""] = location.hash.replace(/^#\/?/, "").split("?");
-    const [tab = "learn", ...rest] = path.split("/").filter(Boolean).map(decodeURIComponent);
+    const [tab = "path", ...rest] = path.split("/").filter(Boolean).map(decodeURIComponent);
     const query = Object.fromEntries(new URLSearchParams(qs));
     const view = document.getElementById("view");
-    document.querySelectorAll(".tabs a").forEach(a => a.classList.toggle("active", a.dataset.tab === tab));
+    const navTab = TAB_OF[tab] ?? tab;
+    document.querySelectorAll(".tabs a").forEach(a => a.classList.toggle("active", a.dataset.tab === navTab));
+    document.body.dataset.view = tab;
     if (current && current.destroy) current.destroy();
-    const loader = VIEWS[tab] || VIEWS.learn;
+    const loader = VIEWS[tab] || VIEWS.path;
     view.replaceChildren(h(`<div class="loading">Caricamento…</div>`));
     try {
       const mod = await loader();
@@ -98,10 +110,7 @@ async function main() {
     window.scrollTo(0, 0);
   }
   window.addEventListener("hashchange", route);
-  if (!location.hash) {
-    const started = await store.setting("diagnosticDone", false);
-    location.hash = started ? "#/learn" : "#/diagnostic";
-  } else route();
+  if (!location.hash) location.hash = "#/path"; else route();
 }
 
 main().catch(e => {

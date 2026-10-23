@@ -1,0 +1,36 @@
+{
+  "title": "Il percorso",
+  "note": "The guided learning order. Every curriculum concept appears exactly once. Each concept becomes three steps (lesson, practice, challenge); each unit adds its games and a checkpoint.",
+  "sections": [
+    {
+      "id": "S1", "title": "Livello B2: consolidare", "subtitle": "Make the B2 grammar automatic and widen your everyday range.",
+      "units": [
+        { "id": "P01", "title": "Raccontare il passato", "desc": "Past tenses, the future of supposition and the words that go with them.", "color": "green",
+          "concepts": ["B2-PAST-01", "B2-PAST-02", "B2-FUT-01", "B2-VOC-02", "B2-READ-01"] },
+        { "id": "P02", "title": "Pronomi senza paura", "desc": "Combined pronouns, ci and ne, where pronouns go, relative clauses.", "color": "blue",
+          "concepts": ["B2-PRON-01", "B2-PRON-02", "B2-PRON-04", "B2-REL-01", "B2-IDIOM-01"] },
+        { "id": "P03", "title": "Collegare le idee", "desc": "Verbs with prepositions, place and time, connectors, false friends.", "color": "orange",
+          "concepts": ["B2-PREP-01", "B2-PREP-02", "B2-CONN-01", "B2-VOC-01", "B2-LIST-01"] },
+        { "id": "P04", "title": "Il congiuntivo", "desc": "Opinions, feelings, doubts and the conjunctions that need the subjunctive.", "color": "purple",
+          "concepts": ["B2-SUBJ-01", "B2-SUBJ-02", "B2-SUBJ-03", "B2-SUBJ-04", "B2-INT-01"] },
+        { "id": "P05", "title": "Se e ma", "desc": "Conditional, if-clauses and writing a proper formal email.", "color": "red",
+          "concepts": ["B2-COND-01", "B2-COND-02", "B2-HYP-01", "B2-HYP-02", "B2-REG-01", "B2-WRIT-01"] },
+        { "id": "P06", "title": "Costruzioni utili", "desc": "Passive, si, gerund, fare + infinitive, future in the past, word building.", "color": "teal",
+          "concepts": ["B2-PASS-01", "B2-SI-01", "B2-INF-01", "B2-INF-03", "B2-SEQ-01", "B2-VOC-04", "B2-VOC-06", "B2-SPEAK-01"] }
+      ]
+    },
+    {
+      "id": "S2", "title": "Verso il C1", "subtitle": "Nuance, style and the structures that mark an advanced speaker.",
+      "units": [
+        { "id": "P07", "title": "Congiuntivo avanzato", "desc": "Relative clauses, indefinites, sequence of tenses, reported speech.", "color": "purple",
+          "concepts": ["C1-SUBJ-05", "C1-SUBJ-06", "C1-SEQ-02", "C1-SEQ-03", "C1-VOC-03"] },
+        { "id": "P08", "title": "Sfumature", "desc": "Mixed conditionals, alternatives to se, pronominal verbs, implicit meaning.", "color": "blue",
+          "concepts": ["C1-HYP-03", "C1-HYP-04", "C1-PRON-03", "C1-PREP-03", "C1-IDIOM-02", "C1-READ-02"] },
+        { "id": "P09", "title": "Narrare", "desc": "Passato remoto, participles and infinitives in literary and spoken narrative.", "color": "orange",
+          "concepts": ["C1-PAST-03", "C1-PAST-04", "C1-PART-01", "C1-INF-02", "C1-READ-03", "C1-LIST-02"] },
+        { "id": "P10", "title": "Argomentare con stile", "desc": "Formal connectors, cleft sentences, nominal style, register, essays and debate.", "color": "green",
+          "concepts": ["C1-PASS-02", "C1-CONN-02", "C1-SYN-01", "C1-SYN-02", "C1-VOC-05", "C1-REG-02", "C1-INT-02", "C1-WRIT-02", "C1-WRIT-03", "C1-SPEAK-02"] }
+      ]
+    }
+  ]
+}

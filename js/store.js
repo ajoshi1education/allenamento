@@ -3,6 +3,7 @@
 import { captureMistake, recordSuccess, relatedErrors, errorId } from "./core/errors.js";
 import { newCard, review, DAY } from "./core/srs.js";
 import { dedupe, detectGrammar, itemsFromImport } from "./core/importer.js";
+import { sessionXp as sessionXpFor } from "./core/path.js";
 
 const VOCAB_ERRORS = ["vocabulary", "false-friend", "collocation", "idiom", "word-formation"];
 export const SKILLS =["grammar", "vocabulary", "reading", "listening", "writing", "speaking", "interaction"];
@@ -183,8 +184,37 @@ export function createStore(db, content, clock) {
     return content.importItems.length;
   }
 
+  // ---- Guided path: completed steps and XP --------------------------------------------
+  async function pathDone() {
+    const s = await db.get("settings", "pathDone");
+    return new Map(Object.entries(s ? s.value : {}));
+  }
+  const completeNode = serial(async (nodeId, { kind, correct = 0, total = 0, passed = true }) => {
+    const now = clock();
+    const xp = sessionXpFor(correct, total, kind);
+    await db.put("events", { id: now.toString(36) + "-" + Math.random().toString(36).slice(2, 7), t: now, type: "session", kind, nodeId, correct, total, xp, passed });
+    if (passed && nodeId) {
+      const s = (await db.get("settings", "pathDone")) || { key: "pathDone", value: {} };
+      const prev = s.value[nodeId];
+      s.value[nodeId] = { t: prev ? prev.t : now, last: now, score: total ? correct / total : 1, times: (prev ? prev.times : 0) + 1 };
+      await db.put("settings", s);
+    }
+    emit("path");
+    return { xp };
+  });
+  // "Jump here": passing a unit's checkpoint test marks everything up to that unit as done.
+  const jumpTo = serial(async nodeIds => {
+    const s = (await db.get("settings", "pathDone")) || { key: "pathDone", value: {} };
+    const now = clock();
+    for (const id of nodeIds) if (!s.value[id]) s.value[id] = { t: now, last: now, score: 1, times: 0, jumped: true };
+    await db.put("settings", s);
+    emit("path");
+  });
+
   return {
     db, content, clock, serial,
+    pathDone, completeNode, jumpTo,
+    events: () => db.all("events"),
     importRows, registerImports,
     imports: () => db.all("imports"),
     updateImport: serial(async (id, patch) => {

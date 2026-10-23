@@ -47,6 +47,15 @@ export async function saveGameResult(store, gameId, score) {
   r.plays += 1; r.best = Math.max(r.best, score); r.last = store.clock();
   r.history = [...r.history, { t: store.clock(), score }].slice(-20);
   await store.db.put("games", r);
+  // Finishing a game completes its step on the path and earns XP.
+  const { xp } = await store.completeNode(`game:${gameId}`, { kind: "game", correct: Math.round(score * 10), total: 10, passed: true });
+  setTimeout(() => {
+    const row = document.querySelector(".summary .row-actions");
+    if (row && !row.querySelector("[data-back-path]")) {
+      row.insertAdjacentHTML("afterbegin", `<a class="btn3d primary" data-back-path href="#/path">Continua il percorso</a>`);
+      row.insertAdjacentHTML("beforebegin", `<p class="xp-earned">⭐ +${xp} XP</p>`);
+    }
+  }, 0);
   store.emit("game");
   return r;
 }

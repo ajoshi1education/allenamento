@@ -71,15 +71,17 @@ export function buildIndex({ units, games, errorTypes }) {
 export async function loadContent(fetchJson) {
   const get = p => fetchJson("content/" + p);
   const index = await get("index.json");
-  const [units, games, errorTypes, curriculum] = await Promise.all([
+  const [units, games, errorTypes, curriculum, pathDef] = await Promise.all([
     Promise.all(index.units.map(get)),
     Promise.all(index.games.map(get)),
     get("error-types.json"),
-    index.curriculum ? get(index.curriculum) : null
+    index.curriculum ? get(index.curriculum) : null,
+    index.path ? get(index.path) : null
   ]);
   const extra = index.vocab ? await Promise.all(index.vocab.map(get)) : [];
   const built = buildIndex({ units, games, errorTypes });
   built.vocabSeed = extra.flat();
   built.curriculum = curriculum;
+  built.pathDef = pathDef;
   return built;
 }

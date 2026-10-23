@@ -14,6 +14,7 @@ export const MIN_EXERCISES = 8;
 export const TYPES = ["cloze", "transform", "translate", "choice", "order", "free", "speak"];
 export const SKILLS = ["grammar", "vocabulary", "reading", "listening", "writing", "speaking", "interaction"];
 export const GAME_TYPES = ["detective", "dialogue", "gauntlet", "builder", "duel", "reading", "listening", "debate"];
+const path_ = p => path.join(ROOT, "content", p);
 const read = p => JSON.parse(fs.readFileSync(path.join(ROOT, "content", p), "utf8"));
 
 export function loadAll() {
@@ -22,7 +23,8 @@ export function loadAll() {
   const units = index.units.map(read), games = index.games.map(read);
   const curriculum = fs.existsSync(path.join(ROOT, "content/curriculum.json")) ? read("curriculum.json") : null;
   const vocab = (index.vocab || []).flatMap(read);
-  return { index, units, games, curriculum, vocab, errorTypes: read("error-types.json") };
+  const pathDef = index.path && fs.existsSync(path_(index.path)) ? read(index.path) : null;
+  return { index, units, games, curriculum, vocab, path: pathDef, errorTypes: read("error-types.json") };
 }
 
 export function validate(all) {
@@ -118,6 +120,14 @@ export function validate(all) {
     dup(v.id, "vocab");
     if (v.pos && !POS.includes(v.pos)) errors.push(`${v.id}: unknown pos ${v.pos}`);
     for (const c of v.conceptIds || []) if (!idx.concepts.has(c) && !(all.curriculum && all.curriculum.strands.some(s => s.concepts.some(x => x.id === c)))) errors.push(`${v.id}: unknown concept ${c}`);
+  }
+  // Guided path: every curriculum concept exactly once, every id real.
+  if (all.path && all.curriculum) {
+    const onPath = all.path.sections.flatMap(s => s.units.flatMap(u => u.concepts));
+    const planned = new Set(all.curriculum.strands.flatMap(s => s.concepts.map(c => c.id)));
+    const seenP = new Set();
+    for (const id of onPath) { if (!planned.has(id)) errors.push(`path.json: unknown concept ${id}`); if (seenP.has(id)) errors.push(`path.json: ${id} appears twice`); seenP.add(id); }
+    for (const id of planned) if (!seenP.has(id)) errors.push(`path.json: ${id} is missing from the path`);
   }
   // Curriculum map: every planned concept should eventually have content.
   const coverage = [];

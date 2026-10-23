@@ -1,6 +1,12 @@
 # Allenamento: Italian B2 → C1
 
-An adaptive Italian trainer for an English speaker at about B2 who is aiming for C1. It has six areas:
+An adaptive Italian trainer for an English speaker at about B2 who is aiming for C1.
+
+**Main mode, the path (Percorso):** 10 units in learning order (B2 consolidation, then C1). Each concept is a short lesson made of bite-size cards with quick checks, then a practice round (which also brings back earlier mistakes that are due), then a harder challenge. Each unit has games and a checkpoint at the end. Steps unlock in order, but you can start any step anyway or "jump ahead" by passing a unit checkpoint. XP, a daily goal and a streak keep track. The order lives in `content/path.json`.
+
+**Ripasso:** retest due mistakes in new sentences, and review flashcards.
+
+**Esplora (free mode):** everything below, in any order:
 
 - **Learn**: 61 lessons across the B2→C1 curriculum.
 - **Play / Test**: 28 games linked to those lessons.

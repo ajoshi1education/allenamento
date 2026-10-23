@@ -2,7 +2,7 @@
 // Local IndexedDB stays the source of truth while offline; sync() pulls remote changes, merges, then pushes local ones.
 // Only the public anon key is used in the browser; row-level security keeps each user's rows private.
 
-export const SYNC_STORES = ["errors", "progress", "skills", "vocab", "imports", "games", "attempts", "settings"];
+export const SYNC_STORES = ["events", "errors", "progress", "skills", "vocab", "imports", "games", "attempts", "settings"];
 const SKIP_SETTINGS = new Set(["sync", "silent", "theme"]);   // device-specific
 
 const keyOf = (store, r) => String(store === "progress" ? r.conceptId : store === "skills" ? r.skill : store === "settings" ? r.key : r.id);

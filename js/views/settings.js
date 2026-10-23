@@ -13,6 +13,8 @@ export async function render(view, { store }) {
     <div class="card"><h3>Use in public</h3>
       <label class="toggle"><input type="checkbox" id="silent" ${speech.isSilent() ? "checked" : ""}> Silent mode: no audio and no microphone. Listening and speaking tasks switch to text versions.</label>
       <p class="small muted">Italian voice on this device: ${speech.hasItalianVoice() ? "available ✓" : "not found (listening tasks will show text instead)"} · Speech recognition: ${globalThis.SpeechRecognition || globalThis.webkitSpeechRecognition ? "available ✓" : "not available in this browser"}</p></div>
+    <div class="card"><h3>Daily goal</h3>
+      <select id="goal"><option value="20">Relaxed: 20 XP a day (about 5 minutes)</option><option value="50">Regular: 50 XP (about 15 minutes)</option><option value="100">Serious: 100 XP (about 30 minutes)</option><option value="200">Intense: 200 XP (an hour)</option></select></div>
     <div class="card"><h3>Appearance</h3>
       <select id="theme"><option value="auto">Match system</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
     <div class="card"><h3>Your data</h3>
@@ -37,6 +39,8 @@ export async function render(view, { store }) {
       <div class="row-actions"><button class="btn small" data-off="1">+1 day</button><button class="btn small" data-off="7">+7 days</button><button class="btn small" data-off="0">Reset to today</button></div></div>
   </section>`));
   view.querySelector("#theme").value = theme;
+  view.querySelector("#goal").value = String(await store.setting("dailyGoal", 50));
+  view.querySelector("#goal").onchange = async e => { await store.setSetting("dailyGoal", Number(e.target.value)); toast("Daily goal updated"); };
   view.querySelector("#theme").onchange = async e => { await store.setSetting("theme", e.target.value); applyTheme(e.target.value); };
   view.querySelector("#silent").onchange = async e => { speech.setSilent(e.target.checked); await store.setSetting("silent", e.target.checked); document.getElementById("silentBtn").textContent = e.target.checked ? "🔇" : "🔊"; };
   view.querySelector("#export").onclick = async () => {

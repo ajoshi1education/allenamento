@@ -44,7 +44,8 @@ export const fmtRel = (t, now) => {
 };
 
 const ACCENTS = ["à", "è", "é", "ì", "ò", "ù"];
-const TYPE_LABEL = { cloze: "Fill the gap", transform: "Transform", translate: "Translate", choice: "Choose", order: "Build the sentence", free: "Write", listen: "Listen" };
+const PRAISE = ["Esatto!", "Perfetto!", "Ottimo!", "Bravissimo!", "Giusto!", "Benissimo!"];
+const TYPE_LABEL = { cloze: "Fill the gap", transform: "Transform", translate: "Translate", choice: "Choose", order: "Build the sentence", free: "Write", speak: "Speak", listen: "Listen" };
 
 export function errorLabel(content, type) { return (content.errorTypes[type] && content.errorTypes[type].label) || type; }
 
@@ -77,6 +78,10 @@ export function runExercise(host, item, opts) {
     </div>`);
     host.replaceChildren(el);
     const body = el.querySelector(".ex-body");
+    const actionsEl = el.querySelector(".ex-actions"), fbEl = el.querySelector(".feedback");
+    // Session mode: the Check button and the feedback live in a bottom bar, Duolingo-style.
+    const footer = opts.footer || null;
+    if (footer) { footer.className = "session-footer"; footer.replaceChildren(actionsEl, fbEl); }
     let getResponse = () => "";
     let lastInput = null;
 
@@ -114,7 +119,8 @@ export function runExercise(host, item, opts) {
         const b = e.target.closest(".choice"); if (!b || el.classList.contains("done")) return;
         picked = Number(b.dataset.i);
         opts2.querySelectorAll(".choice").forEach(x => x.classList.toggle("picked", x === b));
-        check();
+        if (!footer) check();          // in sessions you pick, then press Check
+        else actionsEl.querySelector("[data-act=check]").focus();
       });
       getResponse = () => picked;
     } else if (item.type === "order") {
@@ -155,8 +161,8 @@ export function runExercise(host, item, opts) {
     if (item.en && item.type === "cloze") body.append(h(`<button type="button" class="linkish small" data-act="hint">Show English meaning</button>`));
 
     el.addEventListener("focusin", e => { if (e.target.matches("input,textarea")) lastInput = e.target; });
-    el.querySelector(".accents").addEventListener("mousedown", e => e.preventDefault());
-    el.querySelector(".accents").addEventListener("click", e => {
+    actionsEl.querySelector(".accents").addEventListener("mousedown", e => e.preventDefault());
+    actionsEl.querySelector(".accents").addEventListener("click", e => {
       const k = e.target.closest("[data-acc]"); if (!k || !lastInput) return;
       const { selectionStart: s, selectionEnd: f, value } = lastInput;
       lastInput.value = value.slice(0, s) + k.dataset.acc + value.slice(f);
@@ -167,34 +173,37 @@ export function runExercise(host, item, opts) {
       if (e.key !== "Enter" || e.shiftKey) return;
       if (item.type === "free" && !el.classList.contains("done") && !(e.ctrlKey || e.metaKey)) return;  // newlines allowed; Ctrl+Enter submits
       e.preventDefault();
-      if (el.classList.contains("done")) el.querySelector("[data-act=next]")?.click(); else check();
+      if (el.classList.contains("done")) fbEl.querySelector("[data-act=next]")?.click(); else check();
     });
-    el.addEventListener("click", e => {
+    const onAct = e => {
       const a = e.target.closest("[data-act]"); if (!a) return;
       if (a.dataset.act === "check") check();
       if (a.dataset.act === "dontknow") check(true);
       if (a.dataset.act === "hint") { body.querySelector(".hint").hidden = false; a.remove(); }
-    });
+    };
+    if (footer) { el.onclick = onAct; footer.onclick = onAct; } else el.addEventListener("click", onAct);
     setTimeout(() => (lastInput || el.querySelector("button.choice, .token"))?.focus(), 30);
 
     let busy = false;
     async function check(giveUp = false) {
       if (busy || el.classList.contains("done")) return;
       const resp = giveUp ? "" : getResponse();
-      if (!giveUp && (resp === "" || resp === null)) { lastInput?.focus(); el.querySelector(".ex-actions").classList.add("shake"); setTimeout(() => el.querySelector(".ex-actions").classList.remove("shake"), 400); return; }
+      if (!giveUp && (resp === "" || resp === null)) { lastInput?.focus(); actionsEl.classList.add("shake"); setTimeout(() => actionsEl.classList.remove("shake"), 400); return; }
       busy = true;
       const result = evaluate(item, resp);
       if (giveUp) { result.verdict = "empty"; result.correct = false; result.errorType = item.errorType || "no-answer"; result.note = "You asked to see the answer."; }
       const outcome = await store.recordAnswer({ item, response: item.type === "choice" && resp !== "" && resp != null ? item.options[resp] : resp, result, source: opts.source, mode: opts.mode, retestOf: opts.retestOf });
       el.classList.add("done", result.correct ? "is-correct" : "is-wrong");
       el.querySelectorAll("input,textarea").forEach(i => (i.readOnly = true));
-      if (item.type === "choice") el.querySelectorAll(".choice").forEach((b, i) => { if (i === item.answer) b.classList.add("right"); else if (i === resp) b.classList.add("wrong"); });
-      el.querySelector(".ex-actions").hidden = true;
-      showFeedback(el.querySelector(".feedback"), item, resp, result, outcome, concept, opts);
+      if (item.type === "choice") el.querySelectorAll(".choice").forEach((b, i) => { if ([].concat(item.answer).includes(i)) b.classList.add("right"); else if (i === resp) b.classList.add("wrong"); });
+      actionsEl.hidden = true;
+      if (footer) footer.classList.add(result.correct ? (result.verdict === "correct" ? "is-correct" : "is-almost") : "is-wrong");
+      showFeedback(fbEl, item, resp, result, outcome, concept, opts);
       opts.onAnswered && opts.onAnswered(result, outcome);
       speech.stop();
-      el.querySelector("[data-act=next]").addEventListener("click", () => resolve({ result, outcome, response: resp }));
-      el.querySelector("[data-act=next]").focus();
+      fbEl.querySelector("[data-act=next]").addEventListener("click", () => resolve({ result, outcome, response: resp }));
+      fbEl.querySelector("[data-act=next]").focus({ preventScroll: true });
+      fbEl.scrollTop = 0;
     }
   });
 }
@@ -202,14 +211,14 @@ export function runExercise(host, item, opts) {
 function showFeedback(fb, item, resp, result, outcome, concept, opts) {
   const content = opts.store.content;
   const V = {
-    correct: ["✓", "Corretto!", "ok"], alternative: ["✓", "Accepted: a natural alternative", "ok"],
-    typo: ["✓", "Accepted, with a small slip", "ok"], accent: ["≈", "Almost: check the accents", "warn"],
-    wrong: ["✗", "Not quite", "bad"], empty: ["•", "Here's the answer", "bad"]
+    correct: ["✓", PRAISE[Math.floor(Math.random() * PRAISE.length)], "ok"], alternative: ["✓", "Giusto: a natural alternative", "ok"],
+    typo: ["✓", "Giusto, with a small slip", "ok"], accent: ["≈", "Quasi! Check the accents", "warn"],
+    wrong: ["✗", "Non proprio", "bad"], empty: ["•", "Ecco la risposta", "bad"]
   }[result.verdict];
   const userText = item.type === "choice" ? (resp != null && resp !== "" ? item.options[resp] : "") : String(resp ?? "");
   const diff = result.diff && userText ? `<div class="diff it">${result.diff.map(d => `<span class="d-${d.op}">${esc(d.t)}</span>`).join(" ")}</div>` : "";
   const full = item.type === "cloze" ? fillCloze(item.prompt, `<b>${esc(result.expected)}</b>`) : null;
-  const speakText = item.type === "cloze" ? fillCloze(item.prompt, result.expected) : item.type === "choice" ? fillCloze(item.prompt, item.options[item.answer]) : result.expected;
+  const speakText = item.type === "cloze" ? fillCloze(item.prompt, result.expected) : item.type === "choice" ? fillCloze(item.prompt, item.options[[].concat(item.answer)[0]]) : result.expected;
   const eb = [];
   if (outcome.captured) eb.push(`<a class="eb-chip bad" href="#/errors/${encodeURIComponent(outcome.captured.id)}">Saved to Error Bank · ${esc(errorLabel(content, outcome.captured.errorType))}${outcome.captured.timesWrong > 1 ? ` · ${outcome.captured.timesWrong}× now` : ""}</a>`);
   if (outcome.reopened) eb.push(`<span class="eb-chip warn">You had mastered this one. It's back in active review.</span>`);

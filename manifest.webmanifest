@@ -3,7 +3,7 @@
   "short_name": "Allenamento",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f6f3ec",
-  "theme_color": "#1f5f50",
+  "background_color": "#f7f7f2",
+  "theme_color": "#2fb36b",
   "icons": [{ "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
 }

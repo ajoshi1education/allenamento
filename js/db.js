@@ -2,7 +2,7 @@
 // The same API is implemented in memory by createMemoryDb() (used by tests and as a fallback).
 
 const NAME = "allenamento";
-const VERSION = 1;
+const VERSION = 2;     // 2: events store (XP, completed sessions)
 export const STORES = {
   attempts: { keyPath: "id", autoIncrement: true, indexes: ["conceptId", "t"] },
   errors: { keyPath: "id", indexes: ["conceptId", "status", "errorType"] },
@@ -12,7 +12,8 @@ export const STORES = {
   imports: { keyPath: "id" },
   achievements: { keyPath: "id" },
   settings: { keyPath: "key" },
-  games: { keyPath: "id" }
+  games: { keyPath: "id" },
+  events: { keyPath: "id" }
 };
 
 function req(r) { return new Promise((res, rej) => { r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); }); }

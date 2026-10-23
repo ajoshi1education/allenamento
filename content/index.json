@@ -1,5 +1,6 @@
 {
   "curriculum": "curriculum.json",
+  "path": "path.json",
   "units": [
     "units/r01-registro.json",
     "units/s01-comprensione-scrittura.json",
