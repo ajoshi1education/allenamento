@@ -65,7 +65,7 @@ async function main() {
 
   root.replaceChildren(h(`<div class="shell">
     <header class="topbar">
-      <a class="brand" href="#/path"><span class="logo">A</span><span class="brand-name">Allenamento</span></a>
+      <a class="brand" href="#/path"><span class="logo">A</span><span class="brand-name">Allenamento</span><span class="user-name">Amit</span></a>
       <nav class="tabs">${TABS.map(t => `<a href="#/${t.id}" data-tab="${t.id}"><span class="ti">${t.icon}</span><span class="tl">${t.label}</span><span class="badge" hidden></span></a>`).join("")}</nav>
       <div class="top-actions">
         <a class="pill fire" href="#/progress" id="streakPill" title="Giorni di fila">🔥 <b>0</b></a>

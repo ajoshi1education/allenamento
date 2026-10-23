@@ -628,3 +628,4 @@ body.in-session .coach-panel { z-index: 75; }
 .mic-wrap { display: flex; flex-direction: column; align-items: center; gap: .3rem; }
 .mic-label { color: var(--muted); font-weight: 800; }
 .dock .mic-big.on { font-size: 1.8rem; }
+.user-name { font-size: .8rem; font-weight: 800; color: var(--muted); padding: .15rem .55rem; border: 2px solid var(--line); border-radius: 999px; }
