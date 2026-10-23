@@ -1,0 +1,116 @@
+{
+  "id": "CV-29",
+  "title": "Storie di famiglia",
+  "subtitle": "A family emigration story: imperfetto and passato prossimo, the trapassato, reported speech.",
+  "level": "C1",
+  "theme": "Cultura e tempo libero",
+  "conceptIds": ["B2-PAST-01", "B2-PAST-02", "C1-SEQ-03", "B2-SEQ-01", "B2-HYP-02"],
+  "tutor": { "name": "Giorgio", "avatar": "👨‍🦳", "gender": "male", "register": "informal" },
+  "setting": "Your friend Giorgio is piecing together the story of his great-grandfather, who left Calabria for Argentina. Over dinner he asks about your own family.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Sto ricostruendo la storia del mio bisnonno, che partì per l'Argentina nel 1910. Nella tua famiglia qualcuno è emigrato?",
+      "en": "I'm piecing together the story of my great-grandfather, who left for Argentina in 1910. Did anyone in your family emigrate?",
+      "task": "Say who emigrated, where and when, in the passato prossimo with essere (è partito, sono emigrati…).",
+      "hint": "Sì, mio nonno è partito per… nel…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Passato prossimo with essere (è emigrato, sono partiti…)", "anyOf": ["\\b(è|sono)\\s+(\\p{L}+\\s+)?(partito|partita|partiti|partite|emigrato|emigrata|emigrati|emigrate|andato|andata|andati|andate|arrivato|arrivata|arrivati|arrivate|trasferito|trasferita|trasferiti|trasferite|venuto|venuta|venuti|venute|scappato|scappata|scappati|scappate|espatriato|espatriata|espatriati)\\b"], "min": 1, "errorType": "auxiliary", "conceptId": "B2-PAST-01", "hint": "*…è **emigrata** / sono **partiti**…*" },
+          { "label": "Says when", "anyOf": ["\\b(nel|negli|nei|anni|dopo la guerra|durante|secolo|fa|\\d{4})\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-PAST-01", "hint": "*…negli anni Cinquanta / nel 1960…*" }
+        ]
+      },
+      "model": "Sì, la famiglia di mia nonna è emigrata dall'Irlanda in Inghilterra negli anni Cinquanta, per cercare lavoro.",
+      "followOk": "Un'altra storia di partenze, come tante. Chissà quanto è stato difficile per loro.",
+      "followMiss": "Capisco. Il mio bisnonno invece è partito da solo, con una valigia di cartone, nel 1910."
+    },
+    {
+      "id": "t2",
+      "say": "E com'era la vita prima di partire? Perché hanno deciso di andarsene?",
+      "en": "And what was life like before they left? Why did they decide to leave?",
+      "task": "Describe the situation before with the imperfetto, and the decision with the passato prossimo.",
+      "hint": "Vivevano in…, non c'era lavoro, così hanno deciso…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Imperfetto for the situation", "anyOf": ["\\b(era|erano|c['’]era|c['’]erano|\\p{L}+(ava|avano|eva|evano|iva|ivano))\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*vivevano, non c'era lavoro…*" },
+          { "label": "Passato prossimo for the decision", "anyOf": ["\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*…così hanno deciso di partire.*" }
+        ]
+      },
+      "model": "Vivevano in campagna, non c'era lavoro e la famiglia era numerosa, così un giorno hanno deciso di partire.",
+      "followOk": "Una storia molto simile a quella del mio bisnonno: tanta fame e poche speranze.",
+      "followMiss": "Immagino: forse non c'era lavoro e la famiglia era numerosa, così un giorno hanno deciso di partire."
+    },
+    {
+      "id": "t3",
+      "say": "E quando sono arrivati, conoscevano già qualcuno?",
+      "en": "And when they arrived, did they already know anyone?",
+      "task": "Say what had already happened before they arrived, with the trapassato prossimo (era già partito, avevano già trovato…).",
+      "hint": "Sì, uno zio era già partito…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Trapassato prossimo", "anyOf": ["\\b(ero|eri|era|eravamo|eravate|erano|avevo|avevi|aveva|avevamo|avevate|avevano)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-02", "hint": "*…era già **partito**, aveva **trovato**…*" },
+          { "label": "Marks what came before (già, prima…)", "anyOf": ["\\b(già|prima|ancora|da tempo|qualche anno prima)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-PAST-02", "hint": "*…era **già** partito qualche anno **prima**.*" }
+        ]
+      },
+      "model": "Sì, uno zio era già partito qualche anno prima e aveva trovato lavoro in un cantiere vicino a Londra.",
+      "followOk": "Meno male, almeno avevano un punto di riferimento.",
+      "followMiss": "Succedeva spesso: qualche parente era già partito prima e aveva preparato il terreno."
+    },
+    {
+      "id": "t4",
+      "say": "Chi ti ha raccontato questa storia? Che cosa ti diceva del viaggio, o dei primi tempi?",
+      "en": "Who told you this story? What did they tell you about the journey, or the early days?",
+      "task": "Report what they used to tell you: mi raccontava / mi diceva che + imperfetto or trapassato.",
+      "hint": "Mia nonna mi raccontava che il viaggio era stato…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "mi raccontava / mi diceva che…", "anyOf": ["\\b(mi|ci)\\s+(raccontava|diceva|raccontavano|dicevano|ripeteva|ripetevano|spiegava|spiegavano|ha raccontato|ha detto|hanno raccontato|hanno detto|ha spiegato)\\s+che\\b"], "min": 1, "errorType": "reported-speech", "conceptId": "C1-SEQ-03", "hint": "*Mi **raccontava che**…*" },
+          { "label": "Past tense in the reported clause", "anyOf": ["\\bche\\s+([\\p{L}'’]+\\s+){0,4}?(era|erano|c['’]era|c['’]erano|aveva|avevano|faceva|facevano|\\p{L}+(ava|avano|eva|evano|iva|ivano))\\b"], "min": 1, "errorType": "tense-sequence", "conceptId": "B2-SEQ-01", "hint": "*…che il viaggio **era stato** lunghissimo / che **faceva** freddo…*" }
+        ]
+      },
+      "model": "Mia nonna mi raccontava che il viaggio era stato lunghissimo e che all'inizio non capiva una parola di inglese.",
+      "followOk": "Che ricordi preziosi. È importante che queste storie non si perdano.",
+      "followMiss": "Anche il mio bisnonno diceva che il viaggio era stato terribile e che aveva pianto per giorni."
+    },
+    {
+      "id": "t5",
+      "say": "Il mio bisnonno, in una lettera, scrisse: «Qui il lavoro non manca, ma mi mancate voi.» Tu come lo riferiresti?",
+      "en": "My great-grandfather wrote in a letter: 'Work isn't lacking here, but I miss you all.' How would you report it?",
+      "task": "Turn the quote into reported speech: ha scritto che lì il lavoro non mancava, ma che gli mancavano…",
+      "hint": "Ha scritto che lì il lavoro non mancava, ma…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Reporting verb + che", "anyOf": ["\\b(ha|aveva|hanno)\\s+(scritto|detto|raccontato|spiegato)\\s+che\\b", "\\bscrisse\\s+che\\b"], "min": 1, "errorType": "reported-speech", "conceptId": "C1-SEQ-03", "hint": "*Ha scritto che…*" },
+          { "label": "Present → imperfetto (mancava, mancavano)", "anyOf": ["\\b(mancava|mancavano)\\b"], "min": 1, "errorType": "tense-sequence", "conceptId": "C1-SEQ-03", "hint": "*non manca → non **mancava***" },
+          { "label": "Shifts qui → lì and mi → gli", "anyOf": ["\\b(lì|là|gli)\\b"], "min": 1, "errorType": "reported-speech", "conceptId": "C1-SEQ-03", "hint": "*qui → **lì**; mi mancate → **gli** mancavano*" }
+        ]
+      },
+      "model": "Ha scritto che lì il lavoro non mancava, ma che gli mancavano molto i suoi familiari.",
+      "followOk": "Perfetto. E nota il passaggio da «qui» a «lì»: è il dettaglio che fa la differenza.",
+      "followMiss": "Io direi così: ha scritto che lì il lavoro non mancava, ma che gli mancava tanto la famiglia."
+    },
+    {
+      "id": "t6",
+      "say": "Pensi che quella partenza abbia cambiato in qualche modo anche la tua vita?",
+      "en": "Do you think that departure has changed your life too, in some way?",
+      "task": "Reflect with an unreal past hypothetical: se non fossero partiti, … + conditional.",
+      "hint": "Sicuramente: se non fossero partiti, io adesso…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "se + congiuntivo trapassato", "anyOf": ["\\bse\\s+([\\p{L}'’]+\\s+){0,4}?(fossero|fosse|fossi|fossimo|avessero|avesse|avessi|avessimo)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|so|sa|si|se)\\b"], "min": 1, "errorType": "hypothetical", "conceptId": "B2-HYP-02", "hint": "*Se non **fossero partiti**…*" },
+          { "label": "Result in the conditional", "anyOf": ["\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-HYP-02", "hint": "*…io adesso non **vivrei** qui.*" }
+        ]
+      },
+      "model": "Sicuramente: se i miei nonni non fossero partiti, io adesso non vivrei in Inghilterra e forse non parlerei nemmeno inglese.",
+      "followOk": "È incredibile come una sola decisione possa cambiare il destino di intere generazioni.",
+      "followMiss": "Ci penso spesso anch'io: se il mio bisnonno non fosse partito, oggi la mia famiglia sarebbe completamente diversa."
+    }
+  ],
+  "closing": "Grazie di avermi raccontato la tua storia. Prima o poi dovremmo scriverle, queste storie!"
+}

@@ -1,0 +1,112 @@
+{
+  "id": "CV-28",
+  "title": "Ambiente e clima",
+  "subtitle": "What should be done about the climate: se + congiuntivo imperfetto, bisognerebbe che, concessive connectors.",
+  "level": "C1",
+  "theme": "Società e attualità",
+  "conceptIds": ["B2-HYP-01", "C1-SEQ-02", "C1-CONN-02", "C1-HYP-04", "B2-SUBJ-01"],
+  "tutor": { "name": "Tommaso", "avatar": "🧑‍🦰", "gender": "male", "register": "informal" },
+  "setting": "After watching a documentary about the climate at a friend's place, you and Tommaso, who volunteers for an environmental group, stay on to talk.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Hai visto che caldo ha fatto quest'estate? Secondo te il clima sta davvero cambiando così in fretta?",
+      "en": "Did you see how hot it was this summer? Do you think the climate is really changing that fast?",
+      "task": "Give your view with temo che / mi sembra che + subjunctive, and a reason.",
+      "hint": "Temo che la situazione stia…, perché…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Opinion/fear + che + subjunctive", "anyOf": ["\\b(penso|credo|temo|ho paura|mi sembra|mi pare|immagino|ho l['’]impressione|non credo|dubito)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}?(sia|siano|stia|stiano|abbia|abbiano|possa|possano|cambi|cambino|peggiori|peggiorino|vada|vadano|ci sia|ci siano|diventi|diventino|faccia|facciano|aumenti|aumentino|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Temo che **stia** cambiando… / mi sembra che le estati **siano**…*" },
+          { "label": "Gives a reason", "anyOf": ["\\b(perché|poiché|visto che|dato che|siccome|infatti|ormai)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…perché ormai…*" }
+        ]
+      },
+      "model": "Temo di sì: mi sembra che le estati stiano diventando sempre più lunghe, perché ormai fa caldo fino a ottobre.",
+      "followOk": "Purtroppo hai ragione. Anche qui a giugno sembrava già agosto.",
+      "followMiss": "Eh, io temo che il clima stia cambiando molto più in fretta di quanto pensiamo."
+    },
+    {
+      "id": "t2",
+      "say": "Ma secondo te cosa succederebbe se tutti cambiassimo davvero le nostre abitudini?",
+      "en": "But what do you think would happen if we all really changed our habits?",
+      "task": "Answer with a hypothetical: se + congiuntivo imperfetto (se tutti usassero…), then the conditional.",
+      "hint": "Se tutti usassero…, le emissioni…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "se + congiuntivo imperfetto", "anyOf": ["\\bse\\s+([\\p{L}'’]+\\s+){0,3}?(\\p{L}+(assi|asse|assimo|aste|assero|essi|esse|essimo|este|essero|issi|isse|issimo|iste|issero)|fossi|fosse|fossimo|foste|fossero)\\b"], "min": 1, "errorType": "hypothetical", "conceptId": "B2-HYP-01", "hint": "*Se tutti **usassero**… / se **prendessimo**…*" },
+          { "label": "Result in the conditional", "anyOf": ["\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-HYP-01", "hint": "*…le emissioni **diminuirebbero**.*" }
+        ]
+      },
+      "model": "Se tutti usassero i mezzi pubblici e mangiassero meno carne, le emissioni diminuirebbero moltissimo.",
+      "followOk": "Vero, ma convincere tutti è la parte più difficile.",
+      "followMiss": "Secondo me, se tutti usassero meno la macchina, l'aria sarebbe già molto più pulita."
+    },
+    {
+      "id": "t3",
+      "say": "E i governi? Cosa dovrebbero fare, secondo te, invece di limitarsi a fare promesse?",
+      "en": "And governments? What do you think they should do, instead of just making promises?",
+      "task": "Say what should be done with bisognerebbe che / sarebbe ora che + congiuntivo imperfetto.",
+      "hint": "Bisognerebbe che i governi investissero…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "bisognerebbe che + congiuntivo imperfetto", "anyOf": ["\\b(bisognerebbe|occorrerebbe|sarebbe ora|sarebbe necessario|sarebbe importante|sarebbe meglio|sarebbe giusto|vorrei|preferirei|servirebbe)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}?(fosse|fossero|avesse|avessero|desse|dessero|stesse|stessero|\\p{L}+(asse|assero|esse|essero|isse|issero))\\b"], "min": 1, "errorType": "tense-sequence", "conceptId": "C1-SEQ-02", "hint": "*Bisognerebbe che i governi **investissero**…*" }
+        ]
+      },
+      "model": "Bisognerebbe che i governi investissero molto di più nelle energie rinnovabili e che tassassero chi inquina.",
+      "followOk": "Sono d'accordo, anche se servirebbe il coraggio di prendere decisioni impopolari.",
+      "followMiss": "Secondo me bisognerebbe che i governi investissero davvero nelle rinnovabili, invece di fare solo promesse."
+    },
+    {
+      "id": "t4",
+      "say": "Però le auto elettriche e i pannelli solari costano un sacco. Non tutti se li possono permettere.",
+      "en": "But electric cars and solar panels cost a fortune. Not everyone can afford them.",
+      "task": "Acknowledge the objection with a concessive connector (benché, sebbene, pur + gerund, ciononostante) and still defend your view.",
+      "hint": "Benché costino ancora tanto, a lungo andare…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Concessive connector", "anyOf": ["\\b(sebbene|benché|nonostante|malgrado|per quanto|pur|ciononostante|ciò nonostante|tuttavia|eppure|anche se|comunque sia)\\b"], "min": 1, "errorType": "connector", "conceptId": "C1-CONN-02", "hint": "*Benché **costino**… / Pur essendo cari…*" }
+        ]
+      },
+      "model": "Benché costino ancora parecchio, a lungo andare fanno risparmiare, e lo Stato potrebbe offrire più incentivi a chi ha meno soldi.",
+      "followOk": "Giusto, con gli incentivi adatti cambierebbe tutto.",
+      "followMiss": "È vero, costano tanto. Eppure, pur essendo cari, a lungo andare fanno risparmiare."
+    },
+    {
+      "id": "t5",
+      "say": "E tu, nel tuo piccolo, che cosa hai già cambiato? E cosa cambieresti, se potessi?",
+      "en": "And you, in your own small way, what have you already changed? And what would you change, if you could?",
+      "task": "Say one thing you have changed (passato prossimo) and one you would change (se potessi… + conditional).",
+      "hint": "Ho smesso di…, e se potessi…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Passato prossimo for what you've changed", "anyOf": ["\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*Ho smesso di…, ho cominciato a…*" },
+          { "label": "se + congiuntivo imperfetto", "anyOf": ["\\bse\\s+([\\p{L}'’]+\\s+){0,3}?(\\p{L}+(assi|asse|assimo|aste|assero|essi|esse|essimo|este|essero|issi|isse|issimo|iste|issero)|fossi|fosse|fossimo|foste|fossero)\\b"], "min": 1, "errorType": "hypothetical", "conceptId": "B2-HYP-01", "hint": "*…e se **potessi**, venderei…*" }
+        ]
+      },
+      "model": "Ho smesso di prendere l'aereo per i viaggi brevi, e se potessi, venderei anche la macchina.",
+      "followOk": "Complimenti, non è poco. Io invece faccio ancora fatica con la plastica.",
+      "followMiss": "Capisco. Io per esempio ho smesso di comprare l'acqua in bottiglia, e se potessi, andrei sempre in bici."
+    },
+    {
+      "id": "t6",
+      "say": "Ultima cosa: sabato c'è una manifestazione per il clima. Vieni con me?",
+      "en": "One last thing: there's a climate march on Saturday. Will you come with me?",
+      "task": "Accept or decline with a condition: a patto che / nel caso in cui / qualora + subjunctive.",
+      "hint": "Vengo volentieri, a patto che… / Nel caso in cui…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Condition + subjunctive (a patto che, qualora…)", "anyOf": ["\\b(qualora|nel caso in cui|nel caso che|a patto che|a condizione che|purché|sempre che|ammesso che)\\s+([\\p{L}'’]+\\s+){0,4}?(sia|siano|abbia|abbiano|possa|possano|piova|finisca|riesca|riescano|venga|vengano|faccia|facciano|debba|debbano|esca|serva|servano|cambi|stia|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "C1-HYP-04", "hint": "*…a patto che non **piova** / nel caso in cui **finisca** tardi…*" }
+        ]
+      },
+      "model": "Volentieri, a patto che non piova troppo. E nel caso in cui finisca tardi, torniamo insieme in treno.",
+      "followOk": "Perfetto, allora ci vediamo sabato alle dieci in piazza.",
+      "followMiss": "Dai, vieni! Nel caso in cui piova, possiamo sempre fermarci in un bar a metà strada."
+    }
+  ],
+  "closing": "Bella chiacchierata. Almeno noi due il mondo l'abbiamo già sistemato!"
+}
