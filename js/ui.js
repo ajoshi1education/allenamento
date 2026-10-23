@@ -118,8 +118,8 @@ export function runExercise(host, item, opts) {
       const listenable = speech.canSpeak();
       const audioEl = h(`<div class="audio-box">
         ${listenable ? `<button type="button" class="btn small" data-play="1">▶ Ascolta</button><button type="button" class="btn small ghost" data-play="0.75">🐢 Più lento</button>
-          <details class="transcript"><summary class="small muted">Show transcript</summary><p class="it">${md(item.audio)}</p></details>`
-        : `<p class="small muted">${esc(item.silentPrompt || "Silent mode: read the transcript instead of listening.")}</p><p class="it transcript-open">${md(item.audio)}</p>`}
+          ${item.noTranscript ? "" : `<details class="transcript"><summary class="small muted">Show transcript</summary><p class="it">${md(item.audio)}</p></details>`}`
+        : `<p class="small muted">${esc(item.silentPrompt || "Silent mode: read the transcript instead of listening.")}</p>${item.noTranscript ? "" : `<p class="it transcript-open">${md(item.audio)}</p>`}`}
       </div>`);
       body.append(audioEl);
       audioEl.addEventListener("click", e => { const b = e.target.closest("[data-play]"); if (b) speech.say(item.audio, { rate: Number(b.dataset.play) * 0.95 }); });

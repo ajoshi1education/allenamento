@@ -11,7 +11,7 @@ const list = dir => fs.existsSync(path.join(C, dir))
   : [];
 
 export function buildIndexFile() {
-  const index = { curriculum: "curriculum.json", path: "path.json", units: list("units"), games: list("games"), vocab: list("vocab"), convos: list("convos") };
+  const index = { curriculum: "curriculum.json", path: "path.json", ...(fs.existsSync(path.join(C, "verbs.json")) ? { verbs: "verbs.json" } : {}), units: list("units"), games: list("games"), vocab: list("vocab"), convos: list("convos") };
   fs.writeFileSync(path.join(C, "index.json"), JSON.stringify(index, null, 2) + "\n");
   return index;
 }

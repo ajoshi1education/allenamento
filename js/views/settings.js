@@ -28,7 +28,7 @@ export async function render(view, { store }) {
       <div class="row-actions"><button class="btn3d primary" id="installBtn">Install the app</button></div>
       <p class="small muted" id="installHow"></p>`}</div>
     <div class="card"><h3>Daily goal</h3>
-      <select id="goal"><option value="20">Relaxed: 20 XP a day (about 5 minutes)</option><option value="50">Regular: 50 XP (about 15 minutes)</option><option value="100">Serious: 100 XP (about 30 minutes)</option><option value="200">Intense: 200 XP (an hour)</option></select></div>
+      <select id="goal"><option value="20">Leggero: 20 XP al giorno (circa 5–10 minuti)</option><option value="30">Regolare: 30 XP (circa 10–15 minuti)</option><option value="50">Impegnato: 50 XP (circa 20 minuti)</option><option value="100">Intenso: 100 XP (circa 40 minuti)</option></select></div>
     <div class="card"><h3>Appearance</h3>
       <select id="theme"><option value="auto">Match system</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
     <div class="card"><h3>Your data</h3>
@@ -61,7 +61,7 @@ export async function render(view, { store }) {
     else if (r === "ios") how.innerHTML = inst.HOWTO.ios;
     else if (r === "unavailable") how.innerHTML = `${inst.HOWTO.android}<br>${inst.HOWTO.ios}<br>${inst.HOWTO.desktop}`;
   };
-  view.querySelector("#goal").value = String(await store.setting("dailyGoal", 50));
+  view.querySelector("#goal").value = String(await store.setting("dailyGoal", 30));
   view.querySelector("#goal").onchange = async e => { await store.setSetting("dailyGoal", Number(e.target.value)); toast("Daily goal updated"); };
   view.querySelector("#theme").onchange = async e => { await store.setSetting("theme", e.target.value); applyTheme(e.target.value); };
   // audio mode, voices, tests

@@ -594,3 +594,30 @@ body.in-session .coach-fab, body[data-view=convo] .coach-fab { display: none; }
 .report-link { color: var(--muted); font-size: .8rem; }
 .report-link:hover { color: var(--red); }
 body.in-session .coach-panel { z-index: 75; }
+
+/* Convos: speed and hide-text options */
+.dock-opts { display: flex; gap: .5rem; justify-content: center; flex-wrap: wrap; margin-top: .35rem; }
+.opt-btn { font: inherit; font-size: .78rem; font-weight: 800; padding: .3rem .7rem; border-radius: 999px; border: 2px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer; }
+.opt-btn.on { border-color: var(--purple, #8b5cf6); color: var(--ink); }
+.veil-note { display: none; cursor: pointer; color: var(--muted); font-weight: 700; }
+.bubble.veiled .veil-note { display: block; }
+.bubble.veiled > .it, .bubble.veiled .gloss { display: none; }
+
+/* Verbi */
+.tense-pick { display: flex; flex-wrap: wrap; gap: .4rem; }
+.tense-pick input { display: none; }
+.verb-list { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .7rem; max-height: 340px; overflow: auto; }
+#vq { width: 100%; padding: .6rem .8rem; border-radius: 12px; border: 2px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; }
+.vt-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: .8rem; }
+.vt-tense h4 { margin: 0 0 .4rem; }
+.vt-row { display: grid; grid-template-columns: 5.2rem 1fr; gap: .1rem .5rem; padding: .15rem 0; border-bottom: 1px dashed var(--line); }
+.vt-row .small { grid-column: 2; }
+
+/* Esame simulato */
+.exam-sections { list-style: none; padding: 0; margin: .8rem 0; display: grid; gap: .3rem; text-align: left; }
+.exam-bars { display: grid; gap: .5rem; margin: 1rem 0; text-align: left; }
+.eb-row { display: grid; grid-template-columns: minmax(9rem, 1.3fr) 2fr 3rem; gap: .6rem; align-items: center; font-size: .9rem; }
+.eb-bar { height: 12px; background: var(--line); border-radius: 99px; overflow: hidden; }
+.eb-bar i { display: block; height: 100%; border-radius: 99px; background: var(--green, #22c55e); }
+.eb-bar i.mid { background: var(--orange, #f59e0b); } .eb-bar i.low { background: var(--red, #ef4444); }
+@media (max-width: 520px) { .eb-row { grid-template-columns: 1fr 3rem; } .eb-bar { grid-column: 1 / -1; grid-row: 2; } }

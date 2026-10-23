@@ -1,0 +1,7247 @@
+{
+  "verbs": [
+    {
+      "inf": "essere",
+      "en": "to be",
+      "aux": "essere",
+      "participio": "stato",
+      "gerundio": "essendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "core"
+      ],
+      "tempi": {
+        "presente": [
+          "sono",
+          "sei",
+          "è",
+          "siamo",
+          "siete",
+          "sono"
+        ],
+        "imperfetto": [
+          "ero",
+          "eri",
+          "era",
+          "eravamo",
+          "eravate",
+          "erano"
+        ],
+        "futuro": [
+          "sarò",
+          "sarai",
+          "sarà",
+          "saremo",
+          "sarete",
+          "saranno"
+        ],
+        "condizionale": [
+          "sarei",
+          "saresti",
+          "sarebbe",
+          "saremmo",
+          "sareste",
+          "sarebbero"
+        ],
+        "congiuntivo": [
+          "sia",
+          "sia",
+          "sia",
+          "siamo",
+          "siate",
+          "siano"
+        ],
+        "congiuntivo_imperfetto": [
+          "fossi",
+          "fossi",
+          "fosse",
+          "fossimo",
+          "foste",
+          "fossero"
+        ],
+        "passato_remoto": [
+          "fui",
+          "fosti",
+          "fu",
+          "fummo",
+          "foste",
+          "furono"
+        ]
+      },
+      "imperativo": {
+        "tu": "sii",
+        "lei": "sia",
+        "noi": "siamo",
+        "voi": "siate"
+      }
+    },
+    {
+      "inf": "avere",
+      "en": "to have",
+      "aux": "avere",
+      "participio": "avuto",
+      "gerundio": "avendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "core"
+      ],
+      "tempi": {
+        "presente": [
+          "ho",
+          "hai",
+          "ha",
+          "abbiamo",
+          "avete",
+          "hanno"
+        ],
+        "imperfetto": [
+          "avevo",
+          "avevi",
+          "aveva",
+          "avevamo",
+          "avevate",
+          "avevano"
+        ],
+        "futuro": [
+          "avrò",
+          "avrai",
+          "avrà",
+          "avremo",
+          "avrete",
+          "avranno"
+        ],
+        "condizionale": [
+          "avrei",
+          "avresti",
+          "avrebbe",
+          "avremmo",
+          "avreste",
+          "avrebbero"
+        ],
+        "congiuntivo": [
+          "abbia",
+          "abbia",
+          "abbia",
+          "abbiamo",
+          "abbiate",
+          "abbiano"
+        ],
+        "congiuntivo_imperfetto": [
+          "avessi",
+          "avessi",
+          "avesse",
+          "avessimo",
+          "aveste",
+          "avessero"
+        ],
+        "passato_remoto": [
+          "ebbi",
+          "avesti",
+          "ebbe",
+          "avemmo",
+          "aveste",
+          "ebbero"
+        ]
+      },
+      "imperativo": {
+        "tu": "abbi",
+        "lei": "abbia",
+        "noi": "abbiamo",
+        "voi": "abbiate"
+      }
+    },
+    {
+      "inf": "andare",
+      "en": "to go",
+      "aux": "essere",
+      "participio": "andato",
+      "gerundio": "andando",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "movement"
+      ],
+      "tempi": {
+        "presente": [
+          "vado",
+          "vai",
+          "va",
+          "andiamo",
+          "andate",
+          "vanno"
+        ],
+        "imperfetto": [
+          "andavo",
+          "andavi",
+          "andava",
+          "andavamo",
+          "andavate",
+          "andavano"
+        ],
+        "futuro": [
+          "andrò",
+          "andrai",
+          "andrà",
+          "andremo",
+          "andrete",
+          "andranno"
+        ],
+        "condizionale": [
+          "andrei",
+          "andresti",
+          "andrebbe",
+          "andremmo",
+          "andreste",
+          "andrebbero"
+        ],
+        "congiuntivo": [
+          "vada",
+          "vada",
+          "vada",
+          "andiamo",
+          "andiate",
+          "vadano"
+        ],
+        "congiuntivo_imperfetto": [
+          "andassi",
+          "andassi",
+          "andasse",
+          "andassimo",
+          "andaste",
+          "andassero"
+        ],
+        "passato_remoto": [
+          "andai",
+          "andasti",
+          "andò",
+          "andammo",
+          "andaste",
+          "andarono"
+        ]
+      },
+      "imperativo": {
+        "tu": "va'",
+        "lei": "vada",
+        "noi": "andiamo",
+        "voi": "andate"
+      },
+      "imperativo_alt": {
+        "tu": "vai"
+      }
+    },
+    {
+      "inf": "venire",
+      "en": "to come",
+      "aux": "essere",
+      "participio": "venuto",
+      "gerundio": "venendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "movement"
+      ],
+      "tempi": {
+        "presente": [
+          "vengo",
+          "vieni",
+          "viene",
+          "veniamo",
+          "venite",
+          "vengono"
+        ],
+        "imperfetto": [
+          "venivo",
+          "venivi",
+          "veniva",
+          "venivamo",
+          "venivate",
+          "venivano"
+        ],
+        "futuro": [
+          "verrò",
+          "verrai",
+          "verrà",
+          "verremo",
+          "verrete",
+          "verranno"
+        ],
+        "condizionale": [
+          "verrei",
+          "verresti",
+          "verrebbe",
+          "verremmo",
+          "verreste",
+          "verrebbero"
+        ],
+        "congiuntivo": [
+          "venga",
+          "venga",
+          "venga",
+          "veniamo",
+          "veniate",
+          "vengano"
+        ],
+        "congiuntivo_imperfetto": [
+          "venissi",
+          "venissi",
+          "venisse",
+          "venissimo",
+          "veniste",
+          "venissero"
+        ],
+        "passato_remoto": [
+          "venni",
+          "venisti",
+          "venne",
+          "venimmo",
+          "veniste",
+          "vennero"
+        ]
+      },
+      "imperativo": {
+        "tu": "vieni",
+        "lei": "venga",
+        "noi": "veniamo",
+        "voi": "venite"
+      }
+    },
+    {
+      "inf": "fare",
+      "en": "to do, to make",
+      "aux": "avere",
+      "participio": "fatto",
+      "gerundio": "facendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "core"
+      ],
+      "tempi": {
+        "presente": [
+          "faccio",
+          "fai",
+          "fa",
+          "facciamo",
+          "fate",
+          "fanno"
+        ],
+        "imperfetto": [
+          "facevo",
+          "facevi",
+          "faceva",
+          "facevamo",
+          "facevate",
+          "facevano"
+        ],
+        "futuro": [
+          "farò",
+          "farai",
+          "farà",
+          "faremo",
+          "farete",
+          "faranno"
+        ],
+        "condizionale": [
+          "farei",
+          "faresti",
+          "farebbe",
+          "faremmo",
+          "fareste",
+          "farebbero"
+        ],
+        "congiuntivo": [
+          "faccia",
+          "faccia",
+          "faccia",
+          "facciamo",
+          "facciate",
+          "facciano"
+        ],
+        "congiuntivo_imperfetto": [
+          "facessi",
+          "facessi",
+          "facesse",
+          "facessimo",
+          "faceste",
+          "facessero"
+        ],
+        "passato_remoto": [
+          "feci",
+          "facesti",
+          "fece",
+          "facemmo",
+          "faceste",
+          "fecero"
+        ]
+      },
+      "imperativo": {
+        "tu": "fa'",
+        "lei": "faccia",
+        "noi": "facciamo",
+        "voi": "fate"
+      },
+      "imperativo_alt": {
+        "tu": "fai"
+      }
+    },
+    {
+      "inf": "dire",
+      "en": "to say, to tell",
+      "aux": "avere",
+      "participio": "detto",
+      "gerundio": "dicendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "communication"
+      ],
+      "tempi": {
+        "presente": [
+          "dico",
+          "dici",
+          "dice",
+          "diciamo",
+          "dite",
+          "dicono"
+        ],
+        "imperfetto": [
+          "dicevo",
+          "dicevi",
+          "diceva",
+          "dicevamo",
+          "dicevate",
+          "dicevano"
+        ],
+        "futuro": [
+          "dirò",
+          "dirai",
+          "dirà",
+          "diremo",
+          "direte",
+          "diranno"
+        ],
+        "condizionale": [
+          "direi",
+          "diresti",
+          "direbbe",
+          "diremmo",
+          "direste",
+          "direbbero"
+        ],
+        "congiuntivo": [
+          "dica",
+          "dica",
+          "dica",
+          "diciamo",
+          "diciate",
+          "dicano"
+        ],
+        "congiuntivo_imperfetto": [
+          "dicessi",
+          "dicessi",
+          "dicesse",
+          "dicessimo",
+          "diceste",
+          "dicessero"
+        ],
+        "passato_remoto": [
+          "dissi",
+          "dicesti",
+          "disse",
+          "dicemmo",
+          "diceste",
+          "dissero"
+        ]
+      },
+      "imperativo": {
+        "tu": "di'",
+        "lei": "dica",
+        "noi": "diciamo",
+        "voi": "dite"
+      }
+    },
+    {
+      "inf": "dare",
+      "en": "to give",
+      "aux": "avere",
+      "participio": "dato",
+      "gerundio": "dando",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "core"
+      ],
+      "tempi": {
+        "presente": [
+          "do",
+          "dai",
+          "dà",
+          "diamo",
+          "date",
+          "danno"
+        ],
+        "imperfetto": [
+          "davo",
+          "davi",
+          "dava",
+          "davamo",
+          "davate",
+          "davano"
+        ],
+        "futuro": [
+          "darò",
+          "darai",
+          "darà",
+          "daremo",
+          "darete",
+          "daranno"
+        ],
+        "condizionale": [
+          "darei",
+          "daresti",
+          "darebbe",
+          "daremmo",
+          "dareste",
+          "darebbero"
+        ],
+        "congiuntivo": [
+          "dia",
+          "dia",
+          "dia",
+          "diamo",
+          "diate",
+          "diano"
+        ],
+        "congiuntivo_imperfetto": [
+          "dessi",
+          "dessi",
+          "desse",
+          "dessimo",
+          "deste",
+          "dessero"
+        ],
+        "passato_remoto": [
+          "diedi",
+          "desti",
+          "diede",
+          "demmo",
+          "deste",
+          "diedero"
+        ]
+      },
+      "imperativo": {
+        "tu": "da'",
+        "lei": "dia",
+        "noi": "diamo",
+        "voi": "date"
+      },
+      "imperativo_alt": {
+        "tu": "dai"
+      },
+      "alt": {
+        "passato_remoto": [
+          "detti",
+          null,
+          "dette",
+          null,
+          null,
+          "dettero"
+        ]
+      }
+    },
+    {
+      "inf": "stare",
+      "en": "to stay, to be",
+      "aux": "essere",
+      "participio": "stato",
+      "gerundio": "stando",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "core"
+      ],
+      "tempi": {
+        "presente": [
+          "sto",
+          "stai",
+          "sta",
+          "stiamo",
+          "state",
+          "stanno"
+        ],
+        "imperfetto": [
+          "stavo",
+          "stavi",
+          "stava",
+          "stavamo",
+          "stavate",
+          "stavano"
+        ],
+        "futuro": [
+          "starò",
+          "starai",
+          "starà",
+          "staremo",
+          "starete",
+          "staranno"
+        ],
+        "condizionale": [
+          "starei",
+          "staresti",
+          "starebbe",
+          "staremmo",
+          "stareste",
+          "starebbero"
+        ],
+        "congiuntivo": [
+          "stia",
+          "stia",
+          "stia",
+          "stiamo",
+          "stiate",
+          "stiano"
+        ],
+        "congiuntivo_imperfetto": [
+          "stessi",
+          "stessi",
+          "stesse",
+          "stessimo",
+          "steste",
+          "stessero"
+        ],
+        "passato_remoto": [
+          "stetti",
+          "stesti",
+          "stette",
+          "stemmo",
+          "steste",
+          "stettero"
+        ]
+      },
+      "imperativo": {
+        "tu": "sta'",
+        "lei": "stia",
+        "noi": "stiamo",
+        "voi": "state"
+      },
+      "imperativo_alt": {
+        "tu": "stai"
+      }
+    },
+    {
+      "inf": "sapere",
+      "en": "to know",
+      "aux": "avere",
+      "participio": "saputo",
+      "gerundio": "sapendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "core"
+      ],
+      "tempi": {
+        "presente": [
+          "so",
+          "sai",
+          "sa",
+          "sappiamo",
+          "sapete",
+          "sanno"
+        ],
+        "imperfetto": [
+          "sapevo",
+          "sapevi",
+          "sapeva",
+          "sapevamo",
+          "sapevate",
+          "sapevano"
+        ],
+        "futuro": [
+          "saprò",
+          "saprai",
+          "saprà",
+          "sapremo",
+          "saprete",
+          "sapranno"
+        ],
+        "condizionale": [
+          "saprei",
+          "sapresti",
+          "saprebbe",
+          "sapremmo",
+          "sapreste",
+          "saprebbero"
+        ],
+        "congiuntivo": [
+          "sappia",
+          "sappia",
+          "sappia",
+          "sappiamo",
+          "sappiate",
+          "sappiano"
+        ],
+        "congiuntivo_imperfetto": [
+          "sapessi",
+          "sapessi",
+          "sapesse",
+          "sapessimo",
+          "sapeste",
+          "sapessero"
+        ],
+        "passato_remoto": [
+          "seppi",
+          "sapesti",
+          "seppe",
+          "sapemmo",
+          "sapeste",
+          "seppero"
+        ]
+      },
+      "imperativo": {
+        "tu": "sappi",
+        "lei": "sappia",
+        "noi": "sappiamo",
+        "voi": "sappiate"
+      }
+    },
+    {
+      "inf": "potere",
+      "en": "to be able to, can",
+      "aux": "avere",
+      "participio": "potuto",
+      "gerundio": "potendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "modal"
+      ],
+      "tempi": {
+        "presente": [
+          "posso",
+          "puoi",
+          "può",
+          "possiamo",
+          "potete",
+          "possono"
+        ],
+        "imperfetto": [
+          "potevo",
+          "potevi",
+          "poteva",
+          "potevamo",
+          "potevate",
+          "potevano"
+        ],
+        "futuro": [
+          "potrò",
+          "potrai",
+          "potrà",
+          "potremo",
+          "potrete",
+          "potranno"
+        ],
+        "condizionale": [
+          "potrei",
+          "potresti",
+          "potrebbe",
+          "potremmo",
+          "potreste",
+          "potrebbero"
+        ],
+        "congiuntivo": [
+          "possa",
+          "possa",
+          "possa",
+          "possiamo",
+          "possiate",
+          "possano"
+        ],
+        "congiuntivo_imperfetto": [
+          "potessi",
+          "potessi",
+          "potesse",
+          "potessimo",
+          "poteste",
+          "potessero"
+        ],
+        "passato_remoto": [
+          "potei",
+          "potesti",
+          "poté",
+          "potemmo",
+          "poteste",
+          "poterono"
+        ]
+      },
+      "imperativo": {
+        "tu": "—",
+        "lei": "—",
+        "noi": "—",
+        "voi": "—"
+      }
+    },
+    {
+      "inf": "volere",
+      "en": "to want",
+      "aux": "avere",
+      "participio": "voluto",
+      "gerundio": "volendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "modal"
+      ],
+      "tempi": {
+        "presente": [
+          "voglio",
+          "vuoi",
+          "vuole",
+          "vogliamo",
+          "volete",
+          "vogliono"
+        ],
+        "imperfetto": [
+          "volevo",
+          "volevi",
+          "voleva",
+          "volevamo",
+          "volevate",
+          "volevano"
+        ],
+        "futuro": [
+          "vorrò",
+          "vorrai",
+          "vorrà",
+          "vorremo",
+          "vorrete",
+          "vorranno"
+        ],
+        "condizionale": [
+          "vorrei",
+          "vorresti",
+          "vorrebbe",
+          "vorremmo",
+          "vorreste",
+          "vorrebbero"
+        ],
+        "congiuntivo": [
+          "voglia",
+          "voglia",
+          "voglia",
+          "vogliamo",
+          "vogliate",
+          "vogliano"
+        ],
+        "congiuntivo_imperfetto": [
+          "volessi",
+          "volessi",
+          "volesse",
+          "volessimo",
+          "voleste",
+          "volessero"
+        ],
+        "passato_remoto": [
+          "volli",
+          "volesti",
+          "volle",
+          "volemmo",
+          "voleste",
+          "vollero"
+        ]
+      },
+      "imperativo": {
+        "tu": "vogli",
+        "lei": "voglia",
+        "noi": "vogliamo",
+        "voi": "vogliate"
+      }
+    },
+    {
+      "inf": "dovere",
+      "en": "to have to, must",
+      "aux": "avere",
+      "participio": "dovuto",
+      "gerundio": "dovendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "modal"
+      ],
+      "tempi": {
+        "presente": [
+          "devo",
+          "devi",
+          "deve",
+          "dobbiamo",
+          "dovete",
+          "devono"
+        ],
+        "imperfetto": [
+          "dovevo",
+          "dovevi",
+          "doveva",
+          "dovevamo",
+          "dovevate",
+          "dovevano"
+        ],
+        "futuro": [
+          "dovrò",
+          "dovrai",
+          "dovrà",
+          "dovremo",
+          "dovrete",
+          "dovranno"
+        ],
+        "condizionale": [
+          "dovrei",
+          "dovresti",
+          "dovrebbe",
+          "dovremmo",
+          "dovreste",
+          "dovrebbero"
+        ],
+        "congiuntivo": [
+          "debba",
+          "debba",
+          "debba",
+          "dobbiamo",
+          "dobbiate",
+          "debbano"
+        ],
+        "congiuntivo_imperfetto": [
+          "dovessi",
+          "dovessi",
+          "dovesse",
+          "dovessimo",
+          "doveste",
+          "dovessero"
+        ],
+        "passato_remoto": [
+          "dovetti",
+          "dovesti",
+          "dovette",
+          "dovemmo",
+          "doveste",
+          "dovettero"
+        ]
+      },
+      "imperativo": {
+        "tu": "—",
+        "lei": "—",
+        "noi": "—",
+        "voi": "—"
+      },
+      "alt": {
+        "presente": [
+          "debbo",
+          null,
+          null,
+          null,
+          null,
+          "debbono"
+        ],
+        "congiuntivo": [
+          "deva",
+          "deva",
+          "deva",
+          null,
+          null,
+          "devano"
+        ],
+        "passato_remoto": [
+          "dovei",
+          null,
+          "dové",
+          null,
+          null,
+          "doverono"
+        ]
+      }
+    },
+    {
+      "inf": "uscire",
+      "en": "to go out",
+      "aux": "essere",
+      "participio": "uscito",
+      "gerundio": "uscendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "movement"
+      ],
+      "tempi": {
+        "presente": [
+          "esco",
+          "esci",
+          "esce",
+          "usciamo",
+          "uscite",
+          "escono"
+        ],
+        "imperfetto": [
+          "uscivo",
+          "uscivi",
+          "usciva",
+          "uscivamo",
+          "uscivate",
+          "uscivano"
+        ],
+        "futuro": [
+          "uscirò",
+          "uscirai",
+          "uscirà",
+          "usciremo",
+          "uscirete",
+          "usciranno"
+        ],
+        "condizionale": [
+          "uscirei",
+          "usciresti",
+          "uscirebbe",
+          "usciremmo",
+          "uscireste",
+          "uscirebbero"
+        ],
+        "congiuntivo": [
+          "esca",
+          "esca",
+          "esca",
+          "usciamo",
+          "usciate",
+          "escano"
+        ],
+        "congiuntivo_imperfetto": [
+          "uscissi",
+          "uscissi",
+          "uscisse",
+          "uscissimo",
+          "usciste",
+          "uscissero"
+        ],
+        "passato_remoto": [
+          "uscii",
+          "uscisti",
+          "uscì",
+          "uscimmo",
+          "usciste",
+          "uscirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "esci",
+        "lei": "esca",
+        "noi": "usciamo",
+        "voi": "uscite"
+      }
+    },
+    {
+      "inf": "bere",
+      "en": "to drink",
+      "aux": "avere",
+      "participio": "bevuto",
+      "gerundio": "bevendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "daily life"
+      ],
+      "tempi": {
+        "presente": [
+          "bevo",
+          "bevi",
+          "beve",
+          "beviamo",
+          "bevete",
+          "bevono"
+        ],
+        "imperfetto": [
+          "bevevo",
+          "bevevi",
+          "beveva",
+          "bevevamo",
+          "bevevate",
+          "bevevano"
+        ],
+        "futuro": [
+          "berrò",
+          "berrai",
+          "berrà",
+          "berremo",
+          "berrete",
+          "berranno"
+        ],
+        "condizionale": [
+          "berrei",
+          "berresti",
+          "berrebbe",
+          "berremmo",
+          "berreste",
+          "berrebbero"
+        ],
+        "congiuntivo": [
+          "beva",
+          "beva",
+          "beva",
+          "beviamo",
+          "beviate",
+          "bevano"
+        ],
+        "congiuntivo_imperfetto": [
+          "bevessi",
+          "bevessi",
+          "bevesse",
+          "bevessimo",
+          "beveste",
+          "bevessero"
+        ],
+        "passato_remoto": [
+          "bevvi",
+          "bevesti",
+          "bevve",
+          "bevemmo",
+          "beveste",
+          "bevvero"
+        ]
+      },
+      "imperativo": {
+        "tu": "bevi",
+        "lei": "beva",
+        "noi": "beviamo",
+        "voi": "bevete"
+      },
+      "alt": {
+        "passato_remoto": [
+          "bevetti",
+          null,
+          "bevette",
+          null,
+          null,
+          "bevettero"
+        ]
+      }
+    },
+    {
+      "inf": "tenere",
+      "en": "to hold, to keep",
+      "aux": "avere",
+      "participio": "tenuto",
+      "gerundio": "tenendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "tengo",
+          "tieni",
+          "tiene",
+          "teniamo",
+          "tenete",
+          "tengono"
+        ],
+        "imperfetto": [
+          "tenevo",
+          "tenevi",
+          "teneva",
+          "tenevamo",
+          "tenevate",
+          "tenevano"
+        ],
+        "futuro": [
+          "terrò",
+          "terrai",
+          "terrà",
+          "terremo",
+          "terrete",
+          "terranno"
+        ],
+        "condizionale": [
+          "terrei",
+          "terresti",
+          "terrebbe",
+          "terremmo",
+          "terreste",
+          "terrebbero"
+        ],
+        "congiuntivo": [
+          "tenga",
+          "tenga",
+          "tenga",
+          "teniamo",
+          "teniate",
+          "tengano"
+        ],
+        "congiuntivo_imperfetto": [
+          "tenessi",
+          "tenessi",
+          "tenesse",
+          "tenessimo",
+          "teneste",
+          "tenessero"
+        ],
+        "passato_remoto": [
+          "tenni",
+          "tenesti",
+          "tenne",
+          "tenemmo",
+          "teneste",
+          "tennero"
+        ]
+      },
+      "imperativo": {
+        "tu": "tieni",
+        "lei": "tenga",
+        "noi": "teniamo",
+        "voi": "tenete"
+      }
+    },
+    {
+      "inf": "rimanere",
+      "en": "to remain, to stay",
+      "aux": "essere",
+      "participio": "rimasto",
+      "gerundio": "rimanendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "rimango",
+          "rimani",
+          "rimane",
+          "rimaniamo",
+          "rimanete",
+          "rimangono"
+        ],
+        "imperfetto": [
+          "rimanevo",
+          "rimanevi",
+          "rimaneva",
+          "rimanevamo",
+          "rimanevate",
+          "rimanevano"
+        ],
+        "futuro": [
+          "rimarrò",
+          "rimarrai",
+          "rimarrà",
+          "rimarremo",
+          "rimarrete",
+          "rimarranno"
+        ],
+        "condizionale": [
+          "rimarrei",
+          "rimarresti",
+          "rimarrebbe",
+          "rimarremmo",
+          "rimarreste",
+          "rimarrebbero"
+        ],
+        "congiuntivo": [
+          "rimanga",
+          "rimanga",
+          "rimanga",
+          "rimaniamo",
+          "rimaniate",
+          "rimangano"
+        ],
+        "congiuntivo_imperfetto": [
+          "rimanessi",
+          "rimanessi",
+          "rimanesse",
+          "rimanessimo",
+          "rimaneste",
+          "rimanessero"
+        ],
+        "passato_remoto": [
+          "rimasi",
+          "rimanesti",
+          "rimase",
+          "rimanemmo",
+          "rimaneste",
+          "rimasero"
+        ]
+      },
+      "imperativo": {
+        "tu": "rimani",
+        "lei": "rimanga",
+        "noi": "rimaniamo",
+        "voi": "rimanete"
+      }
+    },
+    {
+      "inf": "porre",
+      "en": "to put, to place",
+      "aux": "avere",
+      "participio": "posto",
+      "gerundio": "ponendo",
+      "regular": false,
+      "isc": false,
+      "level": "C1",
+      "tags": [
+        "irregular",
+        "formal"
+      ],
+      "tempi": {
+        "presente": [
+          "pongo",
+          "poni",
+          "pone",
+          "poniamo",
+          "ponete",
+          "pongono"
+        ],
+        "imperfetto": [
+          "ponevo",
+          "ponevi",
+          "poneva",
+          "ponevamo",
+          "ponevate",
+          "ponevano"
+        ],
+        "futuro": [
+          "porrò",
+          "porrai",
+          "porrà",
+          "porremo",
+          "porrete",
+          "porranno"
+        ],
+        "condizionale": [
+          "porrei",
+          "porresti",
+          "porrebbe",
+          "porremmo",
+          "porreste",
+          "porrebbero"
+        ],
+        "congiuntivo": [
+          "ponga",
+          "ponga",
+          "ponga",
+          "poniamo",
+          "poniate",
+          "pongano"
+        ],
+        "congiuntivo_imperfetto": [
+          "ponessi",
+          "ponessi",
+          "ponesse",
+          "ponessimo",
+          "poneste",
+          "ponessero"
+        ],
+        "passato_remoto": [
+          "posi",
+          "ponesti",
+          "pose",
+          "ponemmo",
+          "poneste",
+          "posero"
+        ]
+      },
+      "imperativo": {
+        "tu": "poni",
+        "lei": "ponga",
+        "noi": "poniamo",
+        "voi": "ponete"
+      }
+    },
+    {
+      "inf": "tradurre",
+      "en": "to translate",
+      "aux": "avere",
+      "participio": "tradotto",
+      "gerundio": "traducendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "communication"
+      ],
+      "tempi": {
+        "presente": [
+          "traduco",
+          "traduci",
+          "traduce",
+          "traduciamo",
+          "traducete",
+          "traducono"
+        ],
+        "imperfetto": [
+          "traducevo",
+          "traducevi",
+          "traduceva",
+          "traducevamo",
+          "traducevate",
+          "traducevano"
+        ],
+        "futuro": [
+          "tradurrò",
+          "tradurrai",
+          "tradurrà",
+          "tradurremo",
+          "tradurrete",
+          "tradurranno"
+        ],
+        "condizionale": [
+          "tradurrei",
+          "tradurresti",
+          "tradurrebbe",
+          "tradurremmo",
+          "tradurreste",
+          "tradurrebbero"
+        ],
+        "congiuntivo": [
+          "traduca",
+          "traduca",
+          "traduca",
+          "traduciamo",
+          "traduciate",
+          "traducano"
+        ],
+        "congiuntivo_imperfetto": [
+          "traducessi",
+          "traducessi",
+          "traducesse",
+          "traducessimo",
+          "traduceste",
+          "traducessero"
+        ],
+        "passato_remoto": [
+          "tradussi",
+          "traducesti",
+          "tradusse",
+          "traducemmo",
+          "traduceste",
+          "tradussero"
+        ]
+      },
+      "imperativo": {
+        "tu": "traduci",
+        "lei": "traduca",
+        "noi": "traduciamo",
+        "voi": "traducete"
+      }
+    },
+    {
+      "inf": "scegliere",
+      "en": "to choose",
+      "aux": "avere",
+      "participio": "scelto",
+      "gerundio": "scegliendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "scelgo",
+          "scegli",
+          "sceglie",
+          "scegliamo",
+          "scegliete",
+          "scelgono"
+        ],
+        "imperfetto": [
+          "sceglievo",
+          "sceglievi",
+          "sceglieva",
+          "sceglievamo",
+          "sceglievate",
+          "sceglievano"
+        ],
+        "futuro": [
+          "sceglierò",
+          "sceglierai",
+          "sceglierà",
+          "sceglieremo",
+          "sceglierete",
+          "sceglieranno"
+        ],
+        "condizionale": [
+          "sceglierei",
+          "sceglieresti",
+          "sceglierebbe",
+          "sceglieremmo",
+          "scegliereste",
+          "sceglierebbero"
+        ],
+        "congiuntivo": [
+          "scelga",
+          "scelga",
+          "scelga",
+          "scegliamo",
+          "scegliate",
+          "scelgano"
+        ],
+        "congiuntivo_imperfetto": [
+          "scegliessi",
+          "scegliessi",
+          "scegliesse",
+          "scegliessimo",
+          "sceglieste",
+          "scegliessero"
+        ],
+        "passato_remoto": [
+          "scelsi",
+          "scegliesti",
+          "scelse",
+          "scegliemmo",
+          "sceglieste",
+          "scelsero"
+        ]
+      },
+      "imperativo": {
+        "tu": "scegli",
+        "lei": "scelga",
+        "noi": "scegliamo",
+        "voi": "scegliete"
+      }
+    },
+    {
+      "inf": "salire",
+      "en": "to go up, to get on",
+      "aux": "avere/essere",
+      "participio": "salito",
+      "gerundio": "salendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "movement"
+      ],
+      "tempi": {
+        "presente": [
+          "salgo",
+          "sali",
+          "sale",
+          "saliamo",
+          "salite",
+          "salgono"
+        ],
+        "imperfetto": [
+          "salivo",
+          "salivi",
+          "saliva",
+          "salivamo",
+          "salivate",
+          "salivano"
+        ],
+        "futuro": [
+          "salirò",
+          "salirai",
+          "salirà",
+          "saliremo",
+          "salirete",
+          "saliranno"
+        ],
+        "condizionale": [
+          "salirei",
+          "saliresti",
+          "salirebbe",
+          "saliremmo",
+          "salireste",
+          "salirebbero"
+        ],
+        "congiuntivo": [
+          "salga",
+          "salga",
+          "salga",
+          "saliamo",
+          "saliate",
+          "salgano"
+        ],
+        "congiuntivo_imperfetto": [
+          "salissi",
+          "salissi",
+          "salisse",
+          "salissimo",
+          "saliste",
+          "salissero"
+        ],
+        "passato_remoto": [
+          "salii",
+          "salisti",
+          "salì",
+          "salimmo",
+          "saliste",
+          "salirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "sali",
+        "lei": "salga",
+        "noi": "saliamo",
+        "voi": "salite"
+      }
+    },
+    {
+      "inf": "piacere",
+      "en": "to please, to be liked",
+      "aux": "essere",
+      "participio": "piaciuto",
+      "gerundio": "piacendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "feelings"
+      ],
+      "tempi": {
+        "presente": [
+          "piaccio",
+          "piaci",
+          "piace",
+          "piacciamo",
+          "piacete",
+          "piacciono"
+        ],
+        "imperfetto": [
+          "piacevo",
+          "piacevi",
+          "piaceva",
+          "piacevamo",
+          "piacevate",
+          "piacevano"
+        ],
+        "futuro": [
+          "piacerò",
+          "piacerai",
+          "piacerà",
+          "piaceremo",
+          "piacerete",
+          "piaceranno"
+        ],
+        "condizionale": [
+          "piacerei",
+          "piaceresti",
+          "piacerebbe",
+          "piaceremmo",
+          "piacereste",
+          "piacerebbero"
+        ],
+        "congiuntivo": [
+          "piaccia",
+          "piaccia",
+          "piaccia",
+          "piacciamo",
+          "piacciate",
+          "piacciano"
+        ],
+        "congiuntivo_imperfetto": [
+          "piacessi",
+          "piacessi",
+          "piacesse",
+          "piacessimo",
+          "piaceste",
+          "piacessero"
+        ],
+        "passato_remoto": [
+          "piacqui",
+          "piacesti",
+          "piacque",
+          "piacemmo",
+          "piaceste",
+          "piacquero"
+        ]
+      },
+      "imperativo": {
+        "tu": "piaci",
+        "lei": "piaccia",
+        "noi": "piacciamo",
+        "voi": "piacete"
+      }
+    },
+    {
+      "inf": "morire",
+      "en": "to die",
+      "aux": "essere",
+      "participio": "morto",
+      "gerundio": "morendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "muoio",
+          "muori",
+          "muore",
+          "moriamo",
+          "morite",
+          "muoiono"
+        ],
+        "imperfetto": [
+          "morivo",
+          "morivi",
+          "moriva",
+          "morivamo",
+          "morivate",
+          "morivano"
+        ],
+        "futuro": [
+          "morirò",
+          "morirai",
+          "morirà",
+          "moriremo",
+          "morirete",
+          "moriranno"
+        ],
+        "condizionale": [
+          "morirei",
+          "moriresti",
+          "morirebbe",
+          "moriremmo",
+          "morireste",
+          "morirebbero"
+        ],
+        "congiuntivo": [
+          "muoia",
+          "muoia",
+          "muoia",
+          "moriamo",
+          "moriate",
+          "muoiano"
+        ],
+        "congiuntivo_imperfetto": [
+          "morissi",
+          "morissi",
+          "morisse",
+          "morissimo",
+          "moriste",
+          "morissero"
+        ],
+        "passato_remoto": [
+          "morii",
+          "moristi",
+          "morì",
+          "morimmo",
+          "moriste",
+          "morirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "muori",
+        "lei": "muoia",
+        "noi": "moriamo",
+        "voi": "morite"
+      },
+      "alt": {
+        "futuro": [
+          "morrò",
+          "morrai",
+          "morrà",
+          "morremo",
+          "morrete",
+          "morranno"
+        ],
+        "condizionale": [
+          "morrei",
+          "morresti",
+          "morrebbe",
+          "morremmo",
+          "morreste",
+          "morrebbero"
+        ]
+      }
+    },
+    {
+      "inf": "nascere",
+      "en": "to be born",
+      "aux": "essere",
+      "participio": "nato",
+      "gerundio": "nascendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "nasco",
+          "nasci",
+          "nasce",
+          "nasciamo",
+          "nascete",
+          "nascono"
+        ],
+        "imperfetto": [
+          "nascevo",
+          "nascevi",
+          "nasceva",
+          "nascevamo",
+          "nascevate",
+          "nascevano"
+        ],
+        "futuro": [
+          "nascerò",
+          "nascerai",
+          "nascerà",
+          "nasceremo",
+          "nascerete",
+          "nasceranno"
+        ],
+        "condizionale": [
+          "nascerei",
+          "nasceresti",
+          "nascerebbe",
+          "nasceremmo",
+          "nascereste",
+          "nascerebbero"
+        ],
+        "congiuntivo": [
+          "nasca",
+          "nasca",
+          "nasca",
+          "nasciamo",
+          "nasciate",
+          "nascano"
+        ],
+        "congiuntivo_imperfetto": [
+          "nascessi",
+          "nascessi",
+          "nascesse",
+          "nascessimo",
+          "nasceste",
+          "nascessero"
+        ],
+        "passato_remoto": [
+          "nacqui",
+          "nascesti",
+          "nacque",
+          "nascemmo",
+          "nasceste",
+          "nacquero"
+        ]
+      },
+      "imperativo": {
+        "tu": "nasci",
+        "lei": "nasca",
+        "noi": "nasciamo",
+        "voi": "nascete"
+      }
+    },
+    {
+      "inf": "vivere",
+      "en": "to live",
+      "aux": "avere/essere",
+      "participio": "vissuto",
+      "gerundio": "vivendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "vivo",
+          "vivi",
+          "vive",
+          "viviamo",
+          "vivete",
+          "vivono"
+        ],
+        "imperfetto": [
+          "vivevo",
+          "vivevi",
+          "viveva",
+          "vivevamo",
+          "vivevate",
+          "vivevano"
+        ],
+        "futuro": [
+          "vivrò",
+          "vivrai",
+          "vivrà",
+          "vivremo",
+          "vivrete",
+          "vivranno"
+        ],
+        "condizionale": [
+          "vivrei",
+          "vivresti",
+          "vivrebbe",
+          "vivremmo",
+          "vivreste",
+          "vivrebbero"
+        ],
+        "congiuntivo": [
+          "viva",
+          "viva",
+          "viva",
+          "viviamo",
+          "viviate",
+          "vivano"
+        ],
+        "congiuntivo_imperfetto": [
+          "vivessi",
+          "vivessi",
+          "vivesse",
+          "vivessimo",
+          "viveste",
+          "vivessero"
+        ],
+        "passato_remoto": [
+          "vissi",
+          "vivesti",
+          "visse",
+          "vivemmo",
+          "viveste",
+          "vissero"
+        ]
+      },
+      "imperativo": {
+        "tu": "vivi",
+        "lei": "viva",
+        "noi": "viviamo",
+        "voi": "vivete"
+      }
+    },
+    {
+      "inf": "vedere",
+      "en": "to see",
+      "aux": "avere",
+      "participio": "visto",
+      "gerundio": "vedendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "senses"
+      ],
+      "tempi": {
+        "presente": [
+          "vedo",
+          "vedi",
+          "vede",
+          "vediamo",
+          "vedete",
+          "vedono"
+        ],
+        "imperfetto": [
+          "vedevo",
+          "vedevi",
+          "vedeva",
+          "vedevamo",
+          "vedevate",
+          "vedevano"
+        ],
+        "futuro": [
+          "vedrò",
+          "vedrai",
+          "vedrà",
+          "vedremo",
+          "vedrete",
+          "vedranno"
+        ],
+        "condizionale": [
+          "vedrei",
+          "vedresti",
+          "vedrebbe",
+          "vedremmo",
+          "vedreste",
+          "vedrebbero"
+        ],
+        "congiuntivo": [
+          "veda",
+          "veda",
+          "veda",
+          "vediamo",
+          "vediate",
+          "vedano"
+        ],
+        "congiuntivo_imperfetto": [
+          "vedessi",
+          "vedessi",
+          "vedesse",
+          "vedessimo",
+          "vedeste",
+          "vedessero"
+        ],
+        "passato_remoto": [
+          "vidi",
+          "vedesti",
+          "vide",
+          "vedemmo",
+          "vedeste",
+          "videro"
+        ]
+      },
+      "imperativo": {
+        "tu": "vedi",
+        "lei": "veda",
+        "noi": "vediamo",
+        "voi": "vedete"
+      }
+    },
+    {
+      "inf": "leggere",
+      "en": "to read",
+      "aux": "avere",
+      "participio": "letto",
+      "gerundio": "leggendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "communication"
+      ],
+      "tempi": {
+        "presente": [
+          "leggo",
+          "leggi",
+          "legge",
+          "leggiamo",
+          "leggete",
+          "leggono"
+        ],
+        "imperfetto": [
+          "leggevo",
+          "leggevi",
+          "leggeva",
+          "leggevamo",
+          "leggevate",
+          "leggevano"
+        ],
+        "futuro": [
+          "leggerò",
+          "leggerai",
+          "leggerà",
+          "leggeremo",
+          "leggerete",
+          "leggeranno"
+        ],
+        "condizionale": [
+          "leggerei",
+          "leggeresti",
+          "leggerebbe",
+          "leggeremmo",
+          "leggereste",
+          "leggerebbero"
+        ],
+        "congiuntivo": [
+          "legga",
+          "legga",
+          "legga",
+          "leggiamo",
+          "leggiate",
+          "leggano"
+        ],
+        "congiuntivo_imperfetto": [
+          "leggessi",
+          "leggessi",
+          "leggesse",
+          "leggessimo",
+          "leggeste",
+          "leggessero"
+        ],
+        "passato_remoto": [
+          "lessi",
+          "leggesti",
+          "lesse",
+          "leggemmo",
+          "leggeste",
+          "lessero"
+        ]
+      },
+      "imperativo": {
+        "tu": "leggi",
+        "lei": "legga",
+        "noi": "leggiamo",
+        "voi": "leggete"
+      }
+    },
+    {
+      "inf": "scrivere",
+      "en": "to write",
+      "aux": "avere",
+      "participio": "scritto",
+      "gerundio": "scrivendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "communication"
+      ],
+      "tempi": {
+        "presente": [
+          "scrivo",
+          "scrivi",
+          "scrive",
+          "scriviamo",
+          "scrivete",
+          "scrivono"
+        ],
+        "imperfetto": [
+          "scrivevo",
+          "scrivevi",
+          "scriveva",
+          "scrivevamo",
+          "scrivevate",
+          "scrivevano"
+        ],
+        "futuro": [
+          "scriverò",
+          "scriverai",
+          "scriverà",
+          "scriveremo",
+          "scriverete",
+          "scriveranno"
+        ],
+        "condizionale": [
+          "scriverei",
+          "scriveresti",
+          "scriverebbe",
+          "scriveremmo",
+          "scrivereste",
+          "scriverebbero"
+        ],
+        "congiuntivo": [
+          "scriva",
+          "scriva",
+          "scriva",
+          "scriviamo",
+          "scriviate",
+          "scrivano"
+        ],
+        "congiuntivo_imperfetto": [
+          "scrivessi",
+          "scrivessi",
+          "scrivesse",
+          "scrivessimo",
+          "scriveste",
+          "scrivessero"
+        ],
+        "passato_remoto": [
+          "scrissi",
+          "scrivesti",
+          "scrisse",
+          "scrivemmo",
+          "scriveste",
+          "scrissero"
+        ]
+      },
+      "imperativo": {
+        "tu": "scrivi",
+        "lei": "scriva",
+        "noi": "scriviamo",
+        "voi": "scrivete"
+      }
+    },
+    {
+      "inf": "prendere",
+      "en": "to take",
+      "aux": "avere",
+      "participio": "preso",
+      "gerundio": "prendendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "prendo",
+          "prendi",
+          "prende",
+          "prendiamo",
+          "prendete",
+          "prendono"
+        ],
+        "imperfetto": [
+          "prendevo",
+          "prendevi",
+          "prendeva",
+          "prendevamo",
+          "prendevate",
+          "prendevano"
+        ],
+        "futuro": [
+          "prenderò",
+          "prenderai",
+          "prenderà",
+          "prenderemo",
+          "prenderete",
+          "prenderanno"
+        ],
+        "condizionale": [
+          "prenderei",
+          "prenderesti",
+          "prenderebbe",
+          "prenderemmo",
+          "prendereste",
+          "prenderebbero"
+        ],
+        "congiuntivo": [
+          "prenda",
+          "prenda",
+          "prenda",
+          "prendiamo",
+          "prendiate",
+          "prendano"
+        ],
+        "congiuntivo_imperfetto": [
+          "prendessi",
+          "prendessi",
+          "prendesse",
+          "prendessimo",
+          "prendeste",
+          "prendessero"
+        ],
+        "passato_remoto": [
+          "presi",
+          "prendesti",
+          "prese",
+          "prendemmo",
+          "prendeste",
+          "presero"
+        ]
+      },
+      "imperativo": {
+        "tu": "prendi",
+        "lei": "prenda",
+        "noi": "prendiamo",
+        "voi": "prendete"
+      }
+    },
+    {
+      "inf": "mettere",
+      "en": "to put",
+      "aux": "avere",
+      "participio": "messo",
+      "gerundio": "mettendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "metto",
+          "metti",
+          "mette",
+          "mettiamo",
+          "mettete",
+          "mettono"
+        ],
+        "imperfetto": [
+          "mettevo",
+          "mettevi",
+          "metteva",
+          "mettevamo",
+          "mettevate",
+          "mettevano"
+        ],
+        "futuro": [
+          "metterò",
+          "metterai",
+          "metterà",
+          "metteremo",
+          "metterete",
+          "metteranno"
+        ],
+        "condizionale": [
+          "metterei",
+          "metteresti",
+          "metterebbe",
+          "metteremmo",
+          "mettereste",
+          "metterebbero"
+        ],
+        "congiuntivo": [
+          "metta",
+          "metta",
+          "metta",
+          "mettiamo",
+          "mettiate",
+          "mettano"
+        ],
+        "congiuntivo_imperfetto": [
+          "mettessi",
+          "mettessi",
+          "mettesse",
+          "mettessimo",
+          "metteste",
+          "mettessero"
+        ],
+        "passato_remoto": [
+          "misi",
+          "mettesti",
+          "mise",
+          "mettemmo",
+          "metteste",
+          "misero"
+        ]
+      },
+      "imperativo": {
+        "tu": "metti",
+        "lei": "metta",
+        "noi": "mettiamo",
+        "voi": "mettete"
+      }
+    },
+    {
+      "inf": "chiedere",
+      "en": "to ask",
+      "aux": "avere",
+      "participio": "chiesto",
+      "gerundio": "chiedendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "communication"
+      ],
+      "tempi": {
+        "presente": [
+          "chiedo",
+          "chiedi",
+          "chiede",
+          "chiediamo",
+          "chiedete",
+          "chiedono"
+        ],
+        "imperfetto": [
+          "chiedevo",
+          "chiedevi",
+          "chiedeva",
+          "chiedevamo",
+          "chiedevate",
+          "chiedevano"
+        ],
+        "futuro": [
+          "chiederò",
+          "chiederai",
+          "chiederà",
+          "chiederemo",
+          "chiederete",
+          "chiederanno"
+        ],
+        "condizionale": [
+          "chiederei",
+          "chiederesti",
+          "chiederebbe",
+          "chiederemmo",
+          "chiedereste",
+          "chiederebbero"
+        ],
+        "congiuntivo": [
+          "chieda",
+          "chieda",
+          "chieda",
+          "chiediamo",
+          "chiediate",
+          "chiedano"
+        ],
+        "congiuntivo_imperfetto": [
+          "chiedessi",
+          "chiedessi",
+          "chiedesse",
+          "chiedessimo",
+          "chiedeste",
+          "chiedessero"
+        ],
+        "passato_remoto": [
+          "chiesi",
+          "chiedesti",
+          "chiese",
+          "chiedemmo",
+          "chiedeste",
+          "chiesero"
+        ]
+      },
+      "imperativo": {
+        "tu": "chiedi",
+        "lei": "chieda",
+        "noi": "chiediamo",
+        "voi": "chiedete"
+      }
+    },
+    {
+      "inf": "rispondere",
+      "en": "to answer, to reply",
+      "aux": "avere",
+      "participio": "risposto",
+      "gerundio": "rispondendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "communication"
+      ],
+      "tempi": {
+        "presente": [
+          "rispondo",
+          "rispondi",
+          "risponde",
+          "rispondiamo",
+          "rispondete",
+          "rispondono"
+        ],
+        "imperfetto": [
+          "rispondevo",
+          "rispondevi",
+          "rispondeva",
+          "rispondevamo",
+          "rispondevate",
+          "rispondevano"
+        ],
+        "futuro": [
+          "risponderò",
+          "risponderai",
+          "risponderà",
+          "risponderemo",
+          "risponderete",
+          "risponderanno"
+        ],
+        "condizionale": [
+          "risponderei",
+          "risponderesti",
+          "risponderebbe",
+          "risponderemmo",
+          "rispondereste",
+          "risponderebbero"
+        ],
+        "congiuntivo": [
+          "risponda",
+          "risponda",
+          "risponda",
+          "rispondiamo",
+          "rispondiate",
+          "rispondano"
+        ],
+        "congiuntivo_imperfetto": [
+          "rispondessi",
+          "rispondessi",
+          "rispondesse",
+          "rispondessimo",
+          "rispondeste",
+          "rispondessero"
+        ],
+        "passato_remoto": [
+          "risposi",
+          "rispondesti",
+          "rispose",
+          "rispondemmo",
+          "rispondeste",
+          "risposero"
+        ]
+      },
+      "imperativo": {
+        "tu": "rispondi",
+        "lei": "risponda",
+        "noi": "rispondiamo",
+        "voi": "rispondete"
+      }
+    },
+    {
+      "inf": "chiudere",
+      "en": "to close",
+      "aux": "avere",
+      "participio": "chiuso",
+      "gerundio": "chiudendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "chiudo",
+          "chiudi",
+          "chiude",
+          "chiudiamo",
+          "chiudete",
+          "chiudono"
+        ],
+        "imperfetto": [
+          "chiudevo",
+          "chiudevi",
+          "chiudeva",
+          "chiudevamo",
+          "chiudevate",
+          "chiudevano"
+        ],
+        "futuro": [
+          "chiuderò",
+          "chiuderai",
+          "chiuderà",
+          "chiuderemo",
+          "chiuderete",
+          "chiuderanno"
+        ],
+        "condizionale": [
+          "chiuderei",
+          "chiuderesti",
+          "chiuderebbe",
+          "chiuderemmo",
+          "chiudereste",
+          "chiuderebbero"
+        ],
+        "congiuntivo": [
+          "chiuda",
+          "chiuda",
+          "chiuda",
+          "chiudiamo",
+          "chiudiate",
+          "chiudano"
+        ],
+        "congiuntivo_imperfetto": [
+          "chiudessi",
+          "chiudessi",
+          "chiudesse",
+          "chiudessimo",
+          "chiudeste",
+          "chiudessero"
+        ],
+        "passato_remoto": [
+          "chiusi",
+          "chiudesti",
+          "chiuse",
+          "chiudemmo",
+          "chiudeste",
+          "chiusero"
+        ]
+      },
+      "imperativo": {
+        "tu": "chiudi",
+        "lei": "chiuda",
+        "noi": "chiudiamo",
+        "voi": "chiudete"
+      }
+    },
+    {
+      "inf": "decidere",
+      "en": "to decide",
+      "aux": "avere",
+      "participio": "deciso",
+      "gerundio": "decidendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "decido",
+          "decidi",
+          "decide",
+          "decidiamo",
+          "decidete",
+          "decidono"
+        ],
+        "imperfetto": [
+          "decidevo",
+          "decidevi",
+          "decideva",
+          "decidevamo",
+          "decidevate",
+          "decidevano"
+        ],
+        "futuro": [
+          "deciderò",
+          "deciderai",
+          "deciderà",
+          "decideremo",
+          "deciderete",
+          "decideranno"
+        ],
+        "condizionale": [
+          "deciderei",
+          "decideresti",
+          "deciderebbe",
+          "decideremmo",
+          "decidereste",
+          "deciderebbero"
+        ],
+        "congiuntivo": [
+          "decida",
+          "decida",
+          "decida",
+          "decidiamo",
+          "decidiate",
+          "decidano"
+        ],
+        "congiuntivo_imperfetto": [
+          "decidessi",
+          "decidessi",
+          "decidesse",
+          "decidessimo",
+          "decideste",
+          "decidessero"
+        ],
+        "passato_remoto": [
+          "decisi",
+          "decidesti",
+          "decise",
+          "decidemmo",
+          "decideste",
+          "decisero"
+        ]
+      },
+      "imperativo": {
+        "tu": "decidi",
+        "lei": "decida",
+        "noi": "decidiamo",
+        "voi": "decidete"
+      }
+    },
+    {
+      "inf": "perdere",
+      "en": "to lose, to miss",
+      "aux": "avere",
+      "participio": "perso",
+      "gerundio": "perdendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "perdo",
+          "perdi",
+          "perde",
+          "perdiamo",
+          "perdete",
+          "perdono"
+        ],
+        "imperfetto": [
+          "perdevo",
+          "perdevi",
+          "perdeva",
+          "perdevamo",
+          "perdevate",
+          "perdevano"
+        ],
+        "futuro": [
+          "perderò",
+          "perderai",
+          "perderà",
+          "perderemo",
+          "perderete",
+          "perderanno"
+        ],
+        "condizionale": [
+          "perderei",
+          "perderesti",
+          "perderebbe",
+          "perderemmo",
+          "perdereste",
+          "perderebbero"
+        ],
+        "congiuntivo": [
+          "perda",
+          "perda",
+          "perda",
+          "perdiamo",
+          "perdiate",
+          "perdano"
+        ],
+        "congiuntivo_imperfetto": [
+          "perdessi",
+          "perdessi",
+          "perdesse",
+          "perdessimo",
+          "perdeste",
+          "perdessero"
+        ],
+        "passato_remoto": [
+          "persi",
+          "perdesti",
+          "perse",
+          "perdemmo",
+          "perdeste",
+          "persero"
+        ]
+      },
+      "imperativo": {
+        "tu": "perdi",
+        "lei": "perda",
+        "noi": "perdiamo",
+        "voi": "perdete"
+      },
+      "alt": {
+        "passato_remoto": [
+          "perdetti",
+          null,
+          "perdette",
+          null,
+          null,
+          "perdettero"
+        ]
+      }
+    },
+    {
+      "inf": "correre",
+      "en": "to run",
+      "aux": "avere/essere",
+      "participio": "corso",
+      "gerundio": "correndo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "movement"
+      ],
+      "tempi": {
+        "presente": [
+          "corro",
+          "corri",
+          "corre",
+          "corriamo",
+          "correte",
+          "corrono"
+        ],
+        "imperfetto": [
+          "correvo",
+          "correvi",
+          "correva",
+          "correvamo",
+          "correvate",
+          "correvano"
+        ],
+        "futuro": [
+          "correrò",
+          "correrai",
+          "correrà",
+          "correremo",
+          "correrete",
+          "correranno"
+        ],
+        "condizionale": [
+          "correrei",
+          "correresti",
+          "correrebbe",
+          "correremmo",
+          "correreste",
+          "correrebbero"
+        ],
+        "congiuntivo": [
+          "corra",
+          "corra",
+          "corra",
+          "corriamo",
+          "corriate",
+          "corrano"
+        ],
+        "congiuntivo_imperfetto": [
+          "corressi",
+          "corressi",
+          "corresse",
+          "corressimo",
+          "correste",
+          "corressero"
+        ],
+        "passato_remoto": [
+          "corsi",
+          "corresti",
+          "corse",
+          "corremmo",
+          "correste",
+          "corsero"
+        ]
+      },
+      "imperativo": {
+        "tu": "corri",
+        "lei": "corra",
+        "noi": "corriamo",
+        "voi": "correte"
+      }
+    },
+    {
+      "inf": "vincere",
+      "en": "to win",
+      "aux": "avere",
+      "participio": "vinto",
+      "gerundio": "vincendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "vinco",
+          "vinci",
+          "vince",
+          "vinciamo",
+          "vincete",
+          "vincono"
+        ],
+        "imperfetto": [
+          "vincevo",
+          "vincevi",
+          "vinceva",
+          "vincevamo",
+          "vincevate",
+          "vincevano"
+        ],
+        "futuro": [
+          "vincerò",
+          "vincerai",
+          "vincerà",
+          "vinceremo",
+          "vincerete",
+          "vinceranno"
+        ],
+        "condizionale": [
+          "vincerei",
+          "vinceresti",
+          "vincerebbe",
+          "vinceremmo",
+          "vincereste",
+          "vincerebbero"
+        ],
+        "congiuntivo": [
+          "vinca",
+          "vinca",
+          "vinca",
+          "vinciamo",
+          "vinciate",
+          "vincano"
+        ],
+        "congiuntivo_imperfetto": [
+          "vincessi",
+          "vincessi",
+          "vincesse",
+          "vincessimo",
+          "vinceste",
+          "vincessero"
+        ],
+        "passato_remoto": [
+          "vinsi",
+          "vincesti",
+          "vinse",
+          "vincemmo",
+          "vinceste",
+          "vinsero"
+        ]
+      },
+      "imperativo": {
+        "tu": "vinci",
+        "lei": "vinca",
+        "noi": "vinciamo",
+        "voi": "vincete"
+      }
+    },
+    {
+      "inf": "spegnere",
+      "en": "to switch off, to put out",
+      "aux": "avere",
+      "participio": "spento",
+      "gerundio": "spegnendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "spengo",
+          "spegni",
+          "spegne",
+          "spegniamo",
+          "spegnete",
+          "spengono"
+        ],
+        "imperfetto": [
+          "spegnevo",
+          "spegnevi",
+          "spegneva",
+          "spegnevamo",
+          "spegnevate",
+          "spegnevano"
+        ],
+        "futuro": [
+          "spegnerò",
+          "spegnerai",
+          "spegnerà",
+          "spegneremo",
+          "spegnerete",
+          "spegneranno"
+        ],
+        "condizionale": [
+          "spegnerei",
+          "spegneresti",
+          "spegnerebbe",
+          "spegneremmo",
+          "spegnereste",
+          "spegnerebbero"
+        ],
+        "congiuntivo": [
+          "spenga",
+          "spenga",
+          "spenga",
+          "spegniamo",
+          "spegniate",
+          "spengano"
+        ],
+        "congiuntivo_imperfetto": [
+          "spegnessi",
+          "spegnessi",
+          "spegnesse",
+          "spegnessimo",
+          "spegneste",
+          "spegnessero"
+        ],
+        "passato_remoto": [
+          "spensi",
+          "spegnesti",
+          "spense",
+          "spegnemmo",
+          "spegneste",
+          "spensero"
+        ]
+      },
+      "imperativo": {
+        "tu": "spegni",
+        "lei": "spenga",
+        "noi": "spegniamo",
+        "voi": "spegnete"
+      }
+    },
+    {
+      "inf": "cogliere",
+      "en": "to pick, to grasp, to seize",
+      "aux": "avere",
+      "participio": "colto",
+      "gerundio": "cogliendo",
+      "regular": false,
+      "isc": false,
+      "level": "C1",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "colgo",
+          "cogli",
+          "coglie",
+          "cogliamo",
+          "cogliete",
+          "colgono"
+        ],
+        "imperfetto": [
+          "coglievo",
+          "coglievi",
+          "coglieva",
+          "coglievamo",
+          "coglievate",
+          "coglievano"
+        ],
+        "futuro": [
+          "coglierò",
+          "coglierai",
+          "coglierà",
+          "coglieremo",
+          "coglierete",
+          "coglieranno"
+        ],
+        "condizionale": [
+          "coglierei",
+          "coglieresti",
+          "coglierebbe",
+          "coglieremmo",
+          "cogliereste",
+          "coglierebbero"
+        ],
+        "congiuntivo": [
+          "colga",
+          "colga",
+          "colga",
+          "cogliamo",
+          "cogliate",
+          "colgano"
+        ],
+        "congiuntivo_imperfetto": [
+          "cogliessi",
+          "cogliessi",
+          "cogliesse",
+          "cogliessimo",
+          "coglieste",
+          "cogliessero"
+        ],
+        "passato_remoto": [
+          "colsi",
+          "cogliesti",
+          "colse",
+          "cogliemmo",
+          "coglieste",
+          "colsero"
+        ]
+      },
+      "imperativo": {
+        "tu": "cogli",
+        "lei": "colga",
+        "noi": "cogliamo",
+        "voi": "cogliete"
+      }
+    },
+    {
+      "inf": "togliere",
+      "en": "to remove, to take off",
+      "aux": "avere",
+      "participio": "tolto",
+      "gerundio": "togliendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "tolgo",
+          "togli",
+          "toglie",
+          "togliamo",
+          "togliete",
+          "tolgono"
+        ],
+        "imperfetto": [
+          "toglievo",
+          "toglievi",
+          "toglieva",
+          "toglievamo",
+          "toglievate",
+          "toglievano"
+        ],
+        "futuro": [
+          "toglierò",
+          "toglierai",
+          "toglierà",
+          "toglieremo",
+          "toglierete",
+          "toglieranno"
+        ],
+        "condizionale": [
+          "toglierei",
+          "toglieresti",
+          "toglierebbe",
+          "toglieremmo",
+          "togliereste",
+          "toglierebbero"
+        ],
+        "congiuntivo": [
+          "tolga",
+          "tolga",
+          "tolga",
+          "togliamo",
+          "togliate",
+          "tolgano"
+        ],
+        "congiuntivo_imperfetto": [
+          "togliessi",
+          "togliessi",
+          "togliesse",
+          "togliessimo",
+          "toglieste",
+          "togliessero"
+        ],
+        "passato_remoto": [
+          "tolsi",
+          "togliesti",
+          "tolse",
+          "togliemmo",
+          "toglieste",
+          "tolsero"
+        ]
+      },
+      "imperativo": {
+        "tu": "togli",
+        "lei": "tolga",
+        "noi": "togliamo",
+        "voi": "togliete"
+      }
+    },
+    {
+      "inf": "sedere",
+      "en": "to sit, to be seated",
+      "aux": "essere",
+      "participio": "seduto",
+      "gerundio": "sedendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "siedo",
+          "siedi",
+          "siede",
+          "sediamo",
+          "sedete",
+          "siedono"
+        ],
+        "imperfetto": [
+          "sedevo",
+          "sedevi",
+          "sedeva",
+          "sedevamo",
+          "sedevate",
+          "sedevano"
+        ],
+        "futuro": [
+          "sederò",
+          "sederai",
+          "sederà",
+          "sederemo",
+          "sederete",
+          "sederanno"
+        ],
+        "condizionale": [
+          "sederei",
+          "sederesti",
+          "sederebbe",
+          "sederemmo",
+          "sedereste",
+          "sederebbero"
+        ],
+        "congiuntivo": [
+          "sieda",
+          "sieda",
+          "sieda",
+          "sediamo",
+          "sediate",
+          "siedano"
+        ],
+        "congiuntivo_imperfetto": [
+          "sedessi",
+          "sedessi",
+          "sedesse",
+          "sedessimo",
+          "sedeste",
+          "sedessero"
+        ],
+        "passato_remoto": [
+          "sedetti",
+          "sedesti",
+          "sedette",
+          "sedemmo",
+          "sedeste",
+          "sedettero"
+        ]
+      },
+      "imperativo": {
+        "tu": "siedi",
+        "lei": "sieda",
+        "noi": "sediamo",
+        "voi": "sedete"
+      },
+      "alt": {
+        "presente": [
+          "seggo",
+          null,
+          null,
+          null,
+          null,
+          "seggono"
+        ],
+        "congiuntivo": [
+          "segga",
+          "segga",
+          "segga",
+          null,
+          null,
+          "seggano"
+        ],
+        "passato_remoto": [
+          "sedei",
+          null,
+          "sedé",
+          null,
+          null,
+          "sederono"
+        ]
+      }
+    },
+    {
+      "inf": "cadere",
+      "en": "to fall",
+      "aux": "essere",
+      "participio": "caduto",
+      "gerundio": "cadendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "movement"
+      ],
+      "tempi": {
+        "presente": [
+          "cado",
+          "cadi",
+          "cade",
+          "cadiamo",
+          "cadete",
+          "cadono"
+        ],
+        "imperfetto": [
+          "cadevo",
+          "cadevi",
+          "cadeva",
+          "cadevamo",
+          "cadevate",
+          "cadevano"
+        ],
+        "futuro": [
+          "cadrò",
+          "cadrai",
+          "cadrà",
+          "cadremo",
+          "cadrete",
+          "cadranno"
+        ],
+        "condizionale": [
+          "cadrei",
+          "cadresti",
+          "cadrebbe",
+          "cadremmo",
+          "cadreste",
+          "cadrebbero"
+        ],
+        "congiuntivo": [
+          "cada",
+          "cada",
+          "cada",
+          "cadiamo",
+          "cadiate",
+          "cadano"
+        ],
+        "congiuntivo_imperfetto": [
+          "cadessi",
+          "cadessi",
+          "cadesse",
+          "cadessimo",
+          "cadeste",
+          "cadessero"
+        ],
+        "passato_remoto": [
+          "caddi",
+          "cadesti",
+          "cadde",
+          "cademmo",
+          "cadeste",
+          "caddero"
+        ]
+      },
+      "imperativo": {
+        "tu": "cadi",
+        "lei": "cada",
+        "noi": "cadiamo",
+        "voi": "cadete"
+      }
+    },
+    {
+      "inf": "conoscere",
+      "en": "to know, to be acquainted with",
+      "aux": "avere",
+      "participio": "conosciuto",
+      "gerundio": "conoscendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "conosco",
+          "conosci",
+          "conosce",
+          "conosciamo",
+          "conoscete",
+          "conoscono"
+        ],
+        "imperfetto": [
+          "conoscevo",
+          "conoscevi",
+          "conosceva",
+          "conoscevamo",
+          "conoscevate",
+          "conoscevano"
+        ],
+        "futuro": [
+          "conoscerò",
+          "conoscerai",
+          "conoscerà",
+          "conosceremo",
+          "conoscerete",
+          "conosceranno"
+        ],
+        "condizionale": [
+          "conoscerei",
+          "conosceresti",
+          "conoscerebbe",
+          "conosceremmo",
+          "conoscereste",
+          "conoscerebbero"
+        ],
+        "congiuntivo": [
+          "conosca",
+          "conosca",
+          "conosca",
+          "conosciamo",
+          "conosciate",
+          "conoscano"
+        ],
+        "congiuntivo_imperfetto": [
+          "conoscessi",
+          "conoscessi",
+          "conoscesse",
+          "conoscessimo",
+          "conosceste",
+          "conoscessero"
+        ],
+        "passato_remoto": [
+          "conobbi",
+          "conoscesti",
+          "conobbe",
+          "conoscemmo",
+          "conosceste",
+          "conobbero"
+        ]
+      },
+      "imperativo": {
+        "tu": "conosci",
+        "lei": "conosca",
+        "noi": "conosciamo",
+        "voi": "conoscete"
+      }
+    },
+    {
+      "inf": "crescere",
+      "en": "to grow, to raise",
+      "aux": "avere/essere",
+      "participio": "cresciuto",
+      "gerundio": "crescendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "cresco",
+          "cresci",
+          "cresce",
+          "cresciamo",
+          "crescete",
+          "crescono"
+        ],
+        "imperfetto": [
+          "crescevo",
+          "crescevi",
+          "cresceva",
+          "crescevamo",
+          "crescevate",
+          "crescevano"
+        ],
+        "futuro": [
+          "crescerò",
+          "crescerai",
+          "crescerà",
+          "cresceremo",
+          "crescerete",
+          "cresceranno"
+        ],
+        "condizionale": [
+          "crescerei",
+          "cresceresti",
+          "crescerebbe",
+          "cresceremmo",
+          "crescereste",
+          "crescerebbero"
+        ],
+        "congiuntivo": [
+          "cresca",
+          "cresca",
+          "cresca",
+          "cresciamo",
+          "cresciate",
+          "crescano"
+        ],
+        "congiuntivo_imperfetto": [
+          "crescessi",
+          "crescessi",
+          "crescesse",
+          "crescessimo",
+          "cresceste",
+          "crescessero"
+        ],
+        "passato_remoto": [
+          "crebbi",
+          "crescesti",
+          "crebbe",
+          "crescemmo",
+          "cresceste",
+          "crebbero"
+        ]
+      },
+      "imperativo": {
+        "tu": "cresci",
+        "lei": "cresca",
+        "noi": "cresciamo",
+        "voi": "crescete"
+      }
+    },
+    {
+      "inf": "muovere",
+      "en": "to move",
+      "aux": "avere",
+      "participio": "mosso",
+      "gerundio": "muovendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "movement"
+      ],
+      "tempi": {
+        "presente": [
+          "muovo",
+          "muovi",
+          "muove",
+          "muoviamo",
+          "muovete",
+          "muovono"
+        ],
+        "imperfetto": [
+          "muovevo",
+          "muovevi",
+          "muoveva",
+          "muovevamo",
+          "muovevate",
+          "muovevano"
+        ],
+        "futuro": [
+          "muoverò",
+          "muoverai",
+          "muoverà",
+          "muoveremo",
+          "muoverete",
+          "muoveranno"
+        ],
+        "condizionale": [
+          "muoverei",
+          "muoveresti",
+          "muoverebbe",
+          "muoveremmo",
+          "muovereste",
+          "muoverebbero"
+        ],
+        "congiuntivo": [
+          "muova",
+          "muova",
+          "muova",
+          "muoviamo",
+          "muoviate",
+          "muovano"
+        ],
+        "congiuntivo_imperfetto": [
+          "muovessi",
+          "muovessi",
+          "muovesse",
+          "muovessimo",
+          "muoveste",
+          "muovessero"
+        ],
+        "passato_remoto": [
+          "mossi",
+          "muovesti",
+          "mosse",
+          "muovemmo",
+          "muoveste",
+          "mossero"
+        ]
+      },
+      "imperativo": {
+        "tu": "muovi",
+        "lei": "muova",
+        "noi": "muoviamo",
+        "voi": "muovete"
+      }
+    },
+    {
+      "inf": "apparire",
+      "en": "to appear",
+      "aux": "essere",
+      "participio": "apparso",
+      "gerundio": "apparendo",
+      "regular": false,
+      "isc": false,
+      "level": "C1",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "appaio",
+          "appari",
+          "appare",
+          "appariamo",
+          "apparite",
+          "appaiono"
+        ],
+        "imperfetto": [
+          "apparivo",
+          "apparivi",
+          "appariva",
+          "apparivamo",
+          "apparivate",
+          "apparivano"
+        ],
+        "futuro": [
+          "apparirò",
+          "apparirai",
+          "apparirà",
+          "appariremo",
+          "apparirete",
+          "appariranno"
+        ],
+        "condizionale": [
+          "apparirei",
+          "appariresti",
+          "apparirebbe",
+          "appariremmo",
+          "apparireste",
+          "apparirebbero"
+        ],
+        "congiuntivo": [
+          "appaia",
+          "appaia",
+          "appaia",
+          "appariamo",
+          "appariate",
+          "appaiano"
+        ],
+        "congiuntivo_imperfetto": [
+          "apparissi",
+          "apparissi",
+          "apparisse",
+          "apparissimo",
+          "appariste",
+          "apparissero"
+        ],
+        "passato_remoto": [
+          "apparvi",
+          "apparisti",
+          "apparve",
+          "apparimmo",
+          "appariste",
+          "apparvero"
+        ]
+      },
+      "imperativo": {
+        "tu": "appari",
+        "lei": "appaia",
+        "noi": "appariamo",
+        "voi": "apparite"
+      },
+      "alt": {
+        "passato_remoto": [
+          "apparsi",
+          null,
+          "apparse",
+          null,
+          null,
+          "apparsero"
+        ]
+      }
+    },
+    {
+      "inf": "aprire",
+      "en": "to open",
+      "aux": "avere",
+      "participio": "aperto",
+      "gerundio": "aprendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "apro",
+          "apri",
+          "apre",
+          "apriamo",
+          "aprite",
+          "aprono"
+        ],
+        "imperfetto": [
+          "aprivo",
+          "aprivi",
+          "apriva",
+          "aprivamo",
+          "aprivate",
+          "aprivano"
+        ],
+        "futuro": [
+          "aprirò",
+          "aprirai",
+          "aprirà",
+          "apriremo",
+          "aprirete",
+          "apriranno"
+        ],
+        "condizionale": [
+          "aprirei",
+          "apriresti",
+          "aprirebbe",
+          "apriremmo",
+          "aprireste",
+          "aprirebbero"
+        ],
+        "congiuntivo": [
+          "apra",
+          "apra",
+          "apra",
+          "apriamo",
+          "apriate",
+          "aprano"
+        ],
+        "congiuntivo_imperfetto": [
+          "aprissi",
+          "aprissi",
+          "aprisse",
+          "aprissimo",
+          "apriste",
+          "aprissero"
+        ],
+        "passato_remoto": [
+          "aprii",
+          "apristi",
+          "aprì",
+          "aprimmo",
+          "apriste",
+          "aprirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "apri",
+        "lei": "apra",
+        "noi": "apriamo",
+        "voi": "aprite"
+      },
+      "alt": {
+        "passato_remoto": [
+          "apersi",
+          null,
+          "aperse",
+          null,
+          null,
+          "apersero"
+        ]
+      }
+    },
+    {
+      "inf": "offrire",
+      "en": "to offer",
+      "aux": "avere",
+      "participio": "offerto",
+      "gerundio": "offrendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "offro",
+          "offri",
+          "offre",
+          "offriamo",
+          "offrite",
+          "offrono"
+        ],
+        "imperfetto": [
+          "offrivo",
+          "offrivi",
+          "offriva",
+          "offrivamo",
+          "offrivate",
+          "offrivano"
+        ],
+        "futuro": [
+          "offrirò",
+          "offrirai",
+          "offrirà",
+          "offriremo",
+          "offrirete",
+          "offriranno"
+        ],
+        "condizionale": [
+          "offrirei",
+          "offriresti",
+          "offrirebbe",
+          "offriremmo",
+          "offrireste",
+          "offrirebbero"
+        ],
+        "congiuntivo": [
+          "offra",
+          "offra",
+          "offra",
+          "offriamo",
+          "offriate",
+          "offrano"
+        ],
+        "congiuntivo_imperfetto": [
+          "offrissi",
+          "offrissi",
+          "offrisse",
+          "offrissimo",
+          "offriste",
+          "offrissero"
+        ],
+        "passato_remoto": [
+          "offrii",
+          "offristi",
+          "offrì",
+          "offrimmo",
+          "offriste",
+          "offrirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "offri",
+        "lei": "offra",
+        "noi": "offriamo",
+        "voi": "offrite"
+      },
+      "alt": {
+        "passato_remoto": [
+          "offersi",
+          null,
+          "offerse",
+          null,
+          null,
+          "offersero"
+        ]
+      }
+    },
+    {
+      "inf": "soffrire",
+      "en": "to suffer",
+      "aux": "avere",
+      "participio": "sofferto",
+      "gerundio": "soffrendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "feelings"
+      ],
+      "tempi": {
+        "presente": [
+          "soffro",
+          "soffri",
+          "soffre",
+          "soffriamo",
+          "soffrite",
+          "soffrono"
+        ],
+        "imperfetto": [
+          "soffrivo",
+          "soffrivi",
+          "soffriva",
+          "soffrivamo",
+          "soffrivate",
+          "soffrivano"
+        ],
+        "futuro": [
+          "soffrirò",
+          "soffrirai",
+          "soffrirà",
+          "soffriremo",
+          "soffrirete",
+          "soffriranno"
+        ],
+        "condizionale": [
+          "soffrirei",
+          "soffriresti",
+          "soffrirebbe",
+          "soffriremmo",
+          "soffrireste",
+          "soffrirebbero"
+        ],
+        "congiuntivo": [
+          "soffra",
+          "soffra",
+          "soffra",
+          "soffriamo",
+          "soffriate",
+          "soffrano"
+        ],
+        "congiuntivo_imperfetto": [
+          "soffrissi",
+          "soffrissi",
+          "soffrisse",
+          "soffrissimo",
+          "soffriste",
+          "soffrissero"
+        ],
+        "passato_remoto": [
+          "soffrii",
+          "soffristi",
+          "soffrì",
+          "soffrimmo",
+          "soffriste",
+          "soffrirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "soffri",
+        "lei": "soffra",
+        "noi": "soffriamo",
+        "voi": "soffrite"
+      },
+      "alt": {
+        "passato_remoto": [
+          "soffersi",
+          null,
+          "sofferse",
+          null,
+          null,
+          "soffersero"
+        ]
+      }
+    },
+    {
+      "inf": "condurre",
+      "en": "to lead, to drive, to conduct",
+      "aux": "avere",
+      "participio": "condotto",
+      "gerundio": "conducendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "conduco",
+          "conduci",
+          "conduce",
+          "conduciamo",
+          "conducete",
+          "conducono"
+        ],
+        "imperfetto": [
+          "conducevo",
+          "conducevi",
+          "conduceva",
+          "conducevamo",
+          "conducevate",
+          "conducevano"
+        ],
+        "futuro": [
+          "condurrò",
+          "condurrai",
+          "condurrà",
+          "condurremo",
+          "condurrete",
+          "condurranno"
+        ],
+        "condizionale": [
+          "condurrei",
+          "condurresti",
+          "condurrebbe",
+          "condurremmo",
+          "condurreste",
+          "condurrebbero"
+        ],
+        "congiuntivo": [
+          "conduca",
+          "conduca",
+          "conduca",
+          "conduciamo",
+          "conduciate",
+          "conducano"
+        ],
+        "congiuntivo_imperfetto": [
+          "conducessi",
+          "conducessi",
+          "conducesse",
+          "conducessimo",
+          "conduceste",
+          "conducessero"
+        ],
+        "passato_remoto": [
+          "condussi",
+          "conducesti",
+          "condusse",
+          "conducemmo",
+          "conduceste",
+          "condussero"
+        ]
+      },
+      "imperativo": {
+        "tu": "conduci",
+        "lei": "conduca",
+        "noi": "conduciamo",
+        "voi": "conducete"
+      }
+    },
+    {
+      "inf": "produrre",
+      "en": "to produce",
+      "aux": "avere",
+      "participio": "prodotto",
+      "gerundio": "producendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "work"
+      ],
+      "tempi": {
+        "presente": [
+          "produco",
+          "produci",
+          "produce",
+          "produciamo",
+          "producete",
+          "producono"
+        ],
+        "imperfetto": [
+          "producevo",
+          "producevi",
+          "produceva",
+          "producevamo",
+          "producevate",
+          "producevano"
+        ],
+        "futuro": [
+          "produrrò",
+          "produrrai",
+          "produrrà",
+          "produrremo",
+          "produrrete",
+          "produrranno"
+        ],
+        "condizionale": [
+          "produrrei",
+          "produrresti",
+          "produrrebbe",
+          "produrremmo",
+          "produrreste",
+          "produrrebbero"
+        ],
+        "congiuntivo": [
+          "produca",
+          "produca",
+          "produca",
+          "produciamo",
+          "produciate",
+          "producano"
+        ],
+        "congiuntivo_imperfetto": [
+          "producessi",
+          "producessi",
+          "producesse",
+          "producessimo",
+          "produceste",
+          "producessero"
+        ],
+        "passato_remoto": [
+          "produssi",
+          "producesti",
+          "produsse",
+          "producemmo",
+          "produceste",
+          "produssero"
+        ]
+      },
+      "imperativo": {
+        "tu": "produci",
+        "lei": "produca",
+        "noi": "produciamo",
+        "voi": "producete"
+      }
+    },
+    {
+      "inf": "ridurre",
+      "en": "to reduce",
+      "aux": "avere",
+      "participio": "ridotto",
+      "gerundio": "riducendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "finance"
+      ],
+      "tempi": {
+        "presente": [
+          "riduco",
+          "riduci",
+          "riduce",
+          "riduciamo",
+          "riducete",
+          "riducono"
+        ],
+        "imperfetto": [
+          "riducevo",
+          "riducevi",
+          "riduceva",
+          "riducevamo",
+          "riducevate",
+          "riducevano"
+        ],
+        "futuro": [
+          "ridurrò",
+          "ridurrai",
+          "ridurrà",
+          "ridurremo",
+          "ridurrete",
+          "ridurranno"
+        ],
+        "condizionale": [
+          "ridurrei",
+          "ridurresti",
+          "ridurrebbe",
+          "ridurremmo",
+          "ridurreste",
+          "ridurrebbero"
+        ],
+        "congiuntivo": [
+          "riduca",
+          "riduca",
+          "riduca",
+          "riduciamo",
+          "riduciate",
+          "riducano"
+        ],
+        "congiuntivo_imperfetto": [
+          "riducessi",
+          "riducessi",
+          "riducesse",
+          "riducessimo",
+          "riduceste",
+          "riducessero"
+        ],
+        "passato_remoto": [
+          "ridussi",
+          "riducesti",
+          "ridusse",
+          "riducemmo",
+          "riduceste",
+          "ridussero"
+        ]
+      },
+      "imperativo": {
+        "tu": "riduci",
+        "lei": "riduca",
+        "noi": "riduciamo",
+        "voi": "riducete"
+      }
+    },
+    {
+      "inf": "proporre",
+      "en": "to propose",
+      "aux": "avere",
+      "participio": "proposto",
+      "gerundio": "proponendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "work"
+      ],
+      "tempi": {
+        "presente": [
+          "propongo",
+          "proponi",
+          "propone",
+          "proponiamo",
+          "proponete",
+          "propongono"
+        ],
+        "imperfetto": [
+          "proponevo",
+          "proponevi",
+          "proponeva",
+          "proponevamo",
+          "proponevate",
+          "proponevano"
+        ],
+        "futuro": [
+          "proporrò",
+          "proporrai",
+          "proporrà",
+          "proporremo",
+          "proporrete",
+          "proporranno"
+        ],
+        "condizionale": [
+          "proporrei",
+          "proporresti",
+          "proporrebbe",
+          "proporremmo",
+          "proporreste",
+          "proporrebbero"
+        ],
+        "congiuntivo": [
+          "proponga",
+          "proponga",
+          "proponga",
+          "proponiamo",
+          "proponiate",
+          "propongano"
+        ],
+        "congiuntivo_imperfetto": [
+          "proponessi",
+          "proponessi",
+          "proponesse",
+          "proponessimo",
+          "proponeste",
+          "proponessero"
+        ],
+        "passato_remoto": [
+          "proposi",
+          "proponesti",
+          "propose",
+          "proponemmo",
+          "proponeste",
+          "proposero"
+        ]
+      },
+      "imperativo": {
+        "tu": "proponi",
+        "lei": "proponga",
+        "noi": "proponiamo",
+        "voi": "proponete"
+      }
+    },
+    {
+      "inf": "supporre",
+      "en": "to suppose",
+      "aux": "avere",
+      "participio": "supposto",
+      "gerundio": "supponendo",
+      "regular": false,
+      "isc": false,
+      "level": "C1",
+      "tags": [
+        "irregular",
+        "opinion"
+      ],
+      "tempi": {
+        "presente": [
+          "suppongo",
+          "supponi",
+          "suppone",
+          "supponiamo",
+          "supponete",
+          "suppongono"
+        ],
+        "imperfetto": [
+          "supponevo",
+          "supponevi",
+          "supponeva",
+          "supponevamo",
+          "supponevate",
+          "supponevano"
+        ],
+        "futuro": [
+          "supporrò",
+          "supporrai",
+          "supporrà",
+          "supporremo",
+          "supporrete",
+          "supporranno"
+        ],
+        "condizionale": [
+          "supporrei",
+          "supporresti",
+          "supporrebbe",
+          "supporremmo",
+          "supporreste",
+          "supporrebbero"
+        ],
+        "congiuntivo": [
+          "supponga",
+          "supponga",
+          "supponga",
+          "supponiamo",
+          "supponiate",
+          "suppongano"
+        ],
+        "congiuntivo_imperfetto": [
+          "supponessi",
+          "supponessi",
+          "supponesse",
+          "supponessimo",
+          "supponeste",
+          "supponessero"
+        ],
+        "passato_remoto": [
+          "supposi",
+          "supponesti",
+          "suppose",
+          "supponemmo",
+          "supponeste",
+          "supposero"
+        ]
+      },
+      "imperativo": {
+        "tu": "supponi",
+        "lei": "supponga",
+        "noi": "supponiamo",
+        "voi": "supponete"
+      }
+    },
+    {
+      "inf": "comporre",
+      "en": "to compose, to dial",
+      "aux": "avere",
+      "participio": "composto",
+      "gerundio": "componendo",
+      "regular": false,
+      "isc": false,
+      "level": "C1",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "compongo",
+          "componi",
+          "compone",
+          "componiamo",
+          "componete",
+          "compongono"
+        ],
+        "imperfetto": [
+          "componevo",
+          "componevi",
+          "componeva",
+          "componevamo",
+          "componevate",
+          "componevano"
+        ],
+        "futuro": [
+          "comporrò",
+          "comporrai",
+          "comporrà",
+          "comporremo",
+          "comporrete",
+          "comporranno"
+        ],
+        "condizionale": [
+          "comporrei",
+          "comporresti",
+          "comporrebbe",
+          "comporremmo",
+          "comporreste",
+          "comporrebbero"
+        ],
+        "congiuntivo": [
+          "componga",
+          "componga",
+          "componga",
+          "componiamo",
+          "componiate",
+          "compongano"
+        ],
+        "congiuntivo_imperfetto": [
+          "componessi",
+          "componessi",
+          "componesse",
+          "componessimo",
+          "componeste",
+          "componessero"
+        ],
+        "passato_remoto": [
+          "composi",
+          "componesti",
+          "compose",
+          "componemmo",
+          "componeste",
+          "composero"
+        ]
+      },
+      "imperativo": {
+        "tu": "componi",
+        "lei": "componga",
+        "noi": "componiamo",
+        "voi": "componete"
+      }
+    },
+    {
+      "inf": "ottenere",
+      "en": "to obtain, to get",
+      "aux": "avere",
+      "participio": "ottenuto",
+      "gerundio": "ottenendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "finance"
+      ],
+      "tempi": {
+        "presente": [
+          "ottengo",
+          "ottieni",
+          "ottiene",
+          "otteniamo",
+          "ottenete",
+          "ottengono"
+        ],
+        "imperfetto": [
+          "ottenevo",
+          "ottenevi",
+          "otteneva",
+          "ottenevamo",
+          "ottenevate",
+          "ottenevano"
+        ],
+        "futuro": [
+          "otterrò",
+          "otterrai",
+          "otterrà",
+          "otterremo",
+          "otterrete",
+          "otterranno"
+        ],
+        "condizionale": [
+          "otterrei",
+          "otterresti",
+          "otterrebbe",
+          "otterremmo",
+          "otterreste",
+          "otterrebbero"
+        ],
+        "congiuntivo": [
+          "ottenga",
+          "ottenga",
+          "ottenga",
+          "otteniamo",
+          "otteniate",
+          "ottengano"
+        ],
+        "congiuntivo_imperfetto": [
+          "ottenessi",
+          "ottenessi",
+          "ottenesse",
+          "ottenessimo",
+          "otteneste",
+          "ottenessero"
+        ],
+        "passato_remoto": [
+          "ottenni",
+          "ottenesti",
+          "ottenne",
+          "ottenemmo",
+          "otteneste",
+          "ottennero"
+        ]
+      },
+      "imperativo": {
+        "tu": "ottieni",
+        "lei": "ottenga",
+        "noi": "otteniamo",
+        "voi": "ottenete"
+      }
+    },
+    {
+      "inf": "mantenere",
+      "en": "to maintain, to keep",
+      "aux": "avere",
+      "participio": "mantenuto",
+      "gerundio": "mantenendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "mantengo",
+          "mantieni",
+          "mantiene",
+          "manteniamo",
+          "mantenete",
+          "mantengono"
+        ],
+        "imperfetto": [
+          "mantenevo",
+          "mantenevi",
+          "manteneva",
+          "mantenevamo",
+          "mantenevate",
+          "mantenevano"
+        ],
+        "futuro": [
+          "manterrò",
+          "manterrai",
+          "manterrà",
+          "manterremo",
+          "manterrete",
+          "manterranno"
+        ],
+        "condizionale": [
+          "manterrei",
+          "manterresti",
+          "manterrebbe",
+          "manterremmo",
+          "manterreste",
+          "manterrebbero"
+        ],
+        "congiuntivo": [
+          "mantenga",
+          "mantenga",
+          "mantenga",
+          "manteniamo",
+          "manteniate",
+          "mantengano"
+        ],
+        "congiuntivo_imperfetto": [
+          "mantenessi",
+          "mantenessi",
+          "mantenesse",
+          "mantenessimo",
+          "manteneste",
+          "mantenessero"
+        ],
+        "passato_remoto": [
+          "mantenni",
+          "mantenesti",
+          "mantenne",
+          "mantenemmo",
+          "manteneste",
+          "mantennero"
+        ]
+      },
+      "imperativo": {
+        "tu": "mantieni",
+        "lei": "mantenga",
+        "noi": "manteniamo",
+        "voi": "mantenete"
+      }
+    },
+    {
+      "inf": "sostenere",
+      "en": "to support, to maintain (an argument)",
+      "aux": "avere",
+      "participio": "sostenuto",
+      "gerundio": "sostenendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "opinion"
+      ],
+      "tempi": {
+        "presente": [
+          "sostengo",
+          "sostieni",
+          "sostiene",
+          "sosteniamo",
+          "sostenete",
+          "sostengono"
+        ],
+        "imperfetto": [
+          "sostenevo",
+          "sostenevi",
+          "sosteneva",
+          "sostenevamo",
+          "sostenevate",
+          "sostenevano"
+        ],
+        "futuro": [
+          "sosterrò",
+          "sosterrai",
+          "sosterrà",
+          "sosterremo",
+          "sosterrete",
+          "sosterranno"
+        ],
+        "condizionale": [
+          "sosterrei",
+          "sosterresti",
+          "sosterrebbe",
+          "sosterremmo",
+          "sosterreste",
+          "sosterrebbero"
+        ],
+        "congiuntivo": [
+          "sostenga",
+          "sostenga",
+          "sostenga",
+          "sosteniamo",
+          "sosteniate",
+          "sostengano"
+        ],
+        "congiuntivo_imperfetto": [
+          "sostenessi",
+          "sostenessi",
+          "sostenesse",
+          "sostenessimo",
+          "sosteneste",
+          "sostenessero"
+        ],
+        "passato_remoto": [
+          "sostenni",
+          "sostenesti",
+          "sostenne",
+          "sostenemmo",
+          "sosteneste",
+          "sostennero"
+        ]
+      },
+      "imperativo": {
+        "tu": "sostieni",
+        "lei": "sostenga",
+        "noi": "sosteniamo",
+        "voi": "sostenete"
+      }
+    },
+    {
+      "inf": "trattenere",
+      "en": "to hold back, to keep",
+      "aux": "avere",
+      "participio": "trattenuto",
+      "gerundio": "trattenendo",
+      "regular": false,
+      "isc": false,
+      "level": "C1",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "trattengo",
+          "trattieni",
+          "trattiene",
+          "tratteniamo",
+          "trattenete",
+          "trattengono"
+        ],
+        "imperfetto": [
+          "trattenevo",
+          "trattenevi",
+          "tratteneva",
+          "trattenevamo",
+          "trattenevate",
+          "trattenevano"
+        ],
+        "futuro": [
+          "tratterrò",
+          "tratterrai",
+          "tratterrà",
+          "tratterremo",
+          "tratterrete",
+          "tratterranno"
+        ],
+        "condizionale": [
+          "tratterrei",
+          "tratterresti",
+          "tratterrebbe",
+          "tratterremmo",
+          "tratterreste",
+          "tratterrebbero"
+        ],
+        "congiuntivo": [
+          "trattenga",
+          "trattenga",
+          "trattenga",
+          "tratteniamo",
+          "tratteniate",
+          "trattengano"
+        ],
+        "congiuntivo_imperfetto": [
+          "trattenessi",
+          "trattenessi",
+          "trattenesse",
+          "trattenessimo",
+          "tratteneste",
+          "trattenessero"
+        ],
+        "passato_remoto": [
+          "trattenni",
+          "trattenesti",
+          "trattenne",
+          "trattenemmo",
+          "tratteneste",
+          "trattennero"
+        ]
+      },
+      "imperativo": {
+        "tu": "trattieni",
+        "lei": "trattenga",
+        "noi": "tratteniamo",
+        "voi": "trattenete"
+      }
+    },
+    {
+      "inf": "convincere",
+      "en": "to convince",
+      "aux": "avere",
+      "participio": "convinto",
+      "gerundio": "convincendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "opinion"
+      ],
+      "tempi": {
+        "presente": [
+          "convinco",
+          "convinci",
+          "convince",
+          "convinciamo",
+          "convincete",
+          "convincono"
+        ],
+        "imperfetto": [
+          "convincevo",
+          "convincevi",
+          "convinceva",
+          "convincevamo",
+          "convincevate",
+          "convincevano"
+        ],
+        "futuro": [
+          "convincerò",
+          "convincerai",
+          "convincerà",
+          "convinceremo",
+          "convincerete",
+          "convinceranno"
+        ],
+        "condizionale": [
+          "convincerei",
+          "convinceresti",
+          "convincerebbe",
+          "convinceremmo",
+          "convincereste",
+          "convincerebbero"
+        ],
+        "congiuntivo": [
+          "convinca",
+          "convinca",
+          "convinca",
+          "convinciamo",
+          "convinciate",
+          "convincano"
+        ],
+        "congiuntivo_imperfetto": [
+          "convincessi",
+          "convincessi",
+          "convincesse",
+          "convincessimo",
+          "convinceste",
+          "convincessero"
+        ],
+        "passato_remoto": [
+          "convinsi",
+          "convincesti",
+          "convinse",
+          "convincemmo",
+          "convinceste",
+          "convinsero"
+        ]
+      },
+      "imperativo": {
+        "tu": "convinci",
+        "lei": "convinca",
+        "noi": "convinciamo",
+        "voi": "convincete"
+      }
+    },
+    {
+      "inf": "scoprire",
+      "en": "to discover",
+      "aux": "avere",
+      "participio": "scoperto",
+      "gerundio": "scoprendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "scopro",
+          "scopri",
+          "scopre",
+          "scopriamo",
+          "scoprite",
+          "scoprono"
+        ],
+        "imperfetto": [
+          "scoprivo",
+          "scoprivi",
+          "scopriva",
+          "scoprivamo",
+          "scoprivate",
+          "scoprivano"
+        ],
+        "futuro": [
+          "scoprirò",
+          "scoprirai",
+          "scoprirà",
+          "scopriremo",
+          "scoprirete",
+          "scopriranno"
+        ],
+        "condizionale": [
+          "scoprirei",
+          "scopriresti",
+          "scoprirebbe",
+          "scopriremmo",
+          "scoprireste",
+          "scoprirebbero"
+        ],
+        "congiuntivo": [
+          "scopra",
+          "scopra",
+          "scopra",
+          "scopriamo",
+          "scopriate",
+          "scoprano"
+        ],
+        "congiuntivo_imperfetto": [
+          "scoprissi",
+          "scoprissi",
+          "scoprisse",
+          "scoprissimo",
+          "scopriste",
+          "scoprissero"
+        ],
+        "passato_remoto": [
+          "scoprii",
+          "scopristi",
+          "scoprì",
+          "scoprimmo",
+          "scopriste",
+          "scoprirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "scopri",
+        "lei": "scopra",
+        "noi": "scopriamo",
+        "voi": "scoprite"
+      },
+      "alt": {
+        "passato_remoto": [
+          "scopersi",
+          null,
+          "scoperse",
+          null,
+          null,
+          "scopersero"
+        ]
+      }
+    },
+    {
+      "inf": "accendere",
+      "en": "to switch on, to light",
+      "aux": "avere",
+      "participio": "acceso",
+      "gerundio": "accendendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "accendo",
+          "accendi",
+          "accende",
+          "accendiamo",
+          "accendete",
+          "accendono"
+        ],
+        "imperfetto": [
+          "accendevo",
+          "accendevi",
+          "accendeva",
+          "accendevamo",
+          "accendevate",
+          "accendevano"
+        ],
+        "futuro": [
+          "accenderò",
+          "accenderai",
+          "accenderà",
+          "accenderemo",
+          "accenderete",
+          "accenderanno"
+        ],
+        "condizionale": [
+          "accenderei",
+          "accenderesti",
+          "accenderebbe",
+          "accenderemmo",
+          "accendereste",
+          "accenderebbero"
+        ],
+        "congiuntivo": [
+          "accenda",
+          "accenda",
+          "accenda",
+          "accendiamo",
+          "accendiate",
+          "accendano"
+        ],
+        "congiuntivo_imperfetto": [
+          "accendessi",
+          "accendessi",
+          "accendesse",
+          "accendessimo",
+          "accendeste",
+          "accendessero"
+        ],
+        "passato_remoto": [
+          "accesi",
+          "accendesti",
+          "accese",
+          "accendemmo",
+          "accendeste",
+          "accesero"
+        ]
+      },
+      "imperativo": {
+        "tu": "accendi",
+        "lei": "accenda",
+        "noi": "accendiamo",
+        "voi": "accendete"
+      }
+    },
+    {
+      "inf": "sorridere",
+      "en": "to smile",
+      "aux": "avere",
+      "participio": "sorriso",
+      "gerundio": "sorridendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "feelings"
+      ],
+      "tempi": {
+        "presente": [
+          "sorrido",
+          "sorridi",
+          "sorride",
+          "sorridiamo",
+          "sorridete",
+          "sorridono"
+        ],
+        "imperfetto": [
+          "sorridevo",
+          "sorridevi",
+          "sorrideva",
+          "sorridevamo",
+          "sorridevate",
+          "sorridevano"
+        ],
+        "futuro": [
+          "sorriderò",
+          "sorriderai",
+          "sorriderà",
+          "sorrideremo",
+          "sorriderete",
+          "sorrideranno"
+        ],
+        "condizionale": [
+          "sorriderei",
+          "sorrideresti",
+          "sorriderebbe",
+          "sorrideremmo",
+          "sorridereste",
+          "sorriderebbero"
+        ],
+        "congiuntivo": [
+          "sorrida",
+          "sorrida",
+          "sorrida",
+          "sorridiamo",
+          "sorridiate",
+          "sorridano"
+        ],
+        "congiuntivo_imperfetto": [
+          "sorridessi",
+          "sorridessi",
+          "sorridesse",
+          "sorridessimo",
+          "sorrideste",
+          "sorridessero"
+        ],
+        "passato_remoto": [
+          "sorrisi",
+          "sorridesti",
+          "sorrise",
+          "sorridemmo",
+          "sorrideste",
+          "sorrisero"
+        ]
+      },
+      "imperativo": {
+        "tu": "sorridi",
+        "lei": "sorrida",
+        "noi": "sorridiamo",
+        "voi": "sorridete"
+      }
+    },
+    {
+      "inf": "ridere",
+      "en": "to laugh",
+      "aux": "avere",
+      "participio": "riso",
+      "gerundio": "ridendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "feelings"
+      ],
+      "tempi": {
+        "presente": [
+          "rido",
+          "ridi",
+          "ride",
+          "ridiamo",
+          "ridete",
+          "ridono"
+        ],
+        "imperfetto": [
+          "ridevo",
+          "ridevi",
+          "rideva",
+          "ridevamo",
+          "ridevate",
+          "ridevano"
+        ],
+        "futuro": [
+          "riderò",
+          "riderai",
+          "riderà",
+          "rideremo",
+          "riderete",
+          "rideranno"
+        ],
+        "condizionale": [
+          "riderei",
+          "rideresti",
+          "riderebbe",
+          "rideremmo",
+          "ridereste",
+          "riderebbero"
+        ],
+        "congiuntivo": [
+          "rida",
+          "rida",
+          "rida",
+          "ridiamo",
+          "ridiate",
+          "ridano"
+        ],
+        "congiuntivo_imperfetto": [
+          "ridessi",
+          "ridessi",
+          "ridesse",
+          "ridessimo",
+          "rideste",
+          "ridessero"
+        ],
+        "passato_remoto": [
+          "risi",
+          "ridesti",
+          "rise",
+          "ridemmo",
+          "rideste",
+          "risero"
+        ]
+      },
+      "imperativo": {
+        "tu": "ridi",
+        "lei": "rida",
+        "noi": "ridiamo",
+        "voi": "ridete"
+      }
+    },
+    {
+      "inf": "piangere",
+      "en": "to cry",
+      "aux": "avere",
+      "participio": "pianto",
+      "gerundio": "piangendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "feelings"
+      ],
+      "tempi": {
+        "presente": [
+          "piango",
+          "piangi",
+          "piange",
+          "piangiamo",
+          "piangete",
+          "piangono"
+        ],
+        "imperfetto": [
+          "piangevo",
+          "piangevi",
+          "piangeva",
+          "piangevamo",
+          "piangevate",
+          "piangevano"
+        ],
+        "futuro": [
+          "piangerò",
+          "piangerai",
+          "piangerà",
+          "piangeremo",
+          "piangerete",
+          "piangeranno"
+        ],
+        "condizionale": [
+          "piangerei",
+          "piangeresti",
+          "piangerebbe",
+          "piangeremmo",
+          "piangereste",
+          "piangerebbero"
+        ],
+        "congiuntivo": [
+          "pianga",
+          "pianga",
+          "pianga",
+          "piangiamo",
+          "piangiate",
+          "piangano"
+        ],
+        "congiuntivo_imperfetto": [
+          "piangessi",
+          "piangessi",
+          "piangesse",
+          "piangessimo",
+          "piangeste",
+          "piangessero"
+        ],
+        "passato_remoto": [
+          "piansi",
+          "piangesti",
+          "pianse",
+          "piangemmo",
+          "piangeste",
+          "piansero"
+        ]
+      },
+      "imperativo": {
+        "tu": "piangi",
+        "lei": "pianga",
+        "noi": "piangiamo",
+        "voi": "piangete"
+      }
+    },
+    {
+      "inf": "spendere",
+      "en": "to spend",
+      "aux": "avere",
+      "participio": "speso",
+      "gerundio": "spendendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "finance"
+      ],
+      "tempi": {
+        "presente": [
+          "spendo",
+          "spendi",
+          "spende",
+          "spendiamo",
+          "spendete",
+          "spendono"
+        ],
+        "imperfetto": [
+          "spendevo",
+          "spendevi",
+          "spendeva",
+          "spendevamo",
+          "spendevate",
+          "spendevano"
+        ],
+        "futuro": [
+          "spenderò",
+          "spenderai",
+          "spenderà",
+          "spenderemo",
+          "spenderete",
+          "spenderanno"
+        ],
+        "condizionale": [
+          "spenderei",
+          "spenderesti",
+          "spenderebbe",
+          "spenderemmo",
+          "spendereste",
+          "spenderebbero"
+        ],
+        "congiuntivo": [
+          "spenda",
+          "spenda",
+          "spenda",
+          "spendiamo",
+          "spendiate",
+          "spendano"
+        ],
+        "congiuntivo_imperfetto": [
+          "spendessi",
+          "spendessi",
+          "spendesse",
+          "spendessimo",
+          "spendeste",
+          "spendessero"
+        ],
+        "passato_remoto": [
+          "spesi",
+          "spendesti",
+          "spese",
+          "spendemmo",
+          "spendeste",
+          "spesero"
+        ]
+      },
+      "imperativo": {
+        "tu": "spendi",
+        "lei": "spenda",
+        "noi": "spendiamo",
+        "voi": "spendete"
+      }
+    },
+    {
+      "inf": "rompere",
+      "en": "to break",
+      "aux": "avere",
+      "participio": "rotto",
+      "gerundio": "rompendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "rompo",
+          "rompi",
+          "rompe",
+          "rompiamo",
+          "rompete",
+          "rompono"
+        ],
+        "imperfetto": [
+          "rompevo",
+          "rompevi",
+          "rompeva",
+          "rompevamo",
+          "rompevate",
+          "rompevano"
+        ],
+        "futuro": [
+          "romperò",
+          "romperai",
+          "romperà",
+          "romperemo",
+          "romperete",
+          "romperanno"
+        ],
+        "condizionale": [
+          "romperei",
+          "romperesti",
+          "romperebbe",
+          "romperemmo",
+          "rompereste",
+          "romperebbero"
+        ],
+        "congiuntivo": [
+          "rompa",
+          "rompa",
+          "rompa",
+          "rompiamo",
+          "rompiate",
+          "rompano"
+        ],
+        "congiuntivo_imperfetto": [
+          "rompessi",
+          "rompessi",
+          "rompesse",
+          "rompessimo",
+          "rompeste",
+          "rompessero"
+        ],
+        "passato_remoto": [
+          "ruppi",
+          "rompesti",
+          "ruppe",
+          "rompemmo",
+          "rompeste",
+          "ruppero"
+        ]
+      },
+      "imperativo": {
+        "tu": "rompi",
+        "lei": "rompa",
+        "noi": "rompiamo",
+        "voi": "rompete"
+      }
+    },
+    {
+      "inf": "nascondere",
+      "en": "to hide",
+      "aux": "avere",
+      "participio": "nascosto",
+      "gerundio": "nascondendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "nascondo",
+          "nascondi",
+          "nasconde",
+          "nascondiamo",
+          "nascondete",
+          "nascondono"
+        ],
+        "imperfetto": [
+          "nascondevo",
+          "nascondevi",
+          "nascondeva",
+          "nascondevamo",
+          "nascondevate",
+          "nascondevano"
+        ],
+        "futuro": [
+          "nasconderò",
+          "nasconderai",
+          "nasconderà",
+          "nasconderemo",
+          "nasconderete",
+          "nasconderanno"
+        ],
+        "condizionale": [
+          "nasconderei",
+          "nasconderesti",
+          "nasconderebbe",
+          "nasconderemmo",
+          "nascondereste",
+          "nasconderebbero"
+        ],
+        "congiuntivo": [
+          "nasconda",
+          "nasconda",
+          "nasconda",
+          "nascondiamo",
+          "nascondiate",
+          "nascondano"
+        ],
+        "congiuntivo_imperfetto": [
+          "nascondessi",
+          "nascondessi",
+          "nascondesse",
+          "nascondessimo",
+          "nascondeste",
+          "nascondessero"
+        ],
+        "passato_remoto": [
+          "nascosi",
+          "nascondesti",
+          "nascose",
+          "nascondemmo",
+          "nascondeste",
+          "nascosero"
+        ]
+      },
+      "imperativo": {
+        "tu": "nascondi",
+        "lei": "nasconda",
+        "noi": "nascondiamo",
+        "voi": "nascondete"
+      }
+    },
+    {
+      "inf": "distinguere",
+      "en": "to distinguish",
+      "aux": "avere",
+      "participio": "distinto",
+      "gerundio": "distinguendo",
+      "regular": false,
+      "isc": false,
+      "level": "C1",
+      "tags": [
+        "irregular"
+      ],
+      "tempi": {
+        "presente": [
+          "distinguo",
+          "distingui",
+          "distingue",
+          "distinguiamo",
+          "distinguete",
+          "distinguono"
+        ],
+        "imperfetto": [
+          "distinguevo",
+          "distinguevi",
+          "distingueva",
+          "distinguevamo",
+          "distinguevate",
+          "distinguevano"
+        ],
+        "futuro": [
+          "distinguerò",
+          "distinguerai",
+          "distinguerà",
+          "distingueremo",
+          "distinguerete",
+          "distingueranno"
+        ],
+        "condizionale": [
+          "distinguerei",
+          "distingueresti",
+          "distinguerebbe",
+          "distingueremmo",
+          "distinguereste",
+          "distinguerebbero"
+        ],
+        "congiuntivo": [
+          "distingua",
+          "distingua",
+          "distingua",
+          "distinguiamo",
+          "distinguiate",
+          "distinguano"
+        ],
+        "congiuntivo_imperfetto": [
+          "distinguessi",
+          "distinguessi",
+          "distinguesse",
+          "distinguessimo",
+          "distingueste",
+          "distinguessero"
+        ],
+        "passato_remoto": [
+          "distinsi",
+          "distinguesti",
+          "distinse",
+          "distinguemmo",
+          "distingueste",
+          "distinsero"
+        ]
+      },
+      "imperativo": {
+        "tu": "distingui",
+        "lei": "distingua",
+        "noi": "distinguiamo",
+        "voi": "distinguete"
+      }
+    },
+    {
+      "inf": "esprimere",
+      "en": "to express",
+      "aux": "avere",
+      "participio": "espresso",
+      "gerundio": "esprimendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "communication"
+      ],
+      "tempi": {
+        "presente": [
+          "esprimo",
+          "esprimi",
+          "esprime",
+          "esprimiamo",
+          "esprimete",
+          "esprimono"
+        ],
+        "imperfetto": [
+          "esprimevo",
+          "esprimevi",
+          "esprimeva",
+          "esprimevamo",
+          "esprimevate",
+          "esprimevano"
+        ],
+        "futuro": [
+          "esprimerò",
+          "esprimerai",
+          "esprimerà",
+          "esprimeremo",
+          "esprimerete",
+          "esprimeranno"
+        ],
+        "condizionale": [
+          "esprimerei",
+          "esprimeresti",
+          "esprimerebbe",
+          "esprimeremmo",
+          "esprimereste",
+          "esprimerebbero"
+        ],
+        "congiuntivo": [
+          "esprima",
+          "esprima",
+          "esprima",
+          "esprimiamo",
+          "esprimiate",
+          "esprimano"
+        ],
+        "congiuntivo_imperfetto": [
+          "esprimessi",
+          "esprimessi",
+          "esprimesse",
+          "esprimessimo",
+          "esprimeste",
+          "esprimessero"
+        ],
+        "passato_remoto": [
+          "espressi",
+          "esprimesti",
+          "espresse",
+          "esprimemmo",
+          "esprimeste",
+          "espressero"
+        ]
+      },
+      "imperativo": {
+        "tu": "esprimi",
+        "lei": "esprima",
+        "noi": "esprimiamo",
+        "voi": "esprimete"
+      }
+    },
+    {
+      "inf": "discutere",
+      "en": "to discuss, to argue",
+      "aux": "avere",
+      "participio": "discusso",
+      "gerundio": "discutendo",
+      "regular": false,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "irregular",
+        "communication"
+      ],
+      "tempi": {
+        "presente": [
+          "discuto",
+          "discuti",
+          "discute",
+          "discutiamo",
+          "discutete",
+          "discutono"
+        ],
+        "imperfetto": [
+          "discutevo",
+          "discutevi",
+          "discuteva",
+          "discutevamo",
+          "discutevate",
+          "discutevano"
+        ],
+        "futuro": [
+          "discuterò",
+          "discuterai",
+          "discuterà",
+          "discuteremo",
+          "discuterete",
+          "discuteranno"
+        ],
+        "condizionale": [
+          "discuterei",
+          "discuteresti",
+          "discuterebbe",
+          "discuteremmo",
+          "discutereste",
+          "discuterebbero"
+        ],
+        "congiuntivo": [
+          "discuta",
+          "discuta",
+          "discuta",
+          "discutiamo",
+          "discutiate",
+          "discutano"
+        ],
+        "congiuntivo_imperfetto": [
+          "discutessi",
+          "discutessi",
+          "discutesse",
+          "discutessimo",
+          "discuteste",
+          "discutessero"
+        ],
+        "passato_remoto": [
+          "discussi",
+          "discutesti",
+          "discusse",
+          "discutemmo",
+          "discuteste",
+          "discussero"
+        ]
+      },
+      "imperativo": {
+        "tu": "discuti",
+        "lei": "discuta",
+        "noi": "discutiamo",
+        "voi": "discutete"
+      }
+    },
+    {
+      "inf": "concedere",
+      "en": "to grant, to concede",
+      "aux": "avere",
+      "participio": "concesso",
+      "gerundio": "concedendo",
+      "regular": false,
+      "isc": false,
+      "level": "C1",
+      "tags": [
+        "irregular",
+        "formal"
+      ],
+      "tempi": {
+        "presente": [
+          "concedo",
+          "concedi",
+          "concede",
+          "concediamo",
+          "concedete",
+          "concedono"
+        ],
+        "imperfetto": [
+          "concedevo",
+          "concedevi",
+          "concedeva",
+          "concedevamo",
+          "concedevate",
+          "concedevano"
+        ],
+        "futuro": [
+          "concederò",
+          "concederai",
+          "concederà",
+          "concederemo",
+          "concederete",
+          "concederanno"
+        ],
+        "condizionale": [
+          "concederei",
+          "concederesti",
+          "concederebbe",
+          "concederemmo",
+          "concedereste",
+          "concederebbero"
+        ],
+        "congiuntivo": [
+          "conceda",
+          "conceda",
+          "conceda",
+          "concediamo",
+          "concediate",
+          "concedano"
+        ],
+        "congiuntivo_imperfetto": [
+          "concedessi",
+          "concedessi",
+          "concedesse",
+          "concedessimo",
+          "concedeste",
+          "concedessero"
+        ],
+        "passato_remoto": [
+          "concesi",
+          "concedesti",
+          "concese",
+          "concedemmo",
+          "concedeste",
+          "concesero"
+        ]
+      },
+      "imperativo": {
+        "tu": "concedi",
+        "lei": "conceda",
+        "noi": "concediamo",
+        "voi": "concedete"
+      }
+    },
+    {
+      "inf": "parlare",
+      "en": "to speak",
+      "aux": "avere",
+      "participio": "parlato",
+      "gerundio": "parlando",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular",
+        "communication"
+      ],
+      "tempi": {
+        "presente": [
+          "parlo",
+          "parli",
+          "parla",
+          "parliamo",
+          "parlate",
+          "parlano"
+        ],
+        "imperfetto": [
+          "parlavo",
+          "parlavi",
+          "parlava",
+          "parlavamo",
+          "parlavate",
+          "parlavano"
+        ],
+        "futuro": [
+          "parlerò",
+          "parlerai",
+          "parlerà",
+          "parleremo",
+          "parlerete",
+          "parleranno"
+        ],
+        "condizionale": [
+          "parlerei",
+          "parleresti",
+          "parlerebbe",
+          "parleremmo",
+          "parlereste",
+          "parlerebbero"
+        ],
+        "congiuntivo": [
+          "parli",
+          "parli",
+          "parli",
+          "parliamo",
+          "parliate",
+          "parlino"
+        ],
+        "congiuntivo_imperfetto": [
+          "parlassi",
+          "parlassi",
+          "parlasse",
+          "parlassimo",
+          "parlaste",
+          "parlassero"
+        ],
+        "passato_remoto": [
+          "parlai",
+          "parlasti",
+          "parlò",
+          "parlammo",
+          "parlaste",
+          "parlarono"
+        ]
+      },
+      "imperativo": {
+        "tu": "parla",
+        "lei": "parli",
+        "noi": "parliamo",
+        "voi": "parlate"
+      }
+    },
+    {
+      "inf": "lavorare",
+      "en": "to work",
+      "aux": "avere",
+      "participio": "lavorato",
+      "gerundio": "lavorando",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular",
+        "work"
+      ],
+      "tempi": {
+        "presente": [
+          "lavoro",
+          "lavori",
+          "lavora",
+          "lavoriamo",
+          "lavorate",
+          "lavorano"
+        ],
+        "imperfetto": [
+          "lavoravo",
+          "lavoravi",
+          "lavorava",
+          "lavoravamo",
+          "lavoravate",
+          "lavoravano"
+        ],
+        "futuro": [
+          "lavorerò",
+          "lavorerai",
+          "lavorerà",
+          "lavoreremo",
+          "lavorerete",
+          "lavoreranno"
+        ],
+        "condizionale": [
+          "lavorerei",
+          "lavoreresti",
+          "lavorerebbe",
+          "lavoreremmo",
+          "lavorereste",
+          "lavorerebbero"
+        ],
+        "congiuntivo": [
+          "lavori",
+          "lavori",
+          "lavori",
+          "lavoriamo",
+          "lavoriate",
+          "lavorino"
+        ],
+        "congiuntivo_imperfetto": [
+          "lavorassi",
+          "lavorassi",
+          "lavorasse",
+          "lavorassimo",
+          "lavoraste",
+          "lavorassero"
+        ],
+        "passato_remoto": [
+          "lavorai",
+          "lavorasti",
+          "lavorò",
+          "lavorammo",
+          "lavoraste",
+          "lavorarono"
+        ]
+      },
+      "imperativo": {
+        "tu": "lavora",
+        "lei": "lavori",
+        "noi": "lavoriamo",
+        "voi": "lavorate"
+      }
+    },
+    {
+      "inf": "mangiare",
+      "en": "to eat",
+      "aux": "avere",
+      "participio": "mangiato",
+      "gerundio": "mangiando",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular",
+        "daily life"
+      ],
+      "tempi": {
+        "presente": [
+          "mangio",
+          "mangi",
+          "mangia",
+          "mangiamo",
+          "mangiate",
+          "mangiano"
+        ],
+        "imperfetto": [
+          "mangiavo",
+          "mangiavi",
+          "mangiava",
+          "mangiavamo",
+          "mangiavate",
+          "mangiavano"
+        ],
+        "futuro": [
+          "mangerò",
+          "mangerai",
+          "mangerà",
+          "mangeremo",
+          "mangerete",
+          "mangeranno"
+        ],
+        "condizionale": [
+          "mangerei",
+          "mangeresti",
+          "mangerebbe",
+          "mangeremmo",
+          "mangereste",
+          "mangerebbero"
+        ],
+        "congiuntivo": [
+          "mangi",
+          "mangi",
+          "mangi",
+          "mangiamo",
+          "mangiate",
+          "mangino"
+        ],
+        "congiuntivo_imperfetto": [
+          "mangiassi",
+          "mangiassi",
+          "mangiasse",
+          "mangiassimo",
+          "mangiaste",
+          "mangiassero"
+        ],
+        "passato_remoto": [
+          "mangiai",
+          "mangiasti",
+          "mangiò",
+          "mangiammo",
+          "mangiaste",
+          "mangiarono"
+        ]
+      },
+      "imperativo": {
+        "tu": "mangia",
+        "lei": "mangi",
+        "noi": "mangiamo",
+        "voi": "mangiate"
+      }
+    },
+    {
+      "inf": "cercare",
+      "en": "to look for, to try",
+      "aux": "avere",
+      "participio": "cercato",
+      "gerundio": "cercando",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular"
+      ],
+      "tempi": {
+        "presente": [
+          "cerco",
+          "cerchi",
+          "cerca",
+          "cerchiamo",
+          "cercate",
+          "cercano"
+        ],
+        "imperfetto": [
+          "cercavo",
+          "cercavi",
+          "cercava",
+          "cercavamo",
+          "cercavate",
+          "cercavano"
+        ],
+        "futuro": [
+          "cercherò",
+          "cercherai",
+          "cercherà",
+          "cercheremo",
+          "cercherete",
+          "cercheranno"
+        ],
+        "condizionale": [
+          "cercherei",
+          "cercheresti",
+          "cercherebbe",
+          "cercheremmo",
+          "cerchereste",
+          "cercherebbero"
+        ],
+        "congiuntivo": [
+          "cerchi",
+          "cerchi",
+          "cerchi",
+          "cerchiamo",
+          "cerchiate",
+          "cerchino"
+        ],
+        "congiuntivo_imperfetto": [
+          "cercassi",
+          "cercassi",
+          "cercasse",
+          "cercassimo",
+          "cercaste",
+          "cercassero"
+        ],
+        "passato_remoto": [
+          "cercai",
+          "cercasti",
+          "cercò",
+          "cercammo",
+          "cercaste",
+          "cercarono"
+        ]
+      },
+      "imperativo": {
+        "tu": "cerca",
+        "lei": "cerchi",
+        "noi": "cerchiamo",
+        "voi": "cercate"
+      }
+    },
+    {
+      "inf": "pagare",
+      "en": "to pay",
+      "aux": "avere",
+      "participio": "pagato",
+      "gerundio": "pagando",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular",
+        "finance"
+      ],
+      "tempi": {
+        "presente": [
+          "pago",
+          "paghi",
+          "paga",
+          "paghiamo",
+          "pagate",
+          "pagano"
+        ],
+        "imperfetto": [
+          "pagavo",
+          "pagavi",
+          "pagava",
+          "pagavamo",
+          "pagavate",
+          "pagavano"
+        ],
+        "futuro": [
+          "pagherò",
+          "pagherai",
+          "pagherà",
+          "pagheremo",
+          "pagherete",
+          "pagheranno"
+        ],
+        "condizionale": [
+          "pagherei",
+          "pagheresti",
+          "pagherebbe",
+          "pagheremmo",
+          "paghereste",
+          "pagherebbero"
+        ],
+        "congiuntivo": [
+          "paghi",
+          "paghi",
+          "paghi",
+          "paghiamo",
+          "paghiate",
+          "paghino"
+        ],
+        "congiuntivo_imperfetto": [
+          "pagassi",
+          "pagassi",
+          "pagasse",
+          "pagassimo",
+          "pagaste",
+          "pagassero"
+        ],
+        "passato_remoto": [
+          "pagai",
+          "pagasti",
+          "pagò",
+          "pagammo",
+          "pagaste",
+          "pagarono"
+        ]
+      },
+      "imperativo": {
+        "tu": "paga",
+        "lei": "paghi",
+        "noi": "paghiamo",
+        "voi": "pagate"
+      }
+    },
+    {
+      "inf": "studiare",
+      "en": "to study",
+      "aux": "avere",
+      "participio": "studiato",
+      "gerundio": "studiando",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular"
+      ],
+      "tempi": {
+        "presente": [
+          "studio",
+          "studi",
+          "studia",
+          "studiamo",
+          "studiate",
+          "studiano"
+        ],
+        "imperfetto": [
+          "studiavo",
+          "studiavi",
+          "studiava",
+          "studiavamo",
+          "studiavate",
+          "studiavano"
+        ],
+        "futuro": [
+          "studierò",
+          "studierai",
+          "studierà",
+          "studieremo",
+          "studierete",
+          "studieranno"
+        ],
+        "condizionale": [
+          "studierei",
+          "studieresti",
+          "studierebbe",
+          "studieremmo",
+          "studiereste",
+          "studierebbero"
+        ],
+        "congiuntivo": [
+          "studi",
+          "studi",
+          "studi",
+          "studiamo",
+          "studiate",
+          "studino"
+        ],
+        "congiuntivo_imperfetto": [
+          "studiassi",
+          "studiassi",
+          "studiasse",
+          "studiassimo",
+          "studiaste",
+          "studiassero"
+        ],
+        "passato_remoto": [
+          "studiai",
+          "studiasti",
+          "studiò",
+          "studiammo",
+          "studiaste",
+          "studiarono"
+        ]
+      },
+      "imperativo": {
+        "tu": "studia",
+        "lei": "studi",
+        "noi": "studiamo",
+        "voi": "studiate"
+      }
+    },
+    {
+      "inf": "lasciare",
+      "en": "to leave, to let",
+      "aux": "avere",
+      "participio": "lasciato",
+      "gerundio": "lasciando",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular"
+      ],
+      "tempi": {
+        "presente": [
+          "lascio",
+          "lasci",
+          "lascia",
+          "lasciamo",
+          "lasciate",
+          "lasciano"
+        ],
+        "imperfetto": [
+          "lasciavo",
+          "lasciavi",
+          "lasciava",
+          "lasciavamo",
+          "lasciavate",
+          "lasciavano"
+        ],
+        "futuro": [
+          "lascerò",
+          "lascerai",
+          "lascerà",
+          "lasceremo",
+          "lascerete",
+          "lasceranno"
+        ],
+        "condizionale": [
+          "lascerei",
+          "lasceresti",
+          "lascerebbe",
+          "lasceremmo",
+          "lascereste",
+          "lascerebbero"
+        ],
+        "congiuntivo": [
+          "lasci",
+          "lasci",
+          "lasci",
+          "lasciamo",
+          "lasciate",
+          "lascino"
+        ],
+        "congiuntivo_imperfetto": [
+          "lasciassi",
+          "lasciassi",
+          "lasciasse",
+          "lasciassimo",
+          "lasciaste",
+          "lasciassero"
+        ],
+        "passato_remoto": [
+          "lasciai",
+          "lasciasti",
+          "lasciò",
+          "lasciammo",
+          "lasciaste",
+          "lasciarono"
+        ]
+      },
+      "imperativo": {
+        "tu": "lascia",
+        "lei": "lasci",
+        "noi": "lasciamo",
+        "voi": "lasciate"
+      }
+    },
+    {
+      "inf": "cominciare",
+      "en": "to begin, to start",
+      "aux": "avere/essere",
+      "participio": "cominciato",
+      "gerundio": "cominciando",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular"
+      ],
+      "tempi": {
+        "presente": [
+          "comincio",
+          "cominci",
+          "comincia",
+          "cominciamo",
+          "cominciate",
+          "cominciano"
+        ],
+        "imperfetto": [
+          "cominciavo",
+          "cominciavi",
+          "cominciava",
+          "cominciavamo",
+          "cominciavate",
+          "cominciavano"
+        ],
+        "futuro": [
+          "comincerò",
+          "comincerai",
+          "comincerà",
+          "cominceremo",
+          "comincerete",
+          "cominceranno"
+        ],
+        "condizionale": [
+          "comincerei",
+          "cominceresti",
+          "comincerebbe",
+          "cominceremmo",
+          "comincereste",
+          "comincerebbero"
+        ],
+        "congiuntivo": [
+          "cominci",
+          "cominci",
+          "cominci",
+          "cominciamo",
+          "cominciate",
+          "comincino"
+        ],
+        "congiuntivo_imperfetto": [
+          "cominciassi",
+          "cominciassi",
+          "cominciasse",
+          "cominciassimo",
+          "cominciaste",
+          "cominciassero"
+        ],
+        "passato_remoto": [
+          "cominciai",
+          "cominciasti",
+          "cominciò",
+          "cominciammo",
+          "cominciaste",
+          "cominciarono"
+        ]
+      },
+      "imperativo": {
+        "tu": "comincia",
+        "lei": "cominci",
+        "noi": "cominciamo",
+        "voi": "cominciate"
+      }
+    },
+    {
+      "inf": "credere",
+      "en": "to believe",
+      "aux": "avere",
+      "participio": "creduto",
+      "gerundio": "credendo",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular",
+        "opinion"
+      ],
+      "tempi": {
+        "presente": [
+          "credo",
+          "credi",
+          "crede",
+          "crediamo",
+          "credete",
+          "credono"
+        ],
+        "imperfetto": [
+          "credevo",
+          "credevi",
+          "credeva",
+          "credevamo",
+          "credevate",
+          "credevano"
+        ],
+        "futuro": [
+          "crederò",
+          "crederai",
+          "crederà",
+          "crederemo",
+          "crederete",
+          "crederanno"
+        ],
+        "condizionale": [
+          "crederei",
+          "crederesti",
+          "crederebbe",
+          "crederemmo",
+          "credereste",
+          "crederebbero"
+        ],
+        "congiuntivo": [
+          "creda",
+          "creda",
+          "creda",
+          "crediamo",
+          "crediate",
+          "credano"
+        ],
+        "congiuntivo_imperfetto": [
+          "credessi",
+          "credessi",
+          "credesse",
+          "credessimo",
+          "credeste",
+          "credessero"
+        ],
+        "passato_remoto": [
+          "credetti",
+          "credesti",
+          "credette",
+          "credemmo",
+          "credeste",
+          "credettero"
+        ]
+      },
+      "imperativo": {
+        "tu": "credi",
+        "lei": "creda",
+        "noi": "crediamo",
+        "voi": "credete"
+      },
+      "alt": {
+        "passato_remoto": [
+          "credei",
+          null,
+          "credé",
+          null,
+          null,
+          "crederono"
+        ]
+      }
+    },
+    {
+      "inf": "vendere",
+      "en": "to sell",
+      "aux": "avere",
+      "participio": "venduto",
+      "gerundio": "vendendo",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular",
+        "finance"
+      ],
+      "tempi": {
+        "presente": [
+          "vendo",
+          "vendi",
+          "vende",
+          "vendiamo",
+          "vendete",
+          "vendono"
+        ],
+        "imperfetto": [
+          "vendevo",
+          "vendevi",
+          "vendeva",
+          "vendevamo",
+          "vendevate",
+          "vendevano"
+        ],
+        "futuro": [
+          "venderò",
+          "venderai",
+          "venderà",
+          "venderemo",
+          "venderete",
+          "venderanno"
+        ],
+        "condizionale": [
+          "venderei",
+          "venderesti",
+          "venderebbe",
+          "venderemmo",
+          "vendereste",
+          "venderebbero"
+        ],
+        "congiuntivo": [
+          "venda",
+          "venda",
+          "venda",
+          "vendiamo",
+          "vendiate",
+          "vendano"
+        ],
+        "congiuntivo_imperfetto": [
+          "vendessi",
+          "vendessi",
+          "vendesse",
+          "vendessimo",
+          "vendeste",
+          "vendessero"
+        ],
+        "passato_remoto": [
+          "vendetti",
+          "vendesti",
+          "vendette",
+          "vendemmo",
+          "vendeste",
+          "vendettero"
+        ]
+      },
+      "imperativo": {
+        "tu": "vendi",
+        "lei": "venda",
+        "noi": "vendiamo",
+        "voi": "vendete"
+      },
+      "alt": {
+        "passato_remoto": [
+          "vendei",
+          null,
+          "vendé",
+          null,
+          null,
+          "venderono"
+        ]
+      }
+    },
+    {
+      "inf": "ripetere",
+      "en": "to repeat",
+      "aux": "avere",
+      "participio": "ripetuto",
+      "gerundio": "ripetendo",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular",
+        "communication"
+      ],
+      "tempi": {
+        "presente": [
+          "ripeto",
+          "ripeti",
+          "ripete",
+          "ripetiamo",
+          "ripetete",
+          "ripetono"
+        ],
+        "imperfetto": [
+          "ripetevo",
+          "ripetevi",
+          "ripeteva",
+          "ripetevamo",
+          "ripetevate",
+          "ripetevano"
+        ],
+        "futuro": [
+          "ripeterò",
+          "ripeterai",
+          "ripeterà",
+          "ripeteremo",
+          "ripeterete",
+          "ripeteranno"
+        ],
+        "condizionale": [
+          "ripeterei",
+          "ripeteresti",
+          "ripeterebbe",
+          "ripeteremmo",
+          "ripetereste",
+          "ripeterebbero"
+        ],
+        "congiuntivo": [
+          "ripeta",
+          "ripeta",
+          "ripeta",
+          "ripetiamo",
+          "ripetiate",
+          "ripetano"
+        ],
+        "congiuntivo_imperfetto": [
+          "ripetessi",
+          "ripetessi",
+          "ripetesse",
+          "ripetessimo",
+          "ripeteste",
+          "ripetessero"
+        ],
+        "passato_remoto": [
+          "ripetei",
+          "ripetesti",
+          "ripeté",
+          "ripetemmo",
+          "ripeteste",
+          "ripeterono"
+        ]
+      },
+      "imperativo": {
+        "tu": "ripeti",
+        "lei": "ripeta",
+        "noi": "ripetiamo",
+        "voi": "ripetete"
+      }
+    },
+    {
+      "inf": "dormire",
+      "en": "to sleep",
+      "aux": "avere",
+      "participio": "dormito",
+      "gerundio": "dormendo",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular",
+        "daily life"
+      ],
+      "tempi": {
+        "presente": [
+          "dormo",
+          "dormi",
+          "dorme",
+          "dormiamo",
+          "dormite",
+          "dormono"
+        ],
+        "imperfetto": [
+          "dormivo",
+          "dormivi",
+          "dormiva",
+          "dormivamo",
+          "dormivate",
+          "dormivano"
+        ],
+        "futuro": [
+          "dormirò",
+          "dormirai",
+          "dormirà",
+          "dormiremo",
+          "dormirete",
+          "dormiranno"
+        ],
+        "condizionale": [
+          "dormirei",
+          "dormiresti",
+          "dormirebbe",
+          "dormiremmo",
+          "dormireste",
+          "dormirebbero"
+        ],
+        "congiuntivo": [
+          "dorma",
+          "dorma",
+          "dorma",
+          "dormiamo",
+          "dormiate",
+          "dormano"
+        ],
+        "congiuntivo_imperfetto": [
+          "dormissi",
+          "dormissi",
+          "dormisse",
+          "dormissimo",
+          "dormiste",
+          "dormissero"
+        ],
+        "passato_remoto": [
+          "dormii",
+          "dormisti",
+          "dormì",
+          "dormimmo",
+          "dormiste",
+          "dormirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "dormi",
+        "lei": "dorma",
+        "noi": "dormiamo",
+        "voi": "dormite"
+      }
+    },
+    {
+      "inf": "partire",
+      "en": "to leave, to depart",
+      "aux": "essere",
+      "participio": "partito",
+      "gerundio": "partendo",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular",
+        "movement"
+      ],
+      "tempi": {
+        "presente": [
+          "parto",
+          "parti",
+          "parte",
+          "partiamo",
+          "partite",
+          "partono"
+        ],
+        "imperfetto": [
+          "partivo",
+          "partivi",
+          "partiva",
+          "partivamo",
+          "partivate",
+          "partivano"
+        ],
+        "futuro": [
+          "partirò",
+          "partirai",
+          "partirà",
+          "partiremo",
+          "partirete",
+          "partiranno"
+        ],
+        "condizionale": [
+          "partirei",
+          "partiresti",
+          "partirebbe",
+          "partiremmo",
+          "partireste",
+          "partirebbero"
+        ],
+        "congiuntivo": [
+          "parta",
+          "parta",
+          "parta",
+          "partiamo",
+          "partiate",
+          "partano"
+        ],
+        "congiuntivo_imperfetto": [
+          "partissi",
+          "partissi",
+          "partisse",
+          "partissimo",
+          "partiste",
+          "partissero"
+        ],
+        "passato_remoto": [
+          "partii",
+          "partisti",
+          "partì",
+          "partimmo",
+          "partiste",
+          "partirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "parti",
+        "lei": "parta",
+        "noi": "partiamo",
+        "voi": "partite"
+      }
+    },
+    {
+      "inf": "sentire",
+      "en": "to hear, to feel",
+      "aux": "avere",
+      "participio": "sentito",
+      "gerundio": "sentendo",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular",
+        "senses"
+      ],
+      "tempi": {
+        "presente": [
+          "sento",
+          "senti",
+          "sente",
+          "sentiamo",
+          "sentite",
+          "sentono"
+        ],
+        "imperfetto": [
+          "sentivo",
+          "sentivi",
+          "sentiva",
+          "sentivamo",
+          "sentivate",
+          "sentivano"
+        ],
+        "futuro": [
+          "sentirò",
+          "sentirai",
+          "sentirà",
+          "sentiremo",
+          "sentirete",
+          "sentiranno"
+        ],
+        "condizionale": [
+          "sentirei",
+          "sentiresti",
+          "sentirebbe",
+          "sentiremmo",
+          "sentireste",
+          "sentirebbero"
+        ],
+        "congiuntivo": [
+          "senta",
+          "senta",
+          "senta",
+          "sentiamo",
+          "sentiate",
+          "sentano"
+        ],
+        "congiuntivo_imperfetto": [
+          "sentissi",
+          "sentissi",
+          "sentisse",
+          "sentissimo",
+          "sentiste",
+          "sentissero"
+        ],
+        "passato_remoto": [
+          "sentii",
+          "sentisti",
+          "sentì",
+          "sentimmo",
+          "sentiste",
+          "sentirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "senti",
+        "lei": "senta",
+        "noi": "sentiamo",
+        "voi": "sentite"
+      }
+    },
+    {
+      "inf": "capire",
+      "en": "to understand",
+      "aux": "avere",
+      "participio": "capito",
+      "gerundio": "capendo",
+      "regular": true,
+      "isc": true,
+      "level": "B2",
+      "tags": [
+        "regular"
+      ],
+      "tempi": {
+        "presente": [
+          "capisco",
+          "capisci",
+          "capisce",
+          "capiamo",
+          "capite",
+          "capiscono"
+        ],
+        "imperfetto": [
+          "capivo",
+          "capivi",
+          "capiva",
+          "capivamo",
+          "capivate",
+          "capivano"
+        ],
+        "futuro": [
+          "capirò",
+          "capirai",
+          "capirà",
+          "capiremo",
+          "capirete",
+          "capiranno"
+        ],
+        "condizionale": [
+          "capirei",
+          "capiresti",
+          "capirebbe",
+          "capiremmo",
+          "capireste",
+          "capirebbero"
+        ],
+        "congiuntivo": [
+          "capisca",
+          "capisca",
+          "capisca",
+          "capiamo",
+          "capiate",
+          "capiscano"
+        ],
+        "congiuntivo_imperfetto": [
+          "capissi",
+          "capissi",
+          "capisse",
+          "capissimo",
+          "capiste",
+          "capissero"
+        ],
+        "passato_remoto": [
+          "capii",
+          "capisti",
+          "capì",
+          "capimmo",
+          "capiste",
+          "capirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "capisci",
+        "lei": "capisca",
+        "noi": "capiamo",
+        "voi": "capite"
+      }
+    },
+    {
+      "inf": "finire",
+      "en": "to finish",
+      "aux": "avere/essere",
+      "participio": "finito",
+      "gerundio": "finendo",
+      "regular": true,
+      "isc": true,
+      "level": "B2",
+      "tags": [
+        "regular"
+      ],
+      "tempi": {
+        "presente": [
+          "finisco",
+          "finisci",
+          "finisce",
+          "finiamo",
+          "finite",
+          "finiscono"
+        ],
+        "imperfetto": [
+          "finivo",
+          "finivi",
+          "finiva",
+          "finivamo",
+          "finivate",
+          "finivano"
+        ],
+        "futuro": [
+          "finirò",
+          "finirai",
+          "finirà",
+          "finiremo",
+          "finirete",
+          "finiranno"
+        ],
+        "condizionale": [
+          "finirei",
+          "finiresti",
+          "finirebbe",
+          "finiremmo",
+          "finireste",
+          "finirebbero"
+        ],
+        "congiuntivo": [
+          "finisca",
+          "finisca",
+          "finisca",
+          "finiamo",
+          "finiate",
+          "finiscano"
+        ],
+        "congiuntivo_imperfetto": [
+          "finissi",
+          "finissi",
+          "finisse",
+          "finissimo",
+          "finiste",
+          "finissero"
+        ],
+        "passato_remoto": [
+          "finii",
+          "finisti",
+          "finì",
+          "finimmo",
+          "finiste",
+          "finirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "finisci",
+        "lei": "finisca",
+        "noi": "finiamo",
+        "voi": "finite"
+      }
+    },
+    {
+      "inf": "preferire",
+      "en": "to prefer",
+      "aux": "avere",
+      "participio": "preferito",
+      "gerundio": "preferendo",
+      "regular": true,
+      "isc": true,
+      "level": "B2",
+      "tags": [
+        "regular",
+        "opinion"
+      ],
+      "tempi": {
+        "presente": [
+          "preferisco",
+          "preferisci",
+          "preferisce",
+          "preferiamo",
+          "preferite",
+          "preferiscono"
+        ],
+        "imperfetto": [
+          "preferivo",
+          "preferivi",
+          "preferiva",
+          "preferivamo",
+          "preferivate",
+          "preferivano"
+        ],
+        "futuro": [
+          "preferirò",
+          "preferirai",
+          "preferirà",
+          "preferiremo",
+          "preferirete",
+          "preferiranno"
+        ],
+        "condizionale": [
+          "preferirei",
+          "preferiresti",
+          "preferirebbe",
+          "preferiremmo",
+          "preferireste",
+          "preferirebbero"
+        ],
+        "congiuntivo": [
+          "preferisca",
+          "preferisca",
+          "preferisca",
+          "preferiamo",
+          "preferiate",
+          "preferiscano"
+        ],
+        "congiuntivo_imperfetto": [
+          "preferissi",
+          "preferissi",
+          "preferisse",
+          "preferissimo",
+          "preferiste",
+          "preferissero"
+        ],
+        "passato_remoto": [
+          "preferii",
+          "preferisti",
+          "preferì",
+          "preferimmo",
+          "preferiste",
+          "preferirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "preferisci",
+        "lei": "preferisca",
+        "noi": "preferiamo",
+        "voi": "preferite"
+      }
+    },
+    {
+      "inf": "pulire",
+      "en": "to clean",
+      "aux": "avere",
+      "participio": "pulito",
+      "gerundio": "pulendo",
+      "regular": true,
+      "isc": true,
+      "level": "B2",
+      "tags": [
+        "regular",
+        "daily life"
+      ],
+      "tempi": {
+        "presente": [
+          "pulisco",
+          "pulisci",
+          "pulisce",
+          "puliamo",
+          "pulite",
+          "puliscono"
+        ],
+        "imperfetto": [
+          "pulivo",
+          "pulivi",
+          "puliva",
+          "pulivamo",
+          "pulivate",
+          "pulivano"
+        ],
+        "futuro": [
+          "pulirò",
+          "pulirai",
+          "pulirà",
+          "puliremo",
+          "pulirete",
+          "puliranno"
+        ],
+        "condizionale": [
+          "pulirei",
+          "puliresti",
+          "pulirebbe",
+          "puliremmo",
+          "pulireste",
+          "pulirebbero"
+        ],
+        "congiuntivo": [
+          "pulisca",
+          "pulisca",
+          "pulisca",
+          "puliamo",
+          "puliate",
+          "puliscano"
+        ],
+        "congiuntivo_imperfetto": [
+          "pulissi",
+          "pulissi",
+          "pulisse",
+          "pulissimo",
+          "puliste",
+          "pulissero"
+        ],
+        "passato_remoto": [
+          "pulii",
+          "pulisti",
+          "pulì",
+          "pulimmo",
+          "puliste",
+          "pulirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "pulisci",
+        "lei": "pulisca",
+        "noi": "puliamo",
+        "voi": "pulite"
+      }
+    },
+    {
+      "inf": "spedire",
+      "en": "to send, to ship",
+      "aux": "avere",
+      "participio": "spedito",
+      "gerundio": "spedendo",
+      "regular": true,
+      "isc": true,
+      "level": "B2",
+      "tags": [
+        "regular"
+      ],
+      "tempi": {
+        "presente": [
+          "spedisco",
+          "spedisci",
+          "spedisce",
+          "spediamo",
+          "spedite",
+          "spediscono"
+        ],
+        "imperfetto": [
+          "spedivo",
+          "spedivi",
+          "spediva",
+          "spedivamo",
+          "spedivate",
+          "spedivano"
+        ],
+        "futuro": [
+          "spedirò",
+          "spedirai",
+          "spedirà",
+          "spediremo",
+          "spedirete",
+          "spediranno"
+        ],
+        "condizionale": [
+          "spedirei",
+          "spediresti",
+          "spedirebbe",
+          "spediremmo",
+          "spedireste",
+          "spedirebbero"
+        ],
+        "congiuntivo": [
+          "spedisca",
+          "spedisca",
+          "spedisca",
+          "spediamo",
+          "spediate",
+          "spediscano"
+        ],
+        "congiuntivo_imperfetto": [
+          "spedissi",
+          "spedissi",
+          "spedisse",
+          "spedissimo",
+          "spediste",
+          "spedissero"
+        ],
+        "passato_remoto": [
+          "spedii",
+          "spedisti",
+          "spedì",
+          "spedimmo",
+          "spediste",
+          "spedirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "spedisci",
+        "lei": "spedisca",
+        "noi": "spediamo",
+        "voi": "spedite"
+      }
+    },
+    {
+      "inf": "investire",
+      "en": "to invest",
+      "aux": "avere",
+      "participio": "investito",
+      "gerundio": "investendo",
+      "regular": true,
+      "isc": false,
+      "level": "B2",
+      "tags": [
+        "regular",
+        "finance"
+      ],
+      "tempi": {
+        "presente": [
+          "investo",
+          "investi",
+          "investe",
+          "investiamo",
+          "investite",
+          "investono"
+        ],
+        "imperfetto": [
+          "investivo",
+          "investivi",
+          "investiva",
+          "investivamo",
+          "investivate",
+          "investivano"
+        ],
+        "futuro": [
+          "investirò",
+          "investirai",
+          "investirà",
+          "investiremo",
+          "investirete",
+          "investiranno"
+        ],
+        "condizionale": [
+          "investirei",
+          "investiresti",
+          "investirebbe",
+          "investiremmo",
+          "investireste",
+          "investirebbero"
+        ],
+        "congiuntivo": [
+          "investa",
+          "investa",
+          "investa",
+          "investiamo",
+          "investiate",
+          "investano"
+        ],
+        "congiuntivo_imperfetto": [
+          "investissi",
+          "investissi",
+          "investisse",
+          "investissimo",
+          "investiste",
+          "investissero"
+        ],
+        "passato_remoto": [
+          "investii",
+          "investisti",
+          "investì",
+          "investimmo",
+          "investiste",
+          "investirono"
+        ]
+      },
+      "imperativo": {
+        "tu": "investi",
+        "lei": "investa",
+        "noi": "investiamo",
+        "voi": "investite"
+      }
+    }
+  ]
+}

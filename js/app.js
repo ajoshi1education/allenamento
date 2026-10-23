@@ -18,7 +18,7 @@ const TABS = [
   { id: "explore", label: "Esplora", icon: "🗺️" },
   { id: "progress", label: "Progressi", icon: "📈" }
 ];
-const TAB_OF = { learn: "explore", play: "explore", vocab: "explore", translate: "explore", errors: "review", diagnostic: "explore", settings: "" };
+const TAB_OF = { learn: "explore", play: "explore", vocab: "explore", translate: "explore", errors: "review", diagnostic: "explore", verbi: "explore", settings: "" };
 
 const VIEWS = {
   path: () => import("./views/path.js"),
@@ -32,7 +32,8 @@ const VIEWS = {
   errors: () => import("./views/errors.js"),
   progress: () => import("./views/progress.js"),
   diagnostic: () => import("./views/diagnostic.js"),
-  settings: () => import("./views/settings.js")
+  settings: () => import("./views/settings.js"),
+  verbi: () => import("./views/verbs.js")
 };
 
 const fetchJson = async p => { const r = await fetch(p, { cache: "no-cache" }); if (!r.ok) throw new Error(`${p}: ${r.status}`); return r.json(); };
@@ -105,7 +106,7 @@ async function main() {
   window.__paintMode = paintMode;
 
   async function badges() {
-    const [errs, events, goal] = await Promise.all([store.errors(), store.events(), store.setting("dailyGoal", 50)]);
+    const [errs, events, goal] = await Promise.all([store.errors(), store.events(), store.setting("dailyGoal", 30)]);
     const due = errs.filter(e => (e.nextReview || 0) <= now()).length;
     const b = document.querySelector('[data-tab="review"] .badge');
     b.hidden = !due; b.textContent = due > 99 ? "99+" : due;

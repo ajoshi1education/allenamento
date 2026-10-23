@@ -3,7 +3,7 @@
   "note": "The guided learning order. Every curriculum concept appears exactly once. Each concept becomes three steps (lesson, practice, challenge); each unit adds its games and a checkpoint.",
   "sections": [
     {
-      "id": "S1", "title": "Livello B2: consolidare", "subtitle": "Make the B2 grammar automatic and widen your everyday range.",
+      "id": "S1", "exam": "G-EXAM-B2", "title": "Livello B2: consolidare", "subtitle": "Make the B2 grammar automatic and widen your everyday range.",
       "units": [
         { "id": "P01", "title": "Raccontare il passato", "desc": "Past tenses, the future of supposition and the words that go with them.", "color": "green",
           "concepts": ["B2-PAST-01", "B2-PAST-02", "B2-FUT-01", "B2-VOC-02", "B2-READ-01"] },
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "id": "S2", "title": "Verso il C1", "subtitle": "Nuance, style and the structures that mark an advanced speaker.",
+      "id": "S2", "exam": "G-EXAM-C1", "title": "Verso il C1", "subtitle": "Nuance, style and the structures that mark an advanced speaker.",
       "units": [
         { "id": "P07", "title": "Congiuntivo avanzato", "desc": "Relative clauses, indefinites, sequence of tenses, reported speech.", "color": "purple",
           "concepts": ["C1-SUBJ-05", "C1-SUBJ-06", "C1-SEQ-02", "C1-SEQ-03", "C1-VOC-03"] },

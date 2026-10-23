@@ -31,6 +31,7 @@ function startSession(plan, { store, nodeId, kind, accent = "green", onFinish })
     const stage = ov.querySelector(".session-stage"), footer = ov.querySelector(".session-footer");
     const bar = ov.querySelector(".session-progress span"), comboEl = ov.querySelector(".combo");
     let i = 0, correct = 0, graded = 0, combo = 0, saved = 0, exited = false;
+    const results = [];                     // per exercise, so exams can score each section
 
     let asking = false;
     const exit = async () => {
@@ -63,6 +64,7 @@ function startSession(plan, { store, nodeId, kind, accent = "green", onFinish })
           });
           if (exited) return;
           graded++;
+          results.push({ section: step.section || null, correct: !!result.correct });
           if (result.correct) { correct++; combo++; } else combo = 0;
           if (outcome.captured) saved++;
           comboEl.hidden = combo < 3; comboEl.querySelector("b").textContent = combo;
@@ -71,11 +73,12 @@ function startSession(plan, { store, nodeId, kind, accent = "green", onFinish })
       }
       if (exited) return;
       i = total; setBar();
-      const passed = !plan.checkpoint || (graded ? correct / graded : 1) >= CHECKPOINT_PASS;
+      const passMark = plan.passMark ?? CHECKPOINT_PASS;
+      const passed = !(plan.checkpoint || plan.passMark != null) || (graded ? correct / graded : 1) >= passMark;
       const res = await store.completeNode(nodeId, { kind, correct, total: graded, passed });
       await endScreen(stage, footer, { plan, correct, graded, saved, xp: res.xp, passed });
       close();
-      const out = { correct, total: graded, passed, xp: res.xp };
+      const out = { correct, total: graded, passed, xp: res.xp, results };
       onFinish && onFinish(out);
       resolve(out);
     })();
@@ -99,6 +102,8 @@ function showCard(stage, footer, step) {
     html = `<div class="lcard"><div class="lc-kicker">Occhio!</div><h2>Common mistakes</h2>
       ${c.lesson.mistakes.map(m => `<div class="mistake-card"><div class="wrong it">✗ ${md(m.wrong)}</div><div class="right it">✓ ${md(m.right)}</div><p>${md(m.why)}</p></div>`).join("")}
       ${(c.lesson.tips || []).length ? `<div class="tip">💡 ${md(c.lesson.tips[0])}</div>` : ""}</div>`;
+  } else if (step.card === "html") {
+    html = `<div class="lcard">${step.html}</div>`;
   } else if (step.card === "recap") {
     html = `<div class="lcard recap"><div class="lc-kicker">Riepilogo</div><h2>Ora sai…</h2>
       <ul class="can-do">${(c.assessment || []).map(a => `<li>${esc(a)}</li>`).join("")}</ul>
@@ -106,6 +111,7 @@ function showCard(stage, footer, step) {
   }
   stage.replaceChildren(h(`<div class="stage-inner">${html}</div>`));
   stage.querySelectorAll("[data-say]").forEach(b => (b.onclick = () => speech.say(b.dataset.say)));
+  if (step.onShow) step.onShow(stage);
   footer.className = "session-footer";
   footer.replaceChildren(h(`<div class="footer-row"><span class="grow"></span><button class="btn3d primary big" data-next>Continua</button></div>`));
   footer.onclick = null;
@@ -123,7 +129,7 @@ function endScreen(stage, footer, { plan, correct, graded, saved, xp, passed }) 
     <div class="end-badge">${passed ? (plan.checkpoint ? "🏆" : "🎉") : "💪"}</div>
     <h1>${title}</h1>
     <p class="muted">${esc(plan.title)} · ${esc(plan.subtitle || "")}</p>
-    ${!passed ? `<p>You need ${Math.round(CHECKPOINT_PASS * 100)}% to pass this checkpoint. Your mistakes are in the Error Bank: review them and try again.</p>` : ""}
+    ${!passed ? `<p>Serve il ${Math.round((plan.passMark ?? CHECKPOINT_PASS) * 100)}% per superarlo. Gli errori sono nel Ripasso: ripassali e riprova.</p>` : ""}
     <div class="end-stats">
       <div class="es gold"><span>XP</span><b>+${xp}</b></div>
       <div class="es ${acc >= 80 ? "green" : acc >= 50 ? "orange" : "red"}"><span>Precisione</span><b>${acc}%</b></div>

@@ -47,7 +47,11 @@ async function play(view, ctx, id) {
   const cv = (content.convos || []).find(c => c.id === id);
   if (!cv) { view.replaceChildren(h(`<div class="page"><a class="back" href="#/convo">← Convos</a><div class="card">Conversation not found.</div></div>`)); return; }
   const tutor = cv.tutor;
-  const rate = cv.level === "C1" ? 1 : 0.92;
+  const baseRate = cv.level === "C1" ? 1 : 0.92;
+  const SPEEDS = [{ v: 0.8, icon: "🐢", label: "Lento" }, { v: 1, icon: "1×", label: "Normale" }, { v: 1.12, icon: "🐇", label: "Veloce" }];
+  let speed = Number(await store.setting("convoSpeed", 1));
+  let hideText = !!(await store.setting("convoHideText", false));
+  let rate = baseRate * speed;
   const micOk = speech.hasRecognition() && !speech.isSilent();
 
   // 1. Start screen (the Start click also lets Chrome play audio)
@@ -74,6 +78,7 @@ async function play(view, ctx, id) {
         ${micOk ? `<button class="mic-big" aria-label="Speak (tap, or hold while you talk)">🎤</button>` : ""}
         <button class="dock-btn" data-type title="Type instead">⌨️</button>
       </div>
+      <div class="dock-opts"><button class="opt-btn" data-speed></button><button class="opt-btn" data-hide></button></div>
       <div class="live-transcript" hidden><span class="lt-dot"></span><span class="lt-text"></span></div>
       <div class="type-row" ${micOk ? "hidden" : ""}><input type="text" class="it" placeholder="Scrivi la tua risposta…"><button class="btn3d primary small" data-send>Send</button></div>
     </div>
@@ -85,15 +90,27 @@ async function play(view, ctx, id) {
   const alive = () => !gone && document.body.contains(chat);
   window.addEventListener("hashchange", () => { gone = true; speech.stop(); speech.stopListening(); }, { once: true });
 
+  const speedBtn = dock.querySelector("[data-speed]"), hideBtn = dock.querySelector("[data-hide]");
+  const paintOpts = () => {
+    const s = SPEEDS.find(x => x.v === speed) || SPEEDS[1];
+    speedBtn.textContent = `${s.icon} Velocità: ${s.label}`;
+    hideBtn.textContent = hideText ? "🙈 Testo nascosto finché non rispondi" : "👁 Testo visibile";
+    hideBtn.classList.toggle("on", hideText);
+  };
+  paintOpts();
+  speedBtn.onclick = async () => { const i = SPEEDS.findIndex(x => x.v === speed); speed = SPEEDS[(i + 1) % SPEEDS.length].v; rate = baseRate * speed; paintOpts(); await store.setSetting("convoSpeed", speed); };
+  hideBtn.onclick = async () => { hideText = !hideText; paintOpts(); chat.querySelectorAll(".bubble.veiled").forEach(b => b.classList.toggle("veiled", hideText)); await store.setSetting("convoHideText", hideText); };
+  const unveil = () => chat.querySelectorAll(".bubble.veiled").forEach(b => b.classList.remove("veiled"));
   let lastLine = "";
   const scrollDown = () => chat.lastElementChild?.scrollIntoView({ behavior: "smooth", block: "end" });
   const tutorSays = async (text, en) => {
     if (!text || !alive()) return;
     lastLine = text;
-    const b = h(`<div class="bubble-row"><span class="avatar">${tutor.avatar || "🧑‍🏫"}</span><div class="bubble"><b class="who">${esc(tutor.name)}</b>
-      <span class="it">${esc(text)}</span>${en ? `<details class="gloss"><summary>English</summary>${esc(en)}</details>` : ""}
+    const b = h(`<div class="bubble-row"><span class="avatar">${tutor.avatar || "🧑‍🏫"}</span><div class="bubble${hideText && speech.canSpeak() && !speech.isSilent() ? " veiled" : ""}"><b class="who">${esc(tutor.name)}</b>
+      <span class="veil-note small">🎧 Ascolta… (tocca per vedere il testo)</span><span class="it">${esc(text)}</span>${en ? `<details class="gloss"><summary>English</summary>${esc(en)}</details>` : ""}
       <button class="say-mini" title="Listen again">🔊</button></div></div>`);
     chat.append(b); scrollDown();
+    b.querySelector(".veil-note").onclick = () => b.querySelector(".bubble").classList.remove("veiled");
     b.querySelector(".say-mini").onclick = () => { speech.stopListening(); speech.say(text, { rate }); };
     dock.classList.add("tutor-talking");
     if (speech.canSpeak()) await speech.say(text, { rate }); else await pause(500);
@@ -142,6 +159,7 @@ async function play(view, ctx, id) {
     dock.classList.remove("your-turn");
     if (!alive()) return;
     speech.stopListening();
+    unveil();
     const assess = assessTurn(turn, a);
     scores.push(assess);
     chat.append(meBubble(a.text, assess, turn, a.byVoice)); scrollDown();

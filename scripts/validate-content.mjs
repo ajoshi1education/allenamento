@@ -14,7 +14,9 @@ const BI = await import(pathToFileURL(path.join(ROOT, "scripts/build-index.mjs")
 export const MIN_EXERCISES = 8;
 export const TYPES = ["cloze", "transform", "translate", "choice", "order", "free", "speak"];
 export const SKILLS = ["grammar", "vocabulary", "reading", "listening", "writing", "speaking", "interaction"];
-export const GAME_TYPES = ["detective", "dialogue", "gauntlet", "builder", "duel", "reading", "listening", "debate"];
+export const GAME_TYPES = ["detective", "dialogue", "gauntlet", "builder", "duel", "reading", "listening", "debate", "exam", "dictation"];
+export const EXAM_SECTIONS = ["reading", "listening", "grammar", "vocabulary", "writing", "speaking"];
+export const TENSES = ["presente", "imperfetto", "futuro", "condizionale", "congiuntivo", "congiuntivo_imperfetto", "passato_remoto"];
 const path_ = p => path.join(ROOT, "content", p);
 const read = p => JSON.parse(fs.readFileSync(path.join(ROOT, "content", p), "utf8"));
 
@@ -25,8 +27,32 @@ export function loadAll() {
   const curriculum = fs.existsSync(path.join(ROOT, "content/curriculum.json")) ? read("curriculum.json") : null;
   const vocab = (index.vocab || []).flatMap(read);
   const convos = (index.convos || []).map(read);
+  const verbs = index.verbs ? read(index.verbs).verbs : [];
   const pathDef = index.path && fs.existsSync(path_(index.path)) ? read(index.path) : null;
-  return { index, units, games, curriculum, vocab, convos, path: pathDef, errorTypes: read("error-types.json") };
+  return { index, units, games, curriculum, vocab, convos, verbs, path: pathDef, errorTypes: read("error-types.json") };
+}
+
+// Regular conjugation, used to double-check verbs marked "regular" (incl. -care/-gare, -ciare/-giare, -isc-).
+export function regularForms(v) {
+  const inf = v.inf; const m = inf.match(/^(.*)(are|ere|ire)$/); if (!m) return null;
+  let [, st, cl] = m; const isc = !!v.isc;
+  const hard = cl === "are" && /[cg]$/.test(st);                 // cercare → cerchi, pagare → paghi
+  const soft = cl === "are" && /[cg]i$/.test(st);                // mangiare → mangerò
+  const dropI = cl === "are" && /i$/.test(st);                    // mangiare/studiare → mangi, studi (no double i)
+  const sti = hard ? st + "h" : dropI ? st.slice(0, -1) : st;     // stem before i
+  const fut = cl === "are" ? (hard ? st + "her" : soft ? st.slice(0, -1) + "er" : st + "er") : cl === "ere" ? st + "er" : st + "ir";
+  const P = { are: ["o", "i", "a", "iamo", "ate", "ano"], ere: ["o", "i", "e", "iamo", "ete", "ono"], ire: ["o", "i", "e", "iamo", "ite", "ono"] }[cl];
+  const pres = P.map((e, i) => (cl === "ire" && isc && [0, 1, 2, 5].includes(i) ? st + "isc" + e : (e[0] === "i" ? sti : (hard && e[0] === "e") ? st + "h" : st) + e));
+  const vow = { are: "a", ere: "e", ire: "i" }[cl];
+  const imp = ["vo", "vi", "va", "vamo", "vate", "vano"].map(e => st + vow + e);
+  const futuro = ["ò", "ai", "à", "emo", "ete", "anno"].map(e => fut + e);
+  const cond = ["ei", "esti", "ebbe", "emmo", "este", "ebbero"].map(e => fut + e);
+  const csub = cl === "are" ? ["i", "i", "i", "iamo", "iate", "ino"].map((e, i) => (i < 3 || i === 5 ? sti : sti) + e) : ["a", "a", "a", "iamo", "iate", "ano"].map((e, i) => (isc && [0, 1, 2, 5].includes(i) ? st + "isc" : (e[0] === "i" ? sti : st)) + e);
+  const cimp = ["ssi", "ssi", "sse", "ssimo", "ste", "ssero"].map(e => st + vow + e);
+  const rem = cl === "are" ? ["ai", "asti", "ò", "ammo", "aste", "arono"] : cl === "ere" ? ["ei", "esti", "é", "emmo", "este", "erono"] : ["ii", "isti", "ì", "immo", "iste", "irono"];
+  const remoto = rem.map(e => st + e);
+  // noi/voi of congiuntivo for -care/-gare keep the h: cerchiamo, cerchiate
+  return { presente: pres, imperfetto: imp, futuro, condizionale: cond, congiuntivo: csub, congiuntivo_imperfetto: cimp, passato_remoto: remoto };
 }
 
 export function validate(all) {
@@ -100,6 +126,15 @@ export function validate(all) {
     dup(g.id, "game");
     if (!GAME_TYPES.includes(g.type)) errors.push(`${g.id}: unknown game type ${g.type}`);
     if (!g.conceptIds || !g.conceptIds.length) errors.push(`${g.id}: no conceptIds`);
+    if (g.type === "exam") {
+      if (!Array.isArray(g.sections) || g.sections.length < 4) errors.push(`${g.id}: an exam needs at least 4 sections`);
+      for (const s of g.sections || []) {
+        if (!EXAM_SECTIONS.includes(s.kind)) errors.push(`${g.id}: unknown section kind ${s.kind}`);
+        if ((s.kind === "reading" || s.kind === "listening") && !(s.passage && s.passage.it)) errors.push(`${g.id}: ${s.kind} section needs passage.it`);
+        if (!Array.isArray(s.items) || !s.items.length) errors.push(`${g.id}: section ${s.kind} has no items`);
+      }
+      if (typeof g.passMark !== "number") errors.push(`${g.id}: needs passMark (0-1)`);
+    }
     if ((g.type === "reading" || g.type === "listening") && (!g.passage || !g.passage.it)) errors.push(`${g.id}: needs passage.it`);
     if (g.type === "dialogue") {
       const ids = new Set((g.nodes || []).map(n => n.id));
@@ -140,6 +175,21 @@ export function validate(all) {
       if (!w.lengthOk) errors.push(`${where}: model answer shorter than minWords`);
       const h = detectErrors(t.model || "");
       if (h.length) errors.push(`${where}: model answer flagged as a mistake (${h.map(x => x.id)})`);
+    }
+  }
+  // Verb tables: complete, unique, and regular verbs match the regular pattern exactly.
+  const seenV = new Set();
+  for (const v of all.verbs || []) {
+    const w = v.inf || "?";
+    if (seenV.has(w)) errors.push(`verbs: ${w} twice`); seenV.add(w);
+    for (const k of ["inf", "en", "aux", "participio", "gerundio"]) if (!v[k]) errors.push(`verbs ${w}: missing ${k}`);
+    if (v.aux && !["avere", "essere", "avere/essere"].includes(v.aux)) errors.push(`verbs ${w}: aux must be avere, essere or avere/essere`);
+    for (const t of TENSES) if (!Array.isArray(v.tempi?.[t]) || v.tempi[t].length !== 6 || v.tempi[t].some(f => !f || typeof f !== "string")) errors.push(`verbs ${w}: tense ${t} needs 6 forms`);
+    if (!v.imperativo || ["tu", "lei", "noi", "voi"].some(p => !v.imperativo[p])) errors.push(`verbs ${w}: imperativo needs tu, lei, noi, voi`);
+    if (v.regular) {
+      const exp = regularForms(v);
+      if (!exp) errors.push(`verbs ${w}: marked regular but the pattern is unknown`);
+      else for (const t of TENSES.filter(t => !(t === "passato_remoto" && /ere$/.test(v.inf)))) (v.tempi?.[t] || []).forEach((f, i) => { if (exp[t] && exp[t][i] && f !== exp[t][i]) errors.push(`verbs ${w}: ${t}[${i}] is "${f}", regular pattern gives "${exp[t][i]}"`); });
     }
   }
   // Vocabulary seed

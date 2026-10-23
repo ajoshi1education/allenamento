@@ -14,6 +14,8 @@ export function gameItems(game) {
   // Reading / listening: questions share the game's passage.
   (game.questions || []).forEach(q => out.push({ conceptId: cid, ...q, passageOf: game.id }));
   (game.prompts || []).forEach(p => out.push({ conceptId: cid, ...p }));
+  // Mock exams: sections of items; reading/listening sections share a passage.
+  (game.sections || []).forEach(s => (s.items || []).forEach(i => out.push({ conceptId: cid, ...i, ...(s.passage && !i.passage ? { passage: s.passage } : {}) })));
   return out;
 }
 
@@ -79,12 +81,14 @@ export async function loadContent(fetchJson) {
     index.curriculum ? get(index.curriculum) : null,
     index.path ? get(index.path) : null
   ]);
+  const verbs = index.verbs ? await get(index.verbs) : null;
   const extra = index.vocab ? await Promise.all(index.vocab.map(get)) : [];
   built_convos = index.convos ? await Promise.all(index.convos.map(get)) : [];
   const built = buildIndex({ units, games, errorTypes });
   built.vocabSeed = extra.flat();
   built.curriculum = curriculum;
   built.pathDef = pathDef;
+  built.verbs = verbs ? verbs.verbs : [];
   built.convos = built_convos;
   return built;
 }

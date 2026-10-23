@@ -9,7 +9,9 @@ export const ENGINES = {
   duel: { label: "Translation duel", icon: "⚔️", load: () => import("../games/gauntlet.js") },
   reading: { label: "Reading", icon: "📰", load: () => import("../games/reading.js") },
   listening: { label: "Listening", icon: "🎧", load: () => import("../games/reading.js") },
-  debate: { label: "Debate & writing", icon: "🖋️", load: () => import("../games/debate.js") }
+  debate: { label: "Debate & writing", icon: "🖋️", load: () => import("../games/debate.js") },
+  dictation: { label: "Dettato", icon: "✍️", load: () => import("../games/dictation.js") },
+  exam: { label: "Esame simulato", icon: "📝", load: () => import("../games/exam.js") }
 };
 
 export async function render(view, ctx) {
@@ -23,7 +25,7 @@ export async function render(view, ctx) {
   }
   const results = new Map((await store.db.all("games")).map(g => [g.id, g]));
   const filter = query.concept || "";
-  const games = [...content.games.values()].filter(g => !filter || (g.conceptIds || []).includes(filter));
+  const games = [...content.games.values()].filter(g => (!filter || (g.conceptIds || []).includes(filter)) && (!query.type || g.type === query.type));
   const types = [...new Set(games.map(g => g.type))];
   view.replaceChildren(h(`<section class="page">
     <div class="page-head"><div><h1>Play / Test</h1><p class="muted">Every game tests concepts from Learn, and every mistake goes to the Error Bank. All games can be played silently, as text only.</p></div>

@@ -4,7 +4,7 @@ import { buildQuiz } from "./errors.js";
 import { dayKey } from "./srs.js";
 
 export const STEP_KINDS = ["learn", "practice", "challenge"];
-export const STEP_LABEL = { learn: "Lezione", practice: "Pratica", challenge: "Sfida", game: "Gioco", checkpoint: "Traguardo" };
+export const STEP_LABEL = { learn: "Lezione", practice: "Pratica", challenge: "Sfida", game: "Gioco", checkpoint: "Traguardo", exam: "Esame" };
 export const CHECKPOINT_PASS = 0.75;
 
 export function buildPath(def, content) {
@@ -18,7 +18,7 @@ export function buildPath(def, content) {
       // a game goes after the last concept (in this unit) that it tests
       const gamesAfter = new Map();
       for (const g of content.games.values()) {
-        if (g.importOnly || placedGames.has(g.id)) continue;
+        if (g.importOnly || g.type === "exam" || placedGames.has(g.id)) continue;
         const idx = (g.conceptIds || []).map(c => pos.get(c)).filter(i => i !== undefined);
         if (!idx.length) continue;
         const allPlacedHere = (g.conceptIds || []).every(c => pos.has(c) || !laterUnitHas(def, u.id, c));
@@ -38,6 +38,13 @@ export function buildPath(def, content) {
       unit.nodes.forEach(n => nodes.push(n));
       units.push(unit);
       sec.units.push(unit);
+    }
+    // a mock exam closes the section
+    const exam = s.exam && content.games.get(s.exam);
+    if (exam && sec.units.length) {
+      const last = sec.units[sec.units.length - 1];
+      const n = { id: `exam:${exam.id}`, kind: "exam", gameId: exam.id, unitId: last.id, title: exam.title };
+      last.nodes.push(n); nodes.push(n);
     }
     sections.push(sec);
   }
@@ -144,11 +151,11 @@ const rank = i => ({ choice: 0, order: 1, cloze: 2, transform: 3, translate: 4 }
 
 // ---- XP, daily goal, streak --------------------------------------------------------
 export function sessionXp(correct, total, kind) {
-  const base = { learn: 10, practice: 10, challenge: 15, checkpoint: 20, game: 15, review: 10, convo: 20 }[kind] || 10;
+  const base = { learn: 10, practice: 10, challenge: 15, checkpoint: 20, exam: 40, game: 15, review: 10, convo: 20 }[kind] || 10;
   return base + correct * 2 + (total && correct === total ? 5 : 0);
 }
 
-export function xpSummary(events, now, goal = 50) {
+export function xpSummary(events, now, goal = 30) {
   const today = dayKey(now);
   const todayXp = events.filter(e => dayKey(e.t) === today).reduce((s, e) => s + (e.xp || 0), 0);
   const total = events.reduce((s, e) => s + (e.xp || 0), 0);

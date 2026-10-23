@@ -5,8 +5,8 @@ import { isDue } from "../core/errors.js";
 import { runSession } from "../session.js";
 import * as inst from "../install.js";
 
-const KIND_ICON = { learn: "📖", practice: "✏️", challenge: "⚡", checkpoint: "🏆" };
-const GAME_ICON = { detective: "🕵️", dialogue: "💬", gauntlet: "⏱️", builder: "🧩", duel: "⚔️", reading: "📰", listening: "🎧", debate: "🎤" };
+const KIND_ICON = { learn: "📖", practice: "✏️", challenge: "⚡", checkpoint: "🏆", exam: "📝" };
+const GAME_ICON = { detective: "🕵️", dialogue: "💬", gauntlet: "⏱️", builder: "🧩", duel: "⚔️", reading: "📰", listening: "🎧", debate: "🎤", dictation: "✍️" };
 const OFFSETS = [0, 52, 84, 52, 0, -52, -84, -52];
 
 let cachedPath = null;
@@ -19,7 +19,7 @@ export async function render(view, ctx) {
   const { store, content } = ctx;
   const path = getPath(content);
   const [done, progress, errors, events, vocab, goal, diagDone] = await Promise.all([
-    store.pathDone(), store.allProgress(), store.errors(), store.events(), store.vocab(), store.setting("dailyGoal", 50), store.setting("diagnosticDone", false)]);
+    store.pathDone(), store.allProgress(), store.errors(), store.events(), store.vocab(), store.setting("dailyGoal", 30), store.setting("diagnosticDone", false)]);
   const { states, current, doneCount, total } = nodeStates(path, done, progress);
   const now = store.clock();
   const xp = xpSummary(events, now, goal);
@@ -96,7 +96,7 @@ export async function render(view, ctx) {
   async function start(node) {
     if (!node || starting) return;
     starting = true; setTimeout(() => (starting = false), 800);
-    if (node.kind === "game") { location.hash = `#/play/${node.gameId}`; return; }
+    if (node.kind === "game" || node.kind === "exam") { location.hash = `#/play/${node.gameId}`; return; }
     const plan = planSession(node, { content, path, errors: await store.errors(), now: store.clock() });
     if (!plan || !plan.steps.length) { toast("Nothing to practise here yet."); return; }
     const unit = path.unitById.get(node.unitId);
@@ -134,7 +134,8 @@ function stepDesc(n) {
     practice: "8 exercises, easy to medium, plus any earlier mistakes that are due.",
     challenge: "6 harder exercises: translation, rewriting and production.",
     checkpoint: "A 12-question test across the whole unit. Pass with 75% to complete it.",
-    game: "Put the unit into practice in a game."
+    game: "Put the unit into practice in a game.",
+    exam: "A mock CEFR exam over the whole section: reading, listening, grammar, vocabulary, writing and speaking."
   }[n.kind];
 }
 

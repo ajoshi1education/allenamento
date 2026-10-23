@@ -6,6 +6,8 @@ export async function render(view, { store, content }) {
   const tiles = [
     { href: "#/learn", icon: "📚", c: "green", title: "All lessons", sub: `${content.concepts.size - 2} concepts, B2 → C1, in any order` },
     { href: "#/play", icon: "🎲", c: "purple", title: "All games", sub: `${[...content.games.values()].length} games: detective cases, conversations, duels…` },
+    { href: "#/verbi", icon: "🔤", c: "orange", title: "Verbi", sub: `${(content.verbs || []).length} verbi: allenamento e tabelle di coniugazione` },
+    { href: "#/play?type=dictation", icon: "✍️", c: "teal", title: "Dettato", sub: "Ascolta una frase e scrivila" },
     { href: "#/vocab", icon: "🗂️", c: "orange", title: "Vocabulary", sub: `${(content.vocabSeed || []).length} words and expressions, ${vocab.length} in your deck` },
     { href: "#/translate", icon: "🔁", c: "blue", title: "Google Translate", sub: imports.length ? `${imports.length} imported phrases` : "Import your translation history" },
     { href: "#/errors", icon: "🧭", c: "red", title: "Error Bank", sub: `${errors.length} mistakes recorded, ${errors.filter(e => e.status !== "mastered").length} open` },

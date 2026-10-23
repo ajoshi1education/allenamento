@@ -22,8 +22,8 @@ test("path covers every curriculum concept exactly once, B2 before C1", () => {
 });
 
 test("every unit ends with a checkpoint; every content game is on the path once", () => {
-  for (const u of path.units) assert.equal(u.nodes.at(-1).kind, "checkpoint");
-  const games = path.nodes.filter(n => n.kind === "game").map(n => n.gameId);
+  for (const u of path.units) assert.equal(u.nodes.filter(n => n.kind !== "exam").at(-1).kind, "checkpoint");
+  const games = path.nodes.filter(n => n.kind === "game" || n.kind === "exam").map(n => n.gameId);
   assert.equal(new Set(games).size, games.length);
   assert.deepEqual(games.sort(), [...content.games.keys()].sort());
 });
@@ -40,7 +40,7 @@ test("states: first undone node is current, later ones locked; placement counts"
 
 test("every session on the path can be planned, and its exercises are valid", () => {
   for (const n of path.nodes) {
-    if (n.kind === "game") continue;
+    if (n.kind === "game" || n.kind === "exam") continue;
     const plan = planSession(n, { content, path, rand: () => 0.42 });
     const ex = plan.steps.filter(s => s.type === "exercise");
     assert.ok(ex.length >= (n.kind === "learn" ? 2 : 5), `${n.id} has only ${ex.length} exercises`);
