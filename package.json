@@ -7,7 +7,8 @@
   "scripts": {
     "test": "node --test test/*.test.mjs",
     "validate": "node scripts/validate-content.mjs",
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "deploy": "node scripts/build.mjs && node scripts/deploy-pages.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.0.0",
