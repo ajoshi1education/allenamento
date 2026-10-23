@@ -74,7 +74,7 @@ export async function render(view, { store }) {
     const st = view.querySelector("#audioStatus");
     const was = speech.getMode(); speech.setMode("speak");
     e.target.disabled = true; st.textContent = "Say something in Italian… (e.g. 'Buongiorno, come stai?')";
-    const r = await speech.listen({ onInterim: t => (st.textContent = "🎤 " + t) });
+    const r = await speech.listen({ onInterim: t => (st.textContent = "🎤 " + t), onStatus: s => (st.textContent = speech.MIC_STATUS[s] + (s === "listening" ? " Say something in Italian…" : "")) });
     speech.setMode(was); e.target.disabled = false;
     st.textContent = r.error ? (speech.MIC_HELP[r.error] || "Error: " + r.error) : `✓ Heard: “${r.text}” (confidence ${Math.round((r.confidence || 0) * 100)}%)`;
   };

@@ -537,3 +537,4 @@ label.small select { margin-top: .25rem; }
 .typing { display: flex; gap: .35rem; padding: 1rem 1.2rem; }
 .typing span { width: 10px; height: 10px; border-radius: 50%; background: var(--muted); animation: blink 1.2s infinite; }
 .typing span:nth-child(2) { animation-delay: .2s; } .typing span:nth-child(3) { animation-delay: .4s; }
+.sound-pill { position: fixed; left: 50%; bottom: 110px; transform: translateX(-50%); z-index: 90; padding: .8rem 1.4rem; border-radius: 99px; border: 0; background: var(--blue); color: #fff; font: 900 1rem var(--font); box-shadow: 0 4px 0 var(--blue-d), 0 10px 30px rgba(0,0,0,.25); cursor: pointer; animation: pop .5s; }

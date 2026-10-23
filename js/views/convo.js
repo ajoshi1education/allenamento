@@ -107,7 +107,7 @@ function getReply(host, turn, ti, n, alive) {
     async function listen() {
       if (!mic || mic.classList.contains("on")) { speech.stopListening(); return; }
       mic.classList.add("on"); setLive("Ti ascolto…", "listening");
-      const r = await speech.listen({ onInterim: t => setLive(t || "Ti ascolto…", "listening"), silenceMs: 2200, maxMs: 30000 });
+      const r = await speech.listen({ onInterim: t => setLive(t || "Ti ascolto…", "listening"), onStatus: st => setLive(speech.MIC_STATUS[st], st === "listening" ? "listening" : "warn"), silenceMs: 2200, maxMs: 30000 });
       mic.classList.remove("on");
       if (!alive()) return resolve(null);
       if (r.error) { setLive(speech.MIC_HELP[r.error] || "Didn't catch that. Tap 🎤 to try again.", "warn"); return; }
@@ -151,7 +151,7 @@ function showAssessment(host, turn, a, byVoice, isRetry = false) {
       await speech.say(turn.model, { rate: 0.9 });
       e.target.disabled = true; out.textContent = "Now you: repeat the sentence…";
       const was = speech.getMode(); speech.setMode("speak");
-      const r = await speech.listen({ onInterim: t => (out.textContent = "🎤 " + t) });
+      const r = await speech.listen({ onInterim: t => (out.textContent = "🎤 " + t), onStatus: st => (out.textContent = speech.MIC_STATUS[st]) });
       speech.setMode(was); e.target.disabled = false;
       if (r.error) { out.textContent = speech.MIC_HELP[r.error] || "Didn't catch that."; return; }
       const m = wordMatch(turn.model, r.text);

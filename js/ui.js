@@ -184,7 +184,7 @@ export function runExercise(host, item, opts) {
       if (!micBtn || !alive() || micBtn.classList.contains("on")) return;
       micBtn.classList.add("on");
       setLive("Ti ascolto…", "listening");
-      const r = await speech.listen({ onInterim: t => alive() && setLive(t || "Ti ascolto…", "listening") });
+      const r = await speech.listen({ onInterim: t => alive() && setLive(t || "Ti ascolto…", "listening"), onStatus: st => alive() && setLive(speech.MIC_STATUS[st], st === "listening" ? "listening" : "warn") });
       micBtn.classList.remove("on");
       if (!alive()) return;
       if (r.error) { setLive(speech.MIC_HELP[r.error] || "Didn't catch that. Tap 🎤 to try again, or type your answer.", "warn"); return; }
@@ -197,6 +197,9 @@ export function runExercise(host, item, opts) {
       check();
     }
     const readQuestion = () => speech.sayAll(questionParts(item));
+    // If Chrome blocked the automatic reading, the "turn on sound" prompt replays it.
+    const onRetry = () => { if (alive()) readQuestion().then(ok => { if (ok && micBtn && alive() && opts.autoMic !== false) listenAnswer(); }); else window.removeEventListener("tts-retry", onRetry); };
+    window.addEventListener("tts-retry", onRetry);
     if (speech.canSpeak() && !item.audio && opts.autoRead !== false) {
       setTimeout(async () => {
         if (!alive()) return;

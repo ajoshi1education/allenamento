@@ -81,9 +81,24 @@ async function main() {
   modeBtn.onclick = async () => {
     const order = speech.hasRecognition() ? ["silent", "listen", "speak"] : ["silent", "listen"];
     const next = order[(order.indexOf(speech.getMode()) + 1) % order.length];
-    speech.setMode(next); await store.setSetting("audioMode", next); paintMode();
+    speech.setMode(next); paintMode();
     toast(MODE_UI[next][2]);
+    // Speak straight away (inside the click, which Chrome requires) so you hear that audio works.
+    if (next !== "silent") speech.say(next === "speak" ? "Modalità voce: rispondi parlando." : "Audio attivato.");
+    await store.setSetting("audioMode", next);
+    if (next === "speak") {
+      const g = await speech.ensureMic();
+      if (g !== "granted") toast(speech.MIC_HELP[g] || "Microphone not available. You can still type.");
+    }
   };
+  // Chrome blocked speech (no recent click): offer a one-tap fix.
+  window.addEventListener("tts-blocked", () => {
+    if (document.querySelector(".sound-pill")) return;
+    const pill = h(`<button class="sound-pill">🔊 Tap to turn on sound</button>`);
+    pill.onclick = () => { speech.unlock(); pill.remove(); setTimeout(() => window.dispatchEvent(new CustomEvent("tts-retry")), 120); };
+    document.body.append(pill);
+    setTimeout(() => pill.remove(), 15000);
+  });
   paintMode();
   window.__paintMode = paintMode;
 
