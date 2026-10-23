@@ -4,7 +4,7 @@ import { evaluate } from "./core/evaluate.js";
 import { masteryProgress } from "./core/errors.js";
 import { bestSpokenAnswer } from "./core/speechcheck.js";
 import { guessLang } from "./core/importer.js";
-import { bindMic } from "./mic.js";
+import { bindMic, TAP_TO_STOP } from "./mic.js";
 import { noteItem } from "./feedback.js";
 import * as speech from "./speech.js";
 
@@ -178,9 +178,9 @@ export function runExercise(host, item, opts) {
     body.append(live);
     const setLive = (t, cls = "") => { live.hidden = false; live.className = "live-transcript " + cls; live.querySelector(".lt-text").textContent = t; };
     let micBtn = null;
-    // A mic is always offered (when the browser can recognise speech): tap, or hold to talk.
+    // A mic is always offered (when the browser can recognise speech): tap to start, tap ⏹ when done.
     if (voiceable && speech.hasRecognition()) {
-      micBtn = h(`<button type="button" class="mic-btn" title="Rispondi a voce: tocca, o tieni premuto per parlare" aria-label="Rispondi a voce">🎤</button>`);
+      micBtn = h(`<button type="button" class="mic-btn" aria-label="Rispondi a voce">🎤</button>`);
       actionsEl.insertBefore(micBtn, actionsEl.querySelector("[data-act=dontknow]"));
       bindMic(micBtn, () => listenAnswer());
     }
@@ -188,10 +188,12 @@ export function runExercise(host, item, opts) {
     async function listenAnswer() {
       if (!micBtn || !alive() || micBtn.classList.contains("on")) return;
       micBtn.classList.add("on");
-      setLive("Ti ascolto…", "listening");
-      const r = await speech.listen({ onInterim: t => alive() && setLive(t || "Ti ascolto…", "listening"), onStatus: st => alive() && setLive(speech.MIC_STATUS[st], st === "listening" ? "listening" : "warn") });
+      const waiting = "Ti ascolto… tocca ⏹ quando hai finito.";
+      setLive(waiting, "listening");
+      const r = await speech.listen({ ...TAP_TO_STOP, onInterim: t => alive() && setLive(t || waiting, "listening"), onStatus: st => alive() && setLive(st === "listening" ? waiting : speech.MIC_STATUS[st], st === "listening" ? "listening" : "warn") });
       micBtn.classList.remove("on");
       if (!alive()) return;
+      if (r.error === "aborted") { live.hidden = true; return; }
       if (r.error) { setLive(speech.MIC_HELP[r.error] || "Non ho capito. Tocca 🎤 per riprovare, o scrivi la risposta.", "warn"); return; }
       if (item.type === "free") {       // dictation: add to the text, you check it yourself
         lastInput.value = (lastInput.value.trim() + " " + r.text).trim();

@@ -209,12 +209,15 @@ function meBubble(text, a, turn, byVoice) {
     </details></div></div>`);
   el.querySelector("[data-hear]").onclick = () => { speech.stopListening(); speech.say(turn.model, { rate: 0.9 }); };
   el.querySelector("[data-repeat]")?.addEventListener("click", async e => {
-    const out = el.querySelector(".repeat-out"); out.hidden = false;
-    speech.stopListening();
+    const out = el.querySelector(".repeat-out");
+    const btn = e.target, label = btn.textContent;
+    if (speech.isListening()) { speech.releaseListening(); return; }   // second tap = done
+    speech.stopListening(); out.hidden = false;
     await speech.say(turn.model, { rate: 0.9 });
-    e.target.disabled = true; out.textContent = "Ora tu: ripeti la frase…";
-    const r = await speech.listen({ onInterim: t => (out.textContent = "🎤 " + t), onStatus: st => (out.textContent = speech.MIC_STATUS[st]) });
-    e.target.disabled = false;
+    btn.textContent = "⏹ Ho finito"; out.textContent = "Ora tu: ripeti la frase, poi tocca ⏹.";
+    const r = await speech.listen({ hold: true, maxMs: 120000, onInterim: t => (out.textContent = "🎤 " + t), onStatus: st => (out.textContent = st === "listening" ? "Ora tu: ripeti la frase, poi tocca ⏹." : speech.MIC_STATUS[st]) });
+    btn.textContent = label;
+    if (r.error === "aborted") { out.hidden = true; return; }
     if (r.error) { out.textContent = speech.MIC_HELP[r.error] || "Non ho capito."; return; }
     const m = wordMatch(turn.model, r.text);
     out.innerHTML = `<b class="${m.score >= 0.9 ? "ok-t" : m.score >= 0.7 ? "" : "bad-t"}">${Math.round(m.score * 100)}% capito</b> · Ho sentito: “${esc(r.text)}”${m.missed.length ? `<br>Non capito: <span class="it">${m.missed.map(esc).join(", ")}</span>` : " Perfetto!"}`;

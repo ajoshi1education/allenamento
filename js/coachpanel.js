@@ -3,7 +3,7 @@
 // "a conversation about work". It answers with lessons, practice, games and conversations to open.
 import { h, esc, md } from "./ui.js";
 import * as speech from "./speech.js";
-import { bindMic } from "./mic.js";
+import { bindMic, TAP_TO_STOP } from "./mic.js";
 import { findConcepts, parseIntent, resourcesFor, weakest, findConvos } from "./core/coach.js";
 import { buildReport } from "./core/progress.js";
 import { buildPath } from "./core/path.js";
@@ -59,7 +59,7 @@ export function mountCoach(store) {
   const mic = panel.querySelector(".mic-btn");
   if (mic) bindMic(mic, async () => {
     mic.classList.add("on"); input.placeholder = "Ti ascolto…";
-    const r = await speech.listen({ lang: "en-GB", onInterim: t => (input.value = t), onStatus: st => (input.placeholder = speech.MIC_STATUS[st]) });
+    const r = await speech.listen({ ...TAP_TO_STOP, lang: "en-GB", onInterim: t => (input.value = t), onStatus: st => (input.placeholder = speech.MIC_STATUS[st]) });
     mic.classList.remove("on"); input.placeholder = "e.g. I'm struggling with if clauses…";
     if (r.text) { input.value = ""; ask(r.text); }
   });

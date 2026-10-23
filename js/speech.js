@@ -1,3 +1,4 @@
+import { mergeSegments } from "./core/transcript.js";
 // Audio: text-to-speech (questions, answers, the tutor) and speech recognition (answering by voice).
 // Three modes, switched from the top bar:
 //   silent: text only (for public places)
@@ -180,15 +181,16 @@ export async function listen({ lang = "it-IT", onInterim, onStatus, maxMs = 1500
       }
     };
     const assemble = () => {
-      if (!finals.length && !kept.length && interimText) return { alts: [{ text: interimText, confidence: 0 }], text: interimText, confidence: 0, totalMs: performance.now() - t0, speechMs: Math.max(300, (lastResult || performance.now()) - (speechStart || t0)) };
       const all = kept.concat(finals);
-      if (!all.length) return null;
-      // Combine segments: first alternative for each, plus whole-utterance alternatives from the longest segment.
-      const tail = !finals.length && kept.length ? " " + curInterim : "";
-      const main = (all.map(f => f[0].transcript.trim()).join(" ") + tail).replace(/\s+/g, " ").trim();
-      const conf = all.reduce((s, f) => s + (f[0].confidence || 0), 0) / all.length;
+      const pieces = all.map(f => f[0].transcript).concat(curInterim ? [curInterim] : []);
+      const main = mergeSegments(pieces);
+      if (!main) return null;
+      const conf = all.length ? all.reduce((s, f) => s + (f[0].confidence || 0), 0) / all.length : 0;
       const alts = [{ text: main, confidence: conf }];
-      if (all.length === 1) for (let k = 1; k < finals[0].length; k++) alts.push({ text: finals[0][k].transcript.trim(), confidence: finals[0][k].confidence || 0 });
+      // other guesses for the whole sentence, when one piece holds all of it
+      const last = all[all.length - 1];
+      if (last && !curInterim && mergeSegments([last[0].transcript]).toLowerCase() === main.toLowerCase())
+        for (let k = 1; k < last.length; k++) alts.push({ text: last[k].transcript.trim(), confidence: last[k].confidence || 0 });
       return { alts, text: main, confidence: conf, totalMs: performance.now() - t0, speechMs: Math.max(300, (lastResult || performance.now()) - (speechStart || t0)) };
     };
     // The listening time only starts once Chrome is actually recording.
@@ -211,7 +213,7 @@ export async function listen({ lang = "it-IT", onInterim, onStatus, maxMs = 1500
         else interim += res[0].transcript;
       }
       curInterim = interim;
-      interimText = (kept.concat(finals).map(f => f[0].transcript).join(" ") + " " + interim).trim();
+      interimText = mergeSegments(kept.concat(finals).map(f => f[0].transcript).concat([interim]));
       onInterim && onInterim(interimText);
       best = assemble();
       clearTimeout(silenceTimer);
