@@ -621,3 +621,7 @@ body.in-session .coach-panel { z-index: 75; }
 .eb-bar i { display: block; height: 100%; border-radius: 99px; background: var(--green, #22c55e); }
 .eb-bar i.mid { background: var(--orange, #f59e0b); } .eb-bar i.low { background: var(--red, #ef4444); }
 @media (max-width: 520px) { .eb-row { grid-template-columns: 1fr 3rem; } .eb-bar { grid-column: 1 / -1; grid-row: 2; } }
+.qr-box { display: flex; gap: 1rem; align-items: flex-start; margin-top: 1rem; padding-top: 1rem; border-top: 2px dashed var(--line); }
+.qr-box img { background: #fff; border-radius: 12px; padding: 6px; flex: none; }
+.install-steps { padding-left: 1.1rem; margin: .4rem 0; }
+@media (max-width: 520px) { .qr-box { flex-direction: column; align-items: center; } }

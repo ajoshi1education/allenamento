@@ -28,7 +28,7 @@ export function examSteps(game, { silent = false } = {}) {
         b.onclick = () => {
           if (plays >= MAX_PLAYS) return;
           plays++;
-          speech.say(s.passage.it.replace(/^\s*[—-]\s*/gm, ""), { rate: 0.95 });
+          speech.say(s.passage.it.replace(/^\s*([—-]|[A-ZÀ-Ý]{2,}:)\s*/gm, ""), { rate: 0.95 });
           stage.querySelector("[data-left]").textContent = plays >= MAX_PLAYS ? "Ascolti esauriti: ora rispondi." : `Ancora ${MAX_PLAYS - plays} ascolto.`;
           if (plays >= MAX_PLAYS) b.disabled = true;
         };

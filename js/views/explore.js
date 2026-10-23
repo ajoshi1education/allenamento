@@ -13,7 +13,8 @@ export async function render(view, { store, content }) {
     { href: "#/errors", icon: "🧭", c: "red", title: "Error Bank", sub: `${errors.length} mistakes recorded, ${errors.filter(e => e.status !== "mastered").length} open` },
     { href: "#/learn/coverage", icon: "🧩", c: "teal", title: "Curriculum map", sub: "Every concept, with its lesson, exercises and games" },
     { href: "#/diagnostic", icon: "📏", c: "gold", title: "Placement test", sub: "Find your level and skip what you know" },
-    { href: "#/progress", icon: "📈", c: "green", title: "Progress", sub: "Skills, achievements, weekly challenges" }
+    { href: "#/progress", icon: "📈", c: "green", title: "Progress", sub: "Skills, achievements, weekly challenges" },
+    { href: "#/settings", icon: "📲", c: "blue", title: "App sul telefono", sub: "QR code and install steps for your phone" }
   ];
   view.replaceChildren(h(`<section class="page explore">
     <div class="page-head"><div><h1>Esplora</h1><p class="muted">Free mode: open any lesson or game in any order. Your progress and mistakes are tracked the same way as on the path.</p></div></div>

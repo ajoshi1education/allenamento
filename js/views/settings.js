@@ -26,7 +26,11 @@ export async function render(view, { store }) {
     <div class="card" id="appCard"><h3>📲 Phone & desktop app</h3>
       ${inst.isInstalled() ? `<p>✓ You're using the installed app.</p>` : `<p>Install Allenamento so it opens full screen from your home screen and works offline.</p>
       <div class="row-actions"><button class="btn3d primary" id="installBtn">Install the app</button></div>
-      <p class="small muted" id="installHow"></p>`}</div>
+      <p class="small muted" id="installHow"></p>`}
+      <div class="qr-box"><img src="icons/qr.svg" alt="QR code for the app's web address" width="150" height="150">
+        <div><b>Sul telefono</b><p class="small">Scan this with your phone camera to open Allenamento, then install it:</p>
+        <ul class="small install-steps"><li>${inst.HOWTO.ios}</li><li>${inst.HOWTO.android}</li></ul>
+        <p class="small muted">Your progress lives on each device. To have the same Error Bank on phone and computer, use <b>Sync</b> below, or <b>Export</b> here and <b>Import</b> there.</p></div></div></div>
     <div class="card"><h3>Daily goal</h3>
       <select id="goal"><option value="20">Leggero: 20 XP al giorno (circa 5–10 minuti)</option><option value="30">Regolare: 30 XP (circa 10–15 minuti)</option><option value="50">Impegnato: 50 XP (circa 20 minuti)</option><option value="100">Intenso: 100 XP (circa 40 minuti)</option></select></div>
     <div class="card"><h3>Appearance</h3>

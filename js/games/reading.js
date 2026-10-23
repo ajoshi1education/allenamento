@@ -27,7 +27,7 @@ export async function play(view, ctx) {
   const text = view.querySelector(".passage-text");
   view.querySelector(".audio-box")?.addEventListener("click", e => {
     const b = e.target.closest("button"); if (!b) return;
-    if (b.dataset.rate) speech.say(p.it.replace(/^\s*[—-]\s*/gm, ""), { rate: Number(b.dataset.rate) * 0.95 });
+    if (b.dataset.rate) speech.say(p.it.replace(/^\s*([—-]|[A-ZÀ-Ý]{2,}:)\s*/gm, ""), { rate: Number(b.dataset.rate) * 0.95 });
     if (b.hasAttribute("data-stop")) speech.stop();
     if (b.hasAttribute("data-show")) text.hidden = false;
   });

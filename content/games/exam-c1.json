@@ -1,0 +1,526 @@
+{
+  "id": "G-EXAM-C1",
+  "type": "exam",
+  "title": "Esame C1",
+  "subtitle": "A 25-minute mock exam on Section 2: an essay-style text, a podcast, advanced grammar, nuance, an argumentative essay and three spoken answers.",
+  "level": "C1",
+  "conceptIds": [
+    "C1-READ-02", "C1-READ-03", "C1-LIST-02", "C1-SUBJ-05", "C1-SUBJ-06", "C1-SEQ-02", "C1-SEQ-03",
+    "C1-HYP-03", "C1-HYP-04", "C1-PAST-03", "C1-PAST-04", "C1-PART-01", "C1-PASS-02", "C1-SYN-01", "C1-SYN-02",
+    "C1-CONN-02", "C1-VOC-03", "C1-IDIOM-02", "C1-PRON-03", "C1-VOC-05", "C1-WRIT-02", "C1-INT-02", "C1-SPEAK-02"
+  ],
+  "difficulty": 4,
+  "minutes": 25,
+  "passMark": 0.7,
+  "sections": [
+    {
+      "kind": "reading",
+      "title": "Comprensione della lettura",
+      "passage": {
+        "title": "Il mercante che insegnò all'Europa a contare",
+        "source": "invented",
+        "it": "Verso la fine del XII secolo un ragazzo pisano di nome Leonardo raggiunse il padre a Bugia, sulla costa dell'attuale Algeria, dove questi lavorava alla dogana per conto dei mercanti della sua città. Fu lì, tra i banchi della dogana e i registri delle merci, che il giovane scoprì un modo di fare i conti che in Europa quasi nessuno conosceva: le nove cifre indiane e il segno 0, che gli arabi chiamavano «sifr».\nLeonardo, che i posteri avrebbero chiamato Fibonacci, non si limitò a impararle. Viaggiò a lungo nel Mediterraneo, dall'Egitto alla Siria, dalla Sicilia alla Provenza, confrontandosi con i matematici che incontrava, e, rientrato a Pisa, raccolse ciò che aveva appreso in un'opera monumentale, il Liber Abaci, terminata nel 1202. Chi si aspettasse un trattato astratto rimarrebbe deluso: il libro è pieno di problemi pratici, dalla conversione delle monete al calcolo dei profitti e degli interessi, cioè proprio le questioni che un mercante doveva affrontare ogni giorno. Persino la celebre successione che porta il suo nome nasce da un esercizio apparentemente banale sulla riproduzione dei conigli.\nL'adozione del nuovo sistema, tuttavia, non fu immediata. Nel 1299 uno statuto dell'Arte del Cambio di Firenze vietò ai banchieri di usare le cifre arabe nei libri contabili, per timore che fossero più facili da falsificare: uno zero si trasforma senza fatica in un sei o in un nove. Ci vollero generazioni di maestri d'abaco, che nelle città toscane insegnavano l'aritmetica ai figli dei mercanti, perché le nuove cifre si imponessero.\nOggi nessun analista finanziario potrebbe lavorare senza quelle dieci cifre, eppure pochi ne conoscono l'origine. Forse vale la pena ricordarlo: gli strumenti della finanza moderna non sono nati soltanto nelle grandi capitali europee, ma anche in un porto africano, grazie alla curiosità di un ragazzo che non si accontentò di contare come tutti gli altri."
+      },
+      "items": [
+        {
+          "id": "G-EXAM-C1.r1", "type": "choice", "conceptId": "C1-READ-03", "difficulty": 3,
+          "instruction": "Choose the correct answer.",
+          "prompt": "How did Leonardo first come across the Indian numerals?",
+          "options": [
+            "In Bugia, in North Africa, where his father worked at the customs house on behalf of Pisan merchants.",
+            "In Pisa, from Arab merchants who had settled in the city.",
+            "In Florence, at a school for merchants' sons.",
+            "In Egypt, during a journey with his father."
+          ],
+          "answer": 0,
+          "optionWhy": { "3": "He travelled to Egypt later, on his own initiative, to compare methods with other mathematicians." },
+          "explanation": "*Raggiunse il padre a Bugia… dove questi lavorava alla dogana… Fu lì… che il giovane scoprì…* Note the cleft sentence *Fu lì che…* stressing the place.",
+          "errorType": "comprehension"
+        },
+        {
+          "id": "G-EXAM-C1.r2", "type": "choice", "conceptId": "C1-READ-02", "difficulty": 4,
+          "instruction": "Choose the correct answer.",
+          "prompt": "What does the author mean by *«Chi si aspettasse un trattato astratto rimarrebbe deluso»*?",
+          "options": [
+            "That the Liber Abaci is a practical book, written with merchants' everyday problems in mind.",
+            "That the Liber Abaci was a commercial failure.",
+            "That readers of the time found the book too abstract.",
+            "That the book is disappointing compared with Arab treatises."
+          ],
+          "answer": 0,
+          "explanation": "The hypothetical relative clause (*chi si aspettasse* + conditional *rimarrebbe*) anticipates a wrong expectation: the book is *pieno di problemi pratici*.",
+          "errorType": "comprehension"
+        },
+        {
+          "id": "G-EXAM-C1.r3", "type": "choice", "conceptId": "C1-READ-02", "difficulty": 3,
+          "instruction": "Choose the correct answer.",
+          "prompt": "Why did the Florentine bankers' guild ban the new numerals in 1299?",
+          "options": [
+            "Because it was feared that they were easier to falsify in account books.",
+            "Because they had been imported from a hostile country.",
+            "Because Roman numerals made calculations quicker.",
+            "Because Fibonacci was from Pisa, Florence's rival."
+          ],
+          "answer": 0,
+          "optionWhy": { "3": "A tempting inference, but the text gives a different reason explicitly." },
+          "explanation": "*Per timore che fossero più facili da falsificare: uno zero si trasforma senza fatica in un sei o in un nove.*",
+          "errorType": "comprehension"
+        },
+        {
+          "id": "G-EXAM-C1.r4", "type": "transform", "conceptId": "C1-PAST-03", "difficulty": 4,
+          "instruction": "Rewrite this sentence from the text, changing the passato remoto into the passato prossimo.",
+          "prompt": "Ci vollero generazioni.",
+          "answers": ["Ci sono volute generazioni"],
+          "focus": ["sono", "volute"],
+          "traps": [
+            { "match": "Ci hanno voluto generazioni", "errorType": "auxiliary", "why": "*Volerci* takes *essere*: *ci sono volute*." },
+            { "match": ["Ci sono voluti generazioni", "Ci è voluto generazioni", "Ci è voluta generazioni"], "errorType": "agreement", "why": "The subject is *generazioni* (feminine plural): *ci sono volute*." }
+          ],
+          "explanation": "*Ci vollero* is the passato remoto of *volerci* (to take, of time or effort). It takes *essere*, and the participle agrees with what is needed: *ci sono volute generazioni*.",
+          "errorType": "auxiliary",
+          "en": "It took generations."
+        },
+        {
+          "id": "G-EXAM-C1.r5", "type": "choice", "conceptId": "C1-SYN-02", "difficulty": 4,
+          "instruction": "Choose the sentence that best expresses, in verbal style, the meaning of the nominal sentence.",
+          "prompt": "*L'adozione del nuovo sistema, tuttavia, non fu immediata.*",
+          "options": [
+            "Il nuovo sistema, tuttavia, non fu adottato subito.",
+            "Il nuovo sistema, tuttavia, non fu mai adottato.",
+            "Tuttavia, nessuno volle adottare subito Fibonacci.",
+            "Il nuovo sistema, tuttavia, fu adottato in fretta."
+          ],
+          "answer": 0,
+          "optionWhy": {
+            "1": "*Non immediata* means 'not straight away', not 'never'.",
+            "2": "It is the numeral system, not Fibonacci, that was adopted.",
+            "3": "The opposite of the original."
+          },
+          "explanation": "Nominal style turns the verb into a noun (*adottare* → *l'adozione*); in verbal style it becomes a passive: *non fu adottato subito*.",
+          "errorType": "comprehension"
+        },
+        {
+          "id": "G-EXAM-C1.r6", "type": "choice", "conceptId": "C1-READ-02", "difficulty": 5,
+          "instruction": "Choose the correct answer.",
+          "prompt": "What is the author's point in the last paragraph?",
+          "options": [
+            "That modern finance owes part of its foundations to cultural exchange across the Mediterranean, not only to Europe's great cities.",
+            "That financial analysts should study medieval mathematics.",
+            "That Fibonacci was more important than any modern economist.",
+            "That modern finance was invented in Africa rather than in Europe."
+          ],
+          "answer": 0,
+          "optionWhy": { "3": "Too strong: *non… soltanto… ma anche* adds Africa to the picture, it doesn't replace Europe." },
+          "explanation": "*Non sono nati soltanto nelle grandi capitali europee, ma anche in un porto africano*: the author broadens the usual story rather than overturning it.",
+          "errorType": "comprehension"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "Comprensione dell'ascolto",
+      "passage": {
+        "title": "Storie di sport – Gino Bartali",
+        "source": "invented",
+        "it": "Benvenuti a una nuova puntata di «Storie di sport». Oggi vi racconto di un campione che avrebbe potuto vantarsi per tutta la vita e che invece scelse il silenzio: Gino Bartali.\nNato nel 1914 a Ponte a Ema, alle porte di Firenze, Bartali vinse tre Giri d'Italia e due Tour de France, il primo nel 1938 e il secondo nel 1948, a dieci anni di distanza: un intervallo che nessun altro corridore è mai riuscito a eguagliare. Si racconta spesso che la sua vittoria al Tour del '48 avrebbe contribuito a calmare gli animi in un'Italia sconvolta dall'attentato a Palmiro Togliatti. Gli storici, però, invitano alla prudenza: il nesso tra i due fatti è suggestivo, ma difficile da dimostrare.\nLa pagina più straordinaria della sua vita, comunque, venne alla luce soprattutto dopo la sua morte, avvenuta nel 2000. Durante l'occupazione tedesca, tra il 1943 e il 1944, Bartali percorse centinaia di chilometri in bicicletta tra Firenze e Assisi, ufficialmente per allenarsi. In realtà nascondeva nel telaio documenti falsi destinati agli ebrei perseguitati. Se lo avessero scoperto, avrebbe rischiato la vita. Eppure non ne parlò quasi mai: amava ripetere che il bene si fa, ma non si dice. Nel 2013 il memoriale Yad Vashem di Gerusalemme lo ha riconosciuto Giusto tra le Nazioni.\nChissà quanti, tra coloro che lo applaudivano sulle strade del Tour, avrebbero immaginato che cosa portava con sé durante quegli allenamenti. Nella prossima puntata parleremo del suo eterno rivale, Fausto Coppi. Restate con noi."
+      },
+      "items": [
+        {
+          "id": "G-EXAM-C1.l1", "type": "choice", "conceptId": "C1-LIST-02", "difficulty": 3,
+          "instruction": "Listen and choose the correct answer.",
+          "prompt": "What is unusual about Bartali's two Tour de France victories?",
+          "options": [
+            "They came ten years apart, a gap no other rider has ever matched.",
+            "He won them in two consecutive years.",
+            "He won both after turning forty.",
+            "He won the second one riding for a French team."
+          ],
+          "answer": 0,
+          "explanation": "*Il primo nel 1938 e il secondo nel 1948, a dieci anni di distanza: un intervallo che nessun altro corridore è mai riuscito a eguagliare.*",
+          "errorType": "listening"
+        },
+        {
+          "id": "G-EXAM-C1.l2", "type": "choice", "conceptId": "C1-LIST-02", "difficulty": 4,
+          "instruction": "Listen and choose the correct answer.",
+          "prompt": "What does the speaker say about the 1948 Tour and the attack on Togliatti?",
+          "options": [
+            "It's often said that Bartali's win helped calm the country, but historians say the link is hard to prove.",
+            "Historians have proved that Bartali's win prevented a civil war.",
+            "Bartali dedicated his victory to Togliatti.",
+            "The attack took place during a stage of the Tour."
+          ],
+          "answer": 0,
+          "explanation": "*Si racconta spesso che… avrebbe contribuito*: the conditional marks an unconfirmed claim; *gli storici invitano alla prudenza… difficile da dimostrare*.",
+          "errorType": "listening"
+        },
+        {
+          "id": "G-EXAM-C1.l3", "type": "choice", "conceptId": "C1-LIST-02", "difficulty": 3,
+          "instruction": "Listen and choose the correct answer.",
+          "prompt": "What did Bartali officially do on his rides between Florence and Assisi, and what was he really doing?",
+          "options": [
+            "Officially he was training; in reality he was carrying forged documents for persecuted Jews hidden in his bicycle frame.",
+            "Officially he was delivering mail; in reality he was carrying weapons.",
+            "Officially he was racing; in reality he was spying on the Germans.",
+            "Officially he was visiting family; in reality he was hiding refugees in his house."
+          ],
+          "answer": 0,
+          "explanation": "*Ufficialmente per allenarsi. In realtà nascondeva nel telaio documenti falsi destinati agli ebrei perseguitati.*",
+          "errorType": "listening"
+        },
+        {
+          "id": "G-EXAM-C1.l4", "type": "choice", "conceptId": "C1-LIST-02", "difficulty": 4,
+          "instruction": "Listen and choose the correct answer.",
+          "prompt": "What does Bartali's saying, *il bene si fa, ma non si dice*, tell us about him?",
+          "options": [
+            "He thought good deeds should be done quietly, without seeking credit.",
+            "He regretted what he had done during the war.",
+            "He wanted his story told after his death.",
+            "He believed sport mattered more than politics."
+          ],
+          "answer": 0,
+          "explanation": "He *non ne parlò quasi mai*: for him, doing good didn't require talking about it.",
+          "errorType": "listening"
+        },
+        {
+          "id": "G-EXAM-C1.l5", "type": "choice", "conceptId": "C1-LIST-02", "difficulty": 4,
+          "instruction": "Listen and choose the correct answer.",
+          "prompt": "When did his wartime story become widely known, and how was he honoured?",
+          "options": [
+            "Mainly after his death in 2000; in 2013 Yad Vashem recognised him as Righteous Among the Nations.",
+            "Straight after the war; he received a medal from the Italian government in 1948.",
+            "In 1938, when he won his first Tour.",
+            "It is still unknown: historians doubt the story."
+          ],
+          "answer": 0,
+          "optionWhy": { "3": "The historians' doubts concern the 1948 Tour and Togliatti, not his wartime rides." },
+          "explanation": "*Venne alla luce soprattutto dopo la sua morte, avvenuta nel 2000… Nel 2013 il memoriale Yad Vashem… lo ha riconosciuto Giusto tra le Nazioni.*",
+          "errorType": "listening"
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": "Grammatica",
+      "items": [
+        {
+          "id": "G-EXAM-C1.g1", "type": "cloze", "conceptId": "C1-SUBJ-05", "difficulty": 3,
+          "instruction": "Complete with the correct form of the verb in brackets.",
+          "prompt": "Non l'abbiamo ancora trovato: cerchiamo un analista che ___ (parlare) correntemente il cinese.",
+          "answers": ["parli"],
+          "focus": ["parli"],
+          "traps": [
+            { "match": "parla", "errorType": "indicative-for-subjunctive", "why": "The person may not exist (*non l'abbiamo ancora trovato*), so the relative clause takes the subjunctive: *parli*." },
+            { "match": "parlasse", "errorType": "tense-sequence", "why": "The main verb *cerchiamo* is present: *parli*." }
+          ],
+          "explanation": "A relative clause describing someone hypothetical or still being sought takes the subjunctive.",
+          "errorType": "indicative-for-subjunctive",
+          "en": "We haven't found one yet: we're looking for an analyst who speaks fluent Chinese."
+        },
+        {
+          "id": "G-EXAM-C1.g2", "type": "cloze", "conceptId": "C1-SUBJ-05", "difficulty": 4,
+          "instruction": "Complete with the form expected in formal Italian.",
+          "prompt": "È il Barolo più elegante che io ___ (assaggiare) in vita mia.",
+          "answers": ["(abbia assaggiato|abbia mai assaggiato)"],
+          "focus": ["abbia", "assaggiato"],
+          "traps": [
+            { "match": ["ho assaggiato", "ho mai assaggiato"], "errorType": "indicative-for-subjunctive", "why": "Common in speech, but after a superlative formal Italian uses the subjunctive: *che io abbia assaggiato*." },
+            { "match": ["avessi assaggiato", "avessi mai assaggiato"], "errorType": "tense-sequence", "why": "The main verb *è* is present, so the past subjunctive is *abbia assaggiato*." },
+            { "match": "assaggi", "errorType": "wrong-tense", "why": "The tasting is in the past: *abbia assaggiato*." }
+          ],
+          "explanation": "Superlative + *che* + congiuntivo: *il più elegante che io abbia (mai) assaggiato*.",
+          "errorType": "indicative-for-subjunctive",
+          "en": "It's the most elegant Barolo I've ever tasted."
+        },
+        {
+          "id": "G-EXAM-C1.g3", "type": "cloze", "conceptId": "C1-SUBJ-06", "difficulty": 3,
+          "instruction": "Complete with one word meaning 'whatever'.",
+          "prompt": "___ cosa succeda in Borsa domani, non venderemo le azioni.",
+          "answers": ["(Qualunque|Qualsiasi)"],
+          "focus": ["qualunque", "qualsiasi"],
+          "traps": [
+            { "match": ["Ogni", "Qualche"], "errorType": "vocabulary", "why": "'Whatever happens' is *qualunque / qualsiasi cosa succeda*." },
+            { "match": "Che", "errorType": "vocabulary", "why": "*Che cosa succeda* would be an indirect question. 'Whatever' = *qualunque cosa*." }
+          ],
+          "explanation": "*Qualunque / qualsiasi cosa* + subjunctive = whatever (happens).",
+          "errorType": "vocabulary",
+          "en": "Whatever happens on the stock market tomorrow, we won't sell the shares."
+        },
+        {
+          "id": "G-EXAM-C1.g4", "type": "cloze", "conceptId": "C1-SEQ-02", "difficulty": 4,
+          "instruction": "Complete with the correct form of the verb. The hiding was going on at the same time as the impression.",
+          "prompt": "Durante la riunione di ieri tutti avevano l'impressione che il direttore ___ (nascondere) qualcosa.",
+          "answers": ["(nascondesse|stesse nascondendo)"],
+          "focus": ["nascondesse", "stesse"],
+          "traps": [
+            { "match": "nasconda", "errorType": "tense-sequence", "why": "The main clause is in the past (*avevano*), so a simultaneous action takes the imperfect subjunctive: *nascondesse*." },
+            { "match": "nascondeva", "errorType": "indicative-for-subjunctive", "why": "*Avere l'impressione che* takes the subjunctive: *nascondesse*." },
+            { "match": "avesse nascosto", "errorType": "tense-sequence", "why": "That would mean he had hidden it earlier. For a simultaneous action: *nascondesse*." }
+          ],
+          "explanation": "Past main verb + simultaneous action → congiuntivo imperfetto.",
+          "errorType": "tense-sequence",
+          "en": "During yesterday's meeting everyone had the impression the director was hiding something."
+        },
+        {
+          "id": "G-EXAM-C1.g5", "type": "cloze", "conceptId": "C1-HYP-03", "difficulty": 4,
+          "instruction": "Complete with the correct form of the verb in brackets.",
+          "prompt": "Se l'anno scorso (io) ___ (accettare) l'offerta di Londra, adesso vivrei in Inghilterra.",
+          "answers": ["avessi accettato"],
+          "focus": ["avessi", "accettato"],
+          "traps": [
+            { "match": "accettassi", "errorType": "tense-sequence", "why": "The condition is in the past (*l'anno scorso*): *avessi accettato*. Only the result is in the present (*vivrei*)." },
+            { "match": "avrei accettato", "errorType": "hypothetical", "why": "No conditional after *se*: *se avessi accettato*." },
+            { "match": "accettavo", "errorType": "hypothetical", "why": "The colloquial imperfect goes with another imperfect (*se accettavo, vivevo*). With *vivrei* you need *avessi accettato*." }
+          ],
+          "explanation": "Mixed conditional: past condition (congiuntivo trapassato) + present result (condizionale presente).",
+          "errorType": "hypothetical",
+          "en": "If I'd accepted the London offer last year, I'd be living in England now."
+        },
+        {
+          "id": "G-EXAM-C1.g6", "type": "transform", "conceptId": "C1-HYP-04", "difficulty": 4,
+          "instruction": "Rewrite the sentence starting with *Qualora*.",
+          "prompt": "Se il cliente annulla l'ordine, La informeremo subito.",
+          "answers": ["Qualora il cliente (annulli|annullasse|dovesse annullare) l'ordine La informeremo subito"],
+          "focus": ["qualora", "annulli", "annullasse", "dovesse"],
+          "traps": [
+            { "match": "Qualora il cliente annulla l'ordine La informeremo subito", "errorType": "indicative-for-subjunctive", "why": "*Qualora* always takes the subjunctive: *qualora annulli / annullasse*." },
+            { "match": "Qualora il cliente annullerà l'ordine La informeremo subito", "errorType": "indicative-for-subjunctive", "why": "*Qualora* takes the subjunctive, never the future: *qualora annulli*." }
+          ],
+          "explanation": "*Qualora* (formal 'should / in the event that') + congiuntivo presente or imperfetto, or *dovesse* + infinitive.",
+          "errorType": "indicative-for-subjunctive",
+          "en": "Should the client cancel the order, we will inform you immediately."
+        },
+        {
+          "id": "G-EXAM-C1.g7", "type": "cloze", "conceptId": "C1-PAST-03", "difficulty": 3,
+          "instruction": "Complete with the passato remoto of the verb in brackets.",
+          "prompt": "Nel 1494 i Medici ___ (essere) costretti a lasciare Firenze.",
+          "answers": ["furono"],
+          "focus": ["furono"],
+          "traps": [
+            { "match": "erano", "errorType": "wrong-tense", "why": "That's the imperfect. The passato remoto of *essere* (loro) is *furono*." },
+            { "match": ["fossero", "furano", "furoro"], "errorType": "verb-form", "why": "Passato remoto of *essere*: *fui, fosti, fu, fummo, foste, furono*." },
+            { "match": "sono stati", "errorType": "wrong-tense", "why": "Correct meaning, but the task asks for the passato remoto: *furono*." }
+          ],
+          "explanation": "*Essere* in the passato remoto: *fui, fosti, fu, fummo, foste, furono*. Here it forms a passive: *furono costretti*.",
+          "errorType": "verb-form",
+          "en": "In 1494 the Medici were forced to leave Florence."
+        },
+        {
+          "id": "G-EXAM-C1.g8", "type": "transform", "conceptId": "C1-PART-01", "difficulty": 4,
+          "instruction": "Rewrite the sentence using an absolute participle instead of *Dopo che ebbe firmato*.",
+          "prompt": "Dopo che ebbe firmato il contratto, il presidente lasciò la sala.",
+          "answers": ["Firmato il contratto il presidente lasciò la sala"],
+          "focus": ["firmato"],
+          "traps": [
+            { "match": "Avendo firmato il contratto il presidente lasciò la sala", "errorType": "implicit-form", "why": "Correct Italian, but that's the past gerund. The task asks for the absolute participle: *Firmato il contratto, …*" },
+            { "match": "Firmando il contratto il presidente lasciò la sala", "errorType": "implicit-form", "why": "*Firmando* means 'while signing'. The action was completed first: *Firmato il contratto*." },
+            { "match": "Firmata il contratto il presidente lasciò la sala", "errorType": "agreement", "why": "The participle agrees with *il contratto*: *firmato*." }
+          ],
+          "explanation": "*Dopo che ebbe firmato* (trapassato remoto) = a completed earlier action; the absolute participle *Firmato il contratto* says the same thing more compactly, agreeing with the object.",
+          "errorType": "implicit-form",
+          "en": "Having signed the contract, the chairman left the room."
+        },
+        {
+          "id": "G-EXAM-C1.g9", "type": "transform", "conceptId": "C1-PASS-02", "difficulty": 4,
+          "instruction": "Rewrite the sentence with *andare* + past participle, starting with *La domanda*.",
+          "prompt": "Bisogna presentare la domanda entro il 30 giugno.",
+          "answers": ["La domanda va presentata entro il 30 giugno"],
+          "focus": ["va", "presentata"],
+          "traps": [
+            { "match": "La domanda va presentato entro il 30 giugno", "errorType": "agreement", "why": "The participle agrees with *la domanda*: *va presentata*." },
+            { "match": "La domanda viene presentata entro il 30 giugno", "errorType": "passive", "why": "*Viene presentata* just describes what happens. Obligation needs *andare*: *va presentata*." },
+            { "match": "La domanda è presentata entro il 30 giugno", "errorType": "passive", "why": "*Essere* gives no sense of obligation. Use *va presentata*." }
+          ],
+          "explanation": "*Andare* + past participle = passive with a sense of obligation ('must be submitted').",
+          "errorType": "passive",
+          "en": "The application must be submitted by 30 June."
+        },
+        {
+          "id": "G-EXAM-C1.g10", "type": "transform", "conceptId": "C1-SEQ-03", "difficulty": 5,
+          "instruction": "Report what the minister said, a week later. Start with *Il ministro ha detto che*.",
+          "prompt": "Il ministro ha detto: «Domani presenterò la riforma.»",
+          "answers": ["Il ministro ha detto che (il giorno dopo|il giorno seguente|il giorno successivo|l'indomani) avrebbe presentato la riforma", "Il ministro ha detto che avrebbe presentato la riforma (il giorno dopo|il giorno seguente|il giorno successivo|l'indomani)"],
+          "focus": ["avrebbe", "presentato"],
+          "traps": [
+            { "contains": ["presenterebbe"], "errorType": "tense-sequence", "why": "Future in the past = condizionale passato: *avrebbe presentato*." },
+            { "contains": ["presenterà"], "errorType": "reported-speech", "why": "Reported a week later, the future becomes *avrebbe presentato*." },
+            { "contains": ["domani"], "errorType": "reported-speech", "why": "From a week later, *domani* becomes *il giorno dopo / l'indomani*." },
+            { "contains": ["presenterò", "presenterei"], "errorType": "reported-speech", "why": "Change the person too: *(lui) avrebbe presentato*." }
+          ],
+          "explanation": "In reported speech after a past verb: future → condizionale passato, *domani* → *il giorno dopo*, first person → third person.",
+          "errorType": "reported-speech",
+          "en": "The minister said that he would present the reform the next day."
+        }
+      ]
+    },
+    {
+      "kind": "vocabulary",
+      "title": "Lessico",
+      "items": [
+        {
+          "id": "G-EXAM-C1.v1", "type": "choice", "conceptId": "C1-CONN-02", "difficulty": 3,
+          "instruction": "Choose the connector that fits the logic of the sentence.",
+          "prompt": "I conti del trimestre sono in attivo; ___, il debito della società resta molto elevato.",
+          "options": ["ciononostante", "pertanto", "infatti", "dunque"],
+          "answer": 0,
+          "optionWhy": {
+            "1": "*Pertanto* introduces a consequence, but a high debt doesn't follow from a profit.",
+            "2": "*Infatti* confirms or explains what was just said; here there's a contrast.",
+            "3": "*Dunque* introduces a conclusion, not a contrast."
+          },
+          "explanation": "*Ciononostante* = nevertheless: it introduces a fact that contrasts with what precedes.",
+          "errorType": "connector",
+          "en": "The quarter's accounts are in profit; nevertheless, the company's debt remains very high."
+        },
+        {
+          "id": "G-EXAM-C1.v2", "type": "cloze", "conceptId": "C1-VOC-03", "difficulty": 3,
+          "instruction": "Complete with the right verb (infinitive).",
+          "prompt": "Il governo intende ___ fine all'evasione fiscale con controlli più severi.",
+          "answers": ["(porre|mettere)"],
+          "focus": ["porre", "mettere"],
+          "traps": [
+            { "match": ["fare", "dare"], "errorType": "collocation", "why": "The collocation is *porre fine a* (formal) or *mettere fine a*." }
+          ],
+          "explanation": "*Porre fine a qualcosa* = to put an end to something (formal); *mettere fine a* is the neutral version.",
+          "errorType": "collocation",
+          "en": "The government intends to put an end to tax evasion with stricter checks."
+        },
+        {
+          "id": "G-EXAM-C1.v3", "type": "cloze", "conceptId": "C1-SYN-02", "difficulty": 4,
+          "instruction": "Turn the verb *approvare* into a noun to complete the nominal sentence.",
+          "prompt": "Il consiglio ha approvato il bilancio. → Ieri è arrivata l'___ del bilancio da parte del consiglio.",
+          "answers": ["approvazione"],
+          "focus": ["approvazione"],
+          "traps": [
+            { "match": ["approvamento", "approvale", "approvo"], "errorType": "word-formation", "why": "Verbs in *-are* usually form their noun in *-azione*: *approvare* → *approvazione*." }
+          ],
+          "explanation": "Nominal style: *approvare* → *l'approvazione*. Formal texts and headlines prefer nouns to verbs.",
+          "errorType": "word-formation",
+          "en": "The board's approval of the financial statements came through yesterday."
+        },
+        {
+          "id": "G-EXAM-C1.v4", "type": "cloze", "conceptId": "C1-IDIOM-02", "difficulty": 4,
+          "instruction": "Complete the proverb.",
+          "prompt": "Il contratto non è ancora firmato: non dire ___ se non ce l'hai nel sacco.",
+          "answers": ["gatto"],
+          "focus": ["gatto"],
+          "traps": [
+            { "match": ["pollo", "pesce", "coniglio"], "errorType": "idiom", "why": "The proverb is *non dire gatto se non ce l'hai nel sacco*." }
+          ],
+          "explanation": "*Non dire gatto se non ce l'hai nel sacco* ≈ 'don't count your chickens before they're hatched'.",
+          "errorType": "idiom"
+        },
+        {
+          "id": "G-EXAM-C1.v5", "type": "cloze", "conceptId": "C1-PRON-03", "difficulty": 4,
+          "instruction": "Complete with the passato prossimo of *farcela* (noi).",
+          "prompt": "Il progetto era difficilissimo, ma alla fine ___.",
+          "answers": ["ce l'abbiamo fatta"],
+          "focus": ["ce", "fatta"],
+          "traps": [
+            { "match": "ce l'abbiamo fatto", "errorType": "agreement", "why": "The *la* of *farcela* makes the participle feminine: *ce l'abbiamo fatta*." },
+            { "match": ["l'abbiamo fatta", "ci l'abbiamo fatta"], "errorType": "pronoun", "why": "*Farcela* keeps both pronouns, and *ci* becomes *ce* before *la*: *ce l'abbiamo fatta*." },
+            { "match": "ce la abbiamo fatta", "ok": true, "why": "Understandable, but the elided *ce l'abbiamo fatta* is the usual form." }
+          ],
+          "explanation": "*Farcela* = to manage, to make it. Passato prossimo: *ce l'ho fatta, ce l'abbiamo fatta* (participle agrees with *la*).",
+          "errorType": "pronoun",
+          "en": "The project was extremely difficult, but in the end we made it."
+        },
+        {
+          "id": "G-EXAM-C1.v6", "type": "choice", "conceptId": "C1-VOC-05", "difficulty": 4,
+          "instruction": "Choose the verb that completes the sentence.",
+          "prompt": "Molti economisti ___ che l'aumento dell'inflazione sia soltanto temporaneo.",
+          "options": ["sostengono", "supportano", "discutono", "litigano"],
+          "answer": 0,
+          "optionWhy": {
+            "1": "Calque of 'support': *supportare* means to back or assist, not to maintain an argument.",
+            "2": "*Discutere* = to discuss or argue about; it doesn't take *che* + claim.",
+            "3": "*Litigare* = to quarrel."
+          },
+          "explanation": "*Sostenere che* = to argue / maintain that (often + subjunctive when the claim is presented as an opinion).",
+          "errorType": "false-friend",
+          "en": "Many economists argue that the rise in inflation is only temporary."
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "Produzione scritta",
+      "items": [
+        {
+          "id": "G-EXAM-C1.w1", "type": "free", "conceptId": "C1-WRIT-02", "difficulty": 5,
+          "instruction": "Write a short argumentative essay in Italian (150–220 words).",
+          "prompt": "Over the last few years many Serie A clubs have been bought by foreign investment funds. Is this an opportunity or a risk for Italian football? State your position, organise at least two arguments with formal connectors, concede a point with a concessive clause, include a hypothesis (qualora / a patto che / se + subjunctive) and end with a conclusion.",
+          "minWords": 150,
+          "maxWords": 220,
+          "rubric": [
+            { "label": "States a clear position", "anyOf": ["\\b(a mio (avviso|parere)|ritengo|reputo|sono convint[oa]|credo che|penso che|sono (favorevole|contrari[oa]))\\b"], "min": 1, "errorType": "text-structure", "hint": "*A mio avviso… / Ritengo che…*" },
+            { "label": "Uses at least three formal connectors", "anyOf": ["\\b(tuttavia|pertanto|dunque|ciononostante|ciò nonostante|inoltre|in primo luogo|in secondo luogo|d'altra parte|d'altro canto|infine|di conseguenza|perciò|oltretutto|per di più)\\b"], "min": 3, "errorType": "connector", "hint": "*In primo luogo… Inoltre… D'altra parte… Pertanto…*" },
+            { "label": "Concedes a point (sebbene / benché / nonostante…)", "anyOf": ["\\b(sebbene|benché|nonostante|malgrado|per quanto|pur\\s+\\S+ndo)\\b"], "min": 1, "errorType": "connector", "hint": "*Sebbene questi vantaggi siano evidenti, …*" },
+            { "label": "Includes a hypothesis (qualora, a patto che, se + subjunctive…)", "anyOf": ["\\b(qualora|nel caso in cui|a patto che|a condizione che|purché)\\b", "\\bse\\s+(\\S+\\s+){0,4}?(fosse|fossero|avesse|avessero|dovesse|dovessero|potesse|potessero|\\S+(asse|assero|esse|essero|isse|issero))\\b"], "min": 1, "errorType": "hypothetical", "hint": "*Qualora un club diventasse un semplice prodotto finanziario, …*" },
+            { "label": "Ends with a conclusion", "anyOf": ["\\b(in conclusione|in definitiva|per concludere|alla luce di|in sintesi|tirando le somme)\\b"], "min": 1, "errorType": "text-structure", "hint": "*In conclusione, … / Alla luce di quanto detto, …*" }
+          ],
+          "model": "Negli ultimi anni numerosi club di Serie A sono stati acquistati da fondi d'investimento stranieri, soprattutto americani. A mio avviso si tratta di un'opportunità, a patto che venga accompagnata da regole chiare.\nIn primo luogo, l'arrivo di capitali esteri ha permesso a diverse società indebitate di evitare il fallimento e di investire in stadi e settori giovanili, che in Italia sono spesso inadeguati. Inoltre, una gestione più professionale potrebbe rendere il campionato più competitivo e attirare nuovi sponsor.\nSebbene questi vantaggi siano evidenti, non si può ignorare il rischio che un fondo consideri la squadra soltanto un investimento da rivendere dopo pochi anni. I tifosi, d'altra parte, temono che le decisioni vengano prese lontano dalla città e senza alcun legame con la sua storia.\nQualora un club diventasse un semplice prodotto finanziario, perderebbe la sua funzione sociale. Pertanto ritengo necessario che la federazione imponga maggiore trasparenza sui bilanci e sulla provenienza dei capitali.\nIn conclusione, gli investitori stranieri non sono né una minaccia né una salvezza: tutto dipende dalle regole con cui vengono accolti.",
+          "explanation": "A C1 essay states a position early, orders the arguments with formal connectors, concedes before countering (*sebbene* + subjunctive), uses hypothesis and the subjunctive naturally, and closes with a balanced conclusion.",
+          "errorType": "writing"
+        }
+      ]
+    },
+    {
+      "kind": "speaking",
+      "title": "Produzione orale",
+      "items": [
+        {
+          "id": "G-EXAM-C1.s1", "type": "speak", "conceptId": "C1-INT-02", "difficulty": 4,
+          "instruction": "Say it in Italian (or type it).",
+          "prompt": "In a meeting, your director (Lei) proposes cutting the marketing budget. Say: 'I understand your point of view, but I don't entirely agree.'",
+          "answers": [
+            "(Capisco|Comprendo) (il Suo punto di vista|la Sua posizione) (ma|però|tuttavia) non sono (del tutto|completamente|pienamente|totalmente) d'accordo"
+          ],
+          "focus": ["Suo", "Sua", "d'accordo"],
+          "traps": [
+            { "contains": ["tuo", "tua"], "errorType": "register", "why": "You address the director as Lei: *il Suo punto di vista*." },
+            { "contains": ["accordo"], "errorType": "idiom", "why": "The expression is *essere d'accordo*." },
+            { "contains": ["concordo"], "ok": true, "why": "*Non concordo del tutto* is also fine; *non sono del tutto d'accordo* is the most common." }
+          ],
+          "explanation": "Acknowledge first (*Capisco il Suo punto di vista*), then disagree softly with *non… del tutto*.",
+          "errorType": "register",
+          "interaction": true
+        },
+        {
+          "id": "G-EXAM-C1.s2", "type": "speak", "conceptId": "C1-HYP-03", "difficulty": 4,
+          "instruction": "Say it in Italian (or type it).",
+          "prompt": "Talking about yourself: 'If I'd studied economics, I'd be working in a bank now.'",
+          "answers": [
+            "Se avessi studiato economia (adesso|ora|oggi) (lavorerei|starei lavorando) in (banca|una banca)",
+            "Se avessi studiato economia (lavorerei|starei lavorando) in (banca|una banca) (adesso|ora|oggi)",
+            "(Adesso|Ora|Oggi) (lavorerei|starei lavorando) in (banca|una banca) se avessi studiato economia"
+          ],
+          "focus": ["avessi", "studiato", "lavorerei", "starei"],
+          "traps": [
+            { "contains": ["avrei"], "errorType": "hypothetical", "why": "The result is in the present (*adesso*): *lavorerei*, not *avrei lavorato*. And never the conditional after *se*." },
+            { "contains": ["studiassi"], "errorType": "tense-sequence", "why": "The studying is in the past: *se avessi studiato*." },
+            { "contains": ["studiavo", "lavoravo"], "errorType": "hypothetical", "why": "The colloquial imperfect is fine in casual speech for the past, but a mixed conditional needs *se avessi studiato… lavorerei*." }
+          ],
+          "explanation": "Mixed conditional: past condition (*se avessi studiato*) + present result (*adesso lavorerei*).",
+          "errorType": "hypothetical"
+        },
+        {
+          "id": "G-EXAM-C1.s3", "type": "speak", "conceptId": "C1-SYN-01", "difficulty": 4,
+          "instruction": "Say it in Italian (or type it), starting with *È stata…*.",
+          "prompt": "A colleague thinks Marco made the mistake in the report. Correct her with a cleft sentence: 'It was Paola who made the mistake, not Marco.'",
+          "answers": [
+            "[No ]È stata Paola (a fare l'errore|a fare lo sbaglio|a sbagliare|che ha fatto l'errore|che ha fatto lo sbaglio|che ha sbagliato)[ non Marco]"
+          ],
+          "focus": ["stata", "a", "che"],
+          "traps": [
+            { "contains": ["stato"], "errorType": "agreement", "why": "*Essere* agrees with Paola: *È stata Paola*." },
+            { "contains": ["chi"], "errorType": "relative", "why": "In a cleft sentence use *a* + infinitive or *che* + verb: *È stata Paola a sbagliare*." },
+            { "contains": ["di"], "errorType": "preposition", "why": "The implicit cleft uses *a* + infinitive: *È stata Paola a fare l'errore*." }
+          ],
+          "explanation": "Cleft sentence: *È stata Paola a* + infinitive (or *che* + indicative). It puts the focus on who did it.",
+          "errorType": "word-order",
+          "interaction": true
+        }
+      ]
+    }
+  ]
+}
