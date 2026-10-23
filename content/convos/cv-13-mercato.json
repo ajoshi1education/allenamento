@@ -1,0 +1,112 @@
+{
+  "id": "CV-13",
+  "title": "Al mercato",
+  "subtitle": "Shopping at a market stall: quantities, partitive ne, ce n'è / ce ne sono, comparing and haggling.",
+  "level": "B2",
+  "theme": "Vita quotidiana",
+  "conceptIds": ["B2-PRON-02", "B2-COND-01", "B2-VOC-02", "B2-REG-01"],
+  "tutor": { "name": "Signora Rina", "avatar": "👵", "gender": "female", "register": "formal" },
+  "setting": "It's Saturday morning at the Mercato di Testaccio in Rome. You stop at Signora Rina's fruit, vegetable and cheese stall.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Buongiorno! Che cosa Le do oggi?",
+      "en": "Good morning! What can I get you today?",
+      "task": "Ask for two things with precise quantities (un chilo, mezzo chilo, due etti…), using vorrei.",
+      "hint": "Vorrei un chilo di… e mezzo chilo di…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          { "label": "Gives quantities", "anyOf": ["\\b(etto|etti|chilo|chili|grammi|dozzina|mazzo|mazzetto|cassetta|vaschetta|pezzo|fetta|fette)\\b"], "min": 2, "errorType": "vocabulary", "conceptId": "B2-VOC-02", "hint": "*un chilo di…, mezzo chilo di…*" },
+          { "label": "Polite request", "anyOf": ["\\b(vorrei|mi dà|mi dia|mi darebbe|prenderei|prendo|mi serve|mi servono|mi servirebbe|mi servirebbero)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Vorrei…*" }
+        ]
+      },
+      "model": "Buongiorno! Vorrei un chilo di pomodori e mezzo chilo di zucchine, per favore.",
+      "followOk": "Ecco qua, pomodori e zucchine, tutto freschissimo.",
+      "followMiss": "Allora, vuole un chilo di pomodori e mezzo chilo di zucchine? Ecco qua, freschissimi."
+    },
+    {
+      "id": "t2",
+      "say": "E le pesche? Guardi che belle, sono arrivate stamattina. Quante ne vuole?",
+      "en": "And the peaches? Look how lovely they are, they arrived this morning. How many would you like?",
+      "task": "Say how many you want using partitive ne (ne vorrei sei…), and add a preference.",
+      "hint": "Ne vorrei…, ma non troppo mature.",
+      "expect": {
+        "minWords": 6,
+        "rubric": [
+          { "label": "Uses partitive ne + verb", "anyOf": ["\\bne\\s+(vorrei|voglio|prendo|prenderei|compro|dia|dà|darebbe|metta|bastano|basta|servono|serve|servirebbero)\\b"], "min": 1, "errorType": "ci-ne", "conceptId": "B2-PRON-02", "hint": "*Ne vorrei sei.*" }
+        ]
+      },
+      "model": "Sono bellissime! Ne vorrei sei, ma non troppo mature, per favore.",
+      "followOk": "Ecco, gliele scelgo io, sode al punto giusto.",
+      "followMiss": "Ne vuole sei? Va bene, gliele scelgo io, non troppo mature."
+    },
+    {
+      "id": "t3",
+      "say": "Ho anche due pecorini: uno fresco e uno stagionato. Li assaggi, prego.",
+      "en": "I also have two pecorinos: a fresh one and a mature one. Have a taste, please.",
+      "task": "Compare the two cheeses (più… di, meno… di, migliore) and say how much you want of one, with ne (ne vorrei due etti).",
+      "hint": "Quello stagionato è più… di quello fresco. Ne vorrei due etti.",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Makes a comparison", "anyOf": ["\\b(più|meno)\\s+\\p{L}+\\s+(di|del|dello|della|dei|degli|delle|che)\\b", "\\b(migliore|peggiore|preferisco|mi piace di più|tanto quanto|così come)\\b"], "min": 1, "errorType": "grammar", "conceptId": "B2-VOC-02", "hint": "*è più saporito di quello fresco*" },
+          { "label": "Ne + quantity", "anyOf": ["\\bne\\s+(vorrei|voglio|prendo|prenderei|compro|dia|dà|darebbe|metta|tagli|basta|bastano|serve|servono)\\b"], "min": 1, "errorType": "ci-ne", "conceptId": "B2-PRON-02", "hint": "*Ne vorrei due etti.*" }
+        ]
+      },
+      "model": "Buonissimi! Quello stagionato è più saporito di quello fresco, mi piace di più. Ne vorrei due etti.",
+      "followOk": "Ha buon gusto! Due etti di stagionato, ecco qua.",
+      "followMiss": "Quindi preferisce lo stagionato, più saporito del fresco? Ne taglio due etti, va bene?"
+    },
+    {
+      "id": "t4",
+      "say": "Le serve altro? Il basilico, purtroppo, è già finito.",
+      "en": "Do you need anything else? The basil, unfortunately, has already run out.",
+      "task": "Ask if there's any of something else left, with ce n'è or ce ne sono.",
+      "hint": "Peccato! E di rucola, ce n'è ancora? E le fragole, ce ne sono?",
+      "expect": {
+        "minWords": 6,
+        "rubric": [
+          { "label": "Uses ce n'è / ce ne sono", "anyOf": ["\\bce\\s*n['’]?\\s*è\\b", "\\bce\\s+ne\\s+(sono|è|ha|avete|rimane|rimangono|restano|resta|sarebbero|sarebbe)\\b"], "min": 1, "errorType": "ci-ne", "conceptId": "B2-PRON-02", "hint": "*Ce n'è ancora? Ce ne sono?*" }
+        ]
+      },
+      "model": "Peccato! E di rucola ce n'è ancora un po'? Vorrei anche delle fragole, se ce ne sono.",
+      "followOk": "La rucola sì, ce n'è ancora un mazzetto. Le fragole invece sono finite stamattina.",
+      "followMiss": "Mi chiede se ce n'è ancora? Di rucola ce n'è un mazzetto, ma le fragole sono finite."
+    },
+    {
+      "id": "t5",
+      "say": "Allora, in tutto fanno quindici euro e quaranta.",
+      "en": "So, that comes to fifteen euros forty altogether.",
+      "task": "Ask politely for a small discount or to round down the price, using the conditional (mi farebbe…?).",
+      "hint": "Mi farebbe quindici euro tondi? Vengo qui ogni…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          { "label": "Polite conditional request", "anyOf": ["\\b(farebbe|potrebbe|lascerebbe|sarebbe possibile|le dispiacerebbe|arrotonderebbe|verrebbe)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Mi farebbe quindici euro?*" },
+          { "label": "Talks about the price", "anyOf": ["\\b(sconto|scontino|euro|tondi|tondo|arrotondare|arrotonda|prezzo|quindici|meno)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-REG-01", "hint": "*…quindici euro tondi?*" }
+        ]
+      },
+      "model": "Mi farebbe quindici euro tondi? Sono un cliente affezionato, vengo qui ogni sabato.",
+      "followOk": "E va bene, quindici tondi, per un cliente così affezionato!",
+      "followMiss": "Vuole uno sconto? E va bene, facciamo quindici euro tondi."
+    },
+    {
+      "id": "t6",
+      "say": "Ecco il resto. Le serve una busta, o ce l'ha già?",
+      "en": "Here's your change. Do you need a bag, or have you got one already?",
+      "task": "Answer using ne: say you don't need one (non ne ho bisogno) or that you'd like one (me ne dia una).",
+      "hint": "No, grazie, non ne ho bisogno: ho… / Sì, me ne dia una…",
+      "expect": {
+        "minWords": 6,
+        "rubric": [
+          { "label": "Uses ne", "anyOf": ["\\bne\\s+(ho|abbiamo|serve|servono|dia|dà|darebbe|vorrei|prendo|prenderei|basta)\\b", "\\bn['’]\\s*ho\\b"], "min": 1, "errorType": "ci-ne", "conceptId": "B2-PRON-02", "hint": "*Non ne ho bisogno. / Me ne dia una.*" }
+        ]
+      },
+      "model": "No, grazie, non ne ho bisogno: ho portato la mia borsa di stoffa.",
+      "followOk": "Fa benissimo, così si risparmia la plastica. Grazie, e alla prossima!",
+      "followMiss": "Se gliene serve una, gliene do volentieri una di carta. Altrimenti, meglio così!"
+    }
+  ],
+  "closing": "Grazie a Lei, e buon fine settimana! Torni sabato prossimo, che arrivano i carciofi."
+}
