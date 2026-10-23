@@ -625,3 +625,6 @@ body.in-session .coach-panel { z-index: 75; }
 .qr-box img { background: #fff; border-radius: 12px; padding: 6px; flex: none; }
 .install-steps { padding-left: 1.1rem; margin: .4rem 0; }
 @media (max-width: 520px) { .qr-box { flex-direction: column; align-items: center; } }
+.mic-wrap { display: flex; flex-direction: column; align-items: center; gap: .3rem; }
+.mic-label { color: var(--muted); font-weight: 800; }
+.dock .mic-big.on { font-size: 1.8rem; }

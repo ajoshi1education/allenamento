@@ -3,7 +3,6 @@
 // scorecard → a second later the tutor replies and asks the next question. 🔊 replays any line.
 import { h, esc, md, toast } from "../ui.js";
 import * as speech from "../speech.js";
-import { bindMic } from "../mic.js";
 import { assessTurn, wordMatch, band } from "../core/speechcheck.js";
 
 const METER = [["taskScore", "Compito", "Hai fatto quello che ti era chiesto, con le strutture richieste?"],
@@ -61,7 +60,7 @@ async function play(view, ctx, id) {
       <span class="cc-avatar big">${tutor.avatar || "🧑‍🏫"}</span>
       <h1>${esc(cv.title)}</h1><p class="muted">${esc(cv.setting)}</p>
       <p class="small">${cv.turns.length} scambi con ${esc(tutor.name)} · ${esc(cv.level)}</p>
-      ${micOk ? `<p class="small muted">Quando ${esc(tutor.name)} ha finito di parlare, rispondi e basta. Puoi anche <b>tenere premuto il 🎤</b> mentre parli e lasciarlo per inviare.</p>` : `<p class="small muted">Scriverai le risposte${speech.isSilent() ? " (la modalità muta è attiva)" : ""}.</p>`}
+      ${micOk ? `<p class="small muted">When ${esc(tutor.name)} has finished, tap <b>🎤</b>, take your time, and tap <b>⏹</b> when you're done. Pauses won't cut you off.</p>` : `<p class="small muted">Scriverai le risposte${speech.isSilent() ? " (la modalità muta è attiva)" : ""}.</p>`}
       <button class="btn3d primary big" data-start>▶ Inizia</button>
     </div></section>`));
   await new Promise(res => { view.querySelector("[data-start]").onclick = res; });
@@ -75,7 +74,7 @@ async function play(view, ctx, id) {
       <div class="dock-task"><span class="chip">Tocca a te</span> <span class="task-text"></span> <details class="hint"><summary>Suggerimento</summary><span class="it hint-text"></span></details></div>
       <div class="dock-row">
         <button class="dock-btn" data-replay title="Riascolta">🔁</button>
-        ${micOk ? `<button class="mic-big" aria-label="Parla (tocca, o tieni premuto mentre parli)">🎤</button>` : ""}
+        ${micOk ? `<div class="mic-wrap"><button class="mic-big" aria-label="Parla">🎤</button><span class="mic-label small">Tocca per parlare</span></div>` : ""}
         <button class="dock-btn" data-type title="Scrivi invece di parlare">⌨️</button>
       </div>
       <div class="dock-opts"><button class="opt-btn" data-speed></button><button class="opt-btn" data-hide></button></div>
@@ -103,7 +102,13 @@ async function play(view, ctx, id) {
   let pending = [];                                      // tutor lines since your last reply
   const unveil = () => { pending.forEach(b => b.classList.remove("veiled")); pending = []; };
   let lastLine = "";
-  const scrollDown = () => chat.lastElementChild?.scrollIntoView({ behavior: "smooth", block: "end" });
+  // The dock floats over the page: keep enough space below the chat so the newest line is never hidden under it.
+  const page = view.querySelector(".convo.live");
+  const fit = () => { if (!alive()) return; const top = dock.getBoundingClientRect().top; page.style.paddingBottom = Math.max(160, innerHeight - top + 24) + "px"; };
+  new ResizeObserver(fit).observe(dock);
+  window.addEventListener("resize", fit);
+  fit();
+  const scrollDown = () => { fit(); requestAnimationFrame(() => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" })); };
   const tutorSays = async (text, en) => {
     if (!text || !alive()) return;
     lastLine = text;
@@ -119,25 +124,36 @@ async function play(view, ctx, id) {
     dock.classList.remove("tutor-talking");
   };
 
-  // Waiting for a reply: voice (auto-listen, tap or hold the mic) or typing.
+  // Waiting for a reply: tap the mic to start, speak at your own pace, tap again when you've finished. Or type.
   let deliver = null;
   const waitReply = () => new Promise(res => { deliver = v => { deliver = null; res(v); }; });
   async function listenOnce() {
     if (!micOk || !deliver || !alive()) return;
-    mic.classList.add("on"); setLive("Ti ascolto…", "listening");
-    const r = await speech.listen({ onInterim: t => alive() && setLive(t || "Ti ascolto…", "listening"), onStatus: st => alive() && setLive(speech.MIC_STATUS[st], st === "listening" ? "listening" : "warn"), silenceMs: 1600, maxMs: 25000 });
-    mic.classList.remove("on");
+    recording = true; paintMic();
+    setLive("Ti ascolto… parla con calma, poi tocca ⏹ quando hai finito.", "listening");
+    const r = await speech.listen({ hold: true, maxMs: 300000, onInterim: t => alive() && setLive(t || "Ti ascolto…", "listening"), onStatus: st => alive() && setLive(st === "listening" ? "Ti ascolto… parla con calma, poi tocca ⏹ quando hai finito." : speech.MIC_STATUS[st], st === "listening" ? "listening" : "warn") });
+    recording = false; paintMic();
     if (!alive() || !deliver) return;
-    if (r.error) { setLive(r.error === "no-speech" ? "Tocca o tieni premuto 🎤 quando vuoi rispondere." : (speech.MIC_HELP[r.error] || "Non ho capito."), "warn"); return; }
+    if (r.error === "aborted") { setLive(""); return; }
+    if (r.error) { setLive(r.error === "no-speech" ? "Non ho sentito niente. Tocca 🎤 e riprova." : (speech.MIC_HELP[r.error] || "Non ho capito."), "warn"); return; }
     setLive("");
     deliver({ text: r.text, confidence: r.confidence, speechMs: r.speechMs, byVoice: true });
   }
-  if (mic) bindMic(mic, () => listenOnce());
+  let recording = false;
+  const paintMic = () => {
+    if (!mic) return;
+    mic.classList.toggle("on", recording);
+    mic.textContent = recording ? "⏹" : "🎤";
+    mic.setAttribute("aria-label", recording ? "Ho finito: invia" : "Parla");
+    dock.querySelector(".mic-label").textContent = recording ? "Tocca quando hai finito" : "Tocca per parlare";
+  };
+  if (mic) mic.onclick = () => {
+    if (recording) { speech.releaseListening(); setLive("Un attimo…", "listening"); }
+    else listenOnce();
+  };
   dock.querySelector("[data-replay]").onclick = async () => {
-    const wasListening = speech.isListening();
-    speech.stopListening();
+    speech.stopListening();                                // cancels a recording in progress; tap 🎤 again to answer
     await speech.say(lastLine, { rate: rate * 0.9 });
-    if (wasListening || deliver) listenOnce();
   };
   dock.querySelector("[data-type]").onclick = () => { speech.stopListening(); setLive(""); dock.querySelector(".type-row").hidden = false; input.focus(); };
   const send = () => { const t = input.value.trim(); if (t && deliver) { input.value = ""; deliver({ text: t, confidence: null, speechMs: null, byVoice: false }); } };
@@ -156,7 +172,6 @@ async function play(view, ctx, id) {
     if (!alive()) return;
     const replyP = waitReply();
     dock.classList.add("your-turn");
-    if (micOk && dock.querySelector(".type-row").hidden) listenOnce();     // just start talking
     const a = await replyP;
     dock.classList.remove("your-turn");
     if (!alive()) return;

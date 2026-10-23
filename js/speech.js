@@ -133,7 +133,7 @@ export async function ensureMic() {
 
 // ---- listening ----------------------------------------------------------------------
 let current = null, ctl = null;
-export function stopListening() { try { current && current.abort(); } catch { /* */ } current = null; ctl = null; }
+export function stopListening() { try { if (current) { current.__cancelled = true; current.abort(); } } catch { /* */ } current = null; ctl = null; }
 // Push-to-talk: while held, silence never ends the turn; releasing sends what was said.
 export const isListening = () => !!current;
 export function holdListening() { ctl && ctl.hold(); }
@@ -163,9 +163,10 @@ export async function listen({ lang = "it-IT", onInterim, onStatus, maxMs = 1500
     current = r;
     r.lang = lang; r.interimResults = true; r.maxAlternatives = 5; r.continuous = true;
     const t0 = performance.now();
-    let speechStart = null, lastResult = null, finals = [], best = null, done = false, silenceTimer = null, maxTimer = null, audioOn = false, interimText = "", held = hold;
+    let speechStart = null, lastResult = null, finals = [], kept = [], best = null, done = false, silenceTimer = null, maxTimer = null, audioOn = false, interimText = "", curInterim = "", held = hold, releasing = false;
     const finish = out => {
       if (done) return; done = true; clearTimeout(silenceTimer); clearTimeout(maxTimer); clearTimeout(watch); clearTimeout(hardCap);
+      if (r.__cancelled) out = { error: "aborted" };
       try { r.stop(); } catch { /* */ }
       if (current === r) { current = null; ctl = null; }
       res(out);
@@ -173,28 +174,31 @@ export async function listen({ lang = "it-IT", onInterim, onStatus, maxMs = 1500
     ctl = {
       hold() { held = true; clearTimeout(silenceTimer); },
       release() {                           // graceful: Chrome turns the last words into a final result, then ends
-        held = false;
+        held = false; releasing = true;
         try { r.stop(); } catch { /* */ }
         setTimeout(() => finish(assemble() || best || { error: "no-speech" }), 2500);
       }
     };
     const assemble = () => {
-      if (!finals.length && interimText) return { alts: [{ text: interimText, confidence: 0 }], text: interimText, confidence: 0, totalMs: performance.now() - t0, speechMs: Math.max(300, (lastResult || performance.now()) - (speechStart || t0)) };
-      if (!finals.length) return null;
+      if (!finals.length && !kept.length && interimText) return { alts: [{ text: interimText, confidence: 0 }], text: interimText, confidence: 0, totalMs: performance.now() - t0, speechMs: Math.max(300, (lastResult || performance.now()) - (speechStart || t0)) };
+      const all = kept.concat(finals);
+      if (!all.length) return null;
       // Combine segments: first alternative for each, plus whole-utterance alternatives from the longest segment.
-      const main = finals.map(f => f[0].transcript.trim()).join(" ").replace(/\s+/g, " ").trim();
-      const conf = finals.reduce((s, f) => s + (f[0].confidence || 0), 0) / finals.length;
+      const tail = !finals.length && kept.length ? " " + curInterim : "";
+      const main = (all.map(f => f[0].transcript.trim()).join(" ") + tail).replace(/\s+/g, " ").trim();
+      const conf = all.reduce((s, f) => s + (f[0].confidence || 0), 0) / all.length;
       const alts = [{ text: main, confidence: conf }];
-      if (finals.length === 1) for (let k = 1; k < finals[0].length; k++) alts.push({ text: finals[0][k].transcript.trim(), confidence: finals[0][k].confidence || 0 });
+      if (all.length === 1) for (let k = 1; k < finals[0].length; k++) alts.push({ text: finals[0][k].transcript.trim(), confidence: finals[0][k].confidence || 0 });
       return { alts, text: main, confidence: conf, totalMs: performance.now() - t0, speechMs: Math.max(300, (lastResult || performance.now()) - (speechStart || t0)) };
     };
     // The listening time only starts once Chrome is actually recording.
     r.onaudiostart = () => {
       audioOn = true; onStatus && onStatus("listening");
+      clearTimeout(maxTimer);
       maxTimer = setTimeout(() => finish(assemble() || { error: "no-speech" }), held ? Math.max(maxMs, 60000) : maxMs);
     };
     const watch = setTimeout(() => { if (!audioOn) onStatus && onStatus("stuck"); }, 3000);
-    const hardCap = setTimeout(() => finish(assemble() || { error: audioOn ? "no-speech" : "not-started" }), maxMs + 30000);
+    const hardCap = setTimeout(() => finish(assemble() || { error: audioOn ? "no-speech" : "not-started" }), (hold ? Math.max(maxMs, 60000) : maxMs) + 30000);
     r.onspeechstart = () => { speechStart = speechStart || performance.now(); };
     r.onresult = e => {
       lastResult = performance.now();
@@ -206,14 +210,22 @@ export async function listen({ lang = "it-IT", onInterim, onStatus, maxMs = 1500
         if (res.isFinal) finals.push([...res].map(a => ({ transcript: a.transcript, confidence: a.confidence })));
         else interim += res[0].transcript;
       }
-      interimText = (finals.map(f => f[0].transcript).join(" ") + " " + interim).trim();
+      curInterim = interim;
+      interimText = (kept.concat(finals).map(f => f[0].transcript).join(" ") + " " + interim).trim();
       onInterim && onInterim(interimText);
       best = assemble();
       clearTimeout(silenceTimer);
       if (!held) silenceTimer = setTimeout(() => finish(assemble() || { error: "no-speech" }), silenceMs);
     };
     r.onerror = e => { if (e.error === "no-speech" && held) return; finish(best || { error: e.error || "error" }); };
-    r.onend = () => finish(assemble() || best || { error: "no-speech" });
+    // While held (tap-to-stop), Chrome may still end the session after a long pause: carry on listening.
+    r.onend = () => {
+      if (held && !releasing && !done && !r.__cancelled) {
+        kept = kept.concat(finals); finals = [];
+        try { r.start(); return; } catch { /* fall through */ }
+      }
+      finish(assemble() || best || { error: "no-speech" });
+    };
     try { r.start(); } catch (e) { finish({ error: "busy" }); }
   });
 }
