@@ -1,0 +1,130 @@
+{
+  "id": "G-LST-03",
+  "type": "listening",
+  "title": "La vera storia della pizza",
+  "subtitle": "A food podcast on the origins of pizza in Naples: follow the story and spot what the speaker doubts.",
+  "conceptIds": ["B2-LIST-01"],
+  "difficulty": 2,
+  "minutes": 9,
+  "passage": {
+    "title": "Mangia che ti passa – puntata 7",
+    "source": "invented",
+    "it": "Ciao a tutti e bentornati a «Mangia che ti passa», il podcast che racconta le storie nascoste dietro i piatti che amiamo. Oggi parliamo di un simbolo dell'Italia nel mondo: la pizza. E vi avverto subito: la storia che conoscete è vera solo a metà.\nPartiamo da Napoli, nel Settecento. La città era una delle più popolose d'Europa e moltissime persone vivevano in case minuscole, spesso senza cucina. Avevano bisogno di qualcosa di economico, da mangiare in fretta, magari camminando. Ecco la pizza: un disco di pasta lievitata, condito con quello che c'era. Spesso la vendevano ambulanti che giravano per i vicoli, e qualcuno la dava anche «a oggi a otto»: la mangiavi oggi e la pagavi otto giorni dopo. Comodo, no?\nIl pomodoro, arrivato dalle Americhe, all'inizio era guardato con sospetto, ma col tempo finì anche sulla pizza. La marinara, con pomodoro, aglio, origano e olio, è una delle più antiche. E no, non c'è il pesce: si chiama così, a quanto pare, perché la mangiavano i pescatori.\nE arriviamo al 1889, l'anno della famosa leggenda. La regina Margherita di Savoia è in visita a Napoli e il pizzaiolo Raffaele Esposito le prepara tre pizze. La regina preferisce quella con pomodoro, mozzarella e basilico, i colori della bandiera, e la pizza prende il suo nome. Bella storia, vero? Il problema è che alcuni storici hanno dei dubbi: pizze con questi ingredienti esistevano già prima, e c'è chi mette in discussione perfino il documento che lo proverebbe. Insomma, forse la regina ha dato il nome a una pizza che c'era già.\nPer decenni, comunque, la pizza è rimasta un piatto quasi solo napoletano. A farla conoscere nel mondo sono stati gli emigranti, soprattutto negli Stati Uniti, e solo dopo la Seconda guerra mondiale si è diffusa davvero nel resto d'Italia. Nel 2017, infine, l'UNESCO ha riconosciuto l'arte del pizzaiuolo napoletano come patrimonio dell'umanità.\nBene, per oggi è tutto. Nella prossima puntata: il caffè. Ciao!"
+  },
+  "questions": [
+    {
+      "id": "G-LST-03.q1", "type": "choice", "difficulty": 1,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What does the presenter say at the start about the story most people know?",
+      "options": [
+        "It's completely invented.",
+        "It's only half true.",
+        "It's the whole truth.",
+        "It comes from the United States."
+      ],
+      "answer": 1,
+      "explanation": "*La storia che conoscete è vera solo a metà.*",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-03.q2", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why was pizza so suitable for eighteenth-century Neapolitans?",
+      "options": [
+        "It was a luxury food for special occasions.",
+        "It was cheap and quick, and many people had no kitchen at home.",
+        "It could be kept for a week.",
+        "It was the only food allowed by the king."
+      ],
+      "answer": 1,
+      "explanation": "Many lived *in case minuscole, spesso senza cucina* and needed *qualcosa di economico, da mangiare in fretta*.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-03.q3", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What did buying pizza *«a oggi a otto»* mean?",
+      "options": [
+        "Eating it at eight o'clock",
+        "Buying eight pizzas at once",
+        "Eating it today and paying for it eight days later",
+        "Ordering it eight days in advance"
+      ],
+      "answer": 2,
+      "explanation": "*La mangiavi oggi e la pagavi otto giorni dopo*: a form of credit for poor customers.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-03.q4", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "According to the presenter, why is the *marinara* called that?",
+      "options": [
+        "Because it's topped with seafood",
+        "Apparently because fishermen used to eat it",
+        "Because it was invented on a ship",
+        "Because it's made with sea salt"
+      ],
+      "answer": 1,
+      "optionWhy": { "0": "She says explicitly: *non c'è il pesce*." },
+      "explanation": "*Non c'è il pesce: si chiama così, a quanto pare, perché la mangiavano i pescatori.* *A quanto pare* = apparently.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-03.q5", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Which pizza did Queen Margherita prefer, according to the legend?",
+      "options": [
+        "Tomato, garlic, oregano and oil",
+        "Tomato, mozzarella and basil",
+        "Mozzarella and anchovies",
+        "Plain dough with oil and salt"
+      ],
+      "answer": 1,
+      "explanation": "*Quella con pomodoro, mozzarella e basilico, i colori della bandiera* (red, white, green). Option 1 is the marinara.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-03.q6", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What is the presenter's conclusion about the 1889 story?",
+      "options": [
+        "Raffaele Esposito never existed.",
+        "The queen probably never visited Naples.",
+        "The queen may simply have given her name to a pizza that already existed.",
+        "The story is fully proved by a royal document."
+      ],
+      "answer": 2,
+      "optionWhy": { "3": "She says some people question *perfino il documento che lo proverebbe*: the conditional means the proof is doubtful." },
+      "explanation": "*Insomma, forse la regina ha dato il nome a una pizza che c'era già.* *Insomma* introduces her summing-up.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-03.q7", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Who made pizza known around the world?",
+      "options": [
+        "The Savoy royal family",
+        "Italian emigrants, especially in the United States",
+        "UNESCO",
+        "Tourists visiting Naples after the war"
+      ],
+      "answer": 1,
+      "explanation": "*A farla conoscere nel mondo sono stati gli emigranti, soprattutto negli Stati Uniti.* It only spread across the rest of Italy after the Second World War.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-03.q8", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«…il documento che lo proverebbe.»* Why does the speaker use the conditional *proverebbe*?",
+      "options": [
+        "To express a polite request",
+        "To refer to a future event",
+        "To present the document's proof as claimed but not certain",
+        "Because it follows *se*"
+      ],
+      "answer": 2,
+      "explanation": "The 'reporting' conditional distances the speaker from a claim: the document that *supposedly* proves it. Journalists use it constantly (*secondo alcuni, sarebbe…*).",
+      "errorType": "conditional-form"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "G-RDG-04",
+  "type": "reading",
+  "title": "I Medici: banchieri di Firenze",
+  "subtitle": "A magazine essay on the Medici bank: follow the argument, the financial innovations and what the writer only implies.",
+  "conceptIds": ["C1-READ-02", "C1-VOC-05"],
+  "difficulty": 4,
+  "minutes": 12,
+  "passage": {
+    "title": "Prima dei quadri, la banca",
+    "source": "invented",
+    "it": "Quando pensiamo ai Medici, ci vengono in mente le cupole, le statue e i quadri che ancora oggi attirano a Firenze milioni di visitatori. Si dimentica spesso, però, che tutto questo poggiava su un'attività molto meno poetica: la banca.\nIl Banco dei Medici fu fondato nel 1397 da Giovanni di Bicci e in pochi decenni divenne una delle più importanti istituzioni finanziarie d'Europa, con filiali a Roma, Venezia, Ginevra, Bruges, Londra e Avignone. Il suo cliente principale era il papato: gestire le entrate della Chiesa significava muovere enormi somme da un capo all'altro del continente.\nPer farlo senza trasportare forzieri pieni di monete, i Medici si servivano della lettera di cambio: un mercante versava una somma in una città e il corrispondente la riscuoteva, in un'altra valuta, su un'altra piazza. Lo strumento non l'avevano inventato loro, ma lo usarono con un'abilità senza pari. Aveva anche un vantaggio meno dichiarato: poiché la Chiesa condannava l'usura, l'interesse veniva nascosto nel tasso di cambio.\nAltrettanto decisiva fu la contabilità in partita doppia, che registra ogni operazione due volte, in dare e in avere. Anche in questo caso i Medici non furono gli inventori, ma la applicarono con un rigore che permetteva di controllare in ogni momento la salute dell'azienda. Le filiali, inoltre, erano società distinte, guidate da soci locali: se una falliva, le altre non venivano trascinate a fondo. Un'idea che ricorda da vicino le moderne holding.\nCon Cosimo il Vecchio e poi con Lorenzo il Magnifico, i profitti si trasformarono in mecenatismo: Brunelleschi, Donatello, Botticelli e il giovane Michelangelo lavorarono grazie al loro sostegno. Generosità disinteressata? Non del tutto. Finanziare chiese e palazzi serviva anche a costruire consenso e, forse, a farsi perdonare ricchezze guadagnate in modo non sempre limpido.\nEppure la banca, alla fine, crollò: prestiti imprudenti a sovrani insolventi, come il re d'Inghilterra, ne minarono le basi, e nel 1494 la cacciata della famiglia da Firenze ne segnò la fine. Restano gli affreschi. Il che è forse la lezione migliore per qualunque banchiere: il denaro passa, la bellezza resta."
+  },
+  "questions": [
+    {
+      "id": "G-RDG-04.q1", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What is the writer's main point?",
+      "options": [
+        "The Medici's artistic legacy is famous, but it rested on a highly innovative banking business.",
+        "The Medici invented modern banking and modern accounting.",
+        "The Medici were more interested in art than in money.",
+        "The Medici bank collapsed because it spent too much on art."
+      ],
+      "answer": 0,
+      "optionWhy": {
+        "1": "The writer stresses twice that they did *not* invent these tools (*non l'avevano inventato loro*, *non furono gli inventori*).",
+        "3": "The collapse is blamed on bad loans to insolvent rulers and the family's expulsion, not on art."
+      },
+      "explanation": "The opening sets up the contrast: the art *poggiava su un'attività molto meno poetica: la banca*. The rest of the essay explains how the bank worked.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-04.q2", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Who was the bank's most important client?",
+      "options": [
+        "The king of England",
+        "The papacy",
+        "The Florentine merchants' guild",
+        "The Republic of Venice"
+      ],
+      "answer": 1,
+      "optionWhy": { "0": "The king of England appears at the end as an insolvent borrower, not the main client." },
+      "explanation": "*Il suo cliente principale era il papato*: managing the Church's revenues meant moving huge sums across Europe.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-04.q3", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "According to the text, what was the 'less openly stated' advantage of the bill of exchange?",
+      "options": [
+        "It avoided the risk of robbery on the roads.",
+        "It let the bank charge interest disguised in the exchange rate, getting round the Church's ban on usury.",
+        "It allowed merchants to pay in florins everywhere.",
+        "It was cheaper to print than coins."
+      ],
+      "answer": 1,
+      "optionWhy": { "0": "Not carrying chests of coins is the obvious, declared purpose; the *vantaggio meno dichiarato* comes after." },
+      "explanation": "*Poiché la Chiesa condannava l'usura, l'interesse veniva nascosto nel tasso di cambio.*",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-04.q4", "type": "cloze", "difficulty": 3,
+      "instruction": "Complete with one word from the article.",
+      "prompt": "La partita doppia registra ogni operazione due volte, in dare e in ___.",
+      "answers": ["avere"],
+      "focus": ["avere"],
+      "explanation": "*Dare* and *avere* are the two sides of the ledger: debit and credit. Double-entry bookkeeping is *la partita doppia*.",
+      "errorType": "vocabulary"
+    },
+    {
+      "id": "G-RDG-04.q5", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why does the writer compare the bank's structure to a modern holding company?",
+      "options": [
+        "Because all branches were run directly from Florence by the family.",
+        "Because the branches were listed on a stock exchange.",
+        "Because each branch was a separate partnership, so one failure didn't drag the others down.",
+        "Because the bank owned shares in other banks."
+      ],
+      "answer": 2,
+      "explanation": "*Le filiali erano società distinte, guidate da soci locali: se una falliva, le altre non venivano trascinate a fondo.*",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-04.q6", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«Generosità disinteressata? Non del tutto.»* What does the writer imply about the Medici's patronage?",
+      "options": [
+        "It was purely a love of beauty.",
+        "It was imposed on them by the Church.",
+        "It was a waste of money that ruined the bank.",
+        "It also served to win political support and perhaps to clean up the image of their wealth."
+      ],
+      "answer": 3,
+      "explanation": "The rhetorical question is answered with *non del tutto*: funding churches served *a costruire consenso e, forse, a farsi perdonare ricchezze guadagnate in modo non sempre limpido*. *Forse* marks it as the writer's hypothesis.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-04.q7", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "In *«prestiti imprudenti… ne minarono le basi»*, what does *ne* refer to, and what does the phrase mean?",
+      "options": [
+        "To the bank: the loans undermined its foundations.",
+        "To the king: the loans ruined his kingdom.",
+        "To Florence: the loans weakened the city.",
+        "To the loans themselves: they had no basis."
+      ],
+      "answer": 0,
+      "explanation": "*Ne* = *di essa*, i.e. *della banca* (the subject of the sentence: *la banca… crollò*). *Minare le basi di qualcosa* = to undermine something's foundations, a common formal collocation.",
+      "errorType": "ci-ne"
+    },
+    {
+      "id": "G-RDG-04.q8", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«Il che è forse la lezione migliore per qualunque banchiere»*: what does *il che* refer to?",
+      "options": [
+        "The king of England",
+        "The whole preceding idea: the bank disappeared, but the art has survived",
+        "The year 1494",
+        "Lorenzo il Magnifico"
+      ],
+      "answer": 1,
+      "explanation": "*Il che* (= *la qual cosa*, 'which') refers back to a whole clause, not to a single noun: the bank collapsed, *restano gli affreschi*. Hence *il denaro passa, la bellezza resta*.",
+      "errorType": "relative"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "G-RDG-07",
+  "type": "reading",
+  "title": "Il calcio in Italia: più di uno sport",
+  "subtitle": "A feature on football and Italian identity: local rivalries, two World Cups and the idioms football gave the language.",
+  "conceptIds": ["B2-READ-01", "B2-IDIOM-01"],
+  "difficulty": 3,
+  "minutes": 12,
+  "passage": {
+    "title": "Campanili, derby e notti mondiali",
+    "source": "invented",
+    "it": "In Italia il calcio non è soltanto uno sport: è un linguaggio comune, un argomento di conversazione al bar e in ufficio, e spesso una questione di identità. Per capirlo bisogna partire da una parola difficile da tradurre: campanilismo. Il termine viene da «campanile» e indica l'attaccamento, a volte esagerato, alla propria città, al proprio quartiere, perfino al proprio paese d'origine. In una nazione che ha raggiunto l'unità politica soltanto nel 1861, la squadra di calcio è diventata uno dei modi più forti di sentirsi parte di una comunità.\nNon sorprende, allora, che i derby siano vissuti come eventi quasi sacri. A Milano si gioca il derby della Madonnina tra Inter e Milan, a Roma quello della Capitale tra Roma e Lazio, a Torino quello della Mole tra Juventus e Torino, a Genova quello della Lanterna tra Genoa e Sampdoria. Nei giorni che precedono la partita la città si divide: amici e colleghi si prendono in giro, e chi perde sa che dovrà sopportare le battute per settimane.\nEppure ci sono momenti in cui il campanilismo passa in secondo piano. Nel 1982, ai Mondiali di Spagna, l'Italia partì a fatica, con tre pareggi, ma poi batté l'Argentina, il Brasile e la Polonia e in finale superò la Germania Ovest per 3 a 1. Paolo Rossi, criticatissimo fino a pochi giorni prima, segnò sei gol e diventò un eroe nazionale; in tribuna il presidente della Repubblica, Sandro Pertini, esultava come un tifoso qualunque. Nel 2006, in Germania, la Nazionale vinse ai rigori la finale contro la Francia, proprio mentre il campionato era travolto dallo scandalo di Calciopoli. Per una notte milioni di italiani scesero in piazza con il tricolore, da Bolzano a Palermo.\nIl calcio ha lasciato il segno anche nella lingua. Di un politico che tira per le lunghe per evitare una decisione si dice che «fa melina»; chi evita un guaio all'ultimo momento «si salva in calcio d'angolo»; e chi interviene in modo brusco in una discussione «entra a gamba tesa». Segno che, in Italia, il pallone non si ferma mai al novantesimo minuto."
+  },
+  "questions": [
+    {
+      "id": "G-RDG-07.q1", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What is the article's main claim?",
+      "options": [
+        "In Italy, football is bound up with local and national identity, and even with the language.",
+        "Italian football is in crisis because of scandals.",
+        "Italians prefer local derbies to the national team.",
+        "Italy has won more World Cups than any other country."
+      ],
+      "answer": 0,
+      "explanation": "The first sentence states it: *non è soltanto uno sport… spesso una questione di identità*. The last paragraph extends it to language.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-07.q2", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What does *campanilismo* mean?",
+      "options": [
+        "A passion for church architecture",
+        "Strong (sometimes excessive) attachment to one's own town or area",
+        "Support for the national team",
+        "Hostility towards foreign players"
+      ],
+      "answer": 1,
+      "explanation": "From *campanile* (bell tower): *l'attaccamento, a volte esagerato, alla propria città, al proprio quartiere*. 'Parochialism' is the closest English word.",
+      "errorType": "vocabulary"
+    },
+    {
+      "id": "G-RDG-07.q3", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Which teams play the *derby della Mole*?",
+      "options": [
+        "Inter and Milan",
+        "Roma and Lazio",
+        "Juventus and Torino",
+        "Genoa and Sampdoria"
+      ],
+      "answer": 2,
+      "explanation": "*A Torino quello della Mole tra Juventus e Torino.* The Mole Antonelliana is Turin's landmark; the Madonnina is on Milan cathedral and the Lanterna is Genoa's lighthouse.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-07.q4", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What does the article say about Paolo Rossi in 1982?",
+      "options": [
+        "He had been heavily criticised, then scored six goals and became a national hero.",
+        "He scored the winning penalty in the final.",
+        "He was the coach of the national team.",
+        "He was injured in the first three matches."
+      ],
+      "answer": 0,
+      "explanation": "*Criticatissimo fino a pochi giorni prima, segnò sei gol e diventò un eroe nazionale.* The penalties belong to the 2006 final.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-07.q5", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What made the 2006 victory especially striking?",
+      "options": [
+        "It was won at home in Italy.",
+        "It came while Italian league football was engulfed by the Calciopoli scandal.",
+        "Italy beat Germany in the final.",
+        "It was Italy's first World Cup."
+      ],
+      "answer": 1,
+      "explanation": "*Proprio mentre il campionato era travolto dallo scandalo di Calciopoli.* The final was in Germany, against France, and Italy had already won in 1982.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-07.q6", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why does the writer mention President Pertini celebrating *come un tifoso qualunque*?",
+      "options": [
+        "To criticise his behaviour as unsuitable for a head of state",
+        "To show that the victory united everyone, from ordinary fans to the highest office in the country",
+        "To suggest he was a Juventus supporter",
+        "To explain why he was re-elected"
+      ],
+      "answer": 1,
+      "explanation": "The paragraph is about moments when *il campanilismo passa in secondo piano*: even the head of state behaved like any fan. The point is implied, not stated.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-07.q7", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«Il governo si è salvato in calcio d'angolo.»* What happened to the government?",
+      "options": [
+        "It won comfortably.",
+        "It narrowly escaped trouble at the last moment.",
+        "It was defeated.",
+        "It changed its strategy completely."
+      ],
+      "answer": 1,
+      "explanation": "*Salvarsi in calcio d'angolo* (like a defender who clears the ball for a corner) = to get out of trouble at the last moment, by the skin of one's teeth.",
+      "errorType": "idiom"
+    },
+    {
+      "id": "G-RDG-07.q8", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "A colleague says: *«Il direttore è entrato a gamba tesa nella riunione.»* What did the director do?",
+      "options": [
+        "He arrived late and limping.",
+        "He stayed silent throughout.",
+        "He intervened forcefully and aggressively.",
+        "He kept delaying a decision."
+      ],
+      "answer": 2,
+      "optionWhy": { "3": "Delaying to avoid a decision is *fare melina*." },
+      "explanation": "*Entrare a gamba tesa* (a straight-legged tackle) = to intervene bluntly or aggressively in a discussion.",
+      "errorType": "idiom"
+    }
+  ]
+}
