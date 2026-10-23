@@ -4,7 +4,13 @@ const PRECACHE = [];
 const CACHE = "allenamento-" + VERSION;
 
 self.addEventListener("install", e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
+  // Fetch each file fresh (bypassing the browser cache and, via ?v=, the CDN cache) so a new
+  // version never stores an old copy of a file.
+  e.waitUntil(caches.open(CACHE).then(c => Promise.all(PRECACHE.map(async u => {
+    const r = await fetch(u + (u.includes("?") ? "&" : "?") + "v=" + VERSION, { cache: "reload" });
+    if (!r.ok) throw new Error("precache failed: " + u);
+    await c.put(u, r);
+  }))).then(() => self.skipWaiting()));
 });
 self.addEventListener("activate", e => {
   e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim()));
