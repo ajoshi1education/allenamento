@@ -31,7 +31,7 @@ export function captureMistake(existing, { item, concept, response, result, sour
     alternatives: result.alternatives || [],
     explanation: [result.note, result.why].filter(Boolean).join(" "),
     rule: concept ? (concept.rule || concept.title) : "",
-    lessonLink: "#/learn/" + item.conceptId,
+    lessonLink: item.conceptId === "MY-PHRASES" ? "#/translate" : item.conceptId === "VOCAB" ? "#/vocab" : "#/learn/" + item.conceptId,
     firstSeen: now,
     timesWrong: 0,
     relapses: 0,
@@ -39,7 +39,8 @@ export function captureMistake(existing, { item, concept, response, result, sour
     reviewed: false,
     masteryLevel: 0,
     masteredAt: null,
-    attempts: []
+    attempts: [],
+    itemSnapshot: snapshot(item)
   };
   if (existing && existing.status === "mastered") e.relapses += 1;
   e.timesWrong += 1;
@@ -55,6 +56,16 @@ export function captureMistake(existing, { item, concept, response, result, sour
 
 // Only successes on a later calendar day than the last mistake count: getting it right
 // five minutes after the correction shows short-term memory, not learning.
+// A copy of the item, so the error can always be retested, even if it came from imported
+// or generated content that isn't in the content files.
+const SNAP_KEYS = ["id", "conceptId", "type", "instruction", "prompt", "answers", "traps", "focus", "errorType", "explanation",
+  "options", "answer", "optionWhy", "tokens", "en", "difficulty", "rubric", "minWords", "maxWords", "model", "passage", "audio", "silentPrompt", "skill"];
+export function snapshot(item) {
+  const s = {};
+  for (const k of SNAP_KEYS) if (item[k] !== undefined) s[k] = item[k];
+  return s;
+}
+
 export function masteryProgress(e) {
   const since = e.lastFailAt || 0;
   const failDay = since ? dayKey(since) : null;
@@ -122,7 +133,7 @@ export function pickRetestItem(error, pool, { recent = new Set(), rand = Math.ra
   const same = pool.filter(i => i.conceptId === error.conceptId && i.id !== error.itemId && i.type !== "free" && !recent.has(i.id));
   const tiers = [same.filter(i => matchesError(i, error)), same];
   for (const t of tiers) if (t.length) return t[Math.floor(rand() * t.length)];
-  return pool.find(i => i.id === error.itemId) || null;
+  return pool.find(i => i.id === error.itemId) || error.itemSnapshot || null;
 }
 
 export function buildQuiz(errors, pool, now, { n = 10, filter = () => true, rand = Math.random, includeAll = false } = {}) {

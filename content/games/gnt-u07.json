@@ -1,0 +1,11 @@
+{
+  "id": "G-GNT-07",
+  "type": "gauntlet",
+  "title": "Gauntlet: passivo e si",
+  "subtitle": "Two minutes, three lives: essere or venire, va fatto, si vendono, ci si alza. How far can you get?",
+  "conceptIds": ["B2-PASS-01", "C1-PASS-02", "B2-SI-01"],
+  "difficulty": 3,
+  "minutes": 3,
+  "seconds": 120,
+  "lives": 3
+}

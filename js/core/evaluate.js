@@ -144,6 +144,8 @@ export function evaluate(item, response) {
     });
   }
 
+  if (item.type === "free") return evaluateWriting(item, raw);
+
   const accepted = acceptedAnswers(item);
   const r = normalize(raw);
   const rTokens = r.split(" ");
@@ -185,6 +187,23 @@ export function evaluate(item, response) {
 function accentHint(diff) {
   const adds = diff.filter(d => d.op === "add").map(d => d.t);
   return adds.length ? adds.join(", ") : "see the correct answer";
+}
+
+// Open writing: graded against the rubric checklist (no AI). Passing = every check met and length OK.
+function evaluateWriting(item, text) {
+  const w = checkWriting(item, text);
+  const failed = w.checks.filter(c => !c.ok);
+  const notes = [];
+  if (!w.lengthOk) notes.push(`Length: ${w.words} words (aim for ${item.minWords || 0}${item.maxWords ? "–" + item.maxWords : "+"}).`);
+  failed.forEach(c => notes.push(`Missing: ${c.label}.${c.hint ? " " + c.hint : ""}`));
+  const pass = !failed.length && w.lengthOk;
+  return {
+    verdict: pass ? "correct" : "wrong", correct: pass,
+    expected: item.model || "", alternatives: [], why: item.explanation || "",
+    errorType: pass ? null : (failed[0] ? failed[0].errorType : "task-completion"),
+    note: pass ? `All ${w.checks.length} checklist points met (${w.words} words).` : notes.join(" "),
+    writing: w
+  };
 }
 
 // Writing tasks without AI: check required structures and length, give a checklist.

@@ -1,0 +1,468 @@
+{
+  "unit": "U04",
+  "title": "Tempi del passato e del futuro",
+  "cefr": "B2",
+  "concepts": [
+    {
+      "id": "B2-PAST-01",
+      "title": "Passato prossimo vs imperfetto: nuances",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": [],
+      "rule": "Passato prossimo narrates completed events (also repeated a set number of times or over a closed period); imperfetto describes backgrounds, states, habits ('used to') and actions in progress. With sapere, conoscere, potere, volere and dovere the choice changes the meaning.",
+      "assessment": [
+        "Uses the imperfetto for habits, descriptions and background, and the passato prossimo for completed events",
+        "Combines imperfetto (action in progress) and passato prossimo (interrupting event) in one sentence",
+        "Uses the passato prossimo with a set number of times or a closed period (per tre anni, tre volte)",
+        "Distinguishes sapevo/ho saputo, conoscevo/ho conosciuto, potevo/ho potuto, volevo/ho voluto, dovevo/ho dovuto",
+        "Translates English 'used to' and 'would' (habit) with the imperfetto, never with usare"
+      ],
+      "lesson": {
+        "intro": "English uses one simple past (*I went, I knew*) for both events and backgrounds, so English speakers have to make a choice Italian forces at every step. Think of a film: the **imperfetto** paints the set and shows what was going on, while the **passato prossimo** moves the plot forward. With a handful of verbs, *sapere, conoscere, potere, volere, dovere*, the choice even changes the English translation.",
+        "rules": [
+          {
+            "title": "Event vs background",
+            "text": "Passato prossimo = something that happened and is finished: a step in the story. Imperfetto = the scene: weather, time, age, physical and mental states, descriptions, what was in progress.",
+            "examples": [
+              { "it": "Era tardi e **pioveva**, così **abbiamo preso** un taxi.", "en": "It was late and raining, so we took a taxi." },
+              { "it": "**Avevo** dieci anni quando **ho visto** il mare per la prima volta.", "en": "I was ten when I saw the sea for the first time." }
+            ]
+          },
+          {
+            "title": "Habits ('used to', 'would') vs a set number of times",
+            "text": "A repeated, open-ended habit takes the **imperfetto**: this is how Italian says 'used to' and habitual 'would'. But if you count the times or close the period (*tre volte, per sei anni, dal 2010 al 2015*), the whole block is seen as finished: **passato prossimo**.",
+            "examples": [
+              { "it": "Da piccolo **andavo** in montagna ogni estate.", "en": "As a child I used to go to the mountains every summer." },
+              { "it": "**Sono andato** in montagna tre volte quell'estate.", "en": "I went to the mountains three times that summer." },
+              { "it": "**Ho vissuto** a Londra per sei anni.", "en": "I lived in London for six years (and now I don't)." }
+            ]
+          },
+          {
+            "title": "Interrupted actions",
+            "text": "The action in progress is in the **imperfetto** (often after *mentre*, or *stavo* + gerund); the event that breaks in is in the **passato prossimo**. Two actions in progress at the same time are both imperfetto.",
+            "examples": [
+              { "it": "Mentre **cucinavo**, **è entrato** un gatto dalla finestra.", "en": "While I was cooking, a cat came in through the window." },
+              { "it": "Mentre io **cucinavo**, lui **apparecchiava** la tavola.", "en": "While I was cooking, he was laying the table." }
+            ]
+          },
+          {
+            "title": "Verbs that change meaning",
+            "text": "With these verbs the imperfetto describes a state, while the passato prossimo describes something that happened once, with a result.",
+            "table": {
+              "head": ["Verb", "Imperfetto (state)", "Passato prossimo (event)"],
+              "rows": [
+                ["sapere", "*sapevo* = I knew", "*ho saputo* = I found out, heard"],
+                ["conoscere", "*conoscevo* = I knew (someone, a place)", "*ho conosciuto* = I met (for the first time)"],
+                ["potere", "*potevo* = I could, was able (did I? unclear)", "*ho potuto* = I managed to (and did)"],
+                ["volere", "*volevo* = I wanted, intended", "*ho voluto* = I insisted on; *non ho voluto* = I refused"],
+                ["dovere", "*dovevo* = I was supposed to (did I? unclear)", "*ho dovuto* = I had to (and did)"]
+              ]
+            },
+            "examples": [
+              { "it": "Non **sapevo** che Lucia fosse incinta: l'**ho saputo** ieri.", "en": "I didn't know Lucia was pregnant: I found out yesterday." },
+              { "it": "**Dovevo** partire alle otto, ma ho perso il treno.", "en": "I was supposed to leave at eight, but I missed the train." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Da bambino sono andato al mare ogni estate.", "right": "Da bambino andavo al mare ogni estate.", "why": "An open-ended childhood habit ('used to') takes the imperfetto." },
+          { "wrong": "Vivevo a Roma per tre anni.", "right": "Ho vissuto a Roma per tre anni.", "why": "*Per tre anni* closes the period, so the whole stay is a finished block: passato prossimo." },
+          { "wrong": "Mentre ho cenato, è arrivato Luca.", "right": "Mentre cenavo, è arrivato Luca.", "why": "The action in progress (dinner) is background: imperfetto. Luca's arrival is the event." },
+          { "wrong": "Ho conosciuto Marco da anni.", "right": "Conosco Marco da anni.", "why": "*Ho conosciuto* means 'I met'. Knowing someone over time is a state: *conosco* (still true) or *conoscevo* (in the past)." },
+          { "wrong": "Usavo giocare a tennis.", "right": "Giocavo a tennis.", "why": "*Usare* means 'to use'. 'Used to' is expressed by the imperfetto itself." }
+        ],
+        "tips": [
+          "Ask: is this a step in the story (what happened next?) or part of the scenery (what was it like?)",
+          "If you can count it or put a closing date on it, it's passato prossimo, however long it lasted.",
+          "'Used to' and habitual 'would' never translate word for word: just use the imperfetto."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-PAST-01.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with passato prossimo or imperfetto.", "prompt": "Da bambino ___ (andare) al mare ogni estate con i nonni.", "answers": ["andavo"], "focus": ["andavo"], "errorType": "wrong-tense", "traps": [{ "match": "sono andato", "errorType": "wrong-tense", "why": "*Ogni estate* + childhood = an open-ended habit ('I used to go'): imperfetto *andavo*." }], "explanation": "Repeated habit in the past, with no set number of times → imperfetto.", "en": "As a child I used to go to the seaside every summer with my grandparents." },
+        { "id": "B2-PAST-01.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with passato prossimo or imperfetto.", "prompt": "Ieri sera, mentre ___ (cucinare), è andata via la luce.", "answers": ["cucinavo", "stavo cucinando"], "focus": ["cucinavo"], "errorType": "wrong-tense", "traps": [{ "match": "ho cucinato", "errorType": "wrong-tense", "why": "The cooking was in progress when the power cut happened: imperfetto *cucinavo* (or *stavo cucinando*)." }], "explanation": "Action in progress (imperfetto) interrupted by an event (passato prossimo: *è andata via la luce*).", "en": "Last night, while I was cooking, the power went off." },
+        { "id": "B2-PAST-01.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with passato prossimo or imperfetto.", "prompt": "Mentre cucinavo, all'improvviso ___ (entrare) un gatto dalla finestra.", "answers": ["è entrato"], "focus": ["è", "entrato"], "errorType": "wrong-tense", "traps": [{ "match": "entrava", "errorType": "wrong-tense", "why": "*All'improvviso* marks a sudden event that interrupts the background: passato prossimo *è entrato*." }, { "match": "ha entrato", "errorType": "auxiliary", "why": "*Entrare* is a verb of movement that takes *essere*: *è entrato*." }], "explanation": "The interrupting event goes in the passato prossimo; *entrare* takes *essere*.", "en": "While I was cooking, a cat suddenly came in through the window." },
+        { "id": "B2-PAST-01.e04", "type": "choice", "difficulty": 2, "instruction": "Choose the correct form.", "prompt": "___ della sua promozione solo stamattina, da un collega.", "options": ["Sapevo", "Ho saputo", "Saprò"], "answer": 1, "optionWhy": { "0": "*Sapevo* means 'I knew' (a state). Finding out at a precise moment is *ho saputo*.", "2": "*Stamattina* is in the past, so the future is impossible." }, "errorType": "wrong-tense", "explanation": "*Sapere* in the passato prossimo = to find out, to hear about.", "en": "I only heard about his promotion this morning, from a colleague." },
+        { "id": "B2-PAST-01.e05", "type": "choice", "difficulty": 2, "instruction": "Choose the correct form.", "prompt": "___ mia moglie a una festa di compleanno nel 2015.", "options": ["Conoscevo", "Ho conosciuto", "Conosco"], "answer": 1, "optionWhy": { "0": "*Conoscevo* = I knew (an ongoing state). Meeting someone for the first time is an event: *ho conosciuto*.", "2": "*Nel 2015* is a past event, so the present doesn't fit." }, "errorType": "wrong-tense", "explanation": "*Conoscere* in the passato prossimo = to meet for the first time.", "en": "I met my wife at a birthday party in 2015." },
+        { "id": "B2-PAST-01.e06", "type": "cloze", "difficulty": 3, "instruction": "Complete with passato prossimo or imperfetto.", "prompt": "Lo ___ (conoscere) già da anni, ma non sapevo che fosse sposato.", "answers": ["conoscevo"], "focus": ["conoscevo"], "errorType": "wrong-tense", "traps": [{ "match": "ho conosciuto", "errorType": "wrong-tense", "why": "*Ho conosciuto* means 'I met'. Knowing someone *da anni* is a state: *conoscevo*. (And with *lo*, it would be *l'ho conosciuto*.)" }], "explanation": "Knowing someone over a period = state → imperfetto *conoscevo*.", "en": "I'd known him for years, but I didn't know he was married." },
+        { "id": "B2-PAST-01.e07", "type": "choice", "difficulty": 3, "instruction": "Choose the form that fits the meaning.", "prompt": "Il negozio chiudeva alle sette, ma per fortuna ___ comprare il regalo all'ultimo minuto.", "options": ["potevo", "ho potuto"], "answer": 1, "optionWhy": { "0": "*Potevo* only says it was possible, not that you did it. *Per fortuna… all'ultimo minuto* tells us you actually managed: *ho potuto*." }, "errorType": "wrong-tense", "explanation": "*Ho potuto* = I managed to (and did). *Potevo* = I was able to (outcome unclear).", "en": "The shop closed at seven, but luckily I managed to buy the present at the last minute." },
+        { "id": "B2-PAST-01.e08", "type": "choice", "difficulty": 4, "instruction": "What does the sentence mean?", "prompt": "Gli ho offerto un passaggio, ma non ha voluto salire in macchina.", "options": ["I offered him a lift, but he refused to get in the car.", "I offered him a lift, but he didn't really feel like getting in (we don't know what he did).", "I offered him a lift, but he wouldn't want to get in the car."], "answer": 0, "optionWhy": { "1": "That would be *non voleva salire*: the imperfetto describes his wish, not the outcome.", "2": "That's a conditional idea (*non vorrebbe*)." }, "errorType": "wrong-tense", "explanation": "*Non ho voluto* = I refused (the refusal actually happened).", "en": "I offered him a lift, but he refused to get in the car." },
+        { "id": "B2-PAST-01.e09", "type": "cloze", "difficulty": 2, "instruction": "Complete with passato prossimo or imperfetto. The speaker is a woman.", "prompt": "___ (vivere) a Londra per sei anni, poi sono tornata in Italia.", "answers": ["(Ho vissuto|Sono vissuta)"], "focus": ["vissuto", "vissuta"], "errorType": "wrong-tense", "traps": [{ "match": "Vivevo", "errorType": "wrong-tense", "why": "*Per sei anni* closes the period: the whole stay is a finished block, so passato prossimo *ho vissuto*." }, { "match": "Sono vissuto", "errorType": "agreement", "why": "With *essere* the participle agrees with the speaker, a woman: *sono vissuta* (or simply *ho vissuto*)." }], "explanation": "A closed period (*per sei anni*) → passato prossimo. *Vivere* takes *avere* or *essere*.", "en": "I lived in London for six years, then I came back to Italy." },
+        { "id": "B2-PAST-01.e10", "type": "cloze", "difficulty": 3, "instruction": "Complete with passato prossimo or imperfetto.", "prompt": "L'anno scorso Marco ___ (andare) in palestra solo tre volte.", "answers": ["è andato"], "focus": ["è", "andato"], "errorType": "wrong-tense", "traps": [{ "match": "andava", "errorType": "wrong-tense", "why": "A counted number of times (*tre volte*) is a closed set of events: passato prossimo *è andato*." }, { "match": "ha andato", "errorType": "auxiliary", "why": "*Andare* takes *essere*: *è andato*." }], "explanation": "Repetition with a set number (*tre volte*) → passato prossimo.", "en": "Last year Marco only went to the gym three times." },
+        { "id": "B2-PAST-01.e11", "type": "transform", "difficulty": 3, "instruction": "Put the sentences into the past (passato prossimo / imperfetto).", "prompt": "Mentre piove, leggo un libro. Poi arriva Marta.", "answers": ["Mentre pioveva, (leggevo|stavo leggendo) un libro. Poi è arrivata Marta."], "focus": ["pioveva", "leggevo", "arrivata"], "errorType": "wrong-tense", "traps": [{ "contains": ["piovuto"], "errorType": "wrong-tense", "why": "The rain is the background to the scene: *pioveva*." }, { "contains": ["letto"], "errorType": "wrong-tense", "why": "The reading was in progress when Marta arrived: *leggevo*." }, { "contains": ["arrivava"], "errorType": "wrong-tense", "why": "Marta's arrival is the event that moves the story on: *è arrivata*." }, { "contains": ["arrivato"], "errorType": "agreement", "why": "With *essere* the participle agrees with Marta: *è arrivata*." }], "explanation": "Background and action in progress → imperfetto; the new event → passato prossimo.", "en": "While it was raining, I was reading a book. Then Marta arrived." },
+        { "id": "B2-PAST-01.e12", "type": "translate", "difficulty": 2, "instruction": "Translate into Italian.", "prompt": "I used to play tennis every Sunday.", "answers": ["Giocavo a tennis (ogni domenica|tutte le domeniche)", "(Ogni domenica|Tutte le domeniche|La domenica) giocavo a tennis"], "focus": ["giocavo"], "errorType": "wrong-tense", "traps": [{ "contains": ["usavo"], "errorType": "false-friend", "why": "*Usare* means 'to use'. 'Used to' is expressed by the imperfetto alone: *giocavo*." }, { "contains": ["giocato"], "errorType": "wrong-tense", "why": "A habit with no set end is imperfetto: *giocavo*." }, { "contains": ["giocare"], "errorType": "wrong-tense", "why": "No helper verb is needed: the imperfetto *giocavo* already means 'used to play'." }], "explanation": "'Used to' + verb = imperfetto. Sports take *giocare a*.", "en": "I used to play tennis every Sunday." },
+        { "id": "B2-PAST-01.e13", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian.", "prompt": "I found out the truth yesterday.", "answers": ["Ieri ho (saputo|scoperto) la verità", "Ho (saputo|scoperto) la verità ieri"], "focus": ["saputo", "scoperto"], "errorType": "wrong-tense", "traps": [{ "contains": ["sapevo"], "errorType": "wrong-tense", "why": "*Sapevo* = I knew. 'Found out' is an event: *ho saputo* (or *ho scoperto*)." }, { "contains": ["trovato"], "errorType": "vocabulary", "why": "*Trovare* is to find an object. To find out information: *sapere* (passato prossimo) or *scoprire*." }], "explanation": "*Sapere* in the passato prossimo = to find out.", "en": "I found out the truth yesterday." },
+        { "id": "B2-PAST-01.e14", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "I met Giulia in 2019; at the time I didn't know anyone in Milan.", "answers": ["Ho conosciuto Giulia nel 2019; (all'epoca|allora|a quel tempo|in quel periodo) non conoscevo nessuno a Milano."], "focus": ["conosciuto", "conoscevo"], "errorType": "wrong-tense", "traps": [{ "match": "Ho incontrato Giulia nel 2019 (all'epoca|allora|a quel tempo|in quel periodo) non conoscevo nessuno a Milano", "ok": true, "why": "Understandable, but for meeting someone for the first time Italians say *ho conosciuto*. *Incontrare* is more 'to run into'." }, { "match": "Conoscevo Giulia nel 2019 (all'epoca|allora|a quel tempo|in quel periodo) non conoscevo nessuno a Milano", "errorType": "wrong-tense", "why": "Meeting Giulia was a one-off event: *ho conosciuto*." }, { "contains": ["sapevo"], "errorType": "vocabulary", "why": "Knowing people is *conoscere*, not *sapere*." }, { "match": "Ho conosciuto Giulia nel 2019 (all'epoca|allora|a quel tempo|in quel periodo) non ho conosciuto nessuno a Milano", "errorType": "wrong-tense", "why": "Not knowing anyone was the situation at the time: *non conoscevo nessuno*." }], "explanation": "*Ho conosciuto* = met (event); *non conoscevo* = didn't know (state).", "en": "I met Giulia in 2019; at the time I didn't know anyone in Milan." },
+        { "id": "B2-PAST-01.e15", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "While I was waiting for the bus, I saw an accident.", "tokens": ["Mentre", "aspettavo", "l'autobus", "ho", "visto", "un", "incidente"], "answers": ["Mentre aspettavo l'autobus, ho visto un incidente", "Ho visto un incidente mentre aspettavo l'autobus"], "errorType": "word-order", "explanation": "*Mentre* + imperfetto (background), then the event in the passato prossimo." },
+        { "id": "B2-PAST-01.e16", "type": "speak", "difficulty": 3, "instruction": "Say it in Italian.", "prompt": "Tell a friend that as a child you lived in the countryside and walked to school every morning.", "answers": ["(Da bambino|Da bambina|Quando ero (bambino|bambina|piccolo|piccola)) (vivevo|abitavo) in campagna e ogni mattina andavo a scuola a piedi", "(Da bambino|Da bambina|Quando ero (bambino|bambina|piccolo|piccola)) (vivevo|abitavo) in campagna e andavo a scuola a piedi ogni mattina"], "focus": ["vivevo", "abitavo", "andavo"], "errorType": "wrong-tense", "traps": [{ "contains": ["vissuto", "abitato"], "errorType": "wrong-tense", "why": "Describing your childhood situation is background: *vivevo / abitavo*." }, { "contains": ["andato", "andata"], "errorType": "wrong-tense", "why": "*Ogni mattina* is a habit: *andavo*." }], "explanation": "Childhood descriptions and habits → imperfetto.", "en": "As a child I lived in the countryside and walked to school every morning." },
+        { "id": "B2-PAST-01.e17", "type": "choice", "difficulty": 5, "instruction": "Which sentence tells us the speaker actually took the exam?", "prompt": "Choose the sentence.", "options": ["Dovevo fare l'esame lunedì.", "Ho dovuto fare l'esame lunedì."], "answer": 1, "optionWhy": { "0": "*Dovevo* = I was supposed to: it doesn't say whether the exam happened (often it didn't)." }, "errorType": "wrong-tense", "explanation": "*Ho dovuto* = I had to, and did. *Dovevo* = I was supposed to.", "en": "I had to take the exam on Monday." }
+      ]
+    },
+    {
+      "id": "B2-PAST-02",
+      "title": "Trapassato prossimo",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": ["B2-PAST-01"],
+      "rule": "The trapassato prossimo (imperfetto of avere/essere + past participle: avevo finito, ero uscita) expresses an action that happened before another past action: 'had done'.",
+      "assessment": [
+        "Forms the trapassato prossimo with the right auxiliary and participle agreement",
+        "Uses it for an action completed before another past moment (già, mai, prima, la sera prima)",
+        "Uses it where English uses a simple past for an earlier event (I realised I left → avevo lasciato)",
+        "Shifts passato prossimo to trapassato in reported speech after a past verb"
+      ],
+      "lesson": {
+        "intro": "The trapassato prossimo is the Italian 'had done'. English often gets away with a simple past (*I realised I forgot my keys*), but Italian is stricter: if one past event comes before another, the earlier one usually goes back a step into the trapassato. It's also the tense behind everyday phrases like *Te l'avevo detto!*",
+        "rules": [
+          {
+            "title": "Form",
+            "text": "Imperfetto of **avere** or **essere** + past participle. The choice of auxiliary is the same as for the passato prossimo, and with *essere* the participle agrees with the subject.",
+            "table": {
+              "head": ["", "mangiare (avere)", "uscire (essere)"],
+              "rows": [
+                ["io", "avevo mangiato", "ero uscito/a"],
+                ["tu", "avevi mangiato", "eri uscito/a"],
+                ["lui/lei", "aveva mangiato", "era uscito/a"],
+                ["noi", "avevamo mangiato", "eravamo usciti/e"],
+                ["voi", "avevate mangiato", "eravate usciti/e"],
+                ["loro", "avevano mangiato", "erano usciti/e"]
+              ]
+            }
+          },
+          {
+            "title": "Before another past action",
+            "text": "Use it for the earlier of two past actions. Typical markers: *già, mai, appena, prima, la sera prima, l'anno prima*.",
+            "examples": [
+              { "it": "Quando sono arrivato al cinema, il film **era già cominciato**.", "en": "When I got to the cinema, the film had already started." },
+              { "it": "Non avevo fame perché **avevo mangiato** un panino.", "en": "I wasn't hungry because I'd eaten a sandwich." }
+            ]
+          },
+          {
+            "title": "Where English uses a simple past",
+            "text": "After verbs like *capire, accorgersi, scoprire, ricordarsi* in the past, an earlier event goes in the trapassato, even when English uses a simple past.",
+            "examples": [
+              { "it": "Ho capito che **avevo dimenticato** il passaporto.", "en": "I realised I'd forgotten (I forgot) my passport." },
+              { "it": "Te l'**avevo detto**!", "en": "I told you so!" }
+            ]
+          },
+          {
+            "title": "Reported speech",
+            "text": "When the reporting verb is in the past, a passato prossimo in the original words becomes trapassato.",
+            "examples": [
+              { "it": "«Ho perso il portafoglio.» → Giorgio ha detto che **aveva perso** il portafoglio.", "en": "Giorgio said he had lost his wallet." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Quando sono arrivato, il film è già cominciato.", "right": "Quando sono arrivato, il film era già cominciato.", "why": "The film started before you arrived: the earlier action goes in the trapassato." },
+          { "wrong": "Avevo andato a Parigi.", "right": "Ero andato a Parigi.", "why": "Same auxiliary as the passato prossimo: *andare* takes *essere*." },
+          { "wrong": "Maria era già uscito.", "right": "Maria era già uscita.", "why": "With *essere* the participle agrees with the subject." },
+          { "wrong": "Ho capito che ho dimenticato le chiavi.", "right": "Ho capito che avevo dimenticato le chiavi.", "why": "Forgetting came before realising: trapassato. The first version is heard in casual speech but is imprecise." }
+        ],
+        "tips": [
+          "Draw a timeline: if an action sits to the left of another past action, it's a trapassato candidate.",
+          "*Già* and *mai* with a past reference point are strong signals: *non ero mai stato…, era già partito…*"
+        ]
+      },
+      "exercises": [
+        { "id": "B2-PAST-02.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the trapassato prossimo.", "prompt": "Quando sono arrivato al cinema, il film ___ (cominciare) da dieci minuti.", "answers": ["era cominciato"], "focus": ["era", "cominciato"], "errorType": "wrong-tense", "traps": [{ "match": "è cominciato", "errorType": "wrong-tense", "why": "The film started before you arrived, so it goes one step back: *era cominciato*." }, { "match": "cominciava", "errorType": "wrong-tense", "why": "The start of the film is a completed earlier action: trapassato *era cominciato*." }, { "match": "aveva cominciato", "errorType": "auxiliary", "why": "When the subject is the thing that begins (*il film*), *cominciare* takes *essere*: *era cominciato*." }], "explanation": "Earlier past action → trapassato. *Il film è cominciato* → *era cominciato*.", "en": "When I got to the cinema, the film had started ten minutes earlier." },
+        { "id": "B2-PAST-02.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the trapassato prossimo.", "prompt": "Non avevo fame perché ___ (mangiare) un panino un'ora prima.", "answers": ["avevo mangiato"], "focus": ["avevo", "mangiato"], "errorType": "wrong-tense", "traps": [{ "match": "ho mangiato", "errorType": "wrong-tense", "why": "The sandwich came before the moment you weren't hungry (*un'ora prima*): *avevo mangiato*." }, { "match": "mangiavo", "errorType": "wrong-tense", "why": "Eating the sandwich is a completed, earlier action: *avevo mangiato*." }], "explanation": "*Un'ora prima* + past context → trapassato.", "en": "I wasn't hungry because I'd eaten a sandwich an hour before." },
+        { "id": "B2-PAST-02.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the trapassato prossimo.", "prompt": "Quando Laura è tornata a casa, i ragazzi ___ (uscire) da un pezzo.", "answers": ["erano usciti"], "focus": ["erano", "usciti"], "errorType": "wrong-tense", "traps": [{ "match": "(avevano usciti|avevano uscito)", "errorType": "auxiliary", "why": "*Uscire* takes *essere*: *erano usciti*." }, { "match": "sono usciti", "errorType": "wrong-tense", "why": "They had left before Laura got back: trapassato *erano usciti*." }, { "match": "erano uscito", "errorType": "agreement", "why": "With *essere* the participle agrees with *i ragazzi*: *usciti*." }], "explanation": "Earlier action, *essere* verb → *erano usciti*.", "en": "When Laura got home, the boys had left a while before." },
+        { "id": "B2-PAST-02.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the trapassato prossimo.", "prompt": "Marta mi ha raccontato che ___ (andare) a Parigi l'anno prima.", "answers": ["era andata"], "focus": ["era", "andata"], "errorType": "wrong-tense", "traps": [{ "match": "era andato", "errorType": "agreement", "why": "The subject is Marta: *era andata*." }, { "match": "(aveva andato|aveva andata)", "errorType": "auxiliary", "why": "*Andare* takes *essere*: *era andata*." }, { "match": "è andata", "errorType": "wrong-tense", "why": "*L'anno prima* and a past reporting verb push the trip one step back: *era andata*." }], "explanation": "Reported in the past + *l'anno prima* → trapassato; *essere* + agreement.", "en": "Marta told me she had gone to Paris the year before." },
+        { "id": "B2-PAST-02.e05", "type": "choice", "difficulty": 2, "instruction": "Choose the best form.", "prompt": "Ho riconosciuto subito quell'uomo perché ___ la sua foto sul giornale.", "options": ["ho visto", "avevo visto", "vedo", "vedrò"], "answer": 1, "optionWhy": { "0": "Seeing the photo came before recognising him: careful Italian uses the trapassato *avevo visto*.", "2": "The present doesn't fit a past story.", "3": "The future doesn't fit a past story." }, "errorType": "wrong-tense", "explanation": "The earlier of two past actions → trapassato.", "en": "I recognised that man straight away because I had seen his photo in the paper." },
+        { "id": "B2-PAST-02.e06", "type": "cloze", "difficulty": 3, "instruction": "Complete with the correct past tense.", "prompt": "Ho capito solo in treno che ___ (dimenticare) il passaporto a casa.", "answers": ["avevo dimenticato"], "focus": ["avevo", "dimenticato"], "errorType": "wrong-tense", "traps": [{ "match": "ho dimenticato", "errorType": "wrong-tense", "why": "English says 'I realised I forgot', but in Italian the forgetting came before the realising: *avevo dimenticato*." }, { "match": "dimenticavo", "errorType": "wrong-tense", "why": "It's a completed earlier action, not a background: *avevo dimenticato*." }], "explanation": "After *ho capito che*, an earlier event → trapassato.", "en": "I only realised on the train that I had forgotten my passport at home." },
+        { "id": "B2-PAST-02.e07", "type": "transform", "difficulty": 3, "instruction": "Combine into one sentence starting 'Quando è partito per Mosca, Paolo…', using the trapassato.", "prompt": "Prima Paolo ha studiato il russo. Poi è partito per Mosca.", "answers": ["Quando è partito per Mosca, Paolo aveva [già] studiato il russo"], "focus": ["aveva", "studiato"], "errorType": "wrong-tense", "traps": [{ "contains": ["ha"], "errorType": "wrong-tense", "why": "Studying came before leaving: *aveva studiato*." }, { "contains": ["era"], "errorType": "auxiliary", "why": "*Studiare* takes *avere*: *aveva studiato*." }], "explanation": "The earlier action (studying) → trapassato *aveva studiato*.", "en": "When he left for Moscow, Paolo had (already) studied Russian." },
+        { "id": "B2-PAST-02.e08", "type": "translate", "difficulty": 2, "instruction": "Translate into Italian (to a friend).", "prompt": "I told you so!", "answers": ["Te l'avevo detto", "Te l'avevo detto io", "Io te l'avevo detto"], "focus": ["avevo"], "errorType": "wrong-tense", "traps": [{ "match": "Te l'ho detto [io]", "ok": true, "why": "Also heard, but *Te l'avevo detto!* is the classic phrase: you said it before the thing happened." }, { "contains": ["così"], "errorType": "idiom", "why": "Don't translate 'so' literally: the idiom is *Te l'avevo detto!*" }], "explanation": "Idiomatic trapassato: the warning came before the outcome.", "en": "I told you so!" },
+        { "id": "B2-PAST-02.e09", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "When we got to the station, the train had already left.", "answers": ["Quando siamo (arrivati|arrivate) (alla|in) stazione, il treno era già partito"], "focus": ["era", "partito"], "errorType": "wrong-tense", "traps": [{ "contains": ["è"], "errorType": "wrong-tense", "why": "The train left before you arrived: *era già partito*." }, { "contains": ["aveva"], "errorType": "auxiliary", "why": "*Partire* takes *essere*: *era partito*." }, { "contains": ["abbiamo"], "errorType": "auxiliary", "why": "*Arrivare* takes *essere*: *siamo arrivati*." }], "explanation": "Main event in passato prossimo, earlier event in trapassato.", "en": "When we got to the station, the train had already left." },
+        { "id": "B2-PAST-02.e10", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "She realised that she had lost her keys.", "answers": ["(Si è accorta|Si è resa conto|Ha capito) che aveva perso le [sue] chiavi", "(Si è accorta|Si è resa conto|Ha capito) di aver[e] perso le [sue] chiavi"], "focus": ["aveva", "perso"], "errorType": "wrong-tense", "traps": [{ "match": "(Si è accorta|Si è resa conto|Ha capito) che ha perso le [sue] chiavi", "errorType": "wrong-tense", "why": "Losing came before realising: *aveva perso*." }, { "contains": ["realizzato"], "errorType": "false-friend", "why": "*Realizzare* mainly means 'to carry out'. 'To realise' is *accorgersi, rendersi conto, capire*." }], "explanation": "Earlier action → *aveva perso* (or *di aver perso*, same subject).", "en": "She realised that she had lost her keys." },
+        { "id": "B2-PAST-02.e11", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "I had never been to Venice before that trip.", "tokens": ["Non", "ero", "mai", "stato", "a", "Venezia", "prima", "di", "quel", "viaggio"], "answers": ["Non ero mai stato a Venezia prima di quel viaggio", "Prima di quel viaggio non ero mai stato a Venezia"], "errorType": "word-order", "explanation": "*Mai* goes between the auxiliary and the participle: *non ero mai stato*." },
+        { "id": "B2-PAST-02.e12", "type": "choice", "difficulty": 3, "instruction": "Which sentence is correct?", "prompt": "Choose the correct sentence.", "options": ["Lucia era già uscita quando ho chiamato.", "Lucia aveva già uscita quando ho chiamato.", "Lucia era già uscito quando ho chiamato."], "answer": 0, "optionWhy": { "1": "*Uscire* takes *essere*, not *avere*.", "2": "The participle must agree with Lucia: *uscita*." }, "errorType": "auxiliary", "explanation": "*Essere* + agreement: *era uscita*.", "en": "Lucia had already gone out when I called." },
+        { "id": "B2-PAST-02.e13", "type": "cloze", "difficulty": 3, "instruction": "Complete with the correct past tense.", "prompt": "Ero stanchissimo perché la notte prima non ___ (dormire) quasi per niente.", "answers": ["avevo dormito"], "focus": ["avevo", "dormito"], "errorType": "wrong-tense", "traps": [{ "match": "ho dormito", "errorType": "wrong-tense", "why": "*La notte prima* is before the past moment of being tired: *avevo dormito*." }, { "match": "dormivo", "errorType": "wrong-tense", "why": "It's a completed earlier night, not a background: *avevo dormito*." }], "explanation": "*La notte prima* (the night before) → trapassato.", "en": "I was exhausted because the night before I had hardly slept at all." },
+        { "id": "B2-PAST-02.e14", "type": "cloze", "difficulty": 5, "instruction": "Complete with the correct past tense.", "prompt": "Le lettere che mio nonno ___ (scrivere) dal fronte sono state ritrovate solo nel 1990.", "answers": ["aveva scritto"], "focus": ["aveva", "scritto"], "errorType": "wrong-tense", "traps": [{ "match": "aveva scritte", "ok": true, "why": "Agreement with the relative *che* is possible in older or very formal Italian; today *aveva scritto* is the norm." }, { "match": "ha scritto", "errorType": "wrong-tense", "why": "He wrote the letters long before they were found: *aveva scritto*." }, { "match": "scriveva", "errorType": "wrong-tense", "why": "These are specific completed letters, earlier than the finding: *aveva scritto*." }], "explanation": "Writing came before the finding (*sono state ritrovate*) → trapassato.", "en": "The letters my grandfather had written from the front were only found in 1990." },
+        { "id": "B2-PAST-02.e15", "type": "speak", "difficulty": 3, "instruction": "Say it in Italian.", "prompt": "Explain that you weren't hungry because you had already eaten.", "answers": ["Non avevo fame (perché|dato che|visto che) avevo già mangiato", "Non avevo fame, avevo già mangiato"], "focus": ["avevo"], "errorType": "wrong-tense", "traps": [{ "contains": ["ho"], "errorType": "wrong-tense", "why": "The eating came before the moment you weren't hungry: *avevo già mangiato*." }, { "contains": ["ero"], "errorType": "vocabulary", "why": "Hunger uses *avere*: *avevo fame*, not *ero affamato* in everyday speech." }], "explanation": "State in the imperfetto, earlier action in the trapassato.", "en": "I wasn't hungry because I had already eaten." },
+        { "id": "B2-PAST-02.e16", "type": "transform", "difficulty": 5, "instruction": "Report what Giorgio said, starting 'Giorgio ha detto che…'.", "prompt": "Giorgio: «Ho perso il portafoglio.»", "answers": ["Giorgio ha detto che aveva perso il [suo] portafoglio"], "focus": ["aveva"], "errorType": "reported-speech", "traps": [{ "match": "Giorgio ha detto che ha perso il [suo] portafoglio", "errorType": "tense-sequence", "why": "After a past reporting verb, the passato prossimo moves back to the trapassato: *aveva perso*." }, { "match": "Giorgio ha detto che avevo perso il [suo] portafoglio", "errorType": "reported-speech", "why": "Change the person too: *ho perso* (io) becomes *aveva perso* (lui)." }], "explanation": "Reported speech after a past verb: passato prossimo → trapassato.", "en": "Giorgio said he had lost his wallet." }
+      ]
+    },
+    {
+      "id": "C1-PAST-03",
+      "title": "Passato remoto: forms and use",
+      "cefr": "C1",
+      "skill": "grammar",
+      "prereqs": ["B2-PAST-01"],
+      "rule": "The passato remoto narrates completed events in a past felt as cut off from the present: history, literature, fairy tales and formal writing. Many common verbs are irregular in the io, lui/lei and loro forms (ebbi, ebbe, ebbero).",
+      "assessment": [
+        "Recognises passato remoto forms in written texts and gives their infinitive",
+        "Produces regular forms, with the final accent on the lui/lei form (parlò, dormì)",
+        "Produces the key irregular forms (fu, ebbe, fece, disse, vide, venne, nacque, prese, volle)",
+        "Combines passato remoto (events) with imperfetto (background) in a narrative",
+        "Knows when the passato prossimo is the more natural choice in conversation"
+      ],
+      "lesson": {
+        "intro": "You'll meet the passato remoto in every novel, history book and fairy tale, so at C1 you must read it effortlessly and write it in formal narrative. In speech it's regional: common in Tuscany and the South, rare in the North, where the passato prossimo covers everything. Like the passato prossimo, it narrates events; the imperfetto still provides the background.",
+        "rules": [
+          {
+            "title": "When to use it",
+            "text": "Completed events in a past seen as remote or detached from the present: history (*Colombo arrivò in America nel 1492*), literature and fairy tales (*Il principe salì sul cavallo*), formal biographies. In everyday conversation about your own life, use the passato prossimo, especially in northern and central Italy.",
+            "examples": [
+              { "it": "Dante **nacque** a Firenze nel 1265.", "en": "Dante was born in Florence in 1265." },
+              { "it": "Il cielo **era** grigio quando il re **lasciò** il castello.", "en": "The sky was grey when the king left the castle." }
+            ]
+          },
+          {
+            "title": "Regular forms",
+            "text": "Note the accent on the lui/lei form of -are and -ire verbs. -ere verbs have two sets of forms (*credei / credetti*), both correct.",
+            "table": {
+              "head": ["", "parlare", "credere", "dormire"],
+              "rows": [
+                ["io", "parlai", "credei / credetti", "dormii"],
+                ["tu", "parlasti", "credesti", "dormisti"],
+                ["lui/lei", "parlò", "credé / credette", "dormì"],
+                ["noi", "parlammo", "credemmo", "dormimmo"],
+                ["voi", "parlaste", "credeste", "dormiste"],
+                ["loro", "parlarono", "crederono / credettero", "dormirono"]
+              ]
+            }
+          },
+          {
+            "title": "Irregular verbs: the 1-3-6 pattern",
+            "text": "Most irregular verbs are irregular only in **io, lui/lei and loro** (persons 1, 3 and 6). The other forms come from the infinitive: *avere* → ebbi, **avesti**, ebbe, **avemmo**, **aveste**, ebbero. Learn the io form and you can build the rest: *ebbi → ebbe → ebbero*.",
+            "table": {
+              "head": ["Infinitive", "io", "lui/lei", "loro", "tu (regular)"],
+              "rows": [
+                ["avere", "ebbi", "ebbe", "ebbero", "avesti"],
+                ["fare", "feci", "fece", "fecero", "facesti"],
+                ["dire", "dissi", "disse", "dissero", "dicesti"],
+                ["vedere", "vidi", "vide", "videro", "vedesti"],
+                ["venire", "venni", "venne", "vennero", "venisti"],
+                ["volere", "volli", "volle", "vollero", "volesti"],
+                ["sapere", "seppi", "seppe", "seppero", "sapesti"],
+                ["prendere", "presi", "prese", "presero", "prendesti"],
+                ["nascere", "nacqui", "nacque", "nacquero", "nascesti"],
+                ["scegliere", "scelsi", "scelse", "scelsero", "scegliesti"],
+                ["rimanere", "rimasi", "rimase", "rimasero", "rimanesti"],
+                ["conoscere", "conobbi", "conobbe", "conobbero", "conoscesti"]
+              ]
+            }
+          },
+          {
+            "title": "Fully irregular: essere, dare, stare",
+            "table": {
+              "head": ["", "essere", "dare", "stare"],
+              "rows": [
+                ["io", "fui", "diedi / detti", "stetti"],
+                ["tu", "fosti", "desti", "stesti"],
+                ["lui/lei", "fu", "diede / dette", "stette"],
+                ["noi", "fummo", "demmo", "stemmo"],
+                ["voi", "foste", "deste", "steste"],
+                ["loro", "furono", "diedero / dettero", "stettero"]
+              ]
+            }
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Il re parlo al popolo.", "right": "Il re parlò al popolo.", "why": "The lui/lei form of -are verbs is stressed on the last syllable and needs the accent: *parlò*. *Parlo* is the present." },
+          { "wrong": "Dante nascé a Firenze.", "right": "Dante nacque a Firenze.", "why": "*Nascere* is irregular: *nacqui, nacque, nacquero*." },
+          { "wrong": "I soldati facerono un lungo viaggio.", "right": "I soldati fecero un lungo viaggio.", "why": "Irregular loro form: *fecero*, built on *feci*." },
+          { "wrong": "Tu diedesti la risposta.", "right": "Tu desti la risposta.", "why": "The tu form is regular, from the infinitive: *desti*." },
+          { "wrong": "Ieri andai al cinema. (in Milan)", "right": "Ieri sono andato al cinema.", "why": "Grammatically correct, but in northern and central everyday speech it sounds odd: use the passato prossimo for recent, personal events." }
+        ],
+        "tips": [
+          "For reading: strip the ending and look for the stem. *Vollero* → voll- → *volere*; *nacque* → *nascere*; *seppe* → *sapere*.",
+          "Learn irregular verbs as triplets: *presi, prese, presero*; *dissi, disse, dissero*.",
+          "Background still goes in the imperfetto: *C'era una volta un re che aveva tre figlie. Un giorno la più giovane partì…*"
+        ]
+      },
+      "exercises": [
+        { "id": "C1-PAST-03.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the passato remoto.", "prompt": "Cristoforo Colombo ___ (arrivare) in America nel 1492.", "answers": ["arrivò"], "focus": ["arrivò"], "errorType": "verb-form", "traps": [{ "match": "è arrivato", "errorType": "wrong-tense", "why": "Fine in conversation, but this task asks for the passato remoto, the usual tense for history: *arrivò*." }, { "match": "arrivava", "errorType": "wrong-tense", "why": "The arrival is a completed event, not a background: *arrivò*." }], "explanation": "Regular -are verb, lui/lei: *-ò* with an accent → **arrivò**.", "en": "Christopher Columbus reached America in 1492." },
+        { "id": "C1-PAST-03.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the passato remoto.", "prompt": "Dante ___ (nascere) a Firenze nel 1265.", "answers": ["nacque"], "focus": ["nacque"], "errorType": "verb-form", "traps": [{ "match": "(nascé|nascette|nascì)", "errorType": "verb-form", "why": "*Nascere* is irregular: *nacqui, nacque, nacquero*." }, { "match": "è nato", "errorType": "wrong-tense", "why": "Correct Italian, but the task asks for the passato remoto: *nacque*." }], "explanation": "Irregular: *nascere* → **nacque**.", "en": "Dante was born in Florence in 1265." },
+        { "id": "C1-PAST-03.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the passato remoto.", "prompt": "I soldati ___ (fare) un lungo viaggio a piedi.", "answers": ["fecero"], "focus": ["fecero"], "errorType": "verb-form", "traps": [{ "match": "(facerono|fecerono|facettero)", "errorType": "verb-form", "why": "Irregular loro form built on *feci*: *fecero*." }], "explanation": "*Fare*: feci, facesti, fece, facemmo, faceste, **fecero**.", "en": "The soldiers made a long journey on foot." },
+        { "id": "C1-PAST-03.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the passato remoto.", "prompt": "Quando lo vide, la regina ___ (dire) solo: «Finalmente.»", "answers": ["disse"], "focus": ["disse"], "errorType": "verb-form", "traps": [{ "match": "(dicé|dicette|dicì|dissé)", "errorType": "verb-form", "why": "*Dire* is irregular: *dissi, disse, dissero*." }], "explanation": "*Dire* → dissi, dicesti, **disse**…", "en": "When she saw him, the queen said only: 'At last.'" },
+        { "id": "C1-PAST-03.e05", "type": "choice", "difficulty": 2, "instruction": "Which infinitive does this form come from?", "prompt": "*seppe*", "options": ["sapere", "scegliere", "seppellire", "essere"], "answer": 0, "optionWhy": { "1": "*Scegliere* → *scelse*.", "2": "*Seppellire* is regular: *seppellì*.", "3": "*Essere* → *fu*." }, "errorType": "verb-form", "explanation": "*Sapere*: seppi, sapesti, **seppe**, seppero.", "en": "he/she knew, found out" },
+        { "id": "C1-PAST-03.e06", "type": "choice", "difficulty": 3, "instruction": "Which infinitive does this form come from?", "prompt": "*vollero*", "options": ["volare", "volere", "volgere", "valere"], "answer": 1, "optionWhy": { "0": "*Volare* is regular: *volarono*.", "2": "*Volgere* → *volsero*.", "3": "*Valere* → *valsero*." }, "errorType": "verb-form", "explanation": "*Volere*: volli, volle, **vollero**.", "en": "they wanted, insisted" },
+        { "id": "C1-PAST-03.e07", "type": "cloze", "difficulty": 3, "instruction": "Complete with the passato remoto.", "prompt": "Appena entrati nel castello, i due fratelli ___ (vedere) una luce strana.", "answers": ["videro"], "focus": ["videro"], "errorType": "verb-form", "traps": [{ "match": "(vederono|vedettero|viderono)", "errorType": "verb-form", "why": "*Vedere*: vidi, vide, **videro**." }, { "match": "vedevano", "errorType": "wrong-tense", "why": "Seeing the light is a sudden event in the story: passato remoto *videro*." }], "explanation": "Irregular 1-3-6: vidi, vide, **videro**.", "en": "As soon as they entered the castle, the two brothers saw a strange light." },
+        { "id": "C1-PAST-03.e08", "type": "cloze", "difficulty": 3, "instruction": "Complete with the passato remoto.", "prompt": "Napoleone ___ (essere) esiliato all'isola d'Elba nel 1814.", "answers": ["fu"], "focus": ["fu"], "errorType": "verb-form", "traps": [{ "match": "era", "errorType": "wrong-tense", "why": "Being exiled in 1814 is a dated event: *fu esiliato*. *Era esiliato* would describe his situation (he was in exile)." }, { "match": "è stato", "errorType": "wrong-tense", "why": "Correct in conversation, but the task asks for the passato remoto: *fu*." }], "explanation": "*Essere*: fui, fosti, **fu**. Passive: *fu esiliato*.", "en": "Napoleon was exiled to the island of Elba in 1814." },
+        { "id": "C1-PAST-03.e09", "type": "cloze", "difficulty": 3, "instruction": "Complete with the passato remoto.", "prompt": "Nel 1946 gli italiani ___ (scegliere) la repubblica con un referendum.", "answers": ["scelsero"], "focus": ["scelsero"], "errorType": "verb-form", "traps": [{ "match": "(sceglierono|scegliettero|sceglierano)", "errorType": "verb-form", "why": "*Scegliere*: scelsi, scelse, **scelsero**." }], "explanation": "Irregular: scelsi → **scelsero**.", "en": "In 1946 Italians chose the republic in a referendum." },
+        { "id": "C1-PAST-03.e10", "type": "cloze", "difficulty": 4, "instruction": "Complete with the passato remoto.", "prompt": "Nel 1861 Vittorio Emanuele II ___ (diventare) il primo re d'Italia.", "answers": ["diventò"], "focus": ["diventò"], "errorType": "verb-form", "traps": [{ "match": "divenne", "ok": true, "why": "*Divenne* is the passato remoto of the synonym *divenire*, very common in historical writing. From *diventare* the form is *diventò*." }, { "match": "diventava", "errorType": "wrong-tense", "why": "Becoming king is a single dated event: *diventò*." }], "explanation": "*Diventare* is a regular -are verb: **diventò**.", "en": "In 1861 Victor Emmanuel II became the first king of Italy." },
+        { "id": "C1-PAST-03.e11", "type": "transform", "difficulty": 3, "instruction": "Rewrite in the passato remoto.", "prompt": "Garibaldi è partito da Quarto e ha raggiunto la Sicilia.", "answers": ["Garibaldi partì da Quarto e raggiunse la Sicilia"], "focus": ["partì", "raggiunse"], "errorType": "verb-form", "traps": [{ "contains": ["raggiungé", "raggiunsò", "raggiungette", "raggiungè"], "errorType": "verb-form", "why": "*Raggiungere* is irregular: *raggiunsi, raggiunse, raggiunsero*." }, { "contains": ["partii"], "errorType": "verb-form", "why": "*Partii* is the io form. Lui/lei: *partì*." }], "explanation": "*Partire* → **partì** (regular -ire); *raggiungere* → **raggiunse**.", "en": "Garibaldi set out from Quarto and reached Sicily." },
+        { "id": "C1-PAST-03.e12", "type": "transform", "difficulty": 4, "instruction": "Rewrite in the passato prossimo, as you'd say it in conversation.", "prompt": "Quando ricevette la lettera, Anna pianse.", "answers": ["Quando ha ricevuto la lettera, Anna ha pianto"], "focus": ["ricevuto", "pianto"], "errorType": "verb-form", "traps": [{ "contains": ["piangeva"], "errorType": "wrong-tense", "why": "*Pianse* is a passato remoto (event), so it becomes passato prossimo *ha pianto*, not imperfetto." }, { "contains": ["piangiuto", "pianguto"], "errorType": "verb-form", "why": "The participle of *piangere* is *pianto*." }, { "contains": ["riceveva"], "errorType": "wrong-tense", "why": "*Ricevette* is an event: *ha ricevuto*." }], "explanation": "*Ricevette* ← ricevere; *pianse* ← piangere (pianto).", "en": "When she received the letter, Anna cried." },
+        { "id": "C1-PAST-03.e13", "type": "choice", "difficulty": 4, "instruction": "Choose the correct form.", "prompt": "Il cielo ___ grigio quando il re lasciò il castello.", "options": ["fu", "era", "è stato"], "answer": 1, "optionWhy": { "0": "*Fu* would present the grey sky as an event. It's the background to the king's departure: imperfetto *era*.", "2": "Mixing in the passato prossimo breaks the literary narrative." }, "errorType": "wrong-tense", "explanation": "In a passato remoto narrative, descriptions and backgrounds stay in the imperfetto.", "en": "The sky was grey when the king left the castle." },
+        { "id": "C1-PAST-03.e14", "type": "cloze", "difficulty": 4, "instruction": "Complete with the passato remoto.", "prompt": "Gli ospiti ___ (rimanere) a cena fino a tardi.", "answers": ["rimasero"], "focus": ["rimasero"], "errorType": "verb-form", "traps": [{ "match": "(rimanerono|rimanettero|rimasettero)", "errorType": "verb-form", "why": "*Rimanere*: rimasi, rimase, **rimasero**." }], "explanation": "Irregular 1-3-6: rimasi, rimase, rimasero.", "en": "The guests stayed for dinner until late." },
+        { "id": "C1-PAST-03.e15", "type": "cloze", "difficulty": 5, "instruction": "Complete with the passato remoto.", "prompt": "Tu ___ (dare) la risposta giusta, ma nessuno ti credette.", "answers": ["desti"], "focus": ["desti"], "errorType": "verb-form", "traps": [{ "match": "(diedesti|dettesti|diedi)", "errorType": "verb-form", "why": "Only io, lui/lei and loro are irregular. The tu form is regular: *desti*." }], "explanation": "*Dare*: diedi, **desti**, diede, demmo, deste, diedero.", "en": "You gave the right answer, but nobody believed you." },
+        { "id": "C1-PAST-03.e16", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian using the passato remoto, as in a fairy tale.", "prompt": "The king opened the door and saw the dragon.", "answers": ["Il re aprì la porta e vide il drago"], "focus": ["aprì", "vide"], "errorType": "verb-form", "traps": [{ "contains": ["ha", "aperto"], "errorType": "wrong-tense", "why": "Fairy tales are told in the passato remoto: *aprì… vide*." }, { "contains": ["vedé", "vedette", "vedì"], "errorType": "verb-form", "why": "*Vedere* → *vide*." }], "explanation": "*Aprire* → aprì (regular); *vedere* → vide (irregular).", "en": "The king opened the door and saw the dragon." },
+        { "id": "C1-PAST-03.e17", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "Then the old man took his stick and left the house.", "tokens": ["Allora", "il", "vecchio", "prese", "il", "bastone", "e", "uscì", "di", "casa"], "answers": ["Allora il vecchio prese il bastone e uscì di casa"], "errorType": "word-order", "explanation": "*Prese* (prendere) and *uscì* (uscire): two events in sequence." },
+        { "id": "C1-PAST-03.e18", "type": "choice", "difficulty": 5, "instruction": "A friend in Milan tells you about her weekend. Which is most natural in her speech?", "prompt": "Yesterday I went to the cinema.", "options": ["Ieri andai al cinema.", "Ieri sono andata al cinema.", "Ieri andavo al cinema."], "answer": 1, "optionWhy": { "0": "Grammatical, and you might hear it in Sicily or Tuscany, but in the North the passato remoto sounds literary in everyday talk.", "2": "The imperfetto would describe a habit or background, not a single outing." }, "errorType": "register", "explanation": "In everyday conversation (especially in the North) recent personal events take the passato prossimo.", "en": "Yesterday I went to the cinema." }
+      ]
+    },
+    {
+      "id": "C1-PAST-04",
+      "title": "Trapassato remoto (recognition)",
+      "cefr": "C1",
+      "skill": "grammar",
+      "prereqs": ["C1-PAST-03"],
+      "rule": "The trapassato remoto (passato remoto of avere/essere + participle: ebbe finito, fu uscita) appears only in time clauses after dopo che, (non) appena, quando, come, when the main verb is in the passato remoto. It marks the action just before.",
+      "assessment": [
+        "Recognises the trapassato remoto in literary texts and understands its 'had just' meaning",
+        "Knows it appears only after dopo che, (non) appena, quando, come, with a passato remoto main clause",
+        "Chooses the right auxiliary and makes the participle agree",
+        "Replaces it with modern equivalents (dopo + past infinitive, absolute participle)"
+      ],
+      "lesson": {
+        "intro": "The trapassato remoto is mostly a tense to **recognise**: you'll see it in novels and formal histories, almost never in speech. It's very restricted: it appears only in a time clause (*dopo che, appena, quando, come*) and the main verb is always in the passato remoto. Think 'no sooner had he…'. Spotting it lets you read classic narrative with confidence.",
+        "rules": [
+          {
+            "title": "Form",
+            "text": "Passato remoto of **avere** or **essere** + past participle. Same auxiliary as the passato prossimo; *essere* verbs agree with the subject.",
+            "table": {
+              "head": ["", "finire (avere)", "partire (essere)"],
+              "rows": [
+                ["io", "ebbi finito", "fui partito/a"],
+                ["tu", "avesti finito", "fosti partito/a"],
+                ["lui/lei", "ebbe finito", "fu partito/a"],
+                ["noi", "avemmo finito", "fummo partiti/e"],
+                ["voi", "aveste finito", "foste partiti/e"],
+                ["loro", "ebbero finito", "furono partiti/e"]
+              ]
+            }
+          },
+          {
+            "title": "Only in time clauses, with a passato remoto",
+            "text": "Triggers: *dopo che, (non) appena, quando, come* (= as soon as), *una volta che*. The main clause must be in the passato remoto. It never stands alone in a main clause.",
+            "examples": [
+              { "it": "Dopo che **ebbe finito** di cenare, il conte si ritirò.", "en": "When he had finished dinner, the count withdrew." },
+              { "it": "Non appena **fu uscita**, il drago si svegliò.", "en": "No sooner had she gone out than the dragon woke up." },
+              { "it": "Come **ebbe varcato** la soglia, sentì un grido.", "en": "As soon as he had crossed the threshold, he heard a scream." }
+            ]
+          },
+          {
+            "title": "Modern equivalents",
+            "text": "Today writers often prefer a lighter form: **dopo + past infinitive** (*Dopo aver cenato, si ritirò*), the **absolute participle** (*Finita la cena, si ritirò*), or simply two passati remoti (*Appena uscì, il drago si svegliò*).",
+            "examples": [
+              { "it": "Dopo che ebbe letto la lettera, la bruciò. → **Dopo aver letto** la lettera, la bruciò.", "en": "After reading the letter, she burned it." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Ebbe finito il lavoro alle sei.", "right": "Aveva finito il lavoro alle sei.", "why": "The trapassato remoto can't stand in a main clause. Use the trapassato prossimo." },
+          { "wrong": "Dopo che ebbe mangiato, è uscito.", "right": "Dopo aver mangiato, è uscito.", "why": "It only pairs with a passato remoto main verb. With a passato prossimo, use dopo + past infinitive (or *dopo che aveva mangiato*)." },
+          { "wrong": "Appena ebbe partito, …", "right": "Appena fu partito, …", "why": "*Partire* takes *essere*, so its auxiliary is *fu*." },
+          { "wrong": "Appena la regina fu arrivato, …", "right": "Appena la regina fu arrivata, …", "why": "With *essere* the participle agrees with the subject." }
+        ],
+        "tips": [
+          "When you see *ebbe / fu / furono* + participle after *appena* or *dopo che*, read it as 'had just…'.",
+          "In your own writing, *dopo aver(e) + participle* is almost always the safer, more modern choice."
+        ]
+      },
+      "exercises": [
+        { "id": "C1-PAST-04.e01", "type": "choice", "difficulty": 1, "instruction": "Which tense is it?", "prompt": "Dopo che **ebbe finito** il discorso, il sindaco lasciò la sala.", "options": ["trapassato remoto", "trapassato prossimo", "passato remoto", "futuro anteriore"], "answer": 0, "optionWhy": { "1": "The trapassato prossimo uses the imperfetto of the auxiliary: *aveva finito*.", "2": "The passato remoto is a single word: *finì*.", "3": "The futuro anteriore uses the future of the auxiliary: *avrà finito*." }, "errorType": "wrong-tense", "explanation": "Passato remoto of *avere* (*ebbe*) + participle = trapassato remoto.", "en": "When he had finished the speech, the mayor left the hall." },
+        { "id": "C1-PAST-04.e02", "type": "cloze", "difficulty": 2, "instruction": "Complete with the trapassato remoto.", "prompt": "Dopo che ___ (finire) di cenare, il conte si ritirò nella biblioteca.", "answers": ["ebbe finito"], "focus": ["ebbe", "finito"], "errorType": "verb-form", "traps": [{ "match": "aveva finito", "ok": true, "why": "Modern writers often use the trapassato prossimo here, and it's acceptable. The classic literary form is *ebbe finito*." }, { "match": "fu finito", "errorType": "auxiliary", "why": "*Finire (di cenare)* takes *avere*: *ebbe finito*." }], "explanation": "Time clause + passato remoto main verb (*si ritirò*) → **ebbe finito**.", "en": "When he had finished dinner, the count withdrew to the library." },
+        { "id": "C1-PAST-04.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the trapassato remoto.", "prompt": "Appena il sole ___ (tramontare), i lupi uscirono dal bosco.", "answers": ["fu tramontato"], "focus": ["fu", "tramontato"], "errorType": "verb-form", "traps": [{ "match": "ebbe tramontato", "errorType": "auxiliary", "why": "*Tramontare* takes *essere* (*il sole è tramontato*), so the auxiliary is *fu*." }, { "match": "tramontò", "ok": true, "why": "Also natural: modern narrative often uses two passati remoti. The task asks for the trapassato remoto: *fu tramontato*." }], "explanation": "*Essere* verb → *fu tramontato*.", "en": "As soon as the sun had set, the wolves came out of the wood." },
+        { "id": "C1-PAST-04.e04", "type": "cloze", "difficulty": 3, "instruction": "Complete with the trapassato remoto.", "prompt": "Non appena la principessa ___ (uscire), il drago si svegliò.", "answers": ["fu uscita"], "focus": ["fu", "uscita"], "errorType": "verb-form", "traps": [{ "match": "fu uscito", "errorType": "agreement", "why": "With *essere* the participle agrees with *la principessa*: *uscita*." }, { "match": "(ebbe uscito|ebbe uscita)", "errorType": "auxiliary", "why": "*Uscire* takes *essere*: *fu uscita*." }], "explanation": "*Essere* + agreement: **fu uscita**.", "en": "No sooner had the princess gone out than the dragon woke up." },
+        { "id": "C1-PAST-04.e05", "type": "cloze", "difficulty": 3, "instruction": "Complete with the trapassato remoto.", "prompt": "Quando gli ospiti ___ (partire), la contessa chiuse il portone.", "answers": ["furono partiti"], "focus": ["furono", "partiti"], "errorType": "verb-form", "traps": [{ "match": "(furono partito|furono partite)", "errorType": "agreement", "why": "*Gli ospiti* is masculine plural: *partiti*." }, { "match": "(ebbero partiti|ebbero partito)", "errorType": "auxiliary", "why": "*Partire* takes *essere*: *furono partiti*." }, { "match": "partirono", "ok": true, "why": "Also natural in modern narrative. The task asks for the trapassato remoto: *furono partiti*." }], "explanation": "Loro form of *essere* (*furono*) + agreeing participle.", "en": "When the guests had left, the countess closed the main door." },
+        { "id": "C1-PAST-04.e06", "type": "transform", "difficulty": 3, "instruction": "Rewrite in modern style with dopo + past infinitive.", "prompt": "Dopo che ebbe letto la lettera, la bruciò.", "answers": ["Dopo aver[e] letto la lettera, la bruciò"], "focus": ["aver", "avere", "letto"], "errorType": "implicit-form", "traps": [{ "match": "Letta la lettera[,] la bruciò", "ok": true, "why": "An absolute participle works too: *Letta la lettera, la bruciò*. The task asked for *dopo* + past infinitive." }, { "contains": ["leggere"], "errorType": "implicit-form", "why": "*Dopo* needs the past infinitive: *dopo aver letto*." }, { "contains": ["essere"], "errorType": "auxiliary", "why": "*Leggere* takes *avere*: *dopo aver letto*." }], "explanation": "*Dopo che ebbe letto* = *dopo aver letto* (same subject).", "en": "After reading the letter, she burned it." },
+        { "id": "C1-PAST-04.e07", "type": "transform", "difficulty": 4, "instruction": "Rewrite with an absolute participle (no conjugated verb in the time clause).", "prompt": "Appena furono arrivati in città, i soldati cercarono un alloggio.", "answers": ["Arrivati in città, i soldati cercarono un alloggio", "(Appena|Una volta) arrivati in città, i soldati cercarono un alloggio"], "focus": ["arrivati"], "errorType": "implicit-form", "traps": [{ "contains": ["arrivato", "arrivate"], "errorType": "agreement", "why": "The participle agrees with *i soldati*: *arrivati*." }, { "contains": ["furono", "erano"], "errorType": "implicit-form", "why": "The absolute participle drops the auxiliary: *Arrivati in città, …*" }], "explanation": "Absolute participle: *(Appena) arrivati in città, …*", "en": "As soon as they had reached the town, the soldiers looked for lodgings." },
+        { "id": "C1-PAST-04.e08", "type": "choice", "difficulty": 3, "instruction": "Which sentence is correct?", "prompt": "Choose the correct sentence.", "options": ["Dopo che ebbe mangiato, uscì.", "Dopo che ebbe mangiato, è uscito.", "Ebbe mangiato e uscì."], "answer": 0, "optionWhy": { "1": "The trapassato remoto pairs only with a passato remoto main verb (*uscì*), not a passato prossimo.", "2": "The trapassato remoto can't be used in a main clause." }, "errorType": "wrong-tense", "explanation": "Time clause (*dopo che*) + trapassato remoto, main clause in the passato remoto.", "en": "After he had eaten, he went out." },
+        { "id": "C1-PAST-04.e09", "type": "choice", "difficulty": 4, "instruction": "What does the sentence mean?", "prompt": "Come ebbe varcato la soglia, sentì un grido.", "options": ["As soon as he had crossed the threshold, he heard a scream.", "Since he had crossed the threshold, he heard a scream.", "The way he crossed the threshold, he heard a scream."], "answer": 0, "optionWhy": { "1": "*Come* + trapassato remoto is temporal, not causal.", "2": "*Come* here doesn't mean 'how': with a trapassato remoto it means 'as soon as'." }, "errorType": "comprehension", "explanation": "Literary *come* + trapassato remoto = as soon as.", "en": "As soon as he had crossed the threshold, he heard a scream." },
+        { "id": "C1-PAST-04.e10", "type": "cloze", "difficulty": 4, "instruction": "Complete with the trapassato remoto.", "prompt": "Dopo che tutti ___ (sedersi), il presidente prese la parola.", "answers": ["si furono seduti"], "focus": ["si", "furono", "seduti"], "errorType": "verb-form", "traps": [{ "match": "si ebbero seduti", "errorType": "auxiliary", "why": "Reflexive verbs take *essere*: *si furono seduti*." }, { "match": "furono seduti", "errorType": "pronoun", "why": "Don't drop the reflexive pronoun: *si furono seduti*." }, { "match": "si erano seduti", "ok": true, "why": "Acceptable in modern prose. The literary trapassato remoto is *si furono seduti*." }], "explanation": "Reflexive → *essere*; *tutti* → *seduti*.", "en": "When everyone had sat down, the president began to speak." },
+        { "id": "C1-PAST-04.e11", "type": "translate", "difficulty": 5, "instruction": "Translate into literary Italian, using the trapassato remoto and the passato remoto.", "prompt": "As soon as she had finished the letter, she went out.", "answers": ["(Appena|Non appena|Come) ebbe finito [di scrivere] la lettera, uscì"], "focus": ["ebbe", "uscì"], "errorType": "wrong-tense", "traps": [{ "contains": ["aveva"], "errorType": "wrong-tense", "why": "In a literary time clause before a passato remoto, use *ebbe finito*." }, { "contains": ["è"], "errorType": "wrong-tense", "why": "The main verb should be in the passato remoto: *uscì*." }, { "contains": ["fu"], "errorType": "auxiliary", "why": "*Finire (la lettera)* takes *avere*: *ebbe finito*." }], "explanation": "*Appena* + trapassato remoto, main clause in passato remoto.", "en": "As soon as she had finished the letter, she went out." },
+        { "id": "C1-PAST-04.e12", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "As soon as he had closed the door, he realised his mistake.", "tokens": ["Appena", "ebbe", "chiuso", "la", "porta", "si", "accorse", "dell'errore"], "answers": ["Appena ebbe chiuso la porta, si accorse dell'errore", "Si accorse dell'errore appena ebbe chiuso la porta"], "errorType": "word-order", "explanation": "Time clause with the trapassato remoto, main clause with the passato remoto (*si accorse*, from *accorgersi*)." },
+        { "id": "C1-PAST-04.e13", "type": "choice", "difficulty": 2, "instruction": "Choose the auxiliary.", "prompt": "Appena ___ arrivati, ci sedemmo a tavola.", "options": ["fummo", "avemmo", "siamo"], "answer": 0, "optionWhy": { "1": "*Arrivare* takes *essere*, not *avere*.", "2": "*Siamo arrivati* is passato prossimo: it doesn't match the passato remoto *ci sedemmo*." }, "errorType": "auxiliary", "explanation": "*Arrivare* → *essere*; noi form of the passato remoto: **fummo arrivati**.", "en": "As soon as we had arrived, we sat down at the table." },
+        { "id": "C1-PAST-04.e14", "type": "choice", "difficulty": 5, "instruction": "Which sentence uses the trapassato remoto INCORRECTLY?", "prompt": "Find the incorrect sentence.", "options": ["Quando ebbe finito, se ne andò.", "Dopo che furono usciti, la casa rimase silenziosa.", "Ieri ebbi finito i compiti alle sei.", "Non appena ebbe parlato, si pentì."], "answer": 2, "optionWhy": { "0": "Correct: time clause + passato remoto main verb.", "1": "Correct: time clause + passato remoto main verb.", "3": "Correct: time clause + passato remoto main verb." }, "errorType": "wrong-tense", "explanation": "The trapassato remoto can't be used in a main clause (and *ieri* calls for the passato prossimo: *Ieri ho finito i compiti alle sei*).", "en": "Spot the misuse." },
+        { "id": "C1-PAST-04.e15", "type": "cloze", "difficulty": 5, "instruction": "Complete with the trapassato remoto.", "prompt": "Dopo che il messaggero ___ (dire) tutto, il re lo congedò.", "answers": ["ebbe detto"], "focus": ["ebbe", "detto"], "errorType": "verb-form", "traps": [{ "match": "fu detto", "errorType": "auxiliary", "why": "*Dire* is transitive and takes *avere*: *ebbe detto*. *Fu detto* would be passive ('was said')." }, { "match": "aveva detto", "ok": true, "why": "Acceptable in modern prose; the classic literary form is *ebbe detto*." }, { "match": "(ebbe dicuto|ebbe dito)", "errorType": "verb-form", "why": "The participle of *dire* is *detto*." }], "explanation": "*Avere* + *detto* → **ebbe detto**.", "en": "When the messenger had told him everything, the king dismissed him." }
+      ]
+    },
+    {
+      "id": "B2-FUT-01",
+      "title": "Futuro anteriore and the future of supposition",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": ["B2-PAST-01"],
+      "rule": "The futuro anteriore (avrò finito, sarò partita) marks an action completed before another future moment. Both futures also express guesses: the simple future about the present (Sarà stanco = he's probably tired), the futuro anteriore about the past (Avrà perso il treno = he must have missed the train).",
+      "assessment": [
+        "Forms the futuro anteriore with the right auxiliary and agreement",
+        "Uses it for an action completed before a future moment (quando, appena, dopo che, entro, per allora)",
+        "Expresses a guess about the present with the simple future (Sarà a casa, Saranno le tre)",
+        "Expresses a guess about the past with the futuro anteriore (Avrà perso il treno)",
+        "Understands concessive uses (Sarà anche bravo, ma…)"
+      ],
+      "lesson": {
+        "intro": "Italians use the future constantly for things that aren't in the future at all: *Dov'è Marco? Sarà in ufficio* ('he's probably at the office'). English uses *must, probably, I suppose*; Italian just uses the future. The futuro anteriore does the same for the past (*Avrà perso il treno* = 'he must have missed the train'), and it also says 'will have done'.",
+        "rules": [
+          {
+            "title": "Form",
+            "text": "Future of **avere** or **essere** + past participle. Same auxiliary and agreement rules as the passato prossimo.",
+            "table": {
+              "head": ["", "finire (avere)", "partire (essere)"],
+              "rows": [
+                ["io", "avrò finito", "sarò partito/a"],
+                ["tu", "avrai finito", "sarai partito/a"],
+                ["lui/lei", "avrà finito", "sarà partito/a"],
+                ["noi", "avremo finito", "saremo partiti/e"],
+                ["voi", "avrete finito", "sarete partiti/e"],
+                ["loro", "avranno finito", "saranno partiti/e"]
+              ]
+            }
+          },
+          {
+            "title": "'Will have done': before a future moment",
+            "text": "After *quando, appena, dopo che, una volta che* and with *entro, per allora*, Italian marks the earlier future action with the futuro anteriore where English uses a present perfect (*when I've finished*). In relaxed speech the present is also common (*Ti chiamo quando finisco*).",
+            "examples": [
+              { "it": "Ti chiamerò quando **avrò finito**.", "en": "I'll call you when I've finished." },
+              { "it": "Entro giugno **saremo partiti**.", "en": "By June we'll have left." }
+            ]
+          },
+          {
+            "title": "Guessing about the present: simple future",
+            "text": "The simple future = 'probably, must be, I suppose' about now. Very common with *essere, avere, stare* and the time.",
+            "examples": [
+              { "it": "Non risponde: **sarà** in riunione.", "en": "He's not answering: he must be in a meeting." },
+              { "it": "Che ore sono? – Mah, **saranno** le cinque.", "en": "What time is it? – Oh, it must be about five." }
+            ]
+          },
+          {
+            "title": "Guessing about the past: futuro anteriore",
+            "text": "The futuro anteriore = 'must have, probably did'. It also appears in wondering questions: *Dove avrò messo le chiavi?* ('Where can I have put my keys?').",
+            "examples": [
+              { "it": "Marco non è ancora arrivato: **avrà perso** il treno.", "en": "Marco isn't here yet: he must have missed the train." },
+              { "it": "Le ragazze **saranno uscite** tardi dall'ufficio.", "en": "The girls probably left the office late." }
+            ]
+          },
+          {
+            "title": "Concessive future",
+            "text": "*Sarà anche…, ma…* = 'he may well be…, but…'. It concedes a point before objecting.",
+            "examples": [
+              { "it": "**Sarà** anche simpatico, ma non mi fido.", "en": "He may well be nice, but I don't trust him." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Marco è in ritardo: perderà il treno.", "right": "Marco è in ritardo: avrà perso il treno.", "why": "The simple future here means 'he will miss it'. To guess about something already past, use the futuro anteriore." },
+          { "wrong": "Che ore sono? – Sarà le tre.", "right": "Saranno le tre.", "why": "The verb agrees with *le tre* (plural), as in *sono le tre*." },
+          { "wrong": "Domani a quest'ora avremo partito.", "right": "Domani a quest'ora saremo partiti.", "why": "*Partire* takes *essere* in every compound tense." },
+          { "wrong": "Ti chiamerò quando ho finito.", "right": "Ti chiamerò quando avrò finito.", "why": "You'll hear the mix in speech, but in careful Italian an action completed before another future action takes the futuro anteriore." }
+        ],
+        "tips": [
+          "Whenever you'd say 'must be' or 'probably' in English, try the future: *Sarà vero*, *Avrà avuto i suoi motivi*.",
+          "*Chissà* + future is a natural way to wonder: *Chissà dove sarà andato*."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-FUT-01.e01", "type": "cloze", "difficulty": 1, "instruction": "Make a guess about what happened, using the future.", "prompt": "Marco non è ancora arrivato: ___ (perdere) il treno.", "answers": ["avrà perso"], "focus": ["avrà", "perso"], "errorType": "wrong-tense", "traps": [{ "match": "perderà", "errorType": "wrong-tense", "why": "*Perderà* = he will miss it (in the future). For a guess about the past, use the futuro anteriore: *avrà perso*." }, { "match": "ha perso", "errorType": "wrong-tense", "why": "*Ha perso* states it as fact. To make a guess, use *avrà perso*." }], "explanation": "Supposition about the past → futuro anteriore.", "en": "Marco isn't here yet: he must have missed the train." },
+        { "id": "B2-FUT-01.e02", "type": "cloze", "difficulty": 1, "instruction": "Make a guess about the present, using the future.", "prompt": "Non ha mangiato niente tutto il giorno: ___ (avere) fame.", "answers": ["avrà"], "focus": ["avrà"], "errorType": "wrong-tense", "traps": [{ "match": "avrà avuto", "errorType": "wrong-tense", "why": "The guess is about now ('he must be hungry'): simple future *avrà*." }, { "match": "ha", "errorType": "wrong-tense", "why": "*Ha fame* states a fact. The task is to guess: *avrà fame*." }], "explanation": "Supposition about the present → simple future.", "en": "He hasn't eaten anything all day: he must be hungry." },
+        { "id": "B2-FUT-01.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the futuro anteriore.", "prompt": "Domani alle dieci saremo in viaggio: per allora ___ (partire) da almeno tre ore.", "answers": ["saremo partiti", "saremo partite"], "focus": ["saremo"], "errorType": "verb-form", "traps": [{ "match": "(avremo partito|avremo partiti)", "errorType": "auxiliary", "why": "*Partire* takes *essere*: *saremo partiti*." }, { "match": "partiremo", "errorType": "wrong-tense", "why": "*Da tre ore* by a future moment means the leaving is already done: *saremo partiti*." }], "explanation": "Completed before a future moment → futuro anteriore with *essere*.", "en": "Tomorrow at ten we'll be travelling: by then we'll have left at least three hours earlier." },
+        { "id": "B2-FUT-01.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the futuro anteriore.", "prompt": "Quando ___ (leggere) il libro, dimmi cosa ne pensi.", "answers": ["avrai letto"], "focus": ["avrai", "letto"], "errorType": "verb-form", "traps": [{ "match": "hai letto", "ok": true, "why": "Very common in speech. The futuro anteriore *avrai letto* is the more careful form." }, { "match": "leggi", "errorType": "wrong-tense", "why": "*Quando leggi* suggests 'while you read'. You want 'once you've read': *avrai letto*." }, { "match": "(avrai leggiuto|avrai leggito)", "errorType": "verb-form", "why": "The participle of *leggere* is *letto*." }], "explanation": "Reading comes before telling me → *avrai letto*.", "en": "When you've read the book, tell me what you think." },
+        { "id": "B2-FUT-01.e05", "type": "choice", "difficulty": 2, "instruction": "Choose the correct form.", "prompt": "«Che ore sono?» «Non ho l'orologio, ma ___ le cinque.»", "options": ["saranno", "sarà", "sono state", "avranno"], "answer": 0, "optionWhy": { "1": "The verb agrees with *le cinque* (plural): *saranno*.", "2": "That's a past tense: it doesn't make a guess about now.", "3": "Times use *essere*: *sono le cinque* → *saranno le cinque*." }, "errorType": "verb-form", "explanation": "A guess about the time: *saranno le cinque* ('it must be about five').", "en": "'What time is it?' 'I haven't got my watch, but it must be about five.'" },
+        { "id": "B2-FUT-01.e06", "type": "choice", "difficulty": 3, "instruction": "What does the sentence mean?", "prompt": "Dove avrò messo gli occhiali?", "options": ["Where can I have put my glasses?", "Where will I put my glasses?", "Where had I put my glasses?"], "answer": 0, "optionWhy": { "1": "That would be the simple future *Dove metterò…?*", "2": "That would be the trapassato *Dove avevo messo…?*, and it's not a wondering question." }, "errorType": "comprehension", "explanation": "Futuro anteriore in a question = wondering about the past.", "en": "Where can I have put my glasses?" },
+        { "id": "B2-FUT-01.e07", "type": "cloze", "difficulty": 3, "instruction": "Make a guess about what happened, using the future.", "prompt": "Giulia ha gli occhi rossi: ___ (piangere).", "answers": ["avrà pianto"], "focus": ["avrà", "pianto"], "errorType": "wrong-tense", "traps": [{ "match": "piangerà", "errorType": "wrong-tense", "why": "*Piangerà* = she will cry. Red eyes are evidence of the past: *avrà pianto*." }, { "match": "sarà pianta", "errorType": "auxiliary", "why": "*Piangere* takes *avere*: *avrà pianto*." }, { "match": "(avrà pianguto|avrà piangiuto)", "errorType": "verb-form", "why": "The participle of *piangere* is *pianto*." }], "explanation": "Guess about the past → futuro anteriore.", "en": "Giulia's eyes are red: she must have been crying." },
+        { "id": "B2-FUT-01.e08", "type": "cloze", "difficulty": 3, "instruction": "Make a guess about what happened, using the future.", "prompt": "Le ragazze non sono ancora qui: ___ (uscire) tardi dall'ufficio.", "answers": ["saranno uscite"], "focus": ["saranno", "uscite"], "errorType": "wrong-tense", "traps": [{ "match": "saranno usciti", "errorType": "agreement", "why": "*Le ragazze* is feminine plural: *uscite*." }, { "match": "(avranno uscito|avranno uscite)", "errorType": "auxiliary", "why": "*Uscire* takes *essere*: *saranno uscite*." }, { "match": "usciranno", "errorType": "wrong-tense", "why": "*Usciranno* = they will leave. For a guess about the past: *saranno uscite*." }], "explanation": "Futuro anteriore with *essere* + agreement.", "en": "The girls aren't here yet: they probably left the office late." },
+        { "id": "B2-FUT-01.e09", "type": "transform", "difficulty": 3, "instruction": "Rewrite as a supposition using the future (drop 'probabilmente').", "prompt": "Probabilmente Luca è a casa.", "answers": ["Luca sarà a casa"], "focus": ["sarà"], "errorType": "wrong-tense", "traps": [{ "match": "Probabilmente Luca sarà a casa", "ok": true, "why": "Correct, but the future already carries the idea of 'probably', so *probabilmente* is redundant." }, { "contains": ["è"], "errorType": "wrong-tense", "why": "Use the future to express the guess: *sarà*." }], "explanation": "Present supposition → simple future: *sarà*.", "en": "Luca's probably at home." },
+        { "id": "B2-FUT-01.e10", "type": "transform", "difficulty": 4, "instruction": "Rewrite as a supposition using the future (drop 'forse').", "prompt": "Forse hanno dimenticato l'appuntamento.", "answers": ["Avranno dimenticato l'appuntamento"], "focus": ["avranno", "dimenticato"], "errorType": "wrong-tense", "traps": [{ "contains": ["dimenticheranno"], "errorType": "wrong-tense", "why": "*Dimenticheranno* = they will forget. A guess about the past needs the futuro anteriore: *avranno dimenticato*." }, { "contains": ["hanno"], "errorType": "wrong-tense", "why": "Turn the auxiliary into the future: *avranno dimenticato*." }], "explanation": "Past supposition → futuro anteriore.", "en": "They must have forgotten the appointment." },
+        { "id": "B2-FUT-01.e11", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "He must have missed the bus.", "answers": ["[Lui] avrà perso l'autobus", "[Lui] deve aver[e] perso l'autobus"], "focus": ["avrà", "perso"], "errorType": "wrong-tense", "traps": [{ "contains": ["dovuto"], "errorType": "wrong-tense", "why": "*Ha dovuto perdere* = he was forced to miss it. For 'must have' as a guess: *avrà perso* or *deve aver perso*." }, { "contains": ["mancato"], "errorType": "false-friend", "why": "To miss a bus/train is *perdere*, not *mancare*." }, { "contains": ["perderà"], "errorType": "wrong-tense", "why": "*Perderà* = he will miss. For the past: *avrà perso*." }], "explanation": "'Must have' (guess) → futuro anteriore, or *dovere* + past infinitive.", "en": "He must have missed the bus." },
+        { "id": "B2-FUT-01.e12", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian, using the futuro anteriore.", "prompt": "I'll call you as soon as I've arrived.", "answers": ["Ti chiamerò (appena|non appena) sarò (arrivato|arrivata)"], "focus": ["sarò"], "errorType": "wrong-tense", "traps": [{ "match": "Ti (chiamo|chiamerò) (appena|non appena|quando) (arrivo|arriverò|sono arrivato|sono arrivata)", "ok": true, "why": "Natural in everyday Italian. The task asked for the futuro anteriore: *appena sarò arrivato/a*." }, { "contains": ["avrò"], "errorType": "auxiliary", "why": "*Arrivare* takes *essere*: *sarò arrivato/a*." }], "explanation": "Arriving comes before calling → *sarò arrivato/a*.", "en": "I'll call you as soon as I've arrived." },
+        { "id": "B2-FUT-01.e13", "type": "choice", "difficulty": 4, "instruction": "What does the future express here?", "prompt": "Sarà anche simpatico, ma non mi fido di lui.", "options": ["A concession: he may well be nice, but…", "A prediction: he'll be nice in the future, but…", "A condition: if he's nice…"], "answer": 0, "optionWhy": { "1": "*Sarà anche…, ma* isn't about the future: it concedes a point about now.", "2": "There's no condition here; that would need *se*." }, "errorType": "comprehension", "explanation": "Concessive future: *sarà anche… ma* = he may well be… but.", "en": "He may well be nice, but I don't trust him." },
+        { "id": "B2-FUT-01.e14", "type": "order", "difficulty": 3, "instruction": "Put the words in order.", "prompt": "By now they'll have already arrived in Rome.", "tokens": ["A", "quest'ora", "saranno", "già", "arrivati", "a", "Roma"], "answers": ["A quest'ora saranno già arrivati a Roma", "Saranno già arrivati a Roma a quest'ora"], "errorType": "word-order", "explanation": "*Già* goes between the auxiliary and the participle." },
+        { "id": "B2-FUT-01.e15", "type": "speak", "difficulty": 3, "instruction": "Answer in one short sentence, using the future to make a guess.", "prompt": "Your friend wonders why Paolo isn't picking up the phone. Suggest that he's probably asleep.", "answers": ["[Paolo] (starà dormendo|dormirà)", "(Starà dormendo|Dormirà)[,] Paolo"], "focus": ["starà", "dormirà"], "errorType": "wrong-tense", "traps": [{ "contains": ["dorme", "sta"], "errorType": "wrong-tense", "why": "To make a guess, put the verb in the future: *dormirà* or *starà dormendo*." }], "explanation": "Present supposition → simple future (*dormirà*, or the progressive *starà dormendo*).", "en": "He's probably asleep." },
+        { "id": "B2-FUT-01.e16", "type": "cloze", "difficulty": 5, "instruction": "Make a guess about the past, using the future.", "prompt": "Hai visto la macchina nuova di Luca? Chissà quanto gli ___ (costare)!", "answers": ["sarà costata"], "focus": ["sarà", "costata"], "errorType": "wrong-tense", "traps": [{ "match": "avrà costato", "errorType": "auxiliary", "why": "*Costare* takes *essere*: *è costata* → *sarà costata*." }, { "match": "sarà costato", "errorType": "agreement", "why": "The subject is *la macchina*: *costata*." }, { "match": "costerà", "errorType": "wrong-tense", "why": "He has already bought it, so you're wondering about the past: *sarà costata*." }], "explanation": "*Chissà* + futuro anteriore; *costare* takes *essere* and agrees with *la macchina*.", "en": "Have you seen Luca's new car? Who knows how much it cost him!" },
+        { "id": "B2-FUT-01.e17", "type": "cloze", "difficulty": 5, "instruction": "Complete with the futuro anteriore.", "prompt": "Dopo che ___ (tu, sistemare) la camera, potrai uscire.", "answers": ["avrai sistemato"], "focus": ["avrai", "sistemato"], "errorType": "wrong-tense", "traps": [{ "match": "hai sistemato", "ok": true, "why": "Common in speech. The careful form, matching *potrai*, is *avrai sistemato*." }, { "match": "sistemerai", "errorType": "wrong-tense", "why": "*Dopo che* marks something completed first: *avrai sistemato*." }, { "match": "sarai sistemato", "errorType": "auxiliary", "why": "*Sistemare la camera* is transitive: *avere*." }], "explanation": "Action completed before another future action → futuro anteriore.", "en": "Once you've tidied your room, you can go out." }
+      ]
+    }
+  ]
+}

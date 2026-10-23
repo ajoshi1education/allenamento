@@ -32,6 +32,7 @@ async function main() {
   const root = document.getElementById("app");
   const [db, content] = await Promise.all([openDb(), loadContent(fetchJson)]);
   const store = createStore(db, content, now);
+  await store.registerImports();
   window.__app = { store, content, db };       // handy for debugging in the console
   speech.setSilent(await store.setting("silent", false));
   const theme = await store.setting("theme", "auto");

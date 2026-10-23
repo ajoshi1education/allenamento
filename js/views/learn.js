@@ -20,7 +20,10 @@ async function overview(view, { store, content }) {
   const openBy = c => errors.filter(e => e.conceptId === c && e.status !== "mastered").length;
   const now = store.clock();
   const dueChecks = progress.filter(p => (p.status === "skipped" || p.status === "known" || p.status === "mastered") && p.card && p.card.due <= now);
-  const next = content.units.flatMap(u => u.conceptIds).find(c => !P.get(c) || P.get(c).status === "new" || P.get(c).status === "learning");
+  // Order and group by the curriculum map; concepts not built yet show as planned.
+  const strands = content.curriculum ? content.curriculum.strands.map(s => ({ id: s.id, title: s.title, cefr: s.concepts.some(c => c.cefr === "C1") && s.concepts.some(c => c.cefr === "B2") ? "B2–C1" : s.concepts[0].cefr, conceptIds: s.concepts.map(c => c.id), planned: new Map(s.concepts.map(c => [c.id, c])) }))
+    : content.units;
+  const next = strands.flatMap(u => u.conceptIds).filter(c => content.concepts.has(c)).find(c => !P.get(c) || P.get(c).status === "new" || P.get(c).status === "learning");
 
   view.replaceChildren(h(`<section class="page">
     <div class="page-head"><div><h1>Learn</h1><p class="muted">B2 → C1 curriculum. Every concept links to its lesson, exercises, games and assessment criteria.</p></div>
@@ -28,10 +31,11 @@ async function overview(view, { store, content }) {
       <a class="btn ghost" href="#/learn/coverage">Curriculum coverage</a></div></div>
     ${dueChecks.length ? `<div class="card notice">🔁 ${dueChecks.length} concept${dueChecks.length > 1 ? "s" : ""} you skipped or mastered ${dueChecks.length > 1 ? "are" : "is"} due a quick check-up:
       ${dueChecks.map(p => `<a href="#/learn/${esc(p.conceptId)}/practice">${esc(content.concepts.get(p.conceptId)?.title || p.conceptId)}</a>`).join(", ")}</div>` : ""}
-    ${content.units.map(u => `<div class="unit">
+    ${strands.map(u => `<div class="unit">
       <h2><span class="unit-id">${esc(u.id)}</span> ${esc(u.title)} <span class="chip">${esc(u.cefr)}</span></h2>
       <div class="concept-grid">${u.conceptIds.map(cid => {
         const c = content.concepts.get(cid), p = P.get(cid) || { status: "new", seen: 0, correct: 0 };
+        if (!c) return `<div class="concept card planned"><div class="c-top"><span class="cid">${esc(cid)}</span><span class="chip">Planned</span></div><h3>${esc(u.planned?.get(cid)?.title || cid)}</h3><div class="c-meta"><span>Content not written yet</span></div></div>`;
         const [label, cls] = STATUS[p.status] || STATUS.new;
         const acc = p.seen ? Math.round(100 * p.correct / p.seen) : null;
         const open = openBy(cid);
@@ -85,18 +89,20 @@ async function lesson(view, ctx, id) {
 async function practice(view, ctx, id) {
   const { store, content } = ctx;
   const c = content.concepts.get(id);
+  const before = await store.getProgress(id);
+  const isCheckup = ["skipped", "known", "mastered"].includes(before.status) && before.card && before.card.due <= store.clock();
   const all = content.poolFor(id).filter(i => i.type !== "free");
   // Lesson items first; game items only top up a short pool (so games stay fresh).
   const lessonItems = all.filter(i => i.source === "lesson");
   const pool = lessonItems.length >= 10 ? lessonItems : all;
   // Progressive: easy → hard, random within each level, at most 12.
-  const picked = shuffle(pool).slice(0, 12);
+  const picked = shuffle(isCheckup ? pool.filter(i => (i.difficulty || 2) >= 3).concat(pool) : pool).filter((x, i, a) => a.indexOf(x) === i).slice(0, isCheckup ? 6 : 12);
   const items = picked.sort((a, b) => (a.difficulty || 1) - (b.difficulty || 1));
   let i = 0, right = 0;
   const wrongs = [];
   view.replaceChildren(h(`<section class="page narrow">
     <a class="back" href="#/learn/${esc(id)}">← ${esc(c.title)}</a>
-    <div class="session-bar"><span class="sb-title">Practice</span><div class="progress-dots">${items.map(() => "<span></span>").join("")}</div><span class="sb-count"></span></div>
+    <div class="session-bar"><span class="sb-title">${isCheckup ? "Check-up" : "Practice"}</span><div class="progress-dots">${items.map(() => "<span></span>").join("")}</div><span class="sb-count"></span></div>
     <div id="ex"></div></section>`));
   const host = view.querySelector("#ex"), dots = view.querySelectorAll(".progress-dots span"), count = view.querySelector(".sb-count");
   for (const item of items) {
@@ -109,8 +115,14 @@ async function practice(view, ctx, id) {
   }
   const pct = Math.round(100 * right / items.length);
   const games = content.gamesByConcept.get(id) || [];
+  let checkMsg = "";
+  if (isCheckup) {
+    const p = await store.checkup(id, right / items.length);
+    checkMsg = p.lastCheckup.passed ? `<p class="ok-t">Check-up passed. Next check-up in about ${p.card.interval} days.</p>` : `<p class="bad-t">Check-up not passed. This concept is back in active learning.</p>`;
+  }
   host.replaceChildren(h(`<div class="card summary">
-    <div class="big-score ${pct >= 80 ? "ok" : pct >= 50 ? "warn" : "bad"}">${pct}%</div>
+    ${isCheckup ? `<h3>Check-up</h3>` : ""}
+    <div class="big-score ${pct >= 80 ? "ok" : pct >= 50 ? "warn" : "bad"}">${pct}%</div>${checkMsg}
     <p>${right} of ${items.length} correct.${wrongs.length ? ` ${wrongs.length} mistake${wrongs.length > 1 ? "s" : ""} saved to your Error Bank, where they'll come back in new sentences.` : " Nothing new for the Error Bank."}</p>
     <div class="row-actions">
       ${games.length ? `<a class="btn primary" href="#/play/${esc(games[0])}">Play: ${esc(content.games.get(games[0]).title)}</a>` : ""}

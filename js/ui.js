@@ -80,6 +80,24 @@ export function runExercise(host, item, opts) {
     let getResponse = () => "";
     let lastInput = null;
 
+    // Questions from a reading/listening game carry their passage with them when retested elsewhere.
+    const passage = item.passage || (item.passageOf && content.games.get(item.passageOf)?.passage);
+    if (passage && !opts.hidePassage) {
+      const long = passage.it.length > 600;
+      body.append(h(`<details class="passage card-inset" ${long ? "" : "open"}><summary>${esc(passage.title || "Testo")}</summary><div class="it">${passage.it.split(/\n+/).map(p => `<p>${md(p)}</p>`).join("")}</div></details>`));
+    }
+    if (item.audio) {
+      const listenable = speech.canSpeak();
+      const audioEl = h(`<div class="audio-box">
+        ${listenable ? `<button type="button" class="btn small" data-play="1">▶ Ascolta</button><button type="button" class="btn small ghost" data-play="0.75">🐢 Più lento</button>
+          <details class="transcript"><summary class="small muted">Show transcript</summary><p class="it">${md(item.audio)}</p></details>`
+        : `<p class="small muted">${esc(item.silentPrompt || "Silent mode: read the transcript instead of listening.")}</p><p class="it transcript-open">${md(item.audio)}</p>`}
+      </div>`);
+      body.append(audioEl);
+      audioEl.addEventListener("click", e => { const b = e.target.closest("[data-play]"); if (b) speech.say(item.audio, { rate: Number(b.dataset.play) * 0.95 }); });
+      if (listenable && opts.autoplay !== false) setTimeout(() => speech.say(item.audio), 300);
+    }
+
     if (item.type === "cloze") {
       const [before, after = ""] = item.prompt.split(/_{3,}/);
       body.append(h(`<p class="ex-prompt it">${md(before)}<input class="gap" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="answer">${md(after)}</p>`));
@@ -110,9 +128,26 @@ export function runExercise(host, item, opts) {
       getResponse = () => [...line.querySelectorAll(".token")].map(b => b.textContent).join(" ");
     } else {
       const isIt = item.type === "transform";
-      body.append(h(`<p class="ex-prompt ${isIt ? "it" : ""}">${md(item.prompt)}</p>`));
-      const ta = h(`<textarea class="answer it" rows="2" autocomplete="off" autocapitalize="sentences" spellcheck="false" placeholder="Scrivi in italiano…"></textarea>`);
+      const isFree = item.type === "free";
+      body.append(h(`<p class="ex-prompt ${isIt ? "it" : ""} ${isFree ? "free-prompt" : ""}">${md(item.prompt)}</p>`));
+      if (isFree && item.rubric) body.append(h(`<details class="rubric-peek"><summary class="small">What I'll check (${item.rubric.length + 1} points)</summary><ul class="small">${item.rubric.map(r => `<li>${esc(r.label)}</li>`).join("")}<li>Length: ${item.minWords || 0}${item.maxWords ? "–" + item.maxWords : "+"} words</li></ul></details>`));
+      const ta = h(`<textarea class="answer it" rows="${isFree ? 8 : 2}" autocomplete="off" autocapitalize="sentences" spellcheck="false" placeholder="${item.type === "speak" ? "Parla (🎤) o scrivi la tua risposta…" : "Scrivi in italiano…"}"></textarea>`);
       body.append(ta);
+      if (isFree) {
+        const wc = h(`<div class="small muted word-count">0 words</div>`);
+        body.append(wc);
+        ta.addEventListener("input", () => { const n = ta.value.trim() ? ta.value.trim().split(/\s+/).length : 0; wc.textContent = `${n} words${item.minWords ? ` · aim ${item.minWords}${item.maxWords ? "–" + item.maxWords : "+"}` : ""}`; });
+      }
+      if (item.type === "speak" && speech.canListen()) {
+        const mic = h(`<button type="button" class="btn small mic">🎤 Speak</button>`);
+        body.append(mic);
+        mic.addEventListener("click", async () => {
+          mic.disabled = true; mic.textContent = "Listening…";
+          const t = await speech.listen();
+          mic.disabled = false; mic.textContent = "🎤 Speak";
+          if (t) { ta.value = t; ta.focus(); } else toast("Didn't catch that. Try again or type it.");
+        });
+      }
       getResponse = () => ta.value;
       lastInput = ta;
     }
@@ -130,6 +165,7 @@ export function runExercise(host, item, opts) {
     });
     el.addEventListener("keydown", e => {
       if (e.key !== "Enter" || e.shiftKey) return;
+      if (item.type === "free" && !el.classList.contains("done") && !(e.ctrlKey || e.metaKey)) return;  // newlines allowed; Ctrl+Enter submits
       e.preventDefault();
       if (el.classList.contains("done")) el.querySelector("[data-act=next]")?.click(); else check();
     });
@@ -156,7 +192,8 @@ export function runExercise(host, item, opts) {
       el.querySelector(".ex-actions").hidden = true;
       showFeedback(el.querySelector(".feedback"), item, resp, result, outcome, concept, opts);
       opts.onAnswered && opts.onAnswered(result, outcome);
-      el.querySelector("[data-act=next]").addEventListener("click", () => resolve({ result, outcome }));
+      speech.stop();
+      el.querySelector("[data-act=next]").addEventListener("click", () => resolve({ result, outcome, response: resp }));
       el.querySelector("[data-act=next]").focus();
     }
   });
@@ -185,6 +222,20 @@ function showFeedback(fb, item, resp, result, outcome, concept, opts) {
       ? `<span class="eb-chip ok">Right this time (${n}). It starts counting towards mastery tomorrow.</span>`
       : `<span class="eb-chip ok">Error Bank progress (${n}): ${p.days}/${p.needDays} days, ${p.newContextDays}/${p.needNew} new contexts</span>`);
   }
+  if (item.type === "free") {
+    const w = result.writing || { checks: [], words: 0 };
+    fb.innerHTML = `
+      <div class="verdict ${result.correct ? "ok" : "bad"}"><span class="v-icon">${result.correct ? "✓" : "✗"}</span> ${result.correct ? "Ottimo: every checkpoint met" : "Some checkpoints missed"}</div>
+      <ul class="checklist">${w.checks.map(c => `<li class="${c.ok ? "ok-t" : "bad-t"}">${c.ok ? "✓" : "✗"} ${esc(c.label)}${!c.ok && c.hint ? ` <span class="muted small">${md(c.hint)}</span>` : ""}</li>`).join("")}
+        <li class="${w.lengthOk ? "ok-t" : "bad-t"}">${w.lengthOk ? "✓" : "✗"} Length: ${w.words} words</li></ul>
+      <p class="small muted">The automatic check looks for the target structures and length. It can't judge everything, so compare your text with the model.</p>
+      ${item.model ? `<details class="fb-rule" open><summary>Model answer</summary><p class="it">${md(item.model)}</p></details>` : ""}
+      ${result.why ? `<p class="fb-why">${md(result.why)}</p>` : ""}
+      ${eb.length ? `<div class="eb-row">${eb.join("")}</div>` : ""}
+      <div class="fb-actions"><span class="grow"></span><button type="button" class="btn primary" data-act="next">Continue ↵</button></div>`;
+    fb.hidden = false;
+    return;
+  }
   fb.innerHTML = `
     <div class="verdict ${V[2]}"><span class="v-icon">${V[0]}</span> ${V[1]}</div>
     ${!result.correct || result.verdict !== "correct" ? `
@@ -197,10 +248,16 @@ function showFeedback(fb, item, resp, result, outcome, concept, opts) {
     ${item.en && item.type !== "translate" ? `<p class="muted small">${esc(item.en)}</p>` : ""}
     ${eb.length ? `<div class="eb-row">${eb.join("")}</div>` : ""}
     <div class="fb-actions">
-      ${speech.canSpeak() && !opts.silent ? `<button type="button" class="btn ghost small" data-say>🔊 Hear it</button>` : ""}
+      ${speech.canSpeak() ? `<button type="button" class="btn ghost small" data-say>🔊 Hear it</button>` : ""}
+      ${opts.store.saveVocab ? `<button type="button" class="btn ghost small" data-vocab>☆ Save to Vocab</button>` : ""}
       <span class="grow"></span>
       <button type="button" class="btn primary" data-act="next">Continue ↵</button>
     </div>`;
   fb.hidden = false;
   fb.querySelector("[data-say]")?.addEventListener("click", () => speech.say(speakText));
+  fb.querySelector("[data-vocab]")?.addEventListener("click", async ev => {
+    const en = item.en || (item.type === "translate" ? item.prompt : "");
+    await opts.store.saveVocab({ it: speakText, en, pos: "expr", def: result.why || (concept ? concept.title : ""), conceptIds: [item.conceptId], source: "lesson", examples: [] });
+    ev.target.textContent = "★ Saved"; ev.target.disabled = true;
+  });
 }

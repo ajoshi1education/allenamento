@@ -2,8 +2,10 @@
 // which logs it, updates skill and concept progress, and feeds the Error Bank.
 import { captureMistake, recordSuccess, relatedErrors, errorId } from "./core/errors.js";
 import { newCard, review, DAY } from "./core/srs.js";
+import { dedupe, detectGrammar, itemsFromImport } from "./core/importer.js";
 
-export const SKILLS = ["grammar", "vocabulary", "reading", "listening", "writing", "speaking", "interaction"];
+const VOCAB_ERRORS = ["vocabulary", "false-friend", "collocation", "idiom", "word-formation"];
+export const SKILLS =["grammar", "vocabulary", "reading", "listening", "writing", "speaking", "interaction"];
 
 export function createStore(db, content, clock) {
   const listeners = new Set();
@@ -56,6 +58,20 @@ export function createStore(db, content, clock) {
     emit("progress");
   });
 
+  // Periodic check-up of a concept you skipped, placed out of or mastered.
+  // Passing pushes the next check-up further away; failing puts it back into active learning.
+  const checkup = serial(async function checkup(conceptId, accuracy) {
+    const p = await getProgress(conceptId);
+    const now = clock();
+    const passed = accuracy >= 0.8;
+    if (passed) p.card = review(p.card || newCard(now), accuracy >= 0.95 ? 5 : 4, now);
+    else { p.status = "learning"; p.card = null; }
+    p.lastCheckup = { t: now, accuracy, passed };
+    await db.put("progress", p);
+    emit("progress");
+    return p;
+  });
+
   const recordAnswer = serial(async function recordAnswer({ item, response, result, source, mode = "practice", retestOf = null }) {
     const now = clock();
     const concept = content.concepts.get(item.conceptId);
@@ -102,15 +118,84 @@ export function createStore(db, content, clock) {
         if (u.status === "mastered" && e.status !== "mastered") out.mastered.push(u);
       }
     }
+    // Vocabulary-type mistakes also become flashcards, so the word itself gets spaced repetition.
+    if (out.captured && VOCAB_ERRORS.includes(out.captured.errorType) && !out.reopened && !item.noVocabCard) {
+      const it = item.type === "cloze" ? item.prompt.replace(/_{3,}/, result.expected).replace(/\s*\([^)]*\)/, "") : result.expected;
+      await saveVocabRaw({ it, en: item.en || (item.type === "translate" ? item.prompt : ""), pos: "expr", def: result.note || result.why || "", conceptIds: [item.conceptId], source: "error", errorId: out.captured.id });
+    }
     emit("answer");
     return out;
   });
 
+  const slug = s => String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 60);
+  async function saveVocabRaw(entry) {
+    const now = clock();
+    const id = entry.id || "u-" + slug(entry.it);
+    const old = await db.get("vocab", id);
+    const v = { ...(old || {}), ...entry, id, addedAt: old ? old.addedAt : now, updatedAt: now, card: old && old.card ? old.card : newCard(now) };
+    if (old && old.source && old.source !== entry.source) v.sources = [...new Set([...(old.sources || [old.source]), entry.source])];
+    await db.put("vocab", v);
+    return v;
+  }
+
+  // ---- Google Translate imports → vocab cards + generated exercises + "My phrases" games ----
+  const importRows = serial(async (rows, meta = {}) => {
+    const existing = new Set((await db.all("imports")).map(r => r.id));
+    const { rows: fresh, dupes } = dedupe(rows, existing);
+    const now = clock();
+    const batch = "b" + now;
+    for (const r of fresh) {
+      const grammar = r.it ? detectGrammar(r.it) : [];
+      await db.put("imports", { ...r, grammar, importedAt: now, batch, file: meta.file || "", format: meta.format || "" });
+      if (r.it && r.en) await saveVocabRaw({ id: "v-" + r.id, it: r.it, en: r.en, pos: r.it.includes(" ") ? "expr" : "noun", def: "From your Google Translate history", source: "import", conceptIds: grammar.map(g => g.conceptId), examples: [] });
+    }
+    await registerImports();
+    emit("imports");
+    return { added: fresh.length, dupes, incomplete: fresh.filter(r => r.incomplete).length };
+  });
+
+  async function registerImports() {
+    const rows = (await db.all("imports")).filter(r => r.it && !r.incomplete);
+    if (!content.concepts.has("VOCAB")) content.concepts.set("VOCAB", { id: "VOCAB", title: "Vocabulary review", skill: "vocabulary", cefr: "B2", rule: "Words and expressions from your vocabulary deck.", assessment: [], exercises: [] });
+    if (!content.concepts.has("MY-PHRASES")) {
+      content.concepts.set("MY-PHRASES", { id: "MY-PHRASES", title: "My translated phrases", skill: "vocabulary", cefr: "B2", rule: "Phrases from your own Google Translate history.", assessment: [], exercises: [] });
+    }
+    // drop previously registered import items, then rebuild
+    for (const [id, it] of content.items) if (it.source === "import") content.items.delete(id);
+    for (const [cid, list] of content.byConcept) content.byConcept.set(cid, list.filter(i => i.source !== "import"));
+    content.importItems = [];
+    for (const r of rows) for (const it of itemsFromImport(r, rows)) {
+      content.items.set(it.id, it);
+      if (!content.byConcept.has(it.conceptId)) content.byConcept.set(it.conceptId, []);
+      content.byConcept.get(it.conceptId).push(it);
+      content.importItems.push(it);
+    }
+    const games = [
+      { id: "G-MINE-01", type: "gauntlet", title: "My phrases: gauntlet", subtitle: "Timed challenge built from your own Google Translate history.", importOnly: true },
+      { id: "G-MINE-02", type: "duel", title: "My phrases: duel", subtitle: "Race a rival translating your own phrases.", importOnly: true, rival: { name: "Giulia", avatar: "👩‍🦰" } },
+      { id: "G-MINE-03", type: "builder", title: "My phrases: builder", subtitle: "Rebuild your saved phrases word by word.", importOnly: true }
+    ];
+    for (const g of games) {
+      if (content.importItems.length >= 4) { content.games.set(g.id, { ...g, conceptIds: ["MY-PHRASES"], difficulty: 2, minutes: 5 }); content.gamesByConcept.set("MY-PHRASES", games.map(x => x.id)); }
+      else content.games.delete(g.id);
+    }
+    return content.importItems.length;
+  }
+
   return {
     db, content, clock, serial,
+    importRows, registerImports,
+    imports: () => db.all("imports"),
+    updateImport: serial(async (id, patch) => {
+      const r = await db.get("imports", id); if (!r) return null;
+      Object.assign(r, patch);
+      if (r.it && r.en) { r.incomplete = false; r.grammar = detectGrammar(r.it); await saveVocabRaw({ id: "v-" + r.id, it: r.it, en: r.en, pos: "expr", def: "From your Google Translate history", source: "import", conceptIds: r.grammar.map(g => g.conceptId), examples: [] }); }
+      await db.put("imports", r); await registerImports(); emit("imports"); return r;
+    }),
+    deleteImport: serial(async id => { await db.del("imports", id); await registerImports(); emit("imports"); }),
     on: fn => (listeners.add(fn), () => listeners.delete(fn)),
     emit,
-    recordAnswer, getProgress, setKnown,
+    recordAnswer, getProgress, setKnown, checkup,
     allProgress: () => db.all("progress"),
     skills: () => db.all("skills"),
     errors: () => db.all("errors"),
@@ -125,6 +210,20 @@ export function createStore(db, content, clock) {
     }),
     deleteError: serial(async id => { await db.del("errors", id); emit("errors"); }),
     attempts: () => db.all("attempts"),
+    saveVocab: serial(async entry => { const v = await saveVocabRaw(entry); emit("vocab"); return v; }),
+    vocab: () => db.all("vocab"),
+    reviewVocab: serial(async (id, grade) => {
+      const v = await db.get("vocab", id);
+      if (!v) return null;
+      v.card = review(v.card || newCard(clock()), grade, clock());
+      v.reviews = (v.reviews || 0) + 1;
+      if (grade < 3) v.lapses = (v.lapses || 0) + 1;
+      await db.put("vocab", v);
+      emit("vocab");
+      return v;
+    }),
+    updateVocab: serial(async (id, patch) => { const v = await db.get("vocab", id); if (!v) return null; Object.assign(v, patch, { updatedAt: clock() }); await db.put("vocab", v); emit("vocab"); return v; }),
+    deleteVocab: serial(async id => { await db.del("vocab", id); emit("vocab"); }),
     async setting(key, fallback) { const s = await db.get("settings", key); return s ? s.value : fallback; },
     async setSetting(key, value) { await db.put("settings", { key, value }); emit("settings"); }
   };

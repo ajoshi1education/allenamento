@@ -1,10 +1,27 @@
 {
   "curriculum": "curriculum.json",
   "units": [
-    "units/u01-congiuntivo.json"
+    "units/r01-registro.json",
+    "units/s02-parlato.json",
+    "units/u01-congiuntivo.json",
+    "units/u02-concordanza.json",
+    "units/u04-passato-futuro.json",
+    "units/u05-pronomi.json",
+    "units/u06-preposizioni.json",
+    "units/u07-passivo-si.json",
+    "units/u09-connettivi-sintassi.json"
   ],
   "games": [
-    "games/det-01-quadro.json"
+    "games/dbt-01-smartworking.json",
+    "games/det-01-quadro.json",
+    "games/det-02-testamento.json",
+    "games/det-04-biblioteca.json",
+    "games/dlg-02-trasloco.json",
+    "games/duel-u06.json",
+    "games/gnt-u01.json",
+    "games/gnt-u05.json",
+    "games/gnt-u07.json",
+    "games/gnt-u09.json"
   ],
   "vocab": []
 }

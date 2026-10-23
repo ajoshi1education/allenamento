@@ -1,0 +1,312 @@
+{
+  "unit": "U06",
+  "title": "Preposizioni",
+  "cefr": "B2",
+  "concepts": [
+    {
+      "id": "B2-PREP-01",
+      "title": "Verb + a / di + infinitive",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": [],
+      "rule": "Before an infinitive, many verbs need a (riuscire, continuare, cominciare, abituarsi, imparare, convincere/aiutare qualcuno a) or di (cercare, smettere, finire, decidere, sperare, ricordarsi, dimenticare, chiedere/dire a qualcuno di). Modals, sapere, preferire, desiderare and impersonal expressions take no preposition. Some verbs change meaning: finire di (stop) vs finire per (end up).",
+      "assessment": [
+        "Uses a after verbs of beginning, continuing, managing and persuading (riuscire a, continuare a, convincere qualcuno a)",
+        "Uses di after verbs of trying, stopping, deciding, hoping and remembering (cercare di, smettere di, decidere di)",
+        "Uses no preposition after modals, sapere, preferire and desiderare",
+        "Distinguishes finire di / finire per and decidere di / decidersi a"
+      ],
+      "lesson": {
+        "intro": "English uses 'to' before almost every infinitive ('I managed to', 'I tried to', 'I decided to'). Italian splits these verbs into an *a* group, a *di* group and a no-preposition group, and there's no reliable logic: you learn each verb with its preposition. Getting them right is a big step towards accurate C1 Italian.",
+        "rules": [
+          {
+            "title": "Verbs + a",
+            "text": "Mostly verbs of **beginning, continuing, managing, learning and moving towards** an action: *cominciare / iniziare a, continuare a, riuscire a, imparare a, abituarsi a, mettersi a, provare a, prepararsi a, andare / venire a*. Before a vowel *a* often becomes *ad*: *Sono riuscito **ad** aprire*.",
+            "examples": [
+              { "it": "Non **riesco a** dormire.", "en": "I can't (manage to) sleep." },
+              { "it": "Continua **a** piovere.", "en": "It keeps raining." },
+              { "it": "Mi sono abituato **ad** alzarmi presto.", "en": "I've got used to getting up early." }
+            ]
+          },
+          {
+            "title": "Verbs + di",
+            "text": "Mostly verbs of **trying, stopping, deciding, thinking, hoping, remembering and fearing**: *cercare di, smettere di, finire di, decidere di, sperare di, pensare di, credere di, ricordarsi di, dimenticare / dimenticarsi di, temere di, accettare di, rifiutare di, sognare di*.",
+            "examples": [
+              { "it": "Ho **smesso di** fumare.", "en": "I've stopped smoking." },
+              { "it": "**Cerca di** capire!", "en": "Try to understand!" },
+              { "it": "**Spero di** rivederti presto.", "en": "I hope to see you again soon." }
+            ]
+          },
+          {
+            "title": "No preposition",
+            "text": "Modals (*potere, dovere, volere*), *sapere* (= know how to), *preferire, desiderare, osare*, causative *fare / lasciare*, and impersonal expressions (*bisogna, è meglio, è importante, mi piace*) take the bare infinitive.",
+            "examples": [
+              { "it": "**Preferisco** restare a casa.", "en": "I prefer to stay at home." },
+              { "it": "**Sai** nuotare?", "en": "Can you swim?" },
+              { "it": "**Mi piace** cucinare.", "en": "I like cooking." }
+            ]
+          },
+          {
+            "title": "Verb + person + preposition",
+            "text": "Verbs with a person as object have their own pattern: *convincere / aiutare / invitare / costringere **qualcuno a***; *chiedere / dire / ordinare / permettere / impedire **a qualcuno di***.",
+            "table": {
+              "head": ["Pattern", "Verbs", "Example"],
+              "rows": [
+                ["qualcuno a + inf.", "convincere, aiutare, invitare, costringere, insegnare (a qualcuno a)", "Mi ha convinto a partire."],
+                ["a qualcuno di + inf.", "chiedere, dire, ordinare, permettere, impedire, consigliare", "Le ho chiesto di aspettarmi."]
+              ]
+            }
+          },
+          {
+            "title": "Same verb, different meaning",
+            "text": "Some verbs change meaning with the preposition.",
+            "table": {
+              "head": ["Verb", "Meaning", "Example"],
+              "rows": [
+                ["finire di", "to finish / stop doing", "Ho finito di mangiare."],
+                ["finire per", "to end up doing", "Ha finito per sposarla."],
+                ["decidere di", "to decide to", "Ho deciso di partire."],
+                ["decidersi a", "to make up one's mind to", "Si è deciso a parlarle."],
+                ["pensare di", "to plan / think of doing", "Penso di andare in Sicilia."],
+                ["pensare a", "to think about / see to", "Ci penso io a prenotare."]
+              ]
+            }
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Sono riuscito di finire.", "right": "Sono riuscito a finire.", "why": "*Riuscire* takes *a*." },
+          { "wrong": "Ho cercato a chiamarti.", "right": "Ho cercato di chiamarti.", "why": "*Cercare* (try) takes *di*. *Provare* takes *a*." },
+          { "wrong": "Preferisco di restare.", "right": "Preferisco restare.", "why": "*Preferire* takes the bare infinitive." },
+          { "wrong": "Ho smesso fumare.", "right": "Ho smesso di fumare.", "why": "*Smettere* always needs *di*." },
+          { "wrong": "Mi ha convinto di venire.", "right": "Mi ha convinto a venire.", "why": "*Convincere qualcuno a* fare qualcosa." },
+          { "wrong": "So di nuotare.", "right": "So nuotare.", "why": "*Sapere* = know how to: no preposition. (*So di avere ragione* = I know I'm right.)" }
+        ],
+        "tips": [
+          "Rough rule: verbs of starting, continuing and moving forward like *a*; verbs of stopping, trying and mental states like *di*. Exceptions exist, so learn verbs in pairs: *provare a / cercare di*.",
+          "Put new verbs in your Error Bank as chunks: *riuscire a*, *smettere di*, not just the verb.",
+          "Use *ad* before *a-* (*ad aprire*). Before other vowels it's optional."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-PREP-01.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct preposition.", "prompt": "Con questo caldo non riesco ___ dormire.", "answers": ["a"], "focus": ["a"], "errorType": "preposition", "traps": [{ "match": "di", "errorType": "preposition", "why": "*Riuscire* takes *a*: *riesco a dormire*." }], "explanation": "*Riuscire* **a** + infinitive.", "en": "With this heat I can't sleep." },
+        { "id": "B2-PREP-01.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct preposition.", "prompt": "Ho smesso ___ fumare due anni fa.", "answers": ["di"], "focus": ["di"], "errorType": "preposition", "traps": [{ "match": "a", "errorType": "preposition", "why": "*Smettere* takes *di*." }], "explanation": "*Smettere* **di** + infinitive.", "en": "I stopped smoking two years ago." },
+        { "id": "B2-PREP-01.e03", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct preposition.", "prompt": "Abbiamo deciso ___ cambiare casa.", "answers": ["di"], "focus": ["di"], "errorType": "preposition", "traps": [{ "match": "a", "errorType": "preposition", "why": "*Decidere* takes *di*. (*Decidersi a* = make up one's mind.)" }], "explanation": "*Decidere* **di** + infinitive.", "en": "We've decided to move house." },
+        { "id": "B2-PREP-01.e04", "type": "choice", "difficulty": 2, "instruction": "Choose the correct option.", "prompt": "Stasera preferisco ___ restare a casa.", "options": ["(no preposition)", "di", "a", "per"], "answer": 0, "errorType": "preposition", "optionWhy": { "1": "*Preferire* takes the bare infinitive: *preferisco restare*.", "2": "*Preferire* takes no preposition.", "3": "*Preferire* takes no preposition." }, "explanation": "*Preferire* + infinitive, **no preposition**.", "en": "Tonight I'd rather stay home." },
+        { "id": "B2-PREP-01.e05", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct preposition.", "prompt": "Mi ha convinto ___ partire con lui.", "answers": ["a"], "focus": ["a"], "errorType": "preposition", "traps": [{ "match": "di", "errorType": "preposition", "why": "*Convincere qualcuno **a*** fare qualcosa." }], "explanation": "*Convincere qualcuno* **a** + infinitive.", "en": "He persuaded me to leave with him." },
+        { "id": "B2-PREP-01.e06", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct preposition.", "prompt": "Continua ___ piovere da stamattina.", "answers": ["a"], "focus": ["a"], "errorType": "preposition", "traps": [{ "match": "di", "errorType": "preposition", "why": "*Continuare* takes *a*." }], "explanation": "*Continuare* **a** + infinitive.", "en": "It's been raining non-stop since this morning." },
+        { "id": "B2-PREP-01.e07", "type": "cloze", "difficulty": 3, "instruction": "Complete with the correct preposition. (Meaning: they ended up getting divorced.)", "prompt": "Dopo anni di litigi, hanno finito ___ divorziare.", "answers": ["per"], "focus": ["per"], "errorType": "preposition", "traps": [{ "match": "di", "errorType": "preposition", "why": "*Finire di* = stop doing. 'End up doing' is *finire **per***." }, { "match": "a", "errorType": "preposition", "why": "'End up doing' is *finire per*." }], "explanation": "*Finire* **per** = end up doing.", "en": "After years of arguing, they ended up getting divorced." },
+        { "id": "B2-PREP-01.e08", "type": "choice", "difficulty": 2, "instruction": "Choose the correct option.", "prompt": "Sai ___ guidare la moto?", "options": ["(no preposition)", "a", "di", "per"], "answer": 0, "errorType": "preposition", "optionWhy": { "1": "*Sapere* (know how to) takes no preposition.", "2": "*Sapere di* + infinitive means 'know that…' about oneself (*So di sbagliare*). 'Can you ride?' = *Sai guidare?*", "3": "*Sapere* takes no preposition." }, "explanation": "*Sapere* = know how to → bare infinitive: **Sai guidare?**", "en": "Can you ride a motorbike?" },
+        { "id": "B2-PREP-01.e09", "type": "cloze", "difficulty": 3, "instruction": "Complete with the correct preposition.", "prompt": "Non mi sono ancora abituato ___ alzarmi alle sei.", "answers": ["ad", "a"], "focus": ["ad"], "errorType": "preposition", "traps": [{ "match": "di", "errorType": "preposition", "why": "*Abituarsi* takes *a* (*ad* before a vowel)." }], "explanation": "*Abituarsi* **a**, usually **ad** before *a-*: *ad alzarmi*.", "en": "I still haven't got used to getting up at six." },
+        { "id": "B2-PREP-01.e10", "type": "cloze", "difficulty": 3, "instruction": "Complete with the correct preposition.", "prompt": "Le ho chiesto ___ aspettarmi davanti al cinema.", "answers": ["di"], "focus": ["di"], "errorType": "preposition", "traps": [{ "match": "a", "errorType": "preposition", "why": "*Chiedere a qualcuno **di*** fare qualcosa." }, { "match": "per", "errorType": "preposition", "why": "Calque of 'ask for'. *Chiedere di* + infinitive." }], "explanation": "*Chiedere a qualcuno* **di** + infinitive.", "en": "I asked her to wait for me outside the cinema." },
+        { "id": "B2-PREP-01.e11", "type": "transform", "difficulty": 3, "instruction": "Rewrite using 'cercare' instead of 'provare'.", "prompt": "Ho provato a chiamarti tutto il giorno.", "answers": ["Ho cercato di chiamarti tutto il giorno"], "focus": ["di"], "errorType": "preposition", "traps": [{ "contains": ["a"], "errorType": "preposition", "why": "*Provare a* but *cercare **di***." }], "explanation": "Same meaning, different preposition: *provare a* → *cercare* **di**.", "en": "I tried to call you all day." },
+        { "id": "B2-PREP-01.e12", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian.", "prompt": "I forgot to buy the bread.", "answers": ["(Mi sono dimenticato|Mi sono dimenticata|Ho dimenticato) di comprare il pane"], "focus": ["di"], "errorType": "preposition", "traps": [{ "match": "(Mi sono dimenticato|Mi sono dimenticata|Ho dimenticato) comprare il pane", "errorType": "preposition", "why": "*Dimenticare* / *dimenticarsi* needs *di*." }, { "contains": ["a"], "errorType": "preposition", "why": "*Dimenticare **di*** + infinitive." }, { "match": "Ho dimenticato di comprare pane", "errorType": "article", "why": "'The bread' needs the article: *il pane*." }], "explanation": "*Dimenticar(si)* **di** + infinitive.", "en": "I forgot to buy the bread." },
+        { "id": "B2-PREP-01.e13", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "My father taught me to swim.", "answers": ["Mio padre mi ha insegnato a nuotare"], "focus": ["a"], "errorType": "preposition", "traps": [{ "contains": ["di"], "errorType": "preposition", "why": "*Insegnare a qualcuno **a*** fare qualcosa." }, { "contains": ["il"], "errorType": "article", "why": "No article with singular family members after a possessive: *mio padre*." }, { "match": "Mio padre mi ha insegnato nuotare", "errorType": "preposition", "why": "*Insegnare* needs *a* before the infinitive." }], "explanation": "*Insegnare a qualcuno* **a** + infinitive.", "en": "My father taught me to swim." },
+        { "id": "B2-PREP-01.e14", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "I hope to see you again soon.", "tokens": ["Spero", "di", "rivederti", "presto"], "answers": ["Spero di rivederti presto"], "errorType": "word-order", "explanation": "*Sperare* **di** + infinitive (same subject), pronoun attached: *rivederti*." },
+        { "id": "B2-PREP-01.e15", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "I'm thinking of going to Sicily this summer.", "answers": ["(Penso|Sto pensando) di andare in Sicilia (quest'estate|questa estate)", "(Quest'estate|Questa estate) (penso|sto pensando) di andare in Sicilia"], "focus": ["di"], "errorType": "preposition", "traps": [{ "contains": ["ad"], "errorType": "preposition", "why": "'Think of doing' (plan) = *pensare **di***." }, { "contains": ["a"], "errorType": "preposition", "why": "'Think of doing' (plan) = *pensare **di***. *Pensare a* = think about." }], "explanation": "Planning → *pensare* **di** + infinitive.", "en": "I'm thinking of going to Sicily this summer." },
+        { "id": "B2-PREP-01.e16", "type": "speak", "difficulty": 4, "instruction": "Say it aloud (or type).", "prompt": "Tell a friend you've finally managed to find a flat.", "answers": ["Finalmente sono (riuscito|riuscita) a trovare (un appartamento|una casa|casa)", "Sono finalmente (riuscito|riuscita) a trovare (un appartamento|una casa|casa)", "Sono (riuscito|riuscita) finalmente a trovare (un appartamento|una casa|casa)"], "focus": ["a"], "errorType": "preposition", "traps": [{ "contains": ["di"], "errorType": "preposition", "why": "*Riuscire **a*** + infinitive." }, { "contains": ["ho"], "errorType": "auxiliary", "why": "*Riuscire* takes *essere*: *sono riuscito/a*." }], "explanation": "*Riuscire* **a** (with *essere* in the passato prossimo).", "en": "I've finally managed to find a flat.", "interaction": true },
+        { "id": "B2-PREP-01.e17", "type": "choice", "difficulty": 5, "instruction": "Choose the correct preposition. (Meaning: he finally made up his mind.)", "prompt": "Dopo settimane di dubbi, finalmente si è deciso ___ parlarle.", "options": ["a", "di", "per", "(no preposition)"], "answer": 0, "errorType": "preposition", "optionWhy": { "1": "*Decidere di* (no *si*). The reflexive *decidersi* (make up one's mind) takes *a*.", "2": "*Decidersi* takes *a*.", "3": "*Decidersi* needs *a* before the infinitive." }, "explanation": "*Decidersi* **a** = finally make up one's mind to.", "en": "After weeks of doubt, he finally made up his mind to talk to her." }
+      ]
+    },
+    {
+      "id": "B2-PREP-02",
+      "title": "Prepositions of place and time: nuances",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": [],
+      "rule": "A with cities and small islands, in with countries, regions and large islands (articulated if plural or qualified: negli Stati Uniti); in via / in piazza; da + person (dal medico, da Marco). Fra/tra + time = in (future). Da + present tense for actions still going on (Studio l'italiano da tre anni); per for a finished or limited duration; in for time taken.",
+      "assessment": [
+        "Chooses a for cities and in for countries, regions and big islands, with articulated forms where needed",
+        "Uses da for going to / being at someone's place or a professional's",
+        "Uses da + present for ongoing durations and per for completed ones",
+        "Distinguishes fra/tra (in the future), in (time taken) and fa (ago)"
+      ],
+      "lesson": {
+        "intro": "English 'in' and 'for' split into several Italian prepositions. 'In Rome' is *a Roma* but 'in Italy' is *in Italia*. 'For three years' is *da tre anni* if it's still going on, but *per tre anni* if it's over. These are among the most frequent mistakes even at C1, because English gives no clue.",
+        "rules": [
+          {
+            "title": "Cities vs countries",
+            "text": "**A** with cities, towns and small islands (*a Roma, a Capri*). **In** with countries, regions, large islands and continents (*in Italia, in Toscana, in Sicilia, in Asia*). Plural or qualified names take the articulated preposition: *negli Stati Uniti, nei Paesi Bassi, nell'Italia del Sud*. The same preposition is used for 'in' and 'to'.",
+            "table": {
+              "head": ["Place", "Preposition", "Example"],
+              "rows": [
+                ["city / town", "a", "Vivo a Milano. Vado a Napoli."],
+                ["small island", "a", "Siamo stati a Capri / a Ischia."],
+                ["country / region / large island", "in", "in Francia, in Puglia, in Sardegna"],
+                ["plural or qualified country", "in + article", "negli Stati Uniti, nelle Filippine"]
+              ]
+            }
+          },
+          {
+            "title": "Streets, buildings, rooms",
+            "text": "**In** with streets and squares (*in via Manzoni, in piazza Duomo*) and many places ending in *-ia / -eria* or of work and study: *in banca, in ufficio, in biblioteca, in farmacia, in centro, in montagna, in campagna*. But **a/al** with others: *a casa, a scuola, a teatro, al cinema, al mare, al bar, all'università*. Learn them as chunks.",
+            "examples": [
+              { "it": "Abito **in** via Garibaldi.", "en": "I live on Via Garibaldi." },
+              { "it": "D'estate andiamo **al** mare, d'inverno **in** montagna.", "en": "In summer we go to the seaside, in winter to the mountains." }
+            ]
+          },
+          {
+            "title": "Da + person",
+            "text": "To go to or be at someone's home or workplace, use **da** + the person: *da Marco, da me, dal medico, dal parrucchiere*. Never ~~a Marco~~ or ~~al medico~~ in this sense.",
+            "examples": [
+              { "it": "Stasera ceniamo **da** Giulia.", "en": "Tonight we're having dinner at Giulia's." },
+              { "it": "Domani vado **dal** dentista.", "en": "Tomorrow I'm going to the dentist's." }
+            ]
+          },
+          {
+            "title": "Time: fra/tra, in, fa",
+            "text": "**Fra / tra** + time = 'in' (from now, future): *Torno fra un'ora*. **In** + time = time taken: *L'ho finito in due ore*. **Fa** (after the time) = ago: *tre giorni fa*.",
+            "examples": [
+              { "it": "Il treno parte **fra** dieci minuti.", "en": "The train leaves in ten minutes." },
+              { "it": "Ho scritto la tesi **in** sei mesi.", "en": "I wrote my thesis in six months." }
+            ]
+          },
+          {
+            "title": "Da vs per: duration",
+            "text": "For something that **started in the past and is still going on**, Italian uses the **present tense + da** (English uses 'have been doing… for'). For a **finished** or limited period, use **per** (often optional) with a past tense.",
+            "table": {
+              "head": ["English", "Italian", "Why"],
+              "rows": [
+                ["I've been studying Italian for three years.", "Studio l'italiano **da** tre anni.", "Still studying: present + da"],
+                ["I studied Italian for three years.", "Ho studiato l'italiano **per** tre anni.", "Finished: past + per"],
+                ["I've known her since 2015.", "La conosco **dal** 2015.", "Still true: present + da"]
+              ]
+            }
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Vivo in Roma.", "right": "Vivo a Roma.", "why": "Cities take *a*." },
+          { "wrong": "Vado a Italia.", "right": "Vado in Italia.", "why": "Countries take *in*." },
+          { "wrong": "Studio l'italiano per tre anni.", "right": "Studio l'italiano da tre anni.", "why": "Ongoing action: present tense + *da*." },
+          { "wrong": "Ho studiato l'italiano da tre anni.", "right": "Ho studiato l'italiano per tre anni.", "why": "Finished period: *per* (or nothing)." },
+          { "wrong": "Vado al dottore.", "right": "Vado dal dottore.", "why": "To someone's place or office: *da* + person." },
+          { "wrong": "Lavoro in Stati Uniti.", "right": "Lavoro negli Stati Uniti.", "why": "Plural country names take the article: *negli*." }
+        ],
+        "tips": [
+          "If you'd say 'have been …ing for' in English, it's almost always present + *da* in Italian.",
+          "*Fra* and *tra* are interchangeable. Pick the one that sounds better: *tra fratelli*, *fra tre giorni*.",
+          "*In via* is standard; Romans often say *a via*, but don't copy it in writing."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-PREP-02.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct preposition.", "prompt": "Mia sorella vive ___ Milano da due anni.", "answers": ["a"], "focus": ["a"], "errorType": "preposition", "traps": [{ "match": "in", "errorType": "preposition", "why": "Cities take *a*: *a Milano*. 'In Milan' is a classic English calque." }], "explanation": "City → **a**.", "en": "My sister has lived in Milan for two years." },
+        { "id": "B2-PREP-02.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct preposition.", "prompt": "Quest'estate andiamo ___ Spagna.", "answers": ["in"], "focus": ["in"], "errorType": "preposition", "traps": [{ "match": "a", "errorType": "preposition", "why": "Countries take *in*: *in Spagna*." }, { "match": "nella", "errorType": "article", "why": "Singular countries usually take plain *in*, without the article." }], "explanation": "Country → **in** (for both 'in' and 'to').", "en": "This summer we're going to Spain." },
+        { "id": "B2-PREP-02.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct preposition. (You still live in Italy.)", "prompt": "Vivo in Italia ___ cinque anni.", "answers": ["da"], "focus": ["da"], "errorType": "preposition", "traps": [{ "match": "per", "errorType": "preposition", "why": "Still going on → present tense + *da*. *Per* would mean a finished period." }], "explanation": "Ongoing duration → present + **da**.", "en": "I've been living in Italy for five years." },
+        { "id": "B2-PREP-02.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct preposition (with article if needed).", "prompt": "Domani devo andare ___ dentista.", "answers": ["dal"], "focus": ["dal"], "errorType": "preposition", "traps": [{ "match": "al", "errorType": "preposition", "why": "Going to a professional's: *da* + person → *dal dentista*." }, { "match": "da", "errorType": "article", "why": "*Dentista* needs the article: *da + il* → *dal*." }], "explanation": "To someone's place or office → **da** + article: *dal dentista*.", "en": "Tomorrow I have to go to the dentist's." },
+        { "id": "B2-PREP-02.e05", "type": "choice", "difficulty": 2, "instruction": "Choose the correct preposition.", "prompt": "Aspettami, arrivo ___ dieci minuti.", "options": ["fra", "per", "da", "dopo"], "answer": 0, "errorType": "preposition", "optionWhy": { "1": "*Per dieci minuti* = for ten minutes (duration).", "2": "*Da dieci minuti* = for the last ten minutes (ongoing).", "3": "*Dopo dieci minuti* = ten minutes later (after some other event)." }, "explanation": "'In' + time from now → **fra** (or *tra*).", "en": "Wait for me, I'll be there in ten minutes." },
+        { "id": "B2-PREP-02.e06", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct preposition.", "prompt": "Abitiamo ___ via Manzoni, al numero 12.", "answers": ["in"], "focus": ["in"], "errorType": "preposition", "traps": [{ "match": "a", "errorType": "preposition", "why": "Standard Italian uses *in via* (*a via* is Roman regional usage)." }, { "match": "nella", "errorType": "article", "why": "No article before *via* + name: *in via Manzoni*." }, { "match": "su", "errorType": "preposition", "why": "Calque of 'on'. Streets take *in*." }], "explanation": "Streets and squares → **in**: *in via, in piazza*.", "en": "We live on Via Manzoni, at number 12." },
+        { "id": "B2-PREP-02.e07", "type": "cloze", "difficulty": 3, "instruction": "Complete with the correct preposition (with article if needed).", "prompt": "Mio fratello lavora ___ Stati Uniti.", "answers": ["negli"], "focus": ["negli"], "errorType": "preposition", "traps": [{ "match": "in", "errorType": "article", "why": "Plural country names take the article: *in + gli* → *negli*." }, { "match": "a", "errorType": "preposition", "why": "Countries take *in*, here with the article: *negli*." }, { "match": "nei", "errorType": "article", "why": "*Stati* starts with *s* + consonant: the article is *gli*, so *negli*." }], "explanation": "Plural country → **negli** Stati Uniti.", "en": "My brother works in the United States." },
+        { "id": "B2-PREP-02.e08", "type": "cloze", "difficulty": 3, "instruction": "Complete with the correct preposition. (It's over now.)", "prompt": "Da giovane ho vissuto a Londra ___ due anni.", "answers": ["per"], "focus": ["per"], "errorType": "preposition", "traps": [{ "match": "da", "errorType": "preposition", "why": "The period is finished (*ho vissuto*, *da giovane*), so use *per*. *Da* is for actions still going on." }, { "match": "fa", "errorType": "preposition", "why": "*Due anni fa* = two years ago, a point in time. Here it's a duration: *per*." }], "explanation": "Finished duration → **per**.", "en": "When I was young I lived in London for two years." },
+        { "id": "B2-PREP-02.e09", "type": "choice", "difficulty": 3, "instruction": "Choose the correct preposition.", "prompt": "Stasera ceniamo ___ Giulia: ha cucinato le lasagne.", "options": ["da", "a", "in", "alla"], "answer": 0, "errorType": "preposition", "optionWhy": { "1": "*A Giulia* = to Giulia (indirect object). At her place: *da Giulia*.", "2": "*In* is for places, not people.", "3": "No article before a first name, and the preposition is *da*." }, "explanation": "At someone's place → **da** + person.", "en": "Tonight we're having dinner at Giulia's: she's made lasagne." },
+        { "id": "B2-PREP-02.e10", "type": "transform", "difficulty": 3, "instruction": "Rewrite as one sentence using the present tense and 'da'.", "prompt": "Ho cominciato a suonare il piano dieci anni fa e suono ancora.", "answers": ["Suono il piano da dieci anni", "Suono il pianoforte da dieci anni"], "focus": ["da", "suono"], "errorType": "preposition", "traps": [{ "contains": ["per"], "errorType": "preposition", "why": "Still going on → present + *da*." }, { "contains": ["suonato"], "errorType": "wrong-tense", "why": "Italian uses the present for ongoing actions: *suono … da dieci anni*." }], "explanation": "Ongoing action → present + **da**: *Suono il piano da dieci anni*.", "en": "I've been playing the piano for ten years." },
+        { "id": "B2-PREP-02.e11", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian.", "prompt": "We're going to Sardinia, to Cagliari.", "answers": ["Andiamo in Sardegna, a Cagliari"], "focus": ["in", "a"], "errorType": "preposition", "traps": [{ "match": "Andiamo a Sardegna, a Cagliari", "errorType": "preposition", "why": "Sardinia is a large island/region: *in Sardegna*." }, { "match": "Andiamo in Sardegna, in Cagliari", "errorType": "preposition", "why": "Cagliari is a city: *a Cagliari*." }, { "match": "Andiamo alla Sardegna, a Cagliari", "errorType": "preposition", "why": "Regions and large islands: plain *in*." }], "explanation": "Large island/region → **in**; city → **a**.", "en": "We're going to Sardinia, to Cagliari." },
+        { "id": "B2-PREP-02.e12", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian (informal 'you').", "prompt": "I've been waiting for you for an hour!", "answers": ["Ti (aspetto|sto aspettando) da un'ora", "È un'ora che ti aspetto", "Da un'ora ti (aspetto|sto aspettando)"], "focus": ["da"], "errorType": "preposition", "traps": [{ "contains": ["per"], "errorType": "preposition", "why": "Still waiting → present + *da*: *Ti aspetto da un'ora*." }, { "contains": ["aspettato"], "errorType": "wrong-tense", "why": "You're still waiting, so Italian uses the present: *ti aspetto da un'ora*." }], "explanation": "Ongoing → present + **da**: *Ti aspetto da un'ora!*", "en": "I've been waiting for you for an hour!" },
+        { "id": "B2-PREP-02.e13", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "I'll be home in an hour.", "tokens": ["Torno", "a", "casa", "fra", "un'ora"], "answers": ["Torno a casa fra un'ora", "Fra un'ora torno a casa"], "errorType": "word-order", "explanation": "*A casa* (no article) and **fra** + time = in (from now)." },
+        { "id": "B2-PREP-02.e14", "type": "cloze", "difficulty": 4, "instruction": "Complete with the correct preposition. (Meaning: it took me three hours.)", "prompt": "Ho finito tutto il lavoro ___ tre ore: un record!", "answers": ["in"], "focus": ["in"], "errorType": "preposition", "traps": [{ "match": ["fra", "tra"], "errorType": "preposition", "why": "*Fra tre ore* = three hours from now. Time taken is *in*." }, { "match": "per", "errorType": "preposition", "why": "*Per tre ore* = for three hours (activity), not 'within'. Time taken to complete: *in*." }, { "match": "da", "errorType": "preposition", "why": "*Da* is for ongoing durations. Time taken: *in*." }], "explanation": "Time taken to complete something → **in**.", "en": "I finished all the work in three hours: a record!" },
+        { "id": "B2-PREP-02.e15", "type": "speak", "difficulty": 4, "instruction": "Say it aloud (or type).", "prompt": "Tell a new colleague that you've been living in Bologna for two years (and still do).", "answers": ["(Vivo|Abito) a Bologna da due anni", "Da due anni (vivo|abito) a Bologna", "Sono a Bologna da due anni"], "focus": ["da", "a"], "errorType": "preposition", "traps": [{ "contains": ["per"], "errorType": "preposition", "why": "Ongoing → present + *da*." }, { "contains": ["in"], "errorType": "preposition", "why": "Cities take *a*: *a Bologna*." }, { "contains": ["vissuto", "abitato"], "errorType": "wrong-tense", "why": "Still true → present tense: *vivo a Bologna da due anni*." }], "explanation": "City → **a**; ongoing → present + **da**.", "en": "I've been living in Bologna for two years.", "interaction": true },
+        { "id": "B2-PREP-02.e16", "type": "choice", "difficulty": 5, "instruction": "Choose the correct pair.", "prompt": "Sono nato ___ Napoli, ma sono cresciuto ___ Calabria.", "options": ["a / in", "in / in", "a / a", "in / a"], "answer": 0, "errorType": "preposition", "optionWhy": { "1": "Napoli is a city: *a Napoli*.", "2": "Calabria is a region: *in Calabria*.", "3": "Both are the wrong way round: city → *a*, region → *in*." }, "explanation": "City → **a** Napoli; region → **in** Calabria.", "en": "I was born in Naples, but I grew up in Calabria." },
+        { "id": "B2-PREP-02.e17", "type": "cloze", "difficulty": 3, "instruction": "Complete with the correct preposition.", "prompt": "D'estate andiamo al mare, d'inverno ___ montagna.", "answers": ["in"], "focus": ["in"], "errorType": "preposition", "traps": [{ "match": ["alla", "a"], "errorType": "preposition", "why": "Fixed chunk: *in montagna* (but *al mare*). Learn them as pairs." }], "explanation": "*Al mare* but **in montagna**, *in campagna*, *in città*.", "en": "In summer we go to the seaside, in winter to the mountains." }
+      ]
+    },
+    {
+      "id": "C1-PREP-03",
+      "title": "Prepositional phrases and adjective/noun + preposition",
+      "cefr": "C1",
+      "skill": "grammar",
+      "prereqs": ["B2-PREP-01"],
+      "rule": "Learn prepositional phrases and adjectives as chunks with their preposition: in base a, a causa di, grazie a, nei confronti di, a prescindere da, in vista di, a favore di, per quanto riguarda; capace di, pronto a, interessato a, contento di, diverso da, dipendere da.",
+      "assessment": [
+        "Uses complex prepositions (in base a, a causa di, nei confronti di, a prescindere da, in vista di, a favore di) with the right preposition",
+        "Uses adjectives with their preposition (capace di, pronto a, interessato a, contento di, diverso da)",
+        "Avoids calques from English (dipende di, interessato in, diverso di)",
+        "Chooses between near-synonyms (a causa di / grazie a; nei confronti di / rispetto a)"
+      ],
+      "lesson": {
+        "intro": "At C1 your Italian gets judged on precision: *a prescindere da*, *nei confronti di*, *in vista di* give formal writing its texture. These phrases are where English calques hide: 'depend **on**' becomes ~~dipende di~~, 'interested **in**' becomes ~~interessato in~~. Learn each one with its preposition as a single chunk.",
+        "rules": [
+          {
+            "title": "Cause, basis, result",
+            "text": "*A causa di* (because of, usually negative), *grazie a* (thanks to, positive), *in base a* (on the basis of, according to), *in seguito a* (following), *per via di* (informal 'because of'). The final preposition combines with the article: *a causa **del** maltempo*.",
+            "examples": [
+              { "it": "Il volo è stato cancellato **a causa del** maltempo.", "en": "The flight was cancelled because of bad weather." },
+              { "it": "**Grazie al** tuo aiuto ce l'abbiamo fatta.", "en": "Thanks to your help we made it." },
+              { "it": "Il prezzo varia **in base alla** stagione.", "en": "The price varies according to the season." }
+            ]
+          },
+          {
+            "title": "Attitude, relation, position",
+            "text": "*Nei confronti di* (towards, with regard to), *a favore di* / *contro* (for / against), *rispetto a* (compared with), *per quanto riguarda* / *riguardo a* (as regards), *a prescindere da* (regardless of).",
+            "examples": [
+              { "it": "È sempre gentile **nei confronti dei** clienti.", "en": "He's always polite towards customers." },
+              { "it": "Sono **a favore della** proposta.", "en": "I'm in favour of the proposal." },
+              { "it": "**A prescindere dal** risultato, sono fiero di te.", "en": "Regardless of the result, I'm proud of you." }
+            ]
+          },
+          {
+            "title": "Time and purpose",
+            "text": "*In vista di* (in view of, ahead of), *al fine di* + infinitive (in order to, formal), *a partire da* (starting from), *entro* (by, within).",
+            "examples": [
+              { "it": "**In vista dell'**esame, studio tutti i giorni.", "en": "With the exam coming up, I'm studying every day." },
+              { "it": "**A partire da** lunedì, l'ufficio apre alle otto.", "en": "Starting Monday, the office opens at eight." }
+            ]
+          },
+          {
+            "title": "Adjective + preposition",
+            "text": "Many adjectives have a fixed preposition, often different from English.",
+            "table": {
+              "head": ["Adjective", "Prep.", "Example", "English"],
+              "rows": [
+                ["capace", "di", "capace di decidere", "capable of"],
+                ["pronto", "a / per", "pronto a partire", "ready to"],
+                ["interessato", "a", "interessato alla politica", "interested in"],
+                ["contento / felice", "di", "contento di vederti", "glad to"],
+                ["soddisfatto", "di", "soddisfatto dei risultati", "satisfied with"],
+                ["stanco", "di", "stanco di aspettare", "tired of"],
+                ["diverso", "da", "diverso da me", "different from"],
+                ["abituato", "a", "abituato al freddo", "used to"]
+              ]
+            }
+          },
+          {
+            "title": "Verbs and nouns with tricky prepositions",
+            "text": "*Dipendere **da*** (not ~~di~~), *innamorarsi **di***, *fidarsi **di***, *credere **in*** (a person/idea), *interesse **per***, *bisogno **di***, *fiducia **in***.",
+            "examples": [
+              { "it": "Dipende **da** te.", "en": "It depends on you." },
+              { "it": "Ha molto interesse **per** l'arte.", "en": "She has a strong interest in art." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Dipende di te.", "right": "Dipende da te.", "why": "*Dipendere* always takes *da*." },
+          { "wrong": "Sono interessato in questo corso.", "right": "Sono interessato a questo corso.", "why": "*Interessato a*. (But the noun: *interesse per*.)" },
+          { "wrong": "Non è capace a dire di no.", "right": "Non è capace di dire di no.", "why": "*Capace di* + infinitive." },
+          { "wrong": "A prescindere di tutto.", "right": "A prescindere da tutto.", "why": "*Prescindere da*." },
+          { "wrong": "È diverso di me.", "right": "È diverso da me.", "why": "*Diverso da* (like *differente da*)." }
+        ],
+        "tips": [
+          "*A causa di* is for negative causes; for positive ones use *grazie a*. *A causa dell'aiuto* sounds odd.",
+          "*Nei confronti di* is a neutral-formal 'towards'. In speech *con* often does the job: *È gentile con tutti*.",
+          "Write chunks, not words, in your vocabulary notes: *a prescindere da*, not just *prescindere*."
+        ]
+      },
+      "exercises": [
+        { "id": "C1-PREP-03.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct preposition.", "prompt": "Sono molto interessato ___ questo corso.", "answers": ["a"], "focus": ["a"], "errorType": "preposition", "traps": [{ "match": "in", "errorType": "preposition", "why": "Calque of 'interested in'. Italian: *interessato **a***." }, { "match": "di", "errorType": "preposition", "why": "*Interessato* takes *a*." }], "explanation": "*Interessato* **a**.", "en": "I'm very interested in this course." },
+        { "id": "C1-PREP-03.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct preposition (with article if needed).", "prompt": "Il volo è stato cancellato a causa ___ maltempo.", "answers": ["del"], "focus": ["del"], "errorType": "preposition", "traps": [{ "match": "di", "errorType": "article", "why": "*Di* + *il* (il maltempo) → *del*." }, { "match": ["per", "per il"], "errorType": "preposition", "why": "The phrase is *a causa di*: *a causa del maltempo*." }], "explanation": "*A causa di* + *il* → *a causa* **del**.", "en": "The flight was cancelled because of bad weather." },
+        { "id": "C1-PREP-03.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct preposition.", "prompt": "Sei pronto ___ partire? Il taxi è arrivato.", "answers": ["a", "per"], "focus": ["a"], "errorType": "preposition", "traps": [{ "match": "di", "errorType": "preposition", "why": "*Pronto* takes *a* (or *per*) before an infinitive, never *di*." }], "explanation": "*Pronto* **a** + infinitive (*pronto per* is also common).", "en": "Are you ready to leave? The taxi's here." },
+        { "id": "C1-PREP-03.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct preposition.", "prompt": "Il problema è che non è capace ___ dire di no.", "answers": ["di"], "focus": ["di"], "errorType": "preposition", "traps": [{ "match": "a", "errorType": "preposition", "why": "*Capace* takes *di*." }], "explanation": "*Capace* **di** + infinitive.", "en": "The problem is he can't say no." },
+        { "id": "C1-PREP-03.e05", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct preposition.", "prompt": "Vengo o non vengo? Dipende ___ te.", "answers": ["da"], "focus": ["da"], "errorType": "preposition", "traps": [{ "match": "di", "errorType": "preposition", "why": "Calque from 'depend of'. *Dipendere* always takes *da*." }, { "match": "su", "errorType": "preposition", "why": "Calque of 'depend on'. Italian: *dipende da*." }], "explanation": "*Dipendere* **da**.", "en": "Shall I come or not? It's up to you." },
+        { "id": "C1-PREP-03.e06", "type": "choice", "difficulty": 3, "instruction": "Choose the phrase that fits.", "prompt": "Il prezzo delle camere varia ___ alla stagione.", "options": ["in base", "a causa", "nei confronti", "a prescindere"], "answer": 0, "errorType": "preposition", "optionWhy": { "1": "*A causa* is followed by *di*, and means 'because of'.", "2": "*Nei confronti* is followed by *di* and means 'towards'.", "3": "*A prescindere* is followed by *da* and means 'regardless of'." }, "explanation": "*In base a* = according to, on the basis of: **in base alla** stagione.", "en": "The price of the rooms varies according to the season." },
+        { "id": "C1-PREP-03.e07", "type": "cloze", "difficulty": 3, "instruction": "Complete with a two-word phrase meaning 'towards / with regard to'.", "prompt": "Il suo comportamento ___ dei colleghi è stato scorretto.", "answers": ["nei confronti"], "focus": ["nei", "confronti"], "errorType": "preposition", "traps": [{ "match": "in confronto", "errorType": "vocabulary", "why": "*In confronto a* = compared with. 'Towards' is *nei confronti di*." }, { "match": "nel confronto", "errorType": "preposition", "why": "The fixed phrase is plural: *nei confronti di*." }], "explanation": "**Nei confronti di** = towards, with regard to.", "en": "His behaviour towards his colleagues was improper." },
+        { "id": "C1-PREP-03.e08", "type": "cloze", "difficulty": 3, "instruction": "Complete with a phrase meaning 'regardless'.", "prompt": "Ti voglio bene ___ da quello che dici.", "answers": ["a prescindere"], "focus": ["prescindere"], "errorType": "preposition", "traps": [{ "match": "nonostante", "errorType": "preposition", "why": "*Nonostante* doesn't take *da*. With *da* the phrase is *a prescindere da*." }], "explanation": "**A prescindere da** = regardless of.", "en": "I love you regardless of what you say." },
+        { "id": "C1-PREP-03.e09", "type": "choice", "difficulty": 3, "instruction": "Choose the correct preposition.", "prompt": "Sono davvero contento ___ vederti!", "options": ["di", "a", "per", "da"], "answer": 0, "errorType": "preposition", "optionWhy": { "1": "*Contento* + infinitive takes *di*.", "2": "*Contento per* + noun = happy for someone (*Sono contento per te*). With an infinitive: *di*.", "3": "*Contento* doesn't take *da*." }, "explanation": "*Contento* **di** + infinitive.", "en": "I'm really glad to see you!" },
+        { "id": "C1-PREP-03.e10", "type": "transform", "difficulty": 4, "instruction": "Rewrite using 'essere a favore di'.", "prompt": "Molti cittadini sostengono la nuova legge.", "answers": ["Molti cittadini sono a favore della nuova legge"], "focus": ["della"], "errorType": "preposition", "traps": [{ "match": "Molti cittadini sono a favore di la nuova legge", "errorType": "preposition", "why": "*Di + la* contracts: *della*." }, { "match": "Molti cittadini sono in favore della nuova legge", "ok": true, "errorType": "preposition", "why": "*In favore di* also exists, but *a favore di* is the more common form." }, { "match": "Molti cittadini sono a favore per la nuova legge", "errorType": "preposition", "why": "*A favore **di***." }], "explanation": "*A favore di* + *la* → **a favore della**.", "en": "Many citizens are in favour of the new law." },
+        { "id": "C1-PREP-03.e11", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian, using 'in vista di'.", "prompt": "With the exam coming up, I'm studying every day.", "answers": ["In vista dell'esame[,] (studio|sto studiando) (tutti i giorni|ogni giorno)"], "focus": ["dell'esame"], "errorType": "preposition", "traps": [{ "contains": ["per"], "errorType": "preposition", "why": "The phrase is *in vista di*: *in vista dell'esame*." }, { "contains": ["di"], "errorType": "article", "why": "*Di + l'esame* → *dell'esame*." }], "explanation": "**In vista dell'**esame = ahead of / with a view to the exam.", "en": "With the exam coming up, I'm studying every day." },
+        { "id": "C1-PREP-03.e12", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "This model is different from the previous one.", "answers": ["Questo modello è (diverso|differente) (da quello precedente|dal precedente|da quello di prima)"], "focus": ["da"], "errorType": "preposition", "traps": [{ "contains": ["di"], "errorType": "preposition", "why": "*Diverso **da*** (different from), not *di*." }, { "contains": ["che"], "errorType": "preposition", "why": "Comparison of difference: *diverso da*." }], "explanation": "*Diverso* **da**.", "en": "This model is different from the previous one." },
+        { "id": "C1-PREP-03.e13", "type": "order", "difficulty": 3, "instruction": "Put the words in order.", "prompt": "We're satisfied with the results.", "tokens": ["Siamo", "soddisfatti", "dei", "risultati"], "answers": ["Siamo soddisfatti dei risultati"], "errorType": "word-order", "explanation": "*Soddisfatto* **di** + *i risultati* → *dei risultati*. Not ~~con~~." },
+        { "id": "C1-PREP-03.e14", "type": "speak", "difficulty": 5, "instruction": "Say it aloud in a meeting (or type).", "prompt": "Say: 'Regardless of the cost, we must finish the project.'", "answers": ["A prescindere (dal costo|dai costi)[,] dobbiamo (finire|completare|terminare) il progetto"], "focus": ["prescindere"], "errorType": "preposition", "traps": [{ "contains": ["di", "del", "dei"], "errorType": "preposition", "why": "*Prescindere **da***: *a prescindere dal costo*." }], "explanation": "**A prescindere da** + article: *dal costo / dai costi*.", "en": "Regardless of the cost, we must finish the project.", "interaction": true },
+        { "id": "C1-PREP-03.e15", "type": "cloze", "difficulty": 4, "instruction": "Complete with the correct preposition.", "prompt": "Sono stanco ___ sentire sempre le stesse scuse.", "answers": ["di"], "focus": ["di"], "errorType": "preposition", "traps": [{ "match": "a", "errorType": "preposition", "why": "*Stanco di* = tired of." }, { "match": "da", "errorType": "preposition", "why": "*Stanco da* (+ noun) can mean 'tired from', but 'tired of doing' is *stanco di*." }], "explanation": "*Stanco* **di** = tired of.", "en": "I'm tired of hearing the same excuses all the time." },
+        { "id": "C1-PREP-03.e16", "type": "choice", "difficulty": 5, "instruction": "Choose the correct word.", "prompt": "___ quanto riguarda il budget, ne parliamo domani.", "options": ["Per", "In", "A", "Su"], "answer": 0, "errorType": "preposition", "optionWhy": { "1": "The fixed phrase is *per quanto riguarda*.", "2": "The fixed phrase is *per quanto riguarda*.", "3": "Calque of 'on'. The phrase is *per quanto riguarda*." }, "explanation": "**Per quanto riguarda** = as regards, as for.", "en": "As for the budget, we'll talk about it tomorrow." },
+        { "id": "C1-PREP-03.e17", "type": "translate", "difficulty": 5, "instruction": "Translate into Italian (informal 'your').", "prompt": "Thanks to your help, we made it.", "answers": ["Grazie al tuo aiuto[,] (ce l'abbiamo fatta|ci siamo riusciti|ci siamo riuscite)"], "focus": ["grazie", "al"], "errorType": "preposition", "traps": [{ "contains": ["causa"], "errorType": "vocabulary", "why": "*A causa di* is for negative causes. For a positive one: *grazie a*." }, { "contains": ["per"], "errorType": "preposition", "why": "'Thanks to' = *grazie a*: *grazie al tuo aiuto*." }, { "contains": ["fatto"], "errorType": "agreement", "why": "*Farcela*: *ce l'abbiamo fatta* (agreement with *la*)." }], "explanation": "Positive cause → **grazie a** (+ il → *al*).", "en": "Thanks to your help, we made it." }
+      ]
+    }
+  ]
+}

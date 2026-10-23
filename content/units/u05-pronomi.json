@@ -1,0 +1,520 @@
+{
+  "unit": "U05",
+  "title": "Pronomi",
+  "cefr": "B2",
+  "concepts": [
+    {
+      "id": "B2-PRON-01",
+      "title": "Combined pronouns (glielo, me ne, ce lo…)",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": [],
+      "rule": "Indirect + direct pronoun: mi/ti/ci/vi/si become me/te/ce/ve/se before lo, la, li, le, ne; gli and le (and Lei) both become glie- and fuse into one word (glielo, gliela, glieli, gliele, gliene). In compound tenses the participle agrees with lo/la/li/le and partitive ne: Gliel'ho data.",
+      "assessment": [
+        "Combines indirect and direct object pronouns in the right order and form (me lo, te la, ce li, ve ne)",
+        "Uses glielo/gliela/glieli/gliele/gliene for him, her, them and formal you",
+        "Makes the past participle agree with lo, la, li, le and partitive ne (Gliel'ho data, Me ne ha date tre)",
+        "Elides lo/la before avere (gliel'ho, me l'ha) but never li/le"
+      ],
+      "lesson": {
+        "intro": "English says 'I gave it to him' with two separate words. Italian packs both pronouns into a tight cluster before the verb: *gliel'ho dato*. The forms change when they combine (*mi* → *me*, *gli* → *glie-*), and in compound tenses the participle agrees with the direct pronoun. These clusters are everywhere in spoken Italian, and getting them right instantly sounds fluent.",
+        "rules": [
+          {
+            "title": "Indirect first, then direct: mi → me, ti → te…",
+            "text": "When an indirect pronoun (to me, to you…) meets *lo, la, li, le* or *ne*, it comes **first** and its *-i* changes to *-e*: *mi* → **me**, *ti* → **te**, *ci* → **ce**, *vi* → **ve**, *si* → **se**.",
+            "examples": [
+              { "it": "Mi presti la penna? Sì, **te la** presto.", "en": "Will you lend me the pen? Yes, I'll lend it to you." },
+              { "it": "Ci mandi le foto? Sì, **ve le** mando stasera.", "en": "Will you send us the photos? Yes, I'll send them to you tonight." },
+              { "it": "Quanti libri ti ha prestato? **Me ne** ha prestati due.", "en": "How many books did he lend you? He lent me two." }
+            ],
+            "table": {
+              "head": ["", "+ lo", "+ la", "+ li", "+ le", "+ ne"],
+              "rows": [
+                ["mi", "me lo", "me la", "me li", "me le", "me ne"],
+                ["ti", "te lo", "te la", "te li", "te le", "te ne"],
+                ["gli / le / Le", "glielo", "gliela", "glieli", "gliele", "gliene"],
+                ["ci", "ce lo", "ce la", "ce li", "ce le", "ce ne"],
+                ["vi", "ve lo", "ve la", "ve li", "ve le", "ve ne"],
+                ["si (reflexive)", "se lo", "se la", "se li", "se le", "se ne"]
+              ]
+            }
+          },
+          {
+            "title": "Glie- is the same for him, her, them and Lei",
+            "text": "*Gli* (to him / to them) and *le* (to her / to you formal) both become **glie-** and join the direct pronoun in **one word**. So *glielo* can mean 'it to him', 'it to her', 'it to them' or 'it to you (Lei)'. Context tells you who. Never write ~~le lo~~ or ~~gli lo~~.",
+            "examples": [
+              { "it": "Hai dato il regalo a Sara? Sì, **gliel'**ho dato.", "en": "Did you give Sara the present? Yes, I gave it to her." },
+              { "it": "Signora, il conto **glielo** porto subito.", "en": "Madam, I'll bring you the bill right away." },
+              { "it": "Ai ragazzi? **Glieli** porto domani.", "en": "To the kids? I'll take them to them tomorrow." }
+            ]
+          },
+          {
+            "title": "Participle agreement in compound tenses",
+            "text": "With *avere*, the past participle agrees with a preceding **lo, la, li, le** and with partitive **ne**, even inside a cluster. *Lo* and *la* elide before *ho, hai, ha, hanno* (*gliel'ho, me l'ha*). *Li* and *le* **never** elide, so the participle ending is the only thing that shows gender.",
+            "examples": [
+              { "it": "La chiave? **Gliel'ho data** ieri.", "en": "The key? I gave it to him yesterday." },
+              { "it": "Le rose? **Gliele ho regalate** io.", "en": "The roses? I gave them to her." },
+              { "it": "Le mele? La nonna **me ne ha date** tre.", "en": "The apples? Grandma gave me three." }
+            ],
+            "table": {
+              "head": ["Object", "Cluster", "Participle"],
+              "rows": [
+                ["il libro", "gliel'ho", "dato"],
+                ["la chiave", "gliel'ho", "data"],
+                ["i libri", "glieli ho", "dati"],
+                ["le chiavi", "gliele ho", "date"],
+                ["tre mele", "me ne ha", "date"]
+              ]
+            }
+          },
+          {
+            "title": "Where the cluster goes",
+            "text": "The cluster goes **before** a conjugated verb (*te lo dico*) and is **attached** to infinitives, gerunds and affirmative tu/noi/voi imperatives (*dirtelo, dicendotelo, dimmelo*). With modal verbs both positions work: *Te lo posso dire / Posso dirtelo*. Positions are covered in depth in B2-PRON-04.",
+            "examples": [
+              { "it": "Non **te lo** posso spiegare adesso. / Non posso **spiegartelo** adesso.", "en": "I can't explain it to you now." },
+              { "it": "**Me lo** dai? → **Dammelo**!", "en": "Will you give it to me? → Give it to me!" }
+            ]
+          },
+          {
+            "title": "Reflexive verbs + direct pronoun",
+            "text": "Reflexive verbs with an object (*mettersi la giacca, lavarsi le mani*) use the same pattern: *si* → **se**. In compound tenses they take *essere*, and the participle agrees with the direct pronoun: *Le mani? **Me le sono lavate**.*",
+            "examples": [
+              { "it": "Marco si mette la giacca? Sì, **se la** mette.", "en": "Is Marco putting his jacket on? Yes, he's putting it on." },
+              { "it": "Le mani? **Me le sono** già **lavate**.", "en": "My hands? I've already washed them." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Le lo do domani.", "right": "Glielo do domani.", "why": "*Le* (to her) becomes *glie-* before *lo*, and it's written as one word." },
+          { "wrong": "Mi lo dai?", "right": "Me lo dai?", "why": "Before *lo, la, li, le, ne*, *mi* becomes *me*." },
+          { "wrong": "La chiave? Gliel'ho dato.", "right": "La chiave? Gliel'ho data.", "why": "The participle agrees with the direct pronoun *la* hidden in *gliel'*: *data*." },
+          { "wrong": "Le rose? Gliel'ho regalate.", "right": "Le rose? Gliele ho regalate.", "why": "Only *lo* and *la* elide. *Le* stays whole: *gliele ho*." },
+          { "wrong": "Gli lo dico.", "right": "Glielo dico.", "why": "*Gli + lo* fuse into *glielo*, with an extra *-e-*." }
+        ],
+        "tips": [
+          "When you see *gliel'ho*, look for the noun it replaces: masculine → *dato*, feminine → *data*.",
+          "Say the clusters aloud as single words: *melo, tela, glielo, cene*. They are pronounced as one unit with the verb.",
+          "*Glielo* is ambiguous on purpose. If you need to be clear, add *a lui / a lei* and use a single pronoun: *L'ho dato a lei, non a lui.*"
+        ]
+      },
+      "exercises": [
+        { "id": "B2-PRON-01.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with a combined pronoun.", "prompt": "Mi presti la penna? Sì, ___ presto subito.", "answers": ["te la"], "focus": ["te", "la"], "errorType": "pronoun", "traps": [{ "match": "ti la", "errorType": "pronoun", "why": "Before *la*, *ti* becomes *te*: *te la*." }, { "match": "la ti", "errorType": "pronoun-position", "why": "The indirect pronoun comes first: *te la*." }], "explanation": "Indirect (to you) + direct (the pen, feminine): *ti* + *la* → **te la**.", "en": "Will you lend me the pen? Yes, I'll lend it to you right away." },
+        { "id": "B2-PRON-01.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with a combined pronoun.", "prompt": "Quando dai il regalo a Sara? ___ do domani.", "answers": ["Glielo"], "focus": ["glielo"], "errorType": "pronoun", "traps": [{ "match": "le lo", "errorType": "pronoun", "why": "*Le* (to her) becomes *glie-* before *lo*: *glielo*, one word." }, { "match": "gli lo", "errorType": "pronoun", "why": "*Gli + lo* fuse into one word with an extra *e*: *glielo*." }, { "match": "lo le", "errorType": "pronoun-position", "why": "Indirect first, and fused: *glielo*." }], "explanation": "To her (*le*) + it (*lo*, il regalo) → **glielo**. *Glie-* is used for him, her and them alike.", "en": "When are you giving Sara the present? I'm giving it to her tomorrow." },
+        { "id": "B2-PRON-01.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with a combined pronoun.", "prompt": "Porti i documenti ai signori Rossi? Sì, ___ porto stasera.", "answers": ["glieli"], "focus": ["glieli"], "errorType": "pronoun", "traps": [{ "match": "gli li", "errorType": "pronoun", "why": "*Gli + li* → *glieli*, written as one word." }, { "match": "li gli", "errorType": "pronoun-position", "why": "Indirect pronoun first, fused: *glieli*." }, { "match": "glielo", "errorType": "agreement", "why": "*I documenti* is masculine plural, so the direct part is *li*: *glieli*." }], "explanation": "To them (*gli*) + them (*li*, i documenti) → **glieli**.", "en": "Are you taking the documents to Mr and Mrs Rossi? Yes, I'm taking them tonight." },
+        { "id": "B2-PRON-01.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with a combined pronoun. Careful with the point of view!", "prompt": "Ci mandi le foto del matrimonio? Sì, ___ mando stasera.", "answers": ["ve le"], "focus": ["ve", "le"], "errorType": "pronoun", "traps": [{ "match": "ce le", "errorType": "pronoun", "why": "They asked 'will you send *us*'. You answer 'I'll send them to *you* (plural)': *ve le*." }, { "match": "vi le", "errorType": "pronoun", "why": "Before *le*, *vi* becomes *ve*: *ve le*." }, { "match": "ve li", "errorType": "agreement", "why": "*Le foto* is feminine plural (*la foto*, short for *fotografia*): *ve le*." }], "explanation": "To you plural (*vi*) + them (*le*, le foto) → **ve le**.", "en": "Will you send us the wedding photos? Yes, I'll send them to you tonight." },
+        { "id": "B2-PRON-01.e05", "type": "cloze", "difficulty": 3, "instruction": "Answer with a combined pronoun and the passato prossimo of the verb in brackets.", "prompt": "Hai restituito la bici a Paolo? Sì, ___ (restituire) ieri.", "answers": ["gliel'ho restituita", "gliela ho restituita"], "focus": ["restituita"], "errorType": "agreement", "traps": [{ "match": "gliel'ho restituito", "errorType": "agreement", "why": "*Gliel'* hides *la* (la bici), so the participle agrees: *restituita*." }, { "match": ["gli l'ho restituita", "le l'ho restituita"], "errorType": "pronoun", "why": "*Gli + la* → *gliela*, which elides to *gliel'ho*: one word." }, { "match": "l'ho restituita", "errorType": "pronoun", "why": "You also need 'to him': *gliel'ho restituita*." }], "explanation": "To him (*gli*) + it (*la*, la bici) → *gliela* → **gliel'ho**. The participle agrees with *la*: **restituita**.", "en": "Did you give the bike back to Paolo? Yes, I gave it back to him yesterday." },
+        { "id": "B2-PRON-01.e06", "type": "choice", "difficulty": 2, "instruction": "Choose the correct form. The waiter is speaking formally (Lei).", "prompt": "Signora, il conto? ___ porto subito.", "options": ["Glielo", "Le lo", "Lo le", "Gli lo"], "answer": 0, "errorType": "pronoun", "optionWhy": { "1": "*Le* (to you, Lei) becomes *glie-* before *lo*: *glielo*.", "2": "Indirect comes first and the two fuse: *glielo*.", "3": "*Gli + lo* is written as one word with an extra *e*: *glielo*." }, "explanation": "Formal *Le* behaves exactly like *le* (to her): *Le* + *lo* → **Glielo**.", "en": "Madam, the bill? I'll bring it to you right away." },
+        { "id": "B2-PRON-01.e07", "type": "cloze", "difficulty": 3, "instruction": "Answer with a combined pronoun and the passato prossimo of the verb in brackets.", "prompt": "Quante mele ti ha dato la nonna? ___ (dare) tre.", "answers": ["Me ne ha date"], "focus": ["date"], "errorType": "agreement", "traps": [{ "match": "me ne ha dato", "errorType": "agreement", "why": "In careful Italian the participle agrees with partitive *ne*, which stands for *mele* (feminine plural): *date*. *Dato* is common in speech but marked." }, { "match": "mi ne ha date", "errorType": "pronoun", "why": "Before *ne*, *mi* becomes *me*: *me ne*." }, { "match": "me ne ha dati", "errorType": "agreement", "why": "*Mele* is feminine: *date*." }, { "match": "mi ha dato", "errorType": "ci-ne", "why": "With a number and no noun you need *ne*: *me ne ha date tre*." }], "explanation": "To me (*mi* → *me*) + of them (*ne*) → **me ne**. The participle agrees with *ne* = *mele*: **date**.", "en": "How many apples did Grandma give you? She gave me three." },
+        { "id": "B2-PRON-01.e08", "type": "transform", "difficulty": 3, "instruction": "Replace both objects (il pacco, a mia sorella) with a combined pronoun.", "prompt": "Ho spedito il pacco a mia sorella.", "answers": ["Gliel'ho spedito", "Glielo ho spedito"], "focus": ["gliel'ho"], "errorType": "pronoun", "traps": [{ "match": ["Le l'ho spedito", "Le lo ho spedito"], "errorType": "pronoun", "why": "*Le* (to her) becomes *glie-* in a cluster: *gliel'ho*." }, { "match": "Gliel'ho spedita", "errorType": "agreement", "why": "The participle agrees with the direct object, *il pacco* (masculine): *spedito*. Not with the sister." }, { "match": "Gli l'ho spedito", "errorType": "pronoun", "why": "One word: *gliel'ho*." }], "explanation": "*A mia sorella* → *le*; *il pacco* → *lo*. *Le + lo* → *glielo*, elided before *ho*: **Gliel'ho spedito**.", "en": "I sent it to her." },
+        { "id": "B2-PRON-01.e09", "type": "transform", "difficulty": 3, "instruction": "Replace both objects (le rose, a mia madre) with a combined pronoun.", "prompt": "Ho regalato le rose a mia madre.", "answers": ["Gliele ho regalate"], "focus": ["gliele", "regalate"], "errorType": "agreement", "traps": [{ "match": "Gliele ho regalato", "errorType": "agreement", "why": "The participle agrees with *le* (le rose): *regalate*." }, { "match": "Gliel'ho regalate", "errorType": "pronoun", "why": "Only *lo* and *la* elide. *Le* never does: *gliele ho*." }, { "match": "Le le ho regalate", "errorType": "pronoun", "why": "*Le* (to her) becomes *glie-*: *gliele*." }], "explanation": "To her + them (fem. pl.) → **gliele**, no elision, and the participle agrees: **regalate**.", "en": "I gave them to her." },
+        { "id": "B2-PRON-01.e10", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian (informal 'you').", "prompt": "I'll tell you about it later.", "answers": ["Te ne (parlo|parlerò) (dopo|più tardi)", "(Dopo|Più tardi) te ne (parlo|parlerò)"], "focus": ["te", "ne"], "errorType": "pronoun", "traps": [{ "contains": ["ti"], "errorType": "pronoun", "why": "Before *ne*, *ti* becomes *te*: *te ne parlo*." }, { "contains": ["lo"], "errorType": "ci-ne", "why": "*Parlare **di** qualcosa*: 'about it' = *ne*, not *lo*." }], "explanation": "*Parlare di* → 'about it' is *ne*. To you (*ti*) + *ne* → **te ne**.", "en": "I'll tell you about it later." },
+        { "id": "B2-PRON-01.e11", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian. 'The keys' = le chiavi; 'him' = Marco.", "prompt": "Yes, I gave them to him yesterday.", "answers": ["Sì, gliele ho date ieri", "Sì, ieri gliele ho date"], "focus": ["gliele", "date"], "errorType": "agreement", "traps": [{ "contains": ["dato", "dati"], "errorType": "agreement", "why": "The participle agrees with *le* (le chiavi, feminine plural): *date*." }, { "contains": ["glieli"], "errorType": "agreement", "why": "*Le chiavi* is feminine: *gliele*." }, { "contains": ["gliel'ho"], "errorType": "pronoun", "why": "*Le* doesn't elide: *gliele ho*." }], "explanation": "To him + them (fem. pl.) → **gliele ho**, and the participle agrees: **date**.", "en": "Yes, I gave them to him yesterday." },
+        { "id": "B2-PRON-01.e12", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "Can you repeat it for me?", "tokens": ["Me", "lo", "puoi", "ripetere"], "answers": ["Me lo puoi ripetere", "Puoi ripetermelo"], "errorType": "word-order", "explanation": "With a modal, the cluster can go before the modal: **Me lo** puoi ripetere (or attached: *Puoi ripetermelo*)." },
+        { "id": "B2-PRON-01.e13", "type": "speak", "difficulty": 4, "instruction": "Answer aloud (or type).", "prompt": "Your colleague asks whether you've sent the report (la relazione) to the director. Say yes, you sent it to him this morning.", "answers": ["Sì, (gliel'ho|gliela ho) (mandata|inviata|spedita) stamattina", "Sì, stamattina (gliel'ho|gliela ho) (mandata|inviata|spedita)"], "focus": ["gliel'ho"], "errorType": "agreement", "traps": [{ "contains": ["mandato", "inviato", "spedito"], "errorType": "agreement", "why": "*Gliel'* contains *la* (la relazione): the participle must be feminine, *mandata*." }, { "contains": ["l'ho"], "errorType": "pronoun", "why": "You need 'to him' as well: *gliel'ho*." }], "explanation": "To him + it (la relazione) → **gliel'ho mandata**.", "en": "Yes, I sent it to him this morning.", "interaction": true },
+        { "id": "B2-PRON-01.e14", "type": "choice", "difficulty": 4, "instruction": "Choose the correct form.", "prompt": "Che belle scarpe! Chi ___ ha regalate?", "options": ["te le", "ti le", "te li", "tele"], "answer": 0, "errorType": "pronoun", "optionWhy": { "1": "Before *le*, *ti* becomes *te*.", "2": "*Scarpe* is feminine, and *regalate* confirms it: *te le*.", "3": "Written as two words: *te le*." }, "explanation": "To you (*ti* → *te*) + them (*le*, le scarpe) → **te le**. The participle *regalate* agrees with *le*.", "en": "What lovely shoes! Who gave them to you?" },
+        { "id": "B2-PRON-01.e15", "type": "cloze", "difficulty": 4, "instruction": "Complete with a combined pronoun.", "prompt": "Marco si mette la cravatta per il colloquio? Sì, ___ mette.", "answers": ["se la"], "focus": ["se", "la"], "errorType": "pronoun", "traps": [{ "match": "si la", "errorType": "pronoun", "why": "Before *la*, reflexive *si* becomes *se*: *se la*." }, { "match": "gliela", "errorType": "pronoun", "why": "He's putting it on *himself*: reflexive *se la*, not *gliela* (to him, someone else)." }, { "match": "la", "errorType": "pronoun", "why": "*Mettersi* is reflexive, so keep the reflexive part: *se la mette*." }], "explanation": "Reflexive *si* + *la* (la cravatta) → **se la** mette.", "en": "Is Marco wearing a tie for the interview? Yes, he is." },
+        { "id": "B2-PRON-01.e16", "type": "transform", "difficulty": 5, "instruction": "Replace both objects (i soldi, a Giulia e a Marco) with pronouns.", "prompt": "Non ho ancora restituito i soldi a Giulia e a Marco.", "answers": ["Non glieli ho ancora restituiti"], "focus": ["glieli", "restituiti"], "errorType": "agreement", "traps": [{ "match": "Non li ho ancora restituiti loro", "ok": true, "errorType": "pronoun", "why": "Correct but formal: *loro* after the verb. In everyday Italian *glieli* is the norm." }, { "match": "Non glieli ho ancora restituito", "errorType": "agreement", "why": "The participle agrees with *li* (i soldi): *restituiti*." }, { "match": "Non gli li ho ancora restituiti", "errorType": "pronoun", "why": "One word: *glieli*." }, { "match": "Non le li ho ancora restituiti", "errorType": "pronoun", "why": "For a mixed group ('to them') use *gli* → *glieli*." }], "explanation": "To them (*gli*) + them (*li*) → **glieli**, before the verb; the participle agrees: **restituiti**.", "en": "I haven't given it back to them yet." },
+        { "id": "B2-PRON-01.e17", "type": "translate", "difficulty": 5, "instruction": "Translate into Italian ('it' = something she explained, masculine).", "prompt": "She's already explained it to me twice.", "answers": ["(Me l'ha|Me lo ha) già spiegato due volte", "[Lei] (me l'ha|me lo ha) già spiegato due volte"], "focus": ["me"], "errorType": "pronoun", "traps": [{ "contains": ["mi"], "errorType": "pronoun", "why": "Before *lo*, *mi* becomes *me*: *me l'ha*." }, { "contains": ["è"], "errorType": "auxiliary", "why": "*Spiegare* takes *avere*: *me l'ha spiegato*." }], "explanation": "To me (*mi* → *me*) + it (*lo*, elided) → **me l'ha** spiegato.", "en": "She's already explained it to me twice." }
+      ]
+    },
+    {
+      "id": "B2-PRON-02",
+      "title": "Ci and ne in depth",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": ["B2-PRON-01"],
+      "rule": "Ne replaces di + something and quantities (Ne voglio due; Che ne pensi?); ci replaces a/in/su + something or a place (Ci vado; Ci penso io). With essere: ce n'è / ce ne sono. Pensarci = think about it; pensarne = have an opinion of it.",
+      "assessment": [
+        "Uses partitive ne with numbers and quantities, including participle agreement (Ne ho mangiate due)",
+        "Uses ne for di + thing (parlarne, averne bisogno, che ne pensi)",
+        "Uses ci for places and a/in/su + thing (andarci, pensarci, crederci, riuscirci)",
+        "Produces c'è / ci sono vs ce n'è / ce ne sono correctly"
+      ],
+      "lesson": {
+        "intro": "English often leaves these words out: 'How many do you have? I have two.' Italian can't: *Ne ho due.* And many verbs that take *a* or *di* need *ci* or *ne* to say 'about it', 'to it' or 'there'. Missing *ci* and *ne* is one of the most noticeable traits of foreign Italian, and using them well sounds immediately native.",
+        "rules": [
+          {
+            "title": "Partitive ne: quantities",
+            "text": "When you mention a number or quantity without repeating the noun, you need **ne** ('of them / of it'): *Ne ho due, Ne voglio un po', Non ne ho*. In compound tenses the participle agrees with the noun *ne* stands for.",
+            "examples": [
+              { "it": "Quanti fratelli hai? **Ne** ho due.", "en": "How many brothers do you have? I have two." },
+              { "it": "Vuoi del vino? Sì, **ne** prendo un bicchiere.", "en": "Want some wine? Yes, I'll have a glass." },
+              { "it": "Le pizze? **Ne** abbiamo **mangiate** quattro.", "en": "The pizzas? We ate four." }
+            ]
+          },
+          {
+            "title": "Ne = di + something",
+            "text": "Verbs and expressions with *di* use **ne** for 'of/about it': *parlarne* (parlare di), *averne bisogno* (aver bisogno di), *esserne sicuro* (essere sicuro di), *che ne pensi?* (pensare di = opinion), *ricordarsene*, *occuparsene*.",
+            "examples": [
+              { "it": "**Ne** parliamo domani.", "en": "Let's talk about it tomorrow." },
+              { "it": "Non **ne** ho bisogno.", "en": "I don't need it." },
+              { "it": "Che **ne** pensi del film?", "en": "What do you think of the film?" }
+            ]
+          },
+          {
+            "title": "Ci = a / in / su + something, or 'there'",
+            "text": "**Ci** replaces a place (*Ci vado domani*) and *a/in/su* + a thing: *pensarci* (pensare a), *crederci* (credere a), *riuscirci* (riuscire a), *contarci* (contare su), *provarci* (provare a). *Ci penso io* = I'll take care of it.",
+            "examples": [
+              { "it": "Vai spesso a Roma? Sì, **ci** vado ogni mese.", "en": "Do you often go to Rome? Yes, I go there every month." },
+              { "it": "Non **ci** credo!", "en": "I don't believe it!" },
+              { "it": "Hai pensato al regalo? Sì, **ci** ho pensato.", "en": "Have you thought about the present? Yes, I have." }
+            ]
+          },
+          {
+            "title": "C'è / ci sono vs ce n'è / ce ne sono",
+            "text": "*C'è* and *ci sono* = there is / there are. When you give a quantity without the noun, add **ne**: *ci* → *ce*, giving **ce n'è** (singular) and **ce ne sono** (plural).",
+            "table": {
+              "head": ["With the noun", "Without the noun (quantity)"],
+              "rows": [
+                ["C'è un bar qui vicino.", "Ce n'è uno qui vicino."],
+                ["Ci sono tre camere.", "Ce ne sono tre."],
+                ["Non c'è più latte.", "Non ce n'è più."]
+              ]
+            }
+          },
+          {
+            "title": "Pensarci vs pensarne, parlarne, crederci",
+            "text": "*Pensare a* (think about, take care of) → **ci**: *Ci penso io.* *Pensare di* (have an opinion of) → **ne**: *Che ne pensi?* Many verbs need one or the other: learn them with their preposition.",
+            "table": {
+              "head": ["Verb + prep.", "With pronoun", "Meaning"],
+              "rows": [
+                ["pensare a", "pensarci", "think about it / see to it"],
+                ["pensare di", "pensarne", "think of it (opinion)"],
+                ["parlare di", "parlarne", "talk about it"],
+                ["credere a", "crederci", "believe it"],
+                ["riuscire a", "riuscirci", "manage it"],
+                ["aver bisogno di", "averne bisogno", "need it"]
+              ]
+            }
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Quanti figli hai? Ho due.", "right": "Ne ho due.", "why": "A number without its noun needs partitive *ne*." },
+          { "wrong": "Cosa pensi di questo?", "right": "Che ne pensi?", "why": "'What do you think of it?' is naturally *Che ne pensi?* (*pensare di* → *ne*)." },
+          { "wrong": "Ci sono due.", "right": "Ce ne sono due.", "why": "'There are two (of them)': add *ne*, and *ci* becomes *ce*." },
+          { "wrong": "Le pizze? Ne ho mangiato tre.", "right": "Ne ho mangiate tre.", "why": "The participle agrees with what *ne* refers to (pizze, fem. pl.)." },
+          { "wrong": "Lo penso io.", "right": "Ci penso io.", "why": "'I'll take care of it' is *pensare a* → *ci*." }
+        ],
+        "tips": [
+          "Ask yourself which preposition the verb takes: *a/in/su* → *ci*; *di/da* or a quantity → *ne*.",
+          "*Ce n'è* and *ce ne sono* are pronounced as one word: *cenè, cenesòno*.",
+          "*Ci penso io!* and *Non ci credo!* are high-frequency spoken chunks. Learn them whole."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-PRON-02.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with ci or ne.", "prompt": "Quanti fratelli hai? ___ ho due.", "answers": ["Ne"], "focus": ["ne"], "errorType": "ci-ne", "traps": [{ "match": "li", "errorType": "ci-ne", "why": "With a number, use partitive *ne* ('of them'): *Ne ho due*." }, { "match": "ci", "errorType": "ci-ne", "why": "*Ci* is for places and *a* + thing. For quantities use *ne*." }], "explanation": "Quantity without the noun → **ne**.", "en": "How many brothers do you have? I have two." },
+        { "id": "B2-PRON-02.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with ci or ne.", "prompt": "Vai spesso a Roma? Sì, ___ vado ogni mese.", "answers": ["ci"], "focus": ["ci"], "errorType": "ci-ne", "traps": [{ "match": "ne", "errorType": "ci-ne", "why": "'There' (to a place) is *ci*: *ci vado*." }], "explanation": "*Ci* replaces a place: *a Roma* → **ci**.", "en": "Do you often go to Rome? Yes, I go there every month." },
+        { "id": "B2-PRON-02.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with ci or ne.", "prompt": "Hai bisogno della macchina? No, non ___ ho bisogno.", "answers": ["ne"], "focus": ["ne"], "errorType": "ci-ne", "traps": [{ "match": "ci", "errorType": "ci-ne", "why": "*Avere bisogno **di*** → *ne*." }, { "match": "la", "errorType": "ci-ne", "why": "*Bisogno di* takes *ne*, not a direct object pronoun." }], "explanation": "*Aver bisogno di qualcosa* → **ne**.", "en": "Do you need the car? No, I don't need it." },
+        { "id": "B2-PRON-02.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete the answer.", "prompt": "C'è ancora del latte? Sì, ___ ancora un po'.", "answers": ["ce n'è"], "focus": ["ce", "n'è"], "errorType": "ci-ne", "traps": [{ "match": "c'è", "errorType": "ci-ne", "why": "With a quantity (*un po'*) and no noun, add *ne*: *ce n'è*." }, { "match": ["ci n'è", "ci ne è"], "errorType": "ci-ne", "why": "Before *ne*, *ci* becomes *ce*: *ce n'è*." }], "explanation": "*C'è* + partitive *ne* → **ce n'è**.", "en": "Is there any milk left? Yes, there's still a bit." },
+        { "id": "B2-PRON-02.e05", "type": "cloze", "difficulty": 2, "instruction": "Complete the answer.", "prompt": "Quante persone ci sono in sala? ___ almeno cinquanta.", "answers": ["Ce ne sono"], "focus": ["ce", "ne"], "errorType": "ci-ne", "traps": [{ "match": "ci sono", "errorType": "ci-ne", "why": "A number without its noun needs *ne*: *ce ne sono*." }, { "match": "ci ne sono", "errorType": "ci-ne", "why": "*Ci* becomes *ce* before *ne*." }, { "match": "ne sono", "errorType": "ci-ne", "why": "'There are' still needs *ci*: *ce ne sono*." }], "explanation": "There are (*ci sono*) + of them (*ne*) → **ce ne sono**.", "en": "How many people are in the hall? There are at least fifty." },
+        { "id": "B2-PRON-02.e06", "type": "choice", "difficulty": 2, "instruction": "Choose the correct pronoun.", "prompt": "Hai pensato al regalo per la mamma? Sì, ___ ho pensato ieri.", "options": ["ci", "ne", "lo", "gli"], "answer": 0, "errorType": "ci-ne", "optionWhy": { "1": "*Pensare **a*** (think about) → *ci*. *Ne* is for *pensare di* (opinion).", "2": "*Pensare a qualcosa* isn't a direct object: use *ci*.", "3": "*Gli* is for people ('to him'). For a thing after *a*, use *ci*." }, "explanation": "*Pensare a qualcosa* → **ci**.", "en": "Have you thought about Mum's present? Yes, I thought about it yesterday." },
+        { "id": "B2-PRON-02.e07", "type": "choice", "difficulty": 3, "instruction": "Choose the correct pronoun.", "prompt": "Che ___ pensi del nuovo sindaco?", "options": ["ne", "ci", "lo", "gli"], "answer": 0, "errorType": "ci-ne", "optionWhy": { "1": "Asking for an opinion is *pensare **di*** → *ne*. *Pensarci* means 'think about / see to it'.", "2": "Not a direct object: *pensare di* → *ne*.", "3": "*Gli* means 'to him'." }, "explanation": "Opinion: *pensare di* → **Che ne pensi?**", "en": "What do you think of the new mayor?" },
+        { "id": "B2-PRON-02.e08", "type": "cloze", "difficulty": 3, "instruction": "Answer using ne and the passato prossimo of the verb in brackets.", "prompt": "Quante pizze avete mangiato? ___ (mangiare) quattro.", "answers": ["Ne abbiamo mangiate"], "focus": ["mangiate"], "errorType": "agreement", "traps": [{ "match": "ne abbiamo mangiato", "errorType": "agreement", "why": "In careful Italian the participle agrees with *ne* (= pizze, feminine plural): *mangiate*." }, { "match": "abbiamo mangiato", "errorType": "ci-ne", "why": "A number without the noun needs *ne*: *Ne abbiamo mangiate quattro*." }, { "match": "le abbiamo mangiate", "errorType": "ci-ne", "why": "With a quantity, use partitive *ne*, not *le*." }], "explanation": "Partitive **ne** + participle agreeing with *pizze*: **ne abbiamo mangiate** quattro.", "en": "How many pizzas did you eat? We ate four." },
+        { "id": "B2-PRON-02.e09", "type": "transform", "difficulty": 3, "instruction": "Replace 'a questa storia' with ci or ne.", "prompt": "Non credo a questa storia.", "answers": ["Non ci credo"], "focus": ["ci"], "errorType": "ci-ne", "traps": [{ "match": "Non ne credo", "errorType": "ci-ne", "why": "*Credere **a*** → *ci*." }, { "match": "Non la credo", "errorType": "ci-ne", "why": "*Credere a qualcosa* isn't a direct object: *Non ci credo*." }], "explanation": "*Credere a qualcosa* → **crederci**: *Non ci credo*.", "en": "I don't believe it." },
+        { "id": "B2-PRON-02.e10", "type": "transform", "difficulty": 3, "instruction": "Replace 'di questo problema' with ci or ne.", "prompt": "Parliamo di questo problema domani.", "answers": ["Ne parliamo domani", "Domani ne parliamo"], "focus": ["ne"], "errorType": "ci-ne", "traps": [{ "match": ["Ci parliamo domani", "Domani ci parliamo"], "errorType": "ci-ne", "why": "*Ci parliamo* means 'we'll talk to each other'. 'About it' = *parlare di* → *ne*." }, { "match": "Lo parliamo domani", "errorType": "ci-ne", "why": "*Parlare di* → *ne*, not *lo*." }], "explanation": "*Parlare di qualcosa* → **ne**: *Ne parliamo domani*.", "en": "Let's talk about it tomorrow." },
+        { "id": "B2-PRON-02.e11", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian.", "prompt": "I'll take care of it.", "answers": ["Ci penso io", "Me ne occupo io", "Me ne occupo"], "focus": ["ci"], "errorType": "ci-ne", "traps": [{ "contains": ["lo"], "errorType": "ci-ne", "why": "'I'll take care of it' = *pensarci*: *Ci penso io*." }, { "match": "Ne penso io", "errorType": "ci-ne", "why": "*Pensare a* (see to) → *ci*: *Ci penso io*." }], "explanation": "*Pensare a* = see to something → **Ci penso io**. Also *Me ne occupo (io)* (*occuparsi di* → *ne*).", "en": "I'll take care of it." },
+        { "id": "B2-PRON-02.e12", "type": "translate", "difficulty": 4, "instruction": "Translate the answer into Italian. Question: 'Quanti studenti ci sono nella classe?'", "prompt": "There are twenty.", "answers": ["Ce ne sono venti"], "focus": ["ce", "ne"], "errorType": "ci-ne", "traps": [{ "match": "Ci sono venti", "errorType": "ci-ne", "why": "Without the noun you need *ne*: *Ce ne sono venti*." }, { "match": "Ci ne sono venti", "errorType": "ci-ne", "why": "*Ci* becomes *ce* before *ne*." }, { "match": "Sono venti", "ok": true, "errorType": "ci-ne", "why": "Also possible ('They are twenty'), but *Ce ne sono venti* answers the question exactly." }], "explanation": "*Ci sono* + quantity without noun → **ce ne sono**.", "en": "There are twenty (of them)." },
+        { "id": "B2-PRON-02.e13", "type": "order", "difficulty": 3, "instruction": "Put the words in order.", "prompt": "There isn't any left.", "tokens": ["Non", "ce", "n'è", "più"], "answers": ["Non ce n'è più"], "errorType": "word-order", "explanation": "*Non* + **ce n'è** + *più*: the cluster stays together before the verb." },
+        { "id": "B2-PRON-02.e14", "type": "speak", "difficulty": 3, "instruction": "Answer aloud (or type).", "prompt": "A friend invites you to Giulia's party. Say: 'I'll think about it.'", "answers": ["Ci penso", "Ci penserò", "Ci devo pensare", "Devo pensarci", "Ci penso su", "Ci voglio pensare", "Voglio pensarci"], "focus": ["ci"], "errorType": "ci-ne", "traps": [{ "contains": ["ne"], "errorType": "ci-ne", "why": "*Pensare a* (think about) → *ci*. *Ne* would ask for an opinion." }, { "contains": ["lo"], "errorType": "ci-ne", "why": "'Think about it' = *pensarci*, not *pensarlo*." }], "explanation": "Think about it = *pensare a* → **ci penso**.", "en": "I'll think about it.", "interaction": true },
+        { "id": "B2-PRON-02.e15", "type": "cloze", "difficulty": 3, "instruction": "Complete with ci or ne.", "prompt": "Sei riuscito ad aprire la porta? No, non ___ sono riuscito.", "answers": ["ci"], "focus": ["ci"], "errorType": "ci-ne", "traps": [{ "match": "ne", "errorType": "ci-ne", "why": "*Riuscire **a*** → *ci*: *non ci sono riuscito*." }, { "match": "lo", "errorType": "ci-ne", "why": "*Riuscire a fare qualcosa* → *riuscirci*, not *lo*." }], "explanation": "*Riuscire a* → **riuscirci**.", "en": "Did you manage to open the door? No, I didn't manage it." },
+        { "id": "B2-PRON-02.e16", "type": "choice", "difficulty": 4, "instruction": "Choose the correct pronoun.", "prompt": "Ti ricordi di quel ristorante a Napoli? Sì, me ___ ricordo benissimo.", "options": ["ne", "ci", "gli", "si"], "answer": 0, "errorType": "ci-ne", "optionWhy": { "1": "*Ricordarsi **di*** → *ne*: *me ne ricordo*.", "2": "*Gli* means 'to him'.", "3": "The reflexive is already there (*me*). The gap needs *ne* for 'of it'." }, "explanation": "*Ricordarsi di qualcosa* → **me ne ricordo**.", "en": "Do you remember that restaurant in Naples? Yes, I remember it very well." },
+        { "id": "B2-PRON-02.e17", "type": "translate", "difficulty": 5, "instruction": "Translate the answer into Italian. Question: 'Hai parlato a Laura del problema?'", "prompt": "No, I haven't talked to her about it yet.", "answers": ["No, non gliene ho ancora parlato", "No, ancora non gliene ho parlato"], "focus": ["gliene"], "errorType": "ci-ne", "traps": [{ "contains": ["le"], "errorType": "pronoun", "why": "*Le* (to her) + *ne* → *gliene*, one word." }, { "contains": ["ci"], "errorType": "ci-ne", "why": "*Parlare di* → *ne*. 'To her' + 'about it' → *gliene*." }, { "contains": ["gli"], "errorType": "pronoun", "why": "*Gli + ne* fuse into *gliene*." }], "explanation": "To her (*le* → *glie-*) + about it (*ne*) → **gliene**.", "en": "No, I haven't talked to her about it yet." }
+      ]
+    },
+    {
+      "id": "C1-PRON-03",
+      "title": "Pronominal verbs (andarsene, farcela, cavarsela, prendersela…)",
+      "cefr": "C1",
+      "skill": "grammar",
+      "prereqs": ["B2-PRON-01", "B2-PRON-02"],
+      "rule": "Pronominal verbs carry fixed pronouns that change their meaning (andarsene = leave, farcela = manage, cavarsela = get by, prendersela = take offence, metterci = take time). The reflexive part conjugates (me ne vado, te la prendi), and compound tenses follow the pronouns: ce l'ho fatta, me ne sono andato, me la sono presa.",
+      "assessment": [
+        "Conjugates andarsene, cavarsela, prendersela, sentirsela in the present (me ne vado, te la cavi…)",
+        "Chooses metterci (personal) vs volerci (impersonal, agrees with the noun)",
+        "Forms compound tenses with the right auxiliary and agreement (ce l'ho fatta, se n'è andato, me la sono presa)",
+        "Uses imperatives such as vattene, smettila, finitela, non te la prendere"
+      ],
+      "lesson": {
+        "intro": "*Me ne vado*, *ce l'ho fatta*, *non te la prendere*: these verbs are all over spoken Italian, and they are where learners stop sounding like textbooks. The pronouns are frozen parts of the verb with idiomatic meanings ('it' in *farcela* doesn't refer to anything). You learn each verb as a unit, then conjugate the reflexive part.",
+        "rules": [
+          {
+            "title": "Andarsene: leave, go away",
+            "text": "*Andarsene* = *andare* + *si* + *ne*. The reflexive pronoun changes with the person, *ne* stays: **me ne vado, te ne vai, se ne va, ce ne andiamo, ve ne andate, se ne vanno**. Compound tenses use *essere*: *me ne sono andato/a*. Imperative: *vattene! andatevene! non te ne andare / non andartene*.",
+            "examples": [
+              { "it": "È tardi, **me ne vado**.", "en": "It's late, I'm off." },
+              { "it": "Luca **se n'è andato** senza salutare.", "en": "Luca left without saying goodbye." },
+              { "it": "**Vattene**!", "en": "Go away!" }
+            ]
+          },
+          {
+            "title": "The -sela verbs",
+            "text": "The *la* in these verbs refers to nothing in particular. The reflexive part conjugates: *me la cavo, te la cavi, se la cava…*",
+            "table": {
+              "head": ["Infinitive", "Present (io)", "Passato prossimo (io)", "Meaning"],
+              "rows": [
+                ["farcela", "ce la faccio", "ce l'ho fatta", "to manage, make it"],
+                ["cavarsela", "me la cavo", "me la sono cavata", "to get by, cope"],
+                ["prendersela (con)", "me la prendo", "me la sono presa", "to take offence / get angry (with)"],
+                ["sentirsela (di)", "(non) me la sento", "(non) me la sono sentita", "to feel up to"],
+                ["avercela (con)", "ce l'ho con te", "—", "to be angry with, have it in for"],
+                ["smetterla / finirla", "la smetto / la finisco", "l'ho smessa / l'ho finita", "to stop it, cut it out"]
+              ]
+            }
+          },
+          {
+            "title": "Compound tenses: follow the pronouns",
+            "text": "If the verb contains a **reflexive** pronoun (*me, te, se…*), it takes **essere**: *me la sono cavata, se n'è andata*. If it has only *ci* + *la* (*farcela, avercela*) it takes **avere**. Either way the participle agrees with **la**: *ce l'ho fatt**a***, *me la sono pres**a***.",
+            "examples": [
+              { "it": "Finalmente **ce l'ho fatta**!", "en": "I finally made it!" },
+              { "it": "Giulia **se l'è presa** per la battuta.", "en": "Giulia was offended by the joke." },
+              { "it": "All'esame **me la sono cavata**.", "en": "I got through the exam." }
+            ]
+          },
+          {
+            "title": "Metterci vs volerci: 'it takes'",
+            "text": "**Metterci** has a personal subject (who or what takes the time) and conjugates normally: *Ci metto un'ora, Il treno ci mette due ore*. **Volerci** is impersonal and agrees with the time or thing needed: *Ci vuole un'ora, Ci vogliono due ore*. In compound tenses: *ci ho messo* (avere) but *ci è voluta un'ora / ci sono volute due ore* (essere, agreement).",
+            "examples": [
+              { "it": "Quanto **ci metti** per arrivare?", "en": "How long does it take you to get there?" },
+              { "it": "**Ci vogliono** tre ore da Roma a Napoli in macchina.", "en": "It takes three hours from Rome to Naples by car." },
+              { "it": "**Ci è voluta** un'ora e mezza.", "en": "It took an hour and a half." }
+            ]
+          },
+          {
+            "title": "Imperatives",
+            "text": "Affirmative tu/voi: pronouns attached: *vattene, andatevene, smettila, finitela, cavatela*. Negative tu: *non te ne andare / non andartene, non te la prendere / non prendertela*.",
+            "examples": [
+              { "it": "**Smettila** di lamentarti!", "en": "Stop complaining!" },
+              { "it": "**Non te la prendere**, scherzavo.", "en": "Don't be offended, I was joking." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Mi ne vado.", "right": "Me ne vado.", "why": "Before *ne*, *mi* becomes *me*." },
+          { "wrong": "Ci vuole due ore.", "right": "Ci vogliono due ore.", "why": "*Volerci* agrees with what's needed: plural *ore* → *vogliono*." },
+          { "wrong": "Io ci vuole un'ora per arrivare.", "right": "Ci metto un'ora per arrivare.", "why": "With a personal subject use *metterci*." },
+          { "wrong": "Ce l'ho fatto!", "right": "Ce l'ho fatta!", "why": "The participle agrees with the hidden *la*." },
+          { "wrong": "Me l'ho presa.", "right": "Me la sono presa.", "why": "*Prendersela* is reflexive, so it takes *essere*." }
+        ],
+        "tips": [
+          "Learn these as chunks: *ce la faccio / ce l'ho fatta*, *me la cavo*, *non me la sento*.",
+          "*Ce l'ho con te* (I'm angry with you) looks like *ce l'ho* (I've got it). Context decides.",
+          "*Prendersela* is about taking offence; *offendersi* means the same and is safe in writing."
+        ]
+      },
+      "exercises": [
+        { "id": "C1-PRON-03.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the present tense of the verb in brackets.", "prompt": "È tardi, io ___ (andarsene).", "answers": ["me ne vado"], "focus": ["me", "ne"], "errorType": "pronoun", "traps": [{ "match": "mi ne vado", "errorType": "pronoun", "why": "Before *ne*, *mi* becomes *me*: *me ne vado*." }, { "match": "vado", "errorType": "vocabulary", "why": "*Vado* alone means 'I go'. 'I'm leaving' is *me ne vado*." }, { "match": "ne mi vado", "errorType": "pronoun-position", "why": "Reflexive first: *me ne vado*." }], "explanation": "*Andarsene* (io) → **me ne vado**.", "en": "It's late, I'm leaving." },
+        { "id": "C1-PRON-03.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the present tense of 'fare'.", "prompt": "È difficile, ma insieme ce la ___ (fare, noi).", "answers": ["facciamo"], "focus": ["facciamo"], "errorType": "verb-form", "traps": [{ "match": "faciamo", "errorType": "spelling", "why": "Double *c*: *facciamo*." }], "explanation": "*Farcela* (noi) → **ce la facciamo** = we can do it.", "en": "It's difficult, but together we can do it." },
+        { "id": "C1-PRON-03.e03", "type": "choice", "difficulty": 2, "instruction": "Choose the correct form.", "prompt": "Per arrivare a Milano in treno ___ almeno tre ore.", "options": ["ci vogliono", "ci vuole", "ci mettono", "ne vogliono"], "answer": 0, "errorType": "agreement", "optionWhy": { "1": "*Volerci* agrees with what's needed: *tre ore* (plural) → *ci vogliono*.", "2": "*Metterci* needs a personal subject (*il treno ci mette*). Here there is none.", "3": "The verb is *volerci*, with *ci*." }, "explanation": "Impersonal *volerci* + plural → **ci vogliono**.", "en": "It takes at least three hours to get to Milan by train." },
+        { "id": "C1-PRON-03.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the present tense of the verb in brackets (subject: tu).", "prompt": "Quanto tempo ___ (metterci) per arrivare in ufficio?", "answers": ["ci metti"], "focus": ["metti"], "errorType": "verb-form", "traps": [{ "match": "ci vuole", "errorType": "vocabulary", "why": "*Ci vuole* is impersonal. The cue gives the subject *tu*, so use *metterci*: *ci metti*." }, { "match": "metti", "errorType": "ci-ne", "why": "*Metterci* needs *ci*: *ci metti*." }], "explanation": "Personal subject (tu) → *metterci*: **ci metti**.", "en": "How long does it take you to get to the office?" },
+        { "id": "C1-PRON-03.e05", "type": "cloze", "difficulty": 2, "instruction": "Complete with the negative tu imperative of 'prendersela'.", "prompt": "Non ___, stavo solo scherzando!", "answers": ["te la prendere", "prendertela"], "focus": ["te", "la"], "errorType": "pronoun", "traps": [{ "match": "prenderla", "errorType": "pronoun", "why": "Keep the reflexive part: *non prendertela* / *non te la prendere*." }, { "match": ["ti la prendere", "prendertila"], "errorType": "pronoun", "why": "Before *la*, *ti* becomes *te*." }, { "match": "te la prendi", "errorType": "verb-form", "why": "The negative tu imperative uses the infinitive: *non te la prendere*." }], "explanation": "Negative tu imperative = *non* + infinitive: **non te la prendere** or **non prendertela**.", "en": "Don't be offended, I was only joking!" },
+        { "id": "C1-PRON-03.e06", "type": "cloze", "difficulty": 3, "instruction": "Complete with the passato prossimo of 'farcela' (io).", "prompt": "Ho superato l'esame: alla fine ___!", "answers": ["ce l'ho fatta"], "focus": ["fatta"], "errorType": "agreement", "traps": [{ "match": "ce l'ho fatto", "errorType": "agreement", "why": "The participle agrees with the hidden *la*: *fatta*, whoever is speaking." }, { "match": ["ce la sono fatta", "me la sono fatta"], "errorType": "auxiliary", "why": "*Farcela* has no reflexive pronoun, so it takes *avere*: *ce l'ho fatta*." }], "explanation": "*Farcela* → **ce l'ho fatta** (avere, agreement with *la*).", "en": "I passed the exam: I made it in the end!" },
+        { "id": "C1-PRON-03.e07", "type": "cloze", "difficulty": 3, "instruction": "Complete with the passato prossimo of 'andarsene'.", "prompt": "Ieri Luca ___ senza salutare nessuno.", "answers": ["se n'è andato", "se ne è andato"], "focus": ["andato"], "errorType": "auxiliary", "traps": [{ "match": "se ne ha andato", "errorType": "auxiliary", "why": "*Andarsene* takes *essere*: *se n'è andato*." }, { "match": "si è andato", "errorType": "ci-ne", "why": "*Andarsene* needs *ne*: *se n'è andato*." }, { "match": "è andato", "errorType": "vocabulary", "why": "*È andato* = he went. 'He left' is *se n'è andato*." }], "explanation": "*Andarsene* → **se n'è andato** (essere).", "en": "Yesterday Luca left without saying goodbye to anyone." },
+        { "id": "C1-PRON-03.e08", "type": "choice", "difficulty": 3, "instruction": "Choose the correct form.", "prompt": "Perché ___ con me? Non ti ho fatto niente!", "options": ["ce l'hai", "ci hai", "l'hai", "ce la fai"], "answer": 0, "errorType": "idiom", "optionWhy": { "1": "*Avercela con qualcuno* keeps *la*: *ce l'hai*.", "2": "*Avercela* keeps *ci*: *ce l'hai*.", "3": "*Farcela* means 'to manage'. Being angry with someone is *avercela con*." }, "explanation": "*Avercela con qualcuno* = to be angry with someone: **ce l'hai** con me.", "en": "Why are you angry with me? I haven't done anything to you!" },
+        { "id": "C1-PRON-03.e09", "type": "cloze", "difficulty": 3, "instruction": "Complete with the present tense of 'cavarsela' (io).", "prompt": "Come va con il nuovo lavoro? Mah, ___.", "answers": ["me la cavo"], "focus": ["me", "la"], "errorType": "pronoun", "traps": [{ "match": "mi la cavo", "errorType": "pronoun", "why": "Before *la*, *mi* becomes *me*." }, { "match": "mi cavo", "errorType": "pronoun", "why": "*Cavarsela* keeps *la*: *me la cavo*." }], "explanation": "*Cavarsela* (io) → **me la cavo** = I'm getting by.", "en": "How's the new job going? Well, I'm getting by." },
+        { "id": "C1-PRON-03.e10", "type": "transform", "difficulty": 4, "instruction": "Rewrite in the passato prossimo.", "prompt": "Giulia se la prende per la critica.", "answers": ["Giulia se l'è presa per la critica", "Giulia se la è presa per la critica"], "focus": ["presa"], "errorType": "auxiliary", "traps": [{ "contains": ["preso"], "errorType": "agreement", "why": "The participle agrees with *la*: *presa*." }, { "contains": ["ha"], "errorType": "auxiliary", "why": "*Prendersela* is reflexive, so it takes *essere*: *se l'è presa*." }], "explanation": "Reflexive → *essere*; agreement with *la* → **se l'è presa**.", "en": "Giulia was offended by the criticism." },
+        { "id": "C1-PRON-03.e11", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "It took me two hours to finish.", "answers": ["Ci ho messo due ore (a|per) finire", "Mi ci sono volute due ore (a|per) finire"], "focus": ["messo"], "errorType": "vocabulary", "traps": [{ "contains": ["voluto"], "errorType": "agreement", "why": "*Volerci* agrees with *due ore*: *ci sono volute*. Or use *ci ho messo*." }, { "contains": ["vuole", "voleva"], "errorType": "wrong-tense", "why": "A finished action: passato prossimo, *ci ho messo* / *ci sono volute*." }, { "match": ["Mi ha preso due ore (a|per) finire", "Ha preso due ore (a|per) finire"], "errorType": "false-friend", "why": "Calque of 'it took'. Italian uses *metterci* or *volerci*." }], "explanation": "Personal: **Ci ho messo** due ore. Impersonal: *Mi ci sono volute due ore*.", "en": "It took me two hours to finish." },
+        { "id": "C1-PRON-03.e12", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "I don't feel up to driving tonight.", "answers": ["Non me la sento di guidare stasera", "Stasera non me la sento di guidare"], "focus": ["me", "la"], "errorType": "idiom", "traps": [{ "contains": ["mi"], "errorType": "pronoun", "why": "*Sentirsela*: *non me la sento*." }, { "contains": ["a"], "errorType": "preposition", "why": "*Sentirsela **di*** + infinitive." }], "explanation": "*Sentirsela di* = to feel up to: **Non me la sento di** guidare.", "en": "I don't feel up to driving tonight." },
+        { "id": "C1-PRON-03.e13", "type": "order", "difficulty": 3, "instruction": "Put the words in order to tell a friend to stop complaining.", "prompt": "Stop complaining!", "tokens": ["Smettila", "di", "lamentarti"], "answers": ["Smettila di lamentarti", "Finiscila di lamentarti"], "errorType": "word-order", "explanation": "*Smetterla di* + infinitive. Pronouns attach to the tu imperative: **Smettila**, and to the infinitive: *lamentarti*." },
+        { "id": "C1-PRON-03.e14", "type": "speak", "difficulty": 4, "instruction": "Say it aloud (or type).", "prompt": "You and your partner are tired and want to leave a party. Tell your friends: 'We're leaving.'", "answers": ["[Ragazzi,] [noi] ce ne andiamo", "[Ragazzi,] [noi] ce ne andiamo (adesso|ora)"], "focus": ["ce", "ne"], "errorType": "pronoun", "traps": [{ "contains": ["ci"], "errorType": "pronoun", "why": "Before *ne*, *ci* becomes *ce*: *ce ne andiamo*." }, { "match": "[Ragazzi,] [noi] andiamo", "errorType": "vocabulary", "why": "*Andiamo* = let's go / we're going (somewhere). 'We're leaving' is *ce ne andiamo*." }], "explanation": "*Andarsene* (noi) → **ce ne andiamo**.", "en": "We're leaving.", "interaction": true },
+        { "id": "C1-PRON-03.e15", "type": "choice", "difficulty": 5, "instruction": "Choose the correct form.", "prompt": "Ieri, con il traffico, ___ un'ora e mezza per tornare a casa.", "options": ["ci è voluta", "ci ha voluto", "ci è voluto", "ci sono volute"], "answer": 0, "errorType": "agreement", "optionWhy": { "1": "*Volerci* takes *essere*.", "2": "It agrees with *un'ora* (feminine singular): *voluta*.", "3": "*Un'ora e mezza* is singular (the head noun is *un'ora*)." }, "explanation": "*Volerci* → *essere* + agreement with *un'ora*: **ci è voluta**.", "en": "Yesterday, with the traffic, it took an hour and a half to get home." },
+        { "id": "C1-PRON-03.e16", "type": "transform", "difficulty": 5, "instruction": "Rewrite using 'avercela con'.", "prompt": "Sono arrabbiato con il mio capo.", "answers": ["Ce l'ho (con il|col) mio capo"], "focus": ["ce", "l'ho"], "errorType": "idiom", "traps": [{ "match": "L'ho (con il|col) mio capo", "errorType": "idiom", "why": "*Avercela* keeps *ci*: *ce l'ho con*." }, { "match": "Ce la ho (con il|col) mio capo", "errorType": "spelling", "why": "*La* elides before *ho*: *ce l'ho*." }], "explanation": "*Avercela con qualcuno* (io) → **Ce l'ho con** il mio capo.", "en": "I'm angry with my boss." },
+        { "id": "C1-PRON-03.e17", "type": "cloze", "difficulty": 4, "instruction": "Complete with the voi imperative of 'finirla'.", "prompt": "Ragazzi, ___ di urlare! Il bambino dorme.", "answers": ["finitela"], "focus": ["finitela"], "errorType": "verb-form", "traps": [{ "match": "finiscila", "errorType": "verb-form", "why": "*Finiscila* is the tu form. You're talking to *ragazzi* (voi): *finitela*." }, { "match": "la finite", "errorType": "pronoun-position", "why": "In the affirmative imperative the pronoun is attached: *finitela*." }], "explanation": "Voi imperative *finite* + *la* → **finitela**.", "en": "Kids, stop shouting! The baby's sleeping." }
+      ]
+    },
+    {
+      "id": "B2-PRON-04",
+      "title": "Pronoun position with infinitives, gerunds, imperatives and modals",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": ["B2-PRON-01"],
+      "rule": "Pronouns go before a conjugated verb but attach to infinitives, gerunds and affirmative tu/noi/voi imperatives (dirlo, dicendolo, dimmelo). With modals both positions work (Lo posso fare / Posso farlo). Negative tu: non dirmelo or non me lo dire. Lei imperative: before (Me lo dia). Da', di', fa', sta', va' double the consonant (dammi, dimmi, fallo), except before gli (digli).",
+      "assessment": [
+        "Attaches pronouns to infinitives and gerunds (cercare di farlo, leggendolo)",
+        "Uses both positions with modal verbs and never places pronouns between modal and infinitive",
+        "Forms affirmative and negative imperatives with pronouns (dammelo, non dirmelo / non me lo dire, me lo dia)",
+        "Doubles the consonant with monosyllabic imperatives (dimmi, fallo, vacci) but not with gli (digli)"
+      ],
+      "lesson": {
+        "intro": "In English, 'it' always comes after the verb. In Italian, the pronoun moves: before a conjugated verb, but glued to the end of infinitives, gerunds and most imperatives. The imperative is the trickiest, because the formal *Lei* form and negative forms behave differently. Mastering this is what makes commands and requests sound natural.",
+        "rules": [
+          {
+            "title": "Conjugated verb: before",
+            "text": "With any conjugated verb (indicative, subjunctive, conditional) the pronoun goes **before**, after *non*: *Lo vedo. Non lo vedo. Te lo direi.*",
+            "examples": [
+              { "it": "Non **te lo** dico.", "en": "I'm not telling you." },
+              { "it": "Se **lo** sapessi, **te lo** direi.", "en": "If I knew, I'd tell you." }
+            ]
+          },
+          {
+            "title": "Infinitive, gerund, ecco: attached",
+            "text": "Infinitives drop the final *-e* and take the pronoun at the end: *vedere* → *veder**lo***, *dire* → *dir**telo***. Gerunds: *vedendo**lo***. Also *ecco*: *ecco**lo***, *ecco**mi***. This includes infinitives after non-modal verbs: *Ho cercato di farlo* (never ~~l'ho cercato di fare~~).",
+            "examples": [
+              { "it": "È importante **dirglielo** subito.", "en": "It's important to tell him right away." },
+              { "it": "**Leggendolo**, ho capito tutto.", "en": "Reading it, I understood everything." },
+              { "it": "Dov'è Marco? **Eccolo**!", "en": "Where's Marco? Here he is!" }
+            ]
+          },
+          {
+            "title": "Modals: two positions",
+            "text": "With *potere, dovere, volere* (and *sapere* = be able) the pronoun goes **either before the modal or attached to the infinitive**: *Lo voglio vedere* = *Voglio vederlo*. Never in between: ~~Voglio lo vedere~~. In compound tenses, the position affects the auxiliary: *Sono dovuto andarci* / *Ci sono dovuto andare*.",
+            "examples": [
+              { "it": "**Te lo** posso spiegare. / Posso **spiegartelo**.", "en": "I can explain it to you." },
+              { "it": "Non **ci** voglio andare. / Non voglio **andarci**.", "en": "I don't want to go there." }
+            ]
+          },
+          {
+            "title": "Imperatives",
+            "text": "Affirmative **tu, noi, voi**: attached (*dammelo, diciamoglielo, fatelo*). Formal **Lei** (and Loro): before (*Me lo dia, Si accomodi*). Negative **tu** = *non* + infinitive, pronoun before or attached: *Non dirmelo / Non me lo dire*. Negative noi/voi: *Non fatelo / Non lo fate*.",
+            "table": {
+              "head": ["", "Affirmative", "Negative"],
+              "rows": [
+                ["tu", "Dimmelo!", "Non dirmelo! / Non me lo dire!"],
+                ["Lei", "Me lo dica!", "Non me lo dica!"],
+                ["noi", "Diciamolo!", "Non diciamolo! / Non lo diciamo!"],
+                ["voi", "Ditemelo!", "Non ditemelo! / Non me lo dite!"]
+              ]
+            }
+          },
+          {
+            "title": "Da', di', fa', sta', va': double the consonant",
+            "text": "These one-syllable tu imperatives double the first consonant of the pronoun: *da' + mi* → **dammi**, *di' + lo* → **dillo**, *fa' + lo* → **fallo**, *va' + ci* → **vacci**, *sta' + mi a sentire* → **stammi** a sentire. Exception: **gli** never doubles: **digli, dagli, fagli**.",
+            "examples": [
+              { "it": "**Dimmi** la verità!", "en": "Tell me the truth!" },
+              { "it": "**Fallo** subito!", "en": "Do it right away!" },
+              { "it": "**Digli** di chiamarmi.", "en": "Tell him to call me." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Voglio lo vedere.", "right": "Lo voglio vedere. / Voglio vederlo.", "why": "Before the modal or attached to the infinitive, never in between." },
+          { "wrong": "Non dimmelo!", "right": "Non dirmelo! / Non me lo dire!", "why": "The negative tu imperative uses the infinitive." },
+          { "wrong": "Dami il libro.", "right": "Dammi il libro.", "why": "*Da'* + *mi* doubles the consonant: *dammi*." },
+          { "wrong": "Signora, mi dia lo.", "right": "Signora, me lo dia.", "why": "With the Lei imperative the pronouns go before the verb." },
+          { "wrong": "Diggli la verità.", "right": "Digli la verità.", "why": "*Gli* is the one pronoun that never doubles." }
+        ],
+        "tips": [
+          "For negative commands to a friend, *Non me lo dire!* is a bit more colloquial and *Non dirmelo!* a bit neater. Both are correct.",
+          "If in doubt with a modal, attach to the infinitive: *Posso farlo* is always right.",
+          "Stress doesn't move when you add pronouns: *DImmelo, porTAteglielo*."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-PRON-04.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete: infinitive + 'lo'.", "prompt": "Questo libro è bellissimo: devi ___ (leggere + lo)!", "answers": ["leggerlo"], "focus": ["leggerlo"], "errorType": "pronoun-position", "traps": [{ "match": "lo leggere", "errorType": "pronoun-position", "why": "Not between modal and infinitive. Attach it: *devi leggerlo* (or *lo devi leggere*)." }, { "match": "leggerelo", "errorType": "spelling", "why": "The infinitive drops its final *-e*: *leggerlo*." }], "explanation": "Attached to the infinitive, which loses its *-e*: **leggerlo**.", "en": "This book is wonderful: you must read it!" },
+        { "id": "B2-PRON-04.e02", "type": "transform", "difficulty": 2, "instruction": "Move the pronoun to the other possible position.", "prompt": "Ti voglio dire una cosa.", "answers": ["Voglio dirti una cosa"], "focus": ["dirti"], "errorType": "pronoun-position", "traps": [{ "match": "Voglio ti dire una cosa", "errorType": "pronoun-position", "why": "Never between modal and infinitive: *Voglio dirti*." }, { "match": "Voglio direti una cosa", "errorType": "spelling", "why": "The infinitive loses its *-e*: *dirti*." }], "explanation": "With modals: before the modal (*Ti voglio dire*) or attached to the infinitive (**Voglio dirti**).", "en": "I want to tell you something." },
+        { "id": "B2-PRON-04.e03", "type": "cloze", "difficulty": 1, "instruction": "Complete with the tu imperative of 'dire' + 'mi'.", "prompt": "___ la verità!", "answers": ["Dimmi"], "focus": ["dimmi"], "errorType": "pronoun-position", "traps": [{ "match": "Dimi", "errorType": "spelling", "why": "*Di'* + *mi* doubles the *m*: *dimmi*." }, { "match": ["Mi di'", "Mi dici"], "errorType": "pronoun-position", "why": "Affirmative tu imperative: the pronoun is attached: *dimmi*." }], "explanation": "Monosyllabic *di'* + *mi* → **dimmi**.", "en": "Tell me the truth!" },
+        { "id": "B2-PRON-04.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the tu imperative of 'dare' + 'me' + 'lo'.", "prompt": "Il telecomando? ___ subito!", "answers": ["Dammelo"], "focus": ["dammelo"], "errorType": "pronoun-position", "traps": [{ "match": "Damelo", "errorType": "spelling", "why": "*Da'* doubles the consonant: *dammelo*." }, { "match": "Dammilo", "errorType": "pronoun", "why": "In a cluster *mi* becomes *me*: *dammelo*." }, { "match": "Me lo dai", "errorType": "pronoun-position", "why": "That's a question/statement. The command attaches the pronouns: *dammelo*." }], "explanation": "*Da'* + *me* + *lo* → **dammelo** (double *m*, *mi* → *me*).", "en": "The remote? Give it to me right now!" },
+        { "id": "B2-PRON-04.e05", "type": "transform", "difficulty": 3, "instruction": "Make the command negative.", "prompt": "Dimmelo!", "answers": ["Non dirmelo", "Non me lo dire"], "focus": ["dirmelo"], "errorType": "pronoun-position", "traps": [{ "match": "Non dimmelo", "errorType": "verb-form", "why": "Negative tu imperative = *non* + infinitive: *non dirmelo* / *non me lo dire*." }, { "match": "Non mi lo dire", "errorType": "pronoun", "why": "*Mi* becomes *me* before *lo*." }], "explanation": "Negative tu = *non* + infinitive: **Non dirmelo** or **Non me lo dire**.", "en": "Don't tell me!" },
+        { "id": "B2-PRON-04.e06", "type": "choice", "difficulty": 2, "instruction": "You're speaking formally to an older lady (Lei). Choose the correct form.", "prompt": "Signora, ___ un momento, per favore.", "options": ["mi ascolti", "ascoltimi", "mi ascolta", "ascoltami"], "answer": 0, "errorType": "pronoun-position", "optionWhy": { "1": "With the Lei imperative the pronoun goes before: *mi ascolti*.", "2": "*Ascolta* is the indicative ('she listens to me').", "3": "*Ascoltami* is the tu form: too familiar here." }, "explanation": "Lei imperative (= present subjunctive) with the pronoun **before**: **mi ascolti**.", "en": "Madam, listen to me for a moment, please." },
+        { "id": "B2-PRON-04.e07", "type": "cloze", "difficulty": 3, "instruction": "Complete: infinitive + 'lo'.", "prompt": "Ho cercato di ___ (convincere + lo), ma non c'è stato niente da fare.", "answers": ["convincerlo"], "focus": ["convincerlo"], "errorType": "pronoun-position", "traps": [{ "match": "lo convincere", "errorType": "pronoun-position", "why": "After *di*, the infinitive takes the pronoun at the end: *convincerlo*." }], "explanation": "*Cercare di* isn't a modal: the pronoun can only attach to the infinitive: **convincerlo**.", "en": "I tried to persuade him, but there was nothing doing." },
+        { "id": "B2-PRON-04.e08", "type": "choice", "difficulty": 3, "instruction": "Which sentence is WRONG?", "prompt": "'I can do it' / 'I can't do it'", "options": ["Lo posso fare.", "Posso farlo.", "Posso lo fare.", "Non lo posso fare."], "answer": 2, "errorType": "pronoun-position", "optionWhy": { "0": "This one is correct: pronoun before the modal.", "1": "This one is correct: pronoun attached to the infinitive.", "3": "This one is correct: *non* + pronoun + modal." }, "explanation": "The pronoun can't sit between the modal and the infinitive: ~~Posso lo fare~~ is the wrong one.", "en": "I can do it." },
+        { "id": "B2-PRON-04.e09", "type": "cloze", "difficulty": 3, "instruction": "Complete with the voi imperative of 'mangiare' + 'la'.", "prompt": "Ragazzi, la torta è pronta: ___ finché è calda!", "answers": ["mangiatela"], "focus": ["mangiatela"], "errorType": "pronoun-position", "traps": [{ "match": "la mangiate", "errorType": "pronoun-position", "why": "Affirmative voi imperative: attach the pronoun: *mangiatela*." }, { "match": "mangiala", "errorType": "verb-form", "why": "*Mangiala* is tu. You're talking to *ragazzi*: *mangiatela*." }], "explanation": "Voi imperative + *la* → **mangiatela**.", "en": "Guys, the cake's ready: eat it while it's warm!" },
+        { "id": "B2-PRON-04.e10", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian (tu).", "prompt": "Do it now!", "answers": ["Fallo (adesso|ora|subito)", "(Adesso|Ora|Subito) fallo"], "focus": ["fallo"], "errorType": "pronoun-position", "traps": [{ "match": "Falo (adesso|ora|subito)", "errorType": "spelling", "why": "*Fa'* + *lo* doubles the *l*: *fallo*." }, { "contains": ["lo"], "errorType": "pronoun-position", "why": "Attach the pronoun and double the consonant: *fallo*." }, { "match": "Lo fai (adesso|ora|subito)", "errorType": "pronoun-position", "why": "That's a statement. The command is *Fallo*." }], "explanation": "*Fa'* + *lo* → **fallo**.", "en": "Do it now!" },
+        { "id": "B2-PRON-04.e11", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian (tu).", "prompt": "I can't explain it to you now.", "answers": ["Non (te lo posso spiegare|posso spiegartelo) (adesso|ora)", "(Adesso|Ora) non (te lo posso spiegare|posso spiegartelo)"], "focus": ["te"], "errorType": "pronoun-position", "traps": [{ "contains": ["ti"], "errorType": "pronoun", "why": "Before *lo*, *ti* becomes *te*: *te lo* / *spiegartelo*." }, { "match": "Non posso te lo spiegare (adesso|ora)", "errorType": "pronoun-position", "why": "Not between modal and infinitive: *Non te lo posso spiegare* or *Non posso spiegartelo*." }], "explanation": "Modal: **Non te lo posso spiegare** or **Non posso spiegartelo**.", "en": "I can't explain it to you now." },
+        { "id": "B2-PRON-04.e12", "type": "transform", "difficulty": 4, "instruction": "Rewrite the first part using a gerund.", "prompt": "Mentre lo leggevo, ho capito tutto.", "answers": ["Leggendolo, ho capito tutto"], "focus": ["leggendolo"], "errorType": "pronoun-position", "traps": [{ "match": "Lo leggendo, ho capito tutto", "errorType": "pronoun-position", "why": "Pronouns attach to the gerund: *leggendolo*." }], "explanation": "Gerund + pronoun attached: **Leggendolo**.", "en": "Reading it, I understood everything." },
+        { "id": "B2-PRON-04.e13", "type": "order", "difficulty": 3, "instruction": "Put the words in order.", "prompt": "I have to tell you (it).", "tokens": ["Te", "lo", "devo", "dire"], "answers": ["Te lo devo dire", "Devo dirtelo"], "errorType": "word-order", "explanation": "The cluster goes before the modal (**Te lo devo dire**) or attaches to the infinitive (*Devo dirtelo*)." },
+        { "id": "B2-PRON-04.e14", "type": "speak", "difficulty": 3, "instruction": "Say it aloud (or type). Use a pronoun for 'the salt'.", "prompt": "At dinner, ask a friend to pass you the salt: 'Pass it to me, please.'", "answers": ["(Passamelo|Dammelo)[, per favore]", "Per favore[,] (passamelo|dammelo)", "Me lo (passi|dai)[, per favore]"], "focus": ["passamelo"], "errorType": "pronoun-position", "traps": [{ "match": ["Passami lo[, per favore]", "Passamilo[, per favore]"], "errorType": "pronoun", "why": "One cluster, with *mi* → *me*: *passamelo*." }, { "match": "Damelo[, per favore]", "errorType": "spelling", "why": "*Da'* doubles the consonant: *dammelo*." }], "explanation": "Tu imperative + *me lo*: **Passamelo** (or the question *Me lo passi?*).", "en": "Pass it to me, please.", "interaction": true },
+        { "id": "B2-PRON-04.e15", "type": "cloze", "difficulty": 4, "instruction": "Complete with the Lei imperative of 'dare' + 'me' + 'lo'.", "prompt": "Signor Bianchi, il contratto firmato ___ domani, per cortesia.", "answers": ["me lo dia"], "focus": ["me", "lo", "dia"], "errorType": "pronoun-position", "traps": [{ "match": "dammelo", "errorType": "register", "why": "*Dammelo* is tu. With *Signor Bianchi* use Lei: *me lo dia*." }, { "match": "mi lo dia", "errorType": "pronoun", "why": "*Mi* becomes *me* before *lo*." }, { "match": "mi dia lo", "errorType": "pronoun-position", "why": "With the Lei imperative both pronouns go before: *me lo dia*." }, { "match": "me lo dà", "errorType": "wrong-mood", "why": "*Dà* is the indicative. The Lei imperative is *dia*." }], "explanation": "Lei imperative (*dia*) with pronouns **before**: **me lo dia**.", "en": "Mr Bianchi, please give me the signed contract tomorrow." },
+        { "id": "B2-PRON-04.e16", "type": "cloze", "difficulty": 4, "instruction": "Complete with the tu imperative of 'dire' + 'gli'.", "prompt": "Vai da Luca e ___ di chiamarmi stasera.", "answers": ["digli"], "focus": ["digli"], "errorType": "pronoun-position", "traps": [{ "match": "diggli", "errorType": "spelling", "why": "*Gli* is the exception: it never doubles. *Digli*." }, { "match": ["gli di'", "gli dici"], "errorType": "pronoun-position", "why": "Affirmative tu imperative: attach: *digli*." }, { "match": "dille", "errorType": "pronoun", "why": "*Dille* = tell *her*. Luca is a man: *digli*." }], "explanation": "*Di'* + *gli* → **digli** (no doubling with *gli*).", "en": "Go to Luca and tell him to call me tonight." },
+        { "id": "B2-PRON-04.e17", "type": "translate", "difficulty": 5, "instruction": "Translate into Italian (noi imperative; 'her' = Anna, 'it' = il segreto).", "prompt": "Let's tell her right away!", "answers": ["Diciamoglielo subito"], "focus": ["diciamoglielo"], "errorType": "pronoun-position", "traps": [{ "match": "Glielo diciamo subito", "ok": true, "errorType": "pronoun-position", "why": "Correct as a statement ('we'll tell her right away'). As a command, attach: *diciamoglielo*." }, { "match": "Diciamogliela subito", "errorType": "agreement", "why": "*Il segreto* is masculine: *-lo*, so *diciamoglielo*." }, { "contains": ["le"], "errorType": "pronoun", "why": "*Le* (to her) becomes *glie-* in a cluster, and everything attaches: *diciamoglielo*." }], "explanation": "Noi imperative *diciamo* + *glie* + *lo* → **diciamoglielo**, all one word.", "en": "Let's tell her right away!" }
+      ]
+    },
+    {
+      "id": "B2-REL-01",
+      "title": "Relative pronouns: cui, il quale, chi, ciò che",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": [],
+      "rule": "Che for subjects and direct objects; preposition + cui after any preposition (di cui, a cui, con cui, in cui); il quale (agreeing, with articulated prepositions) as a formal alternative; il cui + noun = whose (the article agrees with the noun that follows); chi = he/those who (singular verb); ciò che / quello che = what; quanto = all that.",
+      "assessment": [
+        "Uses che for subjects and direct objects and never after a preposition",
+        "Uses preposition + cui (di cui, a cui, con cui, per cui) where English can leave the preposition at the end",
+        "Replaces cui with the right form of il quale (della quale, ai quali…)",
+        "Uses il cui / la cui / i cui / le cui + noun to say 'whose'",
+        "Uses chi, ciò che / quello che and quanto correctly"
+      ],
+      "lesson": {
+        "intro": "English can leave a preposition dangling ('the film I told you about') or drop the relative altogether ('the man I saw'). Italian can do neither: the preposition must come **before** the relative, and the relative is never omitted. That makes *di cui, a cui, con cui* essential, and 'whose' becomes the elegant *il cui*.",
+        "rules": [
+          {
+            "title": "Che: subject and direct object",
+            "text": "**Che** is invariable and replaces a subject or direct object. It can never follow a preposition. Unlike English, it can't be dropped.",
+            "examples": [
+              { "it": "Il libro **che** sto leggendo è bello.", "en": "The book (that) I'm reading is good." },
+              { "it": "La ragazza **che** abita qui è francese.", "en": "The girl who lives here is French." }
+            ]
+          },
+          {
+            "title": "Preposition + cui",
+            "text": "After any preposition use **cui**: *di cui, a cui, con cui, in cui, per cui, da cui, su cui, tra cui*. The preposition moves in front: 'the film I told you **about**' → *il film **di cui** ti ho parlato*. *A* can be dropped in formal style (*la persona cui ho scritto*). *In cui* often alternates with *dove* for places.",
+            "examples": [
+              { "it": "Il film **di cui** ti ho parlato.", "en": "The film I told you about." },
+              { "it": "La ragazza **con cui** esco.", "en": "The girl I go out with." },
+              { "it": "Il motivo **per cui** ti chiamo.", "en": "The reason (why) I'm calling you." }
+            ]
+          },
+          {
+            "title": "Il quale: the formal, agreeing alternative",
+            "text": "**Il quale / la quale / i quali / le quali** agrees with the noun and combines with articulated prepositions: *della quale, al quale, nei quali*. It's typical of formal writing, and useful to avoid ambiguity. It's rarely used for direct objects.",
+            "table": {
+              "head": ["cui", "il quale (m. sg.)", "la quale (f. sg.)", "i quali / le quali"],
+              "rows": [
+                ["di cui", "del quale", "della quale", "dei quali / delle quali"],
+                ["a cui", "al quale", "alla quale", "ai quali / alle quali"],
+                ["con cui", "con il quale", "con la quale", "con i quali / con le quali"],
+                ["in cui", "nel quale", "nella quale", "nei quali / nelle quali"]
+              ]
+            }
+          },
+          {
+            "title": "Il cui + noun: whose",
+            "text": "'Whose' = article + **cui** + noun. The article agrees with the **noun that follows** (the thing possessed), not with the owner: *lo scrittore, **la cui** figlia…*; *l'azienda, **i cui** dipendenti…*.",
+            "examples": [
+              { "it": "Lo scrittore, **il cui** romanzo ha vinto il premio, vive a Torino.", "en": "The writer, whose novel won the prize, lives in Turin." },
+              { "it": "È un'azienda **i cui** dipendenti sono molto giovani.", "en": "It's a company whose employees are very young." }
+            ]
+          },
+          {
+            "title": "Chi, ciò che / quello che, quanto",
+            "text": "**Chi** = 'the person who / those who', always with a **singular** verb: *Chi cerca trova*. **Ciò che / quello che** = 'what, the thing that': *Ciò che dici è vero*. **Quanto** = 'all that, as much as': *Ho fatto quanto potevo*.",
+            "examples": [
+              { "it": "**Chi** arriva tardi non può entrare.", "en": "Whoever arrives late can't come in." },
+              { "it": "Non capisco **quello che** vuoi dire.", "en": "I don't understand what you mean." },
+              { "it": "Farò **quanto** è necessario.", "en": "I'll do whatever is necessary." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "La ragazza che ho parlato.", "right": "La ragazza con cui ho parlato.", "why": "*Parlare con*: the preposition goes before the relative, and *che* can't follow a preposition, so: *con cui*." },
+          { "wrong": "Il film che ti ho parlato.", "right": "Il film di cui ti ho parlato.", "why": "*Parlare di* → *di cui*." },
+          { "wrong": "Chi vogliono venire alzino la mano.", "right": "Chi vuole venire alzi la mano.", "why": "*Chi* always takes a singular verb." },
+          { "wrong": "Che dici è vero.", "right": "Ciò che (Quello che) dici è vero.", "why": "'What' at the start of a sentence is *ciò che / quello che*." },
+          { "wrong": "Il professore, la cui figlio…", "right": "Il professore, il cui figlio…", "why": "The article agrees with the possessed noun (*figlio*), not the owner." }
+        ],
+        "tips": [
+          "If the English sentence ends with a preposition (about, with, for, to), you need *preposition + cui* in Italian.",
+          "*Per cui* also means 'so, therefore' at the start of a clause: *Ero stanco, per cui sono rimasto a casa.*",
+          "*Il quale* sounds formal in conversation; use it in writing, or when *cui* would be ambiguous."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-REL-01.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct relative pronoun.", "prompt": "Il libro ___ sto leggendo è molto bello.", "answers": ["che"], "focus": ["che"], "errorType": "relative", "traps": [{ "match": "cui", "errorType": "relative", "why": "*Il libro* is the direct object of *sto leggendo*, with no preposition: *che*." }, { "match": "il quale", "errorType": "relative", "why": "*Il quale* is used after prepositions or for subjects in formal style, not for direct objects. Use *che*." }], "explanation": "Direct object → **che**.", "en": "The book I'm reading is very good." },
+        { "id": "B2-REL-01.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct relative pronoun.", "prompt": "La ragazza con ___ parlavo è mia cugina.", "answers": ["cui", "la quale"], "focus": ["cui"], "errorType": "relative", "traps": [{ "match": "che", "errorType": "relative", "why": "*Che* can't follow a preposition. After *con*: *cui* (or *la quale*)." }, { "match": "il quale", "errorType": "agreement", "why": "*Il quale* must agree with *ragazza*: *la quale*." }], "explanation": "Preposition + **cui** (or formal *con la quale*).", "en": "The girl I was talking to is my cousin." },
+        { "id": "B2-REL-01.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct relative pronoun.", "prompt": "Questo è il film ___ ti ho parlato.", "answers": ["di cui", "del quale"], "focus": ["cui"], "errorType": "relative", "traps": [{ "match": "che", "errorType": "relative", "why": "*Parlare **di** qualcosa*: the preposition must come before the relative: *di cui*." }, { "match": "cui", "errorType": "preposition", "why": "Only *a* can be dropped before *cui*. *Parlare di* → *di cui*." }], "explanation": "'The film I told you **about**' → *parlare di* → **di cui**.", "en": "This is the film I told you about." },
+        { "id": "B2-REL-01.e04", "type": "choice", "difficulty": 2, "instruction": "Choose the correct relative pronoun.", "prompt": "La persona ___ ho dato le chiavi è il portiere.", "options": ["a cui", "che", "di cui", "chi"], "answer": 0, "errorType": "relative", "optionWhy": { "1": "*Dare qualcosa **a** qualcuno*: you need *a cui*.", "2": "*Di cui* = of/about whom. Here it's 'to whom': *a cui*.", "3": "*Chi* has no antecedent ('whoever'). Here there's *la persona*." }, "explanation": "*Dare a qualcuno* → **a cui**.", "en": "The person I gave the keys to is the caretaker." },
+        { "id": "B2-REL-01.e05", "type": "cloze", "difficulty": 3, "instruction": "Complete with 'whose' (article + cui).", "prompt": "Lo scrittore, ___ romanzo ha vinto il premio, vive a Torino.", "answers": ["il cui"], "focus": ["il", "cui"], "errorType": "relative", "traps": [{ "match": "la cui", "errorType": "agreement", "why": "The article agrees with the noun after *cui* (*romanzo*, masculine): *il cui*." }, { "match": ["di cui il", "che il suo"], "errorType": "relative", "why": "'Whose' = article + *cui* + noun: *il cui romanzo*." }, { "match": "cui", "errorType": "article", "why": "You need the article that agrees with *romanzo*: *il cui*." }], "explanation": "Whose + masculine singular noun → **il cui** romanzo.", "en": "The writer, whose novel won the prize, lives in Turin." },
+        { "id": "B2-REL-01.e06", "type": "cloze", "difficulty": 3, "instruction": "Complete with 'whose' (article + cui).", "prompt": "L'azienda, ___ dipendenti sono in sciopero, ha chiuso la sede di Bari.", "answers": ["i cui"], "focus": ["i", "cui"], "errorType": "agreement", "traps": [{ "match": "la cui", "errorType": "agreement", "why": "The article agrees with *dipendenti* (masculine plural), not with *l'azienda*: *i cui*." }, { "match": "le cui", "errorType": "agreement", "why": "*Dipendenti* is masculine plural here: *i cui*." }], "explanation": "Agreement with the possessed noun: **i cui** dipendenti.", "en": "The company, whose employees are on strike, has closed its Bari office." },
+        { "id": "B2-REL-01.e07", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct pronoun ('whoever').", "prompt": "___ arriva tardi non può entrare.", "answers": ["Chi", "Colui che"], "focus": ["chi"], "errorType": "relative", "traps": [{ "match": "che", "errorType": "relative", "why": "*Che* needs a noun before it. 'Whoever' is *chi*." }, { "match": "quelli che", "errorType": "agreement", "why": "*Quelli che* needs a plural verb (*arrivano*). With *arriva* use *chi*." }], "explanation": "'Whoever / the person who' → **chi** + singular verb.", "en": "Whoever arrives late can't come in." },
+        { "id": "B2-REL-01.e08", "type": "cloze", "difficulty": 2, "instruction": "Complete with 'what' (= the thing that).", "prompt": "Non capisco ___ vuoi dire.", "answers": ["quello che", "ciò che", "cosa", "che cosa"], "focus": ["che"], "errorType": "relative", "traps": [{ "match": "che", "errorType": "relative", "why": "Bare *che* needs a noun before it. Use *quello che* / *ciò che* (or *cosa*)." }, { "match": "il che", "errorType": "relative", "why": "*Il che* refers back to a whole previous clause ('which'). Here: *quello che*." }], "explanation": "'What' = **quello che / ciò che** (or *cosa* as an indirect question).", "en": "I don't understand what you mean." },
+        { "id": "B2-REL-01.e09", "type": "choice", "difficulty": 3, "instruction": "Choose the correct word.", "prompt": "Ho fatto ___ ho potuto per aiutarlo.", "options": ["quanto", "chi", "cui", "che"], "answer": 0, "errorType": "relative", "optionWhy": { "1": "*Chi* refers to people.", "2": "*Cui* needs a preposition and an antecedent.", "3": "*Che* needs a noun before it (*tutto quello che*)." }, "explanation": "**Quanto** = *tutto quello che* (all that).", "en": "I did all I could to help him." },
+        { "id": "B2-REL-01.e10", "type": "transform", "difficulty": 3, "instruction": "Join the two sentences with a relative pronoun.", "prompt": "Ti presento Marta. Lavoro con Marta da anni.", "answers": ["Ti presento Marta, con (cui|la quale) lavoro da anni"], "focus": ["cui"], "errorType": "relative", "traps": [{ "contains": ["che"], "errorType": "relative", "why": "*Lavorare con*: the preposition comes first, so *con cui*." }, { "match": "Ti presento Marta, (cui|la quale) lavoro con da anni", "errorType": "word-order", "why": "Italian never leaves the preposition at the end: *con cui lavoro*." }], "explanation": "*Lavorare con qualcuno* → **con cui** (or *con la quale*).", "en": "Let me introduce Marta, whom I've worked with for years." },
+        { "id": "B2-REL-01.e11", "type": "transform", "difficulty": 4, "instruction": "Replace 'cui' with the correct form of 'il quale'.", "prompt": "È una situazione di cui nessuno parla.", "answers": ["È una situazione della quale nessuno parla"], "focus": ["della"], "errorType": "relative", "traps": [{ "match": ["È una situazione di la quale nessuno parla", "È una situazione di quale nessuno parla"], "errorType": "preposition", "why": "*Di + la* contracts: *della quale*." }, { "match": "È una situazione del quale nessuno parla", "errorType": "agreement", "why": "*Situazione* is feminine: *della quale*." }], "explanation": "*Di cui* → *di* + *la quale* → **della quale** (agrees with *situazione*).", "en": "It's a situation nobody talks about." },
+        { "id": "B2-REL-01.e12", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian.", "prompt": "The town where I was born is very small.", "answers": ["La città (in cui|dove|nella quale) sono (nato|nata) è molto piccola", "Il paese (in cui|dove|nel quale) sono (nato|nata) è molto piccolo", "La cittadina (in cui|dove|nella quale) sono (nato|nata) è molto piccola"], "focus": ["cui"], "errorType": "relative", "traps": [{ "contains": ["che"], "errorType": "relative", "why": "'Where' = *in cui* or *dove*, not *che*." }, { "contains": ["ho"], "errorType": "auxiliary", "why": "*Nascere* takes *essere*: *sono nato/a*." }], "explanation": "Place → **in cui** / *dove* / *nella quale*.", "en": "The town where I was born is very small." },
+        { "id": "B2-REL-01.e13", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian (informal 'you').", "prompt": "The reason I'm calling you is simple.", "answers": ["Il motivo (per cui|per il quale) ti chiamo è semplice", "La ragione (per cui|per la quale) ti chiamo è semplice"], "focus": ["cui"], "errorType": "relative", "traps": [{ "contains": ["perché"], "errorType": "relative", "why": "'The reason why' = *il motivo **per cui***." }, { "contains": ["che"], "errorType": "relative", "why": "After *motivo* you need *per cui*." }], "explanation": "'The reason (why)' → **il motivo per cui**.", "en": "The reason I'm calling you is simple." },
+        { "id": "B2-REL-01.e14", "type": "order", "difficulty": 3, "instruction": "Put the words in order.", "prompt": "He's the colleague I asked for help.", "tokens": ["È", "il", "collega", "a", "cui", "ho", "chiesto", "aiuto"], "answers": ["È il collega a cui ho chiesto aiuto"], "errorType": "word-order", "explanation": "*Chiedere aiuto **a** qualcuno* → **a cui**, placed straight after the noun." },
+        { "id": "B2-REL-01.e15", "type": "translate", "difficulty": 5, "instruction": "Translate into Italian, starting with 'Chi'.", "prompt": "Those who know the truth say nothing.", "answers": ["Chi sa la verità non dice (niente|nulla)"], "focus": ["sa", "dice"], "errorType": "agreement", "traps": [{ "match": "(Quelli|Coloro) che sanno la verità non dicono (niente|nulla)", "ok": true, "errorType": "relative", "why": "Correct too, with a plural. The task asked for *chi* + singular." }, { "contains": ["sanno", "dicono"], "errorType": "agreement", "why": "*Chi* always takes a singular verb: *Chi sa… non dice*." }], "explanation": "**Chi** + singular verb: *Chi sa… non dice niente*.", "en": "Those who know the truth say nothing." },
+        { "id": "B2-REL-01.e16", "type": "choice", "difficulty": 4, "instruction": "Choose the correct form.", "prompt": "Ecco il professore ___ figlia studia con me.", "options": ["la cui", "il cui", "di cui la", "che sua"], "answer": 0, "errorType": "agreement", "optionWhy": { "1": "The article agrees with *figlia* (the possessed noun): *la cui*.", "2": "'Whose' is article + *cui* + noun, with no *di*.", "3": "Italian doesn't use *che* + possessive for 'whose'." }, "explanation": "Agreement with *figlia* → **la cui** figlia.", "en": "Here's the professor whose daughter studies with me." },
+        { "id": "B2-REL-01.e17", "type": "speak", "difficulty": 4, "instruction": "Say it aloud (or type).", "prompt": "Tell a friend: 'What you're saying isn't true.'", "answers": ["(Quello|Ciò) che dici non è vero", "Non è vero (quello|ciò) che dici"], "focus": ["che"], "errorType": "relative", "traps": [{ "match": "Che dici non è vero", "errorType": "relative", "why": "'What' as a subject = *quello che / ciò che*." }, { "match": "Cosa dici non è vero", "errorType": "relative", "why": "*Cosa* works in questions, not as 'the thing that': *Quello che dici…*" }], "explanation": "'What' = **quello che / ciò che**.", "en": "What you're saying isn't true.", "interaction": true }
+      ]
+    }
+  ]
+}

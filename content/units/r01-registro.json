@@ -1,0 +1,394 @@
+{
+  "unit": "R01",
+  "title": "Registro e interazione",
+  "cefr": "B2",
+  "concepts": [
+    {
+      "id": "B2-REG-01",
+      "title": "Formal Lei and formal emails",
+      "cefr": "B2",
+      "skill": "interaction",
+      "prereqs": [],
+      "rule": "With *Lei* use third-person singular verbs, the pronouns *La* (direct) and *Le* (indirect) and the possessive *Suo/Sua*. Formal commands use the present subjunctive (*mi dica, si accomodi, non si preoccupi*). Formal emails open with *Gentile… / Egregio… / Spett.le…* and close with formulas such as *Resto in attesa di un Suo riscontro. Cordiali saluti*.",
+      "assessment": [
+        "Uses third-person singular verbs consistently when addressing someone as Lei",
+        "Chooses La / Le and Suo / Sua correctly, agreeing the possessive with the thing possessed",
+        "Gives formal instructions and invitations with the subjunctive-based imperative (mi dica, si accomodi, non si preoccupi)",
+        "Opens and closes a formal email with appropriate formulas and keeps the Lei register throughout"
+      ],
+      "lesson": {
+        "intro": "English has one *you*; Italian forces a choice. With strangers, clients, older people and in any professional setting you use **Lei**, which is grammatically a third-person feminine singular pronoun, whoever you are talking to. That one choice ripples through the verb, the pronouns, the possessives and the imperative, and slipping back into *tu* forms halfway through a sentence is the most common giveaway. Formal emails add a second layer: fixed opening and closing formulas that Italians expect to see.",
+        "rules": [
+          {
+            "title": "Lei takes the third-person singular",
+            "text": "Every verb addressed to *Lei* is in the **third-person singular**, exactly like *lui/lei*: *Lei è, Lei ha, Lei può, Come sta?* The pronoun itself is usually dropped. In letters and emails *Lei* and its pronouns are often capitalised (*Le scrivo, il Suo curriculum*); in ordinary text lower case is also correct.",
+            "examples": [
+              { "it": "Buongiorno, signora, come **sta**?", "en": "Good morning, madam, how are you?" },
+              { "it": "**Può** ripetere, per favore?", "en": "Could you repeat that, please?" },
+              { "it": "Da quanto tempo **lavora** qui?", "en": "How long have you been working here?" }
+            ]
+          },
+          {
+            "title": "Pronouns and possessives: La, Le, Suo",
+            "text": "Direct object: **La** (*La ringrazio, La chiamo domani*). Indirect object (*a Lei*): **Le** (*Le scrivo, Le mando, Le dispiace?*). Possessive: **Suo, Sua, Suoi, Sue**, which agree with the **thing possessed**, not with the person (*la Sua email* to a man, *il Suo ufficio* to a woman). In business, a company or a group is addressed with **Voi** (*Vi ringraziamo, la Vostra offerta*).",
+            "table": {
+              "head": ["", "tu", "Lei"],
+              "rows": [
+                ["direct object", "ti ringrazio", "La ringrazio"],
+                ["indirect object", "ti scrivo", "Le scrivo"],
+                ["possessive", "il tuo / la tua", "il Suo / la Sua"],
+                ["reflexive", "ti siedi", "si siede"]
+              ]
+            }
+          },
+          {
+            "title": "The formal imperative is the present subjunctive",
+            "text": "To tell or invite *Lei* to do something, use the **congiuntivo presente**, with pronouns **before** the verb: *mi dica, si accomodi, si sieda, venga, senta, scusi, abbia pazienza*. The negative just adds *non*: *non si preoccupi*. Compare the *tu* forms, where pronouns attach to the end: *dimmi, siediti, non ti preoccupare*.",
+            "examples": [
+              { "it": "Prego, **si accomodi**.", "en": "Please, have a seat / come in." },
+              { "it": "**Mi dica**, come posso aiutarLa?", "en": "Go ahead, how can I help you?" },
+              { "it": "**Non si preoccupi**, ci pensiamo noi.", "en": "Don't worry, we'll take care of it." }
+            ]
+          },
+          {
+            "title": "Opening a formal email",
+            "text": "To a person: **Gentile** + title + surname (*Gentile Signora Bianchi, Gentile Dott. Rossi*), the safe default. **Egregio/Egregia** is more ceremonial (*Egregio Avvocato*). To a company: **Spett.le** (*Spettabile*) *Ditta / Società*. **Caro/Cara** is only for people you already know. Then state the purpose: *Le scrivo in merito a… / in riferimento a…*",
+            "examples": [
+              { "it": "Gentile Dott.ssa Ferri, Le scrivo in merito all'annuncio pubblicato sul Vostro sito.", "en": "Dear Dr Ferri, I am writing regarding the advertisement published on your website." },
+              { "it": "Spett.le Ditta Moretti, con la presente vorrei segnalare un problema.", "en": "Dear Sirs (Moretti company), I am writing to report a problem." }
+            ]
+          },
+          {
+            "title": "Closing a formal email",
+            "text": "Typical closings, often combined: *Resto in attesa di un Suo (cortese) riscontro*, *Rimango a disposizione per eventuali chiarimenti*, *La ringrazio per l'attenzione*, then **Cordiali saluti** (standard) or **Distinti saluti** (more distant). Never *Ciao*, *Un abbraccio* or *A presto* with someone you address as Lei.",
+            "examples": [
+              { "it": "Resto in attesa di un Suo riscontro. Cordiali saluti, Marta Galli", "en": "I look forward to hearing from you. Kind regards, Marta Galli" },
+              { "it": "Rimango a disposizione per eventuali chiarimenti. Distinti saluti", "en": "I remain available for any clarification. Yours faithfully" }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Signora, Lei sei molto gentile.", "right": "Signora, Lei è molto gentile.", "why": "*Lei* always takes the third-person singular verb, never the *tu* form." },
+          { "wrong": "Dottore, ti ringrazio.", "right": "Dottore, La ringrazio.", "why": "Mixing *tu* pronouns into a formal exchange. Direct object of Lei: *La*." },
+          { "wrong": "Gli scrivo per chiedere un appuntamento. (to Lei)", "right": "Le scrivo per chiedere un appuntamento.", "why": "The indirect object of *Lei* is *Le*, for men and women alike." },
+          { "wrong": "Dimmi pure, signora.", "right": "Mi dica pure, signora.", "why": "The formal imperative is the subjunctive, with the pronoun before the verb." },
+          { "wrong": "Caro Signor Rossi, (first email to a stranger)", "right": "Gentile Signor Rossi,", "why": "*Caro* implies you know the person. *Gentile* is the neutral formal opening." }
+        ],
+        "tips": [
+          "Decide Lei or tu at the first sentence and check every verb, pronoun and possessive against it before you send.",
+          "Think of *Lei* as 'Your Excellency': you talk *about* the person in the third person. That makes *Lei è*, *il Suo*, *mi dica* feel logical.",
+          "If an Italian says *Diamoci del tu*, switch at once. Until then, stay with Lei."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-REG-01.e01", "type": "cloze", "difficulty": 1, "instruction": "You're speaking to an older neighbour you don't know well. Complete with the verb in brackets.", "prompt": "Buongiorno, signora, come ___ (stare)?", "answers": ["sta"], "focus": ["sta"], "errorType": "register", "traps": [{ "match": "stai", "errorType": "register", "why": "*Stai* is the *tu* form. With a neighbour you don't know, use Lei: third person *sta*." }, { "match": "state", "errorType": "register", "why": "*State* addresses several people. One person, formal: *sta*." }], "explanation": "Lei takes the third-person singular: *come sta?*", "en": "Good morning, madam, how are you?" },
+        { "id": "B2-REG-01.e02", "type": "choice", "difficulty": 1, "instruction": "You're a bank clerk and a customer walks up to your desk. Choose the right opening.", "prompt": "Buongiorno, ___!", "options": ["mi dica", "dimmi", "ditemi", "mi dici"], "answer": 0, "optionWhy": { "1": "*Dimmi* is the *tu* imperative, too familiar for a customer.", "2": "*Ditemi* addresses several people (voi).", "3": "*Mi dici* is an informal present tense." }, "errorType": "register", "explanation": "The formal imperative is the present subjunctive with the pronoun first: *mi dica* (go ahead, tell me).", "interaction": true, "en": "Good morning, how can I help?" },
+        { "id": "B2-REG-01.e03", "type": "cloze", "difficulty": 2, "instruction": "Fill in the formal possessive (\"your\").", "prompt": "Dottor Bianchi, La ringrazio molto per il ___ aiuto.", "answers": ["Suo"], "focus": ["Suo"], "errorType": "register", "traps": [{ "match": "tuo", "errorType": "register", "why": "You've already used *La ringrazio*: stay in Lei and use *Suo*." }, { "match": "vostro", "errorType": "register", "why": "*Vostro* to a single person is old-fashioned or regional. In standard Italian it's *Suo*." }, { "match": "Sua", "errorType": "agreement", "why": "The possessive agrees with *aiuto* (masculine): *il Suo*." }], "explanation": "Formal possessive: *Suo*, agreeing with *aiuto* (masculine singular).", "en": "Dr Bianchi, thank you very much for your help." },
+        { "id": "B2-REG-01.e04", "type": "cloze", "difficulty": 2, "instruction": "Fill in the formal pronoun.", "prompt": "Gentile Avvocato, ___ scrivo in merito alla pratica n. 245.", "answers": ["Le"], "focus": ["Le"], "errorType": "pronoun", "traps": [{ "match": "La", "errorType": "pronoun", "why": "*Scrivere a qualcuno* takes an indirect object, so the formal pronoun is *Le*, not *La*." }, { "match": "ti", "errorType": "register", "why": "An email that opens with *Gentile Avvocato* is in Lei: *Le scrivo*." }, { "match": "gli", "errorType": "pronoun", "why": "*Gli* means 'to him'. The formal 'to you' is *Le*, even when writing to a man." }], "explanation": "*Scrivere a* → indirect object → formal *Le*.", "en": "Dear Counsel, I am writing regarding case no. 245." },
+        { "id": "B2-REG-01.e05", "type": "transform", "difficulty": 2, "instruction": "Make it formal (Lei).", "prompt": "Siediti, prego.", "answers": ["(Si accomodi|Si sieda)[ prego]", "Prego (si accomodi|si sieda)"], "focus": ["accomodi", "sieda"], "errorType": "register", "traps": [{ "match": ["Si siede[ prego]", "Prego si siede"], "errorType": "verb-form", "why": "*Si siede* is the indicative ('she sits down'). The formal command needs the subjunctive: *si sieda*." }, { "contains": ["accomodati", "siediti"], "errorType": "register", "why": "That's still the *tu* imperative. Formal: *si accomodi / si sieda*." }], "explanation": "Formal imperative = present subjunctive with the reflexive pronoun first: *si sieda*, or the very common *si accomodi*.", "interaction": true, "en": "Sit down, please." },
+        { "id": "B2-REG-01.e06", "type": "transform", "difficulty": 3, "instruction": "Make it formal (Lei).", "prompt": "Dimmi pure, cosa ti serve?", "answers": ["Mi dica [pure] (cosa|che cosa|che) Le serve"], "focus": ["dica", "Le"], "errorType": "register", "traps": [{ "contains": ["ti", "dimmi"], "errorType": "register", "why": "There's still a *tu* form in there. Formal: *mi dica* and *Le serve*." }, { "contains": ["gli", "La"], "errorType": "pronoun", "why": "*Servire a qualcuno*: indirect object, so formal *Le*." }, { "match": "Mi dice [pure] (cosa|che cosa|che) Le serve", "errorType": "verb-form", "why": "*Mi dice* is the indicative. The formal imperative is the subjunctive *mi dica*." }], "explanation": "*Dimmi* → *mi dica* (subjunctive, pronoun first); *ti serve* → *Le serve*.", "interaction": true, "en": "Go ahead, what do you need?" },
+        { "id": "B2-REG-01.e07", "type": "choice", "difficulty": 2, "instruction": "You're writing for the first time to a company you've never dealt with. Choose the opening.", "prompt": "Which opening is appropriate?", "options": ["Spett.le Ditta Ferri,", "Cara Ditta Ferri,", "Ciao a tutti,", "Salve ragazzi,"], "answer": 0, "optionWhy": { "1": "*Caro/Cara* implies an existing relationship and is never used for a company.", "2": "Far too informal for a business letter.", "3": "Far too informal for a business letter." }, "errorType": "register", "explanation": "Companies are addressed as *Spettabile* (abbreviated *Spett.le*) *Ditta / Società*.", "en": "Dear Sirs (Ferri company)," },
+        { "id": "B2-REG-01.e08", "type": "choice", "difficulty": 3, "instruction": "You've emailed a recruiter you've never met. Choose the best closing.", "prompt": "How do you end the email?", "options": ["Resto in attesa di un Suo cortese riscontro. Cordiali saluti", "Aspetto una tua risposta. Ciao!", "Un abbraccio e a presto", "Rispondimi presto, grazie"], "answer": 0, "optionWhy": { "1": "*Tua* and *Ciao* are informal.", "2": "*Un abbraccio* is for friends and family.", "3": "*Rispondimi* is a *tu* command, and it sounds pushy." }, "errorType": "register", "explanation": "Standard formal closing: *Resto in attesa di un Suo (cortese) riscontro* + *Cordiali saluti*." },
+        { "id": "B2-REG-01.e09", "type": "order", "difficulty": 3, "instruction": "Put the words in order to make a standard closing line.", "prompt": "I look forward to hearing from you.", "tokens": ["riscontro", "Resto", "un", "attesa", "Suo", "di", "in"], "answers": ["Resto in attesa di un Suo riscontro"], "errorType": "word-order", "explanation": "Fixed formula: *Resto in attesa di un Suo riscontro*. *Riscontro* here means 'reply'.", "en": "I look forward to hearing from you." },
+        { "id": "B2-REG-01.e10", "type": "translate", "difficulty": 3, "instruction": "Translate. You're speaking to a client (Lei).", "prompt": "Could you tell me your name, please?", "answers": ["[(per favore|per cortesia) ](mi può dire|può dirmi|mi potrebbe dire|potrebbe dirmi|mi dice) il Suo nome[ (per favore|per cortesia)]"], "focus": ["Suo"], "errorType": "register", "traps": [{ "contains": ["puoi", "potresti", "tuo", "dici"], "errorType": "register", "why": "That's the *tu* form. With a client: *può / potrebbe* and *il Suo nome*." }, { "match": "[(per favore|per cortesia) ](mi può dire|può dirmi|mi potrebbe dire|potrebbe dirmi) il Suo cognome[ (per favore|per cortesia)]", "ok": true, "why": "Fine if you want the surname (*cognome*); *nome* is the general word for name." }], "explanation": "*Lei* → *può / potrebbe* + *il Suo nome*. The conditional *potrebbe* is a little more polite.", "interaction": true },
+        { "id": "B2-REG-01.e11", "type": "translate", "difficulty": 4, "instruction": "Translate the opening line of a formal email.", "prompt": "I am writing to you regarding your advertisement.", "answers": ["Le scrivo (in merito al|riguardo al|a proposito del|in riferimento al|per quanto riguarda il) Suo annuncio"], "focus": ["Le", "Suo"], "errorType": "register", "traps": [{ "contains": ["ti", "tuo"], "errorType": "register", "why": "A formal email needs Lei: *Le scrivo… il Suo annuncio*." }, { "contains": ["La", "gli"], "errorType": "pronoun", "why": "*Scrivere a* takes the indirect pronoun: formal *Le*." }, { "match": "Le scrivo (in merito al|riguardo al|a proposito del|in riferimento al|per quanto riguarda il) Vostro annuncio", "ok": true, "why": "Correct if the advert belongs to a company you're addressing as *Voi*." }, { "contains": ["sto"], "errorType": "wrong-tense", "why": "Italian uses the simple present here: *Le scrivo*, not *sto scrivendo*." }], "explanation": "Standard opener: *Le scrivo in merito a / in riferimento a…*. Note the simple present for 'I am writing'." },
+        { "id": "B2-REG-01.e12", "type": "cloze", "difficulty": 3, "instruction": "Complete the formal reassurance with the verb in brackets.", "prompt": "Non ___ (preoccuparsi), signora: ci pensiamo noi.", "answers": ["si preoccupi"], "focus": ["preoccupi"], "errorType": "verb-form", "traps": [{ "match": ["preoccuparti", "ti preoccupare", "ti preoccupi"], "errorType": "register", "why": "Those are *tu* forms. Formal negative imperative: *non si preoccupi*." }, { "match": "si preoccupa", "errorType": "verb-form", "why": "*Si preoccupa* is the indicative. The formal command uses the subjunctive: *si preoccupi*." }, { "match": "preoccuparsi", "errorType": "verb-form", "why": "The bare infinitive is used on signs, not to address a person. Formal: *non si preoccupi*." }], "explanation": "Formal negative imperative = *non* + subjunctive: *non si preoccupi*.", "interaction": true, "en": "Don't worry, madam: we'll take care of it." },
+        { "id": "B2-REG-01.e13", "type": "speak", "difficulty": 3, "instruction": "Say it in Italian.", "prompt": "A client walks into your office in the morning. Greet her and invite her to take a seat.", "answers": ["(Buongiorno|Buongiorno signora) (si accomodi|si sieda)[ prego]", "(Buongiorno|Buongiorno signora) prego (si accomodi|si sieda)"], "focus": ["accomodi", "sieda"], "errorType": "register", "traps": [{ "contains": ["accomodati", "siediti", "ciao"], "errorType": "register", "why": "Too familiar for a client. Use Lei: *si accomodi* / *si sieda*." }, { "contains": ["siede", "accomoda"], "errorType": "verb-form", "why": "Indicative instead of the formal imperative. Use the subjunctive: *si sieda / si accomodi*." }], "explanation": "*Buongiorno, si accomodi* is the stock formal welcome.", "interaction": true },
+        { "id": "B2-REG-01.e14", "type": "transform", "difficulty": 4, "instruction": "Rewrite this sentence from an email so it's formal (Lei).", "prompt": "Ti ringrazio per la tua risposta e ti mando il mio CV.", "answers": ["La ringrazio per la Sua risposta e Le (mando|invio) il mio (CV|curriculum)"], "focus": ["La", "Sua", "Le"], "errorType": "register", "traps": [{ "contains": ["ti", "tua"], "errorType": "register", "why": "There's still a *tu* form left. Every pronoun and possessive must switch to Lei." }, { "match": "La ringrazio per la Sua risposta e La (mando|invio) il mio (CV|curriculum)", "errorType": "pronoun", "why": "*Ringraziare qualcuno* is direct (*La*), but *mandare qualcosa a qualcuno* is indirect: *Le mando*." }, { "match": "Le ringrazio per la Sua risposta e Le (mando|invio) il mio (CV|curriculum)", "errorType": "pronoun", "why": "*Ringraziare* takes a direct object: *La ringrazio*." }, { "match": "La ringrazio per il Suo risposta e Le (mando|invio) il mio (CV|curriculum)", "errorType": "agreement", "why": "*Risposta* is feminine: *la Sua risposta*." }], "explanation": "*Ringraziare qualcuno* → *La*; *mandare a qualcuno* → *Le*; *tua* → *Sua*." },
+        { "id": "B2-REG-01.e15", "type": "choice", "difficulty": 4, "instruction": "You're writing to Mr Conti. Which is correct?", "prompt": "Signor Conti, ho ricevuto ___ email.", "options": ["la Sua", "il Suo", "la Vostra", "la tua"], "answer": 0, "optionWhy": { "1": "The possessive agrees with *email* (feminine), not with Mr Conti.", "2": "*Vostra* is for a company or a group, not one person.", "3": "*Tua* is informal." }, "errorType": "agreement", "explanation": "*Suo/Sua* agrees with the thing possessed: *la Sua email*, even to a man.", "en": "Mr Conti, I received your email." },
+        { "id": "B2-REG-01.e16", "type": "speak", "difficulty": 5, "instruction": "Say it in Italian.", "prompt": "You answer the office phone. The caller (a client) asks for your manager. Ask him politely to hold on a moment.", "answers": ["(Attenda|Aspetti|Resti in linea|Rimanga in linea) un (attimo|momento)[ (prego|per favore|per cortesia)]", "Un (attimo|momento)[ (prego|per favore|per cortesia)] (attenda|aspetti|resti in linea|rimanga in linea)"], "focus": ["attenda", "aspetti", "resti", "rimanga"], "errorType": "register", "traps": [{ "contains": ["aspetta", "resta", "rimani", "attendi"], "errorType": "register", "why": "That's the *tu* imperative. To a client: *attenda / aspetti / resti in linea*." }], "explanation": "Formal imperative of *attendere, aspettare, restare, rimanere*: *attenda, aspetti, resti, rimanga* (+ *in linea* on the phone).", "interaction": true },
+        { "id": "B2-REG-01.e17", "type": "free", "difficulty": 5, "instruction": "Write a short formal email (40–90 words) to Dott.ssa Rinaldi, the HR manager of a company, asking whether the position advertised on their website is still open and saying you're attaching your CV.", "prompt": "Email to Dott.ssa Rinaldi about the job advertisement.", "minWords": 40, "maxWords": 90, "rubric": [
+          { "label": "Formal opening (Gentile / Egregia…)", "anyOf": ["\\b(gentile|egregia|spett)"], "min": 1, "errorType": "register", "hint": "Open with *Gentile Dott.ssa Rinaldi,*" },
+          { "label": "Uses Lei pronouns or possessives (Le, La, Suo/Sua)", "anyOf": ["\\b(Le|La)\\s+(scrivo|ringrazio|invio|mando|allego|chiedo)", "\\bSu[oaie]\\b"], "min": 1, "errorType": "register", "hint": "Try *Le scrivo* or *La ringrazio*." },
+          { "label": "Mentions the attachment", "anyOf": ["\\ballegat", "\\ballego\\b", "\\bin allegato\\b"], "min": 1, "errorType": "task-completion", "hint": "*In allegato trova il mio curriculum* / *Le allego il mio CV*" },
+          { "label": "Formal closing", "anyOf": ["cordiali saluti", "distinti saluti", "in attesa di un", "resto in attesa", "rimango a disposizione"], "min": 1, "errorType": "register", "hint": "End with *Resto in attesa di un Suo riscontro. Cordiali saluti*" }
+        ], "model": "Gentile Dott.ssa Rinaldi,\nLe scrivo in merito alla posizione di assistente commerciale pubblicata sul Vostro sito. Vorrei sapere se la selezione è ancora aperta. In allegato trova il mio curriculum, da cui potrà vedere la mia esperienza nel settore. Rimango a disposizione per un eventuale colloquio.\nResto in attesa di un Suo cortese riscontro.\nCordiali saluti,\nLaura Neri", "errorType": "writing", "explanation": "A formal email keeps Lei from start to finish, states its purpose in the first line and closes with a standard formula." }
+      ]
+    },
+    {
+      "id": "C1-REG-02",
+      "title": "Register shifts: colloquial, neutral, bureaucratic",
+      "cefr": "C1",
+      "skill": "interaction",
+      "prereqs": ["B2-REG-01"],
+      "rule": "Italian has three clearly separated registers: colloquial (*beccare, un sacco di, mandare*), neutral (*trovare, molti, inviare*) and formal-bureaucratic (*reperire, numerosi, trasmettere, effettuare un pagamento*). Match the register to the situation, and soften requests with the conditional (*vorrei, potrebbe, sarebbe possibile*) and *mi permetta di*.",
+      "assessment": [
+        "Recognises whether a word or sentence is colloquial, neutral or formal-bureaucratic",
+        "Replaces colloquial words with neutral or formal equivalents (and vice versa) to suit the situation",
+        "Uses bureaucratic collocations such as effettuare un pagamento, provvedere a, si prega di correctly",
+        "Softens requests and objections with the conditional and formulas like mi permetta di"
+      ],
+      "lesson": {
+        "intro": "At C1 the question is no longer only 'is it correct?' but 'is it right for this situation?'. Italian keeps its registers further apart than English: the words you'd use with friends (*beccare, un casino*) would be shocking in a complaint letter, while office language (*effettuare, reperire, provvedere*) sounds absurd at the dinner table. You need to recognise all three levels and move between them on purpose.",
+        "rules": [
+          {
+            "title": "Three levels of the same idea",
+            "text": "Many everyday ideas have a colloquial, a neutral and a formal-bureaucratic word. The neutral one is almost always safe; the formal one belongs in letters, forms, official announcements and meetings.",
+            "table": {
+              "head": ["colloquial", "neutral", "formal / bureaucratic"],
+              "rows": [
+                ["beccare", "trovare", "reperire"],
+                ["fare (un pagamento)", "fare", "effettuare"],
+                ["mandare", "inviare", "trasmettere"],
+                ["un sacco di", "molti", "numerosi"],
+                ["dire", "dire", "comunicare"],
+                ["mollare", "lasciare", "abbandonare / rinunciare a"],
+                ["sistemare", "risolvere", "provvedere a"]
+              ]
+            }
+          },
+          {
+            "title": "Bureaucratic style: nouns and impersonal forms",
+            "text": "Official Italian prefers a **verb + noun** where everyday Italian has a single verb (*pagare* → *effettuare il pagamento*; *mandare* → *procedere all'invio*), and **impersonal** constructions: *si prega di…, è necessario…, si comunica che…*. *Effettuare* collocates with operations: *un pagamento, un bonifico, una prenotazione, un controllo, una verifica*, never with leisure (~~effettuare una passeggiata~~).",
+            "examples": [
+              { "it": "Si prega di effettuare il pagamento entro venerdì.", "en": "Please make the payment by Friday." },
+              { "it": "Non è stato possibile reperire la documentazione.", "en": "It was not possible to locate the documents." },
+              { "it": "L'ufficio provvederà all'invio del modulo.", "en": "The office will send the form." }
+            ]
+          },
+          {
+            "title": "Softening with the conditional",
+            "text": "The present conditional turns a demand into a request: *vorrei* (not *voglio*), *potrebbe…?*, *sarebbe possibile…?*, *Le dispiacerebbe…?*, *gradirei…*. In a formal complaint, being polite is not weakness: it makes it harder for the other side to refuse.",
+            "examples": [
+              { "it": "Vorrei parlare con il responsabile.", "en": "I'd like to speak to the manager." },
+              { "it": "Sarebbe possibile ricevere una copia del contratto?", "en": "Would it be possible to receive a copy of the contract?" }
+            ]
+          },
+          {
+            "title": "Mi permetta di… / Mi permetto di…",
+            "text": "*Mi permetta di* + infinitive (Lei imperative: 'allow me to') introduces an objection or correction courteously. *Mi permetto di* ('I take the liberty of') does the same in the first person. With a friend, you'd just say *guarda, secondo me…*",
+            "examples": [
+              { "it": "Mi permetta di far notare che la fattura è errata.", "en": "Allow me to point out that the invoice is wrong." },
+              { "it": "Mi permetto di ricordarLe la scadenza di lunedì.", "en": "May I remind you of Monday's deadline." }
+            ]
+          },
+          {
+            "title": "Colloquial Italian has its place",
+            "text": "*Beccare* (catch, find, bump into), *un casino* (a mess, loads), *un sacco* (loads), *fregare* (to rip off), *mollare* (to dump, give up) are normal among friends. Using office language there sounds cold or ironic. Register errors go both ways.",
+            "examples": [
+              { "it": "Ieri ho beccato Luca al bar.", "en": "I bumped into Luca at the bar yesterday." },
+              { "it": "C'era un sacco di gente.", "en": "There were loads of people." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Ho beccato un errore nella bolletta. (complaint email)", "right": "Ho riscontrato un errore nella bolletta.", "why": "*Beccare* is slang. In writing to a company use *riscontrare* or *rilevare*." },
+          { "wrong": "Voglio un rimborso.", "right": "Vorrei richiedere un rimborso.", "why": "*Voglio* sounds like a demand. The conditional *vorrei* is the polite norm." },
+          { "wrong": "Ieri abbiamo effettuato una passeggiata.", "right": "Ieri abbiamo fatto una passeggiata.", "why": "*Effettuare* is for operations and procedures, not leisure; it sounds absurd here." },
+          { "wrong": "Mi permetti di dire che… (to your boss, whom you address as Lei)", "right": "Mi permetta di dire che…", "why": "With Lei the imperative is the subjunctive: *mi permetta*." },
+          { "wrong": "Ti prego di effettuare il pagamento della pizza. (to a friend)", "right": "Mi ridai i soldi della pizza quando puoi?", "why": "Bureaucratic language with friends sounds sarcastic." }
+        ],
+        "tips": [
+          "When unsure, choose the neutral word: *trovare, inviare, molti* are never wrong.",
+          "Collect formal collocations in pairs: *effettuare un pagamento, inoltrare una richiesta, provvedere al rimborso, riscontrare un errore*.",
+          "Read official notices (bills, Comune websites) to see bureaucratic Italian; listen to friends to hear the colloquial layer."
+        ]
+      },
+      "exercises": [
+        { "id": "C1-REG-02.e01", "type": "choice", "difficulty": 1, "instruction": "Formal email from a company. Choose the right verb.", "prompt": "Purtroppo non siamo riusciti a ___ il documento da Lei richiesto.", "options": ["beccare", "reperire", "acchiappare"], "answer": 1, "optionWhy": { "0": "*Beccare* is slang: fine with friends, never in a company email.", "2": "*Acchiappare* means 'to catch', and it's colloquial." }, "errorType": "register", "explanation": "*Reperire* is the formal/bureaucratic equivalent of *trovare* (to find, to locate).", "en": "Unfortunately we were unable to locate the document you requested." },
+        { "id": "C1-REG-02.e02", "type": "choice", "difficulty": 1, "instruction": "You're chatting with a friend. Choose the most natural word.", "prompt": "Ieri ho ___ Luca al bar, non lo vedevo da anni!", "options": ["beccato", "reperito", "effettuato"], "answer": 0, "optionWhy": { "1": "*Reperire* is for documents and information in formal contexts, not for bumping into a friend.", "2": "*Effettuare* is for operations (payments, checks), not people." }, "errorType": "register", "explanation": "*Beccare qualcuno* = to bump into someone, colloquial and perfect with friends. *Ho incontrato Luca* would be neutral.", "interaction": true, "en": "Yesterday I bumped into Luca at the bar, I hadn't seen him for years!" },
+        { "id": "C1-REG-02.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete the official notice with the bureaucratic synonym of *fatto*.", "prompt": "Il pagamento deve essere ___ entro il 30 giugno.", "answers": ["(effettuato|eseguito)"], "focus": ["effettuato", "eseguito"], "errorType": "register", "traps": [{ "match": "fatto", "errorType": "register", "why": "*Fatto* is correct but neutral. Official notices use *effettuato*." }, { "match": ["effettuata", "effettuate"], "errorType": "agreement", "why": "The participle agrees with *il pagamento*: masculine singular *effettuato*." }], "explanation": "*Effettuare un pagamento* is the standard bureaucratic collocation.", "en": "Payment must be made by 30 June." },
+        { "id": "C1-REG-02.e04", "type": "transform", "difficulty": 2, "instruction": "Replace *mandato* with a more formal verb.", "prompt": "Abbiamo mandato i documenti ieri.", "answers": ["Abbiamo (inviato|trasmesso) i documenti ieri", "Ieri abbiamo (inviato|trasmesso) i documenti"], "focus": ["inviato", "trasmesso"], "errorType": "register", "traps": [{ "match": ["Abbiamo spedito i documenti ieri", "Ieri abbiamo spedito i documenti"], "ok": true, "why": "*Spedire* is fine for post or parcels; for documents in an office context *inviare* or *trasmettere* are more usual." }], "explanation": "*Mandare* (everyday) → *inviare* (neutral-formal) → *trasmettere* (bureaucratic).", "en": "We sent the documents yesterday." },
+        { "id": "C1-REG-02.e05", "type": "transform", "difficulty": 2, "instruction": "Replace the slang verb with a neutral one.", "prompt": "Non riesco a beccare le chiavi.", "answers": ["Non riesco a trovare le chiavi"], "focus": ["trovare"], "errorType": "register", "traps": [{ "match": "Non riesco a reperire le chiavi", "errorType": "register", "why": "*Reperire* is bureaucratic: it sounds comic for your own keys. The neutral word is *trovare*." }], "explanation": "*Beccare* → *trovare* (neutral). *Reperire* would overshoot into office language.", "en": "I can't find the keys." },
+        { "id": "C1-REG-02.e06", "type": "cloze", "difficulty": 2, "instruction": "At a customer-service desk. Complete politely with the verb in brackets.", "prompt": "___ (volere) parlare con il responsabile, per favore.", "answers": ["Vorrei"], "focus": ["Vorrei"], "errorType": "conditional-form", "traps": [{ "match": "Voglio", "errorType": "register", "why": "*Voglio* sounds like a demand. The conditional *vorrei* is the polite norm for requests." }, { "match": "Vorrebbe", "errorType": "verb-form", "why": "*Vorrebbe* is 'he/she would like'. You need the first person: *vorrei*." }], "explanation": "Requests use the conditional: *vorrei* = I would like.", "interaction": true, "en": "I'd like to speak to the manager, please." },
+        { "id": "C1-REG-02.e07", "type": "transform", "difficulty": 3, "instruction": "Soften this request to a supplier using the conditional of *potere* (Lei).", "prompt": "Mi mandi il preventivo.", "answers": ["(Potrebbe mandarmi|Mi potrebbe mandare|Potrebbe inviarmi|Mi potrebbe inviare) il preventivo[ (per favore|per cortesia)]"], "focus": ["potrebbe"], "errorType": "conditional-form", "traps": [{ "contains": ["potresti", "mandarmelo"], "errorType": "register", "why": "*Potresti* is the *tu* form. To a supplier: *potrebbe*." }, { "contains": ["può", "puo"], "errorType": "conditional-form", "why": "*Può* is correct but not softened. The task asks for the conditional *potrebbe*." }], "explanation": "*Potrebbe* + infinitive is the standard polite request. The pronoun can go before *potrebbe* or attach to the infinitive.", "interaction": true, "en": "Could you send me the quote?" },
+        { "id": "C1-REG-02.e08", "type": "choice", "difficulty": 3, "instruction": "Which noun does *effettuare* NOT go with?", "prompt": "effettuare ___", "options": ["un bonifico", "una prenotazione", "una passeggiata", "un controllo"], "answer": 2, "optionWhy": { "0": "*Effettuare un bonifico* (make a bank transfer) is a standard collocation.", "1": "*Effettuare una prenotazione* is standard in formal contexts.", "3": "*Effettuare un controllo* is standard." }, "errorType": "collocation", "explanation": "*Effettuare* is for operations and procedures. For a walk you *fai* una passeggiata." },
+        { "id": "C1-REG-02.e09", "type": "translate", "difficulty": 3, "instruction": "Translate. You're speaking to a company official (Lei).", "prompt": "Allow me to point out that the invoice is wrong.", "answers": ["Mi permetta di (far notare|fare notare|segnalare|sottolineare) che la fattura è (sbagliata|errata)"], "focus": ["permetta"], "errorType": "register", "traps": [{ "contains": ["permetti", "permettete"], "errorType": "register", "why": "To one person addressed as Lei: *mi permetta* (subjunctive)." }, { "match": "Mi permetto di (far notare|fare notare|segnalare|sottolineare) che la fattura è (sbagliata|errata)", "ok": true, "why": "*Mi permetto di* ('I take the liberty of') is equally polite." }, { "contains": ["fatturato"], "errorType": "false-friend", "why": "*Fatturato* means 'turnover'. An invoice is a *fattura*." }], "explanation": "*Mi permetta di* + infinitive is the courteous way to introduce a correction.", "interaction": true },
+        { "id": "C1-REG-02.e10", "type": "order", "difficulty": 2, "instruction": "Put the words in order to make an official notice.", "prompt": "Please make the payment by Friday.", "tokens": ["di", "pagamento", "Si", "effettuare", "venerdì", "prega", "il", "entro"], "answers": ["Si prega di effettuare il pagamento entro venerdì", "Si prega di effettuare entro venerdì il pagamento"], "errorType": "word-order", "explanation": "*Si prega di* + infinitive is the impersonal formula of notices and official letters." },
+        { "id": "C1-REG-02.e11", "type": "choice", "difficulty": 4, "instruction": "You're writing a complaint email to your phone company. Which sentence fits?", "prompt": "Choose the sentence with the right register.", "options": ["Ho beccato un casino di errori nella bolletta.", "Ho riscontrato alcune irregolarità nella bolletta di marzo.", "La bolletta è una fregatura totale.", "Mi avete fregato con la bolletta."], "answer": 1, "optionWhy": { "0": "*Beccare* and *un casino* are slang.", "2": "*Fregatura* is colloquial and aggressive.", "3": "*Fregare* (to rip off) is colloquial and accusatory: it gives the company an excuse not to take you seriously." }, "errorType": "register", "explanation": "*Riscontrare irregolarità* is the formal way to say 'find mistakes'." },
+        { "id": "C1-REG-02.e12", "type": "transform", "difficulty": 4, "instruction": "Explain this notice to a friend in plain everyday Italian. Start with *Bisogna*.", "prompt": "È necessario provvedere al pagamento della tassa entro il 31.", "answers": ["Bisogna pagare la tassa entro il 31"], "focus": ["pagare"], "errorType": "register", "traps": [{ "contains": ["provvedere", "effettuare"], "errorType": "register", "why": "Still bureaucratic. In plain Italian, *provvedere al pagamento* is simply *pagare*." }], "explanation": "Bureaucratic *provvedere al pagamento di* = everyday *pagare*. The noun phrase collapses into one verb.", "en": "You have to pay the tax by the 31st." },
+        { "id": "C1-REG-02.e13", "type": "speak", "difficulty": 4, "instruction": "Say it in Italian, politely, using the conditional.", "prompt": "At the post office counter: ask whether it would be possible to send the parcel today.", "answers": ["[Scusi ](Sarebbe possibile|Si potrebbe|Potrei) (spedire|inviare) il pacco oggi[ (per favore|per cortesia)]", "[Scusi ]Vorrei (spedire|inviare) il pacco oggi[ è possibile]"], "focus": ["sarebbe", "potrebbe", "potrei", "vorrei"], "errorType": "conditional-form", "traps": [{ "contains": ["voglio", "posso", "è"], "errorType": "conditional-form", "why": "Fine grammatically, but the task asks you to soften with the conditional: *sarebbe possibile / potrei / vorrei*." }], "explanation": "*Sarebbe possibile + infinitive?* is the most polite way to ask at a counter.", "interaction": true },
+        { "id": "C1-REG-02.e14", "type": "cloze", "difficulty": 4, "instruction": "A company writes to a customer. Complete with the verb in brackets (subject: noi).", "prompt": "Ci scusiamo per il disguido e La ___ (pregare) di inviarci copia del documento.", "answers": ["preghiamo"], "focus": ["preghiamo"], "errorType": "verb-form", "traps": [{ "match": "preghiamo di", "errorType": "verb-form", "why": "*Di* is already in the sentence." }, { "match": "prego", "errorType": "verb-form", "why": "The subject is *noi* (*Ci scusiamo*), so: *La preghiamo*." }, { "match": "preghiate", "errorType": "verb-form", "why": "That's the subjunctive/voi form. Indicative, noi: *preghiamo*." }], "explanation": "*La preghiamo di* + infinitive = 'we kindly ask you to', a staple of formal correspondence.", "en": "We apologise for the inconvenience and kindly ask you to send us a copy of the document." },
+        { "id": "C1-REG-02.e15", "type": "choice", "difficulty": 5, "instruction": "You need to tell your director (Lei) that a deadline is unrealistic. Choose the most diplomatic sentence.", "prompt": "Which sentence would you use?", "options": ["La scadenza è assurda, non ce la facciamo.", "Mi permetta di osservare che la scadenza potrebbe essere difficile da rispettare.", "Lei si sbaglia di grosso sulla scadenza.", "Mi permetti di dirti che la scadenza è impossibile?"], "answer": 1, "optionWhy": { "0": "Colloquial and blunt (*assurda*, *non ce la facciamo*).", "2": "*Si sbaglia di grosso* is a direct accusation.", "3": "*Permetti / dirti* are *tu* forms." }, "errorType": "register", "explanation": "*Mi permetta di osservare* + conditional *potrebbe* = respectful disagreement.", "interaction": true },
+        { "id": "C1-REG-02.e16", "type": "free", "difficulty": 5, "instruction": "Rewrite this message to your landlord as a short formal email (40–90 words). Keep the content, change the register.", "prompt": "Ciao! Ho beccato un casino di muffa in bagno. Me la sistemi tu o devo chiamare io uno? Fammi sapere, grazie!", "passage": { "title": "The original (too informal)", "it": "Ciao! Ho beccato un casino di muffa in bagno. Me la sistemi tu o devo chiamare io uno? Fammi sapere, grazie!" }, "minWords": 40, "maxWords": 90, "rubric": [
+          { "label": "Formal opening", "anyOf": ["\\b(gentile|egregi[oa])\\b"], "min": 1, "errorType": "register", "hint": "Open with *Gentile Signor…* / *Gentile Signora…*" },
+          { "label": "Neutral or formal verbs instead of slang", "anyOf": ["\\b(riscontrat|rilevat|notat|segnal|provveder|risolver|intervenir|intervento)"], "min": 1, "errorType": "register", "hint": "*Ho riscontrato… / Le segnalo… / provvedere a…*" },
+          { "label": "Softened request with the conditional", "anyOf": ["\\b(potrebbe|vorrei|sarebbe|gradirei|dovrei|preferirebbe)\\b"], "min": 1, "errorType": "conditional-form", "hint": "*Potrebbe farmi sapere se…?*" },
+          { "label": "Uses Lei", "anyOf": ["\\b(Le|La)\\s+\\w+", "\\bSu[oaie]\\b", "\\bpotrebbe\\b"], "min": 1, "errorType": "register", "hint": "Address the landlord as Lei: *Le scrivo, La ringrazio*." },
+          { "label": "Formal closing", "anyOf": ["cordiali saluti", "distinti saluti", "in attesa di un", "resto in attesa", "la ringrazio"], "min": 1, "errorType": "register", "hint": "*Resto in attesa di un Suo riscontro. Cordiali saluti*" }
+        ], "model": "Gentile Signor Ferri,\nLe scrivo per segnalarLe che ho riscontrato una notevole quantità di muffa nel bagno dell'appartamento. Vorrei sapere se preferisce provvedere Lei all'intervento oppure se devo contattare io un tecnico. La ringrazio per la disponibilità e resto in attesa di un Suo riscontro.\nCordiali saluti,\nPaolo Riva", "errorType": "register", "explanation": "Slang (*beccato, un casino, uno*) becomes neutral or formal (*riscontrato, una notevole quantità, un tecnico*), and the bare question becomes a softened request." }
+      ]
+    },
+    {
+      "id": "B2-INT-01",
+      "title": "Discourse markers in conversation (allora, cioè, mica, magari)",
+      "cefr": "B2",
+      "skill": "interaction",
+      "prereqs": [],
+      "rule": "Discourse markers manage conversation: *allora* (so, well), *cioè* (I mean), *insomma* (in short), *praticamente* (basically), *dai* (come on), *però* (but, or 'wow!'), *comunque* (anyway). *Mica* reinforces a negative (*non è mica facile*), *magari* means 'maybe' or 'I wish!', and *infatti* confirms what was expected, while *in effetti* concedes on reflection.",
+      "assessment": [
+        "Chooses the right marker to start, reformulate, sum up or change topic",
+        "Uses mica to reinforce a negative and magari for 'maybe' and 'I wish'",
+        "Distinguishes infatti (confirmation) from in effetti (concession) and does not use infatti to mean 'on the contrary'",
+        "Keeps very colloquial fillers (tipo, praticamente) out of formal situations"
+      ],
+      "lesson": {
+        "intro": "Grammatically perfect Italian can still sound like a textbook if it has no discourse markers. Natives use small words like *allora, cioè, insomma, mica, magari, dai* constantly to start a turn, buy time, correct themselves, encourage or show surprise. Many have no exact English equivalent, and some are false friends: *infatti* is not 'in fact'.",
+        "rules": [
+          {
+            "title": "Starting, reformulating and summing up",
+            "text": "**Allora** opens a turn or moves things on ('so', 'right then'). **Cioè** reformulates or corrects ('I mean', 'that is'). **Insomma** sums up or signals mild impatience ('in short', 'well…'). **Praticamente** = 'basically'. **Tipo** = 'like' (very colloquial, young speakers). **Comunque** changes or closes a topic ('anyway') or concedes ('however').",
+            "examples": [
+              { "it": "**Allora**, cosa facciamo stasera?", "en": "So, what are we doing tonight?" },
+              { "it": "Vengo martedì, **cioè**, mercoledì.", "en": "I'm coming on Tuesday, I mean, Wednesday." },
+              { "it": "**Insomma**, è stata una giornata pesante.", "en": "In short, it was a tough day." },
+              { "it": "Non so se ha ragione. **Comunque**, ne parliamo domani.", "en": "I don't know if he's right. Anyway, we'll talk about it tomorrow." }
+            ]
+          },
+          {
+            "title": "Mica: 'not at all', 'not exactly', 'by any chance'",
+            "text": "*Mica* strengthens a negative: **non… mica** (*Non è mica facile* = it's not exactly easy). At the start of a sentence it can stand alone: *Mica è colpa mia!* In questions it means 'by any chance': *Hai mica visto Marco?* *Mica male!* = not bad at all. Never use it as a plain 'no'.",
+            "examples": [
+              { "it": "Non sono **mica** stupido!", "en": "I'm not stupid, you know!" },
+              { "it": "Hai **mica** una penna?", "en": "Have you got a pen, by any chance?" }
+            ]
+          },
+          {
+            "title": "Magari: 'maybe' and 'I wish!'",
+            "text": "With the indicative, *magari* = 'maybe, perhaps' (*Magari vengo più tardi*). On its own, **Magari!** = 'I wish!'. With the **imperfect subjunctive** it expresses a wish: *Magari fosse vero!* (If only it were true!).",
+            "examples": [
+              { "it": "**Magari** ci vediamo domani.", "en": "Maybe we'll see each other tomorrow." },
+              { "it": "– Hai vinto alla lotteria? – **Magari!**", "en": "'Did you win the lottery?' 'I wish!'" },
+              { "it": "**Magari** avessi più tempo!", "en": "If only I had more time!" }
+            ]
+          },
+          {
+            "title": "Dai, però: encouragement and surprise",
+            "text": "**Dai** (from *dare*) = 'come on' to encourage or persuade (*Dai, vieni!*), or to express disbelief (*Ma dai!* = No way!). **Però** normally means 'but', but on its own it shows surprised admiration: *Però! Che bella casa!* (Wow!).",
+            "examples": [
+              { "it": "**Dai**, fallo per me!", "en": "Come on, do it for me!" },
+              { "it": "– Mi sposo. – **Ma dai!**", "en": "'I'm getting married.' 'No way!'" }
+            ]
+          },
+          {
+            "title": "Infatti vs in effetti (vs anzi)",
+            "text": "**Infatti** confirms what was just said or expected: 'indeed, and sure enough'. **In effetti** concedes a point, often after reconsidering: 'actually, come to think of it'. Neither introduces a contradiction. To correct someone ('in fact, on the contrary') use **anzi** or **in realtà**.",
+            "examples": [
+              { "it": "Pensavo che avrebbe piovuto, e **infatti** sta piovendo.", "en": "I thought it would rain, and sure enough it's raining." },
+              { "it": "Mah, **in effetti** hai ragione tu.", "en": "Well, actually, you're right." },
+              { "it": "Non è stato noioso, **anzi**: mi è piaciuto molto.", "en": "It wasn't boring; in fact, I really liked it." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Non mi è piaciuto. Infatti, l'ho trovato bellissimo.", "right": "Non mi è dispiaciuto, anzi: l'ho trovato bellissimo.", "why": "*Infatti* confirms; it can't introduce the opposite. For 'in fact, on the contrary' use *anzi* or *in realtà*." },
+          { "wrong": "È mica facile.", "right": "Non è mica facile.", "why": "After the verb, *mica* needs *non* in front: *non… mica*." },
+          { "wrong": "Magari è vero! (meaning 'I wish it were true')", "right": "Magari fosse vero!", "why": "With the indicative, *magari* means 'maybe'. For a wish use the imperfect subjunctive." },
+          { "wrong": "Tipo, ho lavorato tipo tre anni in banca. (job interview)", "right": "Ho lavorato circa tre anni in banca.", "why": "*Tipo* as a filler is very colloquial. Fine with friends, out of place in formal speech." }
+        ],
+        "tips": [
+          "Collect markers from real conversations (podcasts, TV series) and note what they do: start, correct, sum up, persuade, contrast.",
+          "Use *allora* and *cioè* to buy thinking time instead of the English 'um'.",
+          "Before using *infatti*, ask: am I confirming what was just said? If not, you probably need *anzi* or *in realtà*."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-INT-01.e01", "type": "choice", "difficulty": 1, "instruction": "Choose the marker that fits.", "prompt": "Non è ___ facile parlare in pubblico!", "options": ["mica", "magari", "dai", "infatti"], "answer": 0, "optionWhy": { "1": "*Magari* (maybe / I wish) doesn't reinforce a negative.", "2": "*Dai* encourages; it doesn't fit inside this sentence.", "3": "*Infatti* confirms a previous statement; it doesn't go here." }, "errorType": "discourse-marker", "explanation": "*Non… mica* = not exactly / not at all. It strengthens the negative.", "interaction": true, "en": "It's not exactly easy to speak in public!" },
+        { "id": "B2-INT-01.e02", "type": "choice", "difficulty": 1, "instruction": "Choose the best reply.", "prompt": "– Secondo te vinciamo noi stasera? – ___! Sarebbe bellissimo.", "options": ["Magari", "Mica", "Cioè", "Infatti"], "answer": 0, "optionWhy": { "1": "*Mica* reinforces negatives; it can't stand alone as 'I wish'.", "2": "*Cioè* reformulates ('I mean'); it doesn't express a wish.", "3": "*Infatti* would confirm something already established." }, "errorType": "discourse-marker", "explanation": "*Magari!* on its own = 'I wish!', 'if only!'", "interaction": true, "en": "'Do you think we'll win tonight?' 'I wish! It would be wonderful.'" },
+        { "id": "B2-INT-01.e03", "type": "choice", "difficulty": 2, "instruction": "Choose the marker that fits.", "prompt": "Avevo detto che il treno sarebbe arrivato in ritardo, e ___ è arrivato con un'ora di ritardo.", "options": ["infatti", "in effetti", "comunque", "magari"], "answer": 0, "optionWhy": { "1": "*In effetti* concedes a point after reconsidering; here you're confirming your own prediction.", "2": "*Comunque* (anyway / however) would suggest a contrast.", "3": "*Magari* means 'maybe' or 'I wish'." }, "errorType": "discourse-marker", "explanation": "*Infatti* = 'and sure enough': it confirms what was predicted.", "en": "I said the train would be late, and sure enough it arrived an hour late." },
+        { "id": "B2-INT-01.e04", "type": "choice", "difficulty": 2, "instruction": "Your friend says the restaurant is too expensive. You hesitate, then concede. Choose the marker.", "prompt": "Mah, ___ hai ragione: trenta euro per una pizza sono tanti.", "options": ["in effetti", "infatti", "mica", "dai"], "answer": 0, "optionWhy": { "1": "*Infatti* would mean you'd always thought so. The hesitant *Mah* shows you're reconsidering, which calls for *in effetti*.", "2": "*Mica* reinforces negatives.", "3": "*Dai* encourages or expresses disbelief." }, "errorType": "discourse-marker", "explanation": "*In effetti* = 'actually, come to think of it': it concedes a point on reflection.", "interaction": true, "en": "Well, actually you're right: thirty euros for a pizza is a lot." },
+        { "id": "B2-INT-01.e05", "type": "cloze", "difficulty": 2, "instruction": "Fill in the marker meaning 'I mean' (correcting yourself).", "prompt": "Domani vado a Roma, ___, a Frascati, che è lì vicino.", "answers": ["cioè"], "focus": ["cioè"], "errorType": "discourse-marker", "traps": [{ "match": "infatti", "errorType": "discourse-marker", "why": "*Infatti* confirms; to correct yourself ('I mean') use *cioè*." }, { "match": "insomma", "errorType": "discourse-marker", "why": "*Insomma* sums up; it doesn't correct a detail." }], "explanation": "*Cioè* reformulates or corrects what you've just said.", "interaction": true, "en": "Tomorrow I'm going to Rome, I mean, to Frascati, which is close by." },
+        { "id": "B2-INT-01.e06", "type": "cloze", "difficulty": 2, "instruction": "Fill in a marker meaning 'come on!' (encouraging a friend).", "prompt": "___, vieni anche tu! Ci divertiamo!", "answers": ["(Dai|Su|Su dai)"], "focus": ["dai", "su"], "errorType": "discourse-marker", "traps": [{ "match": "Magari", "errorType": "discourse-marker", "why": "*Magari, vieni anche tu* would mean 'maybe you'll come too', not 'come on'." }, { "match": "Mica", "errorType": "discourse-marker", "why": "*Mica* reinforces negatives; it can't encourage." }], "explanation": "*Dai* (or *su*) = 'come on', to encourage or persuade.", "interaction": true, "en": "Come on, come along too! We'll have fun!" },
+        { "id": "B2-INT-01.e07", "type": "choice", "difficulty": 3, "instruction": "Choose the marker that sums up.", "prompt": "Abbiamo parlato di lavoro, di politica, di calcio… ___, una serata lunghissima.", "options": ["Insomma", "Mica", "Però", "Magari"], "answer": 0, "optionWhy": { "1": "*Mica* reinforces a negative.", "2": "*Però* introduces a contrast.", "3": "*Magari* means 'maybe' or 'I wish'." }, "errorType": "discourse-marker", "explanation": "*Insomma* = 'in short', 'all in all'.", "en": "We talked about work, politics, football… in short, a very long evening." },
+        { "id": "B2-INT-01.e08", "type": "transform", "difficulty": 3, "instruction": "Make it more emphatic and colloquial with *mica*.", "prompt": "Non sono stupido.", "answers": ["Non sono mica stupido", "Mica sono stupido"], "focus": ["mica"], "errorType": "discourse-marker", "traps": [{ "match": "Sono mica stupido", "errorType": "negation", "why": "After the verb, *mica* needs *non*: *Non sono mica stupido*. Only at the start can *mica* stand alone." }, { "match": "Non mica sono stupido", "errorType": "word-order", "why": "*Mica* goes after the verb: *non sono mica*." }], "explanation": "*Non + verb + mica* (or *Mica* at the start without *non*).", "interaction": true, "en": "I'm not stupid, you know!" },
+        { "id": "B2-INT-01.e09", "type": "transform", "difficulty": 3, "instruction": "Turn this into a wish ('If only it were true!') with *magari* + imperfect subjunctive.", "prompt": "Spero che sia vero.", "answers": ["Magari fosse vero"], "focus": ["fosse"], "errorType": "wrong-mood", "traps": [{ "match": "Magari è vero", "errorType": "wrong-mood", "why": "With the indicative, *magari* means 'maybe': 'Maybe it's true'. A wish needs the imperfect subjunctive: *fosse*." }, { "match": "Magari sia vero", "errorType": "tense-sequence", "why": "Wishes with *magari* use the imperfect subjunctive: *fosse*." }], "explanation": "*Magari* + congiuntivo imperfetto = 'if only'.", "en": "If only it were true!" },
+        { "id": "B2-INT-01.e10", "type": "choice", "difficulty": 3, "instruction": "What does *Però!* express here?", "prompt": "Però! Che bella casa!", "options": ["surprised admiration (wow!)", "contrast (but…)", "annoyance", "doubt"], "answer": 0, "optionWhy": { "1": "Standing alone as an exclamation, *però* isn't contrastive.", "2": "There's nothing negative here.", "3": "There's no doubt in the sentence." }, "errorType": "discourse-marker", "explanation": "Exclamatory *Però!* = 'Wow!', 'Well I never!'", "en": "Wow! What a lovely house!" },
+        { "id": "B2-INT-01.e11", "type": "translate", "difficulty": 4, "instruction": "Translate, informally, using *mica*.", "prompt": "Have you seen my keys, by any chance?", "answers": ["[Non ]hai mica visto le mie chiavi", "Mica hai visto le mie chiavi"], "focus": ["mica"], "errorType": "discourse-marker", "traps": [{ "match": ["[Non ]hai (per caso visto le mie chiavi|visto le mie chiavi per caso)", "Per caso hai visto le mie chiavi"], "ok": true, "why": "*Per caso* is correct and neutral; *mica* is the more colloquial option the task asked for." }, { "match": "Hai visto mica le mie chiavi", "errorType": "word-order", "why": "With a compound tense, *mica* goes between the auxiliary and the participle: *hai mica visto*." }], "explanation": "In questions *mica* = 'by any chance'; it goes after the auxiliary: *hai mica visto*.", "interaction": true },
+        { "id": "B2-INT-01.e12", "type": "speak", "difficulty": 4, "instruction": "Say it in Italian, using *praticamente* and *però*.", "prompt": "A friend asks how your job interview went. Say that basically it went well, but you don't know anything yet.", "answers": ["[(Allora|Mah|Beh) ]praticamente è (andato|andata) bene però (non so ancora niente|ancora non so niente|non so ancora|non lo so ancora|ancora non lo so)"], "focus": ["praticamente", "però"], "errorType": "discourse-marker", "traps": [{ "contains": ["infatti"], "errorType": "discourse-marker", "why": "*Infatti* confirms; to introduce a reservation you need *però*." }], "explanation": "*Praticamente* = 'basically'; *però* introduces the reservation. *È andata bene* (impersonal feminine) and *è andato bene* (il colloquio) are both natural.", "interaction": true },
+        { "id": "B2-INT-01.e13", "type": "choice", "difficulty": 4, "instruction": "You're in a job interview. Which sentence is appropriate?", "prompt": "Choose the best answer to 'Mi parli della Sua esperienza'.", "options": ["Allora, ho lavorato per tre anni in un'agenzia di comunicazione.", "Tipo, ho lavorato tipo tre anni in un'agenzia, cioè, tipo…", "Ho lavorato mica tre anni in un'agenzia.", "Magari ho lavorato tre anni in un'agenzia."], "answer": 0, "optionWhy": { "1": "*Tipo* as a filler is very colloquial and sounds immature in an interview.", "2": "*Mica* needs a negative and makes no sense here.", "3": "*Magari* would mean 'maybe I worked…', which sounds as if you don't know." }, "errorType": "register", "explanation": "*Allora* is a neutral, acceptable way to start an answer even in formal speech.", "interaction": true },
+        { "id": "B2-INT-01.e14", "type": "order", "difficulty": 3, "instruction": "Put the words in order.", "prompt": "It's not my fault, you know!", "tokens": ["mica", "mia", "è", "Non", "colpa"], "answers": ["Non è mica colpa mia"], "errorType": "word-order", "explanation": "*Non + verb + mica*: *Non è mica colpa mia*.", "interaction": true },
+        { "id": "B2-INT-01.e15", "type": "cloze", "difficulty": 5, "instruction": "Fill in a marker meaning 'actually / on the contrary' (correcting the other person).", "prompt": "– Pensavo che il film ti fosse piaciuto. – No, ___ l'ho trovato noiosissimo.", "answers": ["(anzi|in realtà|a dire il vero)"], "focus": ["anzi", "realtà"], "errorType": "discourse-marker", "traps": [{ "match": "infatti", "errorType": "false-friend", "why": "*Infatti* is not 'in fact' in the sense of correcting someone: it confirms what was just said. To contradict, use *anzi* or *in realtà*." }, { "match": "in effetti", "ok": true, "why": "Possible in speech, but *in effetti* usually concedes rather than corrects. *Anzi* or *in realtà* is clearer." }], "explanation": "To correct a wrong assumption: *anzi* (on the contrary) or *in realtà* (actually).", "interaction": true, "en": "'I thought you liked the film.' 'No, actually I found it really boring.'" },
+        { "id": "B2-INT-01.e16", "type": "speak", "difficulty": 5, "instruction": "Answer in Italian.", "prompt": "A friend asks: 'Andiamo al mare domenica?' Reply 'I wish! But I have to work.'", "answers": ["Magari (ma|però|purtroppo|ma purtroppo|però purtroppo) devo lavorare", "Magari (ma|però) devo lavorare purtroppo"], "focus": ["magari"], "errorType": "discourse-marker", "traps": [{ "contains": ["mica", "infatti"], "errorType": "discourse-marker", "why": "'I wish!' in Italian is *Magari!*" }, { "contains": ["desidero", "vorrei"], "errorType": "idiom", "why": "A literal 'I wish' sounds odd here. The natural reply is simply *Magari!*" }], "explanation": "*Magari!* = 'I wish!', followed by the reason with *ma / però*.", "interaction": true }
+      ]
+    },
+    {
+      "id": "C1-INT-02",
+      "title": "Agreeing, disagreeing, hedging and negotiating",
+      "cefr": "C1",
+      "skill": "interaction",
+      "prereqs": ["B2-INT-01"],
+      "rule": "Agree with *Hai/Ha ragione, Sono d'accordo, Concordo*; agree partly with *Hai ragione, però… / Capisco il tuo punto di vista, ma…*; disagree with *Non sono del tutto d'accordo* (soft) or *Non sono affatto d'accordo* (strong); hedge with *Se posso permettermi…, Direi che…, Mi sembra che* + subjunctive; negotiate with *Mi venga incontro*, *una via di mezzo*, *Che ne dice di…?*",
+      "assessment": [
+        "Agrees and disagrees with the correct fixed expressions (essere d'accordo, avere ragione), avoiding English calques",
+        "Grades disagreement from soft to strong and chooses the level that suits the situation",
+        "Hedges opinions with conditional forms, Se posso permettermi and Mi sembra che + subjunctive",
+        "Negotiates a compromise in the right register (Mi venga incontro / Vienimi incontro, una via di mezzo)"
+      ],
+      "lesson": {
+        "intro": "At C1 you need to disagree without causing offence, and push for what you want without sounding rude. Italian has a rich set of fixed formulas for this, and several traps for English speakers: you don't 'are right' (*sei giusto*), you *have* reason (*hai ragione*); and you're not 'agree', you're *d'accordo*. Hedging (softening) is just as important: Italians often wrap a firm opinion in a conditional or a *se posso permettermi*.",
+        "rules": [
+          {
+            "title": "Agreeing",
+            "text": "*Hai ragione / Ha ragione* (Lei). *Sono d'accordo (con te / con Lei)*, *Sono pienamente d'accordo*, *Concordo* (more formal), *Esatto!*, *Appunto!* ('that's exactly my point'). Note the fixed forms: **avere** ragione, **essere d'accordo**.",
+            "examples": [
+              { "it": "Ha perfettamente ragione.", "en": "You're absolutely right." },
+              { "it": "Sono pienamente d'accordo con te.", "en": "I completely agree with you." }
+            ]
+          },
+          {
+            "title": "Agreeing in part, then objecting",
+            "text": "The most useful pattern in discussion: concede, then add *ma / però*. *Hai ragione, però… / Su questo ti do ragione, ma… / Capisco il tuo punto di vista, ma… / Fino a un certo punto.*",
+            "examples": [
+              { "it": "Capisco il tuo punto di vista, ma non lo condivido.", "en": "I understand your point of view, but I don't share it." },
+              { "it": "Su questo ti do ragione, però i costi sono alti.", "en": "I'll give you that, but the costs are high." }
+            ]
+          },
+          {
+            "title": "Disagreeing: from soft to strong",
+            "text": "Soft: *Non sono del tutto d'accordo*, *Vedo le cose un po' diversamente*, *Non la vedo proprio così*. Formal: *Mi permetto di dissentire*. Strong: *Non sono affatto d'accordo*, *Non sono per niente d'accordo*. *Affatto* after a negative means 'at all'.",
+            "examples": [
+              { "it": "Non sono del tutto d'accordo con quello che dici.", "en": "I don't entirely agree with what you're saying." },
+              { "it": "Non sono affatto d'accordo.", "en": "I don't agree at all." }
+            ]
+          },
+          {
+            "title": "Hedging (softening an opinion)",
+            "text": "*Se posso permettermi, …* (if I may), *Direi che…*, *Forse sarebbe meglio…*, *Mi sembra che / Non sono sicuro che* + **subjunctive**, *In un certo senso…*, *…o sbaglio?* (tag that invites the other to disagree).",
+            "examples": [
+              { "it": "Se posso permettermi, forse sarebbe meglio aspettare.", "en": "If I may, it might be better to wait." },
+              { "it": "Mi sembra che tu abbia frainteso.", "en": "I think you may have misunderstood." }
+            ]
+          },
+          {
+            "title": "Negotiating",
+            "text": "*Mi venga incontro* (Lei) / *Vienimi incontro* (tu) = 'meet me halfway', 'help me out'. *Troviamo una via di mezzo / un compromesso*. *Che ne dice di…? / Che ne dici di…?* *Facciamo così: …* *Se Lei…, io…* (conditional offer).",
+            "examples": [
+              { "it": "Mi venga incontro: facciamo 450 euro?", "en": "Meet me halfway: shall we say 450 euros?" },
+              { "it": "Che ne dice di una via di mezzo?", "en": "How about a compromise?" }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Sono accordo con te.", "right": "Sono d'accordo con te.", "why": "The fixed expression is *essere d'accordo*." },
+          { "wrong": "Sei giusto.", "right": "Hai ragione.", "why": "Calque of 'you're right'. In Italian you *have* reason: *avere ragione*." },
+          { "wrong": "Penso che hai torto.", "right": "Penso che tu abbia torto.", "why": "Opinion and hedging verbs take the subjunctive." },
+          { "wrong": "Mi venga incontro, dai! (to a close friend)", "right": "Vienimi incontro, dai!", "why": "*Mi venga* is the Lei form; with a friend use the *tu* imperative." },
+          { "wrong": "Non sono affatto d'accordo. (meaning 'I partly disagree')", "right": "Non sono del tutto d'accordo.", "why": "*Affatto* after a negative = 'at all'; it's strong. 'Not entirely' is *del tutto*." }
+        ],
+        "tips": [
+          "Concede before you object: *Hai ragione, però…* keeps the conversation friendly.",
+          "Watch *affatto*: *non… affatto* is strong disagreement, not a softener.",
+          "In negotiations, the conditional is your friend: *potrebbe, sarebbe disposto a, mi andrebbe bene se…*"
+        ]
+      },
+      "exercises": [
+        { "id": "C1-INT-02.e01", "type": "choice", "difficulty": 1, "instruction": "How do you say 'You're right' to a friend?", "prompt": "'You're right!'", "options": ["Hai ragione!", "Sei giusto!", "Hai giusto!", "Sei ragione!"], "answer": 0, "optionWhy": { "1": "Calque of English 'you are right'. Italian uses *avere ragione*.", "2": "*Giusto* doesn't combine with *avere* like this.", "3": "The expression takes *avere*, not *essere*." }, "errorType": "idiom", "explanation": "*Avere ragione* = to be right (literally 'to have reason').", "interaction": true },
+        { "id": "C1-INT-02.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete the expression.", "prompt": "Non sono del tutto ___ con quello che dici.", "answers": ["d'accordo"], "focus": ["d'accordo"], "errorType": "idiom", "traps": [{ "match": "accordo", "errorType": "idiom", "why": "The fixed expression is *essere d'accordo*, with *d'*." }], "explanation": "*Essere d'accordo (con)* = to agree (with).", "interaction": true, "en": "I don't entirely agree with what you're saying." },
+        { "id": "C1-INT-02.e03", "type": "choice", "difficulty": 2, "instruction": "Which reply agrees in part and then objects?", "prompt": "– Dovremmo comprare una macchina nuova. – …", "options": ["Hai perfettamente ragione.", "Capisco il tuo punto di vista, ma adesso i costi sono troppo alti.", "Non sono affatto d'accordo.", "Appunto, è quello che dico io."], "answer": 1, "optionWhy": { "0": "That's full agreement.", "2": "That's strong, total disagreement.", "3": "*Appunto* = 'exactly my point': full agreement." }, "errorType": "wrong-choice", "explanation": "*Capisco il tuo punto di vista, ma…* acknowledges the other view before objecting.", "interaction": true },
+        { "id": "C1-INT-02.e04", "type": "choice", "difficulty": 2, "instruction": "Which is the strongest disagreement?", "prompt": "Choose the strongest.", "options": ["Non sono del tutto d'accordo.", "Non sono affatto d'accordo.", "Fino a un certo punto.", "Vedo le cose un po' diversamente."], "answer": 1, "optionWhy": { "0": "*Del tutto* = 'entirely': this is soft.", "2": "Partial agreement.", "3": "A very diplomatic disagreement." }, "errorType": "wrong-choice", "explanation": "*Non… affatto* = 'not at all': the strongest option.", "interaction": true },
+        { "id": "C1-INT-02.e05", "type": "cloze", "difficulty": 3, "instruction": "Fill in the connector.", "prompt": "Capisco il tuo punto di vista, ___ non lo condivido.", "answers": ["(ma|però)"], "focus": ["ma", "però"], "errorType": "connector", "traps": [{ "match": ["quindi", "perché", "allora"], "errorType": "connector", "why": "You need a contrast: *ma* or *però*." }], "explanation": "Concession + contrast: *Capisco…, ma / però…*", "interaction": true, "en": "I understand your point of view, but I don't share it." },
+        { "id": "C1-INT-02.e06", "type": "cloze", "difficulty": 3, "instruction": "You're buying a sofa from a shop owner you address as Lei. Complete with the verb in brackets.", "prompt": "Signor Bassi, mi ___ (venire) incontro: mi faccia uno sconto del 10%.", "answers": ["venga"], "focus": ["venga"], "errorType": "register", "traps": [{ "match": "vieni", "errorType": "register", "why": "*Vieni* is the *tu* imperative. To the shop owner (Lei): *mi venga incontro*." }, { "match": "viene", "errorType": "verb-form", "why": "*Viene* is the indicative. The Lei imperative is the subjunctive *venga*." }], "explanation": "*Venire incontro a qualcuno* = to meet someone halfway. Lei imperative: *mi venga incontro*.", "interaction": true, "en": "Mr Bassi, meet me halfway: give me a 10% discount." },
+        { "id": "C1-INT-02.e07", "type": "transform", "difficulty": 3, "instruction": "Soften this by turning it into an opinion with *Mi sembra che* (talking to a friend).", "prompt": "Hai torto su questo punto.", "answers": ["Mi sembra che [tu] abbia torto su questo punto"], "focus": ["abbia"], "errorType": "indicative-for-subjunctive", "traps": [{ "match": "Mi sembra che [tu] hai torto su questo punto", "errorType": "indicative-for-subjunctive", "why": "*Mi sembra che* expresses an opinion: subjunctive *(tu) abbia*." }], "explanation": "Hedging with *Mi sembra che* + subjunctive makes a blunt verdict sound like a personal view.", "interaction": true, "en": "I think you're wrong on this point." },
+        { "id": "C1-INT-02.e08", "type": "order", "difficulty": 2, "instruction": "Put the words in order to make a polite suggestion.", "prompt": "If I may, it might be better to wait.", "tokens": ["aspettare", "posso", "forse", "Se", "meglio", "permettermi", "sarebbe"], "answers": ["Se posso permettermi forse sarebbe meglio aspettare"], "errorType": "word-order", "explanation": "*Se posso permettermi* opens politely; the conditional *sarebbe* softens the suggestion.", "interaction": true },
+        { "id": "C1-INT-02.e09", "type": "translate", "difficulty": 3, "instruction": "Translate (to a friend).", "prompt": "I don't entirely agree with you.", "answers": ["Non sono (del tutto|completamente|totalmente|pienamente) d'accordo con te"], "focus": ["d'accordo"], "errorType": "idiom", "traps": [{ "contains": ["accordo"], "errorType": "idiom", "why": "The expression is *essere d'accordo*, with *d'*." }, { "contains": ["affatto"], "errorType": "vocabulary", "why": "*Non… affatto* = 'not at all', which is much stronger than 'not entirely'." }, { "contains": ["agree", "accordare"], "errorType": "idiom", "why": "Use the fixed expression *essere d'accordo*." }], "explanation": "'Not entirely' = *non… del tutto*; 'agree' = *essere d'accordo*.", "interaction": true },
+        { "id": "C1-INT-02.e10", "type": "speak", "difficulty": 3, "instruction": "Say it in Italian.", "prompt": "A colleague you address as Lei suggests moving the meeting to Friday. Say you agree completely.", "answers": ["[Sì ]sono (pienamente|completamente|perfettamente|del tutto|assolutamente) d'accordo[ con Lei]", "[Sì ]sono d'accordo[ con Lei]", "[Sì ]ha [(perfettamente|assolutamente) ]ragione", "[Sì ]concordo[ pienamente]"], "focus": ["d'accordo", "ragione", "concordo"], "errorType": "idiom", "traps": [{ "contains": ["hai", "te"], "errorType": "register", "why": "You address this colleague as Lei: *ha ragione*, *con Lei*." }, { "contains": ["accordo"], "errorType": "idiom", "why": "The expression is *essere d'accordo*." }], "explanation": "*Sono pienamente d'accordo (con Lei)* or *Ha perfettamente ragione*.", "interaction": true },
+        { "id": "C1-INT-02.e11", "type": "speak", "difficulty": 4, "instruction": "Say it in Italian.", "prompt": "A friend says: 'Secondo me dovremmo partire alle 5 di mattina.' Agree in part, then object that 5 o'clock is too early.", "answers": ["(Hai ragione|In parte hai ragione|Su questo hai ragione|Capisco il tuo punto di vista) (però|ma) (alle 5|alle cinque) è [un po' ](troppo presto|presto)"], "focus": ["però", "ma"], "errorType": "connector", "traps": [{ "contains": ["giusto"], "errorType": "idiom", "why": "'You're right' is *hai ragione*, not *sei giusto*." }, { "contains": ["ha"], "errorType": "register", "why": "It's a friend: *hai ragione*." }], "explanation": "Concede (*Hai ragione*) + *però / ma* + your objection.", "interaction": true },
+        { "id": "C1-INT-02.e12", "type": "speak", "difficulty": 4, "instruction": "Say it in Italian.", "prompt": "In a meeting, your manager wants to launch the product now. Disagree politely: start with 'Se posso permettermi' and say it would be better to wait.", "answers": ["Se posso permettermi[ (forse|direi che|forse direi che)] sarebbe meglio aspettare", "Se posso permettermi non sono del tutto d'accordo[ (forse|direi che)] sarebbe meglio aspettare"], "focus": ["permettermi", "sarebbe"], "errorType": "conditional-form", "traps": [{ "contains": ["è"], "errorType": "conditional-form", "why": "*È meglio aspettare* is blunter. The conditional *sarebbe* softens the suggestion." }], "explanation": "*Se posso permettermi* + conditional *sarebbe meglio* = a respectful objection.", "interaction": true },
+        { "id": "C1-INT-02.e13", "type": "choice", "difficulty": 4, "instruction": "You're selling your car for €5,000. A buyer you've just met (Lei) offers €4,000. Choose the best counter-offer.", "prompt": "Choose your reply.", "options": ["Che ne dice di una via di mezzo? Facciamo 4.500.", "Vienimi incontro, dai, 4.500!", "4.000? Ma è pazzo?", "Ok, 4.000 va benissimo."], "answer": 0, "optionWhy": { "1": "*Vienimi* and *dai* are informal; you'd use Lei with a stranger.", "2": "Insulting the buyer ends the negotiation.", "3": "Grammatically fine, but you gave up without negotiating." }, "errorType": "register", "explanation": "*Che ne dice di…?* + *una via di mezzo* proposes a compromise politely.", "interaction": true },
+        { "id": "C1-INT-02.e14", "type": "transform", "difficulty": 4, "instruction": "Make it formal (Lei). Drop anything too familiar.", "prompt": "Dai, vienimi incontro sul prezzo.", "answers": ["Mi venga incontro sul prezzo[ (per favore|per cortesia)]"], "focus": ["venga"], "errorType": "register", "traps": [{ "contains": ["vienimi", "dai"], "errorType": "register", "why": "*Vienimi* and *dai* are informal. Lei: *Mi venga incontro*." }, { "match": "Mi viene incontro sul prezzo[ (per favore|per cortesia)]", "errorType": "verb-form", "why": "*Viene* is the indicative. The Lei imperative is *venga*." }], "explanation": "*Vienimi incontro* → *Mi venga incontro* (subjunctive, pronoun before the verb).", "interaction": true, "en": "Meet me halfway on the price." },
+        { "id": "C1-INT-02.e15", "type": "translate", "difficulty": 5, "instruction": "Translate. You're speaking to a client (Lei).", "prompt": "I understand your point of view, but I don't share it.", "answers": ["(Capisco|Comprendo) il Suo punto di vista (ma|però) non lo condivido"], "focus": ["Suo", "lo"], "errorType": "register", "traps": [{ "contains": ["tuo"], "errorType": "register", "why": "With a client: *il Suo punto di vista*." }, { "match": "(Capisco|Comprendo) il Suo punto di vista (ma|però) non condivido", "errorType": "pronoun", "why": "*Condividere* needs its object: *non lo condivido*." }, { "contains": ["divido"], "errorType": "vocabulary", "why": "'To share (an opinion)' is *condividere*." }], "explanation": "*Capisco il Suo punto di vista, ma non lo condivido* = polite, firm disagreement.", "interaction": true },
+        { "id": "C1-INT-02.e16", "type": "choice", "difficulty": 5, "instruction": "In a meeting you want to suggest, without imposing, that the budget is too low. Choose the most diplomatic option.", "prompt": "Choose the sentence.", "options": ["Il budget è troppo basso, è ovvio.", "Direi che forse il budget è un po' basso, o sbaglio?", "Il budget è basso e basta.", "Lei non capisce niente di budget."], "answer": 1, "optionWhy": { "0": "*È ovvio* closes the discussion.", "2": "*E basta* is categorical and rude.", "3": "A personal attack." }, "errorType": "register", "explanation": "*Direi che*, *forse*, *un po'* and the tag *o sbaglio?* all hedge the statement.", "interaction": true }
+      ]
+    }
+  ]
+}

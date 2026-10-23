@@ -1,0 +1,6 @@
+[
+  {"header": "Google Translate", "title": "Translated “mi dispiace che tu stia male”", "titleUrl": "https://translate.google.com/?sl=it&tl=en&text=mi%20dispiace%20che%20tu%20stia%20male&op=translate", "time": "2026-09-01T10:00:00.000Z", "products": ["Translate"]},
+  {"header": "Translate", "title": "Translated “to take note of”", "titleUrl": "https://translate.google.com/?sl=en&tl=it&text=to%20take%20note%20of", "time": "2026-09-02T10:00:00.000Z", "products": ["Translate"]},
+  {"header": "Search", "title": "Searched for pizza near me", "time": "2026-09-03T10:00:00.000Z", "products": ["Search"]},
+  {"header": "Translate", "title": "Translated", "titleUrl": "https://translate.google.com/?sl=auto&tl=en&text=ne%20vale%20la%20pena", "time": "2026-09-04T10:00:00.000Z", "products": ["Translate"]}
+]

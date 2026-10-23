@@ -1,0 +1,125 @@
+{
+  "id": "G-DLG-02",
+  "type": "dialogue",
+  "title": "Il trasloco",
+  "subtitle": "Your friend Giulio is helping you move flat and keeps asking where things go and who gets what. Answer with pronouns, ci and ne.",
+  "conceptIds": ["B2-PRON-01", "B2-PRON-02", "B2-PRON-04"],
+  "difficulty": 3,
+  "minutes": 7,
+  "characters": {
+    "giulio": { "name": "Giulio", "role": "il tuo amico, con il furgone", "avatar": "🧔" },
+    "you": { "name": "Tu", "role": "you" }
+  },
+  "setting": "Sabato mattina, davanti al tuo vecchio appartamento. Giulio è arrivato con un furgone preso in prestito e tanta buona volontà. Ci sono scatoloni dappertutto.",
+  "start": "G-DLG-02.n1",
+  "nodes": [
+    {
+      "id": "G-DLG-02.n1", "speaker": "giulio", "conceptId": "B2-PRON-02", "errorType": "ci-ne",
+      "line": "Buongiorno! Il furgone è qui sotto. Le chiavi della casa nuova ce le hai tu, vero?",
+      "explanation": "With *avere* + an object pronoun, spoken Italian adds *ci*: *ce le ho* (I've got them).",
+      "choices": [
+        { "text": "Sì, ce le ho io. Eccole!", "ok": true, "next": "G-DLG-02.n2" },
+        { "text": "Sì, ci le ho io. Eccole!", "ok": false, "errorType": "ci-ne", "why": "Before *le*, *ci* becomes *ce*: *ce le ho*.", "next": "G-DLG-02.n2" },
+        { "text": "Sì, ce li ho io. Eccoli!", "ok": false, "errorType": "agreement", "why": "*Le chiavi* is feminine plural: *ce le ho… eccole*.", "next": "G-DLG-02.n2" }
+      ]
+    },
+    {
+      "id": "G-DLG-02.n2", "speaker": "giulio",
+      "line": "Perfetto. Allora, questa lampada dove la metto?",
+      "item": { "id": "G-DLG-02.q2", "conceptId": "B2-PRON-04", "type": "cloze", "difficulty": 2, "instruction": "Tell Giulio to put it in the living room: tu imperative of 'mettere' + 'la'.", "prompt": "___ in salotto, vicino al divano.", "answers": ["Mettila"], "focus": ["mettila"], "errorType": "pronoun-position", "traps": [{ "match": "La metti", "errorType": "pronoun-position", "why": "As a command, attach the pronoun to the tu imperative: *mettila*." }, { "match": ["Mettilo", "Mettili"], "errorType": "agreement", "why": "*La lampada* is feminine singular: *mettila*." }, { "match": "Metila", "errorType": "spelling", "why": "Double *t*: *mettila*." }], "explanation": "Tu imperative *metti* + *la* → **mettila**." },
+      "next": "G-DLG-02.n3"
+    },
+    {
+      "id": "G-DLG-02.n3", "speaker": "giulio", "conceptId": "B2-PRON-01", "errorType": "pronoun",
+      "line": "E il tavolino antico di tua nonna? Lo diamo a tuo fratello, come dicevi?",
+      "explanation": "Noi imperative + *gli* + *lo* → *diamoglielo*, one word.",
+      "choices": [
+        { "text": "Sì, diamoglielo! Lui ne ha bisogno.", "ok": true, "next": "G-DLG-02.n4" },
+        { "text": "Sì, glielo diamo. Lui ne ha bisogno.", "ok": true, "why": "Fine as a statement ('we're giving it to him').", "next": "G-DLG-02.n4" },
+        { "text": "Sì, diamolo gli! Lui ne ha bisogno.", "ok": false, "errorType": "pronoun", "why": "*Gli + lo* fuse into *glielo* and attach together: *diamoglielo*.", "next": "G-DLG-02.n4" },
+        { "text": "Sì, gli lo diamo. Lui ne ha bisogno.", "ok": false, "errorType": "pronoun", "why": "*Gli + lo* → *glielo*, written as one word.", "next": "G-DLG-02.n4" }
+      ]
+    },
+    {
+      "id": "G-DLG-02.n4", "speaker": "giulio",
+      "line": "Quanti scatoloni di libri hai? Sembrano pesantissimi.",
+      "item": { "id": "G-DLG-02.q4", "conceptId": "B2-PRON-02", "type": "cloze", "difficulty": 1, "instruction": "Complete your answer with the right pronoun.", "prompt": "___ ho almeno dieci, purtroppo!", "answers": ["Ne"], "focus": ["ne"], "errorType": "ci-ne", "traps": [{ "match": "Li", "errorType": "ci-ne", "why": "With a quantity, use partitive *ne*: *Ne ho dieci*." }, { "match": "Ci", "errorType": "ci-ne", "why": "Quantity → *ne*, not *ci*." }], "explanation": "Number without the noun → **ne**." },
+      "next": "G-DLG-02.n5"
+    },
+    {
+      "id": "G-DLG-02.n5", "speaker": "giulio", "conceptId": "B2-PRON-02", "errorType": "ci-ne",
+      "line": "Dieci?! Allora mi serve una birra. Ce ne sono ancora in frigo?",
+      "explanation": "'There are six (of them)': *ci sono* + *ne* → *ce ne sono*.",
+      "choices": [
+        { "text": "Sì, ce ne sono ancora sei.", "ok": true, "next": "G-DLG-02.n6" },
+        { "text": "Sì, ci sono ancora sei.", "ok": false, "errorType": "ci-ne", "why": "With a number and no noun you need *ne*: *ce ne sono sei*.", "next": "G-DLG-02.n6" },
+        { "text": "Sì, ne ci sono ancora sei.", "ok": false, "errorType": "pronoun-position", "why": "The order is *ce ne*, with *ci* → *ce*: *ce ne sono*.", "next": "G-DLG-02.n6" }
+      ]
+    },
+    {
+      "id": "G-DLG-02.n6", "speaker": "giulio",
+      "line": "E la vecchia lavatrice? L'hai già data ai vicini del terzo piano?",
+      "item": { "id": "G-DLG-02.q6", "conceptId": "B2-PRON-01", "type": "cloze", "difficulty": 3, "instruction": "Answer with a combined pronoun and the passato prossimo of 'dare'.", "prompt": "Sì, ___ ieri sera.", "answers": ["gliel'ho data", "gliela ho data"], "focus": ["data"], "errorType": "agreement", "traps": [{ "match": "gliel'ho dato", "errorType": "agreement", "why": "*Gliel'* hides *la* (la lavatrice): the participle must agree: *data*." }, { "match": ["le l'ho data", "gli l'ho data", "loro l'ho data"], "errorType": "pronoun", "why": "To them (*gli*) + it (*la*) → *gliela* → *gliel'ho*, one word." }, { "match": "l'ho data", "errorType": "pronoun", "why": "Add 'to them': *gliel'ho data*." }], "explanation": "To them (*gli*) + it (*la*) → **gliel'ho**, participle agreeing with *la*: **data**." },
+      "next": "G-DLG-02.n7",
+      "nextFail": "G-DLG-02.n6b"
+    },
+    {
+      "id": "G-DLG-02.n6b", "speaker": "giulio",
+      "line": "«Gliel'ho data», al femminile: è *la* lavatrice! Me lo diceva sempre la mia prof d'italiano. Va be', andiamo avanti.",
+      "next": "G-DLG-02.n7"
+    },
+    {
+      "id": "G-DLG-02.n7", "speaker": "giulio", "conceptId": "B2-PRON-04", "errorType": "pronoun-position",
+      "line": "Questo specchio è enorme… Dai, lo porto giù da solo, ce la faccio!",
+      "explanation": "Negative tu imperative: *non* + infinitive, pronoun attached or before: *non portarlo* / *non lo portare*.",
+      "choices": [
+        { "text": "No, non portarlo da solo! Ti aiuto io.", "ok": true, "next": "G-DLG-02.n8" },
+        { "text": "No, non lo portare da solo! Ti aiuto io.", "ok": true, "next": "G-DLG-02.n8" },
+        { "text": "No, non portalo da solo! Ti aiuto io.", "ok": false, "errorType": "pronoun-position", "why": "The negative tu imperative uses the infinitive: *non portarlo* (or *non lo portare*).", "next": "G-DLG-02.n7b" }
+      ]
+    },
+    {
+      "id": "G-DLG-02.n7b", "speaker": "giulio",
+      "line": "Come? «Non portalo»? Non ho capito, quindi lo porto… Oddio! L'ho appoggiato male, si è graffiato. Scusa! Si dice «non portarlo», comunque.",
+      "next": "G-DLG-02.n8"
+    },
+    {
+      "id": "G-DLG-02.n8", "speaker": "giulio", "conceptId": "B2-PRON-01", "errorType": "pronoun",
+      "line": "Senti, nella casa nuova devi montare le mensole. Il trapano ce l'hai o te lo presto io?",
+      "explanation": "To me (*mi* → *me*) + it (*lo*) → *me lo*.",
+      "choices": [
+        { "text": "Non ce l'ho: me lo presti tu, per favore?", "ok": true, "next": "G-DLG-02.n9" },
+        { "text": "Non ce l'ho: mi lo presti tu, per favore?", "ok": false, "errorType": "pronoun", "why": "Before *lo*, *mi* becomes *me*: *me lo presti*.", "next": "G-DLG-02.n9" },
+        { "text": "Non ce l'ho: lo mi presti tu, per favore?", "ok": false, "errorType": "pronoun-position", "why": "Indirect pronoun first: *me lo presti*.", "next": "G-DLG-02.n9" }
+      ]
+    },
+    {
+      "id": "G-DLG-02.n9", "speaker": "giulio",
+      "line": "Certo, te lo porto domani. E le piante? Le lascio qui sul pianerottolo?",
+      "item": { "id": "G-DLG-02.q9", "conceptId": "B2-PRON-04", "type": "translate", "difficulty": 3, "instruction": "Translate your answer into Italian (tu imperative + pronoun).", "prompt": "No, take them to the balcony!", "answers": ["No, portale (in|sul) balcone"], "focus": ["portale"], "errorType": "pronoun-position", "traps": [{ "contains": ["portali"], "errorType": "agreement", "why": "*Le piante* is feminine plural: *portale*." }, { "match": "No, le porta (in|sul) balcone", "errorType": "verb-form", "why": "The tu imperative is *porta*, with the pronoun attached: *portale*." }, { "match": "No, le porti (in|sul) balcone", "errorType": "pronoun-position", "why": "As a command: *portale*, pronoun attached." }, { "contains": ["al"], "errorType": "preposition", "why": "'To the balcony' = *in balcone* or *sul balcone*." }], "explanation": "Tu imperative *porta* + *le* → **portale**." },
+      "next": "G-DLG-02.n10"
+    },
+    {
+      "id": "G-DLG-02.n10", "speaker": "giulio", "conceptId": "B2-PRON-02", "errorType": "ci-ne",
+      "line": "Fatto! Il furgone è vuoto. Sono distrutto… Che ne dici di una pizza? Chi la ordina?",
+      "explanation": "*Pensare a* (see to something) → *ci*: *Ci penso io*.",
+      "choices": [
+        { "text": "Ci penso io: offro io, te lo sei meritato!", "ok": true, "next": "G-DLG-02.end1" },
+        { "text": "Ne penso io: offro io, te lo sei meritato!", "ok": false, "errorType": "ci-ne", "why": "'I'll take care of it' is *pensare a* → *ci penso io*. *Pensarne* is about having an opinion.", "next": "G-DLG-02.end2" },
+        { "text": "Lo penso io: offro io, te lo sei meritato!", "ok": false, "errorType": "ci-ne", "why": "*Pensare a qualcosa* → *ci*, not *lo*: *Ci penso io*.", "next": "G-DLG-02.end2" }
+      ]
+    },
+    {
+      "id": "G-DLG-02.end1", "speaker": "giulio",
+      "line": "Grande! Allora brindiamo alla casa nuova. E la prossima volta che trasloco io, me lo restituisci il favore, eh!",
+      "end": true,
+      "outcome": "The move went smoothly: you handled Giulio's questions with combined pronouns, ci and ne, and he's off to enjoy his pizza."
+    },
+    {
+      "id": "G-DLG-02.end2", "speaker": "giulio",
+      "line": "«Ci penso io», vorrai dire! Comunque la pizza la accetto volentieri. Alla casa nuova!",
+      "end": true,
+      "outcome": "The move is done and Giulio is happy, but he caught a ci/ne slip at the end. Review *pensarci* vs *pensarne*."
+    }
+  ]
+}
