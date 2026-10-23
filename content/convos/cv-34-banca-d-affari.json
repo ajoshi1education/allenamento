@@ -1,0 +1,236 @@
+{
+  "id": "CV-34",
+  "title": "Colloquio in una banca d'affari",
+  "subtitle": "An investment-bank interview in Lei: experience, achievements, pressure, hypotheticals and ambitions.",
+  "level": "C1",
+  "theme": "Lavoro e studio",
+  "conceptIds": [
+    "B2-PREP-02",
+    "B2-PAST-01",
+    "C1-INT-02",
+    "B2-SUBJ-03",
+    "B2-HYP-01",
+    "B2-FUT-01"
+  ],
+  "tutor": {
+    "name": "Dottor Moretti",
+    "avatar": "👨‍💼",
+    "gender": "male",
+    "register": "formal"
+  },
+  "setting": "You're interviewing for an analyst role in the M&A team of an investment bank in Milan. Dottor Moretti, a managing director, is interviewing you.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Buongiorno, si accomodi pure. Vedo dal curriculum che lavora già nel settore. Da quanto tempo si occupa di finanza?",
+      "en": "Good morning, please take a seat. I see from your CV that you already work in the sector. How long have you been working in finance?",
+      "task": "Say what you do and how long you've been doing it: present tense + da (not per).",
+      "hint": "Mi occupo di… da… anni.",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "How long: present + da",
+            "anyOf": [
+              "\\bda\\s+(circa\\s+|quasi\\s+|più\\s+di\\s+|oltre\\s+|almeno\\s+|ormai\\s+)?(\\d+|un|uno|una|due|tre|quattro|cinque|sei|sette|otto|nove|dieci|undici|dodici|quindici|venti|qualche|alcuni|parecchi|molti|tanti|diversi)\\s+(\\p{L}+\\s+)?(anni|anno|mesi|mese)\\b",
+              "\\bdal\\s+(\\d{4}|duemila\\p{L}*)\\b"
+            ],
+            "min": 1,
+            "errorType": "preposition",
+            "conceptId": "B2-PREP-02",
+            "hint": "*Mi occupo di credito **da** cinque anni.*"
+          },
+          {
+            "label": "Says what you do",
+            "anyOf": [
+              "\\b(lavoro|mi occupo|gestisco|seguo|analizzo|faccio parte|collaboro|coordino|sono)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*Mi occupo di…, lavoro come…*"
+          }
+        ]
+      },
+      "model": "Mi occupo di analisi del credito da circa cinque anni, attualmente in una banca commerciale di Torino.",
+      "followOk": "Bene, un buon background. Il credito è un'ottima scuola.",
+      "followMiss": "Capisco, quindi lavora nel settore da qualche anno. Bene, è il tipo di profilo che cerchiamo."
+    },
+    {
+      "id": "t2",
+      "say": "Mi parli di un risultato concreto di cui va particolarmente orgoglioso o orgogliosa.",
+      "en": "Tell me about a concrete achievement you're particularly proud of.",
+      "task": "Describe the achievement with at least two verbs in the passato prossimo, and quantify the result (in questo modo, grazie a…).",
+      "hint": "Ho guidato un progetto che…; in questo modo abbiamo…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Two verbs in the passato prossimo",
+            "anyOf": [
+              "\\b(sono|siamo|ho|abbiamo|mi sono|ci siamo)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|so|sa|si|se|sso|ssa)\\b"
+            ],
+            "min": 2,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "*Ho riorganizzato…, abbiamo ridotto…*"
+          },
+          {
+            "label": "Links to a concrete result",
+            "anyOf": [
+              "\\b(grazie|in questo modo|così|quindi|di conseguenza|risultato|risparmi\\p{L}*|milioni|per cento|percento)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…in questo modo abbiamo ridotto i tempi del 40%.*"
+          }
+        ]
+      },
+      "model": "L'anno scorso ho riorganizzato il processo di valutazione dei fidi e ho introdotto un nuovo modello: in questo modo abbiamo ridotto i tempi del quaranta per cento.",
+      "followOk": "Ottimo risultato, e ben quantificato. È quello che ci piace sentire.",
+      "followMiss": "Interessante. Quando racconta un risultato, però, cerchi di quantificarlo: per esempio, «abbiamo ridotto i tempi del trenta per cento»."
+    },
+    {
+      "id": "t3",
+      "say": "Qui i ritmi sono molto intensi, spesso si lavora fino a tardi. Come gestisce la pressione?",
+      "en": "The pace here is very intense; people often work late. How do you handle pressure?",
+      "task": "Describe your strength with a softener (direi che…, tendo a…, cerco di…) and give an example.",
+      "hint": "Direi che sono abituato/a a…; per esempio, quando…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Softens the claim",
+            "anyOf": [
+              "\\b(direi che|tendo a|riesco a|cerco di|sono abituat\\p{L}|mi considero|credo di|penso di|mi ritengo)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "C1-INT-02",
+            "hint": "*Direi che…, cerco di…*"
+          },
+          {
+            "label": "Gives an example",
+            "anyOf": [
+              "\\b(per esempio|ad esempio|quando|una volta|l['’]anno scorso|durante|come quando)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*Per esempio, durante le chiusure di bilancio…*"
+          }
+        ]
+      },
+      "model": "Direi che sono abituato a lavorare sotto pressione: per esempio, durante le chiusure di bilancio cerco di pianificare tutto in anticipo e mantengo la calma.",
+      "followOk": "Bene. La pianificazione è fondamentale, soprattutto nelle settimane in cui si chiude un'operazione.",
+      "followMiss": "Capisco. Chi regge meglio, di solito, dice qualcosa come: «cerco di pianificare tutto e mantengo la calma». Lei si riconosce?"
+    },
+    {
+      "id": "t4",
+      "say": "Facciamo un'ipotesi. Se Le offrissimo il posto, che contributo porterebbe al nostro team di M&A?",
+      "en": "Let's imagine. If we offered you the job, what contribution would you bring to our M&A team?",
+      "task": "Answer the hypothetical: se mi assumeste / se entrassi nel team + the conditional.",
+      "hint": "Se mi assumeste, porterei…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "se + congiuntivo imperfetto",
+            "anyOf": [
+              "\\bse\\s+(\\p{L}+\\s+){0,3}\\p{L}+(ssi|sse|ssimo|ssero|aste|este|iste)\\b"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-SUBJ-03",
+            "hint": "*Se mi assumeste…, se entrassi nel team…*"
+          },
+          {
+            "label": "Uses the conditional",
+            "anyOf": [
+              "\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-HYP-01",
+            "hint": "*…porterei, potrei contribuire…*"
+          }
+        ]
+      },
+      "model": "Se mi assumeste, porterei la mia esperienza nell'analisi dei bilanci e potrei contribuire subito alla due diligence delle operazioni.",
+      "followOk": "Molto bene. La due diligence è proprio dove abbiamo più bisogno di rinforzi.",
+      "followMiss": "Mh. Io la metterei così: «se mi assumeste, porterei le mie competenze analitiche e potrei contribuire fin da subito»."
+    },
+    {
+      "id": "t5",
+      "say": "Ultima domanda, la più classica: dove si vede tra cinque anni?",
+      "en": "Last question, the classic one: where do you see yourself in five years?",
+      "task": "Answer with the future (sarò, avrò…) and a wish (mi piacerebbe…, spero di…).",
+      "hint": "Tra cinque anni spero di…, e mi piacerebbe…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Uses the future",
+            "anyOf": [
+              "\\b\\p{L}+(rò|rai|rà|remo|rete|ranno)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*Sarò…, avrò…, lavorerò…*"
+          },
+          {
+            "label": "Expresses a wish",
+            "anyOf": [
+              "\\b(mi piacerebbe|spero di|vorrei|il mio obiettivo|mi auguro|ambisco|aspiro|sogno)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Mi piacerebbe…, spero di…*"
+          }
+        ]
+      },
+      "model": "Tra cinque anni spero di essere cresciuto all'interno della banca: avrò più esperienza sulle operazioni internazionali e mi piacerebbe guidare un piccolo team.",
+      "followOk": "Ambizioso, ma realistico. Mi piace.",
+      "followMiss": "Capisco. Molti candidati rispondono così: «tra cinque anni avrò più esperienza e mi piacerebbe guidare un team»."
+    },
+    {
+      "id": "t6",
+      "say": "Bene, per me è tutto. C'è qualcosa che vorrebbe chiedermi sul ruolo?",
+      "en": "Good, that's all from me. Is there anything you'd like to ask me about the role?",
+      "task": "Ask a polite indirect question (vorrei sapere se…, potrebbe dirmi come…).",
+      "hint": "Sì, vorrei sapere se…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Polite indirect question",
+            "anyOf": [
+              "\\b(vorrei sapere|potrebbe dirmi|potrebbe spiegarmi|mi chiedevo|le volevo chiedere|volevo chiederle|mi piacerebbe sapere|sarebbe possibile sapere|vorrei chiederle|le vorrei chiedere)\\b"
+            ],
+            "min": 1,
+            "errorType": "register",
+            "conceptId": "B2-REG-01",
+            "hint": "*Vorrei sapere se…, potrebbe dirmi come…*"
+          },
+          {
+            "label": "Introduces the question (se, come, quanto…)",
+            "anyOf": [
+              "\\b(se|come|quando|quale|quali|quanto|quanti|quante|che cosa|cosa|chi|dove|in che modo)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "C1-SEQ-03",
+            "hint": "*…se, come, quanto…*"
+          }
+        ]
+      },
+      "model": "Sì, grazie. Vorrei sapere come è organizzata la formazione nei primi mesi e se è previsto un periodo all'estero.",
+      "followOk": "Ottima domanda. Nei primi sei mesi c'è un programma strutturato, e spesso anche qualche settimana a Londra.",
+      "followMiss": "Va bene. Se le viene in mente qualcosa, può sempre chiedermi: «vorrei sapere se è previsto un periodo all'estero», per esempio."
+    }
+  ],
+  "closing": "La ringrazio, è stato un colloquio molto interessante. Le faremo sapere entro la fine della settimana prossima."
+}

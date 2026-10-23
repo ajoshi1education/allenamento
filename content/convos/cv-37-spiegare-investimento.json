@@ -1,0 +1,203 @@
+{
+  "id": "CV-37",
+  "title": "Spiegare un investimento a un amico",
+  "subtitle": "Explain ETFs and mortgages to a friend in tu: relative clauses, cioè, se + presente → futuro.",
+  "level": "B2",
+  "theme": "Lavoro e studio",
+  "conceptIds": [
+    "B2-REL-01",
+    "B2-INT-01",
+    "B2-HYP-01",
+    "B2-COND-01",
+    "B2-CONN-01"
+  ],
+  "tutor": {
+    "name": "Luca",
+    "avatar": "🧑",
+    "gender": "male",
+    "register": "informal"
+  },
+  "setting": "Your friend Luca knows you work in a bank. Over a beer in Turin he asks you to explain a few things about money in plain words.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Senti, tu che lavori in banca: tutti mi parlano di ETF, ma io non ho capito niente. Che cos'è, in parole semplici?",
+      "en": "Listen, you work in a bank: everyone talks to me about ETFs, but I haven't understood a thing. What is it, in simple words?",
+      "task": "Define an ETF with a relative clause (è un fondo che…) and rephrase with cioè / vale a dire.",
+      "hint": "È un fondo che…, cioè…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Defines with a relative clause",
+            "anyOf": [
+              "\\b(è|sono)\\s+(\\p{L}+\\s+){1,4}(che|il quale|la quale|in cui|con cui|di cui)\\b"
+            ],
+            "min": 1,
+            "errorType": "relative",
+            "conceptId": "B2-REL-01",
+            "hint": "*È un fondo **che** replica un indice.*"
+          },
+          {
+            "label": "Rephrases (cioè, vale a dire…)",
+            "anyOf": [
+              "\\b(cioè|vale a dire|in pratica|in altre parole|praticamente|ossia)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "B2-INT-01",
+            "hint": "*…cioè…, vale a dire…*"
+          }
+        ]
+      },
+      "model": "È un fondo che replica un indice, per esempio la Borsa americana, cioè compri un pezzetto di centinaia di aziende tutte insieme.",
+      "followOk": "Ah, quindi è come comprare un cestino pieno di azioni diverse. Chiaro!",
+      "followMiss": "Mh, fammi capire: è un fondo che segue un indice, cioè compri tante aziende insieme? Ho capito bene?"
+    },
+    {
+      "id": "t2",
+      "say": "E che differenza c'è con un fondo normale, quello che mi propone sempre la mia banca?",
+      "en": "And what's the difference from a normal fund, the one my bank always offers me?",
+      "task": "Compare them (costa meno di…, è più economico…) and explain why with a cause connector.",
+      "hint": "Costa molto meno, perché…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Makes a comparison",
+            "anyOf": [
+              "\\b(più|meno)\\s+(\\p{L}+\\s+){0,2}(di|del|dello|della|dei|degli|delle|dell['’]|rispetto|che)\\b",
+              "\\b(costa|costano)\\s+(molto\\s+)?meno\\b",
+              "\\b(inferior\\p{L}|superior\\p{L}|maggior\\p{L}|minor\\p{L})\\b"
+            ],
+            "min": 1,
+            "errorType": "grammar",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*Costa meno di…, le commissioni sono più basse…*"
+          },
+          {
+            "label": "Explains why",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti|considerato che|dal momento che)\\b",
+              "\\b(quindi|per questo)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché non c'è un gestore…*"
+          }
+        ]
+      },
+      "model": "Costa molto meno, perché non c'è un gestore che sceglie i titoli: le commissioni sono più basse di quelle di un fondo tradizionale.",
+      "followOk": "Ah, ecco perché la mia banca non me ne parla mai! Furbi.",
+      "followMiss": "Quindi, in pratica, l'ETF costa meno perché non c'è nessuno che sceglie i titoli? Interessante."
+    },
+    {
+      "id": "t3",
+      "say": "Ok, e se ci metto diecimila euro adesso, che cosa succede? Rischio di perderli tutti?",
+      "en": "OK, and if I put ten thousand euros in now, what happens? Do I risk losing all of it?",
+      "task": "Answer with a real conditional: se + presente → futuro (se il mercato scende, perderai…).",
+      "hint": "Se il mercato scende, perderai…, ma se aspetti…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "se + present → future",
+            "anyOf": [
+              "\\bse\\b[^.?!;]*?\\b\\p{L}+(rò|rai|rà|remo|rete|ranno)\\b"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-HYP-01",
+            "hint": "*Se il mercato scende, **perderai**…*"
+          },
+          {
+            "label": "Talks about risk and time",
+            "anyOf": [
+              "\\b(perder\\p{L}*|pers\\p{L}|rischi\\p{L}*|scend\\p{L}*|calo|cal\\p{L}+|oscill\\p{L}*|recuper\\p{L}*|lungo periodo|lungo termine|anni|tempo)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "C1-VOC-05",
+            "hint": "*…nel lungo periodo recupererai.*"
+          }
+        ]
+      },
+      "model": "Tutti no, ma se il mercato scende, perderai una parte del valore; però se lo tieni per molti anni, probabilmente recupererai e guadagnerai.",
+      "followOk": "Quindi la parola chiave è pazienza. Questo lo so fare, più o meno!",
+      "followMiss": "Ah, quindi se il mercato scende, perderò qualcosa, ma se aspetto, recupererò. Giusto?"
+    },
+    {
+      "id": "t4",
+      "say": "Cambiando argomento: io e Marta vorremmo comprare casa. Mi spieghi un po' come funziona il mutuo?",
+      "en": "Changing the subject: Marta and I would like to buy a flat. Can you explain how a mortgage works?",
+      "task": "Explain a mortgage with relative clauses (un prestito che…, la banca a cui…) and rephrase with cioè / vale a dire.",
+      "hint": "È un prestito che la banca ti dà…, cioè…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Uses a relative clause",
+            "anyOf": [
+              "\\b(cui|il quale|la quale|i quali|le quali)\\b",
+              "\\b(somma|soldi|prestito|finanziamento|banca|tasso|rata|rate|interessi|interesse|capitale|cifra)\\s+che\\b"
+            ],
+            "min": 1,
+            "errorType": "relative",
+            "conceptId": "B2-REL-01",
+            "hint": "*un prestito **che** restituisci, la banca **a cui** lo chiedi*"
+          },
+          {
+            "label": "Rephrases (cioè, vale a dire…)",
+            "anyOf": [
+              "\\b(cioè|vale a dire|in pratica|in altre parole|praticamente|ossia)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "B2-INT-01",
+            "hint": "*…cioè ogni mese paghi…*"
+          }
+        ]
+      },
+      "model": "È un prestito che la banca ti dà per comprare casa e che restituisci a rate mensili, cioè paghi ogni mese una parte del capitale più gli interessi.",
+      "followOk": "Chiarissimo. Spiegato così, sembra quasi semplice!",
+      "followMiss": "Ok, quindi è un prestito che restituisci a rate, cioè un po' ogni mese, con gli interessi. Ci sono."
+    },
+    {
+      "id": "t5",
+      "say": "È meglio il tasso fisso o il variabile? Il consulente ci ha detto che dipende da noi.",
+      "en": "And is a fixed or a variable rate better? The adviser told us it's up to us.",
+      "task": "Recommend one with the conditional (io sceglierei…) and justify it with se + presente.",
+      "hint": "Io sceglierei il fisso, perché se i tassi salgono…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Recommends with the conditional",
+            "anyOf": [
+              "\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Io sceglierei…, vi converrebbe…*"
+          },
+          {
+            "label": "Justifies with a se-clause",
+            "anyOf": [
+              "\\bse\\s+\\p{L}+"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-HYP-01",
+            "hint": "*…se i tassi salgono, la rata resterà uguale.*"
+          }
+        ]
+      },
+      "model": "Io sceglierei il fisso: se i tassi d'interesse salgono, la vostra rata resterà uguale e potrete dormire sonni tranquilli.",
+      "followOk": "Mi hai convinto. Stasera ne parlo con Marta, vediamo che ne pensa lei.",
+      "followMiss": "Mah, io forse sceglierei il fisso: se i tassi salgono, almeno la rata resterà uguale."
+    }
+  ],
+  "closing": "Grazie mille, mi hai spiegato tutto meglio del consulente! Il prossimo giro lo offro io."
+}
