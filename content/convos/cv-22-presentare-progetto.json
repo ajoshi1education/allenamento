@@ -1,0 +1,236 @@
+{
+  "id": "CV-22",
+  "title": "Presentare un progetto",
+  "subtitle": "Pitching a project to your director: structure, nominal style, si prevede che, handling an objection.",
+  "level": "C1",
+  "theme": "Lavoro e studio",
+  "conceptIds": [
+    "C1-SPEAK-02",
+    "C1-SYN-02",
+    "B2-SI-01",
+    "C1-CONN-02",
+    "C1-HYP-04",
+    "B2-PASS-01"
+  ],
+  "tutor": {
+    "name": "Dottor Lombardi",
+    "avatar": "👨‍💼",
+    "gender": "male",
+    "register": "formal"
+  },
+  "setting": "You've asked your department director, Dottor Lombardi, for fifteen minutes to pitch a new online training platform for the company's staff.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Prego, ho un quarto d'ora. Di che cosa si tratta, in poche parole?",
+      "en": "Go ahead, I have fifteen minutes. What is it about, in a few words?",
+      "task": "Sum up the project in one sentence with si tratta di… and a nominalisation (la creazione di…, l'introduzione di…).",
+      "hint": "Si tratta della creazione di…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Frames the project (si tratta di…, l'obiettivo…)",
+            "anyOf": [
+              "\\b(si tratta|il progetto riguarda|il progetto consiste|lo scopo|l['’]obiettivo|il nostro obiettivo|la proposta riguarda|la mia proposta|propongo)\\b"
+            ],
+            "min": 1,
+            "errorType": "text-structure",
+            "conceptId": "C1-SPEAK-02",
+            "hint": "*Si tratta di…*"
+          },
+          {
+            "label": "Nominalisation (la creazione di, lo sviluppo di…)",
+            "anyOf": [
+              "\\b\\p{L}{3,}(zione|zioni|mento|menti)\\s+(di|del|della|dei|delle|degli|dello|dell['’])",
+              "\\b(l['’]aumento|lo sviluppo|la crescita|la diffusione|la nascita|il calo|la riduzione|lo spostamento|la trasformazione|l['’]introduzione|la creazione|la realizzazione)\\b"
+            ],
+            "min": 1,
+            "errorType": "vocabulary",
+            "conceptId": "C1-SYN-02",
+            "hint": "*la **creazione** di, l'**introduzione** di…*"
+          }
+        ]
+      },
+      "model": "Si tratta della creazione di una piattaforma online per la formazione interna dei dipendenti.",
+      "followOk": "Interessante. Vada avanti, mi spieghi come è strutturato il progetto.",
+      "followMiss": "Capisco, si tratta della creazione di una piattaforma di formazione. Mi spieghi meglio."
+    },
+    {
+      "id": "t2",
+      "say": "Bene. Mi illustri i punti principali, con ordine.",
+      "en": "Good. Walk me through the main points, in order.",
+      "task": "Give two or three benefits in order with innanzitutto… inoltre… infine…",
+      "hint": "Innanzitutto…; inoltre…; infine…",
+      "expect": {
+        "minWords": 14,
+        "rubric": [
+          {
+            "label": "Sequencing markers (at least two)",
+            "anyOf": [
+              "\\b(innanzitutto|anzitutto|in primo luogo|prima di tutto|in secondo luogo|in terzo luogo|inoltre|poi|infine|per finire|da ultimo)\\b"
+            ],
+            "min": 2,
+            "errorType": "text-structure",
+            "conceptId": "C1-SPEAK-02",
+            "hint": "*Innanzitutto…, inoltre…, infine…*"
+          },
+          {
+            "label": "Conditional for the benefits (ridurrebbe, permetterebbe…)",
+            "anyOf": [
+              "\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*…ridurrebbe i costi, permetterebbe…*"
+          }
+        ]
+      },
+      "model": "Innanzitutto, la piattaforma ridurrebbe i costi dei corsi in presenza; inoltre, permetterebbe a tutti di formarsi con orari flessibili; infine, ci darebbe dati precisi sui risultati.",
+      "followOk": "Chiaro e ben strutturato, complimenti.",
+      "followMiss": "D'accordo. Nella presentazione ufficiale, però, elenchi i punti con ordine: innanzitutto, inoltre, infine."
+    },
+    {
+      "id": "t3",
+      "say": "E in termini di tempi e risultati, che cosa vi aspettate?",
+      "en": "And in terms of timing and results, what do you expect?",
+      "task": "Forecast with the impersonal si prevede che / si stima che, and give a timeframe.",
+      "hint": "Si prevede che la piattaforma sia pronta entro…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Si prevede che / si stima che",
+            "anyOf": [
+              "\\b(si prevede|si stima|si calcola|si ipotizza|si presume|si ritiene|si conta|si pensa)\\s+che\\b"
+            ],
+            "min": 1,
+            "errorType": "passive",
+            "conceptId": "B2-SI-01",
+            "hint": "*Si prevede che…, si stima che…*"
+          },
+          {
+            "label": "Gives a timeframe",
+            "anyOf": [
+              "\\b(entro|nel giro di|nei primi|nel corso|a partire da|tra|fra|l['’]anno prossimo|mesi|anni|settimane)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "C1-SPEAK-02",
+            "hint": "*…entro sei mesi…*"
+          }
+        ]
+      },
+      "model": "Si prevede che la piattaforma sia pronta entro sei mesi, e si stima che i costi di formazione calino del trenta per cento.",
+      "followOk": "Numeri ambiziosi. Spero che siano realistici.",
+      "followMiss": "Quindi si prevede che sia pronta in qualche mese, e si stima un risparmio importante. Ambizioso."
+    },
+    {
+      "id": "t4",
+      "say": "Le dico la verità: in un momento come questo, mi sembra un investimento troppo alto.",
+      "en": "To be honest: at a time like this, it seems too big an investment to me.",
+      "task": "Handle the objection: acknowledge it (comprendo…), then counter with a formal connector (tuttavia, va considerato che…).",
+      "hint": "Comprendo la Sua preoccupazione; tuttavia, va considerato che…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Acknowledges the objection",
+            "anyOf": [
+              "\\b(comprendo|capisco|mi rendo conto|è comprensibile|ha ragione|è vero|è giusto|condivido)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "C1-INT-02",
+            "hint": "*Comprendo la Sua preoccupazione…*"
+          },
+          {
+            "label": "Formal counter-argument (tuttavia, va considerato che…)",
+            "anyOf": [
+              "\\b(tuttavia|ciononostante|nondimeno|d['’]altra parte|d['’]altro canto|va detto|va considerato|bisogna considerare|occorre considerare|eppure|in realtà|al tempo stesso)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "C1-CONN-02",
+            "hint": "*…tuttavia, va considerato che…*"
+          }
+        ]
+      },
+      "model": "Comprendo la Sua preoccupazione; tuttavia, va considerato che l'investimento si ripagherebbe in meno di due anni grazie ai risparmi.",
+      "followOk": "Mi ha quasi convinto. Il dato sui risparmi è interessante.",
+      "followMiss": "Capisco. Lei sostiene quindi che, nonostante il costo, l'investimento si ripaghi nel tempo. Ci penserò."
+    },
+    {
+      "id": "t5",
+      "say": "E se il progetto non dovesse funzionare? Qual è il piano B?",
+      "en": "And if the project didn't work out? What's plan B?",
+      "task": "Answer with nel caso in cui / qualora + subjunctive, and say what would be done with a passive (verrebbe sospeso…).",
+      "hint": "Nel caso in cui i risultati non fossero…, il progetto verrebbe…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Nel caso in cui / qualora + subjunctive",
+            "anyOf": [
+              "\\b(nel caso in cui|nel caso che|qualora)\\s+([\\p{L}'’]+\\s+){0,4}(dovesse|dovessero|sia|siano|abbia|abbiano|possa|possano|debba|debbano|vada|vadano|faccia|facciano|serva|servano|convenga|convengano|stia|stiano|venga|vengano|valga|valgano|sappia|sappiano|voglia|vogliano|occorra|bisogni|basti|bastino|costi|costino|funzioni|funzionino|porti|portino|rischi|rischino|aiuti|aiutino|renda|rendano|cambi|migliori|paghi|paghino|spenda|spendano|includa|includano|metta|mettano|tenga|tengano|dia|diano|conosca|conoscano|legga|scelga|scelgano|piaccia|piacciano|parli|parlino|chieda|chiedano|prenda|prendano|\\p{L}{3,}(?:ino|isca|iscano|iamo|iate)|fosse|fossero|fossi|avesse|avessero|avessi|\\p{L}{2,}(?:asse|esse|isse|assero|essero|issero|assi|essi|issi))\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-mood",
+            "conceptId": "C1-HYP-04",
+            "hint": "*Nel caso in cui i risultati non **fossero**…*"
+          },
+          {
+            "label": "Passive (verrebbe sospeso, sarebbe ridotto…)",
+            "anyOf": [
+              "\\b(verrebbe|verrebbero|sarebbe|sarebbero|andrebbe|andrebbero|verrà|verranno|sarà|saranno|viene|vengono)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|so|sa|si|se|sto|sta|sti|ste|tto|tta|tti|tte)\\b"
+            ],
+            "min": 1,
+            "errorType": "passive",
+            "conceptId": "B2-PASS-01",
+            "hint": "*…il progetto **verrebbe sospeso**.*"
+          }
+        ]
+      },
+      "model": "Nel caso in cui i risultati non fossero soddisfacenti, il progetto verrebbe sospeso dopo la fase di prova.",
+      "followOk": "Bene, avere un piano B mi rassicura.",
+      "followMiss": "Capisco. Quindi, nel caso in cui non funzionasse, il progetto verrebbe sospeso. Mi sembra ragionevole."
+    },
+    {
+      "id": "t6",
+      "say": "Un'ultima domanda: perché dovremmo affidarlo proprio al Suo team?",
+      "en": "One last question: why should we entrust it to your team in particular?",
+      "task": "Wrap up persuasively with a concluding marker (in conclusione, per concludere…) and a reason.",
+      "hint": "In conclusione, il nostro team…, quindi…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Concluding marker",
+            "anyOf": [
+              "\\b(in conclusione|per concludere|concludendo|in sintesi|insomma|in definitiva|riassumendo)\\b"
+            ],
+            "min": 1,
+            "errorType": "text-structure",
+            "conceptId": "C1-SPEAK-02",
+            "hint": "*In conclusione…*"
+          },
+          {
+            "label": "Gives a reason or consequence",
+            "anyOf": [
+              "\\b(perché|poiché|dal momento che|visto che|dato che|quindi|pertanto|perciò|grazie a|in quanto)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "C1-CONN-02",
+            "hint": "*…quindi…, dal momento che…*"
+          }
+        ]
+      },
+      "model": "In conclusione, il nostro team ha già gestito progetti simili, quindi saremmo in grado di partire subito.",
+      "followOk": "Mi ha convinto. Ne parlo con la direzione e Le faccio sapere.",
+      "followMiss": "Insomma, Lei ritiene che il Suo team sia pronto. Ne parlo con la direzione e Le faccio sapere."
+    }
+  ],
+  "closing": "Grazie, una presentazione molto chiara. Le farò sapere entro la fine del mese."
+}

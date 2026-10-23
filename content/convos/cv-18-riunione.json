@@ -1,0 +1,199 @@
+{
+  "id": "CV-18",
+  "title": "La riunione",
+  "subtitle": "A team meeting: proposing ideas, agreeing and disagreeing politely, penso che + subjunctive.",
+  "level": "B2",
+  "theme": "Lavoro e studio",
+  "conceptIds": [
+    "C1-INT-02",
+    "B2-SUBJ-01",
+    "B2-COND-01",
+    "B2-FUT-01"
+  ],
+  "tutor": {
+    "name": "Marco",
+    "avatar": "🧑‍💼",
+    "gender": "male",
+    "register": "informal"
+  },
+  "setting": "It's the Monday team meeting in the marketing office of a small food company in Parma. Marco, your team leader, is chairing it. Everyone uses tu.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Allora, cominciamo. Negli ultimi mesi le vendite online sono calate parecchio. Qualcuno ha un'idea per invertire la tendenza?",
+      "en": "Right, let's start. Online sales have dropped quite a lot in recent months. Does anyone have an idea to turn things around?",
+      "task": "Propose an idea with propongo di… / e se…? / potremmo…, and say what it would achieve.",
+      "hint": "Propongo di… così…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Proposal formula (propongo di, e se…, potremmo…)",
+            "anyOf": [
+              "\\b(propongo di|proporrei di|suggerisco di|suggerirei di|potremmo|perché non|che ne dite di|che ne pensate di|e se)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "C1-INT-02",
+            "hint": "*Propongo di…, e se provassimo a…?*"
+          },
+          {
+            "label": "Says what it would achieve",
+            "anyOf": [
+              "\\b(così|in modo da|in modo che|affinché|perché|visto che|dato che|per attirare|per raggiungere|per aumentare)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…così raggiungiamo…*"
+          }
+        ]
+      },
+      "model": "Propongo di lanciare una campagna sui social, così raggiungiamo anche i clienti più giovani.",
+      "followOk": "Interessante, mi piace. Vediamo che cosa ne pensano gli altri.",
+      "followMiss": "Ok. Io, per esempio, proporrei di puntare sui social: e se lanciassimo una campagna per i più giovani?"
+    },
+    {
+      "id": "t2",
+      "say": "Sara però dice che i social costano troppo e preferirebbe abbassare i prezzi. Tu sei d'accordo con lei?",
+      "en": "Sara, though, says social media costs too much and would rather lower prices. Do you agree with her?",
+      "task": "Disagree politely: acknowledge her point (capisco…, però…), then give your view with penso che / credo che + subjunctive.",
+      "hint": "Capisco il punto di vista di Sara, però penso che…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Softens the disagreement (capisco…, però…)",
+            "anyOf": [
+              "\\b(capisco|hai ragione|ha ragione|rispetto|non sono del tutto d['’]accordo|non sono completamente d['’]accordo|fino a un certo punto|da un lato|non sono convinto|non sono convinta|non sono sicuro|non sono sicura)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "C1-INT-02",
+            "hint": "*Capisco il suo punto di vista, però…*"
+          },
+          {
+            "label": "Penso che / credo che + subjunctive",
+            "anyOf": [
+              "\\b(penso|credo|ritengo|reputo|immagino|trovo|mi sembra|mi pare|sono convinto|sono convinta|non penso|non credo|dubito|sostengono|ritengono|pensano|credono|sostiene|ritiene)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}(sia|siano|abbia|abbiano|possa|possano|debba|debbano|vada|vadano|faccia|facciano|serva|servano|convenga|convengano|stia|stiano|venga|vengano|valga|valgano|sappia|sappiano|voglia|vogliano|occorra|bisogni|basti|bastino|costi|costino|funzioni|funzionino|porti|portino|rischi|rischino|aiuti|aiutino|renda|rendano|cambi|migliori|paghi|paghino|spenda|spendano|includa|includano|metta|mettano|tenga|tengano|dia|diano|conosca|conoscano|legga|scelga|scelgano|piaccia|piacciano|parli|parlino|chieda|chiedano|prenda|prendano|\\p{L}{3,}(?:ino|isca|iscano|iamo|iate)|fosse|fossero|fossi|avesse|avessero|avessi|\\p{L}{2,}(?:asse|esse|isse|assero|essero|issero|assi|essi|issi))\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Penso che abbassare i prezzi **sia** rischioso.*"
+          }
+        ]
+      },
+      "model": "Capisco il punto di vista di Sara, però penso che abbassare i prezzi sia rischioso per i nostri margini.",
+      "followOk": "Giusto, è un rischio da non sottovalutare.",
+      "followMiss": "Capisco. Anch'io penso che abbassare i prezzi sia un po' rischioso, però sentiamo tutti."
+    },
+    {
+      "id": "t3",
+      "say": "Luca invece suggerisce di collaborare con qualche influencer della zona. Che ne dici?",
+      "en": "Luca, on the other hand, suggests working with some local influencers. What do you think?",
+      "task": "Agree with Luca and add a point of your own (anzi…, inoltre…, aggiungerei che…).",
+      "hint": "Sono d'accordo con Luca; anzi, aggiungerei che…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Agrees (sono d'accordo, condivido…)",
+            "anyOf": [
+              "\\b(sono d['’]accordo|sono assolutamente d['’]accordo|sono pienamente d['’]accordo|concordo|condivido|hai ragione|ha ragione|ottima idea|buona idea|mi sembra una buona idea|esatto|giusto)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "C1-INT-02",
+            "hint": "*Sono d'accordo con Luca…*"
+          },
+          {
+            "label": "Adds a point (anzi, inoltre, aggiungerei…)",
+            "anyOf": [
+              "\\b(anzi|inoltre|aggiungerei|vorrei aggiungere|in più|tra l['’]altro|per di più|oltretutto|anche perché)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…anzi, aggiungerei che…*"
+          }
+        ]
+      },
+      "model": "Sono d'accordo con Luca, è un'ottima idea; anzi, aggiungerei che potremmo scegliere influencer della nostra città.",
+      "followOk": "Perfetto, allora la teniamo in considerazione.",
+      "followMiss": "Bene. Anch'io sono d'accordo con Luca, e aggiungerei che conviene sceglierli in zona."
+    },
+    {
+      "id": "t4",
+      "say": "Il problema è sempre il budget: quest'anno è più basso. Secondo te, su che cosa dovremmo puntare?",
+      "en": "The problem is always the budget: this year it's lower. In your view, what should we focus on?",
+      "task": "Say what matters most with è meglio che / è importante che / bisogna che + subjunctive, and give a reason.",
+      "hint": "Secondo me è meglio che ci concentriamo su… perché…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Impersonal expression + che + subjunctive",
+            "anyOf": [
+              "\\b(è importante|è meglio|è fondamentale|è essenziale|è necessario|è giusto|non è giusto|è preferibile|è opportuno|bisogna|occorre|conviene|sarebbe meglio|sarebbe importante|sarebbe giusto|bisognerebbe|occorrerebbe|converrebbe)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}(sia|siano|abbia|abbiano|possa|possano|debba|debbano|vada|vadano|faccia|facciano|serva|servano|convenga|convengano|stia|stiano|venga|vengano|valga|valgano|sappia|sappiano|voglia|vogliano|occorra|bisogni|basti|bastino|costi|costino|funzioni|funzionino|porti|portino|rischi|rischino|aiuti|aiutino|renda|rendano|cambi|migliori|paghi|paghino|spenda|spendano|includa|includano|metta|mettano|tenga|tengano|dia|diano|conosca|conoscano|legga|scelga|scelgano|piaccia|piacciano|parli|parlino|chieda|chiedano|prenda|prendano|\\p{L}{3,}(?:ino|isca|iscano|iamo|iate)|fosse|fossero|fossi|avesse|avessero|avessi|\\p{L}{2,}(?:asse|esse|isse|assero|essero|issero|assi|essi|issi))\\b",
+              "\\b(penso|credo|ritengo|reputo|immagino|trovo|mi sembra|mi pare|sono convinto|sono convinta|non penso|non credo|dubito|sostengono|ritengono|pensano|credono|sostiene|ritiene)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}(sia|siano|abbia|abbiano|possa|possano|debba|debbano|vada|vadano|faccia|facciano|serva|servano|convenga|convengano|stia|stiano|venga|vengano|valga|valgano|sappia|sappiano|voglia|vogliano|occorra|bisogni|basti|bastino|costi|costino|funzioni|funzionino|porti|portino|rischi|rischino|aiuti|aiutino|renda|rendano|cambi|migliori|paghi|paghino|spenda|spendano|includa|includano|metta|mettano|tenga|tengano|dia|diano|conosca|conoscano|legga|scelga|scelgano|piaccia|piacciano|parli|parlino|chieda|chiedano|prenda|prendano|\\p{L}{3,}(?:ino|isca|iscano|iamo|iate)|fosse|fossero|fossi|avesse|avessero|avessi|\\p{L}{2,}(?:asse|esse|isse|assero|essero|issero|assi|essi|issi))\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*È meglio che ci **concentriamo**…, bisogna che **scegliamo**…*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|dal momento che|infatti|in quanto)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché…*"
+          }
+        ]
+      },
+      "model": "Secondo me è meglio che ci concentriamo sui social, perché costano meno della pubblicità tradizionale.",
+      "followOk": "Sono d'accordo, mi sembra la soluzione più sensata.",
+      "followMiss": "Capisco. Io credo che sia meglio puntare sui social: costano meno e di solito funzionano bene."
+    },
+    {
+      "id": "t5",
+      "say": "Bene, allora proviamo con i social e gli influencer. Chi si occupa di che cosa? Ed entro quando?",
+      "en": "Good, so let's try social media and influencers. Who's taking care of what? And by when?",
+      "task": "Volunteer for a task (mi occupo io di…) and promise a deadline with the future (entro venerdì preparerò…).",
+      "hint": "Mi occupo io di…: entro venerdì preparerò…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Uses the future",
+            "anyOf": [
+              "\\b\\p{L}+(rò|rai|rà|remo|rete|ranno)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*preparerò, manderò, contatterò…*"
+          },
+          {
+            "label": "Gives a deadline (entro…, prima di…)",
+            "anyOf": [
+              "\\b(entro|prima di|prima del|prima della|non oltre|per lunedì|per martedì|per mercoledì|per giovedì|per venerdì|per fine mese|la prossima settimana|la settimana prossima)\\b"
+            ],
+            "min": 1,
+            "errorType": "preposition",
+            "conceptId": "B2-PREP-02",
+            "hint": "*entro venerdì…*"
+          }
+        ]
+      },
+      "model": "Mi occupo io della campagna sui social: entro venerdì preparerò una proposta con tutti i costi.",
+      "followOk": "Perfetto, grazie. Allora aspetto la tua proposta.",
+      "followMiss": "Va bene: allora tu ti occuperai dei social e mi manderai una proposta entro venerdì, d'accordo?"
+    }
+  ],
+  "closing": "Ottimo lavoro, ragazzi. Ci rivediamo la settimana prossima per fare il punto. Buona giornata!"
+}

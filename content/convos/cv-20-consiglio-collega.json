@@ -1,0 +1,215 @@
+{
+  "id": "CV-20",
+  "title": "Un consiglio da un collega",
+  "subtitle": "Asking for and giving advice at work: se fossi in te, ti consiglierei di, bisogna che + subjunctive.",
+  "level": "B2",
+  "theme": "Lavoro e studio",
+  "conceptIds": [
+    "B2-HYP-01",
+    "B2-COND-01",
+    "B2-SUBJ-01",
+    "B2-PRON-02",
+    "B2-FUT-01"
+  ],
+  "tutor": {
+    "name": "Paolo",
+    "avatar": "🧑‍💻",
+    "gender": "male",
+    "register": "informal"
+  },
+  "setting": "At the coffee machine at work you bump into Paolo, a colleague you get on with. Your boss keeps piling extra work on you, and Paolo has a dilemma of his own.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Ehi, ti vedo un po' giù. È successo qualcosa?",
+      "en": "Hey, you look a bit down. Has something happened?",
+      "task": "Explain your problem (too much work from the boss) and ask his advice with the conditional: tu che cosa faresti? / mi consiglieresti…?",
+      "hint": "Non proprio… Il capo mi dà troppo lavoro. Tu che cosa faresti al posto mio?",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Explains the problem",
+            "anyOf": [
+              "\\b(non riesco|troppo|troppa|troppi|troppe|il problema è|sono stanco|sono stanca|stressato|stressata|sono stufo|sono stufa|non ce la faccio|ho paura)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*Il capo mi dà troppo lavoro e non riesco…*"
+          },
+          {
+            "label": "Asks for advice with the conditional",
+            "anyOf": [
+              "\\b(mi consiglieresti|tu che cosa faresti|tu cosa faresti|che cosa faresti|cosa faresti|che faresti|mi daresti un consiglio|al posto mio|nei miei panni|mi consigli|che mi consigli|un consiglio)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Tu che cosa **faresti** al posto mio?*"
+          }
+        ]
+      },
+      "model": "Non proprio. Il capo mi dà sempre troppo lavoro e non riesco più a gestirlo. Tu che cosa faresti al posto mio?",
+      "followOk": "Mmh, ti capisco benissimo, ci sono passato anch'io. Fammi pensare un attimo.",
+      "followMiss": "Capisco, è una situazione pesante. Vuoi sapere che cosa farei io al posto tuo? Fammi pensare."
+    },
+    {
+      "id": "t2",
+      "say": "Se fossi in te, ne parlerei direttamente con lui. Ci hai già provato?",
+      "en": "If I were you, I'd talk to him about it directly. Have you already tried?",
+      "task": "Say you haven't tried yet, using ci (non ci ho ancora provato…), and explain why.",
+      "hint": "No, non ci ho ancora provato, perché…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Uses ci (ci ho provato / non ci ho ancora parlato)",
+            "anyOf": [
+              "\\b(non\\s+)?ci\\s+(ho|abbiamo|sono)\\b",
+              "\\bne\\s+(ho|abbiamo)\\s+(già\\s+|ancora\\s+|mai\\s+)?(parlato|discusso)\\b"
+            ],
+            "min": 1,
+            "errorType": "ci-ne",
+            "conceptId": "B2-PRON-02",
+            "hint": "*Non **ci** ho ancora provato.*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|dal momento che|infatti|in quanto)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché…*"
+          }
+        ]
+      },
+      "model": "No, non ci ho ancora provato, perché ho paura che si arrabbi.",
+      "followOk": "Lo capisco, ma secondo me è l'unica strada.",
+      "followMiss": "Capisco, non ci hai ancora provato. Però io ci proverei: secondo me è l'unica strada."
+    },
+    {
+      "id": "t3",
+      "say": "Senti, già che ci siamo, anch'io ho un dubbio. Mi hanno offerto un posto a Milano, ma dovrei trasferirmi. Tu che faresti?",
+      "en": "Listen, while we're at it, I've got a dilemma too. I've been offered a job in Milan, but I'd have to move. What would you do?",
+      "task": "Give advice with se fossi in te… + conditional.",
+      "hint": "Se fossi in te, …",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          {
+            "label": "Se fossi in te / al posto tuo",
+            "anyOf": [
+              "\\b(se fossi in te|se fossi al tuo posto|al posto tuo|nei tuoi panni|se io fossi te)\\b"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-HYP-01",
+            "hint": "*Se **fossi** in te…*"
+          },
+          {
+            "label": "Conditional in the main clause",
+            "anyOf": [
+              "\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-HYP-01",
+            "hint": "*…accetterei, rifiuterei, ci penserei…*"
+          }
+        ]
+      },
+      "model": "Se fossi in te, accetterei, perché è un'occasione che non capita spesso.",
+      "followOk": "Dici? Forse hai ragione, è un treno che non ripassa.",
+      "followMiss": "Mmh. Un amico mi ha detto: se fossi in te, accetterei senza pensarci. Forse ha ragione."
+    },
+    {
+      "id": "t4",
+      "say": "Il fatto è che mia moglie lavora qui e i bambini vanno a scuola. Come la vedi?",
+      "en": "The thing is, my wife works here and the kids go to school. How do you see it?",
+      "task": "Acknowledge the difficulty, then advise with ti consiglierei di… / dovresti… + infinitive.",
+      "hint": "Capisco, non è facile. Ti consiglierei di…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Acknowledges the difficulty",
+            "anyOf": [
+              "\\b(capisco|è vero|hai ragione|certo|immagino|è comprensibile|non è facile|è difficile|è complicato|è una bella)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "C1-INT-02",
+            "hint": "*Capisco, non è facile…*"
+          },
+          {
+            "label": "Ti consiglierei di… / dovresti…",
+            "anyOf": [
+              "\\b(ti consiglierei di|ti consiglio di|ti suggerirei di|ti suggerisco di|dovresti|potresti|faresti bene a|io proverei a|ti converrebbe)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Ti **consiglierei** di parlarne con…*"
+          }
+        ]
+      },
+      "model": "Capisco, non è facile. Ti consiglierei di parlarne con tua moglie e di valutare insieme i pro e i contro.",
+      "followOk": "Hai ragione, stasera ne parlo con lei.",
+      "followMiss": "Hai ragione, dovrei parlarne con lei prima di decidere. Stasera lo faccio."
+    },
+    {
+      "id": "t5",
+      "say": "E secondo te, che cosa bisognerebbe fare prima di prendere una decisione così importante?",
+      "en": "And in your view, what should be done before making such an important decision?",
+      "task": "Answer with bisogna che / è importante che + subjunctive.",
+      "hint": "Secondo me bisogna che tu…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Bisogna che / è importante che + subjunctive",
+            "anyOf": [
+              "\\b(è importante|è meglio|è fondamentale|è essenziale|è necessario|è giusto|non è giusto|è preferibile|è opportuno|bisogna|occorre|conviene|sarebbe meglio|sarebbe importante|sarebbe giusto|bisognerebbe|occorrerebbe|converrebbe)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}(sia|siano|abbia|abbiano|possa|possano|debba|debbano|vada|vadano|faccia|facciano|serva|servano|convenga|convengano|stia|stiano|venga|vengano|valga|valgano|sappia|sappiano|voglia|vogliano|occorra|bisogni|basti|bastino|costi|costino|funzioni|funzionino|porti|portino|rischi|rischino|aiuti|aiutino|renda|rendano|cambi|migliori|paghi|paghino|spenda|spendano|includa|includano|metta|mettano|tenga|tengano|dia|diano|conosca|conoscano|legga|scelga|scelgano|piaccia|piacciano|parli|parlino|chieda|chiedano|prenda|prendano|\\p{L}{3,}(?:ino|isca|iscano|iamo|iate)|fosse|fossero|fossi|avesse|avessero|avessi|\\p{L}{2,}(?:asse|esse|isse|assero|essero|issero|assi|essi|issi))\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Bisogna che tu **sappia**…, è importante che tua moglie **sia**…*"
+          }
+        ]
+      },
+      "model": "Secondo me bisogna che tu legga bene il contratto e che tua moglie sia d'accordo.",
+      "followOk": "Giusto. Prima voglio vedere bene il contratto.",
+      "followMiss": "Giusto: bisogna che io legga bene il contratto e che ne parli con mia moglie."
+    },
+    {
+      "id": "t6",
+      "say": "Grazie, mi hai aiutato tanto. E tu, alla fine, che cosa farai con il capo?",
+      "en": "Thanks, you've helped me a lot. And you, in the end, what are you going to do about the boss?",
+      "task": "Say what you'll do, with at least one verb in the future.",
+      "hint": "Domani gli chiederò…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          {
+            "label": "Uses the future",
+            "anyOf": [
+              "\\b\\p{L}+(rò|rai|rà|remo|rete|ranno)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*Gli chiederò, gli spiegherò…*"
+          }
+        ]
+      },
+      "model": "Domani gli chiederò un colloquio e gli spiegherò con calma la situazione.",
+      "followOk": "Ottimo! Poi fammi sapere com'è andata, mi raccomando.",
+      "followMiss": "Bene, allora domani gli parlerai con calma. Poi fammi sapere com'è andata!"
+    }
+  ],
+  "closing": "Dai, torniamo al lavoro prima che il capo ci veda! Grazie ancora per il consiglio."
+}
