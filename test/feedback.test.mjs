@@ -20,3 +20,7 @@ test("feedback becomes a pre-filled GitHub issue with context", () => {
   assert.equal(fb.kindOf("Can you add a dark mode for lessons?"), "idea");
   assert.equal(fb.kindOf("This Italian sounds unnatural"), "content");
 });
+
+test("answers that should be accepted count as content issues", () => {
+  assert.equal(fb.kindOf("My answer 'ho saputo' should also be accepted here"), "content");
+});
