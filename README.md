@@ -4,6 +4,10 @@ An adaptive Italian trainer for an English speaker at about B2 who is aiming for
 
 **Main mode, the path (Percorso):** 10 units in learning order (B2 consolidation, then C1). Each concept is a short lesson made of bite-size cards with quick checks, then a practice round (which also brings back earlier mistakes that are due), then a harder challenge. Each unit has games and a checkpoint at the end. Steps unlock in order, but you can start any step anyway or "jump ahead" by passing a unit checkpoint. XP, a daily goal and a streak keep track. The order lives in `content/path.json`.
 
+**Convos:** spoken conversations with a tutor (`content/convos/`). The tutor speaks, you answer out loud (or type). Each reply is scored on task (target structures), grammar (detectors for typical spoken mistakes, `js/core/speechcheck.js`), fluency (words per minute) and clarity (how confidently the recogniser understood you, a proxy for pronunciation). There is also a "repeat after me" drill. Mistakes go to the Error Bank.
+
+**Audio modes** (top-bar button): 🔇 silent, 🔊 questions and answers read aloud, 🎤 also answer by microphone (Chrome/Edge). Pick voices and test the microphone in Settings.
+
 **Ripasso:** retest due mistakes in new sentences, and review flashcards.
 
 **Esplora (free mode):** everything below, in any order:

@@ -50,6 +50,15 @@
     "vocab/core.json"
   ],
   "convos": [
-    "convos/cv-01-weekend.json"
+    "convos/cv-01-weekend.json",
+    "convos/cv-02-cercare-casa.json",
+    "convos/cv-03-dal-medico.json",
+    "convos/cv-04-viaggio.json",
+    "convos/cv-05-film.json",
+    "convos/cv-06-reclamo.json",
+    "convos/cv-07-colloquio.json",
+    "convos/cv-08-avresti-fatto.json",
+    "convos/cv-09-notizie.json",
+    "convos/cv-10-dibattito.json"
   ]
 }
