@@ -6,10 +6,10 @@ import * as speech from "../speech.js";
 import { bindMic } from "../mic.js";
 import { assessTurn, wordMatch, band } from "../core/speechcheck.js";
 
-const METER = [["taskScore", "Compito", "Did you do what was asked, with the target structures?"],
-  ["accuracy", "Correttezza", "Grammar mistakes typical of spoken Italian"],
-  ["fluency", "Fluidità", "Speaking speed and flow (voice answers only)"],
-  ["clarity", "Chiarezza", "How confidently the recogniser understood you: a proxy for pronunciation (voice answers only)"]];
+const METER = [["taskScore", "Compito", "Hai fatto quello che ti era chiesto, con le strutture richieste?"],
+  ["accuracy", "Correttezza", "Errori di grammatica tipici dell'italiano parlato"],
+  ["fluency", "Fluidità", "Velocità e scorrevolezza (solo risposte a voce)"],
+  ["clarity", "Chiarezza", "Quanto bene il riconoscimento vocale ti ha capito: un indizio della pronuncia (solo risposte a voce)"]];
 const THEMES = ["Vita quotidiana", "Lavoro e studio", "Società e attualità", "Cultura e tempo libero"];
 const pause = ms => new Promise(r => setTimeout(r, ms));
 
@@ -26,26 +26,26 @@ export async function render(view, ctx) {
     return `<a class="convo-card card3d" href="#/convo/${esc(cv.id)}">
       <div class="cc-top"><span class="cc-avatar">${cv.tutor.avatar || "🧑‍🏫"}</span><span class="chip ${cv.level === "C1" ? "warn" : "info"}">${esc(cv.level)}</span></div>
       <h3>${esc(cv.title)}</h3><p class="small muted">${esc(cv.subtitle)}</p>
-      <div class="c-meta"><span>with ${esc(cv.tutor.name)}</span><span>${cv.turns.length} exchanges</span>${r ? `<span class="ok-t">Best ${Math.round(r.best * 100)}%</span>` : ""}</div></a>`;
+      <div class="c-meta"><span>con ${esc(cv.tutor.name)}</span><span>${cv.turns.length} scambi</span>${r ? `<span class="ok-t">Record ${Math.round(r.best * 100)}%</span>` : ""}</div></a>`;
   };
   const groups = THEMES.map(t => [t, list.filter(c => (c.theme || "Vita quotidiana") === t)]).filter(([, l]) => l.length);
   view.replaceChildren(h(`<section class="page convo-list">
     <div class="hero card3d c-purple"><div class="hero-icon">🗣️</div>
-      <div><h1>Convos</h1><p>${all.length} conversations with a tutor. Press start, listen, and answer out loud: tap the mic, or hold it while you talk.</p></div></div>
-    ${!micOk ? `<div class="card notice">🎤 This browser can't recognise speech. Use Chrome or Edge to answer by voice. You can still type your replies.</div>` : ""}
+      <div><h1>Dialoghi</h1><p>${all.length} conversazioni con un tutor. Premi Inizia, ascolta e rispondi ad alta voce: tocca il microfono, o tienilo premuto mentre parli.</p></div></div>
+    ${!micOk ? `<div class="card notice">🎤 Questo browser non riconosce la voce. Usa Chrome o Edge per rispondere a voce. Puoi comunque scrivere le risposte.</div>` : ""}
     <div class="filter-chips">
-      ${["", "B2", "C1"].map(l => `<a class="fchip ${level === l ? "on" : ""}" href="#/convo?${new URLSearchParams({ ...(l ? { level: l } : {}), ...(theme ? { theme } : {}) })}">${l || "All levels"}</a>`).join("")}
+      ${["", "B2", "C1"].map(l => `<a class="fchip ${level === l ? "on" : ""}" href="#/convo?${new URLSearchParams({ ...(l ? { level: l } : {}), ...(theme ? { theme } : {}) })}">${l || "Tutti i livelli"}</a>`).join("")}
       <span class="sep"></span>
-      ${["", ...THEMES].map(t => `<a class="fchip ${theme === t ? "on" : ""}" href="#/convo?${new URLSearchParams({ ...(level ? { level } : {}), ...(t ? { theme: t } : {}) })}">${t || "All themes"}</a>`).join("")}
+      ${["", ...THEMES].map(t => `<a class="fchip ${theme === t ? "on" : ""}" href="#/convo?${new URLSearchParams({ ...(level ? { level } : {}), ...(t ? { theme: t } : {}) })}">${t || "Tutti i temi"}</a>`).join("")}
     </div>
-    ${groups.map(([t, l]) => `<h2>${esc(t)}</h2><div class="convo-grid">${l.map(card).join("")}</div>`).join("") || `<div class="card empty">No conversations match.</div>`}
+    ${groups.map(([t, l]) => `<h2>${esc(t)}</h2><div class="convo-grid">${l.map(card).join("")}</div>`).join("") || `<div class="card empty">Nessuna conversazione corrisponde.</div>`}
   </section>`));
 }
 
 async function play(view, ctx, id) {
   const { store, content } = ctx;
   const cv = (content.convos || []).find(c => c.id === id);
-  if (!cv) { view.replaceChildren(h(`<div class="page"><a class="back" href="#/convo">← Convos</a><div class="card">Conversation not found.</div></div>`)); return; }
+  if (!cv) { view.replaceChildren(h(`<div class="page"><a class="back" href="#/convo">← Dialoghi</a><div class="card">Conversazione non trovata.</div></div>`)); return; }
   const tutor = cv.tutor;
   const baseRate = cv.level === "C1" ? 1 : 0.92;
   const SPEEDS = [{ v: 0.8, icon: "🐢", label: "Lento" }, { v: 1, icon: "1×", label: "Normale" }, { v: 1.12, icon: "🐇", label: "Veloce" }];
@@ -56,12 +56,12 @@ async function play(view, ctx, id) {
 
   // 1. Start screen (the Start click also lets Chrome play audio)
   view.replaceChildren(h(`<section class="page narrow convo">
-    <a class="back" href="#/convo">← Convos</a>
+    <a class="back" href="#/convo">← Dialoghi</a>
     <div class="card3d convo-start">
       <span class="cc-avatar big">${tutor.avatar || "🧑‍🏫"}</span>
       <h1>${esc(cv.title)}</h1><p class="muted">${esc(cv.setting)}</p>
-      <p class="small">${cv.turns.length} exchanges with ${esc(tutor.name)} · ${esc(cv.level)}</p>
-      ${micOk ? `<p class="small muted">After ${esc(tutor.name)} speaks, just answer. You can also <b>hold the 🎤</b> while you talk and let go to send.</p>` : `<p class="small muted">You'll type your answers${speech.isSilent() ? " (silent mode is on)" : ""}.</p>`}
+      <p class="small">${cv.turns.length} scambi con ${esc(tutor.name)} · ${esc(cv.level)}</p>
+      ${micOk ? `<p class="small muted">Quando ${esc(tutor.name)} ha finito di parlare, rispondi e basta. Puoi anche <b>tenere premuto il 🎤</b> mentre parli e lasciarlo per inviare.</p>` : `<p class="small muted">Scriverai le risposte${speech.isSilent() ? " (la modalità muta è attiva)" : ""}.</p>`}
       <button class="btn3d primary big" data-start>▶ Inizia</button>
     </div></section>`));
   await new Promise(res => { view.querySelector("[data-start]").onclick = res; });
@@ -69,18 +69,18 @@ async function play(view, ctx, id) {
 
   // 2. Conversation screen: chat + bottom dock
   view.replaceChildren(h(`<section class="page narrow convo live">
-    <div class="convo-bar"><a class="back" href="#/convo">← Convos</a><b>${esc(cv.title)}</b><span class="turn-count small muted"></span></div>
+    <div class="convo-bar"><a class="back" href="#/convo">← Dialoghi</a><b>${esc(cv.title)}</b><span class="turn-count small muted"></span></div>
     <div class="chat" id="chat"></div>
     <div class="dock card3d">
-      <div class="dock-task"><span class="chip">Your turn</span> <span class="task-text"></span> <details class="hint"><summary>Hint</summary><span class="it hint-text"></span></details></div>
+      <div class="dock-task"><span class="chip">Tocca a te</span> <span class="task-text"></span> <details class="hint"><summary>Suggerimento</summary><span class="it hint-text"></span></details></div>
       <div class="dock-row">
-        <button class="dock-btn" data-replay title="Hear it again">🔁</button>
-        ${micOk ? `<button class="mic-big" aria-label="Speak (tap, or hold while you talk)">🎤</button>` : ""}
-        <button class="dock-btn" data-type title="Type instead">⌨️</button>
+        <button class="dock-btn" data-replay title="Riascolta">🔁</button>
+        ${micOk ? `<button class="mic-big" aria-label="Parla (tocca, o tieni premuto mentre parli)">🎤</button>` : ""}
+        <button class="dock-btn" data-type title="Scrivi invece di parlare">⌨️</button>
       </div>
       <div class="dock-opts"><button class="opt-btn" data-speed></button><button class="opt-btn" data-hide></button></div>
       <div class="live-transcript" hidden><span class="lt-dot"></span><span class="lt-text"></span></div>
-      <div class="type-row" ${micOk ? "hidden" : ""}><input type="text" class="it" placeholder="Scrivi la tua risposta…"><button class="btn3d primary small" data-send>Send</button></div>
+      <div class="type-row" ${micOk ? "hidden" : ""}><input type="text" class="it" placeholder="Scrivi la tua risposta…"><button class="btn3d primary small" data-send>Invia</button></div>
     </div>
   </section>`));
   const chat = view.querySelector("#chat"), dock = view.querySelector(".dock");
@@ -99,17 +99,19 @@ async function play(view, ctx, id) {
   };
   paintOpts();
   speedBtn.onclick = async () => { const i = SPEEDS.findIndex(x => x.v === speed); speed = SPEEDS[(i + 1) % SPEEDS.length].v; rate = baseRate * speed; paintOpts(); await store.setSetting("convoSpeed", speed); };
-  hideBtn.onclick = async () => { hideText = !hideText; paintOpts(); chat.querySelectorAll(".bubble.veiled").forEach(b => b.classList.toggle("veiled", hideText)); await store.setSetting("convoHideText", hideText); };
-  const unveil = () => chat.querySelectorAll(".bubble.veiled").forEach(b => b.classList.remove("veiled"));
+  hideBtn.onclick = async () => { hideText = !hideText; paintOpts(); const canVeil = speech.canSpeak() && !speech.isSilent(); pending.forEach(b => b.classList.toggle("veiled", hideText && canVeil)); await store.setSetting("convoHideText", hideText); };
+  let pending = [];                                      // tutor lines since your last reply
+  const unveil = () => { pending.forEach(b => b.classList.remove("veiled")); pending = []; };
   let lastLine = "";
   const scrollDown = () => chat.lastElementChild?.scrollIntoView({ behavior: "smooth", block: "end" });
   const tutorSays = async (text, en) => {
     if (!text || !alive()) return;
     lastLine = text;
     const b = h(`<div class="bubble-row"><span class="avatar">${tutor.avatar || "🧑‍🏫"}</span><div class="bubble${hideText && speech.canSpeak() && !speech.isSilent() ? " veiled" : ""}"><b class="who">${esc(tutor.name)}</b>
-      <span class="veil-note small">🎧 Ascolta… (tocca per vedere il testo)</span><span class="it">${esc(text)}</span>${en ? `<details class="gloss"><summary>English</summary>${esc(en)}</details>` : ""}
-      <button class="say-mini" title="Listen again">🔊</button></div></div>`);
+      <span class="veil-note small">🎧 Ascolta… (tocca per vedere il testo)</span><span class="it">${esc(text)}</span>${en ? `<details class="gloss"><summary>Inglese</summary>${esc(en)}</details>` : ""}
+      <button class="say-mini" title="Riascolta">🔊</button></div></div>`);
     chat.append(b); scrollDown();
+    pending.push(b.querySelector(".bubble"));
     b.querySelector(".veil-note").onclick = () => b.querySelector(".bubble").classList.remove("veiled");
     b.querySelector(".say-mini").onclick = () => { speech.stopListening(); speech.say(text, { rate }); };
     dock.classList.add("tutor-talking");
@@ -126,7 +128,7 @@ async function play(view, ctx, id) {
     const r = await speech.listen({ onInterim: t => alive() && setLive(t || "Ti ascolto…", "listening"), onStatus: st => alive() && setLive(speech.MIC_STATUS[st], st === "listening" ? "listening" : "warn"), silenceMs: 1600, maxMs: 25000 });
     mic.classList.remove("on");
     if (!alive() || !deliver) return;
-    if (r.error) { setLive(r.error === "no-speech" ? "Tocca o tieni premuto 🎤 quando vuoi rispondere." : (speech.MIC_HELP[r.error] || "Didn't catch that."), "warn"); return; }
+    if (r.error) { setLive(r.error === "no-speech" ? "Tocca o tieni premuto 🎤 quando vuoi rispondere." : (speech.MIC_HELP[r.error] || "Non ho capito."), "warn"); return; }
     setLive("");
     deliver({ text: r.text, confidence: r.confidence, speechMs: r.speechMs, byVoice: true });
   }
@@ -180,27 +182,27 @@ function meBubble(text, a, turn, byVoice) {
   const issues = a.grammar.length + a.task.checks.filter(c => !c.ok).length + (a.task.lengthOk ? 0 : 1);
   const el = h(`<div class="bubble-row mine"><div class="bubble">
     <span class="it">${esc(text)}</span>
-    <details class="mini-assess ${tone}"><summary><span class="dot"></span>${a.score >= 0.85 ? "Ottimo" : a.score >= 0.6 ? "Buono" : "Da migliorare"}${issues ? ` · ${issues} to improve` : ""}</summary>
+    <details class="mini-assess ${tone}"><summary><span class="dot"></span>${a.score >= 0.85 ? "Ottimo" : a.score >= 0.6 ? "Buono" : "Da migliorare"}${issues ? ` · ${issues} da migliorare` : ""}</summary>
       ${meters(a)}
       ${a.grammar.map(g => `<div class="fix"><span class="wrong it">✗ ${esc(g.said)}</span>${g.fixed ? `<span class="right it">✓ ${esc(g.fixed)}</span>` : ""}<p class="small">${md(g.why)}</p></div>`).join("")}
       ${a.task.checks.filter(c => !c.ok).map(c => `<p class="small">• ${esc(c.label)}${c.hint ? `: ${md(c.hint)}` : ""}</p>`).join("")}
-      ${!a.task.lengthOk ? `<p class="small">• Say a bit more next time (${turn.expect.minWords}+ words).</p>` : ""}
+      ${!a.task.lengthOk ? `<p class="small">• La prossima volta di' qualcosa in più (${turn.expect.minWords}+ parole).</p>` : ""}
       <div class="model"><b class="small">Come lo direbbe un italiano</b><p class="it">${esc(turn.model)}</p>
-        <button class="btn small" data-hear>🔊 Ascolta</button>${speech.hasRecognition() && !speech.isSilent() ? `<button class="btn small" data-repeat>🔁 Repeat after me</button>` : ""}
+        <button class="btn small" data-hear>🔊 Ascolta</button>${speech.hasRecognition() && !speech.isSilent() ? `<button class="btn small" data-repeat>🔁 Ripeti dopo di me</button>` : ""}
         <div class="repeat-out small" hidden></div></div>
-      <p class="small muted">${byVoice ? `${a.words} words · ${a.wpm} words/min` : `${a.words} words · typed`}</p>
+      <p class="small muted">${byVoice ? `${a.words} parole · ${a.wpm} parole/min` : `${a.words} parole · scritte`}</p>
     </details></div></div>`);
   el.querySelector("[data-hear]").onclick = () => { speech.stopListening(); speech.say(turn.model, { rate: 0.9 }); };
   el.querySelector("[data-repeat]")?.addEventListener("click", async e => {
     const out = el.querySelector(".repeat-out"); out.hidden = false;
     speech.stopListening();
     await speech.say(turn.model, { rate: 0.9 });
-    e.target.disabled = true; out.textContent = "Now you: repeat the sentence…";
+    e.target.disabled = true; out.textContent = "Ora tu: ripeti la frase…";
     const r = await speech.listen({ onInterim: t => (out.textContent = "🎤 " + t), onStatus: st => (out.textContent = speech.MIC_STATUS[st]) });
     e.target.disabled = false;
-    if (r.error) { out.textContent = speech.MIC_HELP[r.error] || "Didn't catch that."; return; }
+    if (r.error) { out.textContent = speech.MIC_HELP[r.error] || "Non ho capito."; return; }
     const m = wordMatch(turn.model, r.text);
-    out.innerHTML = `<b class="${m.score >= 0.9 ? "ok-t" : m.score >= 0.7 ? "" : "bad-t"}">${Math.round(m.score * 100)}% understood</b> · I heard: “${esc(r.text)}”${m.missed.length ? `<br>Not caught: <span class="it">${m.missed.map(esc).join(", ")}</span>` : " Perfetto!"}`;
+    out.innerHTML = `<b class="${m.score >= 0.9 ? "ok-t" : m.score >= 0.7 ? "" : "bad-t"}">${Math.round(m.score * 100)}% capito</b> · Ho sentito: “${esc(r.text)}”${m.missed.length ? `<br>Non capito: <span class="it">${m.missed.map(esc).join(", ")}</span>` : " Perfetto!"}`;
   });
   return el;
 }
@@ -246,10 +248,10 @@ async function finish(chat, store, cv, scores) {
     <div class="end-badge">🗣️</div><h2>${total >= 0.8 ? "Bravissimo!" : total >= 0.6 ? "Bella conversazione!" : "Buon allenamento!"}</h2>
     <div class="big-score ${total >= 0.8 ? "ok" : total >= 0.6 ? "warn" : "bad"}">${Math.round(total * 100)}%</div>
     ${meters(overall)}
-    ${fixes.length ? `<div class="fixes left"><h4>To work on</h4>${fixes.map(g => `<div class="fix"><span class="wrong it">✗ ${esc(g.said)}</span>${g.fixed ? `<span class="right it">✓ ${esc(g.fixed)}</span>` : ""}</div>`).join("")}<p class="small muted">These are now in your Error Bank and will come back as exercises.</p></div>` : `<p>No grammar slips detected. Great!</p>`}
+    ${fixes.length ? `<div class="fixes left"><h4>Da migliorare</h4>${fixes.map(g => `<div class="fix"><span class="wrong it">✗ ${esc(g.said)}</span>${g.fixed ? `<span class="right it">✓ ${esc(g.fixed)}</span>` : ""}</div>`).join("")}<p class="small muted">Ora sono nella tua Banca degli errori e torneranno come esercizi.</p></div>` : `<p>Nessun errore di grammatica. Ottimo!</p>`}
     <p class="xp-earned">⭐ +${xp} XP</p>
-    <div class="row-actions">${next ? `<a class="btn3d primary" href="#/convo/${esc(next.id)}">Next: ${esc(next.title)}</a>` : ""}<a class="btn3d ghost" href="#/convo">All conversations</a></div>
+    <div class="row-actions">${next ? `<a class="btn3d primary" href="#/convo/${esc(next.id)}">Prossima: ${esc(next.title)}</a>` : ""}<a class="btn3d ghost" href="#/convo">Tutte le conversazioni</a></div>
   </div>`);
   chat.append(el); el.scrollIntoView({ behavior: "smooth", block: "start" });
-  toast(`Conversation saved · +${xp} XP`);
+  toast(`Conversazione salvata · +${xp} XP`);
 }

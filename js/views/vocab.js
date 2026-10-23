@@ -2,7 +2,7 @@
 import { h, esc, md, toast, fmtRel, runExercise, confirmDialog } from "../ui.js";
 import * as speech from "../speech.js";
 
-const SOURCES = { seed: "Library", lesson: "Saved from lessons", error: "From my mistakes", import: "Google Translate", manual: "Added by me" };
+const SOURCES = { seed: "Biblioteca", lesson: "Salvate dalle lezioni", error: "Dai miei errori", import: "Google Translate", manual: "Aggiunte da me" };
 
 export async function render(view, ctx) {
   if (ctx.params[0] === "review") return reviewSession(view, ctx);
@@ -15,19 +15,19 @@ export async function render(view, ctx) {
   const tags = [...new Set(all.flatMap(v => v.tags || []))].sort();
 
   view.replaceChildren(h(`<section class="page vocab">
-    <div class="page-head"><div><h1>Vocabulary</h1><p class="muted">${seed.length} entries in the library, ${deck.size} in your review deck. Words come from lessons, your mistakes and your Google Translate history.</p></div>
-      <div class="head-actions"><a class="btn primary ${due.length ? "" : "disabled"}" href="#/vocab/review">Review due (${due.length})</a>
-      <a class="btn" href="#/vocab/review?all=1">Practise my deck</a><button class="btn ghost" id="addBtn">+ Add word</button></div></div>
+    <div class="page-head"><div><h1>Vocabolario</h1><p class="muted">${seed.length} voci nella biblioteca, ${deck.size} nel tuo mazzo di ripasso. Le parole vengono dalle lezioni, dai tuoi errori e dalla cronologia di Google Translate.</p></div>
+      <div class="head-actions"><a class="btn primary ${due.length ? "" : "disabled"}" href="#/vocab/review">Ripassa ora (${due.length})</a>
+      <a class="btn" href="#/vocab/review?all=1">Esercitati con il mazzo</a><button class="btn ghost" id="addBtn">+ Aggiungi parola</button></div></div>
     <form class="card add-form" id="addForm" hidden>
-      <div class="grid2"><input type="text" name="it" placeholder="Italiano (e.g. prendere atto di)" required class="it"><input type="text" name="en" placeholder="English meaning" required></div>
-      <input type="text" name="ex" placeholder="Example sentence (optional)" class="it">
-      <div class="row-actions"><button class="btn primary">Save to my deck</button></div></form>
+      <div class="grid2"><input type="text" name="it" placeholder="Italiano (es. prendere atto di)" required class="it"><input type="text" name="en" placeholder="Significato in inglese" required></div>
+      <input type="text" name="ex" placeholder="Frase d'esempio (facoltativa)" class="it">
+      <div class="row-actions"><button class="btn primary">Salva nel mazzo</button></div></form>
     <div class="filters card">
-      <input type="search" id="q" placeholder="Search Italian, English, examples…" value="${esc(query.q || "")}">
-      <select id="fSrc"><option value="">All sources</option><option value="deck">In my deck</option>${Object.entries(SOURCES).map(([k, v]) => `<option value="${k}">${v}</option>`).join("")}</select>
-      <select id="fPos"><option value="">Any type</option>${["noun", "verb", "adj", "adv", "expr", "idiom", "conn", "prep"].map(p => `<option>${p}</option>`).join("")}</select>
-      <select id="fReg"><option value="">Any register</option><option>informal</option><option>neutral</option><option>formal</option></select>
-      <select id="fTag"><option value="">Any tag</option>${tags.map(t => `<option>${esc(t)}</option>`).join("")}</select>
+      <input type="search" id="q" placeholder="Cerca in italiano, inglese, esempi…" value="${esc(query.q || "")}">
+      <select id="fSrc"><option value="">Tutte le fonti</option><option value="deck">Nel mio mazzo</option>${Object.entries(SOURCES).map(([k, v]) => `<option value="${k}">${v}</option>`).join("")}</select>
+      <select id="fPos"><option value="">Qualsiasi tipo</option>${["noun", "verb", "adj", "adv", "expr", "idiom", "conn", "prep"].map(p => `<option>${p}</option>`).join("")}</select>
+      <select id="fReg"><option value="">Qualsiasi registro</option><option>informal</option><option>neutral</option><option>formal</option></select>
+      <select id="fTag"><option value="">Qualsiasi etichetta</option>${tags.map(t => `<option>${esc(t)}</option>`).join("")}</select>
     </div>
     <div id="list" class="vocab-list"></div>
   </section>`));
@@ -37,22 +37,22 @@ export async function render(view, ctx) {
     e.preventDefault();
     const f = new FormData(e.target);
     await store.saveVocab({ it: f.get("it").trim(), en: f.get("en").trim(), pos: "expr", source: "manual", examples: f.get("ex") ? [{ it: f.get("ex"), en: "" }] : [] });
-    toast("Added to your deck"); render(view, ctx);
+    toast("Aggiunta al mazzo"); render(view, ctx);
   };
   const paint = () => {
     const q = $("#q").value.trim().toLowerCase(), src = $("#fSrc").value, pos = $("#fPos").value, reg = $("#fReg").value, tag = $("#fTag").value;
     const list = all.filter(v => (!q || [v.it, v.en, v.def, ...(v.examples || []).map(x => x.it + " " + x.en), ...(v.collocations || [])].join(" ").toLowerCase().includes(q))
       && (!src || (src === "deck" ? deck.has(v.id) : (v.source === src || (v.sources || []).includes(src))))
       && (!pos || v.pos === pos) && (!reg || v.register === reg) && (!tag || (v.tags || []).includes(tag)));
-    $("#list").replaceChildren(h(list.length ? `<div>${list.slice(0, 200).map(v => card(v, deck.get(v.id), content, now)).join("")}${list.length > 200 ? `<p class="muted small">Showing 200 of ${list.length}. Refine your search.</p>` : ""}</div>` : `<div class="card empty">Nothing matches.</div>`));
+    $("#list").replaceChildren(h(list.length ? `<div>${list.slice(0, 200).map(v => card(v, deck.get(v.id), content, now)).join("")}${list.length > 200 ? `<p class="muted small">Ne vedi 200 su ${list.length}. Affina la ricerca.</p>` : ""}</div>` : `<div class="card empty">Nessun risultato.</div>`));
   };
   view.querySelectorAll(".filters input, .filters select").forEach(el => el.addEventListener("input", paint));
   view.addEventListener("click", async e => {
     const b = e.target.closest("[data-act]"); if (!b) return;
     const id = b.closest("[data-id]").dataset.id;
     if (b.dataset.act === "say") speech.say(b.dataset.text);
-    if (b.dataset.act === "add") { const v = all.find(x => x.id === id); await store.saveVocab({ ...v, source: "seed" }); b.outerHTML = `<span class="chip ok">In deck</span>`; deck.set(id, v); }
-    if (b.dataset.act === "del") { if (!(await confirmDialog({ title: "Remove from your deck?", ok: "Remove", cancel: "Keep", danger: true }))) return; await store.deleteVocab(id); deck.delete(id); toast("Removed"); paint(); }
+    if (b.dataset.act === "add") { const v = all.find(x => x.id === id); await store.saveVocab({ ...v, source: "seed" }); b.outerHTML = `<span class="chip ok">Nel mazzo</span>`; deck.set(id, v); }
+    if (b.dataset.act === "del") { if (!(await confirmDialog({ title: "Vuoi toglierla dal mazzo?", ok: "Togli", cancel: "Tieni", danger: true }))) return; await store.deleteVocab(id); deck.delete(id); toast("Tolta dal mazzo"); paint(); }
   });
   paint();
 }
@@ -69,8 +69,8 @@ function card(v, inDeck, content, now) {
       ${v.register ? `<span class="chip">${esc(v.register)}</span>` : ""}${v.pos ? `<span class="chip">${esc(v.pos)}</span>` : ""}
       <span class="muted">${esc(SOURCES[v.source] || v.source || "")}</span>
       ${(v.conceptIds || []).filter(c => content.concepts.has(c) && !["VOCAB", "MY-PHRASES"].includes(c)).slice(0, 2).map(c => `<a href="#/learn/${esc(c)}" class="cid">${esc(c)}</a>`).join(" ")}
-      ${inDeck ? `<span class="${inDeck.card.due <= now ? "bad-t" : "ok-t"}">${inDeck.card.due <= now ? "due now" : "next " + fmtRel(inDeck.card.due, now)}</span><button class="linkish small" data-act="del">remove</button>`
-        : `<button class="btn small" data-act="add">+ Deck</button>`}
+      ${inDeck ? `<span class="${inDeck.card.due <= now ? "bad-t" : "ok-t"}">${inDeck.card.due <= now ? "da ripassare" : "prossimo ripasso " + fmtRel(inDeck.card.due, now)}</span><button class="linkish small" data-act="del">togli</button>`
+        : `<button class="btn small" data-act="add">+ Mazzo</button>`}
     </div></div>`;
 }
 
@@ -82,10 +82,10 @@ async function reviewSession(view, ctx) {
   const due = cards.filter(v => v.card.due <= now).sort((a, b) => a.card.due - b.card.due);
   const list = (query.all || query.source ? (due.length ? due : cards.sort(() => Math.random() - 0.5)) : due).slice(0, 20);
   view.replaceChildren(h(`<section class="page narrow">
-    <a class="back" href="#/vocab">← Vocabulary</a>
+    <a class="back" href="#/vocab">← Vocabolario</a>
     ${list.length ? `<div class="session-bar"><span class="sb-title">Flashcards</span><div class="progress-dots">${list.map(() => "<span></span>").join("")}</div><span class="sb-count"></span></div>
-    <div class="card dir-toggle small"><label class="toggle"><input type="radio" name="dir" value="en-it" checked> English → type the Italian</label>
-      <label class="toggle"><input type="radio" name="dir" value="it-en"> Italian → recall the meaning</label></div>` : `<div class="card empty"><h2>Nothing due</h2><p>Your deck is up to date. Add words from the library or your Google Translate history.</p><a class="btn primary" href="#/vocab">Browse the library</a></div>`}
+    <div class="card dir-toggle small"><label class="toggle"><input type="radio" name="dir" value="en-it" checked> Inglese → scrivi l'italiano</label>
+      <label class="toggle"><input type="radio" name="dir" value="it-en"> Italiano → ricorda il significato</label></div>` : `<div class="card empty"><h2>Niente da ripassare</h2><p>Il tuo mazzo è in pari. Aggiungi parole dalla biblioteca o dalla cronologia di Google Translate.</p><a class="btn primary" href="#/vocab">Sfoglia la biblioteca</a></div>`}
     <div id="ex"></div></section>`));
   if (!list.length) return;
   const host = view.querySelector("#ex"), dots = view.querySelectorAll(".progress-dots span");
@@ -97,8 +97,8 @@ async function reviewSession(view, ctx) {
     dots[i].className = grade >= 3 ? "ok" : "bad";
     await store.reviewVocab(v.id, grade);
   }
-  host.replaceChildren(h(`<div class="card summary"><div class="big-score ok">Fatto!</div><p>${list.length} cards reviewed. They'll come back when they're due.</p>
-    <div class="row-actions"><a class="btn primary" href="#/vocab">Back to Vocabulary</a></div></div>`));
+  host.replaceChildren(h(`<div class="card summary"><div class="big-score ok">Fatto!</div><p>${list.length} carte ripassate. Torneranno quando sarà il momento.</p>
+    <div class="row-actions"><a class="btn primary" href="#/vocab">Torna al vocabolario</a></div></div>`));
 }
 
 // Typed recall goes through the normal answer checker, so mistakes reach the Error Bank as well.
@@ -114,10 +114,10 @@ async function typed(host, v, store, content) {
 function recall(host, v) {
   return new Promise(res => {
     host.replaceChildren(h(`<div class="card flash"><div class="it big-word">${esc(v.it)}</div>
-      <button class="btn primary" data-show>Show meaning</button><div class="back-side" hidden><p class="v-en">${esc(v.en)}</p>
+      <button class="btn primary" data-show>Mostra il significato</button><div class="back-side" hidden><p class="v-en">${esc(v.en)}</p>
       ${(v.examples || []).slice(0, 1).map(x => `<p class="it small">${md(x.it)}</p>`).join("")}
-      <p class="small muted">How well did you know it?</p>
-      <div class="row-actions"><button class="btn" data-g="0">Didn't know</button><button class="btn" data-g="3">Hard</button><button class="btn primary" data-g="4">Good</button><button class="btn" data-g="5">Easy</button></div></div></div>`));
+      <p class="small muted">Quanto bene la sapevi?</p>
+      <div class="row-actions"><button class="btn" data-g="0">Non la sapevo</button><button class="btn" data-g="3">Difficile</button><button class="btn primary" data-g="4">Bene</button><button class="btn" data-g="5">Facile</button></div></div></div>`));
     const c = host.querySelector(".flash");
     c.querySelector("[data-show]").onclick = e => { e.target.hidden = true; c.querySelector(".back-side").hidden = false; };
     c.addEventListener("click", e => { const b = e.target.closest("[data-g]"); if (b) res(Number(b.dataset.g)); });

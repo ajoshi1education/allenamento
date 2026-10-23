@@ -27,20 +27,20 @@ export async function render(view, { store, content }) {
       <td>${pool.length} <span class="small muted">${esc(types.join(", "))}</span></td>
       <td>${games.length ? games.map(g => `<a href="#/play/${esc(g)}">${esc(g)}</a>`).join(" ") : "–"}</td>
       <td>${c ? (c.assessment || []).length : "–"}</td>
-      <td>${p ? esc(p.status) : "new"}${open ? ` <span class="bad-t small">${open} open</span>` : ""}</td>
-      <td>${ok ? "✓" : c ? "⚠" : "planned"}</td></tr>`;
+      <td>${p ? esc(p.status) : "new"}${open ? ` <span class="bad-t small">${open} aperti</span>` : ""}</td>
+      <td>${ok ? "✓" : c ? "⚠" : "in programma"}</td></tr>`;
   }));
   view.replaceChildren(h(`<section class="page">
-    <a class="back" href="#/learn">← Learn</a>
-    <h1>Curriculum coverage</h1>
+    <a class="back" href="#/learn">← Lezioni</a>
+    <h1>Copertura del programma</h1>
     <p class="muted">Every concept has a unique id linked to its lesson, exercises, games and assessment criteria. ✓ means complete (a lesson, at least 8 exercises, a game and criteria).</p>
     <div class="stat-row">
-      <div class="stat card"><b>${built}/${planned}</b><span>concepts built</span></div>
-      <div class="stat card"><b>${content.items.size}</b><span>exercises</span></div>
-      <div class="stat card"><b>${content.games.size}</b><span>games</span></div>
-      <div class="stat card"><b>${practised}</b><span>concepts practised</span></div>
-      <div class="stat card ok"><b>${mastered}</b><span>mastered or known</span></div>
+      <div class="stat card"><b>${built}/${planned}</b><span>argomenti pronti</span></div>
+      <div class="stat card"><b>${content.items.size}</b><span>esercizi</span></div>
+      <div class="stat card"><b>${content.games.size}</b><span>giochi</span></div>
+      <div class="stat card"><b>${practised}</b><span>argomenti esercitati</span></div>
+      <div class="stat card ok"><b>${mastered}</b><span>padroneggiati o già noti</span></div>
     </div>
-    <div class="card table-wrap"><table class="coverage-table"><thead><tr><th>ID</th><th>Concept</th><th>Unit</th><th>CEFR</th><th>Lesson</th><th>Exercises</th><th>Games</th><th>Criteria</th><th>You</th><th></th></tr></thead>
+    <div class="card table-wrap"><table class="coverage-table"><thead><tr><th>ID</th><th>Argomento</th><th>Unità</th><th>QCER</th><th>Lezione</th><th>Esercizi</th><th>Giochi</th><th>Criteri</th><th>Tu</th><th></th></tr></thead>
     <tbody>${rows.join("")}</tbody></table></div></section>`));
 }

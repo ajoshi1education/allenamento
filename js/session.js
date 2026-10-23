@@ -19,7 +19,7 @@ function startSession(plan, { store, nodeId, kind, accent = "green", onFinish })
     const total = plan.steps.length;
     const ov = h(`<div class="session-overlay accent-${accent}" role="dialog" aria-label="${esc(plan.title)}">
       <header class="session-top">
-        <button class="icon-x" aria-label="Exit" data-exit>✕</button>
+        <button class="icon-x" aria-label="Esci" data-exit>✕</button>
         <div class="session-progress"><span></span></div>
         <div class="combo" hidden>🔥 <b>0</b></div>
       </header>
@@ -38,7 +38,7 @@ function startSession(plan, { store, nodeId, kind, accent = "green", onFinish })
       if (asking || exited) return;
       if (i > 0 && i < total) {
         asking = true;
-        const leave = await confirmDialog({ title: "Leave this session?", text: "Your answers so far are saved in the Error Bank, but this step won't be marked complete.", ok: "Leave", cancel: "Keep going", danger: true });
+        const leave = await confirmDialog({ title: "Vuoi uscire dalla sessione?", text: "Le risposte date finora restano nella Banca degli errori, ma questo passo non risulterà completato.", ok: "Esci", cancel: "Continua", danger: true });
         asking = false;
         if (!leave) return;
       }
@@ -60,7 +60,7 @@ function startSession(plan, { store, nodeId, kind, accent = "green", onFinish })
         else {
           const { result, outcome } = await runExercise(stage, step.item, {
             store, footer, source: nodeId ? "path:" + nodeId : "session", mode: step.retestOf ? "retest" : "path", retestOf: step.retestOf,
-            silent: speech.isSilent(), banner: step.tag ? `🔁 ${esc(step.tag)}: one of your earlier mistakes, in a new sentence` : ""
+            silent: speech.isSilent(), banner: step.tag ? `🔁 ${esc(step.tag)}: un tuo errore di prima, in una frase nuova` : ""
           });
           if (exited) return;
           graded++;
@@ -97,9 +97,9 @@ function showCard(stage, footer, step) {
     html = `<div class="lcard"><div class="lc-kicker">Regola ${step.index + 1} di ${step.of}</div><h2>${md(r.title)}</h2><p>${md(r.text)}</p>
       ${r.table ? `<div class="table-wrap"><table class="forms"><thead><tr>${r.table.head.map(x => `<th>${esc(x)}</th>`).join("")}</tr></thead>
         <tbody>${r.table.rows.map(row => `<tr>${row.map((x, k) => (k ? `<td class="it">${esc(x)}</td>` : `<th>${esc(x)}</th>`)).join("")}</tr>`).join("")}</tbody></table></div>` : ""}
-      ${(r.examples || []).map(e => `<div class="ex-line"><div><div class="it">${md(e.it)}</div><div class="en">${esc(e.en)}</div></div>${speech.canSpeak() ? `<button class="say-btn" data-say="${esc(e.it.replace(/\*/g, ""))}" aria-label="Listen">🔊</button>` : ""}</div>`).join("")}</div>`;
+      ${(r.examples || []).map(e => `<div class="ex-line"><div><div class="it">${md(e.it)}</div><div class="en">${esc(e.en)}</div></div>${speech.canSpeak() ? `<button class="say-btn" data-say="${esc(e.it.replace(/\*/g, ""))}" aria-label="Ascolta">🔊</button>` : ""}</div>`).join("")}</div>`;
   } else if (step.card === "mistakes") {
-    html = `<div class="lcard"><div class="lc-kicker">Occhio!</div><h2>Common mistakes</h2>
+    html = `<div class="lcard"><div class="lc-kicker">Occhio!</div><h2>Errori comuni</h2>
       ${c.lesson.mistakes.map(m => `<div class="mistake-card"><div class="wrong it">✗ ${md(m.wrong)}</div><div class="right it">✓ ${md(m.right)}</div><p>${md(m.why)}</p></div>`).join("")}
       ${(c.lesson.tips || []).length ? `<div class="tip">💡 ${md(c.lesson.tips[0])}</div>` : ""}</div>`;
   } else if (step.card === "html") {
@@ -135,7 +135,7 @@ function endScreen(stage, footer, { plan, correct, graded, saved, xp, passed }) 
       <div class="es ${acc >= 80 ? "green" : acc >= 50 ? "orange" : "red"}"><span>Precisione</span><b>${acc}%</b></div>
       <div class="es blue"><span>Esercizi</span><b>${correct}/${graded}</b></div>
     </div>
-    ${saved ? `<p class="small muted">${saved} mistake${saved > 1 ? "s" : ""} saved to your Error Bank. They'll come back in new sentences.</p>` : ""}
+    ${saved ? `<p class="small muted">${saved} ${saved > 1 ? "errori salvati" : "errore salvato"} nella Banca degli errori. ${saved > 1 ? "Torneranno" : "Tornerà"} in frasi nuove.</p>` : ""}
   </div>`));
   footer.className = "session-footer";
   footer.replaceChildren(h(`<div class="footer-row"><span class="grow"></span><button class="btn3d primary big" data-next>Continua</button></div>`));

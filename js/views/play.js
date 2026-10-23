@@ -2,14 +2,14 @@
 import { h, esc } from "../ui.js";
 
 export const ENGINES = {
-  detective: { label: "Detective case", icon: "🕵️", load: () => import("../games/detective.js") },
-  dialogue: { label: "Conversation", icon: "💬", load: () => import("../games/dialogue.js") },
-  gauntlet: { label: "Grammar gauntlet", icon: "⏱️", load: () => import("../games/gauntlet.js") },
-  builder: { label: "Sentence builder", icon: "🧩", load: () => import("../games/gauntlet.js") },
-  duel: { label: "Translation duel", icon: "⚔️", load: () => import("../games/gauntlet.js") },
-  reading: { label: "Reading", icon: "📰", load: () => import("../games/reading.js") },
-  listening: { label: "Listening", icon: "🎧", load: () => import("../games/reading.js") },
-  debate: { label: "Debate & writing", icon: "🖋️", load: () => import("../games/debate.js") },
+  detective: { label: "Caso giallo", icon: "🕵️", load: () => import("../games/detective.js") },
+  dialogue: { label: "Conversazione", icon: "💬", load: () => import("../games/dialogue.js") },
+  gauntlet: { label: "Sfida di grammatica", icon: "⏱️", load: () => import("../games/gauntlet.js") },
+  builder: { label: "Costruisci la frase", icon: "🧩", load: () => import("../games/gauntlet.js") },
+  duel: { label: "Duello di traduzione", icon: "⚔️", load: () => import("../games/gauntlet.js") },
+  reading: { label: "Lettura", icon: "📰", load: () => import("../games/reading.js") },
+  listening: { label: "Ascolto", icon: "🎧", load: () => import("../games/reading.js") },
+  debate: { label: "Dibattito e scrittura", icon: "🖋️", load: () => import("../games/debate.js") },
   dictation: { label: "Dettato", icon: "✍️", load: () => import("../games/dictation.js") },
   exam: { label: "Esame simulato", icon: "📝", load: () => import("../games/exam.js") }
 };
@@ -18,7 +18,7 @@ export async function render(view, ctx) {
   const { content, store, params, query } = ctx;
   if (params[0]) {
     const game = content.games.get(params[0]);
-    if (!game) { view.replaceChildren(h(`<div class="card">Unknown game. <a href="#/play">Back</a></div>`)); return; }
+    if (!game) { view.replaceChildren(h(`<div class="card">Gioco sconosciuto. <a href="#/play">Indietro</a></div>`)); return; }
     const eng = ENGINES[game.type];
     const mod = await eng.load();
     return mod.play(view, { ...ctx, game });
@@ -28,9 +28,9 @@ export async function render(view, ctx) {
   const games = [...content.games.values()].filter(g => (!filter || (g.conceptIds || []).includes(filter)) && (!query.type || g.type === query.type));
   const types = [...new Set(games.map(g => g.type))];
   view.replaceChildren(h(`<section class="page">
-    <div class="page-head"><div><h1>Play / Test</h1><p class="muted">Every game tests concepts from Learn, and every mistake goes to the Error Bank. All games can be played silently, as text only.</p></div>
-      <div class="head-actions"><a class="btn primary" href="#/errors/quiz">Personalised challenge</a></div></div>
-    ${filter ? `<p class="notice card">Showing games for <b>${esc(filter)}</b>. <a href="#/play">Show all</a></p>` : ""}
+    <div class="page-head"><div><h1>Giochi e test</h1><p class="muted">Ogni gioco mette alla prova gli argomenti delle lezioni, e ogni errore finisce nella Banca degli errori. Tutti i giochi si possono fare in modalità muta, solo testo.</p></div>
+      <div class="head-actions"><a class="btn primary" href="#/errors/quiz">Sfida personalizzata</a></div></div>
+    ${filter ? `<p class="notice card">Giochi per <b>${esc(filter)}</b>. <a href="#/play">Mostra tutti</a></p>` : ""}
     ${types.map(t => `<h2>${ENGINES[t]?.icon || ""} ${esc(ENGINES[t]?.label || t)}</h2>
       <div class="game-grid">${games.filter(g => g.type === t).map(g => {
         const r = results.get(g.id);
@@ -38,7 +38,7 @@ export async function render(view, ctx) {
           <div class="g-icon">${ENGINES[g.type]?.icon || "🎲"}</div>
           <div class="g-body"><h3>${esc(g.title)}</h3><p class="small muted">${esc(g.subtitle || "")}</p>
           <div class="c-meta">${(g.conceptIds || []).map(c => `<span class="cid">${esc(c)}</span>`).join("")}${g.minutes ? `<span>~${g.minutes} min</span>` : ""}
-          ${r ? `<span class="ok-t">Best ${Math.round(r.best * 100)}% · played ${r.plays}×</span>` : ""}</div></div></a>`;
+          ${r ? `<span class="ok-t">Record ${Math.round(r.best * 100)}% · giocato ${r.plays}×</span>` : ""}</div></div></a>`;
       }).join("")}</div>`).join("")}
   </section>`));
 }

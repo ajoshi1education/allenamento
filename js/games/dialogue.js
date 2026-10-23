@@ -10,7 +10,7 @@ export async function play(view, ctx) {
   const chars = game.characters || {};
   const nodes = new Map(game.nodes.map(n => [n.id, n]));
   view.replaceChildren(h(`<section class="page narrow game-page dialogue">
-    <a class="back" href="#/play">← Games</a>
+    <a class="back" href="#/play">← Giochi</a>
     <h1>${esc(game.title)}</h1>
     ${game.setting ? `<div class="card scene-intro it">${md(game.setting)}</div>` : ""}
     <div class="chat" id="chat"></div>
@@ -59,9 +59,9 @@ export async function play(view, ctx) {
   reply.replaceChildren(h(`<div class="card summary">
     <div class="big-score ${score >= 0.8 ? "ok" : score >= 0.5 ? "warn" : "bad"}">${right}/${graded}</div>
     ${node && node.outcome ? `<p>${md(node.outcome)}</p>` : ""}
-    <p class="small muted">Different replies lead to different endings. Play again to explore them.</p>
+    <p class="small muted">Risposte diverse portano a finali diversi. Rigioca per scoprirli.</p>
     <div class="row-actions">
-      <a class="btn primary" href="#/play/${esc(game.id)}" onclick="location.reload()">Play again</a>
-      ${right < graded ? `<a class="btn" href="#/errors/quiz?concept=${esc(game.conceptIds[0])}">Retest my mistakes</a>` : ""}
-      <a class="btn ghost" href="#/play">More games</a></div></div>`));
+      <a class="btn primary" href="#/play/${esc(game.id)}" onclick="location.reload()">Gioca ancora</a>
+      ${right < graded ? `<a class="btn" href="#/errors/quiz?concept=${esc(game.conceptIds[0])}">Riprova i miei errori</a>` : ""}
+      <a class="btn ghost" href="#/play">Altri giochi</a></div></div>`));
 }

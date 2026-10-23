@@ -62,7 +62,7 @@ export async function play(view, ctx) {
   view.replaceChildren(h(`<section class="page narrow">
     <a class="back" href="#/path">← Percorso</a>
     <div class="card3d convo-start"><div class="end-badge">📝</div><h1>${esc(game.title)}</h1><p class="muted">${esc(game.subtitle || "")}</p>
-      <ul class="exam-sections">${game.sections.map(s => `<li>${SECTION_ICON[s.kind] || ""} ${esc(SECTION_LABEL[s.kind] || s.kind)} · ${s.items.length} domande</li>`).join("")}</ul>
+      <ul class="exam-sections">${game.sections.map(s => `<li>${SECTION_ICON[s.kind] || ""} ${esc(SECTION_LABEL[s.kind] || s.kind)} · ${s.items.length} ${s.items.length === 1 ? "domanda" : "domande"}</li>`).join("")}</ul>
       <p class="small muted">${n} domande, circa ${game.minutes || 25} minuti. Per superarlo serve il ${Math.round(game.passMark * 100)}%.${best ? ` Miglior risultato: ${Math.round(best.best * 100)}%.` : ""}</p>
       ${speech.isSilent() ? `<p class="small">Sei in modalità silenziosa: l'ascolto diventa lettura della trascrizione.</p>` : ""}
       <button class="btn3d primary big" data-go>Inizia l'esame</button></div></section>`));

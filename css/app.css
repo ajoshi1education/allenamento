@@ -103,7 +103,7 @@ main { outline: none; }
   .brand-name { display: none; }
   .tabs { position: fixed; bottom: 0; left: 0; right: 0; justify-content: space-around; margin: 0; padding: .35rem .4rem calc(.4rem + env(safe-area-inset-bottom));
     background: var(--surface); border-top: 2px solid var(--line); z-index: 30; }
-  .tabs a { flex-direction: column; gap: 0; padding: .3rem .5rem; font-size: .62rem; border-radius: 12px; }
+  .tabs a { flex-direction: column; gap: 0; padding: .3rem .2rem; font-size: .58rem; letter-spacing: .02em; border-radius: 12px; flex: 1 1 0; min-width: 0; align-items: center; }
   .tabs .ti { font-size: 1.45rem; }
   .top-actions { margin-left: auto; }
   h1 { font-size: 1.6rem; }

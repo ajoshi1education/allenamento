@@ -9,18 +9,18 @@ import { buildReport } from "./core/progress.js";
 import { buildPath } from "./core/path.js";
 import * as fb from "./feedback.js";
 
-const SUGGEST = ["💡 Suggest an improvement", "I'm struggling with the subjunctive", "Prepositions or pronouns?", "What should I practise next?", "Show my weakest topics", "A conversation about work"];
+const SUGGEST = ["💡 Suggerisci un miglioramento", "I'm struggling with the subjunctive", "Prepositions or pronouns?", "What should I practise next?", "Show my weakest topics", "A conversation about work"];
 
 export function mountCoach(store) {
   const content = store.content;
   let path = null;
-  const fab = h(`<button class="coach-fab" title="Ask the coach" aria-label="Ask the coach">💬<span>Coach</span></button>`);
+  const fab = h(`<button class="coach-fab" title="Chiedi al coach" aria-label="Chiedi al coach">💬<span>Coach</span></button>`);
   const panel = h(`<div class="coach-panel" hidden role="dialog" aria-label="Coach">
-    <div class="cp-head"><span class="cp-avatar">🧑‍🏫</span><div><b>Coach</b><small>Tell me what you find hard, and I'll find the right practice.</small></div><button class="icon-x" data-close aria-label="Close">✕</button></div>
+    <div class="cp-head"><span class="cp-avatar">🧑‍🏫</span><div><b>Coach</b><small>Tell me what you find hard, and I'll find the right practice.</small></div><button class="icon-x" data-close aria-label="Chiudi">✕</button></div>
     <div class="cp-chat"></div>
     <div class="cp-suggest">${SUGGEST.map(s => `<button class="fchip">${esc(s)}</button>`).join("")}</div>
-    <form class="cp-input"><input type="text" placeholder="e.g. I'm struggling with if clauses…" aria-label="Ask the coach">
-      ${speech.hasRecognition() ? `<button type="button" class="mic-btn small" title="Speak (tap, or hold)">🎤</button>` : ""}<button class="btn3d primary small">Ask</button></form>
+    <form class="cp-input"><input type="text" placeholder="e.g. I'm struggling with if clauses…" aria-label="Chiedi al coach">
+      ${speech.hasRecognition() ? `<button type="button" class="mic-btn small" title="Parla (tocca, o tieni premuto)">🎤</button>` : ""}<button class="btn3d primary small">Chiedi</button></form>
   </div>`);
   document.body.append(fab, panel);
   const chat = panel.querySelector(".cp-chat"), input = panel.querySelector("input");
@@ -37,7 +37,7 @@ export function mountCoach(store) {
     feedbackFor = { item };
     say(item ? `What's wrong with this exercise (<span class="it">${esc(String(item.prompt || "").slice(0, 80))}</span>)? E.g. "my answer … should be accepted", "the explanation is unclear", "this Italian sounds unnatural".`
       : "Tell me what you'd like changed: something broken, confusing or missing, or an idea. Be as specific as you like. I'll turn it into a request that your Claude Code picks up and builds automatically.");
-    input.placeholder = "Describe the issue or idea…";
+    input.placeholder = "Descrivi il problema o l'idea…";
     input.focus();
   }
   function sendFeedback(text) {
@@ -46,10 +46,10 @@ export function mountCoach(store) {
     feedbackFor = null;
     input.placeholder = "e.g. I'm struggling with if clauses…";
     const m = say(`Got it. Here's your request:<div class="cp-card"><b>${esc(text)}</b><small>Screen ${esc(ctx.screen)}${ctx.exercise ? " · exercise " + esc(ctx.exercise.id) : ""} · ${esc(ctx.device)}/${esc(ctx.browser)}</small></div>
-      <div class="cp-actions"><a class="btn3d primary small" href="${url}" target="_blank" rel="noopener" data-send-fb>Send to GitHub ↗</a><button class="btn3d small" data-cancel-fb>Cancel</button></div>
+      <div class="cp-actions"><a class="btn3d primary small" href="${url}" target="_blank" rel="noopener" data-send-fb>Invia a GitHub ↗</a><button class="btn3d small" data-cancel-fb>Annulla</button></div>
       <p class="small muted">GitHub opens with everything filled in: just press <b>Submit new issue</b> (sign in as ajoshi1education the first time). Your Claude Code checks for new requests every few hours, builds the change, tests it, publishes the app and replies on the issue.</p>`);
     m.querySelector("[data-send-fb]").onclick = () => { fb.remember(text, url); setTimeout(() => say("Sent to GitHub. Once you press Submit there, it's in the queue. You can see all your requests at <a href=\"https://github.com/" + fb.REPO + "/issues\" target=\"_blank\" rel=\"noopener\">github.com/" + fb.REPO + "/issues</a>."), 400); };
-    m.querySelector("[data-cancel-fb]").onclick = () => say("OK, cancelled.");
+    m.querySelector("[data-cancel-fb]").onclick = () => say("OK, annullato.");
   }
   fab.onclick = open;
   panel.querySelector("[data-close]").onclick = close;
@@ -58,7 +58,7 @@ export function mountCoach(store) {
   panel.querySelector("form").onsubmit = e => { e.preventDefault(); const q = input.value.trim(); if (q) { input.value = ""; ask(q); } };
   const mic = panel.querySelector(".mic-btn");
   if (mic) bindMic(mic, async () => {
-    mic.classList.add("on"); input.placeholder = "Listening…";
+    mic.classList.add("on"); input.placeholder = "Ti ascolto…";
     const r = await speech.listen({ lang: "en-GB", onInterim: t => (input.value = t), onStatus: st => (input.placeholder = speech.MIC_STATUS[st]) });
     mic.classList.remove("on"); input.placeholder = "e.g. I'm struggling with if clauses…";
     if (r.text) { input.value = ""; ask(r.text); }
@@ -96,17 +96,17 @@ export function mountCoach(store) {
 
   function card(r) {
     const c = r.concept;
-    const stats = [r.seen ? `${Math.round(r.accuracy * 100)}% correct so far` : "not practised yet", r.openErrors ? `${r.openErrors} open mistake${r.openErrors > 1 ? "s" : ""}` : ""].filter(Boolean).join(" · ");
+    const stats = [r.seen ? `${Math.round(r.accuracy * 100)}% di risposte giuste finora` : "non ancora esercitato", r.openErrors ? `${r.openErrors} ${r.openErrors > 1 ? "errori aperti" : "errore aperto"}` : ""].filter(Boolean).join(" · ");
     return `<div class="cp-card concept">
       <b>${esc(c.title)}</b><small>${esc(c.cefr)} · ${esc(stats)}</small>
       ${c.rule ? `<p class="small">${md(c.rule.length > 180 ? c.rule.slice(0, 177) + "…" : c.rule)}</p>` : ""}
       <div class="cp-actions">
-        <a class="btn3d small" href="#/learn/${esc(c.id)}">📖 Lesson</a>
-        <a class="btn3d primary small" href="#/learn/${esc(c.id)}/practice">✏️ Practise</a>
-        ${r.openErrors ? `<a class="btn3d blue small" href="#/errors/quiz?concept=${esc(c.id)}">🎯 Retest my mistakes</a>` : ""}
+        <a class="btn3d small" href="#/learn/${esc(c.id)}">📖 Lezione</a>
+        <a class="btn3d primary small" href="#/learn/${esc(c.id)}/practice">✏️ Esercitati</a>
+        ${r.openErrors ? `<a class="btn3d blue small" href="#/errors/quiz?concept=${esc(c.id)}">🎯 Riprova i miei errori</a>` : ""}
       </div>
-      ${r.games.length ? `<div class="cp-sub">🎲 Games: ${r.games.slice(0, 4).map(g => `<a href="#/play/${esc(g.id)}">${esc(g.title)}</a>`).join(" · ")}</div>` : ""}
-      ${r.convos.length ? `<div class="cp-sub">🗣️ Conversations: ${r.convos.slice(0, 3).map(cv => `<a href="#/convo/${esc(cv.id)}">${esc(cv.title)}</a>`).join(" · ")}</div>` : ""}
+      ${r.games.length ? `<div class="cp-sub">🎲 Giochi: ${r.games.slice(0, 4).map(g => `<a href="#/play/${esc(g.id)}">${esc(g.title)}</a>`).join(" · ")}</div>` : ""}
+      ${r.convos.length ? `<div class="cp-sub">🗣️ Conversazioni: ${r.convos.slice(0, 3).map(cv => `<a href="#/convo/${esc(cv.id)}">${esc(cv.title)}</a>`).join(" · ")}</div>` : ""}
     </div>`;
   }
   return { open, ask, feedback: item => { open(); startFeedback(item); } };

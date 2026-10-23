@@ -32,7 +32,7 @@ export function shuffle(a, rand = Math.random) {
 }
 
 // In-app confirmation (browser confirm() can be silently blocked by Chrome's "prevent dialogs" option).
-export function confirmDialog({ title, text = "", ok = "OK", cancel = "Cancel", danger = false }) {
+export function confirmDialog({ title, text = "", ok = "OK", cancel = "Annulla", danger = false }) {
   return new Promise(res => {
     const d = h(`<div class="modal-back" role="dialog" aria-modal="true"><div class="modal card3d">
       <h3>${esc(title)}</h3>${text ? `<p class="muted">${esc(text)}</p>` : ""}
@@ -56,15 +56,15 @@ export function toast(msg, kind = "") {
 export const fmtDate = t => new Date(t).toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" });
 export const fmtRel = (t, now) => {
   const d = Math.round((t - now) / 864e5);
-  if (d === 0) return "today";
-  if (d === 1) return "tomorrow";
-  if (d === -1) return "yesterday";
-  return d > 0 ? `in ${d} days` : `${-d} days ago`;
+  if (d === 0) return "oggi";
+  if (d === 1) return "domani";
+  if (d === -1) return "ieri";
+  return d > 0 ? `tra ${d} giorni` : `${-d} giorni fa`;
 };
 
 const ACCENTS = ["à", "è", "é", "ì", "ò", "ù"];
 const PRAISE = ["Esatto!", "Perfetto!", "Ottimo!", "Bravissimo!", "Giusto!", "Benissimo!"];
-const TYPE_LABEL = { cloze: "Fill the gap", transform: "Transform", translate: "Translate", choice: "Choose", order: "Build the sentence", free: "Write", speak: "Speak", listen: "Listen" };
+const TYPE_LABEL = { cloze: "Completa", transform: "Trasforma", translate: "Traduci", choice: "Scegli", order: "Costruisci la frase", free: "Scrivi", speak: "Parla", listen: "Ascolta" };
 
 export function errorLabel(content, type) { return (content.errorTypes[type] && content.errorTypes[type].label) || type; }
 
@@ -85,15 +85,15 @@ export function runExercise(host, item, opts) {
       ${opts.banner ? `<div class="ex-banner">${opts.banner}</div>` : ""}
       <div class="ex-head"><span class="chip">${esc(TYPE_LABEL[item.type] || item.type)}</span>
         <span class="muted small">${esc(concept ? concept.title : "")}</span>
-        ${speech.canSpeak() ? `<button type="button" class="say-q" data-act="read" title="Listen to the question again" aria-label="Listen again">🔊</button>` : ""}
-        <span class="stars" title="difficulty ${item.difficulty || 1}/5">${"●".repeat(item.difficulty || 1)}<span class="dim">${"●".repeat(5 - (item.difficulty || 1))}</span></span></div>
+        ${speech.canSpeak() ? `<button type="button" class="say-q" data-act="read" title="Riascolta la domanda" aria-label="Riascolta">🔊</button>` : ""}
+        <span class="stars" title="difficoltà ${item.difficulty || 1}/5">${"●".repeat(item.difficulty || 1)}<span class="dim">${"●".repeat(5 - (item.difficulty || 1))}</span></span></div>
       ${item.instruction ? `<p class="ex-instr">${md(item.instruction)}</p>` : ""}
       <div class="ex-body"></div>
       <div class="ex-actions">
         <div class="accents" ${["choice", "order"].includes(item.type) ? "hidden" : ""}>${ACCENTS.map(a => `<button type="button" class="key" data-acc="${a}">${a}</button>`).join("")}</div>
         <span class="grow"></span>
-        <button type="button" class="btn ghost" data-act="dontknow">Show answer</button>
-        <button type="button" class="btn primary" data-act="check">Check</button>
+        <button type="button" class="btn ghost" data-act="dontknow">Mostra la risposta</button>
+        <button type="button" class="btn primary" data-act="check">Controlla</button>
       </div>
       <div class="feedback" hidden></div>
     </div>`);
@@ -118,8 +118,8 @@ export function runExercise(host, item, opts) {
       const listenable = speech.canSpeak();
       const audioEl = h(`<div class="audio-box">
         ${listenable ? `<button type="button" class="btn small" data-play="1">▶ Ascolta</button><button type="button" class="btn small ghost" data-play="0.75">🐢 Più lento</button>
-          ${item.noTranscript ? "" : `<details class="transcript"><summary class="small muted">Show transcript</summary><p class="it">${md(item.audio)}</p></details>`}`
-        : `<p class="small muted">${esc(item.silentPrompt || "Silent mode: read the transcript instead of listening.")}</p>${item.noTranscript ? "" : `<p class="it transcript-open">${md(item.audio)}</p>`}`}
+          ${item.noTranscript ? "" : `<details class="transcript"><summary class="small muted">Mostra la trascrizione</summary><p class="it">${md(item.audio)}</p></details>`}`
+        : `<p class="small muted">${esc(item.silentPrompt || "Modalità muta: leggi la trascrizione invece di ascoltare.")}</p>${item.noTranscript ? "" : `<p class="it transcript-open">${md(item.audio)}</p>`}`}
       </div>`);
       body.append(audioEl);
       audioEl.addEventListener("click", e => { const b = e.target.closest("[data-play]"); if (b) speech.say(item.audio, { rate: Number(b.dataset.play) * 0.95 }); });
@@ -128,7 +128,7 @@ export function runExercise(host, item, opts) {
 
     if (item.type === "cloze") {
       const [before, after = ""] = item.prompt.split(/_{3,}/);
-      body.append(h(`<p class="ex-prompt it">${md(before)}<input class="gap" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="answer">${md(after)}</p>`));
+      body.append(h(`<p class="ex-prompt it">${md(before)}<input class="gap" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="risposta">${md(after)}</p>`));
       const inp = body.querySelector("input");
       inp.size = Math.max(6, String(item.answers?.[0] || "").length + 2);
       getResponse = () => inp.value;
@@ -147,7 +147,7 @@ export function runExercise(host, item, opts) {
       getResponse = () => picked;
     } else if (item.type === "order") {
       body.append(h(`<p class="ex-prompt">${md(item.prompt)}</p>`));
-      const line = h(`<div class="order-line it" aria-label="your sentence"></div>`);
+      const line = h(`<div class="order-line it" aria-label="la tua frase"></div>`);
       const bank = h(`<div class="order-bank it"></div>`);
       shuffle(item.tokens).forEach(tk => bank.append(h(`<button type="button" class="token">${esc(tk)}</button>`)));
       body.append(line, bank);
@@ -158,19 +158,19 @@ export function runExercise(host, item, opts) {
       const isIt = item.type === "transform";
       const isFree = item.type === "free";
       body.append(h(`<p class="ex-prompt ${isIt ? "it" : ""} ${isFree ? "free-prompt" : ""}">${md(item.prompt)}</p>`));
-      if (isFree && item.rubric) body.append(h(`<details class="rubric-peek"><summary class="small">What I'll check (${item.rubric.length + 1} points)</summary><ul class="small">${item.rubric.map(r => `<li>${esc(r.label)}</li>`).join("")}<li>Length: ${item.minWords || 0}${item.maxWords ? "–" + item.maxWords : "+"} words</li></ul></details>`));
+      if (isFree && item.rubric) body.append(h(`<details class="rubric-peek"><summary class="small">Cosa controllerò (${item.rubric.length + 1} punti)</summary><ul class="small">${item.rubric.map(r => `<li>${esc(r.label)}</li>`).join("")}<li>Lunghezza: ${item.minWords || 0}${item.maxWords ? "–" + item.maxWords : "+"} parole</li></ul></details>`));
       const ta = h(`<textarea class="answer it" rows="${isFree ? 8 : 2}" autocomplete="off" autocapitalize="sentences" spellcheck="false" placeholder="${item.type === "speak" ? "Parla (🎤) o scrivi la tua risposta…" : "Scrivi in italiano…"}"></textarea>`);
       body.append(ta);
       if (isFree) {
-        const wc = h(`<div class="small muted word-count">0 words</div>`);
+        const wc = h(`<div class="small muted word-count">0 parole</div>`);
         body.append(wc);
-        ta.addEventListener("input", () => { const n = ta.value.trim() ? ta.value.trim().split(/\s+/).length : 0; wc.textContent = `${n} words${item.minWords ? ` · aim ${item.minWords}${item.maxWords ? "–" + item.maxWords : "+"}` : ""}`; });
+        ta.addEventListener("input", () => { const n = ta.value.trim() ? ta.value.trim().split(/\s+/).length : 0; wc.textContent = `${n} parole${item.minWords ? ` · obiettivo ${item.minWords}${item.maxWords ? "–" + item.maxWords : "+"}` : ""}`; });
       }
       getResponse = () => ta.value;
       lastInput = ta;
     }
     if (item.en && item.type === "cloze") body.append(h(`<p class="muted small hint" hidden>${esc(item.en)}</p>`));
-    if (item.en && item.type === "cloze") body.append(h(`<button type="button" class="linkish small" data-act="hint">Show English meaning</button>`));
+    if (item.en && item.type === "cloze") body.append(h(`<button type="button" class="linkish small" data-act="hint">Mostra il significato in inglese</button>`));
 
     // ---- audio: hear the question, answer by voice, hear the correct answer ----
     const voiceable = ["cloze", "choice", "order", "transform", "translate", "speak", "free"].includes(item.type);
@@ -180,7 +180,7 @@ export function runExercise(host, item, opts) {
     let micBtn = null;
     // A mic is always offered (when the browser can recognise speech): tap, or hold to talk.
     if (voiceable && speech.hasRecognition()) {
-      micBtn = h(`<button type="button" class="mic-btn" title="Answer by voice: tap, or hold to talk" aria-label="Answer by voice">🎤</button>`);
+      micBtn = h(`<button type="button" class="mic-btn" title="Rispondi a voce: tocca, o tieni premuto per parlare" aria-label="Rispondi a voce">🎤</button>`);
       actionsEl.insertBefore(micBtn, actionsEl.querySelector("[data-act=dontknow]"));
       bindMic(micBtn, () => listenAnswer());
     }
@@ -192,15 +192,15 @@ export function runExercise(host, item, opts) {
       const r = await speech.listen({ onInterim: t => alive() && setLive(t || "Ti ascolto…", "listening"), onStatus: st => alive() && setLive(speech.MIC_STATUS[st], st === "listening" ? "listening" : "warn") });
       micBtn.classList.remove("on");
       if (!alive()) return;
-      if (r.error) { setLive(speech.MIC_HELP[r.error] || "Didn't catch that. Tap 🎤 to try again, or type your answer.", "warn"); return; }
+      if (r.error) { setLive(speech.MIC_HELP[r.error] || "Non ho capito. Tocca 🎤 per riprovare, o scrivi la risposta.", "warn"); return; }
       if (item.type === "free") {       // dictation: add to the text, you check it yourself
         lastInput.value = (lastInput.value.trim() + " " + r.text).trim();
         lastInput.dispatchEvent(new Event("input"));
-        setLive(`🎤 Added: “${r.text}”. Speak again to continue, or press Check.`, "heard");
+        setLive(`🎤 Aggiunto: “${r.text}”. Parla ancora per continuare, o premi Controlla.`, "heard");
         return;
       }
       const best = bestSpokenAnswer(item, r.alts);
-      if (!best) { setLive(`I heard “${r.text}” but couldn't match it to an answer. Tap 🎤 to try again.`, "warn"); return; }
+      if (!best) { setLive(`Ho sentito “${r.text}”, ma non corrisponde a nessuna risposta. Tocca 🎤 per riprovare.`, "warn"); return; }
       setLive(`🎤 “${r.text}”`, "heard");
       if (item.type === "choice") { picked = best.response; el.querySelectorAll(".choice").forEach((b, i) => b.classList.toggle("picked", i === picked)); }
       else if (lastInput) lastInput.value = String(best.response);
@@ -252,7 +252,7 @@ export function runExercise(host, item, opts) {
       if (!giveUp && (resp === "" || resp === null)) { lastInput?.focus(); actionsEl.classList.add("shake"); setTimeout(() => actionsEl.classList.remove("shake"), 400); return; }
       busy = true;
       const result = evaluate(item, resp);
-      if (giveUp) { result.verdict = "empty"; result.correct = false; result.errorType = item.errorType || "no-answer"; result.note = "You asked to see the answer."; }
+      if (giveUp) { result.verdict = "empty"; result.correct = false; result.errorType = item.errorType || "no-answer"; result.note = "Hai chiesto di vedere la risposta."; }
       const outcome = await store.recordAnswer({ item, response: item.type === "choice" && resp !== "" && resp != null ? item.options[resp] : resp, result, source: opts.source, mode: opts.mode, retestOf: opts.retestOf });
       el.classList.add("done", result.correct ? "is-correct" : "is-wrong");
       el.querySelectorAll("input,textarea").forEach(i => (i.readOnly = true));
@@ -272,8 +272,8 @@ export function runExercise(host, item, opts) {
 function showFeedback(fb, item, resp, result, outcome, concept, opts) {
   const content = opts.store.content;
   const V = {
-    correct: ["✓", PRAISE[Math.floor(Math.random() * PRAISE.length)], "ok"], alternative: ["✓", "Giusto: a natural alternative", "ok"],
-    typo: ["✓", "Giusto, with a small slip", "ok"], accent: ["≈", "Quasi! Check the accents", "warn"],
+    correct: ["✓", PRAISE[Math.floor(Math.random() * PRAISE.length)], "ok"], alternative: ["✓", "Giusto: un'alternativa naturale", "ok"],
+    typo: ["✓", "Giusto, con una piccola svista", "ok"], accent: ["≈", "Quasi! Controlla gli accenti", "warn"],
     wrong: ["✗", "Non proprio", "bad"], empty: ["•", "Ecco la risposta", "bad"]
   }[result.verdict];
   const userText = item.type === "choice" ? (resp != null && resp !== "" ? item.options[resp] : "") : String(resp ?? "");
@@ -281,29 +281,29 @@ function showFeedback(fb, item, resp, result, outcome, concept, opts) {
   const full = item.type === "cloze" ? fillCloze(item.prompt, `<b>${esc(result.expected)}</b>`) : null;
   const speakText = item.type === "cloze" ? fillCloze(item.prompt, result.expected) : item.type === "choice" ? fillCloze(item.prompt, item.options[[].concat(item.answer)[0]]) : result.expected;
   const eb = [];
-  if (outcome.captured) eb.push(`<a class="eb-chip bad" href="#/errors/${encodeURIComponent(outcome.captured.id)}">Saved to Error Bank · ${esc(errorLabel(content, outcome.captured.errorType))}${outcome.captured.timesWrong > 1 ? ` · ${outcome.captured.timesWrong}× now` : ""}</a>`);
-  if (outcome.reopened) eb.push(`<span class="eb-chip warn">You had mastered this one. It's back in active review.</span>`);
-  for (const e of outcome.mastered) eb.push(`<span class="eb-chip ok">★ Mastered: "${esc(e.correctAnswer)}" (${esc(errorLabel(content, e.errorType))})</span>`);
+  if (outcome.captured) eb.push(`<a class="eb-chip bad" href="#/errors/${encodeURIComponent(outcome.captured.id)}">Salvato nella Banca degli errori · ${esc(errorLabel(content, outcome.captured.errorType))}${outcome.captured.timesWrong > 1 ? ` · ${outcome.captured.timesWrong}× finora` : ""}</a>`);
+  if (outcome.reopened) eb.push(`<span class="eb-chip warn">L'avevi già padroneggiato: torna in ripasso attivo.</span>`);
+  for (const e of outcome.mastered) eb.push(`<span class="eb-chip ok">★ Padroneggiato: "${esc(e.correctAnswer)}" (${esc(errorLabel(content, e.errorType))})</span>`);
   const prog = outcome.credited.filter(e => e.status !== "mastered");
   if (prog.length) {
     const p = masteryProgress(prog[0]);
-    const n = `${prog.length} related error${prog.length > 1 ? "s" : ""}`;
+    const n = `${prog.length} ${prog.length > 1 ? "errori collegati" : "errore collegato"}`;
     eb.push(p.days === 0
-      ? `<span class="eb-chip ok">Right this time (${n}). It starts counting towards mastery tomorrow.</span>`
-      : `<span class="eb-chip ok">Error Bank progress (${n}): ${p.days}/${p.needDays} days, ${p.newContextDays}/${p.needNew} new contexts</span>`);
+      ? `<span class="eb-chip ok">Giusto stavolta (${n}). Conterà per la padronanza da domani.</span>`
+      : `<span class="eb-chip ok">Progressi nella Banca degli errori (${n}): ${p.days}/${p.needDays} giorni, ${p.newContextDays}/${p.needNew} contesti nuovi</span>`);
   }
   if (item.type === "free") {
     const w = result.writing || { checks: [], words: 0 };
     fb.innerHTML = `
-      <div class="verdict ${result.correct ? "ok" : "bad"}"><span class="v-icon">${result.correct ? "✓" : "✗"}</span> ${result.correct ? "Ottimo: every checkpoint met" : "Some checkpoints missed"}</div>
+      <div class="verdict ${result.correct ? "ok" : "bad"}"><span class="v-icon">${result.correct ? "✓" : "✗"}</span> ${result.correct ? "Ottimo: tutti i punti rispettati" : "Alcuni punti mancano"}</div>
       <ul class="checklist">${w.checks.map(c => `<li class="${c.ok ? "ok-t" : "bad-t"}">${c.ok ? "✓" : "✗"} ${esc(c.label)}${!c.ok && c.hint ? ` <span class="muted small">${md(c.hint)}</span>` : ""}</li>`).join("")}
-        <li class="${w.lengthOk ? "ok-t" : "bad-t"}">${w.lengthOk ? "✓" : "✗"} Length: ${w.words} words</li></ul>
+        <li class="${w.lengthOk ? "ok-t" : "bad-t"}">${w.lengthOk ? "✓" : "✗"} Lunghezza: ${w.words} parole</li></ul>
       <p class="small muted">The automatic check looks for the target structures and length. It can't judge everything, so compare your text with the model.</p>
-      ${item.model ? `<details class="fb-rule" open><summary>Model answer</summary><p class="it">${md(item.model)}</p></details>` : ""}
+      ${item.model ? `<details class="fb-rule" open><summary>Risposta modello</summary><p class="it">${md(item.model)}</p></details>` : ""}
       ${result.why ? `<p class="fb-why">${md(result.why)}</p>` : ""}
       ${eb.length ? `<div class="eb-row">${eb.join("")}</div>` : ""}
       <div class="ai-fb"></div>
-      <div class="fb-actions"><button type="button" class="linkish small report-link" data-report title="Something wrong with this exercise? Tell the Coach.">⚑ Report</button><button type="button" class="btn ghost small" data-ai hidden>✨ Detailed AI feedback</button><span class="grow"></span><button type="button" class="btn primary" data-act="next">Continue ↵</button></div>`;
+      <div class="fb-actions"><button type="button" class="linkish small report-link" data-report title="Qualcosa non va in questo esercizio? Dillo al Coach.">⚑ Segnala</button><button type="button" class="btn ghost small" data-ai hidden>✨ Correzione dettagliata con l'IA</button><span class="grow"></span><button type="button" class="btn primary" data-act="next">Continua ↵</button></div>`;
     fb.hidden = false;
     fb.querySelector("[data-report]")?.addEventListener("click", () => window.__coach && window.__coach.feedback(item));
     // Optional AI corrections (only shown when an API key is configured on the server).
@@ -311,12 +311,12 @@ function showFeedback(fb, item, resp, result, outcome, concept, opts) {
       if (!(await ai.aiEnabled())) return;
       const b = fb.querySelector("[data-ai]"); b.hidden = false;
       b.onclick = async () => {
-        b.disabled = true; b.textContent = "Reading your text…";
+        b.disabled = true; b.textContent = "Sto leggendo il tuo testo…";
         const r = await ai.writingFeedback(item.prompt, String(resp));
         b.remove();
-        if (!r) { fb.querySelector(".ai-fb").textContent = "AI feedback is unavailable right now."; return; }
-        fb.querySelector(".ai-fb").innerHTML = `<div class="card-inset"><h4>Corrections</h4>${(r.corrections || []).map(c => `<div class="fb-row"><span class="wrong it">${esc(c.original)}</span> → <span class="right it">${esc(c.corrected)}</span></div><p class="small">${md(c.why)}</p>`).join("") || "<p>No significant mistakes found.</p>"}
-          <p>${md(r.overall || "")}</p>${r.improved ? `<details><summary>Polished version</summary><p class="it">${md(r.improved)}</p></details>` : ""}</div>`;
+        if (!r) { fb.querySelector(".ai-fb").textContent = "La correzione con l'IA non è disponibile al momento."; return; }
+        fb.querySelector(".ai-fb").innerHTML = `<div class="card-inset"><h4>Correzioni</h4>${(r.corrections || []).map(c => `<div class="fb-row"><span class="wrong it">${esc(c.original)}</span> → <span class="right it">${esc(c.corrected)}</span></div><p class="small">${md(c.why)}</p>`).join("") || "<p>Nessun errore significativo.</p>"}
+          <p>${md(r.overall || "")}</p>${r.improved ? `<details><summary>Versione rifinita</summary><p class="it">${md(r.improved)}</p></details>` : ""}</div>`;
         // Each AI-found mistake goes to the Error Bank like any other, as a sentence to correct.
         for (const [k, c] of (r.corrections || []).entries()) {
           const fix = { id: `${item.id}#ai${k}`, conceptId: item.conceptId, skill: "writing", type: "transform", instruction: "Correct the mistake from your own writing.",
@@ -330,20 +330,20 @@ function showFeedback(fb, item, resp, result, outcome, concept, opts) {
   fb.innerHTML = `
     <div class="verdict ${V[2]}"><span class="v-icon">${V[0]}</span> ${V[1]}</div>
     ${!result.correct || result.verdict !== "correct" ? `
-      ${userText && result.verdict !== "correct" ? `<div class="fb-row"><span class="lbl">You wrote</span>${diff || `<span class="it">${esc(userText)}</span>`}</div>` : ""}
-      <div class="fb-row"><span class="lbl">Correct</span><span class="it strong">${full || esc(result.expected)}</span></div>` : full ? `<div class="fb-row"><span class="it">${full}</span></div>` : ""}
+      ${userText && result.verdict !== "correct" ? `<div class="fb-row"><span class="lbl">Hai scritto</span>${diff || `<span class="it">${esc(userText)}</span>`}</div>` : ""}
+      <div class="fb-row"><span class="lbl">Corretto</span><span class="it strong">${full || esc(result.expected)}</span></div>` : full ? `<div class="fb-row"><span class="it">${full}</span></div>` : ""}
     ${result.note ? `<p class="fb-note">${md(result.note)}</p>` : ""}
     ${result.why ? `<p class="fb-why">${md(result.why)}</p>` : ""}
-    ${concept && concept.rule ? `<details class="fb-rule"><summary>The rule</summary><p>${md(concept.rule)}</p><a href="#/learn/${esc(concept.id)}">Open the lesson →</a></details>` : ""}
-    ${result.alternatives && result.alternatives.length ? `<p class="fb-alt"><span class="lbl">Also accepted</span> ${result.alternatives.map(a => `<span class="it">${esc(a)}</span>`).join(" · ")}</p>` : ""}
+    ${concept && concept.rule ? `<details class="fb-rule"><summary>La regola</summary><p>${md(concept.rule)}</p><a href="#/learn/${esc(concept.id)}">Apri la lezione →</a></details>` : ""}
+    ${result.alternatives && result.alternatives.length ? `<p class="fb-alt"><span class="lbl">Accettato anche</span> ${result.alternatives.map(a => `<span class="it">${esc(a)}</span>`).join(" · ")}</p>` : ""}
     ${item.en && item.type !== "translate" ? `<p class="muted small">${esc(item.en)}</p>` : ""}
     ${eb.length ? `<div class="eb-row">${eb.join("")}</div>` : ""}
     <div class="fb-actions">
-      <button type="button" class="linkish small report-link" data-report title="Something wrong with this exercise? Tell the Coach.">⚑ Report</button>
-      ${speech.canSpeak() ? `<button type="button" class="btn ghost small" data-say>🔊 Hear it</button>` : ""}
-      ${opts.store.saveVocab ? `<button type="button" class="btn ghost small" data-vocab>☆ Save to Vocab</button>` : ""}
+      <button type="button" class="linkish small report-link" data-report title="Qualcosa non va in questo esercizio? Dillo al Coach.">⚑ Segnala</button>
+      ${speech.canSpeak() ? `<button type="button" class="btn ghost small" data-say>🔊 Ascolta</button>` : ""}
+      ${opts.store.saveVocab ? `<button type="button" class="btn ghost small" data-vocab>☆ Salva nel vocabolario</button>` : ""}
       <span class="grow"></span>
-      <button type="button" class="btn primary" data-act="next">Continue ↵</button>
+      <button type="button" class="btn primary" data-act="next">Continua ↵</button>
     </div>`;
   fb.hidden = false;
   fb.querySelector("[data-say]")?.addEventListener("click", () => speech.say(speakText));
@@ -351,7 +351,7 @@ function showFeedback(fb, item, resp, result, outcome, concept, opts) {
   fb.querySelector("[data-vocab]")?.addEventListener("click", async ev => {
     const en = item.en || (item.type === "translate" ? item.prompt : "");
     await opts.store.saveVocab({ it: speakText, en, pos: "expr", def: result.why || (concept ? concept.title : ""), conceptIds: [item.conceptId], source: "lesson", examples: [] });
-    ev.target.textContent = "★ Saved"; ev.target.disabled = true;
+    ev.target.textContent = "★ Salvato"; ev.target.disabled = true;
   });
   return speakText;
 }

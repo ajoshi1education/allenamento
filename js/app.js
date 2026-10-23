@@ -13,7 +13,7 @@ import "./install.js";                       // listens for the browser's instal
 // Main mode is the guided path; Esplora is the free mode that opens everything else.
 const TABS = [
   { id: "path", label: "Percorso", icon: "🛤️" },
-  { id: "convo", label: "Convos", icon: "🗣️" },
+  { id: "convo", label: "Dialoghi", icon: "🗣️" },
   { id: "review", label: "Ripasso", icon: "🔁" },
   { id: "explore", label: "Esplora", icon: "🗺️" },
   { id: "progress", label: "Progressi", icon: "📈" }
@@ -68,10 +68,10 @@ async function main() {
       <a class="brand" href="#/path"><span class="logo">A</span><span class="brand-name">Allenamento</span></a>
       <nav class="tabs">${TABS.map(t => `<a href="#/${t.id}" data-tab="${t.id}"><span class="ti">${t.icon}</span><span class="tl">${t.label}</span><span class="badge" hidden></span></a>`).join("")}</nav>
       <div class="top-actions">
-        <a class="pill fire" href="#/progress" id="streakPill" title="Day streak">🔥 <b>0</b></a>
-        <a class="pill gold" href="#/progress" id="xpPill" title="XP today / daily goal">⭐ <b>0</b></a>
-        <button class="mode-btn" id="modeBtn" title="Audio mode"></button>
-        <a class="icon-btn" href="#/settings" title="Settings and backup">⚙️</a>
+        <a class="pill fire" href="#/progress" id="streakPill" title="Giorni di fila">🔥 <b>0</b></a>
+        <a class="pill gold" href="#/progress" id="xpPill" title="XP di oggi / obiettivo giornaliero">⭐ <b>0</b></a>
+        <button class="mode-btn" id="modeBtn" title="Modalità audio"></button>
+        <a class="icon-btn" href="#/settings" title="Impostazioni e backup">⚙️</a>
       </div>
     </header>
     <main id="view" tabindex="-1"></main>
@@ -79,7 +79,7 @@ async function main() {
 
   // One button cycles: 🔇 silent → 🔊 listen → 🎤 listen & speak
   const modeBtn = document.getElementById("modeBtn");
-  const MODE_UI = { silent: ["🔇", "Silent", "Silent: text only, for public places"], listen: ["🔊", "Audio", "Audio: questions and answers are read aloud"], speak: ["🎤", "Speak", "Speak: read aloud, and answer with your voice"] };
+  const MODE_UI = { silent: ["🔇", "Muto", "Muto: solo testo, per i luoghi pubblici"], listen: ["🔊", "Audio", "Audio: domande e risposte lette ad alta voce"], speak: ["🎤", "Parla", "Parla: lettura ad alta voce, e rispondi con la voce"] };
   const paintMode = () => { const [i, l, t] = MODE_UI[speech.getMode()]; modeBtn.innerHTML = `<span>${i}</span><b>${l}</b>`; modeBtn.title = t; modeBtn.dataset.mode = speech.getMode(); };
   modeBtn.onclick = async () => {
     const order = speech.hasRecognition() ? ["silent", "listen", "speak"] : ["silent", "listen"];
@@ -91,13 +91,13 @@ async function main() {
     await store.setSetting("audioMode", next);
     if (next === "speak") {
       const g = await speech.ensureMic();
-      if (g !== "granted") toast(speech.MIC_HELP[g] || "Microphone not available. You can still type.");
+      if (g !== "granted") toast(speech.MIC_HELP[g] || "Microfono non disponibile. Puoi comunque scrivere.");
     }
   };
   // Chrome blocked speech (no recent click): offer a one-tap fix.
   window.addEventListener("tts-blocked", () => {
     if (document.querySelector(".sound-pill")) return;
-    const pill = h(`<button class="sound-pill">🔊 Tap to turn on sound</button>`);
+    const pill = h(`<button class="sound-pill">🔊 Tocca per attivare l'audio</button>`);
     pill.onclick = () => { speech.unlock(); pill.remove(); setTimeout(() => window.dispatchEvent(new CustomEvent("tts-retry")), 120); };
     document.body.append(pill);
     setTimeout(() => pill.remove(), 15000);
@@ -137,7 +137,7 @@ async function main() {
       current = await mod.render(view, { store, content, params: rest, query, silent: speech.isSilent() });
     } catch (e) {
       console.error(e);
-      view.replaceChildren(h(`<div class="card error-box"><h3>Something went wrong</h3><pre>${esc(e.stack || e.message)}</pre></div>`));
+      view.replaceChildren(h(`<div class="card error-box"><h3>Qualcosa è andato storto</h3><pre>${esc(e.stack || e.message)}</pre></div>`));
     }
     view.focus({ preventScroll: true });
     window.scrollTo(0, 0);
@@ -149,5 +149,5 @@ async function main() {
 
 main().catch(e => {
   console.error(e);
-  document.getElementById("app").innerHTML = `<div class="card error-box"><h3>Could not start</h3><pre>${esc(e.stack || e.message)}</pre></div>`;
+  document.getElementById("app").innerHTML = `<div class="card error-box"><h3>Impossibile avviare l'app</h3><pre>${esc(e.stack || e.message)}</pre></div>`;
 });

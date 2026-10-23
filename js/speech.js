@@ -219,18 +219,18 @@ export async function listen({ lang = "it-IT", onInterim, onStatus, maxMs = 1500
 }
 
 export const MIC_STATUS = {
-  permission: "Chrome is asking to use your microphone: click Allow in the box at the top of the window.",
-  stuck: "Waiting for the microphone… If Chrome is asking for permission, click Allow (or the 🎤 icon in the address bar).",
+  permission: "Chrome chiede di usare il microfono: clicca Consenti nel riquadro in alto.",
+  stuck: "Attendo il microfono… Se Chrome chiede il permesso, clicca Consenti (o l'icona 🎤 nella barra degli indirizzi).",
   listening: "Ti ascolto…"
 };
 
 export const MIC_HELP = {
   "not-allowed": "The microphone is blocked. Click the 🔒 or 🎤 icon in the address bar and allow the microphone for this site.",
   "service-not-allowed": "Speech recognition isn't allowed here. Use Chrome or Edge, and open the app from localhost or https.",
-  "no-speech": "I didn't hear anything. Tap the microphone and speak.",
+  "no-speech": "Non ho sentito niente. Tocca il microfono e parla.",
   "not-started": "The microphone didn't start. Check that Chrome is allowed to use it (🎤 icon in the address bar) and that no other app is using it.",
   "error": "The microphone couldn't start. Check it's connected and allowed in Chrome.",
-  "audio-capture": "No microphone found.",
+  "audio-capture": "Nessun microfono trovato.",
   "network": "Speech recognition needs an internet connection in Chrome.",
   "unsupported": "This browser can't do speech recognition. Use Chrome or Edge, or type your answer."
 };

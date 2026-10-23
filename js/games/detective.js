@@ -9,7 +9,7 @@ export async function play(view, ctx) {
   const chars = game.characters || {};
   const clues = [];
   view.replaceChildren(h(`<section class="page game-page detective">
-    <a class="back" href="#/play">← Games</a>
+    <a class="back" href="#/play">← Giochi</a>
     <div class="det-layout">
       <div class="det-main">
         <h1>${esc(game.title)}</h1>
@@ -40,7 +40,7 @@ export async function play(view, ctx) {
   const acc = game.accusation;
   const pick = await new Promise(res => {
     stage.replaceChildren(h(`<div class="card accusation"><h2>${esc(acc.question)}</h2>
-      <p class="muted">Rileggi il taccuino. Blurred clues are the ones you answered wrongly.</p>
+      <p class="muted">Rileggi il taccuino. Gli indizi sfocati sono quelli a cui hai risposto male.</p>
       <div class="choices">${acc.options.map(o => `<button class="choice" data-id="${esc(o.id)}">${esc(o.label)}</button>`).join("")}</div></div>`));
     stage.querySelector(".choices").addEventListener("click", e => { const b = e.target.closest("[data-id]"); if (b) res(b.dataset.id); });
   });
@@ -50,11 +50,11 @@ export async function play(view, ctx) {
   stage.replaceChildren(h(`<div class="card summary">
     <div class="big-score ${solved ? "ok" : "bad"}">${solved ? "Caso risolto" : "Caso aperto"}</div>
     <p class="it">${md(solved ? acc.solved : acc.wrong)}</p>
-    <p>${right}/${game.scenes.length} grammar tasks correct${right < game.scenes.length ? ". Your mistakes are in the Error Bank and will come back in different sentences" : ""}.</p>
+    <p>${right}/${game.scenes.length} esercizi di grammatica giusti${right < game.scenes.length ? ". I tuoi errori sono nella Banca degli errori e torneranno in frasi diverse" : ""}.</p>
     <div class="row-actions">
-      ${right < game.scenes.length ? `<a class="btn primary" href="#/errors/quiz?concept=${esc(game.conceptIds[0])}">Retest my mistakes</a>` : ""}
-      <a class="btn ghost" href="#/learn/${esc(game.conceptIds[0])}">Review the lesson</a>
-      <a class="btn ghost" href="#/play">More games</a></div></div>`));
+      ${right < game.scenes.length ? `<a class="btn primary" href="#/errors/quiz?concept=${esc(game.conceptIds[0])}">Riprova i miei errori</a>` : ""}
+      <a class="btn ghost" href="#/learn/${esc(game.conceptIds[0])}">Ripassa la lezione</a>
+      <a class="btn ghost" href="#/play">Altri giochi</a></div></div>`));
 }
 
 function waitClick(host, html) {

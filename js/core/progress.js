@@ -29,32 +29,32 @@ export function skillReport(skills, attempts) {
 }
 
 const ACHIEVEMENTS = [
-  { id: "first-10", title: "Primi passi", desc: "Answer 10 questions", test: s => s.answers >= 10 },
-  { id: "answers-250", title: "Costanza", desc: "Answer 250 questions", test: s => s.answers >= 250 },
-  { id: "answers-1000", title: "Mille risposte", desc: "Answer 1,000 questions", test: s => s.answers >= 1000 },
-  { id: "first-mastered", title: "Errore corretto", desc: "Master your first Error Bank entry (3 separate days)", test: s => s.mastered >= 1 },
-  { id: "mastered-25", title: "Cacciatore di errori", desc: "Master 25 errors", test: s => s.mastered >= 25 },
-  { id: "comeback", title: "Ritorno", desc: "Re-master an error you had forgotten", test: s => s.remastered >= 1 },
-  { id: "streak-7", title: "Una settimana", desc: "Practise 7 days in a row", test: s => s.bestStreak >= 7 },
-  { id: "streak-30", title: "Abitudine", desc: "Practise 30 days in a row", test: s => s.bestStreak >= 30 },
-  { id: "detective", title: "Commissario", desc: "Solve a detective case", test: s => s.detectiveSolved >= 1 },
-  { id: "game-types", title: "Eclettico", desc: "Play 5 different kinds of game", test: s => s.gameTypes >= 5 },
-  { id: "unit-done", title: "Unità completata", desc: "Master or place out of every concept in a unit", test: s => s.unitsDone >= 1 },
-  { id: "c1-50", title: "Verso il C1", desc: "Get 50 C1-level answers right", test: s => s.c1Right >= 50 },
-  { id: "writer", title: "Penna fine", desc: "Pass 5 writing tasks", test: s => s.writingPassed >= 5 },
-  { id: "importer", title: "Il mio lessico", desc: "Import 50 phrases from Google Translate", test: s => s.imports >= 50 },
-  { id: "deck-100", title: "Cento parole", desc: "Have 100 cards in your vocabulary deck", test: s => s.deck >= 100 }
+  { id: "first-10", title: "Primi passi", desc: "Rispondi a 10 domande", test: s => s.answers >= 10 },
+  { id: "answers-250", title: "Costanza", desc: "Rispondi a 250 domande", test: s => s.answers >= 250 },
+  { id: "answers-1000", title: "Mille risposte", desc: "Rispondi a 1.000 domande", test: s => s.answers >= 1000 },
+  { id: "first-mastered", title: "Errore corretto", desc: "Correggi per sempre il tuo primo errore (3 giorni diversi)", test: s => s.mastered >= 1 },
+  { id: "mastered-25", title: "Cacciatore di errori", desc: "Correggi per sempre 25 errori", test: s => s.mastered >= 25 },
+  { id: "comeback", title: "Ritorno", desc: "Ricorreggi un errore che avevi dimenticato", test: s => s.remastered >= 1 },
+  { id: "streak-7", title: "Una settimana", desc: "Allenati 7 giorni di fila", test: s => s.bestStreak >= 7 },
+  { id: "streak-30", title: "Abitudine", desc: "Allenati 30 giorni di fila", test: s => s.bestStreak >= 30 },
+  { id: "detective", title: "Commissario", desc: "Risolvi un caso giallo", test: s => s.detectiveSolved >= 1 },
+  { id: "game-types", title: "Eclettico", desc: "Gioca a 5 tipi di gioco diversi", test: s => s.gameTypes >= 5 },
+  { id: "unit-done", title: "Unità completata", desc: "Completa tutti i concetti di un’unità", test: s => s.unitsDone >= 1 },
+  { id: "c1-50", title: "Verso il C1", desc: "50 risposte giuste di livello C1", test: s => s.c1Right >= 50 },
+  { id: "writer", title: "Penna fine", desc: "Supera 5 prove di scrittura", test: s => s.writingPassed >= 5 },
+  { id: "importer", title: "Il mio lessico", desc: "Importa 50 frasi da Google Traduttore", test: s => s.imports >= 50 },
+  { id: "deck-100", title: "Cento parole", desc: "Arriva a 100 carte nel tuo mazzo", test: s => s.deck >= 100 }
 ];
 
 const CHALLENGES = [
-  { id: "ans", title: "Answer 150 questions", goal: 150, measure: w => w.answers },
-  { id: "mst", title: "Master 5 errors", goal: 5, measure: w => w.mastered },
-  { id: "gms", title: "Play 3 different kinds of game", goal: 3, measure: w => w.gameTypes },
-  { id: "c1", title: "Get 25 C1-level answers right", goal: 25, measure: w => w.c1Right },
-  { id: "wri", title: "Pass 2 writing tasks", goal: 2, measure: w => w.writingPassed },
-  { id: "cpt", title: "Practise 5 different concepts", goal: 5, measure: w => w.concepts },
-  { id: "rtst", title: "Do 20 Error Bank retests", goal: 20, measure: w => w.retests },
-  { id: "days", title: "Practise on 5 days this week", goal: 5, measure: w => w.days }
+  { id: "ans", title: "Rispondi a 150 domande", goal: 150, measure: w => w.answers },
+  { id: "mst", title: "Correggi per sempre 5 errori", goal: 5, measure: w => w.mastered },
+  { id: "gms", title: "Gioca a 3 tipi di gioco diversi", goal: 3, measure: w => w.gameTypes },
+  { id: "c1", title: "25 risposte giuste di livello C1", goal: 25, measure: w => w.c1Right },
+  { id: "wri", title: "Supera 2 prove di scrittura", goal: 2, measure: w => w.writingPassed },
+  { id: "cpt", title: "Allenati su 5 concetti diversi", goal: 5, measure: w => w.concepts },
+  { id: "rtst", title: "Fai 20 ripassi della Banca degli errori", goal: 20, measure: w => w.retests },
+  { id: "days", title: "Allenati 5 giorni questa settimana", goal: 5, measure: w => w.days }
 ];
 
 function stats(d, from = 0) {

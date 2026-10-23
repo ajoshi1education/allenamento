@@ -21,7 +21,7 @@ function poolFor(ctx, filter) {
 
 async function intro(view, game, rules) {
   view.replaceChildren(h(`<section class="page narrow game-page">
-    <a class="back" href="#/play">← Games</a>
+    <a class="back" href="#/play">← Giochi</a>
     <h1>${esc(game.title)}</h1><p class="muted">${esc(game.subtitle || "")}</p>
     <div class="card"><ul>${rules.map(r => `<li>${r}</li>`).join("")}</ul><button class="btn primary" data-go>Via!</button></div>
     <div class="hud" hidden></div><div id="ex"></div></section>`));
@@ -33,9 +33,9 @@ async function intro(view, game, rules) {
 async function finish(view, ctx, score, html) {
   const r = await saveGameResult(ctx.store, ctx.game.id, score);
   view.querySelector("#ex").replaceChildren(h(`<div class="card summary">${html}
-    <p class="small muted">Best: ${Math.round(r.best * 100)}% · played ${r.plays}×</p>
-    <div class="row-actions"><a class="btn primary" href="#/play/${esc(ctx.game.id)}" onclick="location.reload()">Play again</a>
-    <a class="btn" href="#/errors/quiz?concept=${esc(ctx.game.conceptIds[0])}">Retest my mistakes</a><a class="btn ghost" href="#/play">More games</a></div></div>`));
+    <p class="small muted">Record: ${Math.round(r.best * 100)}% · giocato ${r.plays}×</p>
+    <div class="row-actions"><a class="btn primary" href="#/play/${esc(ctx.game.id)}" onclick="location.reload()">Gioca ancora</a>
+    <a class="btn" href="#/errors/quiz?concept=${esc(ctx.game.conceptIds[0])}">Riprova i miei errori</a><a class="btn ghost" href="#/play">Altri giochi</a></div></div>`));
   view.querySelector(".hud").hidden = true;
 }
 
@@ -44,11 +44,11 @@ async function gauntlet(view, ctx) {
   const total = game.seconds || 120, livesMax = game.lives || 3;
   const pool = poolFor(ctx, () => true);
   const weak = weakConcepts(await store.errors());
-  const { hud, host } = await intro(view, game, [`${total} seconds and ${livesMax} lives.`, "The clock pauses while you read the feedback.", "Questions get harder as you string correct answers together, and concepts you often get wrong come up more."]);
+  const { hud, host } = await intro(view, game, [`${total} secondi e ${livesMax} vite.`, "Il tempo si ferma mentre leggi la correzione.", "Le domande diventano più difficili se rispondi giusto di fila, e gli argomenti che sbagli spesso tornano più spesso."]);
   hud.hidden = false;
   let left = total, lives = livesMax, score = 0, streak = 0, level = 2, answered = 0, right = 0, running = true;
   const used = new Set();
-  const paint = () => { hud.innerHTML = `<span>⏱ <b>${Math.ceil(left)}</b>s</span><span>${"♥".repeat(lives)}<span class="dim">${"♥".repeat(livesMax - lives)}</span></span><span>Level ${level}</span><span>Streak ${streak}</span><span class="grow"></span><span>Score <b>${score}</b></span>`; };
+  const paint = () => { hud.innerHTML = `<span>⏱ <b>${Math.ceil(left)}</b>s</span><span>${"♥".repeat(lives)}<span class="dim">${"♥".repeat(livesMax - lives)}</span></span><span>Livello ${level}</span><span>Serie ${streak}</span><span class="grow"></span><span>Punti <b>${score}</b></span>`; };
   paint();
   let tick = null;
   const startClock = () => { let last = performance.now(); tick = setInterval(() => { const n = performance.now(); left -= (n - last) / 1000; last = n; if (left <= 0) { left = 0; running = false; } paint(); }, 200); };
@@ -71,21 +71,21 @@ async function gauntlet(view, ctx) {
   }
   stopClock();
   await finish(view, ctx, answered ? right / answered : 0, `<div class="big-score ${lives > 0 ? "ok" : "warn"}">${score}</div>
-    <p>${right}/${answered} correct${lives === 0 ? ". Out of lives" : left <= 0 ? ". Time's up" : ""}. Highest level reached: ${level}.</p>`);
+    <p>${right}/${answered} giuste${lives === 0 ? ". Vite finite" : left <= 0 ? ". Tempo scaduto" : ""}. Livello massimo raggiunto: ${level}.</p>`);
 }
 
 async function builder(view, ctx) {
   const { game, store } = ctx;
   const puzzles = shuffle(poolFor(ctx, () => true).map(toBuilder).filter(Boolean)).slice(0, 8);
-  const { hud, host } = await intro(view, game, ["Build each sentence from the word tiles.", "Some puzzles hide a decoy: a tempting wrong form you must leave out.", `${puzzles.length} sentences.`]);
+  const { hud, host } = await intro(view, game, ["Costruisci ogni frase con le tessere.", "Alcune frasi nascondono un'esca: una forma sbagliata ma allettante da lasciare fuori.", `${puzzles.length} frasi.`]);
   hud.hidden = false;
   let right = 0;
   for (const [i, p] of puzzles.entries()) {
-    hud.innerHTML = `<span>Sentence ${i + 1}/${puzzles.length}</span><span class="grow"></span><span>✓ ${right}</span>`;
+    hud.innerHTML = `<span>Frase ${i + 1}/${puzzles.length}</span><span class="grow"></span><span>✓ ${right}</span>`;
     const { result } = await runExercise(host, p, { store, source: "game:" + game.id, mode: "game", silent: speech.isSilent() });
     if (result.correct) right++;
   }
-  await finish(view, ctx, puzzles.length ? right / puzzles.length : 0, `<div class="big-score ${right / puzzles.length >= 0.8 ? "ok" : "warn"}">${right}/${puzzles.length}</div><p>Sentences built correctly.</p>`);
+  await finish(view, ctx, puzzles.length ? right / puzzles.length : 0, `<div class="big-score ${right / puzzles.length >= 0.8 ? "ok" : "warn"}">${right}/${puzzles.length}</div><p>Frasi costruite correttamente.</p>`);
 }
 
 async function duel(view, ctx) {
@@ -94,7 +94,7 @@ async function duel(view, ctx) {
   const pool = poolFor(ctx, i => ["translate", "transform", "cloze", "choice"].includes(i.type));
   const weak = weakConcepts(await store.errors());
   const target = 5;
-  const { hud, host } = await intro(view, game, [`Race ${esc(rival.name)} ${rival.avatar}: first to ${target} points.`, "Answer correctly before their bar fills to win the point.", "A wrong or slow answer gives them the point."]);
+  const { hud, host } = await intro(view, game, [`Sfida ${esc(rival.name)} ${rival.avatar}: vince chi arriva prima a ${target} punti.`, "Rispondi giusto prima che la sua barra si riempia per vincere il punto.", "Una risposta sbagliata o lenta dà il punto all'avversario."]);
   hud.hidden = false;
   let me = 0, them = 0, level = 2, streak = 0;
   const used = new Set();

@@ -2,9 +2,11 @@
 
 An adaptive Italian trainer for an English speaker at about B2 who is aiming for C1.
 
-**Main mode, the path (Percorso):** 10 units in learning order (B2 consolidation, then C1). Each concept is a short lesson made of bite-size cards with quick checks, then a practice round (which also brings back earlier mistakes that are due), then a harder challenge. Each unit has games and a checkpoint at the end. Steps unlock in order, but you can start any step anyway or "jump ahead" by passing a unit checkpoint. XP, a daily goal and a streak keep track. The order lives in `content/path.json`.
+**Main mode, the path (Percorso):** 10 units in learning order (B2 consolidation, then C1). Each concept is a short lesson made of bite-size cards with quick checks, then a practice round (which also brings back earlier mistakes that are due), then a harder challenge. Each unit has games and a checkpoint at the end, and each of the two sections ends with a **mock CEFR exam** (B2, C1): reading, listening (two plays, as in the real exam), grammar, vocabulary, writing and speaking, scored per section with a 70% pass mark (`js/games/exam.js`, `content/games/exam-*.json`). Steps unlock in order, but you can start any step anyway or "jump ahead" by passing a unit checkpoint. XP, a daily goal and a streak keep track. The order lives in `content/path.json`.
 
-**Convos:** spoken conversations with a tutor (`content/convos/`). The tutor speaks, you answer out loud (or type). Each reply is scored on task (target structures), grammar (detectors for typical spoken mistakes, `js/core/speechcheck.js`), fluency (words per minute) and clarity (how confidently the recogniser understood you, a proxy for pronunciation). There is also a "repeat after me" drill. Mistakes go to the Error Bank.
+**Convos:** spoken conversations with a tutor (`content/convos/`). The tutor speaks, you answer out loud (or type). Each reply is scored on task (target structures), grammar (detectors for typical spoken mistakes, `js/core/speechcheck.js`), fluency (words per minute) and clarity (how confidently the recogniser understood you, a proxy for pronunciation). There is also a "repeat after me" drill. Mistakes go to the Error Bank. 46 conversations, including finance/banking at work, sport (football, cricket), food & wine, travel, film and music, and Italian history. In the dock you can change the tutor speed (🐢 / 1× / 🐇) and hide the tutor text until you have answered, for pure listening practice.
+
+**Interface:** menus and buttons are in Italian; grammar explanations and feedback stay in English.
 
 **Audio modes** (top-bar button): 🔇 silent, 🔊 questions and answers read aloud, 🎤 also answer by microphone (Chrome/Edge). Pick voices and test the microphone in Settings.
 
@@ -13,8 +15,9 @@ An adaptive Italian trainer for an English speaker at about B2 who is aiming for
 **Esplora (free mode):** everything below, in any order:
 
 - **Learn**: 61 lessons across the B2→C1 curriculum.
-- **Play / Test**: 28 games linked to those lessons.
-- **Vocabulary**: a 308-entry library plus spaced-repetition flashcards.
+- **Play / Test**: 42 games linked to those lessons, including culture and history readings and listenings, and **Dettato** (dictation: hear a sentence from the course, write it or say it back).
+- **Verbi**: a conjugation trainer for 91 verbs (pick the tenses; verbs you get wrong come back more) and searchable conjugation tables (`content/verbs.json`, `js/core/verbs.js`).
+- **Vocabulary**: a 517-entry library (including finance, sport, food & wine, travel, culture) plus spaced-repetition flashcards.
 - **Google Translate import**: turns your translation history into flashcards, exercises and games.
 - **Error Bank**: a permanent record of your mistakes, retested until mastered.
 - **Progress**: per-skill progress, recommended next steps, achievements and weekly challenges.
@@ -22,6 +25,9 @@ An adaptive Italian trainer for an English speaker at about B2 who is aiming for
 Everything works as silent text, so you can use it in public. Audio (text-to-speech) and speaking (speech recognition) are used when the browser supports them.
 
 ## Live site
+
+On your phone: open Settings (⚙️) on a computer and scan the QR code, or type the address below. Then install it: iPhone → Safari → Share → *Add to Home Screen*; Android → Chrome → ⋮ → *Install app*.
+
 
 **https://ajoshi1education.github.io/allenamento/**: works on any PC or phone (Chrome or Edge for voice). After changing anything, publish the update with `npm run deploy` (it builds and pushes to the `gh-pages` branch). Progress is stored in each browser: use Settings → Download backup / Restore to move it, or set up the optional sync.
 

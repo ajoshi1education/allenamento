@@ -8,7 +8,7 @@ export async function play(view, ctx) {
   const { game, store, content } = ctx;
   const opp = game.opponent || { name: "Avversario", avatar: "🗣️" };
   view.replaceChildren(h(`<section class="page narrow game-page debate">
-    <a class="back" href="#/play">← Games</a>
+    <a class="back" href="#/play">← Giochi</a>
     <h1>${esc(game.title)}</h1>
     <div class="card"><h3 class="it">${md(game.topic || "")}</h3>
       <div class="bubble-row"><span class="avatar">${opp.avatar || "🗣️"}</span><div class="bubble"><b class="who">${esc(opp.name)}</b><span class="it">${md(game.stance || "")}</span></div></div>
@@ -19,12 +19,12 @@ export async function play(view, ctx) {
   const prompts = (game.prompts || []).map(p => content.items.get(p.id) || p);
   let right = 0;
   for (const [i, p] of prompts.entries()) {
-    const { result } = await runExercise(host, p, { store, source: "game:" + game.id, mode: "game", silent: speech.isSilent(), banner: `Round ${i + 1} of ${prompts.length}` });
+    const { result } = await runExercise(host, p, { store, source: "game:" + game.id, mode: "game", silent: speech.isSilent(), banner: `Turno ${i + 1} di ${prompts.length}` });
     if (result.correct) right++;
   }
   const score = prompts.length ? right / prompts.length : 0;
   await saveGameResult(store, game.id, score);
   host.replaceChildren(h(`<div class="card summary"><div class="big-score ${score >= 0.67 ? "ok" : "warn"}">${right}/${prompts.length}</div>
-    <p>Rounds where your text met every checkpoint. Missed checkpoints are in your Error Bank as writing points to work on.</p>
-    <div class="row-actions"><a class="btn ghost" href="#/play">More games</a></div></div>`));
+    <p>Turni in cui il tuo testo ha rispettato tutti i punti. I punti mancati sono nella Banca degli errori, come aspetti della scrittura da migliorare.</p>
+    <div class="row-actions"><a class="btn ghost" href="#/play">Altri giochi</a></div></div>`));
 }
