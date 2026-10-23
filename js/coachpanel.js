@@ -7,8 +7,9 @@ import { bindMic } from "./mic.js";
 import { findConcepts, parseIntent, resourcesFor, weakest, findConvos } from "./core/coach.js";
 import { buildReport } from "./core/progress.js";
 import { buildPath } from "./core/path.js";
+import * as fb from "./feedback.js";
 
-const SUGGEST = ["I'm struggling with the subjunctive", "Prepositions or pronouns?", "What should I practise next?", "Show my weakest topics", "A conversation about work"];
+const SUGGEST = ["💡 Suggest an improvement", "I'm struggling with the subjunctive", "Prepositions or pronouns?", "What should I practise next?", "Show my weakest topics", "A conversation about work"];
 
 export function mountCoach(store) {
   const content = store.content;
@@ -29,11 +30,31 @@ export function mountCoach(store) {
     if (!chat.children.length) say("Ciao! What would you like to work on? Tell me a topic you find hard, for example <i>the subjunctive</i>, <i>ci and ne</i> or <i>if clauses</i>, and I'll point you to the right lessons, games and conversations.");
     setTimeout(() => input.focus(), 50);
   };
-  const close = () => { panel.hidden = true; fab.hidden = false; speech.stopListening(); };
+  const close = () => { panel.hidden = true; fab.hidden = false; speech.stopListening(); feedbackFor = null; };
+  // Feedback mode: the next message is a suggestion for the app (optionally about a specific exercise).
+  let feedbackFor = null;
+  function startFeedback(item = null) {
+    feedbackFor = { item };
+    say(item ? `What's wrong with this exercise (<span class="it">${esc(String(item.prompt || "").slice(0, 80))}</span>)? E.g. "my answer … should be accepted", "the explanation is unclear", "this Italian sounds unnatural".`
+      : "Tell me what you'd like changed: something broken, confusing or missing, or an idea. Be as specific as you like. I'll turn it into a request that your Claude Code picks up and builds automatically.");
+    input.placeholder = "Describe the issue or idea…";
+    input.focus();
+  }
+  function sendFeedback(text) {
+    const ctx = fb.context({ item: feedbackFor && feedbackFor.item });
+    const url = fb.issueUrl(text, ctx);
+    feedbackFor = null;
+    input.placeholder = "e.g. I'm struggling with if clauses…";
+    const m = say(`Got it. Here's your request:<div class="cp-card"><b>${esc(text)}</b><small>Screen ${esc(ctx.screen)}${ctx.exercise ? " · exercise " + esc(ctx.exercise.id) : ""} · ${esc(ctx.device)}/${esc(ctx.browser)}</small></div>
+      <div class="cp-actions"><a class="btn3d primary small" href="${url}" target="_blank" rel="noopener" data-send-fb>Send to GitHub ↗</a><button class="btn3d small" data-cancel-fb>Cancel</button></div>
+      <p class="small muted">GitHub opens with everything filled in: just press <b>Submit new issue</b> (sign in as ajoshi1education the first time). Your Claude Code checks for new requests every few hours, builds the change, tests it, publishes the app and replies on the issue.</p>`);
+    m.querySelector("[data-send-fb]").onclick = () => { fb.remember(text, url); setTimeout(() => say("Sent to GitHub. Once you press Submit there, it's in the queue. You can see all your requests at <a href=\"https://github.com/" + fb.REPO + "/issues\" target=\"_blank\" rel=\"noopener\">github.com/" + fb.REPO + "/issues</a>."), 400); };
+    m.querySelector("[data-cancel-fb]").onclick = () => say("OK, cancelled.");
+  }
   fab.onclick = open;
   panel.querySelector("[data-close]").onclick = close;
   panel.addEventListener("click", e => { if (e.target.closest("a[href^='#/']")) close(); });
-  panel.querySelectorAll(".cp-suggest .fchip").forEach(b => (b.onclick = () => ask(b.textContent)));
+  panel.querySelectorAll(".cp-suggest .fchip").forEach(b => (b.onclick = () => (b.textContent.startsWith("💡") ? startFeedback() : ask(b.textContent))));
   panel.querySelector("form").onsubmit = e => { e.preventDefault(); const q = input.value.trim(); if (q) { input.value = ""; ask(q); } };
   const mic = panel.querySelector(".mic-btn");
   if (mic) bindMic(mic, async () => {
@@ -45,6 +66,9 @@ export function mountCoach(store) {
 
   async function ask(q) {
     say(esc(q), "me");
+    if (feedbackFor) { sendFeedback(q); return; }
+    // Messages that are clearly suggestions about the app itself go straight to feedback.
+    if (/^(💡|suggest|feedback|bug|report|it would be (nice|good|better)|can you (add|change|make|fix|remove)|could you (add|change|make|fix|remove)|please (add|change|make|fix|remove)|the app should|i wish|add an? |make the )/i.test(q.trim())) { feedbackFor = { item: null }; sendFeedback(q); return; }
     const [errors, progress] = await Promise.all([store.errors(), store.allProgress()]);
     path = path || (content.pathDef ? buildPath(content.pathDef, content) : null);
     const intent = parseIntent(q);
@@ -85,5 +109,5 @@ export function mountCoach(store) {
       ${r.convos.length ? `<div class="cp-sub">🗣️ Conversations: ${r.convos.slice(0, 3).map(cv => `<a href="#/convo/${esc(cv.id)}">${esc(cv.title)}</a>`).join(" · ")}</div>` : ""}
     </div>`;
   }
-  return { open, ask };
+  return { open, ask, feedback: item => { open(); startFeedback(item); } };
 }

@@ -5,6 +5,7 @@ import { masteryProgress } from "./core/errors.js";
 import { bestSpokenAnswer } from "./core/speechcheck.js";
 import { guessLang } from "./core/importer.js";
 import { bindMic } from "./mic.js";
+import { noteItem } from "./feedback.js";
 import * as speech from "./speech.js";
 
 export const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -78,6 +79,7 @@ export function runExercise(host, item, opts) {
   const { store } = opts;
   const content = store.content;
   const concept = content.concepts.get(item.conceptId);
+  noteItem(item);
   return new Promise(resolve => {
     const el = h(`<div class="exercise card" data-item="${esc(item.id)}">
       ${opts.banner ? `<div class="ex-banner">${opts.banner}</div>` : ""}
@@ -301,8 +303,9 @@ function showFeedback(fb, item, resp, result, outcome, concept, opts) {
       ${result.why ? `<p class="fb-why">${md(result.why)}</p>` : ""}
       ${eb.length ? `<div class="eb-row">${eb.join("")}</div>` : ""}
       <div class="ai-fb"></div>
-      <div class="fb-actions"><button type="button" class="btn ghost small" data-ai hidden>✨ Detailed AI feedback</button><span class="grow"></span><button type="button" class="btn primary" data-act="next">Continue ↵</button></div>`;
+      <div class="fb-actions"><button type="button" class="linkish small report-link" data-report title="Something wrong with this exercise? Tell the Coach.">⚑ Report</button><button type="button" class="btn ghost small" data-ai hidden>✨ Detailed AI feedback</button><span class="grow"></span><button type="button" class="btn primary" data-act="next">Continue ↵</button></div>`;
     fb.hidden = false;
+    fb.querySelector("[data-report]")?.addEventListener("click", () => window.__coach && window.__coach.feedback(item));
     // Optional AI corrections (only shown when an API key is configured on the server).
     import("./ai.js").then(async ai => {
       if (!(await ai.aiEnabled())) return;
@@ -336,6 +339,7 @@ function showFeedback(fb, item, resp, result, outcome, concept, opts) {
     ${item.en && item.type !== "translate" ? `<p class="muted small">${esc(item.en)}</p>` : ""}
     ${eb.length ? `<div class="eb-row">${eb.join("")}</div>` : ""}
     <div class="fb-actions">
+      <button type="button" class="linkish small report-link" data-report title="Something wrong with this exercise? Tell the Coach.">⚑ Report</button>
       ${speech.canSpeak() ? `<button type="button" class="btn ghost small" data-say>🔊 Hear it</button>` : ""}
       ${opts.store.saveVocab ? `<button type="button" class="btn ghost small" data-vocab>☆ Save to Vocab</button>` : ""}
       <span class="grow"></span>
@@ -343,6 +347,7 @@ function showFeedback(fb, item, resp, result, outcome, concept, opts) {
     </div>`;
   fb.hidden = false;
   fb.querySelector("[data-say]")?.addEventListener("click", () => speech.say(speakText));
+  fb.querySelector("[data-report]")?.addEventListener("click", () => window.__coach && window.__coach.feedback({ ...item, prompt: item.prompt }));
   fb.querySelector("[data-vocab]")?.addEventListener("click", async ev => {
     const en = item.en || (item.type === "translate" ? item.prompt : "");
     await opts.store.saveVocab({ it: speakText, en, pos: "expr", def: result.why || (concept ? concept.title : ""), conceptIds: [item.conceptId], source: "lesson", examples: [] });

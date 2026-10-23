@@ -591,3 +591,6 @@ body.in-session .coach-fab, body[data-view=convo] .coach-fab { display: none; }
 .cp-input { display: flex; gap: .4rem; padding: .6rem .8rem .8rem; border-top: 2px solid var(--line); align-items: center; }
 .mic-btn.small { width: 40px; height: 40px; font-size: 1.1rem; flex: none; }
 .install-card .btn3d { width: 100%; }
+.report-link { color: var(--muted); font-size: .8rem; }
+.report-link:hover { color: var(--red); }
+body.in-session .coach-panel { z-index: 75; }
