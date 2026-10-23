@@ -1,0 +1,96 @@
+{
+  "unit": "U01",
+  "title": "Il congiuntivo",
+  "cefr": "B2",
+  "concepts": [
+    {
+      "id": "B2-SUBJ-01",
+      "title": "Congiuntivo presente after opinion, emotion, wish and doubt",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": [],
+      "rule": "Verbs of opinion, emotion, wish, doubt and impersonal judgements (penso che, sono contento che, voglio che, dubito che, è possibile che) take the subjunctive. Verbs of certainty (so che, è chiaro che, sono sicuro che) take the indicative.",
+      "assessment": [
+        "Chooses the subjunctive after opinion, emotion, wish, fear and doubt verbs",
+        "Chooses the indicative after verbs and expressions of certainty",
+        "Forms the present subjunctive of regular and common irregular verbs correctly",
+        "Produces subjunctive clauses when translating from English, where English shows no difference"
+      ],
+      "lesson": {
+        "intro": "English rarely marks the subjunctive (\"I think she **is** right\"), so English speakers tend to slip into the indicative. In Italian the main verb decides: if it expresses a **personal view, feeling, wish or uncertainty**, the verb after *che* goes into the **congiuntivo**. If it presents something as **fact or certainty**, use the indicative. In careful and formal Italian, getting this right is one of the clearest markers of a C1 speaker.",
+        "rules": [
+          {
+            "title": "Triggers: subjunctive after che",
+            "text": "Opinion: *penso, credo, mi sembra, mi pare, ritengo, immagino che*. Emotion: *sono contento, mi dispiace, ho paura, temo, è strano che*. Wish or will: *voglio, spero, preferisco, desidero che*. Doubt: *dubito, non sono sicuro, non è detto che*. Impersonal judgement: *è possibile, è importante, bisogna, è meglio, è normale che*.",
+            "examples": [
+              { "it": "Penso che Marco **abbia** ragione.", "en": "I think Marco is right." },
+              { "it": "Mi dispiace che tu **stia** male.", "en": "I'm sorry you're unwell." },
+              { "it": "È importante che tutti **sappiano** la verità.", "en": "It's important that everyone knows the truth." }
+            ]
+          },
+          {
+            "title": "Certainty takes the indicative",
+            "text": "*So che, sono sicuro che, è chiaro / evidente / vero che, dimostra che, vedo che* present a fact, so they take the **indicative**. Overusing the subjunctive here is an error too, often made by advanced learners.",
+            "examples": [
+              { "it": "So che Marco **ha** ragione.", "en": "I know Marco is right." },
+              { "it": "È evidente che la situazione **è** cambiata.", "en": "It's obvious the situation has changed." }
+            ]
+          },
+          {
+            "title": "Forms: congiuntivo presente",
+            "text": "-are verbs: *-i, -i, -i, -iamo, -iate, -ino* (parli). -ere/-ire verbs: *-a, -a, -a, -iamo, -iate, -ano* (prenda, dorma, capisca). The three singular forms are identical, so add the subject pronoun when it isn't clear (*che io / tu / lei vada*). The **noi** form is the same as the indicative (*perdiamo*).",
+            "table": {
+              "head": ["", "essere", "avere", "fare", "andare", "potere", "sapere", "volere", "stare", "dovere", "venire"],
+              "rows": [
+                ["io/tu/lui", "sia", "abbia", "faccia", "vada", "possa", "sappia", "voglia", "stia", "debba", "venga"],
+                ["noi", "siamo", "abbiamo", "facciamo", "andiamo", "possiamo", "sappiamo", "vogliamo", "stiamo", "dobbiamo", "veniamo"],
+                ["voi", "siate", "abbiate", "facciate", "andiate", "possiate", "sappiate", "vogliate", "stiate", "dobbiate", "veniate"],
+                ["loro", "siano", "abbiano", "facciano", "vadano", "possano", "sappiano", "vogliano", "stiano", "debbano", "vengano"]
+              ]
+            }
+          },
+          {
+            "title": "Same subject: use di + infinitive",
+            "text": "When the subject of both verbs is the same, Italian uses *di* + infinitive, not *che* + subjunctive: *Penso **di avere** ragione* (not ~~penso che io abbia~~). Exceptions: *volere, preferire, desiderare* take a bare infinitive (*Voglio partire*).",
+            "examples": [
+              { "it": "Spero di vederti presto.", "en": "I hope to see you soon." },
+              { "it": "Spero che tu possa venire.", "en": "I hope you can come." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Penso che è vero.", "right": "Penso che sia vero.", "why": "Opinion verb: needs the subjunctive. *Penso che è* is common in fast speech but marked as sub-standard." },
+          { "wrong": "So che abbia ragione.", "right": "So che ha ragione.", "why": "*Sapere* states a fact, so it takes the indicative." },
+          { "wrong": "Credo che lui stii bene.", "right": "Credo che lui stia bene.", "why": "*Stare* and *dare* have irregular stems: *stia, dia*, never *stii, dii*." },
+          { "wrong": "Penso che io abbia torto.", "right": "Penso di avere torto.", "why": "Same subject in both clauses: use *di* + infinitive." }
+        ],
+        "tips": [
+          "Quick test: can you add 'I'm certain that…' without changing the meaning? If so, use the indicative.",
+          "In informal speech you'll hear *penso che è*. Recognise it, but don't write it."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-SUBJ-01.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Penso che Marco ___ (avere) ragione.", "answers": ["abbia"], "focus": ["abbia"], "errorType": "verb-form", "traps": [{ "match": "ha", "errorType": "indicative-for-subjunctive", "why": "*Penso che* expresses an opinion, so it needs the subjunctive: *abbia*." }], "explanation": "Opinion verb (pensare) + che → congiuntivo. *Avere* → *abbia*.", "en": "I think Marco is right." },
+        { "id": "B2-SUBJ-01.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Mi sembra che tu ___ (essere) un po' stanco oggi.", "answers": ["sia"], "focus": ["sia"], "errorType": "verb-form", "traps": [{ "match": "sei", "errorType": "indicative-for-subjunctive", "why": "*Mi sembra che* is an impression or opinion, so it takes the subjunctive: *(tu) sia*." }], "explanation": "*Mi sembra che* + congiuntivo. *Essere*: io/tu/lui **sia**.", "en": "It seems to me you're a bit tired today." },
+        { "id": "B2-SUBJ-01.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Sono contenta che voi ___ (venire) alla festa.", "answers": ["veniate"], "focus": ["veniate"], "errorType": "verb-form", "traps": [{ "match": "venite", "errorType": "indicative-for-subjunctive", "why": "Emotion (*sono contenta che*) needs the subjunctive: *veniate*." }, { "match": "vengate", "errorType": "verb-form", "why": "The voi form keeps the regular stem: *veniate* (compare *vengano* for loro)." }], "explanation": "Emotion + che → congiuntivo. *Venire*: venga, venga, venga, veniamo, **veniate**, vengano.", "en": "I'm glad you (all) are coming to the party." },
+        { "id": "B2-SUBJ-01.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Dubito che loro ___ (sapere) la verità.", "answers": ["sappiano"], "focus": ["sappiano"], "errorType": "verb-form", "traps": [{ "match": "sanno", "errorType": "indicative-for-subjunctive", "why": "Doubt (*dubito che*) needs the subjunctive." }, { "match": "sapano", "errorType": "verb-form", "why": "*Sapere* has an irregular subjunctive stem with a double p: *sappia, sappiano*." }], "explanation": "Doubt + che → congiuntivo. *Sapere* → **sappiano**.", "en": "I doubt they know the truth." },
+        { "id": "B2-SUBJ-01.e05", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Temo che Giulia non ___ (stare) bene.", "answers": ["stia"], "focus": ["stia"], "errorType": "verb-form", "traps": [{ "match": "sta", "errorType": "indicative-for-subjunctive", "why": "Fear (*temo che*) takes the subjunctive." }, { "match": "stii", "errorType": "verb-form", "why": "*Stare* → *stia*, not *stii* (same pattern as *dare* → *dia*)." }], "explanation": "Fear + che → congiuntivo. *Stare* → **stia**.", "en": "I'm afraid Giulia isn't well." },
+        { "id": "B2-SUBJ-01.e06", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "È possibile che il treno ___ (fare) ritardo.", "answers": ["faccia"], "focus": ["faccia"], "errorType": "verb-form", "traps": [{ "match": "fa", "errorType": "indicative-for-subjunctive", "why": "*È possibile che* is an impersonal judgement of possibility, so it takes the subjunctive." }], "explanation": "Impersonal expression of possibility → congiuntivo. *Fare* → **faccia**.", "en": "The train may be late." },
+        { "id": "B2-SUBJ-01.e07", "type": "cloze", "difficulty": 3, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Credo che i ragazzi ___ (dovere) studiare di più.", "answers": ["debbano"], "focus": ["debbano"], "errorType": "verb-form", "traps": [{ "match": "devono", "errorType": "indicative-for-subjunctive", "why": "*Credo che* + subjunctive. *Dovere* → *debbano*." }, { "match": "devano", "errorType": "verb-form", "why": "*Devano* is non-standard. The standard form is *debbano*." }], "explanation": "Opinion + che → congiuntivo. *Dovere*: debba … **debbano**.", "en": "I think the boys need to study more." },
+        { "id": "B2-SUBJ-01.e08", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Spero che tu ___ (potere) venire sabato.", "answers": ["possa"], "focus": ["possa"], "errorType": "verb-form", "traps": [{ "match": "puoi", "errorType": "indicative-for-subjunctive", "why": "*Sperare che* expresses a wish: subjunctive *possa*." }], "explanation": "Wish/hope + che → congiuntivo. *Potere* → **possa**.", "en": "I hope you can come on Saturday." },
+        { "id": "B2-SUBJ-01.e09", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Non sono sicuro che lei ___ (capire) il problema.", "answers": ["capisca"], "focus": ["capisca"], "errorType": "verb-form", "traps": [{ "match": "capisce", "errorType": "indicative-for-subjunctive", "why": "*Non sono sicuro* expresses uncertainty, so it needs the subjunctive. Note that *sono sicuro che* (certainty) takes the indicative." }, { "match": "capa", "errorType": "verb-form", "why": "-isc- verbs keep -isc- in the singular: *capisca*." }], "explanation": "Uncertainty + che → congiuntivo. -isc- verbs: **capisca**.", "en": "I'm not sure she understands the problem." },
+        { "id": "B2-SUBJ-01.e10", "type": "cloze", "difficulty": 3, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Ho paura che noi ___ (perdere) il treno.", "answers": ["perdiamo"], "focus": ["perdiamo"], "errorType": "verb-form", "traps": [{ "match": "perdiate", "errorType": "verb-form", "why": "That's the voi form. Here the subject is noi: *perdiamo*." }, { "match": "perdessimo", "errorType": "tense-sequence", "why": "The main verb is present (*ho paura*), so use the present subjunctive, not the imperfect." }], "explanation": "Trick question: the **noi** form of the present subjunctive is identical to the indicative: *perdiamo*.", "en": "I'm afraid we'll miss the train." },
+        { "id": "B2-SUBJ-01.e11", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct form of the verb in brackets.", "prompt": "Immagino che voi ___ (essere) stanchi dopo il viaggio.", "answers": ["siate"], "focus": ["siate"], "errorType": "verb-form", "traps": [{ "match": "siete", "errorType": "indicative-for-subjunctive", "why": "*Immagino che* is a supposition, so it takes the subjunctive: *siate*." }], "explanation": "Supposition + che → congiuntivo. *Essere* voi → **siate**.", "en": "I imagine you're tired after the journey." },
+        { "id": "B2-SUBJ-01.e12", "type": "cloze", "difficulty": 3, "instruction": "Indicative or subjunctive? Complete with the correct form.", "prompt": "So che Marco ___ (avere) ragione.", "answers": ["ha"], "focus": ["ha"], "errorType": "subjunctive-for-indicative", "traps": [{ "match": "abbia", "errorType": "subjunctive-for-indicative", "why": "*Sapere* expresses certainty, not opinion: indicative *ha*." }], "explanation": "Certainty (*so che*) → indicativo.", "en": "I know Marco is right." },
+        { "id": "B2-SUBJ-01.e13", "type": "cloze", "difficulty": 3, "instruction": "Indicative or subjunctive? Complete with the correct form.", "prompt": "È evidente che la situazione ___ (essere) cambiata.", "answers": ["è"], "focus": ["è"], "errorType": "subjunctive-for-indicative", "traps": [{ "match": "sia", "errorType": "subjunctive-for-indicative", "why": "*È evidente che* presents a fact: indicative *è (cambiata)*." }], "explanation": "Impersonal expressions of **certainty** (è evidente / chiaro / vero che) → indicativo.", "en": "It's obvious the situation has changed." },
+        { "id": "B2-SUBJ-01.e14", "type": "choice", "difficulty": 2, "instruction": "Choose the correct form.", "prompt": "Voglio che tu mi ___ la verità.", "options": ["dici", "dica", "dirai", "dicessi"], "answer": 1, "errorType": "verb-form", "traps": [{ "match": "dici", "errorType": "indicative-for-subjunctive", "why": "*Volere che* (will) takes the subjunctive." }, { "match": "dicessi", "errorType": "tense-sequence", "why": "*Dicessi* is imperfect subjunctive, used after a past or conditional main verb (*Volevo / Vorrei che tu dicessi*). Here *voglio* is present." }, { "match": "dirai", "errorType": "indicative-for-subjunctive", "why": "Future indicative isn't possible after *volere che*." }], "explanation": "Will + che → congiuntivo presente: **dica**.", "en": "I want you to tell me the truth." },
+        { "id": "B2-SUBJ-01.e15", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian.", "prompt": "I think she is right.", "answers": ["(Penso|Credo) che [lei] abbia ragione", "Mi (sembra|pare) che [lei] abbia ragione"], "focus": ["abbia"], "errorType": "indicative-for-subjunctive", "traps": [{ "contains": ["ha"], "errorType": "indicative-for-subjunctive", "why": "After *penso / credo che*, *ha* becomes subjunctive *abbia*." }, { "contains": ["è"], "errorType": "vocabulary", "why": "'To be right' is *avere ragione* in Italian, not *essere*." }], "explanation": "*Avere ragione* = to be right. Opinion → *abbia*.", "en": "I think she is right." },
+        { "id": "B2-SUBJ-01.e16", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian (informal 'you').", "prompt": "I'm glad you're here.", "answers": ["(Sono contento|Sono contenta|Sono felice|Mi fa piacere) che [tu] sia qui", "(Sono contento|Sono contenta|Sono felice|Mi fa piacere) che [tu] sia qua"], "focus": ["sia"], "errorType": "indicative-for-subjunctive", "traps": [{ "contains": ["sei"], "errorType": "indicative-for-subjunctive", "why": "Emotion + che → subjunctive: *(tu) sia*." }, { "contains": ["siete"], "errorType": "indicative-for-subjunctive", "why": "Use the informal singular, *tu*, and the subjunctive: *sia*." }], "explanation": "Emotion + che → *sia*.", "en": "I'm glad you're here." },
+        { "id": "B2-SUBJ-01.e17", "type": "transform", "difficulty": 3, "instruction": "Rewrite the sentence starting with 'Penso che…'.", "prompt": "Paolo arriva stasera.", "answers": ["Penso che Paolo arrivi stasera"], "focus": ["arrivi"], "errorType": "indicative-for-subjunctive", "traps": [{ "contains": ["arriva"], "errorType": "indicative-for-subjunctive", "why": "After *penso che*, *arriva* → *arrivi* (-are verbs take -i)." }, { "contains": ["arriverà"], "errorType": "wrong-tense", "ok": true, "why": "*Penso che Paolo arriverà stasera* is also used, because the future can replace the subjunctive for future events. The present subjunctive *arrivi* is the target form here." }], "explanation": "-are verbs: congiuntivo in **-i**: *arrivi*.", "en": "I think Paolo is arriving tonight." },
+        { "id": "B2-SUBJ-01.e18", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "It's strange that nobody is answering.", "answers": ["È strano che nessuno risponda", "È strano che non risponda nessuno", "È strano che nessuno stia rispondendo"], "focus": ["risponda"], "errorType": "indicative-for-subjunctive", "traps": [{ "contains": ["risponde"], "errorType": "indicative-for-subjunctive", "why": "*È strano che* (emotional judgement) → subjunctive *risponda*." }, { "contains": ["sta"], "errorType": "indicative-for-subjunctive", "why": "The progressive also needs the subjunctive: *stia rispondendo*." }], "explanation": "Judgement + che → *risponda* (or *stia rispondendo*).", "en": "It's strange that nobody is answering." },
+        { "id": "B2-SUBJ-01.e19", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "I hope you (all) enjoy yourselves at the party.", "tokens": ["Spero", "che", "vi", "divertiate", "alla", "festa"], "answers": ["Spero che vi divertiate alla festa"], "errorType": "word-order", "explanation": "The reflexive pronoun *vi* goes before the conjugated verb: *che vi divertiate*." },
+        { "id": "B2-SUBJ-01.e20", "type": "transform", "difficulty": 4, "instruction": "Rewrite using 'di' + infinitive where the subject is the same.", "prompt": "Penso che io abbia sbagliato.", "answers": ["Penso di avere sbagliato", "Penso di aver sbagliato"], "focus": ["di"], "errorType": "infinitive-construction", "traps": [{ "contains": ["che"], "errorType": "infinitive-construction", "why": "Same subject (io… io) → *di* + infinitive, no *che*." }], "explanation": "Same subject → *penso di* + (past) infinitive: *di aver(e) sbagliato*." }
+      ]
+    }
+  ]
+}

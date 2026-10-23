@@ -1,0 +1,72 @@
+{
+  "id": "G-DET-01",
+  "type": "detective",
+  "title": "Il caso del quadro scomparso",
+  "subtitle": "A painting has vanished from Villa Ardenghi. Every witness speaks in the subjunctive, so get it right and the clues sharpen.",
+  "conceptIds": ["B2-SUBJ-01"],
+  "difficulty": 2,
+  "minutes": 8,
+  "characters": {
+    "commissario": { "name": "Lei (Commissaria/o)", "role": "you" },
+    "bruno": { "name": "Bruno Sala", "role": "custode del museo", "avatar": "🗝️" },
+    "ettore": { "name": "Ettore Valli", "role": "maggiordomo della contessa", "avatar": "🎩" },
+    "sofia": { "name": "Sofia Lenti", "role": "restauratrice", "avatar": "🖌️" },
+    "contessa": { "name": "Contessa Ardenghi", "role": "proprietaria", "avatar": "💎" }
+  },
+  "intro": "Villa Ardenghi, ore 8. La Contessa la chiama in lacrime: «Il mio Canaletto non c'è più!» La porta del salone è chiusa a chiave e le finestre sono intatte. Tre persone hanno accesso alla villa.",
+  "scenes": [
+    {
+      "speaker": "contessa",
+      "line": "Commissario, non riesco a crederci. Voglio che lei ___ (trovare) il colpevole entro stasera!",
+      "item": { "id": "G-DET-01.s1", "conceptId": "B2-SUBJ-01", "type": "cloze", "difficulty": 1, "instruction": "Complete the Contessa's line.", "prompt": "Voglio che lei ___ (trovare) il colpevole entro stasera!", "answers": ["trovi"], "focus": ["trovi"], "errorType": "verb-form", "traps": [{ "match": "trova", "errorType": "indicative-for-subjunctive", "why": "*Volere che* + subjunctive. -are verb, lei form: *trovi*." }, { "match": "trovate", "errorType": "verb-form", "why": "*Lei* (formal you) takes the third-person singular: *trovi*." }], "explanation": "Will + che → congiuntivo. *Trovare* (lei) → **trovi**." },
+      "clue": "La Contessa è sconvolta, ma dice una cosa interessante: «Il quadro era ancora lì ieri alle 19.»",
+      "clueBlurred": "La Contessa dice qualcosa sull'orario… ma è troppo agitata per essere chiara."
+    },
+    {
+      "speaker": "bruno",
+      "line": "Mi sembra strano che la porta ___ (essere) ancora chiusa a chiave. Nessuno l'ha forzata.",
+      "item": { "id": "G-DET-01.s2", "conceptId": "B2-SUBJ-01", "type": "cloze", "difficulty": 1, "instruction": "Complete Bruno's line.", "prompt": "Mi sembra strano che la porta ___ (essere) ancora chiusa a chiave.", "answers": ["sia"], "focus": ["sia"], "errorType": "verb-form", "traps": [{ "match": "è", "errorType": "indicative-for-subjunctive", "why": "*Mi sembra strano che* expresses an opinion and a feeling: subjunctive *sia*." }], "explanation": "Opinion/emotion → **sia**." },
+      "clue": "Nessuna effrazione: chi è entrato aveva le chiavi.",
+      "clueBlurred": "Bruno parla della porta… qualcosa sulle chiavi?"
+    },
+    {
+      "speaker": "ettore",
+      "line": "Signor commissario, è impossibile che io ___ (avere) le chiavi del salone: le tengono solo Bruno e la restauratrice.",
+      "item": { "id": "G-DET-01.s3", "conceptId": "B2-SUBJ-01", "type": "cloze", "difficulty": 2, "instruction": "Complete Ettore's line.", "prompt": "È impossibile che io ___ (avere) le chiavi del salone.", "answers": ["abbia"], "focus": ["abbia"], "errorType": "verb-form", "traps": [{ "match": "ho", "errorType": "indicative-for-subjunctive", "why": "*È impossibile che* is a judgement of (im)possibility, so it takes the subjunctive: *(io) abbia*." }, { "match": "avessi", "errorType": "tense-sequence", "why": "The main clause is present (*è impossibile*), so use the present subjunctive *abbia*." }], "explanation": "Impersonal judgement → **abbia**." },
+      "clue": "Solo due persone hanno le chiavi: Bruno (il custode) e Sofia (la restauratrice).",
+      "clueBlurred": "Ettore dice che qualcuno tiene le chiavi… ma chi?"
+    },
+    {
+      "speaker": "bruno",
+      "line": "Temo che qualcuno ___ (volere) incolparmi! Ieri sera ero al Bar Centrale con mio cognato fino a mezzanotte.",
+      "item": { "id": "G-DET-01.s4", "conceptId": "B2-SUBJ-01", "type": "cloze", "difficulty": 2, "instruction": "Complete Bruno's line.", "prompt": "Temo che qualcuno ___ (volere) incolparmi!", "answers": ["voglia"], "focus": ["voglia"], "errorType": "verb-form", "traps": [{ "match": "vuole", "errorType": "indicative-for-subjunctive", "why": "Fear (*temo che*) → subjunctive." }, { "match": "volia", "errorType": "verb-form", "why": "*Volere* → *voglia* (irregular stem vogl-)." }], "explanation": "Fear → congiuntivo. *Volere* → **voglia**." },
+      "clue": "Il barista conferma: Bruno è rimasto al bar dalle 20 a mezzanotte.",
+      "clueBlurred": "Bruno dice di avere un alibi… ma non è chiaro dove fosse."
+    },
+    {
+      "speaker": "sofia",
+      "line": "Non è che io ___ (sapere) molto di quel Canaletto… lavoro su altre opere, io.",
+      "item": { "id": "G-DET-01.s5", "conceptId": "B2-SUBJ-01", "type": "cloze", "difficulty": 3, "instruction": "Complete Sofia's line. (*Non è che* = 'it's not that…')", "prompt": "Non è che io ___ (sapere) molto di quel Canaletto…", "answers": ["sappia"], "focus": ["sappia"], "errorType": "verb-form", "traps": [{ "match": "so", "errorType": "indicative-for-subjunctive", "why": "*Non è che…* ('it's not that…') is followed by the subjunctive: *sappia*." }, { "match": "sapia", "errorType": "verb-form", "why": "Double p: *sappia*." }], "explanation": "*Non è che* + congiuntivo. *Sapere* → **sappia**." },
+      "clue": "Eppure nel suo laboratorio c'è una cornice vuota delle stesse dimensioni del Canaletto, e odore di solvente fresco.",
+      "clueBlurred": "Nel laboratorio di Sofia c'è qualcosa… ma non riesce a vederlo bene."
+    },
+    {
+      "speaker": "commissario",
+      "line": "You look Sofia in the eye and say (formally): \"I doubt that you are telling me the truth.\"",
+      "item": { "id": "G-DET-01.s6", "conceptId": "B2-SUBJ-01", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian, using formal Lei.", "prompt": "I doubt that you are telling me the truth.", "answers": ["Dubito che [lei] mi (dica|stia dicendo) la verità"], "focus": ["dica", "stia"], "errorType": "indicative-for-subjunctive", "traps": [{ "contains": ["dice"], "errorType": "indicative-for-subjunctive", "why": "Doubt → subjunctive: *(Lei) mi dica*." }, { "contains": ["sta"], "errorType": "indicative-for-subjunctive", "why": "The progressive also needs the subjunctive: *stia dicendo*." }, { "match": "Dubito che tu mi (dica|dici|stia dicendo|stai dicendo) la verità", "errorType": "register", "why": "A police officer addresses a suspect with formal *Lei*: *Dubito che (Lei) mi dica la verità*." }], "explanation": "Doubt + che → congiuntivo; formal *Lei* → *(Lei) mi dica*." },
+      "clue": "Sofia arrossisce e guarda la porta del laboratorio.",
+      "clueBlurred": "Sofia resta impassibile."
+    }
+  ],
+  "accusation": {
+    "question": "Chi ha rubato il quadro?",
+    "options": [
+      { "id": "bruno", "label": "Bruno, il custode" },
+      { "id": "ettore", "label": "Ettore, il maggiordomo" },
+      { "id": "sofia", "label": "Sofia, la restauratrice" }
+    ],
+    "answer": "sofia",
+    "solved": "Esatto! Sofia aveva le chiavi, nessun alibi e una cornice vuota in laboratorio. Ha confessato: voleva sostituire il Canaletto con una copia.",
+    "wrong": "Non regge: rileggi gli indizi. Chi aveva le chiavi e nessun alibi?"
+  }
+}

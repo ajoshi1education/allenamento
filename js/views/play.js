@@ -1,0 +1,52 @@
+// Play / Test tab: game library and game launcher.
+import { h, esc } from "../ui.js";
+
+export const ENGINES = {
+  detective: { label: "Detective case", icon: "🕵️", load: () => import("../games/detective.js") },
+  dialogue: { label: "Conversation", icon: "💬", load: () => import("../games/dialogue.js") },
+  gauntlet: { label: "Grammar gauntlet", icon: "⏱️", load: () => import("../games/gauntlet.js") },
+  builder: { label: "Sentence builder", icon: "🧩", load: () => import("../games/gauntlet.js") },
+  duel: { label: "Translation duel", icon: "⚔️", load: () => import("../games/gauntlet.js") },
+  reading: { label: "Reading", icon: "📰", load: () => import("../games/reading.js") },
+  listening: { label: "Listening", icon: "🎧", load: () => import("../games/reading.js") },
+  debate: { label: "Debate & writing", icon: "🖋️", load: () => import("../games/debate.js") }
+};
+
+export async function render(view, ctx) {
+  const { content, store, params, query } = ctx;
+  if (params[0]) {
+    const game = content.games.get(params[0]);
+    if (!game) { view.replaceChildren(h(`<div class="card">Unknown game. <a href="#/play">Back</a></div>`)); return; }
+    const eng = ENGINES[game.type];
+    const mod = await eng.load();
+    return mod.play(view, { ...ctx, game });
+  }
+  const results = new Map((await store.db.all("games")).map(g => [g.id, g]));
+  const filter = query.concept || "";
+  const games = [...content.games.values()].filter(g => !filter || (g.conceptIds || []).includes(filter));
+  const types = [...new Set(games.map(g => g.type))];
+  view.replaceChildren(h(`<section class="page">
+    <div class="page-head"><div><h1>Play / Test</h1><p class="muted">Every game tests concepts from Learn, and every mistake goes to the Error Bank. All games can be played silently, as text only.</p></div>
+      <div class="head-actions"><a class="btn primary" href="#/errors/quiz">Personalised challenge</a></div></div>
+    ${filter ? `<p class="notice card">Showing games for <b>${esc(filter)}</b>. <a href="#/play">Show all</a></p>` : ""}
+    ${types.map(t => `<h2>${ENGINES[t]?.icon || ""} ${esc(ENGINES[t]?.label || t)}</h2>
+      <div class="game-grid">${games.filter(g => g.type === t).map(g => {
+        const r = results.get(g.id);
+        return `<a class="game card" href="#/play/${esc(g.id)}">
+          <div class="g-icon">${ENGINES[g.type]?.icon || "🎲"}</div>
+          <div class="g-body"><h3>${esc(g.title)}</h3><p class="small muted">${esc(g.subtitle || "")}</p>
+          <div class="c-meta">${(g.conceptIds || []).map(c => `<span class="cid">${esc(c)}</span>`).join("")}${g.minutes ? `<span>~${g.minutes} min</span>` : ""}
+          ${r ? `<span class="ok-t">Best ${Math.round(r.best * 100)}% · played ${r.plays}×</span>` : ""}</div></div></a>`;
+      }).join("")}</div>`).join("")}
+  </section>`));
+}
+
+// Shared by all engines: save a game result.
+export async function saveGameResult(store, gameId, score) {
+  const r = (await store.db.get("games", gameId)) || { id: gameId, plays: 0, best: 0, history: [] };
+  r.plays += 1; r.best = Math.max(r.best, score); r.last = store.clock();
+  r.history = [...r.history, { t: store.clock(), score }].slice(-20);
+  await store.db.put("games", r);
+  store.emit("game");
+  return r;
+}
