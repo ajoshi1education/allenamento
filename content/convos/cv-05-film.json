@@ -1,0 +1,97 @@
+{
+  "id": "CV-05",
+  "title": "Il film di ieri sera",
+  "subtitle": "Talking about a film: telling the plot, opinions with the subjunctive, però and eppure.",
+  "level": "B2",
+  "conceptIds": ["B2-PAST-01", "B2-SUBJ-01", "B2-SUBJ-02", "B2-CONN-01"],
+  "tutor": { "name": "Sara", "avatar": "👩", "gender": "female", "register": "informal" },
+  "setting": "Your colleague and friend Sara catches you at the coffee machine the morning after you went to the cinema.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Ehi, ieri sera eri al cinema, vero? Che film hai visto?",
+      "en": "Hey, you were at the cinema last night, weren't you? What film did you see?",
+      "task": "Say what you saw (what kind of film) and who with. Use the passato prossimo.",
+      "hint": "Ho visto un thriller… con…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          { "label": "Uses the passato prossimo", "anyOf": ["\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*Ho visto…, sono andato/a…*" },
+          { "label": "Says what kind of film", "anyOf": ["\\b(film|serie|thriller|commedia|giallo|horror|dramma|drammatico|documentario|fantascienza|animazione|cartone|romantico|western|poliziesco|biografico|musical|storico)\\b"], "min": 1, "errorType": "vocabulary", "conceptId": "B2-SPEAK-01", "hint": "*un thriller, una commedia, un film d'animazione…*" }
+        ]
+      },
+      "model": "Ho visto un thriller italiano con mia sorella, si chiama La stanza vuota.",
+      "followOk": "Non lo conosco! Di che cosa parla?",
+      "followMiss": "Ah, hai visto un thriller con tua sorella? Non lo conosco."
+    },
+    {
+      "id": "t2",
+      "say": "Dai, raccontami un po' la trama. Ma senza spoiler!",
+      "en": "Go on, tell me a bit about the plot. But no spoilers!",
+      "task": "Tell the beginning of the story: imperfetto for the background, passato prossimo for what happened.",
+      "hint": "All'inizio il protagonista viveva… ma un giorno ha trovato…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Imperfetto for the background", "anyOf": ["\\b(era|erano|c['’]era|c['’]erano|\\p{L}+(ava|avano|eva|evano|iva|ivano))\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*viveva, lavorava, c'era…*" },
+          { "label": "Passato prossimo for the event", "anyOf": ["\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*…un giorno ha trovato…*" }
+        ]
+      },
+      "model": "All'inizio il protagonista viveva da solo in una vecchia casa, ma un giorno ha trovato una lettera misteriosa.",
+      "followOk": "Mamma mia, che inquietante! E il finale?",
+      "followMiss": "Ah, quindi all'inizio lui viveva da solo, e poi un giorno ha trovato qualcosa di strano? Interessante."
+    },
+    {
+      "id": "t3",
+      "say": "Senza dirmi come finisce: il finale ti è piaciuto?",
+      "en": "Without telling me how it ends: did you like the ending?",
+      "task": "Give your opinion with penso che / mi sembra che + subjunctive, then add a contrast with però.",
+      "hint": "Penso che il finale sia…, però…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Opinion verb + che + subjunctive", "anyOf": ["\\b(penso|credo|mi sembra|mi pare|trovo|ho l['’]impressione)\\s+che\\s+(\\p{L}+\\s+){0,3}(sia|siano|abbia|abbiano|possa|possano|faccia|facciano|funzioni|funzionino|arrivi|arrivino|finisca|manchi|sia stato|sia stata)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Penso che il finale **sia**…*" },
+          { "label": "Contrast with però / eppure / ma", "anyOf": ["\\b(però|eppure|tuttavia|ma|anche se|comunque)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…però gli attori sono bravissimi.*" }
+        ]
+      },
+      "model": "Penso che il finale sia un po' prevedibile, però gli attori sono davvero bravissimi.",
+      "followOk": "Succede spesso con i thriller. Però se gli attori sono bravi, si perdona tutto.",
+      "followMiss": "Capisco. Quindi pensi che il finale sia prevedibile, però gli attori ti sono piaciuti."
+    },
+    {
+      "id": "t4",
+      "say": "Io invece ho visto una serie che adorano tutti, ma a me ha deluso. Strano, no?",
+      "en": "I, on the other hand, watched a series everyone loves, but it disappointed me. Strange, isn't it?",
+      "task": "React with 'è strano che / mi sorprende che' + congiuntivo passato, and contrast with eppure.",
+      "hint": "È strano che non ti sia piaciuta, eppure…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Emotion/judgement + che + subjunctive", "anyOf": ["\\b(è strano|strano|mi sorprende|mi stupisce|peccato|che peccato|è un peccato|mi sembra strano|è incredibile|non ci credo)\\s+che\\s+(\\p{L}+\\s+){0,3}(sia|siano|abbia|abbiano|piaccia|piacciano|deluda|convinca|sia piaciuta|sia piaciuto)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-02", "hint": "*È strano che non ti **sia piaciuta**.*" },
+          { "label": "Contrast with eppure / però", "anyOf": ["\\b(eppure|però|tuttavia|ma|anche se)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…eppure tutti ne parlano bene.*" }
+        ]
+      },
+      "model": "Davvero? È strano che non ti sia piaciuta, eppure tutti ne parlano benissimo.",
+      "followOk": "Lo so! Forse avevo aspettative troppo alte.",
+      "followMiss": "Eh sì, è strano che non mi sia piaciuta, eppure ne parlano tutti bene."
+    },
+    {
+      "id": "t5",
+      "say": "Allora, quale mi consigli tra i due, il tuo film o la mia serie?",
+      "en": "So which of the two do you recommend, your film or my series?",
+      "task": "Recommend one with 'ti consiglio di + infinitive' and give a reason.",
+      "hint": "Ti consiglio di guardare…, perché…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Consigliare di + infinitive", "anyOf": ["\\b(consiglio|consiglierei|suggerisco|suggerirei|direi|propongo)\\s+di\\s+\\p{L}+(are|ere|ire|arlo|erlo|irlo|arla|erla|irla)\\b", "\\bti\\s+conviene\\s+\\p{L}+(are|ere|ire|arlo|erlo|irlo|arla|erla|irla)\\b"], "min": 1, "errorType": "infinitive-construction", "conceptId": "B2-PREP-01", "hint": "*Ti consiglio **di** guardare…*" },
+          { "label": "Gives a reason", "anyOf": ["\\b(perché|poiché|visto che|dato che|siccome|infatti)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…perché è più breve.*" }
+        ]
+      },
+      "model": "Ti consiglio di guardare il mio film, perché è più breve e la storia è davvero originale.",
+      "followOk": "Va bene, mi hai convinta. Lo guardo questo fine settimana!",
+      "followMiss": "Ok, allora mi consigli di vedere il tuo film? Va bene, lo guardo questo fine settimana."
+    }
+  ],
+  "closing": "Grazie del consiglio! Poi ti dico che cosa ne penso. Ciao!"
+}

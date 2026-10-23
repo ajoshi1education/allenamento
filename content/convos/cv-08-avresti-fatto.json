@@ -1,0 +1,97 @@
+{
+  "id": "CV-08",
+  "title": "Che cosa avresti fatto?",
+  "subtitle": "A friend regrets a decision: past conditional, se + trapassato congiuntivo, advice.",
+  "level": "C1",
+  "conceptIds": ["B2-COND-02", "B2-HYP-02", "B2-PAST-02", "B2-SUBJ-02"],
+  "tutor": { "name": "Luca", "avatar": "🙍‍♂️", "gender": "male", "register": "informal" },
+  "setting": "Your friend Luca calls you in the evening. He sounds upset: he's just done something rather rash.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Non ci crederai: ho lasciato il lavoro da un giorno all'altro, senza avere niente in mano.",
+      "en": "You won't believe it: I quit my job overnight, without anything else lined up.",
+      "task": "React with surprise and ask what had happened, using the trapassato prossimo.",
+      "hint": "Ma dai! Che cosa era successo?",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          { "label": "Uses the trapassato prossimo", "anyOf": ["\\b(ero|eri|era|eravamo|eravate|erano|avevo|avevi|aveva|avevamo|avevate|avevano)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-02", "hint": "*Era successo qualcosa? Avevi litigato?*" },
+          { "label": "Reacts with surprise", "anyOf": ["\\b(davvero|ma dai|non ci credo|sul serio|cavolo|accidenti|incredibile|mamma mia|caspita|veramente|addirittura|no)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "B2-INT-01", "hint": "*Ma dai! Sul serio?*" }
+        ]
+      },
+      "model": "Ma dai, sul serio? Come mai l'hai lasciato? Era successo qualcosa con il capo?",
+      "followOk": "Sì, avevamo litigato per l'ennesima volta, e ho perso la pazienza.",
+      "followMiss": "Ti chiedi che cosa era successo? Avevo litigato di nuovo con il capo, e ho perso la pazienza."
+    },
+    {
+      "id": "t2",
+      "say": "Adesso però sono pentito. Tu che cosa avresti fatto al posto mio?",
+      "en": "But now I regret it. What would you have done in my place?",
+      "task": "Say what you would have done, with the condizionale passato (avrei…, sarei…).",
+      "hint": "Al posto tuo, avrei…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Condizionale passato", "anyOf": ["\\b(avrei|avresti|avrebbe|avremmo|avreste|avrebbero|sarei|saresti|sarebbe|saremmo|sareste|sarebbero)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-02", "hint": "*Avrei aspettato, sarei rimasto/a…*" },
+          { "label": "Says what you'd have done instead", "anyOf": ["\\b(prima|invece|almeno|piuttosto|magari|al posto tuo|nei tuoi panni)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-COND-02", "hint": "*Al posto tuo, prima…*" }
+        ]
+      },
+      "model": "Al posto tuo, avrei aspettato un po' e prima avrei cercato un altro lavoro.",
+      "followOk": "Lo so, hai ragione. Avrei dovuto pensarci due volte.",
+      "followMiss": "Eh, lo so: avrei dovuto aspettare e cercare prima un altro lavoro."
+    },
+    {
+      "id": "t3",
+      "say": "Ma a te non è mai capitato di pentirti di una scelta?",
+      "en": "But has it never happened to you, regretting a choice?",
+      "task": "Tell him about a regret: se + congiuntivo trapassato (se avessi…), then the conditional.",
+      "hint": "Sì: se avessi accettato…, avrei…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Se + congiuntivo trapassato", "anyOf": ["\\bse\\s+(\\p{L}+\\s+){0,2}(avessi|avesse|avessimo|aveste|avessero|fossi|fosse|fossimo|foste|fossero)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "hypothetical", "conceptId": "B2-HYP-02", "hint": "*Se **avessi accettato**…*" },
+          { "label": "Result in the conditional", "anyOf": ["\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-HYP-02", "hint": "*…avrei imparato / adesso sarei…*" }
+        ]
+      },
+      "model": "Sì, certo. Se avessi accettato quel lavoro a Berlino, avrei imparato benissimo il tedesco.",
+      "followOk": "Vedi? Capita a tutti. Mi fai sentire un po' meglio.",
+      "followMiss": "Capisco. Anch'io, se avessi accettato quell'offerta, avrei fatto un'altra vita."
+    },
+    {
+      "id": "t4",
+      "say": "Mio padre dice che sono stato un irresponsabile. Secondo te ha ragione?",
+      "en": "My dad says I've been irresponsible. Do you think he's right?",
+      "task": "Give your view with (non) credo che + congiuntivo passato, and soften it with però.",
+      "hint": "Non credo che tu sia stato…, però…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Credo che + congiuntivo passato", "anyOf": ["\\b(penso|credo|mi sembra|mi pare|ritengo|immagino|dubito)\\s+che\\s+(\\p{L}+\\s+){0,3}(abbia|abbiano|sia|siano)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-02", "hint": "*Non credo che tu **sia stato**…*" },
+          { "label": "Softens with a contrast", "anyOf": ["\\b(però|ma|anche se|comunque|d['’]altra parte|in fondo|tuttavia)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…però forse…*" }
+        ]
+      },
+      "model": "Non credo che tu sia stato irresponsabile, però forse hai deciso troppo in fretta.",
+      "followOk": "Grazie, sei gentile. Forse hai ragione, sono stato solo impulsivo.",
+      "followMiss": "Quindi non credi che io abbia sbagliato del tutto? Forse ho solo deciso troppo in fretta."
+    },
+    {
+      "id": "t5",
+      "say": "E adesso? Che cosa mi consigli di fare?",
+      "en": "And now? What do you advise me to do?",
+      "task": "Give advice: se fossi in te + conditional, or dovresti / potresti.",
+      "hint": "Se fossi in te, …; dovresti…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Advice in the conditional", "anyOf": ["\\b(dovresti|potresti|faresti bene|ti converrebbe|ti consiglierei|proverei|cercherei|chiamerei|scriverei|aggiornerei|parlerei|manderei|andrei|farei|aspetterei)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Dovresti…, aggiornerei…*" },
+          { "label": "Se fossi in te / al posto tuo", "anyOf": ["\\bse\\s+fossi\\s+(in\\s+te|al\\s+tuo\\s+posto)\\b", "\\bal\\s+posto\\s+tuo\\b", "\\bnei\\s+tuoi\\s+panni\\b"], "min": 1, "errorType": "hypothetical", "conceptId": "B2-HYP-01", "hint": "*Se fossi in te, …*" }
+        ]
+      },
+      "model": "Se fossi in te, aggiornerei subito il curriculum, e dovresti anche chiamare i tuoi vecchi contatti.",
+      "followOk": "Hai ragione, comincio stasera stessa. Grazie, davvero.",
+      "followMiss": "Ok, quindi se fossi in me aggiorneresti il curriculum? Sì, dovrei proprio farlo."
+    }
+  ],
+  "closing": "Grazie per avermi ascoltato. La prossima volta, prima di decidere, ti chiamo!"
+}

@@ -1,0 +1,113 @@
+{
+  "id": "CV-02",
+  "title": "Cercare casa",
+  "subtitle": "Phoning about a flat to rent: polite requests, questions, ci and ne.",
+  "level": "B2",
+  "conceptIds": ["B2-COND-01", "B2-PRON-02", "B2-REG-01"],
+  "tutor": { "name": "Signora Bianchi", "avatar": "👩‍🦳", "gender": "female", "register": "formal" },
+  "setting": "You've seen an ad for a flat to rent in Milan and you phone the owner's agent, Signora Bianchi.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Pronto, buongiorno. Sono Paola Bianchi, mi dica pure.",
+      "en": "Hello, good morning. This is Paola Bianchi, go ahead.",
+      "task": "Say you're calling about the flat in the ad and that you'd like some information. Use the polite conditional (vorrei).",
+      "hint": "Buongiorno, La chiamo per l'annuncio… Vorrei…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Uses a polite conditional (vorrei, potrei…)", "anyOf": ["\\b(vorrei|vorremmo|potrei|potremmo|avrei|desidererei|gradirei|mi piacerebbe)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Vorrei avere qualche informazione…*" },
+          { "label": "Says what you're calling about", "anyOf": ["\\b(appartamento|annuncio|casa|bilocale|monolocale|trilocale|stanza|affitto)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-REG-01", "hint": "*La chiamo per l'annuncio dell'appartamento.*" }
+        ]
+      },
+      "model": "Buongiorno, La chiamo per l'annuncio dell'appartamento in affitto. Vorrei avere qualche informazione in più.",
+      "followOk": "Certo, volentieri. È un bilocale al terzo piano, in zona Navigli.",
+      "followMiss": "Ah, Lei vorrebbe qualche informazione sull'appartamento, giusto? Certo. È un bilocale al terzo piano."
+    },
+    {
+      "id": "t2",
+      "say": "Ha qualche domanda in particolare?",
+      "en": "Do you have any particular questions?",
+      "task": "Ask politely how much the rent is and whether the bills are included. Use potrebbe or another polite conditional.",
+      "hint": "Potrebbe dirmi quanto costa l'affitto e se…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Polite request with the conditional", "anyOf": ["\\b(potrebbe|potrei|vorrei|saprebbe|sarebbe possibile|le dispiacerebbe|mi direbbe)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Potrebbe dirmi…?*" },
+          { "label": "Asks about rent or bills", "anyOf": ["\\b(affitto|costa|prezzo|spese|bollette|condominio|condominiali|canone|al mese)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-REG-01", "hint": "*…quanto costa l'affitto e se le spese sono incluse?*" }
+        ]
+      },
+      "model": "Potrebbe dirmi quanto costa l'affitto al mese e se le spese condominiali sono incluse?",
+      "followOk": "Sono settecento euro al mese, più cento di spese condominiali.",
+      "followMiss": "Glielo dico subito: l'affitto è di settecento euro al mese, e le spese sono a parte, circa cento euro."
+    },
+    {
+      "id": "t3",
+      "say": "Ah, un'altra cosa: ha animali domestici? Il proprietario vuole saperlo.",
+      "en": "Oh, another thing: do you have any pets? The owner wants to know.",
+      "task": "Answer with ne: 'Sì, ne ho uno…' or 'No, non ne ho'. Add one detail.",
+      "hint": "Sì, ne ho uno: … / No, non ne ho…",
+      "expect": {
+        "minWords": 6,
+        "rubric": [
+          { "label": "Uses ne for quantity (ne ho uno / non ne ho)", "anyOf": ["\\b(ne|n['’])\\s*(ho|abbiamo|avrei|possiedo|avevo)\\b"], "min": 1, "errorType": "ci-ne", "conceptId": "B2-PRON-02", "hint": "*Ne ho uno. / Non ne ho.*" }
+        ]
+      },
+      "model": "Sì, ne ho uno: un gatto molto tranquillo, che non fa mai rumore.",
+      "followOk": "Perfetto, nessun problema. La ringrazio della sincerità.",
+      "followMiss": "D'accordo, grazie. Comunque, se ne ha uno piccolo, non è un problema."
+    },
+    {
+      "id": "t4",
+      "say": "Le interessa vederlo? Quando potrebbe passare?",
+      "en": "Would you like to see it? When could you come by?",
+      "task": "Suggest a day and time for a viewing, using ci for the place (ci potrei passare, potrei venirci).",
+      "hint": "Ci potrei passare giovedì…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          { "label": "Uses ci for the place", "anyOf": ["\\b(ci\\s+(posso|potrei|vengo|verrei|passo|passerei|vado|andrei|riesco|riuscirei|sono|sarei)|venirci|passarci|andarci|esserci)\\b"], "min": 1, "errorType": "ci-ne", "conceptId": "B2-PRON-02", "hint": "*Ci potrei passare… / Potrei venirci…*" },
+          { "label": "Gives a day or time", "anyOf": ["\\b(lunedì|martedì|mercoledì|giovedì|venerdì|sabato|domenica|domani|dopodomani|mattina|pomeriggio|sera|alle|ore)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-COND-01", "hint": "*…giovedì pomeriggio, verso le sei.*" }
+        ]
+      },
+      "model": "Sì, mi interessa molto. Ci potrei passare giovedì pomeriggio, verso le sei, se per Lei va bene.",
+      "followOk": "Perfetto, allora ci vediamo lì. Le mando l'indirizzo per messaggio.",
+      "followMiss": "Va bene, ci può passare quando vuole. Facciamo giovedì alle sei?"
+    },
+    {
+      "id": "t5",
+      "say": "Benissimo. Ha altre domande prima della visita?",
+      "en": "Very good. Do you have other questions before the viewing?",
+      "task": "Ask two more questions about the flat (lift, furniture, balcony…). Use c'è / ci sono.",
+      "hint": "C'è l'ascensore? L'appartamento è arredato?",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          { "label": "Uses c'è / ci sono", "anyOf": ["\\bc['’]\\s?(è|e)\\b", "\\bci\\s+(sono|sarebbe|sarebbero|sarà|saranno)\\b"], "min": 1, "errorType": "ci-ne", "conceptId": "B2-PRON-02", "hint": "*C'è l'ascensore? Ci sono i mobili?*" },
+          { "label": "Asks about two features", "anyOf": ["\\b(ascensore|arredato|arredata|mobili|balcone|terrazzo|terrazza|cantina|garage|box|posto auto|lavatrice|lavastoviglie|riscaldamento|cucina|bagno|bagni|giardino|internet)\\b"], "min": 2, "errorType": "vocabulary", "conceptId": "B2-REG-01", "hint": "*ascensore, arredato, balcone, cantina…*" }
+        ]
+      },
+      "model": "Sì, ancora due cose: c'è l'ascensore? E l'appartamento è arredato, o bisogna comprare i mobili?",
+      "followOk": "Allora: l'ascensore c'è, ed è arredato, tranne la camera da letto.",
+      "followMiss": "Le dico io: c'è l'ascensore, e ci sono quasi tutti i mobili."
+    },
+    {
+      "id": "t6",
+      "say": "Un'ultima cosa: il contratto è di quattro anni più quattro. Le andrebbe bene?",
+      "en": "One last thing: the contract is four years plus four. Would that be OK for you?",
+      "task": "Say politely what you'd prefer, with a conditional (preferirei…), and give a reason.",
+      "hint": "Preferirei un contratto più breve, perché…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Uses the conditional", "anyOf": ["\\b(preferirei|vorrei|andrebbe|sarebbe|potrei|potremmo|avrei|dovrei|converrebbe|mi piacerebbe)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Preferirei…, sarebbe meglio…*" },
+          { "label": "Gives a reason", "anyOf": ["\\b(perché|poiché|visto che|dato che|siccome|infatti)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…perché…*" }
+        ]
+      },
+      "model": "Sinceramente preferirei un contratto più breve, perché tra due anni potrei cambiare lavoro.",
+      "followOk": "Capisco. Ne parlo con il proprietario e Le faccio sapere.",
+      "followMiss": "Capisco, Lei preferirebbe un contratto più breve. Ne parlo con il proprietario e Le faccio sapere."
+    }
+  ],
+  "closing": "Perfetto. Allora ci vediamo giovedì per la visita. Buona giornata, e grazie della chiamata!"
+}

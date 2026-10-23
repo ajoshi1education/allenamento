@@ -1,0 +1,97 @@
+{
+  "id": "CV-06",
+  "title": "Il reclamo in albergo",
+  "subtitle": "Complaining politely but firmly at hotel reception, in formal Lei.",
+  "level": "B2",
+  "conceptIds": ["B2-REG-01", "B2-COND-01", "B2-PAST-01", "B2-SUBJ-04"],
+  "tutor": { "name": "Stefano", "avatar": "🧑‍💼", "gender": "male", "register": "formal" },
+  "setting": "It's your first morning in a four-star hotel in Naples. The air conditioning in your room didn't work all night, so you go down to reception.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Buongiorno, reception. Come posso aiutarLa?",
+      "en": "Good morning, reception. How can I help you?",
+      "task": "Open politely in formal register (mi scusi…), give your room and say there's a problem.",
+      "hint": "Buongiorno, mi scusi se La disturbo. Sono nella camera…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Formal, polite opening", "anyOf": ["\\b(mi scusi|scusi|senta|mi perdoni|la disturbo|buongiorno|buonasera)\\b"], "min": 1, "errorType": "register", "conceptId": "B2-REG-01", "hint": "*Mi scusi…, senta…*" },
+          { "label": "Says there's a problem with the room", "anyOf": ["\\b(problema|problemi|reclamo|non funziona|non funzionava|guasto|rotto|rotta)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-WRIT-01", "hint": "*…c'è un problema con la camera.*" }
+        ]
+      },
+      "model": "Buongiorno, mi scusi se La disturbo. Sono nella camera trecentododici e purtroppo c'è un problema.",
+      "followOk": "Mi dispiace molto. Di che cosa si tratta, esattamente?",
+      "followMiss": "Certo, mi dica pure. C'è un problema con la Sua camera?"
+    },
+    {
+      "id": "t2",
+      "say": "Mi racconti pure che cosa è successo.",
+      "en": "Go ahead and tell me what happened.",
+      "task": "Explain what happened: imperfetto for the situation, passato prossimo for what you did or what happened.",
+      "hint": "Quando sono arrivato/a in camera, l'aria condizionata non funzionava e…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Imperfetto for the situation", "anyOf": ["\\b(era|erano|c['’]era|c['’]erano|\\p{L}+(ava|avano|eva|evano|iva|ivano))\\b", "\\b(funzionava|funzionavano|faceva|usciva|si sentiva)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*non funzionava, faceva caldo…*" },
+          { "label": "Passato prossimo for events", "anyOf": ["\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*…ho dormito pochissimo.*" }
+        ]
+      },
+      "model": "Quando sono arrivato in camera, l'aria condizionata non funzionava, e stanotte ho dormito pochissimo per il caldo.",
+      "followOk": "Capisco, è davvero spiacevole, soprattutto con questo caldo. Mi scuso a nome dell'albergo.",
+      "followMiss": "Capisco: l'aria condizionata non funzionava e Lei ha dormito male. Mi scuso davvero."
+    },
+    {
+      "id": "t3",
+      "say": "Che cosa possiamo fare per rimediare?",
+      "en": "What can we do to make up for it?",
+      "task": "Ask for a solution with the conditional of politeness (vorrei, sarebbe possibile…, potrebbe…).",
+      "hint": "Vorrei cambiare camera, se possibile. Oppure potrebbe…?",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          { "label": "Polite conditional", "anyOf": ["\\b(vorrei|potrei|potrebbe|potreste|sarebbe possibile|sarebbe|gradirei|preferirei|le dispiacerebbe|mi farebbe)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Vorrei…, sarebbe possibile…?*" },
+          { "label": "Proposes a solution", "anyOf": ["\\b(cambiare|camera|stanza|rimborso|sconto|tecnico|riparare|spostare|trasferire|ventilatore)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-WRIT-01", "hint": "*cambiare camera, mandare un tecnico…*" }
+        ]
+      },
+      "model": "Vorrei cambiare camera, se possibile. Oppure potrebbe mandare subito un tecnico?",
+      "followOk": "Purtroppo oggi siamo al completo, ma chiamo subito il tecnico.",
+      "followMiss": "Certo, Lei vorrebbe cambiare camera. Purtroppo siamo al completo, ma chiamo subito il tecnico."
+    },
+    {
+      "id": "t4",
+      "say": "Il tecnico, però, non è disponibile prima di domani mattina. Mi dispiace.",
+      "en": "The technician, though, isn't available before tomorrow morning. I'm sorry.",
+      "task": "Insist politely: 'capisco, però non mi sembra giusto che…' + subjunctive.",
+      "hint": "Capisco, però non mi sembra giusto che io debba…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Judgement + che + subjunctive", "anyOf": ["\\b(non mi sembra giusto|non mi pare giusto|non è giusto|è inaccettabile|non è accettabile|mi sembra assurdo|è assurdo|trovo strano|trovo assurdo|non trovo normale|mi stupisce|mi sorprende)\\s+che\\s+(\\p{L}+\\s+){0,4}(sia|siano|debba|debbano|possa|possano|abbia|abbiano|venga|vengano|dorma|resti|stia|funzioni|faccia)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Non mi sembra giusto che io **debba**…*" },
+          { "label": "Concedes then objects (capisco, però…)", "anyOf": ["\\b(però|tuttavia|ma|comunque|eppure)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*Capisco, però…*" }
+        ]
+      },
+      "model": "Capisco, però non mi sembra giusto che io debba passare un'altra notte senza aria condizionata.",
+      "followOk": "Ha perfettamente ragione, e mi scuso ancora. Vediamo che cosa posso fare.",
+      "followMiss": "Ha ragione, non è giusto che Lei debba dormire così. Vediamo che cosa posso fare."
+    },
+    {
+      "id": "t5",
+      "say": "Ecco, posso offrirLe un ventilatore per stanotte e uno sconto del venti per cento. Le andrebbe bene?",
+      "en": "Right, I can offer you a fan for tonight and a twenty per cent discount. Would that be all right?",
+      "task": "Accept on a condition: purché / a patto che + subjunctive.",
+      "hint": "Va bene, accetto, purché domani il tecnico…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          { "label": "Purché / a patto che + subjunctive", "anyOf": ["\\b(purché|a patto che|a condizione che|sempre che|basta che)\\s+(\\p{L}+\\s+){0,5}(sia|siano|venga|vengano|arrivi|arrivino|ripari|riparino|possa|possano|possiate|abbia|faccia|facciate|funzioni|cambi|cambiate|mandi|mandiate|risolva|risolviate|sistemi|sistemiate|controlli|trovi|troviate)\\b"], "min": 1, "errorType": "wrong-mood", "conceptId": "B2-SUBJ-04", "hint": "*…purché domani il tecnico **ripari**…*" },
+          { "label": "Accepts", "anyOf": ["\\b(va bene|accetto|d['’]accordo|andrebbe bene|può andare|grazie|perfetto)\\b"], "min": 1, "errorType": "register", "conceptId": "B2-REG-01", "hint": "*Va bene, accetto…*" }
+        ]
+      },
+      "model": "Va bene, accetto, purché domani mattina il tecnico ripari l'aria condizionata.",
+      "followOk": "Assolutamente, glielo garantisco. Il tecnico sarà da Lei alle nove.",
+      "followMiss": "D'accordo, a patto che il tecnico venga domattina. Glielo garantisco."
+    }
+  ],
+  "closing": "Grazie per la pazienza, e mi scusi ancora per il disagio. Buona giornata!"
+}
