@@ -1,5 +1,5 @@
-// Settings: silent mode, theme, backup/restore, and a debug clock for testing day-based rules.
-import { h, esc, toast } from "../ui.js";
+// Settings: audio mode and voices, theme, backup/restore, and a debug clock for testing day-based rules.
+import { h, esc, toast, confirmDialog } from "../ui.js";
 import { exportAll, importAll } from "../db.js";
 import { getOffset, setOffset } from "../core/clock.js";
 import * as speech from "../speech.js";
@@ -10,9 +10,18 @@ export async function render(view, { store }) {
   for (const s of ["errors", "attempts", "vocab", "progress", "imports"]) counts[s] = (await store.db.all(s)).length;
   view.replaceChildren(h(`<section class="page narrow">
     <h1>Settings</h1>
-    <div class="card"><h3>Use in public</h3>
-      <label class="toggle"><input type="checkbox" id="silent" ${speech.isSilent() ? "checked" : ""}> Silent mode: no audio and no microphone. Listening and speaking tasks switch to text versions.</label>
-      <p class="small muted">Italian voice on this device: ${speech.hasItalianVoice() ? "available ✓" : "not found (listening tasks will show text instead)"} · Speech recognition: ${globalThis.SpeechRecognition || globalThis.webkitSpeechRecognition ? "available ✓" : "not available in this browser"}</p></div>
+    <div class="card"><h3>Audio</h3>
+      <div class="mode-pick">
+        <label><input type="radio" name="amode" value="silent"> <b>🔇 Silent</b><small>Text only, for public places</small></label>
+        <label><input type="radio" name="amode" value="listen"> <b>🔊 Audio</b><small>Questions and answers read aloud; you type</small></label>
+        <label ${speech.hasRecognition() ? "" : "class='dim'"}><input type="radio" name="amode" value="speak" ${speech.hasRecognition() ? "" : "disabled"}> <b>🎤 Speak</b><small>Read aloud, and answer with your voice</small></label>
+      </div>
+      <div class="grid2" style="margin-top:.8rem">
+        <label class="small">Italian voice<select id="voiceIt"></select></label>
+        <label class="small">English voice (instructions)<select id="voiceEn"></select></label>
+      </div>
+      <div class="row-actions"><button class="btn small" id="testVoice">🔊 Test the voice</button><button class="btn small" id="testMic" ${speech.hasRecognition() ? "" : "disabled"}>🎤 Test the microphone</button></div>
+      <p class="small muted" id="audioStatus">Italian voice: ${speech.hasItalianVoice() ? "available ✓" : "none found. Chrome includes 'Google italiano'; on Windows you can add Italian under Settings › Time & language › Speech"} · Speech recognition: ${speech.hasRecognition() ? "available ✓ (Chrome / Edge, needs internet)" : "not available in this browser. Use Chrome or Edge"}</p></div>
     <div class="card"><h3>Daily goal</h3>
       <select id="goal"><option value="20">Relaxed: 20 XP a day (about 5 minutes)</option><option value="50">Regular: 50 XP (about 15 minutes)</option><option value="100">Serious: 100 XP (about 30 minutes)</option><option value="200">Intense: 200 XP (an hour)</option></select></div>
     <div class="card"><h3>Appearance</h3>
@@ -42,7 +51,33 @@ export async function render(view, { store }) {
   view.querySelector("#goal").value = String(await store.setting("dailyGoal", 50));
   view.querySelector("#goal").onchange = async e => { await store.setSetting("dailyGoal", Number(e.target.value)); toast("Daily goal updated"); };
   view.querySelector("#theme").onchange = async e => { await store.setSetting("theme", e.target.value); applyTheme(e.target.value); };
-  view.querySelector("#silent").onchange = async e => { speech.setSilent(e.target.checked); await store.setSetting("silent", e.target.checked); document.getElementById("silentBtn").textContent = e.target.checked ? "🔇" : "🔊"; };
+  // audio mode, voices, tests
+  view.querySelectorAll("[name=amode]").forEach(r => { r.checked = r.value === speech.getMode(); r.onchange = async () => { speech.setMode(r.value); await store.setSetting("audioMode", r.value); window.__paintMode && window.__paintMode(); }; });
+  const prefs = await store.setting("voices", {});
+  const fillVoices = () => {
+    const vs = speech.voiceList();
+    for (const [id, lang] of [["#voiceIt", "it"], ["#voiceEn", "en"]]) {
+      const sel = view.querySelector(id);
+      const list = vs.filter(v => v.lang.toLowerCase().startsWith(lang));
+      sel.innerHTML = `<option value="">Automatic (best available)</option>` + list.map(v => `<option ${prefs[lang] === v.name ? "selected" : ""}>${esc(v.name)}</option>`).join("");
+      sel.onchange = async () => { prefs[lang] = sel.value; speech.setPreferredVoice(lang, sel.value); await store.setSetting("voices", { ...prefs }); };
+    }
+  };
+  fillVoices();
+  if (typeof speechSynthesis !== "undefined") speechSynthesis.addEventListener?.("voiceschanged", fillVoices);
+  view.querySelector("#testVoice").onclick = async () => {
+    const was = speech.getMode(); if (was === "silent") speech.setMode("listen");
+    await speech.sayAll([{ text: "Ciao! Questa è la voce che sentirai durante le lezioni.", lang: "it-IT" }, { text: "And this is the English voice.", lang: "en-GB" }]);
+    speech.setMode(was);
+  };
+  view.querySelector("#testMic").onclick = async e => {
+    const st = view.querySelector("#audioStatus");
+    const was = speech.getMode(); speech.setMode("speak");
+    e.target.disabled = true; st.textContent = "Say something in Italian… (e.g. 'Buongiorno, come stai?')";
+    const r = await speech.listen({ onInterim: t => (st.textContent = "🎤 " + t) });
+    speech.setMode(was); e.target.disabled = false;
+    st.textContent = r.error ? (speech.MIC_HELP[r.error] || "Error: " + r.error) : `✓ Heard: “${r.text}” (confidence ${Math.round((r.confidence || 0) * 100)}%)`;
+  };
   view.querySelector("#export").onclick = async () => {
     const dump = await exportAll(store.db);
     const a = document.createElement("a");
@@ -55,7 +90,7 @@ export async function render(view, { store }) {
     const f = e.target.files[0]; if (!f) return;
     try {
       const dump = JSON.parse(await f.text());
-      if (!confirm("Merge this backup into your current data? Entries with the same id will be overwritten.")) return;
+      if (!(await confirmDialog({ title: "Restore this backup?", text: "It's merged into your current data. Entries with the same id are overwritten.", ok: "Restore", cancel: "Cancel" }))) return;
       await importAll(store.db, dump);
       toast("Backup restored"); store.emit("import");
       render(view, { store });

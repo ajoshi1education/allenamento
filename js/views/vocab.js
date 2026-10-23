@@ -1,5 +1,5 @@
 // Vocabulary: searchable library (seed + your own cards) and spaced-repetition review.
-import { h, esc, md, toast, fmtRel, runExercise } from "../ui.js";
+import { h, esc, md, toast, fmtRel, runExercise, confirmDialog } from "../ui.js";
 import * as speech from "../speech.js";
 
 const SOURCES = { seed: "Library", lesson: "Saved from lessons", error: "From my mistakes", import: "Google Translate", manual: "Added by me" };
@@ -52,7 +52,7 @@ export async function render(view, ctx) {
     const id = b.closest("[data-id]").dataset.id;
     if (b.dataset.act === "say") speech.say(b.dataset.text);
     if (b.dataset.act === "add") { const v = all.find(x => x.id === id); await store.saveVocab({ ...v, source: "seed" }); b.outerHTML = `<span class="chip ok">In deck</span>`; deck.set(id, v); }
-    if (b.dataset.act === "del") { if (!confirm("Remove from your deck?")) return; await store.deleteVocab(id); deck.delete(id); toast("Removed"); paint(); }
+    if (b.dataset.act === "del") { if (!(await confirmDialog({ title: "Remove from your deck?", ok: "Remove", cancel: "Keep", danger: true }))) return; await store.deleteVocab(id); deck.delete(id); toast("Removed"); paint(); }
   });
   paint();
 }

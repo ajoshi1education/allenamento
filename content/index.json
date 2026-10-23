@@ -48,5 +48,8 @@
   ],
   "vocab": [
     "vocab/core.json"
+  ],
+  "convos": [
+    "convos/cv-01-weekend.json"
   ]
 }

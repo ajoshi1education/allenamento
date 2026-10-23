@@ -68,6 +68,7 @@ export function buildIndex({ units, games, errorTypes }) {
   };
 }
 
+let built_convos = [];
 export async function loadContent(fetchJson) {
   const get = p => fetchJson("content/" + p);
   const index = await get("index.json");
@@ -79,9 +80,11 @@ export async function loadContent(fetchJson) {
     index.path ? get(index.path) : null
   ]);
   const extra = index.vocab ? await Promise.all(index.vocab.map(get)) : [];
+  built_convos = index.convos ? await Promise.all(index.convos.map(get)) : [];
   const built = buildIndex({ units, games, errorTypes });
   built.vocabSeed = extra.flat();
   built.curriculum = curriculum;
   built.pathDef = pathDef;
+  built.convos = built_convos;
   return built;
 }

@@ -2,6 +2,8 @@
 // used by lessons, games, quizzes and Error Bank retests.
 import { evaluate } from "./core/evaluate.js";
 import { masteryProgress } from "./core/errors.js";
+import { bestSpokenAnswer } from "./core/speechcheck.js";
+import { guessLang } from "./core/importer.js";
 import * as speech from "./speech.js";
 
 export const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -25,6 +27,21 @@ export function shuffle(a, rand = Math.random) {
   const b = [...a];
   for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; }
   return b;
+}
+
+// In-app confirmation (browser confirm() can be silently blocked by Chrome's "prevent dialogs" option).
+export function confirmDialog({ title, text = "", ok = "OK", cancel = "Cancel", danger = false }) {
+  return new Promise(res => {
+    const d = h(`<div class="modal-back" role="dialog" aria-modal="true"><div class="modal card3d">
+      <h3>${esc(title)}</h3>${text ? `<p class="muted">${esc(text)}</p>` : ""}
+      <div class="modal-actions"><button class="btn3d ${danger ? "danger" : "primary"}" data-ok>${esc(ok)}</button><button class="btn3d ghost" data-cancel>${esc(cancel)}</button></div></div></div>`);
+    const done = v => { d.remove(); document.removeEventListener("keydown", onKey, true); res(v); };
+    const onKey = e => { if (e.key === "Escape") { e.stopPropagation(); done(false); } };
+    d.addEventListener("click", e => { if (e.target === d || e.target.closest("[data-cancel]")) done(false); if (e.target.closest("[data-ok]")) done(true); });
+    document.addEventListener("keydown", onKey, true);
+    document.body.append(d);
+    d.querySelector("[data-cancel]").focus();
+  });
 }
 
 export function toast(msg, kind = "") {
@@ -65,6 +82,7 @@ export function runExercise(host, item, opts) {
       ${opts.banner ? `<div class="ex-banner">${opts.banner}</div>` : ""}
       <div class="ex-head"><span class="chip">${esc(TYPE_LABEL[item.type] || item.type)}</span>
         <span class="muted small">${esc(concept ? concept.title : "")}</span>
+        ${speech.canSpeak() ? `<button type="button" class="say-q" data-act="read" title="Listen to the question again" aria-label="Listen again">🔊</button>` : ""}
         <span class="stars" title="difficulty ${item.difficulty || 1}/5">${"●".repeat(item.difficulty || 1)}<span class="dim">${"●".repeat(5 - (item.difficulty || 1))}</span></span></div>
       ${item.instruction ? `<p class="ex-instr">${md(item.instruction)}</p>` : ""}
       <div class="ex-body"></div>
@@ -84,6 +102,8 @@ export function runExercise(host, item, opts) {
     if (footer) { footer.className = "session-footer"; footer.replaceChildren(actionsEl, fbEl); }
     let getResponse = () => "";
     let lastInput = null;
+    let picked = null;                 // choice items
+    let spoken = undefined;            // an answer given by voice overrides the inputs
 
     // Questions from a reading/listening game carry their passage with them when retested elsewhere.
     const passage = item.passage || (item.passageOf && content.games.get(item.passageOf)?.passage);
@@ -114,7 +134,6 @@ export function runExercise(host, item, opts) {
       body.append(h(`<p class="ex-prompt it">${md(item.prompt)}</p>`));
       const opts2 = h(`<div class="choices">${item.options.map((o, i) => `<button type="button" class="choice" data-i="${i}">${md(o)}</button>`).join("")}</div>`);
       body.append(opts2);
-      let picked = null;
       opts2.addEventListener("click", e => {
         const b = e.target.closest(".choice"); if (!b || el.classList.contains("done")) return;
         picked = Number(b.dataset.i);
@@ -144,21 +163,47 @@ export function runExercise(host, item, opts) {
         body.append(wc);
         ta.addEventListener("input", () => { const n = ta.value.trim() ? ta.value.trim().split(/\s+/).length : 0; wc.textContent = `${n} words${item.minWords ? ` · aim ${item.minWords}${item.maxWords ? "–" + item.maxWords : "+"}` : ""}`; });
       }
-      if (item.type === "speak" && speech.canListen()) {
-        const mic = h(`<button type="button" class="btn small mic">🎤 Speak</button>`);
-        body.append(mic);
-        mic.addEventListener("click", async () => {
-          mic.disabled = true; mic.textContent = "Listening…";
-          const t = await speech.listen();
-          mic.disabled = false; mic.textContent = "🎤 Speak";
-          if (t) { ta.value = t; ta.focus(); } else toast("Didn't catch that. Try again or type it.");
-        });
-      }
       getResponse = () => ta.value;
       lastInput = ta;
     }
     if (item.en && item.type === "cloze") body.append(h(`<p class="muted small hint" hidden>${esc(item.en)}</p>`));
     if (item.en && item.type === "cloze") body.append(h(`<button type="button" class="linkish small" data-act="hint">Show English meaning</button>`));
+
+    // ---- audio: hear the question, answer by voice, hear the correct answer ----
+    const voiceable = ["cloze", "choice", "order", "transform", "translate", "speak"].includes(item.type);
+    const live = h(`<div class="live-transcript" hidden><span class="lt-dot"></span><span class="lt-text"></span></div>`);
+    body.append(live);
+    const setLive = (t, cls = "") => { live.hidden = false; live.className = "live-transcript " + cls; live.querySelector(".lt-text").textContent = t; };
+    let micBtn = null;
+    if (voiceable && speech.canListen()) {
+      micBtn = h(`<button type="button" class="mic-btn" data-act="mic" title="Answer by voice" aria-label="Answer by voice">🎤</button>`);
+      actionsEl.insertBefore(micBtn, actionsEl.querySelector("[data-act=dontknow]"));
+    }
+    const alive = () => document.body.contains(el) && !el.classList.contains("done");
+    async function listenAnswer() {
+      if (!micBtn || !alive() || micBtn.classList.contains("on")) return;
+      micBtn.classList.add("on");
+      setLive("Ti ascolto…", "listening");
+      const r = await speech.listen({ onInterim: t => alive() && setLive(t || "Ti ascolto…", "listening") });
+      micBtn.classList.remove("on");
+      if (!alive()) return;
+      if (r.error) { setLive(speech.MIC_HELP[r.error] || "Didn't catch that. Tap 🎤 to try again, or type your answer.", "warn"); return; }
+      const best = bestSpokenAnswer(item, r.alts);
+      if (!best) { setLive(`I heard “${r.text}” but couldn't match it to an answer. Tap 🎤 to try again.`, "warn"); return; }
+      setLive(`🎤 “${r.text}”`, "heard");
+      if (item.type === "choice") { picked = best.response; el.querySelectorAll(".choice").forEach((b, i) => b.classList.toggle("picked", i === picked)); }
+      else if (lastInput) lastInput.value = String(best.response);
+      spoken = best.response;
+      check();
+    }
+    const readQuestion = () => speech.sayAll(questionParts(item));
+    if (speech.canSpeak() && !item.audio && opts.autoRead !== false) {
+      setTimeout(async () => {
+        if (!alive()) return;
+        const finished = await readQuestion();
+        if (finished && micBtn && alive() && opts.autoMic !== false) listenAnswer();
+      }, 250);
+    }
 
     el.addEventListener("focusin", e => { if (e.target.matches("input,textarea")) lastInput = e.target; });
     actionsEl.querySelector(".accents").addEventListener("mousedown", e => e.preventDefault());
@@ -180,6 +225,8 @@ export function runExercise(host, item, opts) {
       if (a.dataset.act === "check") check();
       if (a.dataset.act === "dontknow") check(true);
       if (a.dataset.act === "hint") { body.querySelector(".hint").hidden = false; a.remove(); }
+      if (a.dataset.act === "read") { speech.stopListening(); readQuestion(); }
+      if (a.dataset.act === "mic") { if (micBtn.classList.contains("on")) speech.stopListening(); else listenAnswer(); }
     };
     if (footer) { el.onclick = onAct; footer.onclick = onAct; } else el.addEventListener("click", onAct);
     setTimeout(() => (lastInput || el.querySelector("button.choice, .token"))?.focus(), 30);
@@ -187,7 +234,8 @@ export function runExercise(host, item, opts) {
     let busy = false;
     async function check(giveUp = false) {
       if (busy || el.classList.contains("done")) return;
-      const resp = giveUp ? "" : getResponse();
+      speech.stopListening();
+      const resp = giveUp ? "" : spoken !== undefined ? spoken : getResponse();
       if (!giveUp && (resp === "" || resp === null)) { lastInput?.focus(); actionsEl.classList.add("shake"); setTimeout(() => actionsEl.classList.remove("shake"), 400); return; }
       busy = true;
       const result = evaluate(item, resp);
@@ -198,9 +246,9 @@ export function runExercise(host, item, opts) {
       if (item.type === "choice") el.querySelectorAll(".choice").forEach((b, i) => { if ([].concat(item.answer).includes(i)) b.classList.add("right"); else if (i === resp) b.classList.add("wrong"); });
       actionsEl.hidden = true;
       if (footer) footer.classList.add(result.correct ? (result.verdict === "correct" ? "is-correct" : "is-almost") : "is-wrong");
-      showFeedback(fbEl, item, resp, result, outcome, concept, opts);
+      const answerText = showFeedback(fbEl, item, resp, result, outcome, concept, opts);
       opts.onAnswered && opts.onAnswered(result, outcome);
-      speech.stop();
+      if (answerText && speech.canSpeak() && opts.speakAnswer !== false) speech.say(answerText); else speech.stop();
       fbEl.querySelector("[data-act=next]").addEventListener("click", () => resolve({ result, outcome, response: resp }));
       fbEl.querySelector("[data-act=next]").focus({ preventScroll: true });
       fbEl.scrollTop = 0;
@@ -289,4 +337,20 @@ function showFeedback(fb, item, resp, result, outcome, concept, opts) {
     await opts.store.saveVocab({ it: speakText, en, pos: "expr", def: result.why || (concept ? concept.title : ""), conceptIds: [item.conceptId], source: "lesson", examples: [] });
     ev.target.textContent = "★ Saved"; ev.target.disabled = true;
   });
+  return speakText;
+}
+
+function questionParts(item) {
+  const clean = t => String(t || "").replace(/\*/g, "").replace(/~~/g, "");
+  const it = t => ({ text: clean(t), lang: "it-IT" }), en = t => ({ text: clean(t), lang: "en-GB" });
+  const auto = t => (guessLang(clean(t)) === "en" ? en(t) : it(t));
+  switch (item.type) {
+    case "cloze": return [it(clean(item.prompt).replace(/_{3,}/, " … ").replace(/\(([^)]*)\)/, ", $1, "))];
+    case "choice": return [auto(clean(item.prompt).replace(/_{3,}/, " … ")), it(item.options.map(clean).join(" … "))];
+    case "translate": return [en(item.prompt)];
+    case "transform": return [en(item.instruction), it(item.prompt)];
+    case "order": return [auto(item.prompt)];
+    case "speak": return [en(item.prompt)];
+    default: return [auto(item.prompt)];
+  }
 }

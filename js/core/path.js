@@ -144,7 +144,7 @@ const rank = i => ({ choice: 0, order: 1, cloze: 2, transform: 3, translate: 4 }
 
 // ---- XP, daily goal, streak --------------------------------------------------------
 export function sessionXp(correct, total, kind) {
-  const base = { learn: 10, practice: 10, challenge: 15, checkpoint: 20, game: 15, review: 10 }[kind] || 10;
+  const base = { learn: 10, practice: 10, challenge: 15, checkpoint: 20, game: 15, review: 10, convo: 20 }[kind] || 10;
   return base + correct * 2 + (total && correct === total ? 5 : 0);
 }
 

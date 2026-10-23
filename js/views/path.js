@@ -1,5 +1,5 @@
 // Home: the guided path. Units in learning order, each a winding trail of steps that unlock one by one.
-import { h, esc, md, toast } from "../ui.js";
+import { h, esc, md, toast, confirmDialog } from "../ui.js";
 import { buildPath, nodeStates, planSession, unitProgress, xpSummary, STEP_LABEL } from "../core/path.js";
 import { isDue } from "../core/errors.js";
 import { runSession } from "../session.js";
@@ -62,7 +62,7 @@ export async function render(view, ctx) {
   // Node popover
   const pop = h(`<div class="node-pop" hidden></div>`);
   view.append(pop);
-  view.addEventListener("click", e => {
+  view.onclick = e => {
     const n = e.target.closest(".node");
     if (!n) { if (!e.target.closest(".node-pop")) pop.hidden = true; return; }
     const node = path.byId.get(n.dataset.id);
@@ -79,14 +79,16 @@ export async function render(view, ctx) {
     pop.style.top = `${r.bottom - vr.top + 12}px`;
     pop.style.left = `${Math.max(8, Math.min(vr.width - 300, r.left - vr.left + r.width / 2 - 150))}px`;
     pop.hidden = false;
-  });
+  };
   pop.addEventListener("click", e => { const b = e.target.closest("[data-start]"); if (b) { pop.hidden = true; start(path.byId.get(b.dataset.start)); } });
   view.querySelector("[data-go-current]")?.addEventListener("click", () => start(curNode));
   view.querySelector("[data-start-first]")?.addEventListener("click", () => start(curNode));
   view.querySelectorAll("[data-jump]").forEach(b => b.addEventListener("click", () => jump(path.unitById.get(b.dataset.jump))));
 
+  let starting = false;
   async function start(node) {
-    if (!node) return;
+    if (!node || starting) return;
+    starting = true; setTimeout(() => (starting = false), 800);
     if (node.kind === "game") { location.hash = `#/play/${node.gameId}`; return; }
     const plan = planSession(node, { content, path, errors: await store.errors(), now: store.clock() });
     if (!plan || !plan.steps.length) { toast("Nothing to practise here yet."); return; }
@@ -97,7 +99,7 @@ export async function render(view, ctx) {
 
   // "Jump here": pass this unit's checkpoint to skip everything before it.
   async function jump(unit) {
-    if (!confirm(`Take the "${unit.title}" checkpoint? Pass it (${75}%+) and every step up to the end of this unit is marked complete.`)) return;
+    if (!(await confirmDialog({ title: `Jump ahead to after "${unit.title}"?`, text: "Take this unit's checkpoint. Pass it (75%+) and every step up to the end of the unit is marked complete.", ok: "Take the test", cancel: "Not now" }))) return;
     const cp = unit.nodes.at(-1);
     const plan = planSession(cp, { content, path, errors: [], now: store.clock() });
     plan.title = "Salta qui";

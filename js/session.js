@@ -1,12 +1,20 @@
 // Full-screen session player: one card or exercise at a time, progress bar on top, action bar at the bottom.
 // Used for path lessons, practice, challenges, checkpoints and reviews.
-import { h, esc, md, runExercise } from "./ui.js";
+import { h, esc, md, runExercise, confirmDialog } from "./ui.js";
 import * as speech from "./speech.js";
 import { CHECKPOINT_PASS } from "./core/path.js";
 
 const CHEERS = ["Fantastico!", "Che bravura!", "Ottimo lavoro!", "Continua così!", "Grande!"];
 
-export function runSession(plan, { store, nodeId, kind, accent = "green", onFinish }) {
+let active = null;   // only one session may be open (guards against double taps)
+
+export function runSession(plan, opts) {
+  if (active) return active;
+  active = startSession(plan, opts).finally(() => { active = null; });
+  return active;
+}
+
+function startSession(plan, { store, nodeId, kind, accent = "green", onFinish }) {
   return new Promise(resolve => {
     const total = plan.steps.length;
     const ov = h(`<div class="session-overlay accent-${accent}" role="dialog" aria-label="${esc(plan.title)}">
@@ -24,11 +32,21 @@ export function runSession(plan, { store, nodeId, kind, accent = "green", onFini
     const bar = ov.querySelector(".session-progress span"), comboEl = ov.querySelector(".combo");
     let i = 0, correct = 0, graded = 0, combo = 0, saved = 0, exited = false;
 
-    ov.querySelector("[data-exit]").onclick = () => {
-      if (i > 0 && i < total && !confirm("Leave this session? Your answers so far are saved, but the step won't be marked complete.")) return;
+    let asking = false;
+    const exit = async () => {
+      if (asking || exited) return;
+      if (i > 0 && i < total) {
+        asking = true;
+        const leave = await confirmDialog({ title: "Leave this session?", text: "Your answers so far are saved in the Error Bank, but this step won't be marked complete.", ok: "Leave", cancel: "Keep going", danger: true });
+        asking = false;
+        if (!leave) return;
+      }
       exited = true; close(); resolve({ exited: true });
     };
-    function close() { speech.stop(); ov.remove(); document.body.classList.remove("in-session"); }
+    ov.querySelector("[data-exit]").onclick = exit;
+    const onKey = e => { if (e.key === "Escape" && !document.querySelector(".modal-back")) exit(); };
+    document.addEventListener("keydown", onKey);
+    function close() { speech.stop(); speech.stopListening(); document.removeEventListener("keydown", onKey); ov.remove(); document.body.classList.remove("in-session"); }
     const setBar = () => { bar.style.width = `${Math.round(100 * i / total)}%`; };
 
     (async () => {

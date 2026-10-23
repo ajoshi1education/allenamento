@@ -7,6 +7,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const { buildIndex, gameItems } = await import(pathToFileURL(path.join(ROOT, "js/core/content.js")));
+const { detectErrors } = await import(pathToFileURL(path.join(ROOT, "js/core/speechcheck.js")));
 const { evaluate, expand, rubricRegex, checkWriting } = await import(pathToFileURL(path.join(ROOT, "js/core/evaluate.js")));
 const BI = await import(pathToFileURL(path.join(ROOT, "scripts/build-index.mjs")));
 
@@ -23,8 +24,9 @@ export function loadAll() {
   const units = index.units.map(read), games = index.games.map(read);
   const curriculum = fs.existsSync(path.join(ROOT, "content/curriculum.json")) ? read("curriculum.json") : null;
   const vocab = (index.vocab || []).flatMap(read);
+  const convos = (index.convos || []).map(read);
   const pathDef = index.path && fs.existsSync(path_(index.path)) ? read(index.path) : null;
-  return { index, units, games, curriculum, vocab, path: pathDef, errorTypes: read("error-types.json") };
+  return { index, units, games, curriculum, vocab, convos, path: pathDef, errorTypes: read("error-types.json") };
 }
 
 export function validate(all) {
@@ -112,6 +114,33 @@ export function validate(all) {
     if (["gauntlet", "builder", "duel"].includes(g.type)) for (const cid of g.conceptIds || []) if (idx.poolFor(cid).length < 4) warnings.push(`${g.id}: concept ${cid} has few items for a pool game`);
     for (const cid of g.conceptIds || []) if (!idx.concepts.has(cid)) errors.push(`${g.id}: unknown concept ${cid}`);
     gameItems(g).forEach(it => checkItem(it, "game " + g.id));
+  }
+  // Conversations (Convos tab): every rubric compiles, every model answer passes its own rubric,
+  // and the spoken-mistake detectors never fire on the tutor's lines or the model answers.
+  for (const cv of all.convos || []) {
+    dup(cv.id, "convo");
+    if (!/^CV-\d\d$/.test(cv.id)) errors.push(`${cv.id}: convo id should look like CV-01`);
+    for (const c of cv.conceptIds || []) if (!idx.concepts.has(c)) errors.push(`${cv.id}: unknown concept ${c}`);
+    if (!cv.tutor || !cv.tutor.name) errors.push(`${cv.id}: needs tutor.name`);
+    if (!Array.isArray(cv.turns) || cv.turns.length < 4) errors.push(`${cv.id}: needs at least 4 turns`);
+    const spoken = [cv.closing, ...(cv.turns || []).flatMap(t => [t.say, t.followOk, t.followMiss])].filter(Boolean);
+    for (const line of spoken) { const h = detectErrors(line); if (h.length) errors.push(`${cv.id}: tutor line flagged as a mistake (${h.map(x => x.id)}): "${line}"`); }
+    for (const t of cv.turns || []) {
+      const where = `${cv.id}.${t.id}`;
+      for (const k of ["id", "say", "en", "task", "model"]) if (!t[k]) errors.push(`${where}: missing ${k}`);
+      if (!t.expect || !Array.isArray(t.expect.rubric) || !t.expect.rubric.length) { errors.push(`${where}: needs expect.rubric`); continue; }
+      for (const r of t.expect.rubric) {
+        if (r.errorType && !types[r.errorType]) errors.push(`${where}: unknown errorType ${r.errorType}`);
+        if (r.conceptId && !idx.concepts.has(r.conceptId)) errors.push(`${where}: unknown concept ${r.conceptId}`);
+        for (const p of [].concat(r.anyOf || [])) { try { rubricRegex(p); } catch { errors.push(`${where}: bad regex ${p}`); } }
+      }
+      const w = checkWriting(t.expect, t.model || "");
+      const missed = w.checks.filter(c => !c.ok).map(c => c.label);
+      if (missed.length) errors.push(`${where}: model answer fails its own rubric: ${missed.join("; ")}`);
+      if (!w.lengthOk) errors.push(`${where}: model answer shorter than minWords`);
+      const h = detectErrors(t.model || "");
+      if (h.length) errors.push(`${where}: model answer flagged as a mistake (${h.map(x => x.id)})`);
+    }
   }
   // Vocabulary seed
   const POS = ["noun", "verb", "adj", "adv", "expr", "idiom", "conn", "prep"];

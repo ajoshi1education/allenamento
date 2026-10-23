@@ -5,12 +5,13 @@ import { loadContent } from "./core/content.js";
 import { createStore } from "./store.js";
 import { now } from "./core/clock.js";
 import * as speech from "./speech.js";
-import { h, esc } from "./ui.js";
+import { h, esc, toast } from "./ui.js";
 import { xpSummary } from "./core/path.js";
 
 // Main mode is the guided path; Esplora is the free mode that opens everything else.
 const TABS = [
   { id: "path", label: "Percorso", icon: "🛤️" },
+  { id: "convo", label: "Convos", icon: "🗣️" },
   { id: "review", label: "Ripasso", icon: "🔁" },
   { id: "explore", label: "Esplora", icon: "🗺️" },
   { id: "progress", label: "Progressi", icon: "📈" }
@@ -20,6 +21,7 @@ const TAB_OF = { learn: "explore", play: "explore", vocab: "explore", translate:
 const VIEWS = {
   path: () => import("./views/path.js"),
   review: () => import("./views/review.js"),
+  convo: () => import("./views/convo.js"),
   explore: () => import("./views/explore.js"),
   learn: () => import("./views/learn.js"),
   play: () => import("./views/play.js"),
@@ -51,7 +53,10 @@ async function main() {
   setInterval(autoSync, 5 * 60e3);
   document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") autoSync(); });
   window.__app = { store, content, db };       // handy for debugging in the console
-  speech.setSilent(await store.setting("silent", false));
+  // Audio mode: silent / listen / speak (older versions stored a "silent" flag)
+  speech.setMode(await store.setting("audioMode", (await store.setting("silent", false)) ? "silent" : "listen"));
+  const v = await store.setting("voices", {});
+  speech.setPreferredVoice("it", v.it); speech.setPreferredVoice("en", v.en);
   const theme = await store.setting("theme", "auto");
   if (theme !== "auto") document.documentElement.setAttribute("data-theme", theme);
 
@@ -62,17 +67,25 @@ async function main() {
       <div class="top-actions">
         <a class="pill fire" href="#/progress" id="streakPill" title="Day streak">🔥 <b>0</b></a>
         <a class="pill gold" href="#/progress" id="xpPill" title="XP today / daily goal">⭐ <b>0</b></a>
-        <button class="icon-btn" id="silentBtn" title="Silent mode: text only, no audio"></button>
+        <button class="mode-btn" id="modeBtn" title="Audio mode"></button>
         <a class="icon-btn" href="#/settings" title="Settings and backup">⚙️</a>
       </div>
     </header>
     <main id="view" tabindex="-1"></main>
   </div>`));
 
-  const silentBtn = document.getElementById("silentBtn");
-  const paintSilent = () => { silentBtn.textContent = speech.isSilent() ? "🔇" : "🔊"; silentBtn.classList.toggle("on", speech.isSilent()); };
-  silentBtn.onclick = async () => { speech.setSilent(!speech.isSilent()); await store.setSetting("silent", speech.isSilent()); paintSilent(); };
-  paintSilent();
+  // One button cycles: 🔇 silent → 🔊 listen → 🎤 listen & speak
+  const modeBtn = document.getElementById("modeBtn");
+  const MODE_UI = { silent: ["🔇", "Silent", "Silent: text only, for public places"], listen: ["🔊", "Audio", "Audio: questions and answers are read aloud"], speak: ["🎤", "Speak", "Speak: read aloud, and answer with your voice"] };
+  const paintMode = () => { const [i, l, t] = MODE_UI[speech.getMode()]; modeBtn.innerHTML = `<span>${i}</span><b>${l}</b>`; modeBtn.title = t; modeBtn.dataset.mode = speech.getMode(); };
+  modeBtn.onclick = async () => {
+    const order = speech.hasRecognition() ? ["silent", "listen", "speak"] : ["silent", "listen"];
+    const next = order[(order.indexOf(speech.getMode()) + 1) % order.length];
+    speech.setMode(next); await store.setSetting("audioMode", next); paintMode();
+    toast(MODE_UI[next][2]);
+  };
+  paintMode();
+  window.__paintMode = paintMode;
 
   async function badges() {
     const [errs, events, goal] = await Promise.all([store.errors(), store.events(), store.setting("dailyGoal", 50)]);
@@ -92,7 +105,9 @@ async function main() {
     const [path, qs = ""] = location.hash.replace(/^#\/?/, "").split("?");
     const [tab = "path", ...rest] = path.split("/").filter(Boolean).map(decodeURIComponent);
     const query = Object.fromEntries(new URLSearchParams(qs));
-    const view = document.getElementById("view");
+    const old = document.getElementById("view");
+    const view = old.cloneNode(false);
+    old.replaceWith(view);
     const navTab = TAB_OF[tab] ?? tab;
     document.querySelectorAll(".tabs a").forEach(a => a.classList.toggle("active", a.dataset.tab === navTab));
     document.body.dataset.view = tab;

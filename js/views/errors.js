@@ -1,5 +1,5 @@
 // Error Bank: permanent record of mistakes. Search, filter, patterns, notes, retest in new contexts.
-import { h, esc, md, runExercise, toast, fmtDate, fmtRel, errorLabel } from "../ui.js";
+import { h, esc, md, runExercise, toast, fmtDate, fmtRel, errorLabel, confirmDialog } from "../ui.js";
 import { buildQuiz, masteryProgress, patterns, pickRetestItem, isDue } from "../core/errors.js";
 import * as speech from "../speech.js";
 import { aiEnabled, generateRetests } from "../ai.js";
@@ -154,7 +154,7 @@ async function detail(view, ctx, id) {
   view.querySelector("[data-save]").onclick = async () => { await store.updateError(id, { notes: view.querySelector("#notes").value }); toast("Note saved"); };
   view.querySelector("#reviewed").onchange = async ev => { await store.updateError(id, { reviewed: ev.target.checked }); toast(ev.target.checked ? "Marked as reviewed" : "Unmarked"); };
   view.querySelector("[data-delete]").onclick = async () => {
-    if (!confirm("Delete this entry permanently? Its history will be lost.")) return;
+    if (!(await confirmDialog({ title: "Delete this entry?", text: "Its history will be lost permanently.", ok: "Delete", cancel: "Keep it", danger: true }))) return;
     await store.deleteError(id); toast("Entry deleted"); location.hash = "#/errors";
   };
   view.querySelector("[data-retest]").onclick = async () => {
