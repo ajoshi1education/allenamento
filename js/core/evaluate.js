@@ -84,7 +84,7 @@ export function diffTokens(user, expected) {
 const asList = x => (x == null ? [] : Array.isArray(x) ? x : [x]);
 
 export function acceptedAnswers(item) {
-  if (item.type === "choice") return [item.options[item.answer]];
+  if (item.type === "choice") return asList(item.answer).map(i => item.options[i]);
   return asList(item.answers).flatMap(p => expand(p));
 }
 
@@ -132,7 +132,8 @@ export function evaluate(item, response) {
 
   if (item.type === "choice") {
     const idx = typeof response === "number" ? response : item.options.findIndex(o => normalize(o) === normalize(raw));
-    if (idx === item.answer) return result(item, "correct");
+    const okIdx = asList(item.answer);
+    if (okIdx.includes(idx)) return result(item, okIdx.length > 1 && idx !== okIdx[0] ? "alternative" : "correct", okIdx.length > 1 && item.optionWhy && item.optionWhy[idx] ? { note: item.optionWhy[idx] } : {});
     const why = (item.optionWhy && item.optionWhy[idx]) || "";
     const chosenNorm = normalize(item.options[idx] ?? raw);
     const trap = asList(item.traps).find(t => t.match && asList(t.match).flatMap(p => expand(p)).map(normalize).includes(chosenNorm));
@@ -165,7 +166,7 @@ export function evaluate(item, response) {
   }
 
   // Typo leniency: only for longer answers, never on the words being tested.
-  const allowTypos = item.typoTolerance ?? ["translate", "transform", "free"].includes(item.type);
+  const allowTypos = item.typoTolerance ?? ["translate", "transform", "free", "speak"].includes(item.type);
   const len = stripAccents(normalize(best)).length;
   if (allowTypos && dist > 0 && dist <= Math.max(1, Math.floor(len / 15))) {
     const diff = diffTokens(raw, best);

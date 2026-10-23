@@ -1,4 +1,10 @@
 {
-  "units": ["units/u01-congiuntivo.json"],
-  "games": ["games/det-01-quadro.json"]
+  "curriculum": "curriculum.json",
+  "units": [
+    "units/u01-congiuntivo.json"
+  ],
+  "games": [
+    "games/det-01-quadro.json"
+  ],
+  "vocab": []
 }

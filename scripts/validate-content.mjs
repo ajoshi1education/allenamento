@@ -8,12 +8,17 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const { buildIndex, gameItems } = await import(pathToFileURL(path.join(ROOT, "js/core/content.js")));
 const { evaluate, expand } = await import(pathToFileURL(path.join(ROOT, "js/core/evaluate.js")));
+const BI = await import(pathToFileURL(path.join(ROOT, "scripts/build-index.mjs")));
 
 export const MIN_EXERCISES = 8;
+export const TYPES = ["cloze", "transform", "translate", "choice", "order", "free", "speak"];
+export const SKILLS = ["grammar", "vocabulary", "reading", "listening", "writing", "speaking", "interaction"];
+export const GAME_TYPES = ["detective", "dialogue", "gauntlet", "builder", "duel", "reading", "listening", "debate"];
 const read = p => JSON.parse(fs.readFileSync(path.join(ROOT, "content", p), "utf8"));
 
 export function loadAll() {
-  const index = read("index.json");
+  const { buildIndexFile } = BI;
+  const index = buildIndexFile();
   const units = index.units.map(read), games = index.games.map(read);
   const curriculum = fs.existsSync(path.join(ROOT, "content/curriculum.json")) ? read("curriculum.json") : null;
   const vocab = (index.vocab || []).flatMap(read);
@@ -32,10 +37,18 @@ export function validate(all) {
     if (!it.conceptId && !where.startsWith("concept")) errors.push(`${it.id}: missing conceptId`);
     if (it.conceptId && !idx.concepts.has(it.conceptId)) errors.push(`${it.id}: unknown concept ${it.conceptId}`);
     if (it.errorType && !types[it.errorType]) errors.push(`${it.id}: unknown errorType ${it.errorType}`);
-    if (it.type === "free") return;
+    if (!TYPES.includes(it.type)) errors.push(`${it.id}: unknown type ${it.type}`);
+    if (!it.prompt) errors.push(`${it.id}: no prompt`);
+    if (it.type === "free") {
+      if (!it.rubric || !it.rubric.length) errors.push(`${it.id}: free item needs a rubric`);
+      for (const r of it.rubric || []) for (const p of [].concat(r.anyOf || [])) { try { new RegExp(p, "i"); } catch { errors.push(`${it.id}: bad rubric regex ${p}`); } }
+      if (!it.model) warnings.push(`${it.id}: free item has no model answer`);
+      return;
+    }
     if (it.type === "choice") {
-      if (!Array.isArray(it.options) || it.options[it.answer] == null) errors.push(`${it.id}: bad choice answer`);
-      else if (!evaluate(it, it.answer).correct) errors.push(`${it.id}: own answer rejected`);
+      const ans = [].concat(it.answer);
+      if (!Array.isArray(it.options) || !ans.length || ans.some(a => it.options[a] == null)) errors.push(`${it.id}: bad choice answer`);
+      else if (!ans.every(a => evaluate(it, a).correct)) errors.push(`${it.id}: own answer rejected`);
     } else {
       if (!it.answers || !it.answers.length) { errors.push(`${it.id}: no answers`); return; }
       for (const a of it.answers.flatMap(p => expand(p))) {
@@ -62,6 +75,8 @@ export function validate(all) {
 
   for (const u of all.units) for (const c of u.concepts) {
     dup(c.id, "concept");
+    if (!SKILLS.includes(c.skill)) errors.push(`${c.id}: unknown skill ${c.skill}`);
+    if (!/^(B2|C1)-[A-Z]+-\d\d$/.test(c.id)) errors.push(`${c.id}: id should look like B2-SUBJ-01`);
     if (!c.lesson || !c.lesson.intro) errors.push(`${c.id}: no lesson`);
     if (!c.assessment || !c.assessment.length) errors.push(`${c.id}: no assessment criteria`);
     if (!c.rule) warnings.push(`${c.id}: no one-line rule`);
@@ -73,8 +88,30 @@ export function validate(all) {
   }
   for (const g of all.games) {
     dup(g.id, "game");
+    if (!GAME_TYPES.includes(g.type)) errors.push(`${g.id}: unknown game type ${g.type}`);
+    if (!g.conceptIds || !g.conceptIds.length) errors.push(`${g.id}: no conceptIds`);
+    if ((g.type === "reading" || g.type === "listening") && (!g.passage || !g.passage.it)) errors.push(`${g.id}: needs passage.it`);
+    if (g.type === "dialogue") {
+      const ids = new Set((g.nodes || []).map(n => n.id));
+      if (!ids.has(g.start)) errors.push(`${g.id}: start node ${g.start} missing`);
+      for (const n of g.nodes || []) {
+        const nexts = [n.next, n.nextFail, ...(n.choices || []).map(c => c.next)].filter(Boolean);
+        for (const x of nexts) if (!ids.has(x)) errors.push(`${g.id}: node ${n.id} points to missing ${x}`);
+        if (!n.end && !nexts.length) errors.push(`${g.id}: node ${n.id} is a dead end (add end:true or next)`);
+      }
+      if (!(g.nodes || []).some(n => n.end)) errors.push(`${g.id}: no end node`);
+    }
+    if (["gauntlet", "builder", "duel"].includes(g.type)) for (const cid of g.conceptIds || []) if (idx.poolFor(cid).length < 4) warnings.push(`${g.id}: concept ${cid} has few items for a pool game`);
     for (const cid of g.conceptIds || []) if (!idx.concepts.has(cid)) errors.push(`${g.id}: unknown concept ${cid}`);
     gameItems(g).forEach(it => checkItem(it, "game " + g.id));
+  }
+  // Vocabulary seed
+  const POS = ["noun", "verb", "adj", "adv", "expr", "idiom", "conn", "prep"];
+  for (const v of all.vocab) {
+    if (!v.id || !v.it || !v.en) { errors.push(`vocab entry missing id/it/en: ${JSON.stringify(v).slice(0, 80)}`); continue; }
+    dup(v.id, "vocab");
+    if (v.pos && !POS.includes(v.pos)) errors.push(`${v.id}: unknown pos ${v.pos}`);
+    for (const c of v.conceptIds || []) if (!idx.concepts.has(c) && !(all.curriculum && all.curriculum.strands.some(s => s.concepts.some(x => x.id === c)))) errors.push(`${v.id}: unknown concept ${c}`);
   }
   // Curriculum map: every planned concept should eventually have content.
   const coverage = [];

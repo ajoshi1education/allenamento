@@ -3,12 +3,35 @@
 // Pull every gradable item out of a game, whatever its shape.
 export function gameItems(game) {
   const out = [];
+  const cid = (game.conceptIds || [])[0];
   (game.scenes || []).forEach(s => s.item && out.push(s.item));
-  (game.nodes || []).forEach(n => (n.item && out.push(n.item)));
+  (game.nodes || []).forEach(n => {
+    if (n.item) out.push(n.item);
+    if (n.choices) out.push(choiceNodeItem(game, n));
+  });
   (game.rounds || []).forEach(r => (r.item && out.push(r.item)));
   (game.items || []).forEach(i => out.push(i));
-  (game.questions || []).forEach(i => out.push(i));
+  // Reading / listening: questions share the game's passage.
+  (game.questions || []).forEach(q => out.push({ conceptId: cid, ...q, passageOf: game.id }));
+  (game.prompts || []).forEach(p => out.push({ conceptId: cid, ...p }));
   return out;
+}
+
+// A dialogue node with reply choices becomes a graded choice item (id = node id).
+export function choiceNodeItem(game, n) {
+  const okIdx = n.choices.map((c, i) => (c.ok ? i : -1)).filter(i => i >= 0);
+  const optionWhy = {};
+  const traps = [];
+  n.choices.forEach((c, i) => {
+    if (c.why) optionWhy[i] = c.why;
+    if (!c.ok && c.errorType) traps.push({ match: c.text, errorType: c.errorType, why: c.why || "" });
+  });
+  return {
+    id: n.id, conceptId: n.conceptId || (game.conceptIds || [])[0], type: "choice", interaction: true,
+    instruction: n.instruction || "Choose the best reply.", prompt: n.prompt || n.line,
+    options: n.choices.map(c => c.text), answer: okIdx.length === 1 ? okIdx[0] : okIdx,
+    optionWhy, traps, errorType: n.errorType || "register", explanation: n.explanation || "", difficulty: n.difficulty || 2
+  };
 }
 
 export function buildIndex({ units, games, errorTypes }) {
