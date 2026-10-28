@@ -11,6 +11,7 @@ export const ENGINES = {
   listening: { label: "Ascolto", icon: "🎧", load: () => import("../games/reading.js") },
   debate: { label: "Dibattito e scrittura", icon: "🖋️", load: () => import("../games/debate.js") },
   dictation: { label: "Dettato", icon: "✍️", load: () => import("../games/dictation.js") },
+  blitz: { label: "Occhio all’errore!", icon: "👀", load: () => import("../games/blitz.js") },
   exam: { label: "Esame simulato", icon: "📝", load: () => import("../games/exam.js") }
 };
 

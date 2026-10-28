@@ -16,6 +16,7 @@ An adaptive Italian trainer for an English speaker at about B2 who is aiming for
 
 - **Learn**: 61 lessons across the B2→C1 curriculum.
 - **Play / Test**: 42 games linked to those lessons, including culture and history readings and listenings, and **Dettato** (dictation: hear a sentence from the course, write it or say it back).
+- **Occhio all’errore!**: a 60-second blitz (B2 and C1): is the sentence right or wrong? Tap or swipe, 3 lives, combo multiplier, +2 s per mistake caught, high score. Wrong sentences come from the course traps and were each reviewed to be wrong in any context (`content/blitz-reviewed.json`, `js/core/blitz.js`); missed errors go to the Error Bank.
 - **Verbi**: a conjugation trainer for 91 verbs (pick the tenses; verbs you get wrong come back more) and searchable conjugation tables (`content/verbs.json`, `js/core/verbs.js`).
 - **Vocabulary**: a 517-entry library (including finance, sport, food & wine, travel, culture) plus spaced-repetition flashcards.
 - **Google Translate import**: turns your translation history into flashcards, exercises and games.

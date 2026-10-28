@@ -643,3 +643,47 @@ body.in-session .coach-panel { z-index: 75; }
 .welcome, .hero, .node-pop:not(.locked) { text-shadow: 0 1px 2px rgba(0,0,0,.28); }
 .btn.primary, .btn3d.primary { text-shadow: 0 1px 0 rgba(0,0,0,.22); }
 .hero { background: linear-gradient(135deg, var(--c) 0%, var(--cd) 100%); }
+
+/* Occhio all'errore! (blitz game) */
+.blitz-intro { text-align: center; background: linear-gradient(160deg, color-mix(in srgb, var(--pink) 28%, var(--surface)), var(--surface) 80%); border-color: color-mix(in srgb, var(--pink) 60%, var(--line)); box-shadow: 0 5px 0 var(--pink-d); }
+.blitz-logo { font-size: 4rem; animation: bob 1.8s ease-in-out infinite; }
+.blitz-rules { display: flex; justify-content: center; gap: .8rem; margin: 1rem 0; flex-wrap: wrap; }
+.blitz-rules div { background: var(--surface); border: 2px solid var(--line); border-radius: 14px; padding: .5rem .9rem; display: flex; flex-direction: column; min-width: 84px; }
+.blitz-rules b { font-size: 1.25rem; } .blitz-rules span { font-size: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; font-weight: 800; }
+.blitz-best { font-size: 1.1rem; }
+.blitz-page.playing { display: flex; flex-direction: column; min-height: calc(100vh - 160px); padding-bottom: 1rem; }
+.blitz-hud { display: flex; align-items: center; gap: .6rem; font-weight: 900; font-size: 1.3rem; }
+.blitz-lives { letter-spacing: .1em; }
+.blitz-combo { background: var(--orange); color: #fff; border-radius: 999px; padding: .1rem .6rem; font-size: 1rem; box-shadow: 0 3px 0 var(--orange-d); animation: rise .2s; }
+.blitz-score { margin-left: auto; font-size: 1.7rem; color: var(--gold); text-shadow: 0 2px 0 var(--gold-d); }
+.blitz-timer { height: 14px; border-radius: 99px; background: var(--surface-3); overflow: hidden; margin: .6rem 0 1rem; }
+.blitz-timer i { display: block; height: 100%; width: 100%; background: linear-gradient(90deg, var(--green), var(--teal)); border-radius: 99px; transition: width .1s linear; }
+.blitz-timer i.low { background: linear-gradient(90deg, var(--red), var(--orange)); }
+.blitz-stage { position: relative; flex: 1; display: grid; place-items: center; min-height: 230px; }
+.blitz-card { width: 100%; min-height: 200px; display: grid; place-items: center; text-align: center; padding: 1.6rem 1.3rem; font-size: 1.45rem; line-height: 1.4; background: var(--surface); border: 3px solid var(--line); border-radius: 26px; box-shadow: 0 7px 0 var(--line-strong); cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none; transition: transform .22s ease, opacity .22s ease, border-color .15s; }
+.blitz-card.drag { transition: none; cursor: grabbing; }
+.blitz-card.enter { transform: scale(.85); opacity: 0; transition: none; }
+.blitz-card.lean-left { border-color: var(--red); } .blitz-card.lean-right { border-color: var(--green); }
+.blitz-card.fly-left { transform: translateX(-120%) rotate(-14deg) !important; opacity: 0; }
+.blitz-card.fly-right { transform: translateX(120%) rotate(14deg) !important; opacity: 0; }
+.blitz-float { position: absolute; top: 10%; left: 50%; transform: translateX(-50%); font-weight: 900; font-size: 1.6rem; opacity: 0; pointer-events: none; }
+.blitz-float.good { color: var(--green); text-shadow: 0 2px 0 var(--green-d); }
+.blitz-float.go { animation: floatup .8s ease-out; }
+@keyframes floatup { 0% { opacity: 1; transform: translate(-50%, 10px) scale(.9); } 100% { opacity: 0; transform: translate(-50%, -50px) scale(1.15); } }
+.blitz-fix { background: var(--surface); border: 3px solid var(--red); border-radius: 20px; padding: 1rem 1.1rem; margin: .6rem 0; box-shadow: 0 5px 0 var(--red-d); animation: rise .2s; }
+.blitz-fix .btn3d { width: 100%; margin-top: .4rem; }
+.strike { text-decoration: line-through; text-decoration-color: var(--red); text-decoration-thickness: 2px; color: var(--muted); }
+.blitz-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; margin-top: .9rem; }
+.blitz-btn { font: inherit; font-size: 2.2rem; font-weight: 900; color: #fff; border: 0; border-radius: 22px; padding: .7rem 0 .55rem; cursor: pointer; display: flex; flex-direction: column; align-items: center; line-height: 1.1; text-shadow: 0 1px 0 rgba(0,0,0,.2); }
+.blitz-btn small { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; }
+.blitz-btn.no { background: var(--red); box-shadow: 0 6px 0 var(--red-d); }
+.blitz-btn.yes { background: var(--green); box-shadow: 0 6px 0 var(--green-d); }
+.blitz-btn:active { transform: translateY(4px); box-shadow: 0 2px 0 rgba(0,0,0,.25); }
+.blitz-quit { margin: .8rem auto 0; display: block; color: var(--muted); }
+.blitz-page.shake { animation: shake .35s; }
+@keyframes shake { 0%, 100% { transform: none; } 25% { transform: translateX(-8px); } 75% { transform: translateX(8px); } }
+.blitz-end { text-align: center; position: relative; overflow: hidden; }
+.blitz-final { font-size: 4.2rem; font-weight: 900; color: var(--gold); text-shadow: 0 4px 0 var(--gold-d); line-height: 1; margin: .2rem 0 .4rem; }
+.blitz-missed { list-style: none; padding: 0; text-align: left; display: grid; gap: .5rem; }
+.blitz-missed li { display: flex; flex-direction: column; gap: .15rem; padding: .6rem .8rem; border-radius: 14px; background: var(--surface-2); }
+.blitz-stage .blitz-fix { position: absolute; inset: 0; margin: 0; overflow: auto; display: flex; flex-direction: column; justify-content: center; z-index: 2; }

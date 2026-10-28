@@ -19,6 +19,8 @@
   ],
   "games": [
     "games/bld-u08.json",
+    "games/blitz-01.json",
+    "games/blitz-02.json",
     "games/dbt-01-smartworking.json",
     "games/dbt-02-turismo.json",
     "games/dbt-03-riassunto.json",

@@ -6,7 +6,7 @@ import { runSession } from "../session.js";
 import * as inst from "../install.js";
 
 const KIND_ICON = { learn: "📖", practice: "✏️", challenge: "⚡", checkpoint: "🏆", exam: "📝" };
-const GAME_ICON = { detective: "🕵️", dialogue: "💬", gauntlet: "⏱️", builder: "🧩", duel: "⚔️", reading: "📰", listening: "🎧", debate: "🎤", dictation: "✍️" };
+const GAME_ICON = { detective: "🕵️", dialogue: "💬", gauntlet: "⏱️", builder: "🧩", duel: "⚔️", reading: "📰", listening: "🎧", debate: "🎤", dictation: "✍️", blitz: "👀" };
 const OFFSETS = [0, 52, 84, 52, 0, -52, -84, -52];
 
 let cachedPath = null;

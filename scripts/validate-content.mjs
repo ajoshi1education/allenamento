@@ -14,7 +14,7 @@ const BI = await import(pathToFileURL(path.join(ROOT, "scripts/build-index.mjs")
 export const MIN_EXERCISES = 8;
 export const TYPES = ["cloze", "transform", "translate", "choice", "order", "free", "speak"];
 export const SKILLS = ["grammar", "vocabulary", "reading", "listening", "writing", "speaking", "interaction"];
-export const GAME_TYPES = ["detective", "dialogue", "gauntlet", "builder", "duel", "reading", "listening", "debate", "exam", "dictation"];
+export const GAME_TYPES = ["detective", "dialogue", "gauntlet", "builder", "duel", "reading", "listening", "debate", "exam", "dictation", "blitz"];
 export const EXAM_SECTIONS = ["reading", "listening", "grammar", "vocabulary", "writing", "speaking"];
 export const TENSES = ["presente", "imperfetto", "futuro", "condizionale", "congiuntivo", "congiuntivo_imperfetto", "passato_remoto"];
 const path_ = p => path.join(ROOT, "content", p);
