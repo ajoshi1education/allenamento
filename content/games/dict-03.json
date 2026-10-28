@@ -1,0 +1,26 @@
+{
+  "id": "G-DICT-03",
+  "type": "dictation",
+  "title": "Dettato C1",
+  "subtitle": "Longer, more formal sentences: C1 grammar by ear.",
+  "conceptIds": [
+    "C1-SUBJ-05",
+    "C1-SUBJ-06",
+    "C1-SEQ-02",
+    "C1-SEQ-03",
+    "C1-HYP-03",
+    "C1-HYP-04",
+    "C1-PRON-03",
+    "C1-PAST-03",
+    "C1-PAST-04",
+    "C1-PART-01",
+    "C1-INF-02",
+    "C1-PASS-02",
+    "C1-CONN-02",
+    "C1-SYN-01",
+    "C1-SYN-02"
+  ],
+  "difficulty": 4,
+  "minutes": 6,
+  "sentences": 8
+}

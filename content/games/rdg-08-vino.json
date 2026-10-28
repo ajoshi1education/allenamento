@@ -1,0 +1,123 @@
+{
+  "id": "G-RDG-08",
+  "type": "reading",
+  "title": "Le regioni del vino",
+  "subtitle": "A guide to Italian wine labels and regions: DOC and DOCG, Barolo, Chianti, Prosecco, and the collocations of formal Italian.",
+  "conceptIds": ["B2-READ-01", "C1-VOC-03"],
+  "difficulty": 3,
+  "minutes": 12,
+  "passage": {
+    "title": "Leggere un'etichetta italiana",
+    "source": "invented",
+    "it": "Dalla Valle d'Aosta alla Sicilia non c'è regione italiana che non produca vino. Con centinaia di vitigni autoctoni, l'Italia vanta una varietà che pochi paesi possono eguagliare, e ogni anno si contende con la Francia il primato mondiale per quantità prodotta. Per orientarsi in questo panorama, però, bisogna conoscere qualche sigla.\nNel 1963 una legge introdusse la DOC, Denominazione di Origine Controllata, che pose le basi del sistema attuale: un vino DOC deve provenire da una zona delimitata e rispettare un disciplinare che stabilisce i vitigni ammessi, la resa massima per ettaro e le tecniche di produzione. In seguito nacque la DOCG, dove la G sta per «Garantita»: i controlli sono più severi e ogni bottiglia porta un contrassegno di Stato numerato. Nel 1980 i primi vini a ottenerla furono, tra gli altri, il Brunello di Montalcino e il Barolo.\nIl Barolo nasce nelle Langhe, in Piemonte, da uve Nebbiolo. È un vino potente, che richiede anni di invecchiamento e che non a caso viene chiamato «il re dei vini e il vino dei re». Il Chianti, invece, si produce in Toscana, soprattutto con il Sangiovese; il Chianti Classico, riconoscibile dal gallo nero sul collo della bottiglia, proviene dalla zona storica tra Firenze e Siena. Il Prosecco, infine, è uno spumante del Veneto e del Friuli ottenuto dall'uva Glera; le colline tra Conegliano e Valdobbiadene sono patrimonio dell'UNESCO dal 2019.\nChe cosa rende unico un vino? I francesi parlano di terroir, gli italiani spesso semplicemente di territorio: l'insieme di suolo, clima, esposizione al sole e saperi tramandati. Lo stesso vitigno, coltivato in due valli vicine, può dare vini molto diversi. Per questo i produttori tengono conto di ogni dettaglio, dalla pendenza della collina all'altitudine.\nNon mancano le critiche: secondo alcuni, disciplinari troppo rigidi frenerebbero l'innovazione. Resta il fatto che il sistema ha svolto un ruolo decisivo nel porre fine all'epoca del vino sfuso di scarsa qualità e nel far conoscere il vino italiano nel mondo."
+  },
+  "questions": [
+    {
+      "id": "G-RDG-08.q1", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What is the main purpose of the text?",
+      "options": [
+        "To recommend the best Italian wines to buy",
+        "To compare Italian and French wine production",
+        "To help readers understand Italian wine classifications and some key wine regions",
+        "To criticise the DOC system"
+      ],
+      "answer": 2,
+      "optionWhy": { "3": "Criticism is mentioned in the last paragraph, but the writer concludes in favour of the system." },
+      "explanation": "*Per orientarsi in questo panorama, però, bisogna conoscere qualche sigla*: the text explains DOC/DOCG and then three famous wines.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-08.q2", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Which of these does a *disciplinare* NOT set, according to the text?",
+      "options": [
+        "The permitted grape varieties",
+        "The maximum yield per hectare",
+        "The retail price of the bottle",
+        "The production techniques"
+      ],
+      "answer": 2,
+      "explanation": "*Un disciplinare che stabilisce i vitigni ammessi, la resa massima per ettaro e le tecniche di produzione.* Price isn't mentioned.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-08.q3", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "How does DOCG differ from DOC?",
+      "options": [
+        "It is for sparkling wines only.",
+        "Controls are stricter and each bottle carries a numbered state seal.",
+        "It was introduced before DOC, in 1963.",
+        "It applies only to Tuscan wines."
+      ],
+      "answer": 1,
+      "explanation": "*I controlli sono più severi e ogni bottiglia porta un contrassegno di Stato numerato.* DOC came in 1963; the first DOCGs in 1980.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-08.q4", "type": "cloze", "difficulty": 2,
+      "instruction": "Complete with the name of the grape, as in the text.",
+      "prompt": "Il Barolo nasce nelle Langhe da uve ___.",
+      "answers": ["Nebbiolo"],
+      "focus": ["Nebbiolo"],
+      "explanation": "*Il Barolo nasce nelle Langhe, in Piemonte, da uve Nebbiolo.* Chianti is mainly Sangiovese; Prosecco is Glera.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-08.q5", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "How can you recognise a bottle of Chianti Classico?",
+      "options": [
+        "By a black rooster on the neck of the bottle",
+        "By its sparkling bubbles",
+        "By the UNESCO logo",
+        "By a gold label with the word *Garantita*"
+      ],
+      "answer": 0,
+      "explanation": "*Riconoscibile dal gallo nero sul collo della bottiglia.*",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-08.q6", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What does *territorio* mean in the text?",
+      "options": [
+        "The legal boundaries of a DOC zone",
+        "The combination of soil, climate, sun exposure and handed-down know-how that shapes a wine",
+        "The land owned by a single producer",
+        "The region where a wine is sold"
+      ],
+      "answer": 1,
+      "explanation": "*L'insieme di suolo, clima, esposizione al sole e saperi tramandati*: the Italian equivalent of *terroir*.",
+      "errorType": "vocabulary"
+    },
+    {
+      "id": "G-RDG-08.q7", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«Secondo alcuni, disciplinari troppo rigidi frenerebbero l'innovazione.»* What is the writer's position?",
+      "options": [
+        "The writer fully agrees that the rules block innovation.",
+        "The writer reports the criticism without endorsing it, and then defends the system.",
+        "The writer thinks the rules should be abolished.",
+        "The writer has no opinion on the matter."
+      ],
+      "answer": 1,
+      "explanation": "*Secondo alcuni* + conditional (*frenerebbero*) reports someone else's claim. *Resta il fatto che* then introduces the writer's own view: the system *ha svolto un ruolo decisivo*.",
+      "errorType": "comprehension"
+    },
+    {
+      "id": "G-RDG-08.q8", "type": "cloze", "difficulty": 4,
+      "instruction": "Complete the collocation used in the text (one word).",
+      "prompt": "Il sistema ha svolto un ruolo decisivo nel ___ fine all'epoca del vino sfuso di scarsa qualità.",
+      "answers": ["porre"],
+      "focus": ["porre"],
+      "traps": [
+        { "match": "mettere", "errorType": "collocation", "ok": true, "why": "*Mettere fine a* is also correct, just less formal. The text uses *porre fine a*." },
+        { "match": ["fare", "dare"], "errorType": "collocation", "why": "The fixed collocation is *porre fine a* (or, less formally, *mettere fine a*): to put an end to." }
+      ],
+      "explanation": "*Porre fine a qualcosa* = to put an end to something. Other collocations in the text: *porre le basi*, *tenere conto di*, *svolgere un ruolo*.",
+      "errorType": "collocation"
+    }
+  ]
+}

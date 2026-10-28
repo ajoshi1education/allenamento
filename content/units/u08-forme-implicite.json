@@ -1,0 +1,376 @@
+{
+  "unit": "U08",
+  "title": "Forme implicite",
+  "cefr": "B2",
+  "concepts": [
+    {
+      "id": "B2-INF-01",
+      "title": "Gerundio: cause, time, manner; gerundio passato",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": [],
+      "rule": "The gerundio (parlando, essendo) replaces a clause of time, cause, manner or condition; the gerundio passato (avendo finito, essendo arrivata) marks an earlier action. Its implicit subject must be the subject of the main clause. After prepositions, English -ing becomes an Italian infinitive, not a gerund.",
+      "assessment": [
+        "Forms the gerundio and gerundio passato, including fare → facendo, dire → dicendo",
+        "Uses the gerund for time, cause, manner and condition, and pur + gerund for concession",
+        "Keeps the same subject in the gerund and the main clause (avoids the dangling gerund)",
+        "Uses an infinitive, not a gerund, after prepositions and as a subject (prima di partire, nuotare fa bene)",
+        "Attaches pronouns to the gerund (vedendolo, avendogli parlato)"
+      ],
+      "lesson": {
+        "intro": "Italian loves the gerund as a compact way to say 'while, because, by, if': *Tornando a casa, ho incontrato Paolo*. But it's a false friend for English speakers: English *-ing* is everywhere (*before leaving, I like swimming*), while the Italian gerund is never used after a preposition or as a noun. And its subject must match the main clause, or the sentence says something you didn't mean.",
+        "rules": [
+          {
+            "title": "Form",
+            "text": "-are → **-ando** (parlando); -ere/-ire → **-endo** (prendendo, partendo). Irregular stems come from the old Latin infinitive: *fare → facendo, dire → dicendo, bere → bevendo, porre → ponendo, tradurre → traducendo*. Gerundio passato: **avendo / essendo** + participle (*avendo finito, essendo arrivata*); with *essendo* the participle agrees.",
+            "examples": [
+              { "it": "**Facendo** sport ogni giorno, si sente meglio.", "en": "By doing sport every day, he feels better." },
+              { "it": "**Avendo perso** l'ultimo autobus, abbiamo preso un taxi.", "en": "Having missed the last bus, we took a taxi." }
+            ]
+          },
+          {
+            "title": "What it can mean",
+            "text": "Time (= *mentre, quando*), cause (= *siccome, poiché*), manner or means (= *by…*), condition (= *se*), and with **pur** concession (= *anche se*). Context tells you which.",
+            "table": {
+              "head": ["Meaning", "Gerund", "Explicit equivalent"],
+              "rows": [
+                ["time", "*Tornando a casa*, ho incontrato Paolo.", "Mentre tornavo a casa…"],
+                ["cause", "*Essendo stanca*, è andata a letto.", "Siccome era stanca…"],
+                ["manner / means", "Ho imparato l'italiano *guardando film*.", "(by watching films)"],
+                ["condition", "*Studiando di più*, passeresti l'esame.", "Se studiassi di più…"],
+                ["concession", "*Pur essendo ricco*, vive modestamente.", "Anche se è ricco…"]
+              ]
+            }
+          },
+          {
+            "title": "Same subject!",
+            "text": "The gerund's implicit subject is the subject of the main clause. *Uscendo di casa, ho visto Marta* = **I** was leaving. If the subjects differ, use an explicit clause: *Mentre Marta usciva di casa, l'ho vista*. A sentence like ~~Aspettando l'autobus, un ladro mi ha rubato il portafoglio~~ literally says the **thief** was waiting for the bus. (Formal Italian can give the gerund its own subject, placed after it: *Essendo Marco malato, la riunione è stata rinviata*.)",
+            "examples": [
+              { "it": "Mentre aspettavo l'autobus, un ladro mi ha rubato il portafoglio.", "en": "While I was waiting for the bus, a thief stole my wallet." }
+            ]
+          },
+          {
+            "title": "English -ing ≠ gerundio",
+            "text": "After a preposition, and when the verb is a subject or object, Italian uses the **infinitive**: *prima di partire* (before leaving), *senza dire niente* (without saying anything), *Mi piace nuotare* (I like swimming), *Fumare fa male* (Smoking is bad for you). Only English 'by -ing' becomes a bare gerund: *by studying = studiando*.",
+            "examples": [
+              { "it": "Prima di **partire**, chiudi le finestre.", "en": "Before leaving, close the windows." },
+              { "it": "**Studiando** ogni giorno, supererai l'esame.", "en": "By studying every day, you'll pass the exam." }
+            ]
+          },
+          {
+            "title": "Pronouns attach",
+            "text": "Unstressed pronouns are attached to the end of the gerund (to *avendo/essendo* in the past form): *vedendolo, dicendoglielo, avendogli parlato, essendosi alzata*.",
+            "examples": [
+              { "it": "**Vedendolo** così triste, ho deciso di aiutarlo.", "en": "Seeing him so sad, I decided to help him." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Prima di partendo, chiudi le finestre.", "right": "Prima di partire, chiudi le finestre.", "why": "After a preposition Italian uses the infinitive, never the gerund." },
+          { "wrong": "Mi piace nuotando.", "right": "Mi piace nuotare.", "why": "English 'swimming' here is a noun-like -ing: Italian uses the infinitive." },
+          { "wrong": "Essendo arrivato tardi, il professore mi ha rimproverato.", "right": "Siccome ero arrivato tardi, il professore mi ha rimproverato.", "why": "The gerund's subject is the main subject: as written, it's the professor who arrived late." },
+          { "wrong": "Avendo uscito presto, …", "right": "Essendo uscito presto, …", "why": "The gerundio passato keeps the verb's auxiliary: *uscire* → *essendo uscito*." },
+          { "wrong": "Lo vedendo, …", "right": "Vedendolo, …", "why": "Pronouns attach to the end of the gerund." }
+        ],
+        "tips": [
+          "Translate 'by -ing' with a bare gerund, but 'before/after/without -ing' with *prima di / dopo / senza* + infinitive.",
+          "Check the subject: who is doing the gerund action? If it's not the main subject, rewrite with *mentre / siccome*.",
+          "*Pur* + gerund is a neat C1 way to say 'although': *Pur sapendolo, non ha detto niente*."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-INF-01.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the gerund.", "prompt": "Ho imparato l'italiano ___ (guardare) film in lingua originale.", "answers": ["guardando"], "focus": ["guardando"], "errorType": "implicit-form", "traps": [{ "match": "guardare", "errorType": "implicit-form", "why": "'By watching' (means) is a bare gerund in Italian: *guardando*." }, { "match": "guardendo", "errorType": "verb-form", "why": "-are verbs take *-ando*: *guardando*." }], "explanation": "Means ('by doing') → gerundio.", "en": "I learned Italian by watching films in the original language." },
+        { "id": "B2-INF-01.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the gerund.", "prompt": "___ (fare) attenzione, eviterai molti errori.", "answers": ["Facendo"], "focus": ["facendo"], "errorType": "verb-form", "traps": [{ "match": "(Fando|Facciando|Fandando)", "errorType": "verb-form", "why": "*Fare* builds its gerund on the old stem *fac-*: *facendo*." }], "explanation": "*Fare* → **facendo** (like *dire → dicendo*).", "en": "By paying attention, you'll avoid lots of mistakes." },
+        { "id": "B2-INF-01.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the gerund.", "prompt": "___ (essere) stanca, Laura è andata a letto presto.", "answers": ["Essendo"], "focus": ["essendo"], "errorType": "verb-form", "traps": [{ "match": "Siendo", "errorType": "verb-form", "why": "That's Spanish! Italian: *essendo*." }], "explanation": "Cause → gerund: *essendo stanca* = siccome era stanca.", "en": "Being tired, Laura went to bed early." },
+        { "id": "B2-INF-01.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the gerundio passato.", "prompt": "___ (perdere) l'ultimo autobus, abbiamo dovuto prendere un taxi.", "answers": ["Avendo perso"], "focus": ["avendo", "perso"], "errorType": "implicit-form", "traps": [{ "match": "Perdendo", "errorType": "wrong-tense", "why": "Missing the bus happened before taking the taxi: gerundio passato *avendo perso*." }, { "match": "Essendo perso", "errorType": "auxiliary", "why": "*Perdere* takes *avere*: *avendo perso*." }], "explanation": "Earlier action as cause → **avendo perso**.", "en": "Having missed the last bus, we had to take a taxi." },
+        { "id": "B2-INF-01.e05", "type": "cloze", "difficulty": 3, "instruction": "Complete with the gerundio passato.", "prompt": "___ (arrivare) in ritardo, le ragazze non hanno trovato posto.", "answers": ["Essendo arrivate"], "focus": ["essendo", "arrivate"], "errorType": "implicit-form", "traps": [{ "match": "(Essendo arrivati|Essendo arrivato|Essendo arrivata)", "errorType": "agreement", "why": "With *essendo* the participle agrees with *le ragazze*: *arrivate*." }, { "match": "(Avendo arrivate|Avendo arrivato)", "errorType": "auxiliary", "why": "*Arrivare* takes *essere*: *essendo arrivate*." }, { "match": "Arrivando", "ok": true, "why": "Also possible; *essendo arrivate* stresses that the late arrival came first and caused the problem." }], "explanation": "*Essendo* + agreeing participle.", "en": "Having arrived late, the girls didn't find a seat." },
+        { "id": "B2-INF-01.e06", "type": "choice", "difficulty": 2, "instruction": "Choose the correct translation.", "prompt": "Before leaving, close the windows.", "options": ["Prima di partendo, chiudi le finestre.", "Prima di partire, chiudi le finestre.", "Prima partendo, chiudi le finestre."], "answer": 1, "optionWhy": { "0": "After a preposition (*prima di*), Italian uses the infinitive, not the gerund.", "2": "'Before' is *prima di* + infinitive." }, "errorType": "implicit-form", "explanation": "English 'before -ing' = *prima di* + infinitive.", "en": "Before leaving, close the windows." },
+        { "id": "B2-INF-01.e07", "type": "choice", "difficulty": 3, "instruction": "Which sentences are correct in careful Italian? (More than one may be.)", "prompt": "Choose the correct sentence(s).", "options": ["Uscendo di casa, ha cominciato a piovere.", "Uscendo di casa, ho visto che pioveva.", "Mentre uscivo di casa, ha cominciato a piovere."], "answer": [1, 2], "optionWhy": { "0": "Dangling gerund: the main subject is the rain, so it literally says the rain was leaving the house. Use *Mentre uscivo…*" }, "errorType": "implicit-form", "explanation": "The gerund takes the main clause's subject. Different subjects → explicit clause with *mentre*.", "en": "As I was leaving the house, it started raining / I saw it was raining." },
+        { "id": "B2-INF-01.e08", "type": "transform", "difficulty": 3, "instruction": "Rewrite with a gerund instead of the 'siccome' clause.", "prompt": "Siccome non sapevo la strada, ho chiesto a un passante.", "answers": ["Non sapendo la strada, ho chiesto a un passante"], "focus": ["sapendo"], "errorType": "implicit-form", "traps": [{ "contains": ["sapevo", "siccome"], "errorType": "implicit-form", "why": "Replace the whole *siccome* clause with a gerund: *Non sapendo…*" }, { "contains": ["sappendo", "saputo"], "errorType": "verb-form", "why": "*Sapere* → *sapendo*." }], "explanation": "Cause → gerund; *non* goes before it.", "en": "Not knowing the way, I asked a passer-by." },
+        { "id": "B2-INF-01.e09", "type": "transform", "difficulty": 3, "instruction": "Rewrite with a gerund instead of the 'mentre' clause.", "prompt": "Mentre tornavo a casa, ho incontrato Paolo.", "answers": ["Tornando a casa, ho incontrato Paolo", "Ho incontrato Paolo tornando a casa"], "focus": ["tornando"], "errorType": "implicit-form", "traps": [{ "contains": ["mentre"], "errorType": "implicit-form", "why": "The gerund replaces *mentre* + verb entirely: *Tornando a casa…*" }], "explanation": "Same subject (io), time → gerund.", "en": "On my way home, I ran into Paolo." },
+        { "id": "B2-INF-01.e10", "type": "transform", "difficulty": 4, "instruction": "Rewrite with the gerundio passato.", "prompt": "Dato che aveva già visto il film, Marco è rimasto a casa.", "answers": ["Avendo già visto il film, Marco è rimasto a casa", "Marco, avendo già visto il film, è rimasto a casa"], "focus": ["avendo", "visto"], "errorType": "implicit-form", "traps": [{ "contains": ["vedendo"], "errorType": "wrong-tense", "why": "He saw the film earlier: gerundio passato *avendo visto*." }, { "contains": ["essendo"], "errorType": "auxiliary", "why": "*Vedere* takes *avere*: *avendo visto*." }], "explanation": "Earlier action as cause → **avendo visto**.", "en": "Having already seen the film, Marco stayed at home." },
+        { "id": "B2-INF-01.e11", "type": "transform", "difficulty": 5, "instruction": "This sentence has a dangling gerund (it says the thief was waiting). Rewrite it with 'mentre' + imperfetto.", "prompt": "Aspettando l'autobus, un ladro mi ha rubato il portafoglio.", "answers": ["Mentre aspettavo l'autobus, un ladro mi ha rubato il portafoglio", "Un ladro mi ha rubato il portafoglio mentre aspettavo l'autobus"], "focus": ["aspettavo"], "errorType": "implicit-form", "traps": [{ "contains": ["aspettando"], "errorType": "implicit-form", "why": "Keep no gerund here: the subjects differ (I was waiting, the thief stole)." }, { "contains": ["aspettava"], "errorType": "verb-form", "why": "*I* was waiting: *aspettavo*." }, { "contains": ["ho", "aspettato"], "errorType": "wrong-tense", "why": "Waiting was in progress: imperfetto *aspettavo*." }], "explanation": "Different subjects → explicit clause: *Mentre (io) aspettavo…*", "en": "While I was waiting for the bus, a thief stole my wallet." },
+        { "id": "B2-INF-01.e12", "type": "translate", "difficulty": 2, "instruction": "Translate into Italian.", "prompt": "I like swimming.", "answers": ["Mi piace nuotare", "Amo nuotare", "Adoro nuotare"], "focus": ["nuotare"], "errorType": "implicit-form", "traps": [{ "contains": ["nuotando"], "errorType": "implicit-form", "why": "English uses -ing as a noun here; Italian uses the infinitive: *Mi piace nuotare*." }, { "match": "Mi piace il nuoto", "ok": true, "why": "*Mi piace il nuoto* (the noun) is also fine. With a verb: *Mi piace nuotare*." }], "explanation": "Activity as subject/object → infinitive.", "en": "I like swimming." },
+        { "id": "B2-INF-01.e13", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian (informal 'you').", "prompt": "By studying every day, you'll pass the exam.", "answers": ["Studiando (ogni giorno|tutti i giorni), (passerai|supererai) l'esame", "(Passerai|Supererai) l'esame studiando (ogni giorno|tutti i giorni)"], "focus": ["studiando"], "errorType": "implicit-form", "traps": [{ "contains": ["per"], "errorType": "implicit-form", "why": "*Per studiare* = in order to study. 'By -ing' is a bare gerund: *studiando*." }, { "contains": ["da", "con"], "errorType": "implicit-form", "why": "No preposition: 'by -ing' = bare gerund *studiando*." }], "explanation": "'By -ing' (means/condition) → gerundio.", "en": "By studying every day, you'll pass the exam." },
+        { "id": "B2-INF-01.e14", "type": "translate", "difficulty": 5, "instruction": "Translate into Italian using 'pur' + gerund.", "prompt": "Although he is rich, he lives modestly.", "answers": ["Pur essendo ricco, vive (modestamente|in modo modesto|semplicemente|in modo semplice)"], "focus": ["pur", "essendo"], "errorType": "implicit-form", "traps": [{ "contains": ["sebbene", "benché", "anche"], "errorType": "implicit-form", "why": "The task asks for the implicit form: *pur* + gerund (*Pur essendo ricco*)." }, { "contains": ["è"], "errorType": "implicit-form", "why": "Use the gerund in the first part: *Pur essendo ricco*." }], "explanation": "*Pur* + gerund = although (same subject).", "en": "Although he is rich, he lives modestly." },
+        { "id": "B2-INF-01.e15", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "Seeing him so sad, I decided to help him.", "tokens": ["Vedendolo", "così", "triste", "ho", "deciso", "di", "aiutarlo"], "answers": ["Vedendolo così triste, ho deciso di aiutarlo", "Ho deciso di aiutarlo vedendolo così triste"], "errorType": "word-order", "explanation": "The pronoun attaches to the gerund (*vedendolo*) and to the infinitive (*aiutarlo*)." },
+        { "id": "B2-INF-01.e16", "type": "cloze", "difficulty": 4, "instruction": "Complete with the gerund + pronoun.", "prompt": "Non ___ (conoscere + lo) bene, preferisco non giudicarlo.", "answers": ["conoscendolo"], "focus": ["conoscendolo"], "errorType": "pronoun-position", "traps": [{ "match": "lo conoscendo", "errorType": "pronoun-position", "why": "Unstressed pronouns attach to the end of the gerund: *conoscendolo*." }], "explanation": "Pronoun attached to the gerund: **conoscendolo**.", "en": "Not knowing him well, I'd rather not judge him." },
+        { "id": "B2-INF-01.e17", "type": "speak", "difficulty": 3, "instruction": "Say it in Italian with a gerund.", "prompt": "Explain that you learned to cook by watching your grandmother.", "answers": ["Ho imparato a cucinare guardando (mia nonna|la nonna)"], "focus": ["guardando"], "errorType": "implicit-form", "traps": [{ "contains": ["per", "da"], "errorType": "implicit-form", "why": "'By watching' is a bare gerund: *guardando*." }, { "contains": ["guardare"], "errorType": "implicit-form", "why": "Here the gerund expresses the means: *guardando*." }, { "match": "Ho imparato cucinare guardando (mia nonna|la nonna)", "errorType": "preposition", "why": "*Imparare a* + infinitive: *ho imparato a cucinare*." }], "explanation": "Means → gerund; *imparare a* + infinitive.", "en": "I learned to cook by watching my grandmother." }
+      ]
+    },
+    {
+      "id": "C1-PART-01",
+      "title": "Absolute participle (Finito il lavoro, …)",
+      "cefr": "C1",
+      "skill": "grammar",
+      "prereqs": ["B2-INF-01"],
+      "rule": "The participio assoluto (Finito il lavoro, …; Arrivati a casa, …) replaces a time or cause clause for an action completed before the main one. With transitive verbs it agrees with the object; with essere verbs it agrees with the subject.",
+      "assessment": [
+        "Uses the absolute participle for an earlier action (Finita la cena, …)",
+        "Makes the participle agree with the object (transitive verbs) or the subject (essere verbs)",
+        "Avoids it with intransitive verbs that take avere (dormire, camminare)",
+        "Recognises fixed phrases: detto questo, fatto sta, considerato che, una volta finito…",
+        "Attaches pronouns in formal style (Salutatili, Alzatasi)"
+      ],
+      "lesson": {
+        "intro": "The absolute participle is a hallmark of good written Italian and of news reports: *Finita la riunione, il ministro ha parlato ai giornalisti*. English needs 'once / after + clause'; Italian just uses the participle. The tricky part for English speakers is **agreement**: the participle agrees with the noun it refers to, which usually comes right after it.",
+        "rules": [
+          {
+            "title": "What it does",
+            "text": "It replaces a clause with *dopo che, quando, appena, siccome* for an action **completed before** the main one. It's formal-neutral, very common in writing and news, and in set phrases in speech.",
+            "examples": [
+              { "it": "**Finito** il lavoro, siamo andati a cena.", "en": "Once the work was done, we went to dinner." },
+              { "it": "**Detto** questo, sono d'accordo con te.", "en": "Having said that, I agree with you." }
+            ]
+          },
+          {
+            "title": "Transitive verbs: agree with the object",
+            "text": "The noun after the participle is its object, and the participle agrees with it in gender and number.",
+            "table": {
+              "head": ["Object", "Absolute participle"],
+              "rows": [
+                ["il lavoro (m. sing.)", "Finit**o** il lavoro, …"],
+                ["la cena (f. sing.)", "Finit**a** la cena, …"],
+                ["i documenti (m. pl.)", "Lett**i** i documenti, …"],
+                ["le finestre (f. pl.)", "Chius**e** le finestre, …"]
+              ]
+            }
+          },
+          {
+            "title": "Essere verbs: agree with the subject",
+            "text": "With verbs like *arrivare, partire, uscire, entrare*, the participle agrees with its subject. Normally that's the main subject (*Arrivata a casa, Anna…*). If it has a different subject, that subject must be stated after it: *Partiti gli ospiti, la casa tornò silenziosa.*",
+            "examples": [
+              { "it": "**Arrivati** a casa, i ragazzi hanno cenato.", "en": "Once they got home, the boys had dinner." },
+              { "it": "**Partiti** gli ospiti, la casa è tornata silenziosa.", "en": "Once the guests had left, the house went quiet again." }
+            ]
+          },
+          {
+            "title": "Limits and pronouns",
+            "text": "Not possible with intransitive verbs that take *avere* (*dormire, camminare, viaggiare*): use *dopo aver dormito*. Pronouns attach to the participle in formal style: *Salutatili, se ne andò; Alzatasi, aprì la finestra*. *Una volta* or *appena* can come first: *Una volta finito il corso, …*",
+            "examples": [
+              { "it": "**Dopo aver dormito** bene, si è alzato di buon umore. (not ~~Dormito bene~~)", "en": "Having slept well, he got up in a good mood." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Finito la cena, siamo usciti.", "right": "Finita la cena, siamo usciti.", "why": "The participle agrees with its object *la cena*." },
+          { "wrong": "Arrivato a casa, Maria ha cenato.", "right": "Arrivata a casa, Maria ha cenato.", "why": "*Arrivare* takes *essere*: the participle agrees with Maria." },
+          { "wrong": "Dormito bene, mi sono alzato.", "right": "Dopo aver dormito bene, mi sono alzato.", "why": "Intransitive verbs with *avere* can't form an absolute participle." },
+          { "wrong": "Arrivati alla stazione, il treno era partito.", "right": "Arrivati alla stazione, abbiamo visto che il treno era partito.", "why": "The participle refers to the main subject: as written, the train arrived at the station." }
+        ],
+        "tips": [
+          "Look right: the noun just after the participle decides the ending (*Chiuse le porte*).",
+          "Learn the fixed phrases: *detto questo / ciò detto, fatto sta che, considerato che, dato che, visto che*."
+        ]
+      },
+      "exercises": [
+        { "id": "C1-PART-01.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the absolute participle.", "prompt": "___ (finire) la cena, siamo andati a fare una passeggiata.", "answers": ["Finita"], "focus": ["finita"], "errorType": "agreement", "traps": [{ "match": "Finito", "errorType": "agreement", "why": "The participle agrees with its object *la cena* (feminine): *Finita*." }, { "match": "Finendo", "errorType": "implicit-form", "why": "The walk came after dinner was over: participle *Finita*, not gerund." }], "explanation": "Transitive verb → agrees with the object: **Finita** la cena.", "en": "Once dinner was over, we went for a walk." },
+        { "id": "C1-PART-01.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the absolute participle.", "prompt": "___ (arrivare) a casa, Anna ha acceso il riscaldamento.", "answers": ["Arrivata"], "focus": ["arrivata"], "errorType": "agreement", "traps": [{ "match": "Arrivato", "errorType": "agreement", "why": "*Arrivare* takes *essere*: the participle agrees with Anna: *Arrivata*." }], "explanation": "*Essere* verb → agrees with the subject.", "en": "Once she got home, Anna switched on the heating." },
+        { "id": "C1-PART-01.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the absolute participle.", "prompt": "___ (chiudere) le finestre, siamo usciti.", "answers": ["Chiuse"], "focus": ["chiuse"], "errorType": "agreement", "traps": [{ "match": "(Chiuso|Chiusi|Chiusa)", "errorType": "agreement", "why": "Agree with the object *le finestre* (feminine plural): *Chiuse*." }], "explanation": "Feminine plural object → **Chiuse**.", "en": "Having closed the windows, we went out." },
+        { "id": "C1-PART-01.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the absolute participle.", "prompt": "___ (leggere) i documenti, il giudice ha preso una decisione.", "answers": ["Letti"], "focus": ["letti"], "errorType": "agreement", "traps": [{ "match": "(Letto|Lette|Letta)", "errorType": "agreement", "why": "Agree with *i documenti* (masculine plural): *Letti*." }, { "match": "(Leggiuti|Legguti)", "errorType": "verb-form", "why": "The participle of *leggere* is *letto*." }], "explanation": "Masculine plural object → **Letti**.", "en": "Having read the documents, the judge made a decision." },
+        { "id": "C1-PART-01.e05", "type": "cloze", "difficulty": 3, "instruction": "Complete with the absolute participle.", "prompt": "___ (partire) gli ospiti, la casa è tornata silenziosa.", "answers": ["Partiti"], "focus": ["partiti"], "errorType": "agreement", "traps": [{ "match": "(Partito|Partite|Partita)", "errorType": "agreement", "why": "The participle has its own subject, *gli ospiti* (masculine plural): *Partiti*." }], "explanation": "Different subject, stated after the participle: **Partiti** gli ospiti.", "en": "Once the guests had left, the house went quiet again." },
+        { "id": "C1-PART-01.e06", "type": "transform", "difficulty": 3, "instruction": "Rewrite with an absolute participle.", "prompt": "Dopo che abbiamo pagato il conto, siamo usciti.", "answers": ["[Una volta] pagato il conto, siamo usciti"], "focus": ["pagato"], "errorType": "implicit-form", "traps": [{ "contains": ["abbiamo", "dopo"], "errorType": "implicit-form", "why": "The absolute participle drops *dopo che* and the auxiliary: *Pagato il conto, …*" }, { "contains": ["pagata", "pagati"], "errorType": "agreement", "why": "*Il conto* is masculine singular: *pagato*." }], "explanation": "*Pagato* il conto (masc. sing. object).", "en": "Having paid the bill, we left." },
+        { "id": "C1-PART-01.e07", "type": "transform", "difficulty": 3, "instruction": "Rewrite with an absolute participle.", "prompt": "Dopo che fu entrata in casa, la ragazza si tolse il cappotto.", "answers": ["[Una volta] entrata in casa, la ragazza si tolse il cappotto"], "focus": ["entrata"], "errorType": "implicit-form", "traps": [{ "contains": ["entrato"], "errorType": "agreement", "why": "*Entrare* takes *essere*: agree with *la ragazza*: *Entrata*." }, { "contains": ["fu", "dopo"], "errorType": "implicit-form", "why": "Drop *dopo che* and the auxiliary: *Entrata in casa, …*" }], "explanation": "*Essere* verb → agrees with the subject: **Entrata**.", "en": "Once she was inside, the girl took off her coat." },
+        { "id": "C1-PART-01.e08", "type": "transform", "difficulty": 4, "instruction": "Rewrite with an absolute participle (formal style).", "prompt": "Appena si sono svegliati, i bambini hanno chiesto la colazione.", "answers": ["(Svegliatisi|Appena svegliati|Appena svegli|Una volta svegli), i bambini hanno chiesto la colazione"], "focus": ["svegliatisi", "svegliati", "svegli"], "errorType": "implicit-form", "traps": [{ "contains": ["sono"], "errorType": "implicit-form", "why": "Drop the auxiliary: *Svegliatisi, …* or *Appena svegli, …*" }, { "contains": ["svegliatosi", "svegliato"], "errorType": "agreement", "why": "Agree with *i bambini*: *svegliatisi / svegliati*." }, { "contains": ["si"], "errorType": "pronoun-position", "why": "In the absolute participle the pronoun attaches: *Svegliatisi*." }], "explanation": "Reflexive verbs attach the pronoun: **Svegliatisi** (formal), or simply *Appena svegli*.", "en": "As soon as they woke up, the children asked for breakfast." },
+        { "id": "C1-PART-01.e09", "type": "choice", "difficulty": 3, "instruction": "Which sentence is correct?", "prompt": "Choose the correct sentence.", "options": ["Finito il compito, Marco è uscito.", "Finita il compito, Marco è uscito.", "Finito i compiti, Marco è uscito."], "answer": 0, "optionWhy": { "1": "*Il compito* is masculine: *Finito*.", "2": "*I compiti* is plural: *Finiti i compiti*." }, "errorType": "agreement", "explanation": "Agree with the object: *Finito il compito / Finiti i compiti*.", "en": "Once he'd finished his homework, Marco went out." },
+        { "id": "C1-PART-01.e10", "type": "choice", "difficulty": 4, "instruction": "Which sentence is correct?", "prompt": "Choose the correct sentence.", "options": ["Arrivati alla stazione, il treno era già partito.", "Arrivati alla stazione, abbiamo scoperto che il treno era già partito."], "answer": 1, "optionWhy": { "0": "The participle refers to the main subject, *il treno*: it says the train arrived at the station. The subjects must match." }, "errorType": "implicit-form", "explanation": "Same subject (noi) in the participle and the main clause.", "en": "When we got to the station, we found the train had already left." },
+        { "id": "C1-PART-01.e11", "type": "choice", "difficulty": 4, "instruction": "Which sentence is NOT correct?", "prompt": "Find the incorrect sentence.", "options": ["Dormito bene, si è alzato di buon umore.", "Dopo aver dormito bene, si è alzato di buon umore.", "Fatta colazione, si è alzato da tavola."], "answer": 0, "optionWhy": { "1": "Correct: dopo + past infinitive works with any verb.", "2": "Correct: *fare colazione* is transitive, so *Fatta colazione* is fine." }, "errorType": "implicit-form", "explanation": "*Dormire* is intransitive with *avere*: no absolute participle. Use *Dopo aver dormito*.", "en": "Spot the impossible absolute participle." },
+        { "id": "C1-PART-01.e12", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian with an absolute participle.", "prompt": "Once the decision was made, nobody talked about it any more.", "answers": ["[Una volta] presa la decisione, nessuno ne ha più parlato", "[Una volta] presa la decisione, nessuno ne parlò più", "[Una volta] presa la decisione, non ne ha più parlato nessuno"], "focus": ["presa"], "errorType": "implicit-form", "traps": [{ "contains": ["preso"], "errorType": "agreement", "why": "*La decisione* is feminine: *presa*." }, { "contains": ["fatta"], "errorType": "collocation", "why": "In Italian you *prendere* a decision: *presa la decisione*." }, { "contains": ["dopo"], "errorType": "implicit-form", "why": "The absolute participle needs no *dopo*: *Presa la decisione, …*" }], "explanation": "*Prendere una decisione* → **Presa** la decisione.", "en": "Once the decision was made, nobody talked about it any more." },
+        { "id": "C1-PART-01.e13", "type": "translate", "difficulty": 5, "instruction": "Translate into Italian (informal).", "prompt": "Having said that, I agree with you.", "answers": ["(Detto questo|Detto ciò|Ciò detto), sono d'accordo con te"], "focus": ["detto"], "errorType": "implicit-form", "traps": [{ "match": "Avendo detto (questo|ciò)[,] sono d'accordo con te", "ok": true, "why": "Grammatical, but it's a calque. The fixed phrase is *Detto questo*." }, { "contains": ["dicendo"], "errorType": "implicit-form", "why": "The idiom is the participle: *Detto questo*." }], "explanation": "Fixed absolute participle: *Detto questo / Detto ciò*.", "en": "Having said that, I agree with you." },
+        { "id": "C1-PART-01.e14", "type": "order", "difficulty": 3, "instruction": "Put the words in order.", "prompt": "Once the exams were over, we left for Greece.", "tokens": ["Finiti", "gli", "esami", "siamo", "partiti", "per", "la", "Grecia"], "answers": ["Finiti gli esami, siamo partiti per la Grecia", "Siamo partiti per la Grecia finiti gli esami"], "errorType": "word-order", "explanation": "The absolute participle usually comes first, followed by its noun: *Finiti gli esami, …*" },
+        { "id": "C1-PART-01.e15", "type": "cloze", "difficulty": 5, "instruction": "Complete with the absolute participle + pronoun (formal style).", "prompt": "Gli amici erano venuti a salutarla. ___ (salutare + li) in fretta, Marta salì sul treno.", "answers": ["Salutatili"], "focus": ["salutatili"], "errorType": "pronoun-position", "traps": [{ "match": "Li salutati", "errorType": "pronoun-position", "why": "In the absolute participle the pronoun attaches to the end: *Salutatili*." }, { "match": "(Salutatoli|Salutatali|Salutatele)", "errorType": "agreement", "why": "The participle agrees with the object *li* (the friends, masculine plural): *Salutatili*." }], "explanation": "Pronoun attached, participle agreeing: **Salutatili**.", "en": "Her friends had come to say goodbye. Having said a quick goodbye to them, Marta got on the train." },
+        { "id": "C1-PART-01.e16", "type": "speak", "difficulty": 3, "instruction": "Say it in Italian, starting with an absolute participle.", "prompt": "Once dinner was over, we watched a film.", "answers": ["[Una volta] finita la cena, abbiamo (guardato|visto) un film"], "focus": ["finita"], "errorType": "implicit-form", "traps": [{ "contains": ["finito"], "errorType": "agreement", "why": "*La cena* is feminine: *finita*." }, { "contains": ["dopo"], "errorType": "implicit-form", "why": "Start with the participle: *Finita la cena, …*" }], "explanation": "*Finita la cena* + passato prossimo.", "en": "Once dinner was over, we watched a film." }
+      ]
+    },
+    {
+      "id": "C1-INF-02",
+      "title": "Past infinitive and the nominalised infinitive",
+      "cefr": "C1",
+      "skill": "grammar",
+      "prereqs": ["B2-INF-01"],
+      "rule": "The past infinitive (aver(e) mangiato, essere uscita) marks an earlier action after dopo, per (cause), senza and verbs + di; with essere the participle agrees. The infinitive can also act as a masculine noun: (il) viaggiare, il suo continuo lamentarsi.",
+      "assessment": [
+        "Uses dopo + past infinitive, never dopo + simple infinitive",
+        "Chooses avere/essere and makes the participle agree (dopo essere uscita)",
+        "Uses the past infinitive after di and per for earlier actions and causes (per aver superato)",
+        "Attaches pronouns to the auxiliary and agrees with lo/la (dopo averla vista)",
+        "Uses the infinitive as a noun subject, with article and modifiers (il suo continuo lamentarsi)"
+      ],
+      "lesson": {
+        "intro": "Where English says 'after eating', 'sorry for being late' or 'fined for speeding', Italian uses the **past infinitive**: *dopo aver mangiato, scusa per essere arrivato in ritardo, multato per aver superato il limite*. And where English uses an -ing noun ('Travelling broadens the mind'), Italian uses the infinitive as a noun: *Viaggiare apre la mente*.",
+        "rules": [
+          {
+            "title": "Form",
+            "text": "**avere / essere** + past participle. *Avere* is often shortened to *aver* (*aver mangiato*). With *essere* the participle agrees with the subject (*dopo essere uscita / usciti*).",
+            "table": {
+              "head": ["Verb", "Past infinitive"],
+              "rows": [
+                ["mangiare", "aver(e) mangiato"],
+                ["uscire (Giulia)", "essere uscita"],
+                ["arrivare (i ragazzi)", "essere arrivati"],
+                ["alzarsi (Chiara)", "essersi alzata"],
+                ["vedere + la", "averla vista"]
+              ]
+            }
+          },
+          {
+            "title": "dopo + past infinitive",
+            "text": "*Dopo* + infinitive always uses the **past** infinitive, with the same subject as the main clause.",
+            "examples": [
+              { "it": "**Dopo aver mangiato**, siamo usciti.", "en": "After eating, we went out." },
+              { "it": "**Dopo essere uscita** dall'ufficio, Giulia è andata in palestra.", "en": "After leaving the office, Giulia went to the gym." }
+            ]
+          },
+          {
+            "title": "Other uses: di, per, senza",
+            "text": "Verb + *di* for earlier actions (*Penso di aver capito, Mi dispiace di averti disturbato*). **Per** + past infinitive = cause, 'for having done': *È stato multato per aver superato il limite* (*per* + simple infinitive = purpose). *Senza aver(e)…* = without having…",
+            "examples": [
+              { "it": "Mi dispiace di **non essere venuto** alla tua festa.", "en": "I'm sorry I didn't come to your party." },
+              { "it": "È stato multato **per aver superato** il limite di velocità.", "en": "He was fined for speeding." }
+            ]
+          },
+          {
+            "title": "Pronouns",
+            "text": "Pronouns attach to the auxiliary: *dopo averlo visto, dopo esserci andati, dopo essersi alzata*. With *lo, la, li, le* the participle agrees: *dopo averla vista*.",
+            "examples": [
+              { "it": "Ho visitato la mostra: **dopo averla vista**, ho capito perché tutti ne parlavano.", "en": "I visited the exhibition: after seeing it, I understood why everyone talked about it." }
+            ]
+          },
+          {
+            "title": "The nominalised infinitive",
+            "text": "Any infinitive can work as a masculine noun: as a subject often without an article (*Viaggiare apre la mente*), or with an article, adjectives and possessives (*il mangiare sano, il suo continuo lamentarsi, lo scorrere del tempo*). Use *lo* before s + consonant. English '-ing' as a noun = Italian infinitive, never the gerund.",
+            "examples": [
+              { "it": "**Il suo continuo lamentarsi** mi irrita.", "en": "His constant complaining annoys me." },
+              { "it": "Mi spaventa **lo scorrere** del tempo.", "en": "The passing of time frightens me." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Dopo mangiare, siamo usciti.", "right": "Dopo aver mangiato, siamo usciti.", "why": "*Dopo* takes the past infinitive. (*Dopo mangiato* is heard in speech, but it's not standard.)" },
+          { "wrong": "Dopo avere uscito, …", "right": "Dopo essere uscito, …", "why": "Keep the verb's normal auxiliary: *uscire* → *essere*." },
+          { "wrong": "Dopo essere arrivato, Giulia…", "right": "Dopo essere arrivata, Giulia…", "why": "With *essere* the participle agrees with the subject." },
+          { "wrong": "Dopo averla visto, …", "right": "Dopo averla vista, …", "why": "A direct object pronoun *la* before the participle forces agreement." },
+          { "wrong": "Fumando fa male.", "right": "Fumare fa male.", "why": "An activity used as a subject is an infinitive, not a gerund." }
+        ],
+        "tips": [
+          "'After -ing' → *dopo aver(e) / essere* + participle, always.",
+          "*Per* + simple infinitive = in order to; *per* + past infinitive = because of having done.",
+          "*Il dolce far niente*: the nominalised infinitive is also in many set phrases."
+        ]
+      },
+      "exercises": [
+        { "id": "C1-INF-02.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the past infinitive.", "prompt": "Dopo ___ (mangiare), siamo usciti a fare una passeggiata.", "answers": ["(aver|avere) mangiato"], "focus": ["mangiato"], "errorType": "implicit-form", "traps": [{ "match": "mangiare", "errorType": "implicit-form", "why": "*Dopo* + infinitive needs the past infinitive: *dopo aver mangiato*." }, { "match": "mangiato", "errorType": "implicit-form", "why": "*Dopo mangiato* is heard in casual speech, but standard Italian says *dopo aver mangiato*." }, { "match": "(essere mangiato|esser mangiato)", "errorType": "auxiliary", "why": "*Mangiare* takes *avere*." }], "explanation": "*Dopo* + **aver(e) mangiato**.", "en": "After eating, we went out for a walk." },
+        { "id": "C1-INF-02.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the past infinitive.", "prompt": "Dopo ___ (uscire) dall'ufficio, Giulia è andata in palestra.", "answers": ["(essere|esser) uscita"], "focus": ["uscita"], "errorType": "implicit-form", "traps": [{ "match": "(aver|avere) (uscito|uscita)", "errorType": "auxiliary", "why": "*Uscire* takes *essere*: *dopo essere uscita*." }, { "match": "(essere|esser) uscito", "errorType": "agreement", "why": "With *essere* the participle agrees with Giulia: *uscita*." }, { "match": "uscire", "errorType": "implicit-form", "why": "*Dopo* needs the past infinitive: *dopo essere uscita*." }], "explanation": "*Essere* verb + agreement: **essere uscita**.", "en": "After leaving the office, Giulia went to the gym." },
+        { "id": "C1-INF-02.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the past infinitive.", "prompt": "Dopo ___ (arrivare) a Roma, i miei amici hanno cercato un albergo.", "answers": ["(essere|esser) arrivati"], "focus": ["arrivati"], "errorType": "implicit-form", "traps": [{ "match": "(essere|esser) (arrivato|arrivata|arrivate)", "errorType": "agreement", "why": "Agree with *i miei amici*: *arrivati*." }, { "match": "(aver|avere) (arrivato|arrivati)", "errorType": "auxiliary", "why": "*Arrivare* takes *essere*." }], "explanation": "**essere arrivati** (masculine plural).", "en": "After arriving in Rome, my friends looked for a hotel." },
+        { "id": "C1-INF-02.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the past infinitive. The speaker is a man.", "prompt": "Mi dispiace di non ___ (venire) alla tua festa sabato scorso.", "answers": ["(essere|esser) venuto"], "focus": ["venuto"], "errorType": "implicit-form", "traps": [{ "match": "venire", "errorType": "wrong-tense", "why": "The party was last Saturday: use the past infinitive, *essere venuto*." }, { "match": "(aver|avere) venuto", "errorType": "auxiliary", "why": "*Venire* takes *essere*." }, { "match": "(essere|esser) venuta", "errorType": "agreement", "why": "The speaker is a man: *venuto*." }], "explanation": "Earlier action after *dispiacere di* → past infinitive.", "en": "I'm sorry I didn't come to your party last Saturday." },
+        { "id": "C1-INF-02.e05", "type": "cloze", "difficulty": 3, "instruction": "Complete with the past infinitive.", "prompt": "È stato multato per ___ (superare) il limite di velocità.", "answers": ["(aver|avere) superato"], "focus": ["superato"], "errorType": "implicit-form", "traps": [{ "match": "superare", "errorType": "implicit-form", "why": "*Per* + simple infinitive means 'in order to'. For the cause ('for speeding'), use *per aver superato*." }, { "match": "superando", "errorType": "implicit-form", "why": "No gerund after a preposition: *per aver superato*." }], "explanation": "*Per* + past infinitive = cause.", "en": "He was fined for exceeding the speed limit." },
+        { "id": "C1-INF-02.e06", "type": "cloze", "difficulty": 3, "instruction": "Complete with the past infinitive + pronoun (la = la mostra).", "prompt": "Ho visitato la mostra: dopo ___ (vedere + la), ho capito perché tutti ne parlavano.", "answers": ["averla vista"], "focus": ["averla", "vista"], "errorType": "agreement", "traps": [{ "match": "averla visto", "errorType": "agreement", "why": "With *la* before the participle, it must agree: *averla vista*." }, { "match": "(la aver vista|l'aver vista|la avere vista)", "errorType": "pronoun-position", "why": "The pronoun attaches to the auxiliary: *averla vista*." }], "explanation": "Pronoun on the auxiliary + agreement: **averla vista**.", "en": "I visited the exhibition: after seeing it, I understood why everyone was talking about it." },
+        { "id": "C1-INF-02.e07", "type": "cloze", "difficulty": 4, "instruction": "Complete with the past infinitive.", "prompt": "Dopo ___ (alzarsi), Chiara ha fatto la doccia.", "answers": ["essersi alzata"], "focus": ["essersi", "alzata"], "errorType": "implicit-form", "traps": [{ "match": "essersi alzato", "errorType": "agreement", "why": "Agree with Chiara: *alzata*." }, { "match": "(aversi alzata|aversi alzato)", "errorType": "auxiliary", "why": "Reflexive verbs take *essere*: *essersi alzata*." }, { "match": "(si essere alzata|si esser alzata)", "errorType": "pronoun-position", "why": "The reflexive pronoun attaches to the auxiliary: *essersi*." }], "explanation": "Reflexive → *essersi* + agreeing participle.", "en": "After getting up, Chiara had a shower." },
+        { "id": "C1-INF-02.e08", "type": "choice", "difficulty": 2, "instruction": "Choose the correct form.", "prompt": "___ troppo zucchero fa male alla salute.", "options": ["Mangiare", "Mangiando", "Il mangiando", "Mangiato"], "answer": 0, "optionWhy": { "1": "A gerund can't be the subject of a sentence: use the infinitive.", "2": "The gerund can't take an article.", "3": "The participle doesn't work as a subject here." }, "errorType": "implicit-form", "explanation": "English '-ing' as subject = Italian infinitive: *Mangiare troppo zucchero…*", "en": "Eating too much sugar is bad for your health." },
+        { "id": "C1-INF-02.e09", "type": "choice", "difficulty": 3, "instruction": "Choose the correct form.", "prompt": "Mi dà fastidio il suo continuo ___.", "options": ["lamentarsi", "lamentandosi", "lamentare", "lamentato"], "answer": 0, "optionWhy": { "1": "A gerund can't act as a noun with *il suo continuo*.", "2": "*Lamentare* (non-reflexive) means to report or deplore something (*lamentare un danno*). 'Complaining' is *lamentarsi*.", "3": "A participle doesn't fit after *il suo continuo*." }, "errorType": "implicit-form", "explanation": "Nominalised infinitive with article, possessive and adjective: *il suo continuo lamentarsi*.", "en": "His constant complaining annoys me." },
+        { "id": "C1-INF-02.e10", "type": "cloze", "difficulty": 3, "instruction": "Complete with the article.", "prompt": "Mi spaventa ___ scorrere del tempo.", "answers": ["lo"], "focus": ["lo"], "errorType": "article", "traps": [{ "match": "il", "errorType": "article", "why": "Nominalised infinitives are masculine and follow the normal rules: *lo* before s + consonant (*lo scorrere*)." }, { "match": "la", "errorType": "article", "why": "Nominalised infinitives are masculine: *lo scorrere*." }], "explanation": "Masculine article, *lo* before *sc-*: **lo** scorrere.", "en": "The passing of time frightens me." },
+        { "id": "C1-INF-02.e11", "type": "transform", "difficulty": 3, "instruction": "Combine into one sentence with dopo + past infinitive. The speaker is a man.", "prompt": "Ho finito i compiti, poi sono uscito.", "answers": ["Dopo aver[e] finito i compiti, sono uscito", "Sono uscito dopo aver[e] finito i compiti"], "focus": ["finito"], "errorType": "implicit-form", "traps": [{ "contains": ["finire"], "errorType": "implicit-form", "why": "*Dopo* needs the past infinitive: *dopo aver finito*." }, { "contains": ["essere"], "errorType": "auxiliary", "why": "*Finire i compiti* takes *avere*." }], "explanation": "*Dopo aver(e)* + participle, same subject.", "en": "After finishing my homework, I went out." },
+        { "id": "C1-INF-02.e12", "type": "transform", "difficulty": 4, "instruction": "Combine into one sentence with dopo + past infinitive, replacing 'la lettera' with a pronoun in the first part. The speaker is a man.", "prompt": "Ho letto la lettera, poi l'ho strappata.", "answers": ["Dopo averla letta, l'ho strappata"], "focus": ["averla", "letta"], "errorType": "implicit-form", "traps": [{ "contains": ["letto"], "errorType": "agreement", "why": "With *la* attached, the participle agrees: *averla letta*." }, { "contains": ["leggerla"], "errorType": "implicit-form", "why": "*Dopo* needs the past infinitive: *dopo averla letta*." }], "explanation": "Pronoun on the auxiliary + agreement: *averla letta*.", "en": "After reading it, I tore it up." },
+        { "id": "C1-INF-02.e13", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "After leaving the house, she realised she had forgotten her phone.", "answers": ["Dopo (essere|esser) uscita (di|da) casa, si è (accorta|resa conto) (di aver[e] dimenticato|che aveva dimenticato) il [suo] (telefono|cellulare)"], "focus": ["uscita"], "errorType": "implicit-form", "traps": [{ "contains": ["uscito"], "errorType": "agreement", "why": "The subject is *lei*: *dopo essere uscita*." }, { "contains": ["uscendo", "lasciando"], "errorType": "implicit-form", "why": "'After -ing' = *dopo* + past infinitive: *dopo essere uscita*." }, { "contains": ["realizzato"], "errorType": "false-friend", "why": "'To realise' = *accorgersi, rendersi conto*." }], "explanation": "*Dopo essere uscita* (agreement) + earlier action in the past infinitive or trapassato.", "en": "After leaving the house, she realised she had forgotten her phone." },
+        { "id": "C1-INF-02.e14", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian.", "prompt": "Travelling broadens the mind.", "answers": ["[Il] viaggiare (apre|allarga) la mente"], "focus": ["viaggiare"], "errorType": "implicit-form", "traps": [{ "contains": ["viaggiando"], "errorType": "implicit-form", "why": "An activity as subject is an infinitive, not a gerund: *Viaggiare apre la mente*." }], "explanation": "English -ing noun = Italian infinitive.", "en": "Travelling broadens the mind." },
+        { "id": "C1-INF-02.e15", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "Thank you for helping me.", "tokens": ["Ti", "ringrazio", "per", "avermi", "aiutato"], "answers": ["Ti ringrazio per avermi aiutato"], "errorType": "word-order", "explanation": "*Ringraziare per* + past infinitive: you thank someone for something already done. The pronoun attaches to *avere*." },
+        { "id": "C1-INF-02.e16", "type": "speak", "difficulty": 4, "instruction": "Say it in Italian (informal), using a past infinitive.", "prompt": "Apologise to a friend for being late.", "answers": ["(Scusa|Scusami) (per|di) essere (arrivato|arrivata) in ritardo", "Mi dispiace (di|per) essere (arrivato|arrivata) in ritardo"], "focus": ["essere"], "errorType": "implicit-form", "traps": [{ "contains": ["aver", "avere"], "errorType": "auxiliary", "why": "*Arrivare* takes *essere*: *per essere arrivato/a*." }, { "contains": ["essendo"], "errorType": "implicit-form", "why": "After *per / di* use the infinitive: *per essere arrivato/a*." }, { "contains": ["scusi"], "errorType": "register", "why": "*Scusi* is formal. To a friend: *Scusa / Scusami*." }], "explanation": "*Scusa per* / *Mi dispiace di* + past infinitive.", "en": "Sorry for being late." }
+      ]
+    },
+    {
+      "id": "B2-INF-03",
+      "title": "Causative fare / lasciare + infinitive",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": [],
+      "rule": "Fare + infinitive = to have something done or make someone do it (Faccio riparare la macchina); lasciare + infinitive = to let (Lascia parlare Marco). Pronouns go before fare (La faccio riparare), farsi + infinitive takes essere (Mi sono fatta tagliare i capelli), and lasciare che takes the subjunctive.",
+      "assessment": [
+        "Uses fare + infinitive for having something done or making someone do something",
+        "Places object pronouns before fare (or attached to it), never on the infinitive",
+        "Marks the person with a / da when there is also a thing (Faccio riparare la macchina al meccanico)",
+        "Uses farsi + infinitive with essere in compound tenses",
+        "Uses lasciare + infinitive and lasciare che + subjunctive"
+      ],
+      "lesson": {
+        "intro": "English has several ways to say this: *have the car repaired, get your hair cut, make someone laugh, let someone speak*. Italian does it all with **fare** or **lasciare** + infinitive. The traps for English speakers are word order (the infinitive goes straight after *fare*), pronoun position, and remembering that *Ho riparato la macchina* means you did it yourself.",
+        "rules": [
+          {
+            "title": "fare + infinitive",
+            "text": "To have something done, or to make someone do something. The infinitive comes **immediately after** *fare*; the thing or person follows.",
+            "examples": [
+              { "it": "**Faccio riparare** la macchina.", "en": "I'm having the car repaired." },
+              { "it": "Il film mi **ha fatto piangere**.", "en": "The film made me cry." }
+            ]
+          },
+          {
+            "title": "Who does the action: a / da",
+            "text": "With only a person, it's a direct object (*La faccio ridere*). If there's also a thing, the person is introduced by **a** (or **da**, especially for services): *Faccio riparare la macchina al meccanico / dal meccanico*. As a pronoun, the person becomes indirect: *Gli ho fatto leggere la lettera*.",
+            "examples": [
+              { "it": "Ho fatto controllare i freni **al** meccanico.", "en": "I had the mechanic check the brakes." },
+              { "it": "**Gli** ho fatto leggere la lettera.", "en": "I made him read the letter." }
+            ]
+          },
+          {
+            "title": "Pronouns go with fare",
+            "text": "Pronouns go before the conjugated *fare*, or attach to *fare* when it's an infinitive or an imperative: *La faccio riparare, Me la faccio riparare, Fammi sapere, Puoi farmela vedere?* In compound tenses *fare* takes *avere*, and the participle agrees with *lo/la/li/le*: *L'ho fatta riparare*.",
+            "table": {
+              "head": ["", "Example"],
+              "rows": [
+                ["present", "**La** faccio riparare."],
+                ["for myself", "**Me la** faccio riparare."],
+                ["past", "**L'**ho fatt**a** riparare."],
+                ["imperative", "Fa**mmi** sapere!"],
+                ["with a modal", "Puoi far**mela** vedere? / **Me la** puoi far vedere?"]
+              ]
+            }
+          },
+          {
+            "title": "farsi + infinitive",
+            "text": "To have something done to or for yourself: *farsi tagliare i capelli, farsi accompagnare, farsi capire*. As a reflexive verb, it takes **essere** in compound tenses: *Mi sono fatta tagliare i capelli*.",
+            "examples": [
+              { "it": "Giulia **si è fatta** accompagnare a casa.", "en": "Giulia got someone to take her home." }
+            ]
+          },
+          {
+            "title": "lasciare + infinitive / lasciare che + subjunctive",
+            "text": "*Lasciare* + infinitive = to let, allow (*Lascia parlare Marco, Lasciami stare*). *Lasciare che* + **subjunctive** is the explicit version: *Lascia che ti spieghi*, *Non lasciare che ti trattino così*.",
+            "examples": [
+              { "it": "I miei non mi **lasciavano uscire** la sera.", "en": "My parents wouldn't let me go out in the evening." },
+              { "it": "**Lascia che** ti **spieghi**.", "en": "Let me explain." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Ho riparato la macchina dal meccanico.", "right": "Ho fatto riparare la macchina dal meccanico.", "why": "*Ho riparato* means you did the repair yourself. Getting it done is *fare riparare*." },
+          { "wrong": "Faccio la macchina riparare.", "right": "Faccio riparare la macchina.", "why": "The infinitive comes straight after *fare*." },
+          { "wrong": "Faccio ripararla.", "right": "La faccio riparare.", "why": "In the causative, pronouns go with *fare*, not the infinitive." },
+          { "wrong": "Mi ho fatto tagliare i capelli.", "right": "Mi sono fatto tagliare i capelli.", "why": "*Farsi* is reflexive: *essere* in compound tenses." },
+          { "wrong": "Lascia che ti spiego.", "right": "Lascia che ti spieghi.", "why": "*Lasciare che* takes the subjunctive." }
+        ],
+        "tips": [
+          "'Get/have something done' → *fare* + infinitive; 'get/have it done for yourself' → *farsi* + infinitive.",
+          "Don't calque 'let me know' as ~~lasciami sapere~~: Italians say *fammi sapere*."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-INF-03.e01", "type": "choice", "difficulty": 1, "instruction": "Which sentence means that the mechanic did the repair?", "prompt": "Choose the sentence.", "options": ["Ho riparato la macchina.", "Ho fatto riparare la macchina.", "Mi sono riparato la macchina."], "answer": 1, "optionWhy": { "0": "*Ho riparato* means I repaired it myself.", "2": "This also suggests you did it yourself (for yourself)." }, "errorType": "causative", "explanation": "*Fare* + infinitive = to have something done.", "en": "I had the car repaired." },
+        { "id": "B2-INF-03.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the right form.", "prompt": "Il film era così triste che mi ha fatto ___ (piangere).", "answers": ["piangere"], "focus": ["piangere"], "errorType": "causative", "traps": [{ "match": "(a piangere|di piangere)", "errorType": "causative", "why": "*Fare* is followed directly by the infinitive, with no preposition." }, { "match": "piangendo", "errorType": "causative", "why": "Use the bare infinitive after *fare*: *mi ha fatto piangere*." }], "explanation": "*Fare* + bare infinitive = to make someone do something.", "en": "The film was so sad it made me cry." },
+        { "id": "B2-INF-03.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with fare + mi in the right form.", "prompt": "Puoi ___ (fare + mi) sapere quando arrivi?", "answers": ["farmi"], "focus": ["farmi"], "errorType": "pronoun-position", "traps": [{ "match": "mi fare", "errorType": "pronoun-position", "why": "With an infinitive, the pronoun attaches to the end: *farmi* (or *Mi puoi far sapere?*)." }, { "match": "lasciarmi", "errorType": "causative", "why": "'Let me know' is *fammi / farmi sapere* in Italian, not *lasciare*." }], "explanation": "*Fare* (infinitive after *puoi*) + *mi* → **farmi** sapere.", "en": "Can you let me know when you arrive?" },
+        { "id": "B2-INF-03.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with lasciare in the right tense.", "prompt": "Quando avevo quindici anni, i miei genitori non mi ___ (lasciare) uscire la sera.", "answers": ["lasciavano"], "focus": ["lasciavano"], "errorType": "wrong-tense", "traps": [{ "match": "hanno lasciato", "errorType": "wrong-tense", "why": "A general rule over a period of your life (*quando avevo quindici anni, la sera*) is a habit: imperfetto *lasciavano*." }, { "match": "facevano", "errorType": "causative", "why": "*Fare uscire* = to make someone go out. 'To let' is *lasciare*." }], "explanation": "*Lasciare* + infinitive = let; habitual → imperfetto.", "en": "When I was fifteen, my parents wouldn't let me go out in the evening." },
+        { "id": "B2-INF-03.e05", "type": "cloze", "difficulty": 3, "instruction": "Complete with the correct form.", "prompt": "Aspetta, non arrabbiarti: lascia che ti ___ (spiegare).", "answers": ["spieghi"], "focus": ["spieghi"], "errorType": "indicative-for-subjunctive", "traps": [{ "match": "spiego", "errorType": "indicative-for-subjunctive", "why": "*Lasciare che* takes the subjunctive: *(io) spieghi*." }, { "match": "spiegi", "errorType": "spelling", "why": "Keep the hard *g* sound: *spieghi*." }], "explanation": "*Lasciare che* + congiuntivo: **spieghi**.", "en": "Wait, don't get angry: let me explain." },
+        { "id": "B2-INF-03.e06", "type": "transform", "difficulty": 2, "instruction": "Replace 'la bicicletta' with a pronoun.", "prompt": "Faccio riparare la bicicletta.", "answers": ["La faccio riparare"], "focus": ["la"], "errorType": "pronoun-position", "traps": [{ "match": "Faccio ripararla", "errorType": "pronoun-position", "why": "In the causative, the pronoun goes before *fare*: *La faccio riparare*." }, { "match": "Lo faccio riparare", "errorType": "agreement", "why": "*La bicicletta* is feminine: *la*." }], "explanation": "Pronoun before the conjugated *fare*.", "en": "I'm having it repaired." },
+        { "id": "B2-INF-03.e07", "type": "transform", "difficulty": 3, "instruction": "Replace 'la macchina' with a pronoun.", "prompt": "Ho fatto riparare la macchina.", "answers": ["L'ho fatta riparare"], "focus": ["fatta"], "errorType": "pronoun-position", "traps": [{ "match": "L'ho fatto riparare", "errorType": "agreement", "why": "In careful Italian the participle agrees with the preceding *la*: *l'ho fatta riparare*." }, { "match": "Ho fatto ripararla", "errorType": "pronoun-position", "why": "The pronoun goes before the auxiliary: *L'ho fatta riparare*." }], "explanation": "*La* → *l'* before *ho*; participle agrees: **fatta**.", "en": "I had it repaired." },
+        { "id": "B2-INF-03.e08", "type": "transform", "difficulty": 4, "instruction": "Replace 'la macchina' with a pronoun.", "prompt": "Mi faccio riparare la macchina.", "answers": ["Me la faccio riparare"], "focus": ["me", "la"], "errorType": "pronoun", "traps": [{ "match": "Mi la faccio riparare", "errorType": "pronoun", "why": "Before *lo/la/li/le/ne*, *mi* becomes *me*: *Me la faccio riparare*." }, { "match": "La mi faccio riparare", "errorType": "pronoun-position", "why": "The indirect pronoun comes first: *me la*." }, { "match": "Mi faccio ripararla", "errorType": "pronoun-position", "why": "Pronouns go before *fare*: *Me la faccio riparare*." }], "explanation": "Combined pronoun *me la* before *faccio*.", "en": "I'm getting it repaired (for myself)." },
+        { "id": "B2-INF-03.e09", "type": "cloze", "difficulty": 3, "instruction": "Complete with farsi in the passato prossimo.", "prompt": "Ieri Giulia ___ (farsi) tagliare i capelli cortissimi.", "answers": ["si è fatta"], "focus": ["è", "fatta"], "errorType": "auxiliary", "traps": [{ "match": "(si ha fatto|si ha fatta|ha fatto)", "errorType": "auxiliary", "why": "*Farsi* is reflexive, so it takes *essere*: *si è fatta*." }, { "match": "si è fatto", "errorType": "agreement", "why": "With *essere* the participle agrees with Giulia: *fatta*." }], "explanation": "*Farsi* + infinitive → *essere*: **si è fatta** tagliare.", "en": "Yesterday Giulia had her hair cut really short." },
+        { "id": "B2-INF-03.e10", "type": "choice", "difficulty": 3, "instruction": "Choose the correct translation.", "prompt": "I had the mechanic check the brakes.", "options": ["Ho fatto controllare i freni al meccanico.", "Ho fatto il meccanico controllare i freni.", "Ho fatto controllare il meccanico i freni."], "answer": 0, "optionWhy": { "1": "The infinitive comes straight after *fare*.", "2": "With both a person and a thing, the person is introduced by *a* (or *da*): *al meccanico*." }, "errorType": "causative", "explanation": "*Fare* + infinitive + thing + *a/da* + person.", "en": "I had the mechanic check the brakes." },
+        { "id": "B2-INF-03.e11", "type": "translate", "difficulty": 2, "instruction": "Translate into Italian (informal, one person).", "prompt": "Let me know!", "answers": ["Fammi sapere"], "focus": ["fammi"], "errorType": "causative", "traps": [{ "contains": ["lasciami"], "errorType": "causative", "why": "'Let me know' is a fixed causative in Italian: *Fammi sapere*." }, { "match": "Fami sapere", "errorType": "spelling", "why": "*Fa'* + *mi* doubles the consonant: *fammi*." }, { "contains": ["fatemi"], "errorType": "register", "why": "*Fatemi* addresses several people; to one friend: *Fammi sapere*." }], "explanation": "Imperative *fa'* + *mi* → **fammi** (double m).", "en": "Let me know!" },
+        { "id": "B2-INF-03.e12", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "Tomorrow I'm getting my hair cut.", "answers": ["Domani (mi faccio|mi farò|vado a farmi) tagliare i capelli", "(Mi faccio|Mi farò|Vado a farmi) tagliare i capelli domani"], "focus": ["faccio", "farò", "farmi"], "errorType": "causative", "traps": [{ "contains": ["taglio", "taglierò"], "errorType": "causative", "why": "*Mi taglio i capelli* means you cut them yourself. Getting it done: *mi faccio tagliare i capelli*." }, { "contains": ["miei"], "errorType": "pronoun", "why": "Italian uses the reflexive, not a possessive, for your own body: *mi faccio tagliare i capelli*." }], "explanation": "*Farsi* + infinitive = to get something done to yourself.", "en": "Tomorrow I'm getting my hair cut." },
+        { "id": "B2-INF-03.e13", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian (informal 'you').", "prompt": "Don't let them treat you like that.", "answers": ["Non lasciare che ti trattino (così|in quel modo|in questo modo)", "Non (lasciarti|ti lasciare) trattare (così|in quel modo|in questo modo)"], "focus": ["trattino", "trattare"], "errorType": "causative", "traps": [{ "contains": ["trattano"], "errorType": "indicative-for-subjunctive", "why": "*Lasciare che* takes the subjunctive: *che ti trattino*." }, { "contains": ["farti", "fare"], "errorType": "causative", "why": "'Let' is *lasciare*, not *fare*." }], "explanation": "*Lasciare che* + subjunctive, or *lasciarsi* + infinitive.", "en": "Don't let them treat you like that." },
+        { "id": "B2-INF-03.e14", "type": "order", "difficulty": 3, "instruction": "Put the words in order.", "prompt": "I'm getting the mechanic to fix it for me.", "tokens": ["Me", "la", "faccio", "riparare", "dal", "meccanico"], "answers": ["Me la faccio riparare dal meccanico"], "errorType": "word-order", "explanation": "Combined pronoun before *faccio*, infinitive straight after, then *da* + the person." },
+        { "id": "B2-INF-03.e15", "type": "cloze", "difficulty": 4, "instruction": "Complete with the right preposition + article.", "prompt": "Il professore ha fatto ripetere l'esercizio ___ studenti.", "answers": ["(agli|dagli)"], "focus": ["agli", "dagli"], "errorType": "preposition", "traps": [{ "match": "(gli|ai|i)", "errorType": "preposition", "why": "With both a thing (*l'esercizio*) and a person, the person takes *a* (or *da*): *agli studenti*." }, { "match": "per gli", "errorType": "preposition", "why": "Not *per*: the doer of a causative is marked with *a* or *da*." }], "explanation": "*Fare* + inf + object + **a/da** + person (*agli* before s + consonant).", "en": "The teacher made the students repeat the exercise." },
+        { "id": "B2-INF-03.e16", "type": "speak", "difficulty": 3, "instruction": "Say it in Italian, politely (Lei), with 'fare vedere'.", "prompt": "In a shop, ask the assistant if they can show you that bag.", "answers": ["(Mi fa|Mi può far|Mi può fare|Può farmi|Potrebbe farmi|Mi potrebbe far|Mi potrebbe fare) vedere quella borsa[, per favore]"], "focus": ["vedere"], "errorType": "causative", "interaction": true, "traps": [{ "contains": ["fai", "puoi", "potresti"], "errorType": "register", "why": "In a shop, use *Lei*: *Mi fa vedere…? / Può farmi vedere…?*" }, { "match": "(Mi (può|potrebbe) mostrare|(Può|Potrebbe) mostrarmi) quella borsa[, per favore]", "ok": true, "why": "*Mostrare* works too (*Mi può mostrare…?*), but *far vedere* is the everyday choice." }], "explanation": "*Far vedere* = to show; pronoun before *fa* or attached to *fare*.", "en": "Could you show me that bag, please?" },
+        { "id": "B2-INF-03.e17", "type": "choice", "difficulty": 5, "instruction": "Choose the word that fits the meaning.", "prompt": "Mia madre mi ___ tornare tardi: si fidava di me.", "options": ["lasciava", "faceva", "lasciava che"], "answer": 0, "optionWhy": { "1": "*Mi faceva tornare tardi* = she made me come home late. With *si fidava di me*, she allowed it: *lasciava*.", "2": "*Lasciare che* needs a subjunctive clause (*lasciava che tornassi tardi*), not an infinitive." }, "errorType": "causative", "explanation": "*Lasciare* + infinitive = to allow; *fare* + infinitive = to cause/oblige.", "en": "My mother let me come home late: she trusted me." }
+      ]
+    }
+  ]
+}

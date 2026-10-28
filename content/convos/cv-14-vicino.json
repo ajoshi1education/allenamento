@@ -1,0 +1,113 @@
+{
+  "id": "CV-14",
+  "title": "Il vicino rumoroso",
+  "subtitle": "Complaining tactfully to a neighbour: vorrei che + congiuntivo imperfetto, le dispiacerebbe…, finding a compromise.",
+  "level": "B2",
+  "theme": "Vita quotidiana",
+  "conceptIds": ["B2-SUBJ-03", "B2-COND-01", "B2-REG-01", "B2-SUBJ-01"],
+  "tutor": { "name": "Signor Bassi", "avatar": "👨", "gender": "male", "register": "formal" },
+  "setting": "For weeks, loud drumming from the flat upstairs has kept you awake late at night. You ring the bell of your neighbour, Signor Bassi.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Sì? Ah, buonasera. Lei abita al piano di sotto, giusto? Mi dica.",
+      "en": "Yes? Oh, good evening. You live on the floor below, right? What can I do for you?",
+      "task": "Greet him politely in the Lei form, apologise for disturbing him and say you'd like to talk about something (volevo / vorrei parlarLe di…).",
+      "hint": "Buonasera, mi scusi se La disturbo. Volevo parlarLe di…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Polite, formal opening", "anyOf": ["\\b(mi scusi|scusi|la disturbo|mi perdoni|scusi il disturbo|buonasera)\\b"], "min": 1, "errorType": "register", "conceptId": "B2-REG-01", "hint": "*Mi scusi se La disturbo…*" },
+          { "label": "Softened request to talk (volevo / vorrei…)", "anyOf": ["\\b(volevo|vorrei|avrei bisogno|mi permetto|desideravo)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Volevo parlarLe di una cosa…*" }
+        ]
+      },
+      "model": "Buonasera, sì, abito proprio sotto di Lei. Mi scusi se La disturbo, ma volevo parlarLe di una cosa un po' delicata.",
+      "followOk": "Ma certo, nessun disturbo. Prego, mi dica pure.",
+      "followMiss": "Si figuri, nessun disturbo. Voleva parlarmi di qualcosa? Prego, mi dica pure."
+    },
+    {
+      "id": "t2",
+      "say": "Di che cosa si tratta?",
+      "en": "What's it about?",
+      "task": "Describe the problem tactfully: what you hear, when, and why it's a problem for you.",
+      "hint": "Ecco, ultimamente la sera si sente… fino a…, e io…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Describes the noise", "anyOf": ["\\b(rumore|rumori|musica|batteria|volume|si sente|si sentono|sento|sentire|suonare|suona|colpi|tamburi)\\b"], "min": 1, "errorType": "vocabulary", "conceptId": "B2-REG-01", "hint": "*…si sente la batteria…*" },
+          { "label": "Says when", "anyOf": ["\\b(sera|serata|notte|mezzanotte|tardi|mattina|ultimamente|spesso|sempre|ogni)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-REG-01", "hint": "*…la sera tardi, fino a mezzanotte…*" }
+        ]
+      },
+      "model": "Ecco, ultimamente la sera si sente la batteria fino a mezzanotte, e io mi alzo molto presto per lavorare.",
+      "followOk": "Ah, davvero? Non pensavo che si sentisse così tanto. Sa, è mio figlio, studia al conservatorio.",
+      "followMiss": "Ah, la batteria si sente fino al piano di sotto? Non pensavo. Sa, è mio figlio, studia al conservatorio."
+    },
+    {
+      "id": "t3",
+      "say": "Mi dispiace, non me ne ero reso conto. Ma Lei, in concreto, che cosa vorrebbe?",
+      "en": "I'm sorry, I hadn't realised. But what exactly would you like?",
+      "task": "Say what you would like him/his son to do, with vorrei che + congiuntivo imperfetto (suonasse, fosse, smettesse…).",
+      "hint": "Vorrei che suonasse…, magari non dopo…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Vorrei che + congiuntivo imperfetto", "anyOf": ["\\b(vorrei|preferirei|mi piacerebbe|sarebbe meglio|basterebbe)\\s+che\\s+([\\p{L}'’]+\\s+){0,3}\\p{L}+(asse|assero|esse|essero|isse|issero|osse|ossero)\\b"], "min": 1, "errorType": "tense-sequence", "conceptId": "B2-SUBJ-03", "hint": "*Vorrei che suonasse meno tardi.*" }
+        ]
+      },
+      "model": "Capisco, però vorrei che suonasse un po' meno tardi, magari non dopo le dieci di sera.",
+      "followOk": "È una richiesta più che giusta. Il problema è che di giorno lui è sempre fuori.",
+      "followMiss": "Quindi vorrebbe che mio figlio suonasse meno tardi, giusto? Il problema è che di giorno lui è sempre fuori."
+    },
+    {
+      "id": "t4",
+      "say": "E deve esercitarsi almeno due ore al giorno, altrimenti non passa gli esami.",
+      "en": "And he has to practise at least two hours a day, otherwise he won't pass his exams.",
+      "task": "Make a polite suggestion with 'Le dispiacerebbe + infinitive' or 'Sarebbe possibile…'.",
+      "hint": "Le dispiacerebbe chiedergli di…? / Sarebbe possibile…?",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Le dispiacerebbe / sarebbe possibile…", "anyOf": ["\\b(le|vi|gli)\\s+dispiacerebbe\\b", "\\bsarebbe\\s+(possibile|meglio)\\b", "\\b(potrebbe|potreste|potrebbero)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Le dispiacerebbe…?*" },
+          { "label": "Suggests a practical solution", "anyOf": ["\\b(tappeto|tappetino|pannelli|cuffie|sordina|insonorizzare|insonorizzata|stanza|camera|cortile|orario|orari|prima|pomeriggio|weekend|fine settimana|elettronica|silenziatori|pad)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-REG-01", "hint": "*…mettere un tappeto sotto la batteria…*" }
+        ]
+      },
+      "model": "Lo capisco benissimo. Le dispiacerebbe chiedergli di mettere un tappeto sotto la batteria, o di usare dei pannelli?",
+      "followOk": "Non ci avevo pensato. Qualcosa si può sicuramente fare, ne parlo con lui stasera.",
+      "followMiss": "Mi sta chiedendo se si può fare qualcosa? Magari un tappeto sotto la batteria: si può mettere senza problemi."
+    },
+    {
+      "id": "t5",
+      "say": "Però sugli orari è difficile: lui torna a casa solo dopo cena.",
+      "en": "But the times are tricky: he only gets home after dinner.",
+      "task": "Propose a compromise: potremmo…, che ne direbbe se…, and name a time limit.",
+      "hint": "Allora potremmo fare così: … fino alle… Le andrebbe bene?",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Proposes a compromise", "anyOf": ["\\b(potremmo|che ne dice|che ne direbbe|facciamo così|proporrei|propongo|si potrebbe|le andrebbe|andrebbe bene|compromesso|che ne pensa)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Potremmo fare così… Le andrebbe bene?*" },
+          { "label": "Names a time limit", "anyOf": ["\\b(fino alle|entro le|prima delle|non oltre|non dopo|dalle|alle|mezz['’]?\\s?ora|un['’]?\\s?ora|nove|dieci|undici|ore)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-REG-01", "hint": "*…ma solo fino alle dieci.*" }
+        ]
+      },
+      "model": "Allora potremmo fare così: suona dopo cena, ma solo fino alle dieci. Le andrebbe bene?",
+      "followOk": "Mi sembra giustissimo. Fino alle dieci, glielo prometto.",
+      "followMiss": "Potremmo fare così: lui suona dopo cena, ma solo fino alle dieci. Le andrebbe bene?"
+    },
+    {
+      "id": "t6",
+      "say": "Grazie di avermene parlato di persona, invece di chiamare l'amministratore.",
+      "en": "Thank you for talking to me about it in person, instead of calling the building manager.",
+      "task": "Reply warmly and close with 'spero che' + congiuntivo.",
+      "hint": "Si figuri! Spero che…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          { "label": "Spero che + congiuntivo", "anyOf": ["\\b(spero|mi auguro|sono contento|sono contenta|mi fa piacere|sono felice)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}(sia|siano|vada|vadano|possa|possano|possiamo|abbia|abbiano|riesca|riescano|riusciamo|funzioni|migliori|continui|resti|restino|rimanga|rimangano|torni|andiamo)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Spero che la situazione migliori.*" }
+        ]
+      },
+      "model": "Si figuri, è stato un piacere. Spero che la situazione migliori per tutti e due.",
+      "followOk": "Sono sicuro che andrà meglio. E se ci sono altri problemi, non esiti a suonare.",
+      "followMiss": "Si figuri. Spero che da stasera vada tutto meglio, e se ci sono altri problemi, non esiti a suonare."
+    }
+  ],
+  "closing": "Grazie ancora, e buona serata. Ci vediamo sulle scale!"
+}

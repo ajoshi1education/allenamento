@@ -1,0 +1,9 @@
+{
+  "id": "G-BLD-01",
+  "type": "builder",
+  "title": "Costruttore: forme implicite",
+  "subtitle": "Build sentences with gerunds, absolute participles, past infinitives and causative fare, and leave the decoy word out.",
+  "conceptIds": ["B2-INF-01", "C1-PART-01", "C1-INF-02", "B2-INF-03", "B2-PAST-01"],
+  "difficulty": 3,
+  "minutes": 6
+}

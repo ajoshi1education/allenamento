@@ -1,0 +1,66 @@
+{
+  "id": "G-DBT-03",
+  "type": "debate",
+  "title": "Il riassunto per la redazione",
+  "subtitle": "Your editor needs a short summary of a long reader's letter, neutral and in your own words.",
+  "conceptIds": ["C1-WRIT-03"],
+  "difficulty": 4,
+  "minutes": 12,
+  "topic": "Lettera di un lettore: «Le biblioteche di quartiere non devono chiudere»",
+  "opponent": { "name": "Caporedattrice Bianchi", "avatar": "🗞️" },
+  "stance": "Ho bisogno di un riassunto di questa lettera per la rubrica di domani: niente opinioni personali, niente frasi copiate, al massimo 80 parole. Prima però dimmi qual è la sintesi migliore.",
+  "prompts": [
+    {
+      "id": "G-DBT-03.p1",
+      "conceptId": "C1-WRIT-03",
+      "type": "choice",
+      "difficulty": 3,
+      "instruction": "Read the letter, then choose the best one-sentence summary.",
+      "passage": { "title": "La lettera", "it": "Gentile direttore,\nho letto che il Comune intende chiudere tre biblioteche di quartiere per risparmiare sui costi del personale. Capisco che il bilancio sia in difficoltà, ma credo che si tratti di una scelta miope. Le biblioteche non sono soltanto depositi di libri: sono l'unico spazio gratuito e riscaldato dove studenti, anziani e famiglie possono incontrarsi. Nel mio quartiere, per esempio, la biblioteca organizza corsi di italiano per stranieri e un doposcuola frequentato da quaranta ragazzi. Se chiudesse, queste attività sparirebbero. Propongo invece di affidare l'apertura serale ai volontari e di chiedere un piccolo contributo alle aziende della zona. Risparmiare oggi potrebbe costarci molto di più domani." },
+      "prompt": "Qual è la sintesi più fedele?",
+      "options": [
+        "Un lettore critica la chiusura di tre biblioteche, ne sottolinea il ruolo sociale e propone volontari e contributi delle aziende come alternativa.",
+        "Un lettore spiega che il Comune ha problemi di bilancio e che quindi è giusto chiudere alcune biblioteche.",
+        "Un lettore racconta che la biblioteca del suo quartiere organizza corsi di italiano e un doposcuola.",
+        "Il Comune ha deciso di affidare le biblioteche ai volontari per risparmiare sul personale."
+      ],
+      "answer": 0,
+      "optionWhy": { "1": "The writer says he understands the budget problem, but he *opposes* the closures.", "2": "That's a detail used as an example, not the main point.", "3": "Volunteers are the writer's *proposal*, not the council's decision." },
+      "errorType": "comprehension",
+      "explanation": "A good summary keeps the thesis (no to closures), the main reason (social role) and the proposal (volunteers and businesses), and leaves out the examples."
+    },
+    {
+      "id": "G-DBT-03.p2",
+      "conceptId": "C1-WRIT-03",
+      "type": "free",
+      "difficulty": 4,
+      "instruction": "Write the summary for the paper: neutral, third person, in your own words, 40–80 words.",
+      "prompt": "Riassumi la lettera per la rubrica. Usa un verbo per riportare il pensiero dell'autore (sostiene, afferma, ritiene, propone…) e collega le idee con almeno un connettivo.",
+      "minWords": 40,
+      "maxWords": 80,
+      "rubric": [
+        { "label": "Reports the writer's view with a reporting verb", "anyOf": ["\\b(sostiene|afferma|ritiene|osserva|sottolinea|denuncia|critica|lamenta|spiega)\\b"], "min": 1, "errorType": "text-structure", "hint": "*L'autore sostiene che…*" },
+        { "label": "Mentions the writer's proposal", "anyOf": ["\\b(propone|suggerisce|proposta)\\b"], "min": 1, "errorType": "task-completion", "hint": "Don't forget the alternative he proposes." },
+        { "label": "Mentions the social role of libraries", "anyOf": ["\\b(sociale|incontr\\w*|gratuit\\w*|spazio|servizi?)\\b"], "min": 1, "errorType": "task-completion", "hint": "Why does he think libraries matter?" },
+        { "label": "Links ideas with a connector", "anyOf": ["\\b(tuttavia|pertanto|quindi|inoltre|invece|infatti|poiché|dato che|secondo lui|in alternativa)\\b"], "min": 1, "errorType": "connector", "hint": "*Inoltre…, In alternativa…*" },
+        { "label": "Stays neutral (no first-person opinion)", "anyOf": ["^(?![\\s\\S]*\\b(secondo me|io penso|penso che|credo che|a mio parere)\\b)"], "min": 1, "errorType": "register", "hint": "A summary reports the author's view, not yours." }
+      ],
+      "model": "In una lettera al direttore, un lettore critica la decisione del Comune di chiudere tre biblioteche di quartiere per ridurre i costi. Pur riconoscendo le difficoltà di bilancio, sostiene che le biblioteche svolgono un ruolo sociale essenziale, perché offrono uno spazio gratuito di incontro e servizi come corsi e doposcuola. In alternativa, propone di affidare le aperture serali ai volontari e di coinvolgere le aziende locali.",
+      "errorType": "task-completion",
+      "explanation": "Thesis, reason, proposal: in that order, in the third person, with no examples and no personal opinion."
+    },
+    {
+      "id": "G-DBT-03.p3",
+      "conceptId": "C1-WRIT-03",
+      "type": "transform",
+      "difficulty": 4,
+      "instruction": "Rewrite this sentence from the letter as reported, summary style. Start with 'L'autore ritiene che…'.",
+      "prompt": "Credo che si tratti di una scelta miope.",
+      "answers": ["L'autore ritiene che si tratti di una scelta miope", "L'autore ritiene che sia una scelta miope"],
+      "focus": ["tratti", "sia"],
+      "errorType": "tense-sequence",
+      "traps": [{ "contains": ["tratta"], "errorType": "indicative-for-subjunctive", "why": "*Ritenere che* expresses an opinion, so keep the subjunctive: *si tratti*." }, { "contains": ["credo"], "errorType": "text-structure", "why": "In a summary, the author's *credo* becomes *l'autore ritiene*." }],
+      "explanation": "Opinion verb + che → congiuntivo; first person becomes *l'autore*."
+    }
+  ]
+}

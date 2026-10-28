@@ -1,0 +1,245 @@
+{
+  "id": "CV-32",
+  "title": "Il cliente preoccupato",
+  "subtitle": "Private banking in Lei: reassure a worried client, explain diversification, concede with sebbene.",
+  "level": "C1",
+  "theme": "Lavoro e studio",
+  "conceptIds": [
+    "B2-REG-01",
+    "B2-COND-01",
+    "B2-SUBJ-04",
+    "B2-HYP-01",
+    "C1-INT-02"
+  ],
+  "tutor": {
+    "name": "Signor Ferretti",
+    "avatar": "👴",
+    "gender": "male",
+    "register": "formal"
+  },
+  "setting": "You're a private banker in Milan. Signor Ferretti, a long-standing client, has come to see you after a bad month on the markets.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Buongiorno. Glielo dico subito: il mio portafoglio ha perso il sei per cento in un mese e io non dormo più.",
+      "en": "Good morning. I'll tell you straight away: my portfolio has lost six per cent in a month and I can't sleep any more.",
+      "task": "Reassure him formally: show you understand (La capisco, è comprensibile…) using Lei forms.",
+      "hint": "La capisco perfettamente, ma Le assicuro che…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Acknowledges his worry",
+            "anyOf": [
+              "\\b(capisco|comprendo|è comprensibile|è normale|è naturale|ha ragione|mi rendo conto)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "C1-INT-02",
+            "hint": "*La capisco, è comprensibile…*"
+          },
+          {
+            "label": "Addresses him with Lei",
+            "anyOf": [
+              "\\b(lei|sua|suo|suoi|sue|la capisco|le assicuro|le garantisco|le spiego|le dico|le ricordo|le posso|si preoccupi|si tranquillizzi|stia|mi creda|guardi|consideri|abbia)\\b"
+            ],
+            "min": 1,
+            "errorType": "register",
+            "conceptId": "B2-REG-01",
+            "hint": "Lei forms: *La capisco, Le assicuro, stia tranquillo*."
+          }
+        ]
+      },
+      "model": "La capisco perfettamente, è una reazione normale. Però Le assicuro che un calo del genere, in un mese come questo, è temporaneo.",
+      "followOk": "Mah, speriamo che abbia ragione. Però sui giornali parlano tutti di crisi.",
+      "followMiss": "Sì, immagino che sia normale avere paura in questi momenti. Ma Lei, da professionista, che cosa mi dice?"
+    },
+    {
+      "id": "t2",
+      "say": "Io però non capisco una cosa: perché non vendiamo tutto e teniamo i soldi sul conto finché non passa la tempesta?",
+      "en": "But there's one thing I don't understand: why don't we sell everything and keep the money in the account until the storm passes?",
+      "task": "Advise against it with the polite conditional (non Le consiglierei…, sarebbe meglio…) and give a reason.",
+      "hint": "Non Le consiglierei di vendere adesso, perché…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Uses the conditional",
+            "anyOf": [
+              "\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Non Le consiglierei…, sarebbe meglio…*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti|considerato che|dal momento che)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché…*"
+          }
+        ]
+      },
+      "model": "Non Le consiglierei di vendere adesso, perché trasformerebbe una perdita temporanea in una perdita definitiva e rischierebbe di perdere la ripresa.",
+      "followOk": "Effettivamente, se vendessi ora, venderei ai prezzi più bassi. Non ci avevo pensato.",
+      "followMiss": "Quindi Lei mi sconsiglierebbe di vendere, se ho capito bene. Sarebbe meglio aspettare, insomma."
+    },
+    {
+      "id": "t3",
+      "say": "Va bene, ma allora come mi proteggo? Ho quasi tutto in azioni di due o tre banche italiane.",
+      "en": "All right, but then how do I protect myself? I've got almost everything in shares of two or three Italian banks.",
+      "task": "Explain diversification: suggest spreading the money across asset classes, with the conditional (sarebbe opportuno, converrebbe…).",
+      "hint": "Sarebbe opportuno diversificare il portafoglio, per esempio con…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Talks about diversifying",
+            "anyOf": [
+              "\\b(diversific\\p{L}*|distribui\\p{L}*|ripartir\\p{L}*|suddivider\\p{L}*|spalmar\\p{L}*|uova)\\b"
+            ],
+            "min": 1,
+            "errorType": "vocabulary",
+            "conceptId": "C1-VOC-05",
+            "hint": "*diversificare, distribuire il rischio*"
+          },
+          {
+            "label": "Names at least two kinds of investment",
+            "anyOf": [
+              "\\b(obbligazion\\p{L}*|titoli di stato|btp|etf|fondi|fondo|settori|paesi|mercati|liquidità|azioni|valute|materie prime|oro|immobili\\p{L}*)\\b"
+            ],
+            "min": 2,
+            "errorType": "task-completion",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*obbligazioni, ETF, liquidità…*"
+          },
+          {
+            "label": "Uses the conditional",
+            "anyOf": [
+              "\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Sarebbe opportuno…, converrebbe…*"
+          }
+        ]
+      },
+      "model": "Sarebbe opportuno diversificare il portafoglio: oltre alle azioni, converrebbe aggiungere obbligazioni, qualche ETF globale e un po' di liquidità.",
+      "followOk": "Capisco: non mettere tutte le uova nello stesso paniere, come diceva mio nonno.",
+      "followMiss": "Insomma, mi sta dicendo di diversificare: un po' di obbligazioni, un po' di azioni di altri paesi, giusto?"
+    },
+    {
+      "id": "t4",
+      "say": "Le obbligazioni però non rendono quasi niente, no? Mio cognato dice che sono soldi buttati.",
+      "en": "But bonds yield almost nothing, don't they? My brother-in-law says they're money down the drain.",
+      "task": "Concede the point with sebbene / benché + congiuntivo, then explain what bonds do for the portfolio.",
+      "hint": "Sebbene le obbligazioni rendano meno, …",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "sebbene / benché + subjunctive",
+            "anyOf": [
+              "\\b(sebbene|benché|malgrado|nonostante)\\s+(\\p{L}+\\s+){0,4}(sia|siano|abbia|abbiano|renda|rendano|offra|offrano|possa|possano|paghi|paghino|sembri|sembrino|dia|diano|valga|valgano|fosse|fossero|avesse|avessero|rendesse|rendessero)\\b",
+              "\\b(sebbene|benché|malgrado|nonostante)\\s+(\\p{L}+\\s+){0,4}\\p{L}+(isca|iscano|essero|esse)\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-04",
+            "hint": "*Sebbene **rendano** poco…*"
+          },
+          {
+            "label": "Explains their role",
+            "anyOf": [
+              "\\b(stabilità|stabil\\p{L}*|proteg\\p{L}*|ammortizz\\p{L}*|riduc\\p{L}*|ridurre|riduzione|rischio|rischi|volatilità|cuscinetto|cedol\\p{L}*|equilibr\\p{L}*|bilanci\\p{L}*|sicur\\p{L}*)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "C1-INT-02",
+            "hint": "*…servono a ridurre il rischio, danno stabilità.*"
+          }
+        ]
+      },
+      "model": "Sebbene le obbligazioni rendano meno delle azioni, servono a ridurre la volatilità e pagano cedole regolari, quindi danno stabilità al portafoglio.",
+      "followOk": "Detta così ha senso. Lo spiegherò a mio cognato, allora.",
+      "followMiss": "Ah, quindi sebbene rendano poco, servono a dare stabilità. Questo mio cognato non lo dice mai!"
+    },
+    {
+      "id": "t5",
+      "say": "E se la Borsa dovesse crollare davvero, come nel 2008? Lei che cosa farebbe al posto mio?",
+      "en": "And if the stock market really crashed, like in 2008? What would you do in my place?",
+      "task": "Answer the hypothetical: se + congiuntivo imperfetto, then the conditional.",
+      "hint": "Se fossi al posto Suo, non…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "se + congiuntivo imperfetto",
+            "anyOf": [
+              "\\bse\\s+(\\p{L}+\\s+){0,3}\\p{L}+(ssi|sse|ssimo|ssero|aste|este|iste)\\b"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-HYP-01",
+            "hint": "*Se fossi al posto Suo…, se i prezzi scendessero…*"
+          },
+          {
+            "label": "Uses the conditional",
+            "anyOf": [
+              "\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-HYP-01",
+            "hint": "*…non venderei, manterrei…*"
+          }
+        ]
+      },
+      "model": "Se fossi al posto Suo, non venderei nulla: manterrei la diversificazione e, se i prezzi scendessero molto, investirei un po' di liquidità.",
+      "followOk": "Comprare quando tutti vendono… ci vuole coraggio, ma mi sembra un ragionamento sensato.",
+      "followMiss": "Capisco. Mio padre diceva sempre: se la Borsa crollasse, terrei i nervi saldi e non venderei niente."
+    },
+    {
+      "id": "t6",
+      "say": "Bene, mi ha un po' tranquillizzato. Che cosa mi propone di fare concretamente, adesso?",
+      "en": "Good, you've reassured me a bit. What do you suggest I actually do now?",
+      "task": "Propose next steps politely (Le proporrei di…, potremmo…) and say when.",
+      "hint": "Le proporrei di vederci la settimana prossima per…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Polite proposal in the conditional",
+            "anyOf": [
+              "\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Le proporrei di…, potremmo…*"
+          },
+          {
+            "label": "Says when",
+            "anyOf": [
+              "\\b(settimana|prossim\\p{L}*|entro|domani|lunedì|martedì|mercoledì|giovedì|venerdì|mese|mesi|giorni|gradualmente|subito)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-REG-01",
+            "hint": "*…la settimana prossima, entro fine mese…*"
+          }
+        ]
+      },
+      "model": "Le proporrei di rivedere insieme il portafoglio la settimana prossima: potremmo ridurre le azioni bancarie e aggiungere obbligazioni gradualmente.",
+      "followOk": "Perfetto, la settimana prossima va benissimo. Grazie per la pazienza.",
+      "followMiss": "D'accordo. Allora potremmo vederci la settimana prossima per rivedere il portafoglio, che ne dice?"
+    }
+  ],
+  "closing": "La ringrazio, sono più tranquillo. Ci vediamo la settimana prossima, allora. Buona giornata!"
+}

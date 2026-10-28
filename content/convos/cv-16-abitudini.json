@@ -1,0 +1,113 @@
+{
+  "id": "CV-16",
+  "title": "Abitudini e salute",
+  "subtitle": "Habits then and now: imperfetto for past habits, da quando + present, advice with dovresti and ti conviene.",
+  "level": "B2",
+  "theme": "Vita quotidiana",
+  "conceptIds": ["B2-PAST-01", "B2-PREP-02", "B2-COND-01", "B2-CONN-01"],
+  "tutor": { "name": "Paolo", "avatar": "🏃", "gender": "male", "register": "informal" },
+  "setting": "Early on a Sunday morning you bump into your friend Paolo while jogging in the Parco del Valentino in Turin. You stop for a chat on a bench.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Ehi, ciao! Ma da quanto tempo vieni a correre qui? Non ti avevo mai visto!",
+      "en": "Hey, hi! How long have you been coming to run here? I'd never seen you before!",
+      "task": "Say how long you've been doing it: present tense + da (da un paio di mesi, da quando…).",
+      "hint": "Vengo a correre qui da…, cioè da quando…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Present + da (time or da quando)", "anyOf": ["\\bda\\s+(quando|qualche|un|una|un paio|due|tre|quattro|cinque|sei|sette|otto|nove|dieci|alcuni|alcune|circa|quasi|almeno|più|poco|pochi|poche|gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre|l['’]?\\s?anno|\\d+)\\b"], "min": 1, "errorType": "preposition", "conceptId": "B2-PREP-02", "hint": "*Corro **da** due mesi.*" },
+          { "label": "Present tense verb", "anyOf": ["\\b(vengo|corro|faccio|esco|mi alleno|vado|giro)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PREP-02", "hint": "*Vengo…, corro…*" }
+        ]
+      },
+      "model": "Vengo a correre qui da un paio di mesi, cioè da quando ho cambiato lavoro.",
+      "followOk": "Complimenti! Si vede che ti fa bene, hai un'ottima cera.",
+      "followMiss": "Ah, quindi vieni qui da qualche mese? Complimenti, si vede che ti fa bene."
+    },
+    {
+      "id": "t2",
+      "say": "E prima? Che abitudini avevi, quando lavoravi in centro?",
+      "en": "And before? What were your habits when you worked in the city centre?",
+      "task": "Describe at least two past habits with the imperfetto (facevo, mangiavo, andavo…).",
+      "hint": "Prima non facevo mai…: lavoravo…, mangiavo…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Imperfetto for habits (twice)", "anyOf": ["\\b(\\p{L}+(avo|avi|ava|avamo|avate|avano|evo|evi|eva|evamo|evate|evano|ivo|ivi|iva|ivamo|ivate|ivano)|ero|eri|era|eravamo|erano)\\b"], "min": 2, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*facevo, lavoravo, mangiavo…*" }
+        ]
+      },
+      "model": "Prima non facevo mai sport: lavoravo fino a tardi, mangiavo male e andavo in ufficio in macchina.",
+      "followOk": "Ti capisco benissimo, anch'io facevo la stessa vita.",
+      "followMiss": "Ah, ho capito. Anch'io prima lavoravo fino a tardi e mangiavo sempre un panino davanti al computer."
+    },
+    {
+      "id": "t3",
+      "say": "E adesso? Che cosa fai di diverso durante la giornata?",
+      "en": "And now? What do you do differently during the day?",
+      "task": "Contrast then and now: present tense + a contrast word (invece, adesso, ormai, non… più).",
+      "hint": "Adesso invece mi alzo…, vado… e…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Contrast word", "anyOf": ["\\b(invece|mentre|ormai|al contrario|adesso|ora|oggi)\\b", "\\bnon\\s+(\\p{L}+\\s+){1,2}più\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*Adesso invece…*" },
+          { "label": "Present tense (first person)", "anyOf": ["\\b(vado|faccio|mangio|cerco|esco|dormo|cucino|prendo|corro|mi alzo|cammino|uso|bevo|evito|lavoro|torno|mi alleno|mi sveglio|ceno|pranzo)\\b"], "min": 2, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*mi alzo, vado, cucino…*" }
+        ]
+      },
+      "model": "Adesso invece mi alzo presto, vado al lavoro in bicicletta e la sera cucino quasi sempre io.",
+      "followOk": "Che cambiamento! Io invece ultimamente dormo malissimo.",
+      "followMiss": "Quindi adesso invece fai una vita più sana. Io invece, ultimamente, dormo malissimo."
+    },
+    {
+      "id": "t4",
+      "say": "Mi sveglio tre volte a notte e la mattina sono uno straccio. Tu che cosa mi consigli?",
+      "en": "I wake up three times a night and in the morning I'm a wreck. What do you advise me to do?",
+      "task": "Give advice with dovresti + infinitive (and maybe potresti).",
+      "hint": "Dovresti smettere di… e magari…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Dovresti / potresti + infinitive", "anyOf": ["\\b(dovresti|potresti|faresti bene a)\\s+([\\p{L}'’]+\\s+)?\\p{L}+(are|ere|ire|arti|erti|irti|arlo|erlo|irlo|arla|erla|irla|arne|erne|irne)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Dovresti andare a letto prima.*" },
+          { "label": "Advice about sleep habits", "anyOf": ["\\b(sonno|letto|caffè|telefono|cellulare|schermo|schermi|cena|tisana|orario|orari|dormire|presto|sport|camomilla|alcol|televisione|tv|rilassarti|leggere)\\b"], "min": 1, "errorType": "vocabulary", "conceptId": "B2-VOC-02", "hint": "*…il caffè, il telefono, l'orario…*" }
+        ]
+      },
+      "model": "Dovresti smettere di bere caffè dopo pranzo, e magari andare a letto sempre alla stessa ora.",
+      "followOk": "Hai ragione, proverò a cambiare qualcosa già da stasera.",
+      "followMiss": "Mmh, forse dovrei andare a letto prima e bere meno caffè. Dici che dovrei provare?"
+    },
+    {
+      "id": "t5",
+      "say": "E per lo stress? Al lavoro sto attraversando un periodo pesantissimo.",
+      "en": "And for stress? I'm going through a really tough period at work.",
+      "task": "Give advice with 'ti conviene' + infinitive (or 'ti converrebbe').",
+      "hint": "Secondo me ti conviene…, e magari…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Ti conviene / ti converrebbe + infinitive", "anyOf": ["\\bti\\s+(conviene|converrebbe)\\s+([\\p{L}'’]+\\s+)?\\p{L}+(are|ere|ire|arti|erti|irti|arne|erne|irne)\\b"], "min": 1, "errorType": "infinitive-construction", "conceptId": "B2-PREP-01", "hint": "*Ti conviene staccare un po'.*" }
+        ]
+      },
+      "model": "Secondo me ti conviene staccare completamente nel fine settimana, e magari fare yoga o una passeggiata ogni sera.",
+      "followOk": "Ottimo consiglio. Il fine settimana controllo sempre le email, e invece non dovrei.",
+      "followMiss": "Forse mi conviene staccare un po' nel fine settimana, vero? Controllo le email anche la domenica."
+    },
+    {
+      "id": "t6",
+      "say": "Grazie dei consigli! E tu? C'è un'abitudine che vorresti ancora cambiare?",
+      "en": "Thanks for the advice! And you? Is there a habit you'd still like to change?",
+      "task": "Say what you'd like to change (vorrei, mi piacerebbe) and since when you've had the habit (da quando + present).",
+      "hint": "Vorrei…: lo faccio troppo da quando…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Wish in the conditional", "anyOf": ["\\b(vorrei|mi piacerebbe|dovrei|cambierei|preferirei|smetterei)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Vorrei…, mi piacerebbe…*" },
+          { "label": "Da quando / da + time", "anyOf": ["\\bda\\s+(quando|qualche|un|una|anni|mesi|un paio|due|tre|alcuni|alcune|tanto|molto|sempre|piccolo|piccola|\\d+)\\b"], "min": 1, "errorType": "preposition", "conceptId": "B2-PREP-02", "hint": "*…da quando lavoro da casa.*" }
+        ]
+      },
+      "model": "Vorrei passare meno tempo al telefono: lo uso troppo da quando ho cominciato a lavorare da casa.",
+      "followOk": "Eh, quello vale per tutti! Facciamo una sfida: niente telefono dopo le dieci.",
+      "followMiss": "Ti capisco. Io vorrei usare meno il telefono: lo uso troppo da quando lavoro da casa."
+    }
+  ],
+  "closing": "Dai, allora ci vediamo qui giovedì mattina e corriamo insieme. Ciao!"
+}

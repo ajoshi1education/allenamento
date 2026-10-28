@@ -1,0 +1,202 @@
+{
+  "id": "CV-23",
+  "title": "L'esame orale",
+  "subtitle": "A university oral exam on Italy's economic miracle: defining, cause and consequence, citing scholars.",
+  "level": "C1",
+  "theme": "Lavoro e studio",
+  "conceptIds": [
+    "C1-VOC-05",
+    "C1-CONN-02",
+    "C1-SYN-02",
+    "B2-SUBJ-01",
+    "C1-SPEAK-02"
+  ],
+  "tutor": {
+    "name": "Prof.ssa Ricci",
+    "avatar": "👩‍🏫",
+    "gender": "female",
+    "register": "formal"
+  },
+  "setting": "You're sitting the oral exam for Storia contemporanea at the University of Bologna. Professoressa Ricci asks you about the Italian economic miracle of the 1950s and 60s.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Buongiorno, si accomodi. Cominciamo: che cosa si intende per miracolo economico?",
+      "en": "Good morning, take a seat. Let's begin: what is meant by the economic miracle?",
+      "task": "Define the term: con questa espressione si intende… / si indica…, and place it in time.",
+      "hint": "Con questa espressione si intende il periodo…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Definition formula (si intende, si indica…)",
+            "anyOf": [
+              "\\b(si intende|s['’]intende|si indica|si definisce|si fa riferimento|si riferisce|indica|con questa espressione|con questo termine)\\b"
+            ],
+            "min": 1,
+            "errorType": "vocabulary",
+            "conceptId": "C1-VOC-05",
+            "hint": "*Con questa espressione si intende…*"
+          },
+          {
+            "label": "Places it in time",
+            "anyOf": [
+              "\\b(anni cinquanta|anni sessanta|dopoguerra|secondo dopoguerra|19\\d\\d|cinquanta|sessanta|millenovecento\\p{L}*)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "C1-SPEAK-02",
+            "hint": "*…tra gli anni Cinquanta e Sessanta.*"
+          }
+        ]
+      },
+      "model": "Con questa espressione si intende il periodo di crescita economica molto rapida che l'Italia ha vissuto tra gli anni cinquanta e sessanta.",
+      "followOk": "Esatto, una definizione precisa.",
+      "followMiss": "Diciamo che con questa espressione si intende la forte crescita dell'Italia tra gli anni Cinquanta e Sessanta."
+    },
+    {
+      "id": "t2",
+      "say": "Bene. Quali furono, secondo Lei, le cause principali di questa crescita?",
+      "en": "Good. What, in your view, were the main causes of this growth?",
+      "task": "Explain two causes with formal cause connectors (dal momento che, poiché, fu dovuta a…) and order them (in primo luogo, inoltre).",
+      "hint": "In primo luogo, la crescita fu dovuta a…; inoltre, dal momento che…",
+      "expect": {
+        "minWords": 14,
+        "rubric": [
+          {
+            "label": "Formal cause connector",
+            "anyOf": [
+              "\\b(dal momento che|poiché|giacché|in quanto|dato che|visto che|grazie a|grazie al|grazie alla|grazie ai|grazie agli|grazie all['’]|a causa d|in seguito a|per via d)",
+              "\\bdovut[oaie]\\s+(a|al|alla|ai|agli|alle|all['’])"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "C1-CONN-02",
+            "hint": "*…fu dovuta a…, dal momento che…*"
+          },
+          {
+            "label": "Orders the causes (in primo luogo, inoltre…)",
+            "anyOf": [
+              "\\b(innanzitutto|in primo luogo|anzitutto|in secondo luogo|inoltre|da un lato|dall['’]altro|infine)\\b"
+            ],
+            "min": 1,
+            "errorType": "text-structure",
+            "conceptId": "C1-SPEAK-02",
+            "hint": "*In primo luogo…; inoltre…*"
+          }
+        ]
+      },
+      "model": "In primo luogo, la crescita fu dovuta agli aiuti del piano Marshall; inoltre, dal momento che il costo del lavoro era basso, le industrie esportavano molto.",
+      "followOk": "Molto bene, ha colto i fattori essenziali.",
+      "followMiss": "Diciamo che fu dovuta a vari fattori: gli aiuti americani, il basso costo del lavoro e le esportazioni."
+    },
+    {
+      "id": "t3",
+      "say": "E quali conseguenze ebbe questo sviluppo sulla società italiana?",
+      "en": "And what consequences did this development have on Italian society?",
+      "task": "Present the consequences with ne consegue che / ne conseguì / di conseguenza, using a nominalisation (lo spopolamento di…, l'aumento di…).",
+      "hint": "Ci fu una forte migrazione…; ne conseguì lo spopolamento…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Consequence connector (ne conseguì, di conseguenza…)",
+            "anyOf": [
+              "\\b(ne consegue|ne conseguì|ne è conseguito|ne derivò|ne deriva|ne è derivato|di conseguenza|conseguentemente|ciò portò|questo portò|ciò comportò|questo comportò|ciò ha portato|questo ha portato|ha comportato|pertanto|perciò|per questo motivo|provocò|causò|ha provocato|ha causato)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "C1-CONN-02",
+            "hint": "*…ne conseguì…, di conseguenza…*"
+          },
+          {
+            "label": "Nominalisation (lo spopolamento di, l'aumento dei…)",
+            "anyOf": [
+              "\\b\\p{L}{3,}(zione|zioni|mento|menti)\\s+(di|del|della|dei|delle|degli|dello|dell['’])",
+              "\\b(l['’]aumento|lo sviluppo|la crescita|la diffusione|la nascita|il calo|la riduzione|lo spostamento|la trasformazione|l['’]introduzione|la creazione|la realizzazione)\\b"
+            ],
+            "min": 1,
+            "errorType": "vocabulary",
+            "conceptId": "C1-SYN-02",
+            "hint": "*lo **spopolamento** delle campagne, l'**aumento** dei consumi*"
+          }
+        ]
+      },
+      "model": "Ci fu una massiccia migrazione dal Sud verso il Nord industriale; ne conseguì lo spopolamento delle campagne, insieme a un rapido aumento dei consumi.",
+      "followOk": "Molto bene. Vedo che ha studiato con attenzione.",
+      "followMiss": "Esatto: ci fu una forte migrazione interna, e ne conseguì lo spopolamento delle campagne."
+    },
+    {
+      "id": "t4",
+      "say": "Secondo alcuni studiosi, però, il miracolo economico ebbe anche dei costi. Lei che cosa ne pensa?",
+      "en": "According to some scholars, though, the economic miracle also had costs. What do you think?",
+      "task": "Report what scholars think (secondo alcuni studiosi…, alcuni sostengono che…) and give your view with ritengo che + subjunctive.",
+      "hint": "Secondo alcuni studiosi…; personalmente ritengo che…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Reports scholars' views",
+            "anyOf": [
+              "\\b(secondo alcuni|secondo altri|secondo molti|alcuni studiosi|altri studiosi|molti studiosi|alcuni storici|molti storici|secondo gli storici|c['’]è chi sostiene|alcuni sostengono|altri sostengono|si sostiene)\\b"
+            ],
+            "min": 1,
+            "errorType": "vocabulary",
+            "conceptId": "C1-VOC-05",
+            "hint": "*Secondo alcuni studiosi…*"
+          },
+          {
+            "label": "Opinion verb + che + subjunctive",
+            "anyOf": [
+              "\\b(penso|credo|ritengo|reputo|immagino|trovo|mi sembra|mi pare|sono convinto|sono convinta|non penso|non credo|dubito|sostengono|ritengono|pensano|credono|sostiene|ritiene)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}(sia|siano|abbia|abbiano|possa|possano|debba|debbano|vada|vadano|faccia|facciano|serva|servano|convenga|convengano|stia|stiano|venga|vengano|valga|valgano|sappia|sappiano|voglia|vogliano|occorra|bisogni|basti|bastino|costi|costino|funzioni|funzionino|porti|portino|rischi|rischino|aiuti|aiutino|renda|rendano|cambi|migliori|paghi|paghino|spenda|spendano|includa|includano|metta|mettano|tenga|tengano|dia|diano|conosca|conoscano|legga|scelga|scelgano|piaccia|piacciano|parli|parlino|chieda|chiedano|prenda|prendano|\\p{L}{3,}(?:ino|isca|iscano|iamo|iate)|fosse|fossero|fossi|avesse|avessero|avessi|\\p{L}{2,}(?:asse|esse|isse|assero|essero|issero|assi|essi|issi))\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Ritengo che **abbia** aumentato…*"
+          }
+        ]
+      },
+      "model": "Secondo alcuni studiosi, lo sviluppo fu troppo disordinato; personalmente ritengo che abbia aumentato il divario tra Nord e Sud.",
+      "followOk": "Una posizione condivisibile, e ben argomentata.",
+      "followMiss": "In effetti, secondo alcuni studiosi la crescita fu squilibrata, e molti ritengono che abbia accentuato il divario tra Nord e Sud."
+    },
+    {
+      "id": "t5",
+      "say": "Ultima domanda: che cosa resta oggi di quel periodo, secondo Lei?",
+      "en": "Last question: what remains of that period today, in your view?",
+      "task": "Conclude (in conclusione, direi che…) and add a concession (sebbene… / anche se…).",
+      "hint": "In conclusione, direi che…, sebbene…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Concluding marker",
+            "anyOf": [
+              "\\b(in conclusione|in sintesi|per concludere|riassumendo|insomma|in definitiva|tutto sommato|si può dire che|possiamo dire che|direi che)\\b"
+            ],
+            "min": 1,
+            "errorType": "text-structure",
+            "conceptId": "C1-SPEAK-02",
+            "hint": "*In conclusione, direi che…*"
+          },
+          {
+            "label": "Concession (sebbene, benché, anche se…)",
+            "anyOf": [
+              "\\b(sebbene|benché|nonostante|malgrado|pur|eppure)\\b",
+              "\\banche se\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "C1-CONN-02",
+            "hint": "*…sebbene molti squilibri non **siano** ancora stati risolti.*"
+          }
+        ]
+      },
+      "model": "In conclusione, direi che l'Italia di oggi nasce in quegli anni, sebbene molti squilibri non siano ancora stati risolti.",
+      "followOk": "Benissimo. Si vede che ha studiato con passione.",
+      "followMiss": "In sintesi, quindi: molto di ciò che siamo oggi nasce lì, sebbene restino squilibri importanti."
+    }
+  ],
+  "closing": "Bene, per me può bastare. Un ottimo esame: complimenti, e buona continuazione!"
+}

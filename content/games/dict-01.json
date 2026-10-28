@@ -1,0 +1,21 @@
+{
+  "id": "G-DICT-01",
+  "type": "dictation",
+  "title": "Dettato: passato, pronomi, preposizioni",
+  "subtitle": "Hear a sentence and write it down: past tenses, pronouns and prepositions.",
+  "conceptIds": [
+    "B2-PAST-01",
+    "B2-PAST-02",
+    "B2-FUT-01",
+    "B2-PRON-01",
+    "B2-PRON-02",
+    "B2-PRON-04",
+    "B2-REL-01",
+    "B2-PREP-01",
+    "B2-PREP-02",
+    "B2-CONN-01"
+  ],
+  "difficulty": 2,
+  "minutes": 6,
+  "sentences": 8
+}

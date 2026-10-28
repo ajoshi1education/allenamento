@@ -1,0 +1,11 @@
+{
+  "id": "G-GNT-05",
+  "type": "gauntlet",
+  "title": "La raffica dei pronomi",
+  "subtitle": "Glielo, ce ne sono, me ne vado, di cui: answer as many pronoun questions as you can before time runs out.",
+  "conceptIds": ["B2-PRON-01", "B2-PRON-02", "C1-PRON-03", "B2-PRON-04", "B2-REL-01"],
+  "difficulty": 3,
+  "minutes": 3,
+  "seconds": 120,
+  "lives": 3
+}

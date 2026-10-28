@@ -1,0 +1,22 @@
+{
+  "id": "G-DICT-02",
+  "type": "dictation",
+  "title": "Dettato: congiuntivo e periodo ipotetico",
+  "subtitle": "Hear and write sentences with the subjunctive, conditional and if-clauses.",
+  "conceptIds": [
+    "B2-SUBJ-01",
+    "B2-SUBJ-02",
+    "B2-SUBJ-03",
+    "B2-SUBJ-04",
+    "B2-COND-01",
+    "B2-COND-02",
+    "B2-HYP-01",
+    "B2-HYP-02",
+    "B2-PASS-01",
+    "B2-SI-01",
+    "B2-SEQ-01"
+  ],
+  "difficulty": 3,
+  "minutes": 6,
+  "sentences": 8
+}

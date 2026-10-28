@@ -1,0 +1,188 @@
+{
+  "id": "CV-10",
+  "title": "Il dibattito",
+  "subtitle": "A structured debate on mass tourism: concessives, nominal style, polite disagreement, conclusions.",
+  "level": "C1",
+  "theme": "Società e attualità",
+  "conceptIds": [
+    "C1-CONN-02",
+    "C1-SYN-02",
+    "C1-INT-02",
+    "C1-SPEAK-02"
+  ],
+  "tutor": {
+    "name": "Davide Galli",
+    "avatar": "🎙️",
+    "gender": "male",
+    "register": "formal"
+  },
+  "setting": "You're a guest on a local radio debate about mass tourism in Italy's art cities. Davide Galli is the moderator.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Buonasera. Il tema di stasera è il turismo di massa nelle città d'arte. Qual è la Sua posizione, in breve?",
+      "en": "Good evening. Tonight's topic is mass tourism in art cities. What's your position, briefly?",
+      "task": "State your position with an argumentative opener (dal mio punto di vista…) and ritengo che / sono convinto/a che + subjunctive.",
+      "hint": "Dal mio punto di vista, sono convinto/a che il turismo…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Argumentative opener",
+            "anyOf": [
+              "\\b(a mio avviso|a mio parere|dal mio punto di vista|secondo me|ritengo|sono convinto|sono convinta|sono dell['’]avviso|personalmente)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "C1-VOC-05",
+            "hint": "*Dal mio punto di vista… / A mio avviso…*"
+          },
+          {
+            "label": "Ritengo che / sono convinto che + subjunctive",
+            "anyOf": [
+              "\\b(ritengo|credo|penso|sono convinto|sono convinta|reputo|trovo|mi sembra)\\s+che\\s+(\\p{L}+\\s+){0,4}(sia|siano|vada|vadano|debba|debbano|possa|possano|abbia|abbiano|serva|servano|occorra|bisogni|porti|portino|rappresenti|rappresentino|danneggi|danneggino|faccia|facciano|stia|stiano|rischi|rischino|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Ritengo che il turismo **vada** regolato.*"
+          }
+        ]
+      },
+      "model": "Dal mio punto di vista, sono convinto che il turismo di massa vada regolato, altrimenti i centri storici si svuoteranno.",
+      "followOk": "Una posizione chiara, grazie. Vediamo se il pubblico è d'accordo.",
+      "followMiss": "Quindi, se ho capito bene, Lei ritiene che il turismo vada regolato. Grazie."
+    },
+    {
+      "id": "t2",
+      "say": "Eppure il turismo porta lavoro e ricchezza a tantissime famiglie. Come risponde?",
+      "en": "And yet tourism brings work and wealth to a great many families. How do you respond?",
+      "task": "Concede the point, then counter it, with sebbene / nonostante / benché + subjunctive.",
+      "hint": "Sebbene il turismo porti lavoro, …",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Concessive + subjunctive",
+            "anyOf": [
+              "\\b(sebbene|benché|nonostante|malgrado|per quanto|ammesso che|anche ammesso che)\\s+(\\p{L}+\\s+){0,4}(sia|siano|porti|portino|crei|creino|abbia|abbiano|produca|producano|generi|generino|rappresenti|rappresentino|dia|diano|faccia|facciano|garantisca|garantiscano|possa|possano|offra|offrano|vengano|venga|spendano|spenda|offrano|offra|permetta|permettano|renda|rendano|sostenga|sostengano|contribuisca|contribuiscano|\\p{L}{2,}(?:ino|isca|iscano))\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "C1-CONN-02",
+            "hint": "*Sebbene il turismo **porti** lavoro, …*"
+          }
+        ]
+      },
+      "model": "Sebbene il turismo porti lavoro a molte famiglie, i guadagni spesso finiscono nelle mani di pochi grandi operatori.",
+      "followOk": "Punto interessante, ne terremo conto.",
+      "followMiss": "Mi pare di capire che, sebbene il turismo porti lavoro, i guadagni restino nelle mani di pochi."
+    },
+    {
+      "id": "t3",
+      "say": "Concretamente, quali misure proporrebbe?",
+      "en": "In practical terms, what measures would you propose?",
+      "task": "Propose two measures in nominal style (l'introduzione di…, la limitazione di…), ordered with in primo luogo / inoltre.",
+      "hint": "In primo luogo proporrei l'introduzione di…; inoltre la limitazione di…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Two nominalisations",
+            "anyOf": [
+              "\\b(introduzione|istituzione|limitazione|riduzione|potenziamento|creazione|aumento|regolamentazione|divieto|tutela|promozione|distribuzione|rafforzamento|applicazione|incentivazione|tassazione|chiusura|controllo|obbligo|sviluppo|tetto|blocco)\\b"
+            ],
+            "min": 2,
+            "errorType": "word-formation",
+            "conceptId": "C1-SYN-02",
+            "hint": "*l'introduzione di…, la limitazione di…*"
+          },
+          {
+            "label": "Orders the points",
+            "anyOf": [
+              "\\b(innanzitutto|in primo luogo|prima di tutto|in secondo luogo|inoltre|infine|da un lato|dall['’]altro|poi)\\b"
+            ],
+            "min": 1,
+            "errorType": "text-structure",
+            "conceptId": "C1-VOC-05",
+            "hint": "*In primo luogo…, inoltre…*"
+          }
+        ]
+      },
+      "model": "In primo luogo proporrei l'introduzione di un numero chiuso nei periodi di punta, e inoltre la limitazione degli affitti brevi.",
+      "followOk": "Misure concrete, anche se non tutti le apprezzeranno.",
+      "followMiss": "Capisco. Quindi propone, per esempio, l'introduzione di un numero chiuso e la limitazione degli affitti brevi."
+    },
+    {
+      "id": "t4",
+      "say": "Molti però sostengono che il numero chiuso trasformerebbe le città in musei a pagamento. Lei è d'accordo?",
+      "en": "But many argue that a visitor cap would turn cities into paid museums. Do you agree?",
+      "task": "Disagree politely: acknowledge the concern, then say you only partly agree, and why.",
+      "hint": "Capisco la preoccupazione, ma non sono del tutto d'accordo: …",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Polite (partial) disagreement",
+            "anyOf": [
+              "\\b(non sono del tutto d['’]accordo|non sono d['’]accordo|sono d['’]accordo solo in parte|solo in parte|in parte|fino a un certo punto|capisco la preoccupazione|capisco il punto|non condivido|mi permetto di dissentire|la vedo diversamente)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "C1-INT-02",
+            "hint": "*Non sono del tutto d'accordo… / Fino a un certo punto…*"
+          },
+          {
+            "label": "Contrast connector",
+            "anyOf": [
+              "\\b(ma|però|tuttavia|d['’]altra parte|eppure|ciononostante|d['’]altro canto)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "C1-CONN-02",
+            "hint": "*…ma…, tuttavia…*"
+          }
+        ]
+      },
+      "model": "Capisco la preoccupazione, ma non sono del tutto d'accordo: il numero chiuso servirebbe solo nei periodi di massima affluenza.",
+      "followOk": "Una distinzione importante, grazie.",
+      "followMiss": "Quindi, se ho capito, non è del tutto d'accordo: per Lei il numero chiuso servirebbe solo in alta stagione."
+    },
+    {
+      "id": "t5",
+      "say": "Siamo alla fine. Mi dia la Sua conclusione, in una o due frasi.",
+      "en": "We're at the end. Give me your conclusion, in one or two sentences.",
+      "task": "Conclude with a closing phrase (in conclusione, in definitiva…) and a concessive (nonostante…).",
+      "hint": "In conclusione, nonostante…, …",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Concluding phrase",
+            "anyOf": [
+              "\\b(in conclusione|per concludere|concludendo|in definitiva|tirando le somme|in sintesi|alla luce di|insomma)\\b"
+            ],
+            "min": 1,
+            "errorType": "text-structure",
+            "conceptId": "C1-SPEAK-02",
+            "hint": "*In conclusione… / In definitiva…*"
+          },
+          {
+            "label": "Concessive connector",
+            "anyOf": [
+              "\\b(nonostante|sebbene|benché|malgrado|per quanto|pur)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "C1-CONN-02",
+            "hint": "*…nonostante il turismo sia…*"
+          }
+        ]
+      },
+      "model": "In conclusione, nonostante il turismo sia una risorsa preziosa, va gestito con regole chiare per proteggere chi ci vive.",
+      "followOk": "Una conclusione equilibrata. Grazie per il Suo contributo.",
+      "followMiss": "Quindi, in conclusione, nonostante i benefici, il turismo va gestito con regole chiare. Grazie."
+    }
+  ],
+  "closing": "Grazie a tutti per l'attenzione. Il dibattito è chiuso, buona serata!"
+}

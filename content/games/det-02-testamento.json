@@ -1,0 +1,80 @@
+{
+  "id": "G-DET-02",
+  "type": "detective",
+  "title": "Il testamento del notaio",
+  "subtitle": "A notary's will leaves everything to the wrong person. Was it forged? Get the subjunctive right and the clues come into focus.",
+  "conceptIds": ["B2-SUBJ-02", "B2-SUBJ-03", "B2-SUBJ-04", "C1-SUBJ-05"],
+  "difficulty": 4,
+  "minutes": 10,
+  "characters": {
+    "commissario": { "name": "Lei (Commissaria/o)", "role": "you" },
+    "elena": { "name": "Elena Bellandi", "role": "figlia del notaio", "avatar": "🖤" },
+    "teresa": { "name": "Teresa Morandi", "role": "governante di casa Bellandi", "avatar": "🧺" },
+    "galli": { "name": "Dott. Sergio Galli", "role": "socio dello studio notarile", "avatar": "💼" },
+    "riccardo": { "name": "Riccardo Bellandi", "role": "nipote del notaio", "avatar": "🧳" }
+  },
+  "intro": "Bologna, studio notarile Bellandi. Il notaio Arturo Bellandi è morto la settimana scorsa, a ottantadue anni. Stamattina, nella cassaforte dello studio, è stato trovato un testamento che lascia tutto al nipote Riccardo, escludendo la figlia Elena. Elena è convinta che sia un falso e ha chiesto il suo intervento.",
+  "scenes": [
+    {
+      "speaker": "elena",
+      "line": "Commissario, è impossibile che mio padre ___ (firmare) un testamento del genere. Mi aveva promesso la villa di Fiesole davanti a tutti.",
+      "item": { "id": "G-DET-02.s1", "conceptId": "B2-SUBJ-02", "type": "cloze", "difficulty": 2, "instruction": "Complete Elena's line.", "prompt": "È impossibile che mio padre ___ (firmare) un testamento del genere.", "answers": ["abbia firmato"], "focus": ["abbia", "firmato"], "errorType": "verb-form", "traps": [{ "match": "ha firmato", "errorType": "indicative-for-subjunctive", "why": "*È impossibile che* → subjunctive: *abbia firmato*." }, { "match": "firmi", "errorType": "wrong-tense", "why": "The signing (if it happened) is in the past: congiuntivo passato *abbia firmato*." }, { "match": "avesse firmato", "errorType": "tense-sequence", "why": "The main verb is present (*è impossibile*): congiuntivo passato, not trapassato." }], "explanation": "Present main verb + past action → **abbia firmato**." },
+      "clue": "Il testamento ritrovato porta la data del 12 marzo e lascia tutto al nipote Riccardo.",
+      "clueBlurred": "Elena parla di una data sul testamento… ma piange troppo per farsi capire."
+    },
+    {
+      "speaker": "teresa",
+      "line": "Il notaio voleva che nessuno ___ (toccare) le sue carte. E comunque a marzo non poteva firmare proprio niente, povero signore.",
+      "item": { "id": "G-DET-02.s2", "conceptId": "B2-SUBJ-03", "type": "cloze", "difficulty": 2, "instruction": "Complete Teresa's line.", "prompt": "Il notaio voleva che nessuno ___ (toccare) le sue carte.", "answers": ["toccasse"], "focus": ["toccasse"], "errorType": "tense-sequence", "traps": [{ "match": "tocchi", "errorType": "tense-sequence", "why": "*Voleva* is past: imperfetto *toccasse*." }, { "match": "toccava", "errorType": "indicative-for-subjunctive", "why": "*Volere che* → subjunctive." }, { "match": "toccassi", "errorType": "verb-form", "why": "*Nessuno* is third person: *toccasse*." }], "explanation": "Past main verb + wish → congiuntivo imperfetto: **toccasse**." },
+      "clue": "Dal 1° al 20 marzo il notaio era ricoverato in terapia intensiva, sedato, senza visite: non poteva firmare nulla. Il testamento del 12 marzo è quindi un falso.",
+      "clueBlurred": "Teresa accenna a qualcosa successo al notaio a marzo… un viaggio? Una malattia?"
+    },
+    {
+      "speaker": "galli",
+      "line": "Guardi, in questo studio non c'è nessuno che ___ la combinazione della cassaforte, a parte me e la signora Teresa. E il registro elettronico dice che a marzo è stata aperta una volta sola.",
+      "item": { "id": "G-DET-02.s3", "conceptId": "C1-SUBJ-05", "type": "choice", "difficulty": 3, "instruction": "Choose the correct form for Galli's line.", "prompt": "In questo studio non c'è nessuno che ___ la combinazione della cassaforte, a parte me e la signora Teresa.", "options": ["sappia", "sa", "sapesse", "abbia saputo"], "answer": 0, "errorType": "indicative-for-subjunctive", "optionWhy": { "1": "*Non c'è nessuno che* → the person doesn't exist: subjunctive.", "2": "The main verb is present (*non c'è*): present subjunctive.", "3": "Knowing the combination is a current state, not a completed past action." }, "traps": [{ "match": "sa", "errorType": "indicative-for-subjunctive", "why": "Non-existent antecedent → *sappia*." }, { "match": ["sapesse", "abbia saputo"], "errorType": "tense-sequence", "why": "Present main verb, present state → *sappia*." }], "explanation": "*Non c'è nessuno che* + congiuntivo presente: **sappia**." },
+      "clue": "Il registro della cassaforte: unica apertura di marzo il 14, alle ore 22.10. Solo Galli e Teresa conoscono la combinazione.",
+      "clueBlurred": "Galli parla della cassaforte… ma non si capisce chi sappia aprirla, né quando sia stata aperta."
+    },
+    {
+      "speaker": "riccardo",
+      "line": "Anche se il testamento mi favorisce, io non ne sapevo niente! Sono stato in Canada da gennaio fino a ieri. Lo chieda pure alla compagnia aerea. E, a dire il vero, ho un debito enorme con il dottor Galli: duecentomila euro.",
+      "item": { "id": "G-DET-02.s4", "conceptId": "B2-SUBJ-04", "type": "transform", "difficulty": 3, "instruction": "Rewrite Riccardo's first sentence replacing 'Anche se' with 'Benché'.", "prompt": "Anche se il testamento mi favorisce, io non ne sapevo niente.", "answers": ["Benché il testamento mi favorisca [io] non ne sapevo niente", "[Io] non ne sapevo niente benché il testamento mi favorisca"], "focus": ["favorisca"], "errorType": "indicative-for-subjunctive", "traps": [{ "contains": ["favorisce"], "errorType": "indicative-for-subjunctive", "why": "*Benché* → subjunctive: *mi favorisca*. Only *anche se* takes the indicative." }, { "contains": ["favorisse"], "errorType": "tense-sequence", "why": "The will favours him now: present subjunctive *favorisca*." }], "explanation": "*Anche se* + indicativo → *benché* + congiuntivo: **favorisca**." },
+      "clue": "La compagnia aerea conferma: Riccardo è stato in Canada dal 7 gennaio a ieri. E se eredita, potrà finalmente pagare il suo debito con Galli.",
+      "clueBlurred": "Riccardo dice di essere stato all'estero… e accenna a dei soldi, ma non si capisce a chi."
+    },
+    {
+      "speaker": "teresa",
+      "line": "Il 14 marzo? Ero da mia sorella a Bari! Ci sono andata il 10, prima che il signor notaio ___ (essere) trasferito in terapia intensiva, e sono tornata il 18. Ho ancora i biglietti del treno.",
+      "item": { "id": "G-DET-02.s5", "conceptId": "B2-SUBJ-04", "type": "cloze", "difficulty": 3, "instruction": "Complete Teresa's line.", "prompt": "Sono andata a Bari il 10, prima che il signor notaio ___ (essere) trasferito in terapia intensiva.", "answers": ["fosse"], "focus": ["fosse"], "errorType": "indicative-for-subjunctive", "traps": [{ "match": "era", "errorType": "indicative-for-subjunctive", "why": "*Prima che* → subjunctive: *fosse (trasferito)*." }, { "match": "sia", "errorType": "tense-sequence", "why": "The main verb is past (*sono andata*): imperfetto *fosse*." }, { "match": "fosse stato", "errorType": "tense-sequence", "why": "*Prima che* looks forward to a later event: imperfetto *fosse trasferito*, not trapassato." }], "explanation": "*Prima che* + past main verb → imperfetto: **fosse** trasferito." },
+      "clue": "I biglietti confermano: Teresa è stata a Bari dal 10 al 18 marzo. La sera del 14 non poteva essere allo studio.",
+      "clueBlurred": "Teresa sventola dei biglietti… di che cosa? E di quando?"
+    },
+    {
+      "speaker": "elena",
+      "line": "Io ero in ospedale con papà ogni sera fino a mezzanotte, le infermiere lo sanno. L'ultima volta mi ha guardata come se ___ (volere) dirmi qualcosa, ma non riusciva a parlare.",
+      "item": { "id": "G-DET-02.s6", "conceptId": "B2-SUBJ-03", "type": "cloze", "difficulty": 3, "instruction": "Complete Elena's line.", "prompt": "L'ultima volta mi ha guardata come se ___ (volere) dirmi qualcosa.", "answers": ["volesse"], "focus": ["volesse"], "errorType": "verb-form", "traps": [{ "match": "voleva", "errorType": "indicative-for-subjunctive", "why": "*Come se* → subjunctive: *volesse*." }, { "match": "voglia", "errorType": "tense-sequence", "why": "*Come se* takes only the imperfetto or trapassato: *volesse*." }, { "match": "vollesse", "errorType": "verb-form", "why": "*Volere* is regular here: *volesse*, with one l." }], "explanation": "*Come se* + imperfetto (same time) → **volesse**." },
+      "clue": "Le infermiere confermano: la sera del 14 marzo Elena è rimasta in ospedale fino a mezzanotte.",
+      "clueBlurred": "Elena dice dov'era di sera… ma qualcuno può confermarlo?"
+    },
+    {
+      "speaker": "commissario",
+      "line": "You turn to Galli and say (formal): \"I doubt that the notary ever signed this will.\"",
+      "item": { "id": "G-DET-02.s7", "conceptId": "B2-SUBJ-02", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "I doubt that the notary ever signed this will.", "answers": ["Dubito che il notaio abbia mai firmato questo testamento"], "focus": ["abbia"], "errorType": "indicative-for-subjunctive", "traps": [{ "contains": ["ha"], "errorType": "indicative-for-subjunctive", "why": "*Dubito che* → subjunctive: *abbia mai firmato*." }, { "contains": ["firmasse", "avesse"], "errorType": "tense-sequence", "why": "*Dubito* is present: congiuntivo passato *abbia firmato*." }, { "contains": ["volontà"], "errorType": "vocabulary", "why": "A legal will is *il testamento*; *volontà* is will as in 'willpower' or 'wishes'." }], "explanation": "Present doubt about a past action → **abbia** mai **firmato**. *Mai* sits between auxiliary and participle." },
+      "clue": "Galli impallidisce. Nel cassetto della sua scrivania ci sono il timbro dello studio e alcune prove della firma del notaio, scritte a matita.",
+      "clueBlurred": "Galli resta impassibile e si sistema la cravatta."
+    }
+  ],
+  "accusation": {
+    "question": "Chi ha falsificato il testamento?",
+    "options": [
+      { "id": "riccardo", "label": "Riccardo, il nipote" },
+      { "id": "teresa", "label": "Teresa, la governante" },
+      { "id": "galli", "label": "Il dottor Galli, il socio" },
+      { "id": "elena", "label": "Elena, la figlia" }
+    ],
+    "answer": "galli",
+    "solved": "Esatto! Il notaio era in terapia intensiva il 12 marzo, quindi il testamento è falso. La cassaforte è stata aperta il 14 alle 22.10, e solo Galli e Teresa ne conoscevano la combinazione: Teresa era a Bari. Galli ha messo il falso testamento a favore di Riccardo per farsi restituire i suoi duecentomila euro.",
+    "wrong": "Non regge. Rileggi gli indizi: quando è stato firmato il testamento? Chi poteva aprire la cassaforte la sera del 14 marzo, e chi ci guadagnava davvero?"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "id": "G-LST-05",
+  "type": "listening",
+  "title": "Il notiziario dei mercati",
+  "subtitle": "A (fictional) morning finance bulletin: Piazza Affari, BTPs, the spread and the ECB.",
+  "conceptIds": ["C1-LIST-02", "C1-VOC-05"],
+  "difficulty": 4,
+  "minutes": 10,
+  "passage": {
+    "title": "Radio Mercati – edizione delle 8.30",
+    "source": "invented",
+    "it": "Buongiorno, sono le otto e mezza e questo è il notiziario economico di Radio Mercati. Apriamo con Piazza Affari, che ieri ha chiuso la seduta in rialzo dello 0,8 per cento. Il FTSE MIB, l'indice che raccoglie le quaranta società a maggiore capitalizzazione della Borsa di Milano, ha così recuperato buona parte delle perdite accumulate nei primi giorni della settimana. A trainare il listino sono stati i titoli bancari, mentre il comparto energetico ha risentito del calo del prezzo del petrolio. In controtendenza anche il lusso, penalizzato da dati deludenti sui consumi in Asia.\nSul fronte dei titoli di Stato, seduta tranquilla per i BTP, i Buoni del Tesoro Poliennali. Lo spread, cioè la differenza di rendimento tra il BTP decennale e l'analogo titolo tedesco, il Bund, è sceso a 110 punti base, il livello più basso dall'inizio dell'anno. Un segnale, secondo gli analisti, di una maggiore fiducia degli investitori nei conti pubblici italiani. Ricordiamo che uno spread più basso significa, per lo Stato, pagare interessi meno elevati sul proprio debito.\nGrande attesa per la riunione di giovedì della Banca Centrale Europea. Il mercato si aspetta che l'istituto di Francoforte lasci i tassi invariati, dopo i tagli dei mesi scorsi, ma gli operatori guarderanno soprattutto alla conferenza stampa, alla ricerca di indicazioni sulle prossime mosse. L'inflazione nell'area dell'euro, infatti, si è avvicinata all'obiettivo del 2 per cento, e c'è chi comincia a ipotizzare un nuovo taglio entro la fine dell'anno. Altri, più prudenti, ritengono che la Banca preferirà aspettare dati più solidi prima di muoversi.\nSul mercato dei cambi, l'euro si mantiene stabile nei confronti del dollaro, poco sotto quota 1,10, mentre l'oro resta vicino ai massimi storici.\nÈ tutto per questa edizione. Il prossimo aggiornamento alle nove e mezza, a mercati aperti."
+  },
+  "questions": [
+    {
+      "id": "G-LST-05.q1", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "How did the Milan stock exchange close yesterday?",
+      "options": [
+        "Down 0.8%",
+        "Up 0.8%",
+        "Unchanged",
+        "Up 8%"
+      ],
+      "answer": 1,
+      "explanation": "*Piazza Affari… ha chiuso la seduta in rialzo dello 0,8 per cento.* *In rialzo* = up; *in ribasso* = down.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-05.q2", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What is the FTSE MIB?",
+      "options": [
+        "The index of the 40 largest companies by market capitalisation on the Milan stock exchange",
+        "The Italian central bank",
+        "A type of Italian government bond",
+        "The index of all European banks"
+      ],
+      "answer": 0,
+      "explanation": "*L'indice che raccoglie le quaranta società a maggiore capitalizzazione della Borsa di Milano.*",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-05.q3", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "*«A trainare il listino sono stati i titoli bancari.»* What does this mean?",
+      "options": [
+        "Bank shares were removed from the list.",
+        "Bank shares fell the most.",
+        "Bank shares led the market upwards.",
+        "Bank shares were not traded."
+      ],
+      "answer": 2,
+      "explanation": "*Trainare* = to tow, pull along. *Il listino* = the list of quoted shares, i.e. the market. Bank stocks drove the rise.",
+      "errorType": "vocabulary"
+    },
+    {
+      "id": "G-LST-05.q4", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "The luxury sector moved *in controtendenza*. What happened to it?",
+      "options": [
+        "It rose more than the market.",
+        "It fell, against the generally positive trend of the day.",
+        "It followed the market exactly.",
+        "It was suspended from trading."
+      ],
+      "answer": 1,
+      "explanation": "*In controtendenza* = against the trend. The market rose, but luxury was *penalizzato da dati deludenti sui consumi in Asia*. *Anche* links it to energy, which also fell.",
+      "errorType": "vocabulary"
+    },
+    {
+      "id": "G-LST-05.q5", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "How does the bulletin define *lo spread*?",
+      "options": [
+        "The gap between the euro and the dollar",
+        "The difference in yield between the 10-year BTP and the German Bund",
+        "The difference between buying and selling prices of shares",
+        "The ECB's interest rate"
+      ],
+      "answer": 1,
+      "explanation": "*La differenza di rendimento tra il BTP decennale e l'analogo titolo tedesco, il Bund.* It's quoted in *punti base* (basis points).",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-05.q6", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why is a falling spread good news for Italy, according to the bulletin?",
+      "options": [
+        "Because German bonds become more expensive",
+        "Because Italian shares automatically rise",
+        "Because the state pays lower interest on its debt, and it signals investor confidence",
+        "Because the ECB will cut rates"
+      ],
+      "answer": 2,
+      "explanation": "*Un segnale… di una maggiore fiducia degli investitori nei conti pubblici italiani* and *uno spread più basso significa, per lo Stato, pagare interessi meno elevati sul proprio debito*.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-05.q7", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What does the market expect from Thursday's ECB meeting?",
+      "options": [
+        "A rate cut",
+        "A rate rise",
+        "Rates left unchanged, with attention focused on the press conference",
+        "The announcement of a new president"
+      ],
+      "answer": 2,
+      "optionWhy": { "0": "A cut *entro la fine dell'anno* is only what some (*c'è chi*) are starting to imagine, not this week's expectation." },
+      "explanation": "*Il mercato si aspetta che l'istituto di Francoforte lasci i tassi invariati… gli operatori guarderanno soprattutto alla conferenza stampa.*",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-05.q8", "type": "choice", "difficulty": 5,
+      "instruction": "Choose the correct answer.",
+      "prompt": "How do the two groups of analysts differ about the ECB's next steps?",
+      "options": [
+        "Some expect a cut by year-end; more cautious ones think the bank will wait for firmer data.",
+        "Some expect a rate rise; others a cut.",
+        "They all agree the ECB will not move for a year.",
+        "Some think inflation is too high; others think it is too low."
+      ],
+      "answer": 0,
+      "explanation": "*C'è chi comincia a ipotizzare un nuovo taglio entro la fine dell'anno. Altri, più prudenti, ritengono che la Banca preferirà aspettare dati più solidi.* The *c'è chi… altri…* structure contrasts two views.",
+      "errorType": "listening"
+    }
+  ]
+}

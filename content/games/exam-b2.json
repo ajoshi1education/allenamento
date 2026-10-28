@@ -1,0 +1,524 @@
+{
+  "id": "G-EXAM-B2",
+  "type": "exam",
+  "title": "Esame B2",
+  "subtitle": "A 25-minute mock exam on Section 1: reading, listening, grammar, vocabulary, a formal email and three spoken answers.",
+  "level": "B2",
+  "conceptIds": [
+    "B2-READ-01", "B2-LIST-01", "B2-SUBJ-01", "B2-SUBJ-04", "B2-HYP-02", "B2-PRON-01", "B2-REL-01",
+    "B2-PAST-01", "B2-FUT-01", "B2-PASS-01", "B2-SEQ-01", "B2-INF-03", "B2-VOC-01", "B2-VOC-02",
+    "B2-IDIOM-01", "B2-VOC-06", "B2-REG-01", "B2-VOC-04", "B2-WRIT-01", "B2-SPEAK-01", "B2-COND-01", "B2-HYP-01"
+  ],
+  "difficulty": 3,
+  "minutes": 25,
+  "passMark": 0.7,
+  "sections": [
+    {
+      "kind": "reading",
+      "title": "Comprensione della lettura",
+      "passage": {
+        "title": "Il formaggio in banca: quando il Parmigiano diventa una garanzia",
+        "source": "invented",
+        "it": "Chi entra nei magazzini che una banca emiliana gestisce nella campagna di Reggio Emilia rimane sorpreso: al posto delle cassette di sicurezza ci sono scaffali alti fino al soffitto, carichi di forme di Parmigiano Reggiano. Ogni forma pesa circa quaranta chili e, una volta stagionata, può valere diverse centinaia di euro. Per la banca non si tratta di una curiosità, ma di un vero strumento finanziario.\nIl meccanismo, nato negli anni Cinquanta, risponde a un problema concreto dei caseifici. Il Parmigiano Reggiano deve stagionare almeno dodici mesi prima di essere venduto, e molte forme restano sugli scaffali per due anni o più. Nel frattempo, però, i produttori devono pagare il latte agli allevatori, gli stipendi e le bollette. Per questo un caseificio può portare le proprie forme in banca e ottenere in cambio un prestito pari a una parte del loro valore. Il formaggio, in altre parole, fa da pegno.\nPer tutta la durata del prestito, le forme vengono conservate in locali a temperatura e umidità controllate, dove vengono girate e pulite regolarmente, proprio come farebbe il caseificio. Quando arriva il momento di vendere, il produttore restituisce il denaro con gli interessi e riprende le sue forme. Se invece non riesce a rimborsare il prestito, la banca può vendere il formaggio per recuperare la somma.\nSecondo gli esperti, il sistema conviene a entrambe le parti. I piccoli produttori, che spesso non avrebbero altri beni da offrire in garanzia, possono aspettare il momento giusto per vendere, invece di svendere il formaggio appena hanno bisogno di liquidità. La banca, dal canto suo, presta denaro con un rischio contenuto, perché il valore di un Parmigiano ben conservato tende a crescere con la stagionatura.\nUn'idea nata più di settant'anni fa, insomma, che dimostra come in Emilia perfino un formaggio possa diventare una questione di finanza."
+      },
+      "items": [
+        {
+          "id": "G-EXAM-B2.r1", "type": "choice", "conceptId": "B2-READ-01", "difficulty": 2,
+          "instruction": "Choose the correct answer.",
+          "prompt": "What is the article mainly about?",
+          "options": [
+            "A bank that lends money to cheesemakers, using their Parmigiano wheels as collateral.",
+            "A bank that has started producing and selling its own Parmigiano.",
+            "Cheesemakers who keep their savings in safe-deposit boxes.",
+            "A new law that obliges banks to finance farmers."
+          ],
+          "answer": 0,
+          "optionWhy": { "1": "The bank stores and looks after the cheese, but it doesn't produce it.", "2": "The *cassette di sicurezza* are mentioned only to say that shelves of cheese stand in their place." },
+          "explanation": "The whole article explains how *un caseificio può portare le proprie forme in banca e ottenere in cambio un prestito*: the cheese *fa da pegno* (serves as collateral).",
+          "errorType": "comprehension"
+        },
+        {
+          "id": "G-EXAM-B2.r2", "type": "choice", "conceptId": "B2-READ-01", "difficulty": 2,
+          "instruction": "Choose the correct answer.",
+          "prompt": "Why do cheesemakers need this kind of loan?",
+          "options": [
+            "Their costs come in straight away, but the cheese can only be sold after at least a year of ageing.",
+            "Their warehouses are too small for the cheese.",
+            "The price of milk has fallen sharply.",
+            "Banks refuse to open accounts for small producers."
+          ],
+          "answer": 0,
+          "explanation": "*Deve stagionare almeno dodici mesi prima di essere venduto… Nel frattempo, però, i produttori devono pagare il latte, gli stipendi e le bollette.*",
+          "errorType": "comprehension"
+        },
+        {
+          "id": "G-EXAM-B2.r3", "type": "choice", "conceptId": "B2-READ-01", "difficulty": 2,
+          "instruction": "Choose the correct answer.",
+          "prompt": "What happens if a producer cannot repay the loan?",
+          "options": [
+            "The bank can sell the cheese to recover the money.",
+            "The loan is automatically extended for another year.",
+            "The producer has to give the bank his dairy.",
+            "The regional government pays the debt."
+          ],
+          "answer": 0,
+          "explanation": "*Se invece non riesce a rimborsare il prestito, la banca può vendere il formaggio per recuperare la somma.*",
+          "errorType": "comprehension"
+        },
+        {
+          "id": "G-EXAM-B2.r4", "type": "cloze", "conceptId": "B2-READ-01", "difficulty": 3,
+          "instruction": "Complete with the word used in the article (paragraph 2).",
+          "prompt": "In altre parole, il formaggio fa da ___.",
+          "answers": ["pegno"],
+          "focus": ["pegno"],
+          "traps": [
+            { "match": "garanzia", "ok": true, "why": "Right idea: the article uses *garanzia* elsewhere. In paragraph 2 the word is *pegno* (a pledge: goods handed over as security for a loan)." }
+          ],
+          "explanation": "*Fare da pegno* = to act as a pledge, i.e. collateral that the lender physically holds.",
+          "errorType": "comprehension",
+          "en": "In other words, the cheese acts as collateral."
+        },
+        {
+          "id": "G-EXAM-B2.r5", "type": "choice", "conceptId": "B2-VOC-04", "difficulty": 3,
+          "instruction": "Choose the meaning of the word as it is used in the article.",
+          "prompt": "*…invece di **svendere** il formaggio appena hanno bisogno di liquidità.* What does *svendere* mean?",
+          "options": [
+            "to sell off cheaply, below its real value",
+            "to sell abroad",
+            "to stop selling",
+            "to sell in advance"
+          ],
+          "answer": 0,
+          "explanation": "The prefix *s-* here gives the idea of getting rid of something at a loss: *svendere* = to sell off, *la svendita* = a clearance sale.",
+          "errorType": "word-formation"
+        },
+        {
+          "id": "G-EXAM-B2.r6", "type": "choice", "conceptId": "B2-READ-01", "difficulty": 4,
+          "instruction": "Choose the correct answer.",
+          "prompt": "Why, according to the article, is the bank's risk limited?",
+          "options": [
+            "Because a well-kept Parmigiano tends to become more valuable as it ages.",
+            "Because the producers pay very high interest.",
+            "Because the loan covers the full value of the cheese.",
+            "Because the dairy looks after the cheese during the loan."
+          ],
+          "answer": 0,
+          "optionWhy": {
+            "2": "The loan is *pari a una parte del loro valore*: only part of the value.",
+            "3": "The cheese is kept and turned in the bank's warehouses, *proprio come farebbe il caseificio*: the dairy doesn't do it."
+          },
+          "explanation": "*Presta denaro con un rischio contenuto, perché il valore di un Parmigiano ben conservato tende a crescere con la stagionatura.*",
+          "errorType": "comprehension"
+        }
+      ]
+    },
+    {
+      "kind": "listening",
+      "title": "Comprensione dell'ascolto",
+      "passage": {
+        "title": "La cena con il cliente",
+        "source": "invented",
+        "it": "GIULIA: Marco, hai prenotato per giovedì sera? Il signor Harris arriva da Londra nel pomeriggio.\nMARCO: Sì, ho chiamato la trattoria vicino ai Navigli, quella dove siamo andati per la cena di Natale. Avevo prenotato per le otto, ma poi ho spostato alle otto e mezza, perché il suo volo atterra a Linate solo alle sei.\nGIULIA: Hai fatto bene. Senti, ieri la sua assistente mi ha scritto che è vegetariano. Lo sapevi?\nMARCO: No! Accidenti, io pensavo di ordinare il risotto alla milanese per tutti.\nGIULIA: Eh, il risotto tradizionale si fa con il midollo di manzo e il brodo di carne, quindi per lui non va bene. Però possiamo chiedere al cuoco di preparargliene uno con il brodo vegetale e senza midollo. Ce lo faranno di sicuro, sono gentilissimi.\nMARCO: Giusto. E per il vino? Pensavo a un Barolo.\nGIULIA: Il Barolo è ottimo, ma è piemontese. Visto che il signor Harris vuole conoscere la Lombardia, perché non cominciamo con un Franciacorta? È uno spumante della provincia di Brescia e piace quasi a tutti.\nMARCO: D'accordo. Ah, un'ultima cosa: chi paga? Il direttore mi ha detto di usare la carta aziendale, ma il limite è di trecento euro.\nGIULIA: Siamo in quattro, dovrebbero bastare. E se non bastano, il resto lo metto io e poi me lo faccio rimborsare.\nMARCO: Perfetto. Allora domani mattina richiamo la trattoria e glielo dico."
+      },
+      "items": [
+        {
+          "id": "G-EXAM-B2.l1", "type": "choice", "conceptId": "B2-LIST-01", "difficulty": 2,
+          "instruction": "Listen and choose the correct answer.",
+          "prompt": "Why did Marco change the time of the booking?",
+          "options": [
+            "Because Mr Harris's plane only lands at six, so he moved it from 8:00 to 8:30.",
+            "Because the restaurant was full at eight.",
+            "Because Giulia can't arrive before nine.",
+            "Because the restaurant closes early on Thursdays."
+          ],
+          "answer": 0,
+          "explanation": "*Avevo prenotato per le otto, ma poi ho spostato alle otto e mezza, perché il suo volo atterra a Linate solo alle sei.*",
+          "errorType": "listening"
+        },
+        {
+          "id": "G-EXAM-B2.l2", "type": "choice", "conceptId": "B2-LIST-01", "difficulty": 2,
+          "instruction": "Listen and choose the correct answer.",
+          "prompt": "What did Giulia find out yesterday, and from whom?",
+          "options": [
+            "That the client is vegetarian, from his assistant.",
+            "That the client doesn't drink wine, from the director.",
+            "That the client is allergic to rice, from Marco.",
+            "That the client's flight is delayed, from the airline."
+          ],
+          "answer": 0,
+          "explanation": "*Ieri la sua assistente mi ha scritto che è vegetariano.*",
+          "errorType": "listening"
+        },
+        {
+          "id": "G-EXAM-B2.l3", "type": "choice", "conceptId": "B2-LIST-01", "difficulty": 3,
+          "instruction": "Listen and choose the correct answer.",
+          "prompt": "What is the problem with the traditional risotto alla milanese, and what is the solution?",
+          "options": [
+            "It is made with beef marrow and meat stock, so they'll ask the cook to make one with vegetable stock and no marrow.",
+            "It contains fish, so they'll order pasta instead.",
+            "It takes too long to cook, so they'll order it in advance.",
+            "It is too expensive, so they'll share one portion."
+          ],
+          "answer": 0,
+          "explanation": "*Il risotto tradizionale si fa con il midollo di manzo e il brodo di carne… possiamo chiedere al cuoco di preparargliene uno con il brodo vegetale e senza midollo.* Note *preparargliene* = *preparare + gli + ne*.",
+          "errorType": "listening"
+        },
+        {
+          "id": "G-EXAM-B2.l4", "type": "choice", "conceptId": "B2-LIST-01", "difficulty": 3,
+          "instruction": "Listen and choose the correct answer.",
+          "prompt": "Why does Giulia suggest a Franciacorta instead of a Barolo?",
+          "options": [
+            "Barolo comes from Piedmont, while the client wants to get to know Lombardy.",
+            "Barolo is too expensive for the company card.",
+            "The client prefers white wine.",
+            "The restaurant doesn't serve Barolo."
+          ],
+          "answer": 0,
+          "optionWhy": { "1": "Giulia actually says *il Barolo è ottimo*; the price is never mentioned." },
+          "explanation": "*Il Barolo è ottimo, ma è piemontese. Visto che il signor Harris vuole conoscere la Lombardia…* Franciacorta is a sparkling wine from the province of Brescia, in Lombardy.",
+          "errorType": "listening"
+        },
+        {
+          "id": "G-EXAM-B2.l5", "type": "choice", "conceptId": "B2-LIST-01", "difficulty": 3,
+          "instruction": "Listen and choose the correct answer.",
+          "prompt": "What will happen if the bill comes to more than 300 euros?",
+          "options": [
+            "Giulia will pay the difference and then claim it back.",
+            "Marco will ask the director to raise the limit.",
+            "Each person will pay for their own wine.",
+            "They will choose a cheaper restaurant."
+          ],
+          "answer": 0,
+          "explanation": "*Il resto lo metto io e poi me lo faccio rimborsare*: *farsi rimborsare* = to get reimbursed.",
+          "errorType": "listening"
+        }
+      ]
+    },
+    {
+      "kind": "grammar",
+      "title": "Grammatica",
+      "items": [
+        {
+          "id": "G-EXAM-B2.g1", "type": "cloze", "conceptId": "B2-SUBJ-01", "difficulty": 2,
+          "instruction": "Complete with the correct form of the verb in brackets.",
+          "prompt": "Non penso che questo investimento ___ (essere) adatto a un cliente prudente.",
+          "answers": ["sia"],
+          "focus": ["sia"],
+          "traps": [
+            { "match": "è", "errorType": "indicative-for-subjunctive", "why": "*Non penso che* expresses an opinion, so it takes the subjunctive: *sia*." },
+            { "match": "fosse", "errorType": "tense-sequence", "why": "The main verb *penso* is present, so the subjunctive is present too: *sia*." }
+          ],
+          "explanation": "Verbs of opinion (*pensare, credere, ritenere*) + *che* take the subjunctive: *non penso che sia*.",
+          "errorType": "indicative-for-subjunctive",
+          "en": "I don't think this investment is suitable for a cautious client."
+        },
+        {
+          "id": "G-EXAM-B2.g2", "type": "cloze", "conceptId": "B2-SUBJ-04", "difficulty": 2,
+          "instruction": "Complete with the correct form of the verb in brackets.",
+          "prompt": "Benché quel ristorante di Firenze ___ (essere) molto caro, è sempre pieno.",
+          "answers": ["sia"],
+          "focus": ["sia"],
+          "traps": [
+            { "match": "è", "errorType": "indicative-for-subjunctive", "why": "*Benché* always takes the subjunctive: *benché sia*." }
+          ],
+          "explanation": "Concessive conjunctions (*benché, sebbene, nonostante*) need the subjunctive.",
+          "errorType": "indicative-for-subjunctive",
+          "en": "Although that restaurant in Florence is very expensive, it's always full."
+        },
+        {
+          "id": "G-EXAM-B2.g3", "type": "cloze", "conceptId": "B2-HYP-02", "difficulty": 3,
+          "instruction": "Complete with the correct form of the verb in brackets.",
+          "prompt": "Se (io) ___ (sapere) che lo sciopero dei treni era confermato, avrei preso la macchina.",
+          "answers": ["avessi saputo"],
+          "focus": ["avessi", "saputo"],
+          "traps": [
+            { "match": "avrei saputo", "errorType": "hypothetical", "why": "The conditional never goes after *se*. The if-clause needs the pluperfect subjunctive: *se avessi saputo*." },
+            { "match": "sapessi", "errorType": "tense-sequence", "why": "*Sapessi* is for a present hypothesis. This is about the past (*avrei preso*), so: *avessi saputo*." },
+            { "match": "sapevo", "errorType": "hypothetical", "why": "*Se sapevo* is a colloquial past hypothesis, but it doesn't combine with *avrei preso* in standard Italian. Use *se avessi saputo*." }
+          ],
+          "explanation": "Unreal past: *se* + congiuntivo trapassato, + condizionale passato (*avrei preso*).",
+          "errorType": "hypothetical",
+          "en": "If I'd known the train strike was confirmed, I'd have taken the car."
+        },
+        {
+          "id": "G-EXAM-B2.g4", "type": "transform", "conceptId": "B2-PRON-01", "difficulty": 3,
+          "instruction": "Rewrite the sentence, replacing *il report* and *al cliente* with pronouns.",
+          "prompt": "Ho mandato il report al cliente.",
+          "answers": ["Gliel'ho mandato", "Glielo ho mandato"],
+          "focus": ["gliel'ho", "glielo"],
+          "traps": [
+            { "match": ["Gli l'ho mandato", "Gli lo ho mandato"], "errorType": "pronoun", "why": "*Gli + lo* fuse into one word: *glielo*, which elides before *ho*: *gliel'ho*." },
+            { "match": ["Le l'ho mandato", "Glie l'ho mandato"], "errorType": "pronoun", "why": "The combined form is one word: *gliel'ho mandato*." },
+            { "match": ["Lo gli ho mandato", "L'ho mandato a lui"], "errorType": "pronoun-position", "why": "The indirect pronoun comes first and joins the direct one: *gliel'ho mandato*." }
+          ],
+          "explanation": "*Gli* (to him) + *lo* (it) = *glielo*; before *ho* it usually elides to *gliel'ho*. The participle agrees with *lo*: *mandato*.",
+          "errorType": "pronoun",
+          "en": "I sent it to him."
+        },
+        {
+          "id": "G-EXAM-B2.g5", "type": "cloze", "conceptId": "B2-REL-01", "difficulty": 3,
+          "instruction": "Complete with the correct relative pronoun.",
+          "prompt": "La banca per ___ lavoro ha aperto una nuova sede a Torino.",
+          "answers": ["(cui|la quale)"],
+          "focus": ["cui", "quale"],
+          "traps": [
+            { "match": "che", "errorType": "relative", "why": "After a preposition, *che* becomes *cui* (or *la quale*): *per cui*." },
+            { "match": "quale", "errorType": "relative", "why": "*Il/la quale* needs its article: *per la quale*." }
+          ],
+          "explanation": "Preposition + relative pronoun: *per cui* or, more formally, *per la quale*.",
+          "errorType": "relative",
+          "en": "The bank I work for has opened a new office in Turin."
+        },
+        {
+          "id": "G-EXAM-B2.g6", "type": "cloze", "conceptId": "B2-PAST-01", "difficulty": 3,
+          "instruction": "Complete with the correct past form of the verb in brackets.",
+          "prompt": "Mentre (io) ___ (guardare) la partita, è saltata la luce.",
+          "answers": ["(guardavo|stavo guardando)"],
+          "focus": ["guardavo", "stavo"],
+          "traps": [
+            { "match": "ho guardato", "errorType": "wrong-tense", "why": "The match was in progress when the power went: an ongoing background action takes the imperfect, *guardavo*." },
+            { "match": "avevo guardato", "errorType": "wrong-tense", "why": "The pluperfect would mean you had already finished watching. *Mentre* + action in progress = *guardavo*." }
+          ],
+          "explanation": "*Mentre* + imperfetto (or *stare* + gerund) for the action in progress; passato prossimo for the event that interrupts it.",
+          "errorType": "wrong-tense",
+          "en": "While I was watching the match, the power went off."
+        },
+        {
+          "id": "G-EXAM-B2.g7", "type": "cloze", "conceptId": "B2-FUT-01", "difficulty": 3,
+          "instruction": "Use the future to make a guess: 'he has probably left'.",
+          "prompt": "Marco non risponde al telefono: ___ (uscire) dall'ufficio da poco.",
+          "answers": ["sarà uscito"],
+          "focus": ["sarà", "uscito"],
+          "traps": [
+            { "match": "è uscito", "errorType": "wrong-tense", "why": "That states it as a fact. A guess about the past uses the futuro anteriore: *sarà uscito*." },
+            { "match": "avrà uscito", "errorType": "auxiliary", "why": "*Uscire* takes *essere*: *sarà uscito*." },
+            { "match": "uscirà", "errorType": "wrong-tense", "why": "*Uscirà* is about the future. A guess about something already done needs *sarà uscito*." }
+          ],
+          "explanation": "The futuro anteriore expresses a supposition about the past: *sarà uscito* = he has probably left.",
+          "errorType": "wrong-tense",
+          "en": "Marco isn't answering the phone: he must have just left the office."
+        },
+        {
+          "id": "G-EXAM-B2.g8", "type": "transform", "conceptId": "B2-PASS-01", "difficulty": 3,
+          "instruction": "Rewrite the sentence in the passive, starting with *Il bilancio*.",
+          "prompt": "Il consiglio di amministrazione ha approvato il bilancio.",
+          "answers": ["Il bilancio è stato approvato dal consiglio (di |d')amministrazione"],
+          "focus": ["è", "stato", "approvato", "dal"],
+          "traps": [
+            { "match": "Il bilancio è venuto approvato dal consiglio (di |d')amministrazione", "errorType": "passive", "why": "*Venire* can't form the passive in compound tenses. Use *essere*: *è stato approvato*." },
+            { "match": "Il bilancio è stato approvato da il consiglio (di |d')amministrazione", "errorType": "preposition", "why": "*Da + il* contracts to *dal*." },
+            { "match": "Il bilancio ha stato approvato dal consiglio (di |d')amministrazione", "errorType": "auxiliary", "why": "The passive uses *essere* throughout: *è stato approvato*." }
+          ],
+          "explanation": "Passato prossimo passive: *è stato* + participle agreeing with the subject; the agent is introduced by *da* (*dal consiglio*).",
+          "errorType": "passive",
+          "en": "The financial statements were approved by the board."
+        },
+        {
+          "id": "G-EXAM-B2.g9", "type": "cloze", "conceptId": "B2-SEQ-01", "difficulty": 4,
+          "instruction": "Complete with the correct form of the verb in brackets.",
+          "prompt": "Il mese scorso il cliente ci aveva assicurato che ___ (pagare) la fattura entro la fine di settembre, ma non l'ha ancora fatto.",
+          "answers": ["avrebbe pagato"],
+          "focus": ["avrebbe", "pagato"],
+          "traps": [
+            { "match": "pagherebbe", "errorType": "tense-sequence", "why": "English says 'he would pay', but Italian expresses the future in the past with the past conditional: *avrebbe pagato*." },
+            { "match": "pagherà", "errorType": "tense-sequence", "why": "The promise and the deadline are both in the past, so the future becomes *avrebbe pagato*." },
+            { "match": "pagasse", "errorType": "subjunctive-for-indicative", "why": "*Assicurare che* states a fact, so no subjunctive: *avrebbe pagato*." }
+          ],
+          "explanation": "Future in the past: after a past main verb, a later action takes the condizionale passato.",
+          "errorType": "tense-sequence",
+          "en": "Last month the client had assured us that he would pay the invoice by the end of September, but he still hasn't."
+        },
+        {
+          "id": "G-EXAM-B2.g10", "type": "translate", "conceptId": "B2-INF-03", "difficulty": 4,
+          "instruction": "Translate into Italian.",
+          "prompt": "I had my car repaired by the mechanic near the office.",
+          "answers": ["[Io ]Ho fatto riparare la [mia ](macchina|auto) dal meccanico vicino all'ufficio"],
+          "focus": ["fatto", "riparare"],
+          "traps": [
+            { "contains": ["avuto"], "errorType": "causative", "why": "'Have something done' is a calque in Italian. Use *fare* + infinitive: *ho fatto riparare*." },
+            { "contains": ["riparata"], "errorType": "causative", "why": "After *fare* the verb stays in the infinitive: *ho fatto riparare la macchina*." },
+            { "match": "Ho fatto la (macchina|auto) riparare dal meccanico vicino all'ufficio", "errorType": "word-order", "why": "*Fare* and the infinitive stay together; the object follows: *ho fatto riparare la macchina*." }
+          ],
+          "explanation": "Causative: *fare* + infinitive + object, with the person who does the job introduced by *da*.",
+          "errorType": "causative"
+        }
+      ]
+    },
+    {
+      "kind": "vocabulary",
+      "title": "Lessico",
+      "items": [
+        {
+          "id": "G-EXAM-B2.v1", "type": "choice", "conceptId": "B2-VOC-01", "difficulty": 2,
+          "instruction": "Choose the word that completes the sentence.",
+          "prompt": "Abbiamo discusso per ore, ma ___ abbiamo accettato l'offerta.",
+          "options": ["alla fine", "eventualmente", "attualmente", "possibilmente"],
+          "answer": 0,
+          "optionWhy": {
+            "1": "False friend: *eventualmente* means 'if need be / possibly', not 'eventually'.",
+            "2": "False friend: *attualmente* means 'currently', not 'actually'.",
+            "3": "*Possibilmente* means 'if possible'."
+          },
+          "explanation": "'Eventually / in the end' = *alla fine* (or *infine*).",
+          "errorType": "false-friend",
+          "en": "We argued for hours, but in the end we accepted the offer."
+        },
+        {
+          "id": "G-EXAM-B2.v2", "type": "cloze", "conceptId": "B2-VOC-02", "difficulty": 2,
+          "instruction": "Complete with the right verb (infinitive).",
+          "prompt": "Prima del consiglio di lunedì, l'amministratore delegato deve ___ una decisione difficile.",
+          "answers": ["prendere"],
+          "focus": ["prendere"],
+          "traps": [
+            { "match": "fare", "errorType": "collocation", "why": "'Make a decision' is *prendere una decisione* in Italian." }
+          ],
+          "explanation": "Collocation: *prendere una decisione*.",
+          "errorType": "collocation",
+          "en": "Before Monday's board meeting, the CEO has to make a difficult decision."
+        },
+        {
+          "id": "G-EXAM-B2.v3", "type": "cloze", "conceptId": "B2-IDIOM-01", "difficulty": 3,
+          "instruction": "Complete the idiom (two words).",
+          "prompt": "A Cortina, nella settimana di Natale, un albergo costa ___ della testa.",
+          "answers": ["un occhio"],
+          "focus": ["occhio"],
+          "traps": [
+            { "match": ["un braccio", "una gamba"], "errorType": "idiom", "why": "English says 'an arm and a leg'; Italian says *costare un occhio della testa*." }
+          ],
+          "explanation": "*Costare un occhio della testa* = to cost a fortune.",
+          "errorType": "idiom",
+          "en": "In Cortina, over Christmas week, a hotel costs an arm and a leg."
+        },
+        {
+          "id": "G-EXAM-B2.v4", "type": "choice", "conceptId": "B2-VOC-06", "difficulty": 3,
+          "instruction": "Choose the correct expression.",
+          "prompt": "Ho ___ una prima bozza del contratto: domani la rivediamo insieme.",
+          "options": ["buttato giù", "tirato su", "portato via", "venuto fuori"],
+          "answer": 0,
+          "optionWhy": {
+            "1": "*Tirare su* = to lift, to raise (or to cheer someone up).",
+            "2": "*Portare via* = to take away.",
+            "3": "*Venire fuori* = to come out, to emerge; it takes *essere* and no object."
+          },
+          "explanation": "*Buttare giù una bozza* = to jot down / rough out a first draft.",
+          "errorType": "vocabulary",
+          "en": "I've roughed out a first draft of the contract: we'll go through it together tomorrow."
+        },
+        {
+          "id": "G-EXAM-B2.v5", "type": "choice", "conceptId": "B2-REG-01", "difficulty": 3,
+          "instruction": "You're writing a formal email to Dott. Bianchi (Lei). Choose the correct closing line.",
+          "prompt": "Resto in attesa di un ___ riscontro.",
+          "options": ["Suo cortese", "tuo cortese", "Lei cortese", "Sua cortese"],
+          "answer": 0,
+          "optionWhy": {
+            "1": "*Tuo* is informal.",
+            "2": "*Lei* is a pronoun, not a possessive.",
+            "3": "The possessive agrees with *riscontro* (masculine): *Suo*."
+          },
+          "explanation": "Formal possessive *Suo*, agreeing with *riscontro* (masculine): *Resto in attesa di un Suo cortese riscontro*.",
+          "errorType": "register"
+        },
+        {
+          "id": "G-EXAM-B2.v6", "type": "cloze", "conceptId": "B2-VOC-04", "difficulty": 3,
+          "instruction": "Complete with the opposite of *prevedibile*, formed with a prefix.",
+          "prompt": "Quest'anno l'andamento dei mercati è stato davvero ___.",
+          "answers": ["imprevedibile"],
+          "focus": ["imprevedibile"],
+          "traps": [
+            { "match": "inprevedibile", "errorType": "word-formation", "why": "The negative prefix *in-* becomes *im-* before *p* and *b*: *imprevedibile*." },
+            { "match": "non prevedibile", "errorType": "word-formation", "why": "Understandable, but the task asks for a prefix: *imprevedibile*." },
+            { "match": "disprevedibile", "errorType": "word-formation", "why": "*Dis-* doesn't combine with *prevedibile*. The negative prefix is *in-*, which becomes *im-* before *p*." }
+          ],
+          "explanation": "*In-* + *prevedibile* → *imprevedibile* (*n* becomes *m* before *p*, *b*, *m*).",
+          "errorType": "word-formation",
+          "en": "This year the markets have been really unpredictable."
+        }
+      ]
+    },
+    {
+      "kind": "writing",
+      "title": "Produzione scritta",
+      "items": [
+        {
+          "id": "G-EXAM-B2.w1", "type": "free", "conceptId": "B2-WRIT-01", "difficulty": 4,
+          "instruction": "Write a formal complaint email in Italian (100–150 words).",
+          "prompt": "You stayed three nights at a hotel in Florence for a business trip. When booking, you had asked for a quiet room with a desk, but you got a noisy room on the street, the Wi-Fi hardly worked and reception did nothing. Write to the manager: explain what happened, say what you had expected, and ask for a partial refund.",
+          "minWords": 100,
+          "maxWords": 150,
+          "rubric": [
+            { "label": "Formal opening (Gentile / Egregio / Spettabile…)", "anyOf": ["\\b(gentile|egregi[oa]|spettabile|spett)\\b"], "min": 1, "errorType": "register", "hint": "Open with *Gentile Direttore,* or *Egregio Direttore,*" },
+            { "label": "Addresses the reader as Lei (Le, La, Suo…)", "anyOf": ["\\b(Le|La)\\s+(scrivo|chiedo|ringrazio|segnalo|prego|informo|comunico)\\b", "chieder(Le|La)\\b", "\\bSu[oaie]\\b"], "min": 1, "errorType": "register", "hint": "*Le scrivo in merito a… / La ringrazio / un Suo riscontro*" },
+            { "label": "Says what happened (passato prossimo)", "anyOf": ["\\b(ho|ha|abbiamo|hanno)\\s+(\\S+\\s+)?\\S+(ato|uto|ito)\\b", "\\b(è|sono)\\s+(stat[oaie]\\s+)?\\S+(at[oaie]|ut[oaie]|it[oaie])\\b"], "min": 1, "errorType": "wrong-tense", "hint": "*Ho segnalato il problema… / Mi è stata assegnata…*" },
+            { "label": "Describes the situation (imperfetto)", "anyOf": ["\\b(era|erano|c'era|c'erano)\\b", "\\b\\S+(avo|ava|avano|evo|eva|evano|ivo|iva|ivano)\\b"], "min": 1, "errorType": "wrong-tense", "hint": "*La camera dava sulla strada… / Internet non funzionava…*" },
+            { "label": "Uses the subjunctive (mi aspettavo che…, nonostante…)", "anyOf": ["\\b(che|benché|sebbene|nonostante|affinché|purché)\\s+(\\S+\\s+){0,5}?(sia|siano|fosse|fossero|abbia|abbiano|avesse|avessero|possa|possano|venga|vengano|faccia|facciano|dia|diano|\\S+(assi|asse|assero|essi|esse|essero|issi|isse|issero))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "hint": "*Mi aspettavo che il personale mi offrisse un'altra camera.*" },
+            { "label": "Makes a polite request (conditional)", "anyOf": ["\\b(vorrei|potrebbe|potreste|sarebbe|gradirei|chiederei)\\b"], "min": 1, "errorType": "conditional-form", "hint": "*Vorrei chiederLe un rimborso parziale.*" },
+            { "label": "Formal closing", "anyOf": ["cordiali saluti", "distinti saluti", "in attesa di un", "resto in attesa", "rimango in attesa"], "min": 1, "errorType": "register", "hint": "*Resto in attesa di un Suo cortese riscontro. Cordiali saluti*" }
+          ],
+          "model": "Gentile Direttore,\nLe scrivo in merito al mio soggiorno presso il Vostro albergo dal 12 al 15 ottobre, in occasione di un viaggio di lavoro. Al momento della prenotazione avevo chiesto una camera silenziosa con una scrivania, perché dovevo preparare una presentazione per un cliente. Purtroppo mi è stata assegnata una camera che dava sulla strada, molto rumorosa e senza scrivania. Inoltre la connessione internet non funzionava quasi mai, nonostante sul Vostro sito venga descritta come veloce.\nHo segnalato il problema alla reception già la prima sera, ma nessuno è intervenuto. Mi aspettavo che il personale mi offrisse almeno un'altra camera.\nPer questi motivi vorrei chiederLe un rimborso parziale del soggiorno. La ringrazio per l'attenzione e resto in attesa di un Suo cortese riscontro.\nCordiali saluti,\nJames Carter",
+          "explanation": "A good complaint states its purpose in the first line, narrates with passato prossimo (events) and imperfetto (background), keeps Lei throughout and ends with a clear, polite request.",
+          "errorType": "writing"
+        }
+      ]
+    },
+    {
+      "kind": "speaking",
+      "title": "Produzione orale",
+      "items": [
+        {
+          "id": "G-EXAM-B2.s1", "type": "speak", "conceptId": "B2-SPEAK-01", "difficulty": 3,
+          "instruction": "Say it in Italian (or type it).",
+          "prompt": "A colleague asks about your weekend. Say that last Sunday you went to the stadium with your brother, but it was raining.",
+          "answers": [
+            "(Domenica scorsa|Domenica) sono (andato|andata|stato|stata) allo stadio con mio fratello (ma|però) pioveva[ (a dirotto|tantissimo|molto)]",
+            "Sono (andato|andata|stato|stata) allo stadio con mio fratello (domenica scorsa|domenica) (ma|però) pioveva[ (a dirotto|tantissimo|molto)]"
+          ],
+          "focus": ["pioveva", "sono"],
+          "traps": [
+            { "contains": ["ho"], "errorType": "auxiliary", "why": "*Andare* takes *essere*: *sono andato/a*." },
+            { "contains": ["il"], "errorType": "article", "why": "No article with a singular family member: *con mio fratello*." },
+            { "contains": ["piovuto"], "errorType": "wrong-tense", "why": "The rain is background to the event, so the imperfect is the natural choice: *pioveva*." },
+            { "contains": ["andavo", "andavamo"], "errorType": "wrong-tense", "why": "A single completed event takes the passato prossimo: *sono andato/a*." }
+          ],
+          "explanation": "Passato prossimo for the event (*sono andato*), imperfetto for the circumstances (*pioveva*).",
+          "errorType": "wrong-tense"
+        },
+        {
+          "id": "G-EXAM-B2.s2", "type": "speak", "conceptId": "B2-COND-01", "difficulty": 3,
+          "instruction": "Say it in Italian (or type it), using the conditional to be polite.",
+          "prompt": "In a wine shop in Montalcino, ask politely if you could taste the Brunello before buying a bottle.",
+          "answers": [
+            "[Scusi ](Potrei|Sarebbe possibile|Si potrebbe) (assaggiare|provare|degustare) il Brunello prima di (comprare|acquistare|prendere) una bottiglia[ (per favore|per cortesia)]",
+            "[Scusi ](Potrei|Sarebbe possibile|Si potrebbe) (assaggiare|provare|degustare) il Brunello prima di (comprarne|acquistarne|prenderne) una[ (per favore|per cortesia)]"
+          ],
+          "focus": ["potrei", "sarebbe", "potrebbe"],
+          "traps": [
+            { "contains": ["posso", "è"], "errorType": "conditional-form", "why": "Correct, but more direct. The task asks for the conditional: *Potrei… / Sarebbe possibile…*" },
+            { "contains": ["comprando", "che"], "errorType": "implicit-form", "why": "With the same subject, 'before buying' is *prima di* + infinitive: *prima di comprare*." }
+          ],
+          "explanation": "*Potrei* / *Sarebbe possibile* + infinitive is the standard polite request; *prima di* + infinitive = before doing.",
+          "errorType": "conditional-form",
+          "interaction": true
+        },
+        {
+          "id": "G-EXAM-B2.s3", "type": "speak", "conceptId": "B2-HYP-01", "difficulty": 3,
+          "instruction": "Say it in Italian (or type it).",
+          "prompt": "A friend asks when to visit Sicily. Answer: 'If I were you, I'd go in May.'",
+          "answers": [
+            "[Se ]fossi in te (ci andrei|andrei) (a|in) maggio",
+            "(Ci andrei|Andrei) (a|in) maggio se fossi in te",
+            "[Io ]al posto tuo (ci andrei|andrei) (a|in) maggio"
+          ],
+          "focus": ["fossi", "andrei"],
+          "traps": [
+            { "contains": ["sarei"], "errorType": "hypothetical", "why": "Never the conditional after *se*: *se fossi in te*." },
+            { "contains": ["ero"], "errorType": "hypothetical", "why": "An unreal present needs the imperfect subjunctive: *se fossi in te*." },
+            { "contains": ["andrò", "vado"], "errorType": "conditional-form", "why": "The result of an unreal condition takes the conditional: *ci andrei*." }
+          ],
+          "explanation": "*Se fossi in te* (or *al posto tuo*) + conditional is the standard way to give advice.",
+          "errorType": "hypothetical",
+          "interaction": true
+        }
+      ]
+    }
+  ]
+}

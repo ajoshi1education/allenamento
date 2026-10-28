@@ -1,0 +1,11 @@
+{
+  "id": "G-DUEL-01",
+  "type": "duel",
+  "title": "Sfida delle preposizioni",
+  "subtitle": "Race Matteo through prepositions: a or di, a or in, da or per. First to the finish wins.",
+  "conceptIds": ["B2-PREP-01", "B2-PREP-02", "C1-PREP-03"],
+  "difficulty": 3,
+  "minutes": 5,
+  "seconds": 120,
+  "rival": { "name": "Matteo", "avatar": "🧑‍🎓" }
+}

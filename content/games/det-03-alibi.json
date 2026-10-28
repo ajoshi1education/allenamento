@@ -1,0 +1,73 @@
+{
+  "id": "G-DET-03",
+  "type": "detective",
+  "title": "L'alibi del cuoco",
+  "subtitle": "A priceless white truffle has vanished from a Roman restaurant's cold room. Every suspect talks in ifs and woulds: get them right and the clues sharpen.",
+  "conceptIds": ["B2-HYP-01", "B2-HYP-02", "C1-HYP-03", "B2-COND-02"],
+  "difficulty": 3,
+  "minutes": 9,
+  "characters": {
+    "commissario": { "name": "Lei (Commissaria/o)", "role": "you" },
+    "galli": { "name": "Signora Galli", "role": "proprietaria del ristorante", "avatar": "👩‍💼" },
+    "nello": { "name": "Nello Ferri", "role": "lo chef", "avatar": "👨‍🍳" },
+    "federica": { "name": "Federica Neri", "role": "cameriera", "avatar": "🍽️" },
+    "dario": { "name": "Dario Russo", "role": "aiuto cuoco", "avatar": "🔪" }
+  },
+  "intro": "Trattoria «La Lanterna», Trastevere, domenica mattina. Sabato sera, durante il servizio, un tartufo bianco d'Alba è sparito dalla cella frigorifera. La chiave della cella è appesa in cucina: chiunque lavori lì può prenderla. Tutti accusano lo chef, Nello… ma Nello giura di avere un alibi.",
+  "scenes": [
+    {
+      "speaker": "galli",
+      "line": "Commissario, è un disastro. Secondo il personale, il tartufo ___ (sparire) tra le dieci e le dieci e mezza.",
+      "item": { "id": "G-DET-03.s1", "conceptId": "B2-COND-02", "type": "cloze", "difficulty": 2, "instruction": "Complete the owner's line. She's reporting what the staff say (unconfirmed).", "prompt": "Secondo il personale, il tartufo ___ (sparire) tra le dieci e le dieci e mezza.", "answers": ["sarebbe sparito"], "focus": ["sarebbe", "sparito"], "errorType": "conditional-form", "traps": [{ "match": "avrebbe sparito", "errorType": "auxiliary", "why": "*Sparire* takes *essere*: *sarebbe sparito*." }, { "match": "sparirebbe", "errorType": "wrong-tense", "why": "The disappearance is in the past: condizionale **passato**, *sarebbe sparito*." }, { "match": "è sparito", "errorType": "wrong-mood", "why": "*Secondo il personale* = second-hand, unconfirmed information: *sarebbe sparito*." }], "explanation": "Hearsay about a past event → **sarebbe sparito**." },
+      "clue": "Il tartufo è sparito tra le 22:00 e le 22:30. La signora Galli non ha detto a nessuno quanto pesava: lo sanno solo lei e il fornitore. E non era assicurato: lei ci perde e basta.",
+      "clueBlurred": "La proprietaria parla di un orario… e di qualcosa che nessuno sa. Ma cosa?"
+    },
+    {
+      "speaker": "nello",
+      "line": "Io? Se ___ (essere) in cucina, avrei visto il ladro con i miei occhi! Ero in sala con il critico del Gambero Rosso, dalle dieci alle dieci e quaranta.",
+      "item": { "id": "G-DET-03.s2", "conceptId": "B2-HYP-02", "type": "cloze", "difficulty": 2, "instruction": "Complete the chef's line.", "prompt": "Se ___ (essere) in cucina, avrei visto il ladro con i miei occhi!", "answers": ["fossi stato"], "focus": ["fossi", "stato"], "errorType": "hypothetical", "traps": [{ "match": "sarei stato", "errorType": "hypothetical", "why": "Never the conditional after *se*: *se fossi stato*." }, { "match": "fossi", "errorType": "hypothetical", "why": "The condition is in the past (Saturday night): compound form *fossi stato*." }, { "match": "avessi stato", "errorType": "auxiliary", "why": "*Essere* takes *essere* as its auxiliary: *fossi stato*." }], "explanation": "Unreal past: **se fossi stato** → *avrei visto*." },
+      "clue": "Una foto sul telefono del critico, scattata alle 22:20, mostra Nello seduto al suo tavolo, con il bicchiere in mano.",
+      "clueBlurred": "Nello parla di un critico… ma ha qualche prova?"
+    },
+    {
+      "speaker": "federica",
+      "line": "Guardi, se alle dieci e un quarto qualcuno fosse stato ai fornelli, oggi non ___ (avere) tre recensioni negative su internet! I piatti del tavolo 7 aspettavano lì, freddi.",
+      "item": { "id": "G-DET-03.s3", "conceptId": "C1-HYP-03", "type": "cloze", "difficulty": 3, "instruction": "Complete the waitress's line (past condition, present result).", "prompt": "Se alle dieci e un quarto qualcuno fosse stato ai fornelli, oggi non ___ (avere, noi) tre recensioni negative su internet!", "answers": ["avremmo"], "focus": ["avremmo"], "errorType": "hypothetical", "traps": [{ "match": "avremmo avuto", "errorType": "hypothetical", "why": "*Oggi*: the bad reviews are a present result → condizionale presente *avremmo*." }, { "match": "avessimo", "errorType": "hypothetical", "why": "The main clause takes the conditional: *avremmo*." }, { "match": "avremo", "errorType": "verb-form", "why": "One *m* = future. Conditional: *avremmo*." }], "explanation": "Mixed conditional: past condition (*fosse stato*) → present result (**avremmo**)." },
+      "clue": "Alle 22:15 la cucina era vuota: nessuno ai fornelli. I clienti del tavolo 7 confermano che Federica non si è mai allontanata dalla sala per più di un minuto.",
+      "clueBlurred": "Federica parla della cucina alle 22:15… c'era qualcuno o no?"
+    },
+    {
+      "speaker": "dario",
+      "line": "Commissario, se uscissi dalla cucina durante il servizio, lo chef mi ___ (licenziare) in tronco. Io non mi muovo mai dai fornelli, mai!",
+      "item": { "id": "G-DET-03.s4", "conceptId": "B2-HYP-01", "type": "cloze", "difficulty": 2, "instruction": "Complete the sous-chef's line.", "prompt": "Se uscissi dalla cucina durante il servizio, lo chef mi ___ (licenziare) in tronco.", "answers": ["licenzierebbe"], "focus": ["licenzierebbe"], "errorType": "hypothetical", "traps": [{ "match": "licenziasse", "errorType": "hypothetical", "why": "The subjunctive is in the *se*-clause (*uscissi*); the main clause needs the conditional: *licenzierebbe*." }, { "match": "licenzierà", "errorType": "hypothetical", "why": "*Se uscissi* (imaginary) pairs with the conditional: *licenzierebbe*." }, { "match": "licenziarebbe", "errorType": "verb-form", "why": "-are verbs: *a* → *e*: *licenzierebbe*." }], "explanation": "Type 2: *se uscissi* → **licenzierebbe**." },
+      "clue": "Dario giura di non essersi mai allontanato dai fornelli. Ma secondo Federica, alle 22:15 la cucina era vuota: qualcuno mente.",
+      "clueBlurred": "Dario dice di essere rimasto… dove, esattamente?"
+    },
+    {
+      "speaker": "commissario",
+      "line": "You look Dario in the eye and say (formally): \"If you had stayed at the stoves, the orders wouldn't have been late.\"",
+      "item": { "id": "G-DET-03.s5", "conceptId": "B2-HYP-02", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian, using formal Lei.", "prompt": "If you had stayed at the stoves, the orders wouldn't have been late.", "answers": ["Se [Lei] fosse (rimasto|restato) ai fornelli[,] gli ordini non sarebbero stati in ritardo", "Se [Lei] fosse (rimasto|restato) ai fornelli[,] le (ordinazioni|comande) non sarebbero state in ritardo"], "focus": ["fosse", "sarebbero"], "errorType": "hypothetical", "traps": [{ "contains": ["sarebbe"], "errorType": "hypothetical", "why": "*Se Lei sarebbe rimasto*: never the conditional after *se*. Use *fosse rimasto*." }, { "contains": ["avesse"], "errorType": "auxiliary", "why": "*Rimanere / restare* take *essere*: *fosse rimasto*." }, { "contains": ["fossi", "saresti"], "errorType": "register", "why": "A police officer uses formal *Lei* with a suspect: *fosse rimasto*." }], "explanation": "Unreal past with *Lei*: **Se fosse rimasto…, non sarebbero stati in ritardo**." },
+      "clue": "Dario impallidisce. Sotto le sue scarpe c'è terra fresca del cortile, proprio dove si trova l'uscita di servizio.",
+      "clueBlurred": "Dario sembra a disagio, ma non dice niente."
+    },
+    {
+      "speaker": "dario",
+      "line": "Va bene, va bene, sono uscito cinque minuti a fumare! Ma se avessi rubato io un tartufo di due chili, adesso ___ (essere) in Costa Azzurra, non qui a lavare pentole!",
+      "item": { "id": "G-DET-03.s6", "conceptId": "C1-HYP-03", "type": "cloze", "difficulty": 3, "instruction": "Complete Dario's line (past condition, present result).", "prompt": "Se avessi rubato io un tartufo di due chili, adesso ___ (essere) in Costa Azzurra, non qui a lavare pentole!", "answers": ["sarei"], "focus": ["sarei"], "errorType": "hypothetical", "traps": [{ "match": "sarei stato", "errorType": "hypothetical", "why": "*Adesso*: the result is in the present → *sarei*." }, { "match": "fossi", "errorType": "hypothetical", "why": "Main clause → conditional: *sarei*." }, { "match": "ero", "errorType": "hypothetical", "why": "The colloquial imperfect only pairs with an imperfect *se*-clause (*se lo rubavo…*). After *avessi rubato*, use *sarei*." }], "explanation": "Mixed conditional: *avessi rubato* (past) → **sarei** (now)." },
+      "clue": "Nessuno ha mai detto a Dario quanto pesava il tartufo. Come fa a sapere che era di due chili?",
+      "clueBlurred": "Dario si difende… ma ha detto qualcosa di strano. Cosa?"
+    }
+  ],
+  "accusation": {
+    "question": "Chi ha rubato il tartufo?",
+    "options": [
+      { "id": "nello", "label": "Nello, lo chef" },
+      { "id": "federica", "label": "Federica, la cameriera" },
+      { "id": "galli", "label": "La signora Galli, la proprietaria" },
+      { "id": "dario", "label": "Dario, l'aiuto cuoco" }
+    ],
+    "answer": "dario",
+    "solved": "Esatto! Nello era in sala (c'è la foto delle 22:20), Federica non ha mai lasciato i clienti e la signora Galli non ci guadagnava niente. Dario ha mentito sui fornelli, aveva la terra del cortile sotto le scarpe e conosceva il peso del tartufo, che nessuno gli aveva detto. Ha confessato: l'aveva nascosto nel bagagliaio della sua auto, parcheggiata accanto all'uscita di servizio.",
+    "wrong": "Non regge: rileggi gli indizi. Chi ha mentito su dove si trovava, e chi sapeva una cosa che nessuno gli aveva detto?"
+  }
+}

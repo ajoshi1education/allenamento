@@ -1,0 +1,202 @@
+{
+  "id": "CV-39",
+  "title": "Al bar per la partita",
+  "subtitle": "Watching the Rome derby with a friend: predictions with the future, se vince… + future, football vocabulary.",
+  "level": "B2",
+  "theme": "Cultura e tempo libero",
+  "conceptIds": [
+    "B2-FUT-01",
+    "B2-HYP-01",
+    "B2-SPEAK-01",
+    "B2-CONN-01"
+  ],
+  "tutor": {
+    "name": "Chiara",
+    "avatar": "👩",
+    "gender": "female",
+    "register": "informal"
+  },
+  "setting": "You're in a crowded bar in Testaccio, Rome, with your friend Chiara, a lifelong Roma fan, to watch the derby against Lazio on the big screen.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Eccoci, giusto in tempo per il fischio d'inizio! Stasera c'è il derby della Capitale, Roma-Lazio, e l'Olimpico è pieno. Chi vincerà secondo te?",
+      "en": "Here we are, just in time for kick-off! Tonight it's the Rome derby, Roma v Lazio, and the Olimpico is packed. Who do you think will win?",
+      "task": "Predict the result with the future (vincerà, finirà…) and give a reason.",
+      "hint": "Secondo me vincerà… perché…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Predicts with the future",
+            "anyOf": [
+              "\\b\\w+(rò|rai|rà|remo|rete|ranno)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*Vincerà la Roma, finirà due a uno…*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti|dal momento che|in quanto|grazie a|grazie al|grazie alla|grazie ai)\\b",
+              "\\b(secondo me|per me)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché quest'anno…*"
+          }
+        ]
+      },
+      "model": "Secondo me vincerà la Roma, perché quest'anno ha un centrocampo più solido. Finirà due a uno.",
+      "followOk": "Speriamo! Io però dico pareggio: i derby sono sempre partite bloccate, piene di tensione.",
+      "followMiss": "Io invece dico che finirà in pareggio, perché nei derby nessuno vuole rischiare. E tu, chi vedi favorito?"
+    },
+    {
+      "id": "t2",
+      "say": "Sai che stasera c'è in ballo un posto in Champions League? Che cosa succede se vince la Lazio? E se vince la Roma?",
+      "en": "Did you know there's a Champions League place at stake tonight? What happens if Lazio win? And if Roma win?",
+      "task": "Describe the consequences with a real hypothetical: se + present, then the future.",
+      "hint": "Se vince la Lazio, … andrà…; se vince la Roma, …",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "se + present (se vince, se perde…)",
+            "anyOf": [
+              "\\bse\\s+(\\p{L}+\\s+){0,3}?(vince|vincono|perde|perdono|pareggia|pareggiano|segna|segnano|va|vanno|finisce)\\b"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-HYP-01",
+            "hint": "*Se **vince** la Lazio, …*"
+          },
+          {
+            "label": "Consequence in the future",
+            "anyOf": [
+              "\\b\\w+(rò|rai|rà|remo|rete|ranno)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*…**andrà** in Champions, i tifosi **festeggeranno**…*"
+          }
+        ]
+      },
+      "model": "Se vince la Lazio, salirà al quarto posto e i tifosi della Roma non dormiranno per una settimana.",
+      "followOk": "Esatto, e il lunedì in ufficio sarà un inferno di sfottò. A Roma il derby dura sette giorni!",
+      "followMiss": "Facile: se vince la Lazio, andrà in Champions, e se vince la Roma, i romanisti festeggeranno fino a domani."
+    },
+    {
+      "id": "t3",
+      "say": "Oddio, hai visto? L'arbitro ha fischiato un rigore per la Lazio, ma il VAR lo sta rivedendo. Secondo te c'era?",
+      "en": "Oh God, did you see? The referee has given Lazio a penalty, but VAR is checking it. Do you think it was a foul?",
+      "task": "Give your verdict on the penalty using at least two football words (fallo, rigore, arbitro, difensore, area…).",
+      "hint": "Secondo me non c'era rigore, perché il difensore…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Football vocabulary (two words)",
+            "anyOf": [
+              "\\b(fallo|rigore|arbitro|fuorigioco|ammonizione|ammonito|cartellino|area|difensore|attaccante|portiere|var|pallone|palla|gamba|tuffo|simulazione|espulsione|espulso)\\b"
+            ],
+            "min": 2,
+            "errorType": "vocabulary",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*il **difensore** prende il **pallone**, l'**arbitro**…*"
+          },
+          {
+            "label": "Gives an opinion",
+            "anyOf": [
+              "\\b(secondo me|per me|a mio parere|sono sicur[oa]|non c['’]era|c['’]era)\\b",
+              "\\b(penso|credo|mi sembra|mi pare)\\s+che\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*Secondo me…*"
+          }
+        ]
+      },
+      "model": "Secondo me non c'era rigore: il difensore prende prima il pallone, e l'arbitro dovrebbe cambiare idea.",
+      "followOk": "Speriamo che tu abbia ragione! Ecco, l'arbitro va al monitor… Rigore annullato! Che sollievo.",
+      "followMiss": "Mah, secondo me il fallo c'era: il difensore tocca la gamba dell'attaccante in area. Vediamo cosa decide l'arbitro."
+    },
+    {
+      "id": "t4",
+      "say": "Lo sai che la parola tifoso viene dal tifo, la malattia? Perché il tifoso ha la febbre per la sua squadra! Tu per chi tifi, e da quando?",
+      "en": "Did you know that the word tifoso comes from tifo, typhus, the illness? Because a fan has a fever for his team! Who do you support, and since when?",
+      "task": "Say which team you support and since when, with tifare per + da (tifo per… da quando…).",
+      "hint": "Tifo per… da quando ero…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          {
+            "label": "tifare per / essere tifoso",
+            "anyOf": [
+              "\\btifo\\s+(per\\s+)?\\p{L}+",
+              "\\bsono\\s+(un|una)\\s+tifos[oa]\\b",
+              "\\btifos[oa]\\s+(del|della|dell['’]|dei|di)\\b"
+            ],
+            "min": 1,
+            "errorType": "vocabulary",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*Tifo **per** il Liverpool…*"
+          },
+          {
+            "label": "Says since when with da",
+            "anyOf": [
+              "\\bda\\s+(quando|sempre|anni|piccol[oa]|bambin[oa]|ragazz[oa]|tanto|\\d+|molti|due|tre|dieci|vent)"
+            ],
+            "min": 1,
+            "errorType": "preposition",
+            "conceptId": "B2-PREP-02",
+            "hint": "*…**da** quando ero piccolo/a, **da** sempre*"
+          }
+        ]
+      },
+      "model": "Tifo per l'Arsenal da quando ero bambino: mio padre mi portava allo stadio quasi ogni domenica.",
+      "followOk": "Allora il tifo ce l'hai nel sangue! Io tifo Roma da sempre: è una malattia di famiglia, appunto.",
+      "followMiss": "Io tifo per la Roma da quando ero piccola: mio nonno mi portava all'Olimpico. E tu per chi tifi?"
+    },
+    {
+      "id": "t5",
+      "say": "Ultimi minuti e siamo ancora uno a uno. Se finisce così, che facciamo dopo? Andiamo a mangiare qualcosa?",
+      "en": "Final minutes and it's still one all. If it ends like this, what shall we do afterwards? Shall we go and get something to eat?",
+      "task": "Make a plan with se + present and the future (se finisce così, andremo…).",
+      "hint": "Se finisce in pareggio, andremo…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "se + present",
+            "anyOf": [
+              "\\bse\\s+(\\p{L}+\\s+){0,3}?(vince|vincono|perde|perdono|pareggia|pareggiano|segna|segnano|finisce|finiscono|va|vanno)\\b"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-HYP-01",
+            "hint": "*Se **finisce** così, …*"
+          },
+          {
+            "label": "Plan in the future",
+            "anyOf": [
+              "\\b\\w+(rò|rai|rà|remo|rete|ranno)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-FUT-01",
+            "hint": "*…**andremo** a mangiare una pizza*"
+          }
+        ]
+      },
+      "model": "Se finisce in pareggio, andremo a mangiare una pizza qui vicino, così potremo commentare la partita con calma.",
+      "followOk": "Affare fatto! E se la Roma segna all'ultimo minuto, offro io.",
+      "followMiss": "Dai, se finisce così andremo a mangiare una pizza, e se segna la Roma offro io!"
+    }
+  ],
+  "closing": "Che partita! Alla fine un pareggio giusto. Andiamo, la pizza ci aspetta."
+}

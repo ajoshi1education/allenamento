@@ -1,0 +1,114 @@
+{
+  "id": "CV-15",
+  "title": "Un invito a cena",
+  "subtitle": "Accepting and declining invitations politely: mi farebbe piacere, excuses, conditional, magari un'altra volta.",
+  "level": "B2",
+  "theme": "Vita quotidiana",
+  "conceptIds": ["B2-COND-01", "B2-INT-01", "B2-FUT-01", "B2-SUBJ-01"],
+  "tutor": { "name": "Chiara", "avatar": "👩", "gender": "female", "register": "informal" },
+  "setting": "Your friend Chiara calls you on Wednesday evening. She's planning a dinner party at her flat in Padua.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Ciao! Senti, sabato sera faccio una cena a casa mia con un po' di amici. Ti va di venire?",
+      "en": "Hi! Listen, on Saturday evening I'm having a dinner at my place with a few friends. Do you fancy coming?",
+      "task": "React warmly with 'mi farebbe piacere' or 'mi piacerebbe', but say you need to check first.",
+      "hint": "Che bello, mi farebbe davvero piacere! Però devo controllare…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Warm conditional (mi farebbe piacere…)", "anyOf": ["\\b(mi farebbe|mi piacerebbe|verrei|ci verrei|sarebbe bello|sarebbe bellissimo)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Mi farebbe molto piacere!*" },
+          { "label": "Says you need to check", "anyOf": ["\\b(devo controllare|dovrei controllare|controllo|non sono sicuro|non sono sicura|non so se|ti faccio sapere|ti so dire|ti dico|verifico|devo vedere|vedo)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-INT-01", "hint": "*…devo controllare, ti faccio sapere.*" }
+        ]
+      },
+      "model": "Che bello, mi farebbe davvero piacere! Però devo controllare se sabato sono libero, ti faccio sapere entro stasera.",
+      "followOk": "Certo, nessun problema, fammi sapere tu.",
+      "followMiss": "Certo! Mi farebbe tanto piacere se venissi, ma controlla pure e fammi sapere."
+    },
+    {
+      "id": "t2",
+      "say": "Ci saranno anche Marco e Silvia, quelli che hai conosciuto alla mia festa di compleanno. Te li ricordi?",
+      "en": "Marco and Silvia will be there too, the ones you met at my birthday party. Do you remember them?",
+      "task": "Say you remember them and offer to bring something: 'vuoi che porti…?' (congiuntivo) or 'posso portare…?'.",
+      "hint": "Certo che me li ricordo! Vuoi che porti…?",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Offers to bring something", "anyOf": ["\\b(vuoi che|preferisci che|è meglio che|ti va che)\\s+(\\p{L}+\\s+)?(porti|prepari|compri|faccia|cucini)\\b", "\\b(posso|potrei|devo|dovrei)\\s+(\\p{L}+\\s+)?(portare|preparare|comprare|cucinare|fare)\\b", "\\bporto\\s+(io|qualcosa|il|la|un|una|del|della|dei|delle)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Vuoi che porti il dolce?*" }
+        ]
+      },
+      "model": "Certo che me li ricordo! Vuoi che porti qualcosa, magari il dolce o una bottiglia di vino?",
+      "followOk": "Un dolce sarebbe perfetto! Ma prima dimmi se ci sei.",
+      "followMiss": "Ma sì che te li ricordi! Non serve che porti niente, ma se proprio vuoi, un dolce sarebbe perfetto."
+    },
+    {
+      "id": "t3",
+      "say": "Allora, hai controllato? Ci sei sabato sera?",
+      "en": "So, did you check? Are you free on Saturday evening?",
+      "task": "Decline politely: say you're sorry, give an excuse (ho già un impegno, ho promesso di…).",
+      "hint": "Purtroppo non posso, mi dispiace tantissimo: ho già…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Declines politely", "anyOf": ["\\b(purtroppo|mi dispiace|non posso|non riesco|non ce la faccio|peccato|scusami)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-INT-01", "hint": "*Purtroppo non posso, mi dispiace…*" },
+          { "label": "Gives an excuse", "anyOf": ["\\b(perché|ho già|ho un impegno|devo|visto che|dato che|siccome|ho promesso)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…ho già promesso a…*" }
+        ]
+      },
+      "model": "Purtroppo non posso, mi dispiace tantissimo: ho già promesso a mia sorella di aiutarla con il trasloco.",
+      "followOk": "Ah, che peccato! Ma figurati, la famiglia prima di tutto.",
+      "followMiss": "Ah, quindi purtroppo non puoi perché hai già un impegno? Che peccato, ma figurati."
+    },
+    {
+      "id": "t4",
+      "say": "E domenica a pranzo? Potremmo fare una cosa più piccola, solo noi tre.",
+      "en": "What about Sunday lunch? We could do something smaller, just the three of us.",
+      "task": "Answer with a conditional (potrei, verrei…) and add a condition or a suggestion with magari or se.",
+      "hint": "Domenica potrei venire, magari…, se per te va bene.",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Uses the conditional", "anyOf": ["\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Potrei venire…*" },
+          { "label": "Adds magari / se…", "anyOf": ["\\b(magari|se|forse|però|purché)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "B2-INT-01", "hint": "*…magari un po' più tardi, se per te va bene.*" }
+        ]
+      },
+      "model": "Domenica potrei venire, ma magari un po' più tardi, verso l'una e mezza, se per te va bene.",
+      "followOk": "Perfetto, va benissimo! Allora ti aspetto domenica.",
+      "followMiss": "Quindi domenica potresti venire? Perfetto, magari verso l'una. Ti aspetto!"
+    },
+    {
+      "id": "t5",
+      "say": "Oddio, aspetta, scusami! Mi ha appena scritto mia madre: domenica arrivano i miei genitori. Mi dispiace tantissimo!",
+      "en": "Oh no, wait, sorry! My mum has just texted me: my parents are arriving on Sunday. I'm so sorry!",
+      "task": "Reassure her with 'magari un'altra volta' and suggest another time with the future.",
+      "hint": "Figurati, non preoccuparti! Magari un'altra volta: ci organizzeremo…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Suggests another time", "anyOf": ["\\b(un['’]?\\s?altra volta|un altro giorno|la prossima volta|prossima settimana|settimana prossima|più avanti|un['’]?\\s?altra sera)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "B2-INT-01", "hint": "*Magari un'altra volta.*" },
+          { "label": "Uses the future", "anyOf": ["\\b\\p{L}+(rò|rai|rà|remo|rete|ranno)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-FUT-01", "hint": "*Ci organizzeremo, ci vedremo…*" }
+        ]
+      },
+      "model": "Figurati, non preoccuparti! Magari un'altra volta: ci organizzeremo la settimana prossima.",
+      "followOk": "Grazie della comprensione! Allora, che ne dici di venerdì prossimo, da me?",
+      "followMiss": "Figurati, magari un'altra volta: ci organizzeremo meglio. Che ne dici di venerdì prossimo, da me?"
+    },
+    {
+      "id": "t6",
+      "say": "Venerdì sera alle otto, allora? Così finalmente riusciamo a vederci!",
+      "en": "Friday evening at eight, then? That way we finally manage to see each other!",
+      "task": "Accept warmly (volentieri, ci sto, mi farebbe piacere) and promise something with the future (porterò…).",
+      "hint": "Volentieri, ci sto! Questa volta porterò…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          { "label": "Accepts warmly", "anyOf": ["\\b(volentieri|ci sto|mi farebbe|mi fa piacere|con piacere|va benissimo|perfetto|certo|d['’]?\\s?accordo|affare fatto)\\b"], "min": 1, "errorType": "discourse-marker", "conceptId": "B2-INT-01", "hint": "*Volentieri, ci sto!*" },
+          { "label": "Uses the future", "anyOf": ["\\b\\p{L}+(rò|rai|rà|remo|rete|ranno)\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-FUT-01", "hint": "*Porterò io il dolce.*" }
+        ]
+      },
+      "model": "Venerdì va benissimo, ci sto! Questa volta porterò io il dolce, promesso.",
+      "followOk": "Che bello, non vedo l'ora! Lo segno subito in agenda.",
+      "followMiss": "Allora ci stai? Che bello! E venerdì il dolce lo porterai tu, eh!"
+    }
+  ],
+  "closing": "Perfetto, allora venerdì alle otto da me. Ciao, a presto!"
+}

@@ -1,0 +1,180 @@
+{
+  "id": "CV-44",
+  "title": "I cantautori",
+  "subtitle": "De André, Battisti and Dalla with a music-loving friend: imperfetto for memories, giving reasons, il cui / le cui.",
+  "level": "B2",
+  "theme": "Cultura e tempo libero",
+  "conceptIds": [
+    "B2-PAST-01",
+    "B2-REL-01",
+    "B2-CONN-01",
+    "B2-COND-01"
+  ],
+  "tutor": {
+    "name": "Marta",
+    "avatar": "👩‍🎤",
+    "gender": "female",
+    "register": "informal"
+  },
+  "setting": "Your friend Marta, in Bologna, is putting together a playlist of Italian singer-songwriters for a party and wants your help.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Sto preparando una playlist di cantautori per la festa di sabato. Ma tu, quando eri più giovane, che musica ascoltavi?",
+      "en": "I'm putting together a playlist of singer-songwriters for Saturday's party. But you, when you were younger, what music did you listen to?",
+      "task": "Describe your listening habits back then with the imperfetto (twice).",
+      "hint": "Da adolescente ascoltavo… e…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Imperfetto (twice)",
+            "anyOf": [
+              "\\b(ero|eri|era|eravamo|erano|c['’]era|c['’]erano|\\p{L}+(avo|evo|ivo|ava|eva|iva|avamo|evamo|ivamo|avano|evano|ivano))\\b"
+            ],
+            "min": 2,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "***Ascoltavo**…, **andavo**…, mi **piaceva**…*"
+          }
+        ]
+      },
+      "model": "Da adolescente ascoltavo soprattutto rock inglese, e la sera con gli amici suonavamo la chitarra in garage.",
+      "followOk": "Che bello! Io invece ascoltavo i dischi di mio padre: De André, Battisti, Dalla. Li sapevo tutti a memoria.",
+      "followMiss": "Io da ragazza ascoltavo sempre i dischi di mio padre, e in macchina cantavamo tutti insieme. Tu cosa ascoltavi?"
+    },
+    {
+      "id": "t2",
+      "say": "Partiamo da Fabrizio De André, il cantautore genovese che dava voce agli emarginati. C'è un artista, magari straniero, le cui canzoni raccontano storie simili?",
+      "en": "Let's start with Fabrizio De André, the singer-songwriter from Genoa who gave a voice to the marginalised. Is there an artist, maybe a foreign one, whose songs tell similar stories?",
+      "task": "Name an artist and describe them with il cui / la cui / i cui / le cui.",
+      "hint": "Penso a…, le cui canzoni…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "il cui / la cui / i cui / le cui",
+            "anyOf": [
+              "\\b(il|la|i|le)\\s+cui\\b"
+            ],
+            "min": 1,
+            "errorType": "relative",
+            "conceptId": "B2-REL-01",
+            "hint": "*…Leonard Cohen, **le cui** canzoni…*"
+          },
+          {
+            "label": "Talks about songs or lyrics",
+            "anyOf": [
+              "\\b(canzon[ei]|testi|testo|dischi|disco|album|musica|storie|parole)\\b"
+            ],
+            "min": 1,
+            "errorType": "vocabulary",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*…le cui canzoni / i cui testi…*"
+          }
+        ]
+      },
+      "model": "Sì, penso a Leonard Cohen, le cui canzoni parlano spesso di persone fragili e ai margini della società.",
+      "followOk": "Bel paragone! Sai che De André tradusse in italiano alcune canzoni di Leonard Cohen e di Bob Dylan?",
+      "followMiss": "Per me un buon esempio è Leonard Cohen, un cantautore le cui canzoni De André amava così tanto da tradurle."
+    },
+    {
+      "id": "t3",
+      "say": "Poi c'è Battisti. Con Mogol, che scriveva i testi, ha fatto canzoni che tutti gli italiani sanno a memoria. Perché secondo te piacciono ancora così tanto?",
+      "en": "Then there's Battisti. With Mogol, who wrote the lyrics, he made songs that all Italians know by heart. Why do you think people still love them so much?",
+      "task": "Give two reasons, linking them with cause and consequence connectors (perché, visto che, quindi, per questo).",
+      "hint": "Secondo me piacciono perché…, quindi…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Cause / consequence connectors (twice)",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti|dal momento che|in quanto|grazie a|grazie al|grazie alla|grazie ai)\\b",
+              "\\b(quindi|di conseguenza|perciò|per questo|così|dunque|tanto che|per cui|ragion per cui)\\b",
+              "\\b(inoltre|e poi|in più)\\b"
+            ],
+            "min": 2,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché…, quindi…; e poi…*"
+          }
+        ]
+      },
+      "model": "Secondo me piacciono ancora perché le melodie sono semplici e i testi parlano di emozioni universali, quindi ognuno ci ritrova la propria storia.",
+      "followOk": "Sono d'accordo. E poi c'è la sua voce: non perfetta, ma sincera. Forse è proprio per questo che ci emoziona.",
+      "followMiss": "Per me piacciono perché sono semplici e sincere, quindi le canta chiunque, dai nonni ai nipoti."
+    },
+    {
+      "id": "t4",
+      "say": "Lucio Dalla scrisse Caruso a Sorrento, nell'albergo dove il grande tenore aveva soggiornato poco prima di morire. Ti ricordi la prima canzone italiana che hai sentito?",
+      "en": "Lucio Dalla wrote Caruso in Sorrento, in the hotel where the great tenor had stayed shortly before he died. Do you remember the first Italian song you heard?",
+      "task": "Tell the memory: set the scene with the imperfetto, then say what happened with the passato prossimo.",
+      "hint": "Ero in…, avevo… anni, quando ho sentito…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Imperfetto for the background",
+            "anyOf": [
+              "\\b(ero|eri|era|eravamo|erano|c['’]era|c['’]erano|\\p{L}+(avo|evo|ivo|ava|eva|iva|avamo|evamo|ivamo|avano|evano|ivano))\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "***Ero** in vacanza, **avevo** quindici anni…*"
+          },
+          {
+            "label": "Passato prossimo for the event",
+            "anyOf": [
+              "\\b(ho|hai|ha|abbiamo|avete|hanno|sono|sei|è|siamo|siete)\\s+(\\p{L}+\\s+)?\\p{L}+(at|ut|it|tt|st|ss|nt|rs|rt|lt|es|is|os|us)[oaie]\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "*…quando **ho sentito**…*"
+          }
+        ]
+      },
+      "model": "Sì, ero in vacanza in Toscana e avevo quindici anni: in un ristorante ho sentito Caruso e mi sono emozionato.",
+      "followOk": "Che bel ricordo! Caruso fa quell'effetto a tutti: anche Pavarotti la cantava spesso nei suoi concerti.",
+      "followMiss": "Io me lo ricordo bene: ero piccola, eravamo in macchina con i miei, e alla radio ho sentito Caruso per la prima volta."
+    },
+    {
+      "id": "t5",
+      "say": "Allora, aiutami: se dovessi mettere una sola canzone italiana nella playlist, quale sarebbe? E perché proprio quella?",
+      "en": "So, help me: if you had to put just one Italian song on the playlist, which would it be? And why that one?",
+      "task": "Choose a song with the conditional (metterei, sceglierei) and give a reason.",
+      "hint": "Metterei…, perché…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Conditional",
+            "anyOf": [
+              "\\b\\w+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "***Metterei**…, **sceglierei**…*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti|dal momento che|in quanto|grazie a|grazie al|grazie alla|grazie ai)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché…*"
+          }
+        ]
+      },
+      "model": "Metterei La canzone del sole di Battisti, perché la conoscono tutti e alla fine la canteremo insieme.",
+      "followOk": "Ottima scelta, la aggiungo subito. Sabato sarà una festa da cantare a squarciagola!",
+      "followMiss": "Io metterei Emozioni di Battisti, perché la conoscono tutti e alla fine si canta in coro."
+    }
+  ],
+  "closing": "Grazie, playlist completata! Ci vediamo sabato, e porta la voce."
+}

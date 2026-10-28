@@ -1,0 +1,244 @@
+{
+  "id": "CV-07",
+  "title": "Colloquio di lavoro",
+  "subtitle": "A job interview in Lei: your experience, strengths, motivation and hypotheticals.",
+  "level": "C1",
+  "theme": "Lavoro e studio",
+  "conceptIds": [
+    "B2-PREP-02",
+    "B2-REG-01",
+    "B2-HYP-01",
+    "C1-INT-02"
+  ],
+  "tutor": {
+    "name": "Dott.ssa Conti",
+    "avatar": "👩‍💼",
+    "gender": "female",
+    "register": "formal"
+  },
+  "setting": "You're interviewing for a project manager job at a software company in Bologna. Dottoressa Conti from HR is leading the interview.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Buongiorno, si accomodi. Per cominciare, mi parli un po' di Lei e del Suo lavoro attuale.",
+      "en": "Good morning, have a seat. To start, tell me a bit about yourself and your current job.",
+      "task": "Say what you do and how long you've been doing it: present tense + da (not per).",
+      "hint": "Lavoro come… da… anni.",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "How long: present + da",
+            "anyOf": [
+              "\\bda\\s+(circa\\s+|quasi\\s+|più\\s+di\\s+|oltre\\s+|almeno\\s+|ormai\\s+)?(\\d+|un|uno|una|due|tre|quattro|cinque|sei|sette|otto|nove|dieci|undici|dodici|quindici|venti|qualche|alcuni|parecchi|molti|tanti|diversi)\\s+(\\p{L}+\\s+)?(anni|anno|mesi|mese)\\b",
+              "\\bdal\\s+(\\d{4}|duemila\\p{L}*)\\b"
+            ],
+            "min": 1,
+            "errorType": "preposition",
+            "conceptId": "B2-PREP-02",
+            "hint": "*Lavoro lì **da** sei anni.*"
+          },
+          {
+            "label": "Says what you do",
+            "anyOf": [
+              "\\b(lavoro|mi occupo|sono responsabile|gestisco|collaboro|insegno|coordino|dirigo|sono)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*Lavoro come…, mi occupo di…*"
+          }
+        ]
+      },
+      "model": "Sono ingegnere informatico e lavoro in un'azienda di software da circa sei anni.",
+      "followOk": "Molto bene, un percorso solido. E più nel dettaglio?",
+      "followMiss": "Capisco. Quindi lavora nel settore da qualche anno. Molto bene."
+    },
+    {
+      "id": "t2",
+      "say": "Mi racconti un progetto che Le ha dato particolare soddisfazione.",
+      "en": "Tell me about a project that gave you particular satisfaction.",
+      "task": "Describe the project and its result: at least two verbs in the passato prossimo and a result connector (in questo modo, quindi, grazie a…).",
+      "hint": "L'anno scorso ho guidato… e in questo modo…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Two verbs in the passato prossimo",
+            "anyOf": [
+              "\\b(sono|sei|è|siamo|siete|ho|hai|ha|abbiamo|avete|hanno)\\s+(\\p{L}+\\s+)?\\p{L}+(ato|ata|ati|ate|uto|uta|uti|ute|ito|ita|iti|ite|tto|tta|tti|tte|sto|sta|sti|ste|rto|rta|lto|lta|so|sa|si|se)\\b"
+            ],
+            "min": 2,
+            "errorType": "wrong-tense",
+            "conceptId": "B2-PAST-01",
+            "hint": "*ho guidato, abbiamo lanciato…*"
+          },
+          {
+            "label": "Links action and result",
+            "anyOf": [
+              "\\b(grazie a|di conseguenza|quindi|così|perciò|alla fine|in questo modo|il risultato|questo ha permesso|siamo riusciti|sono riuscito|sono riuscita)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*In questo modo…, grazie a questo…*"
+          }
+        ]
+      },
+      "model": "L'anno scorso ho guidato un piccolo team e abbiamo lanciato una nuova app; in questo modo i clienti sono aumentati del venti per cento.",
+      "followOk": "Un risultato notevole, complimenti.",
+      "followMiss": "Capisco: avete lanciato un nuovo prodotto e i risultati sono migliorati. Notevole."
+    },
+    {
+      "id": "t3",
+      "say": "Secondo Lei, qual è il Suo punto di forza? E un punto debole?",
+      "en": "In your view, what's your strength? And a weakness?",
+      "task": "Name a strength and a weakness, linked with mentre or però. Soften with direi che / a volte tendo a…",
+      "hint": "Direi che il mio punto di forza è…, mentre a volte tendo a…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Names a strength",
+            "anyOf": [
+              "\\b(punto di forza|punti di forza|capacità|sono bravo|sono brava|me la cavo|riesco|so)\\b"
+            ],
+            "min": 1,
+            "errorType": "vocabulary",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*Il mio punto di forza è…*"
+          },
+          {
+            "label": "Names a weakness",
+            "anyOf": [
+              "\\b(punto debole|punti deboli|difetto|a volte|tendo a|tendo ad|faccio fatica|mi capita)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*A volte tendo a…*"
+          },
+          {
+            "label": "Contrasts the two",
+            "anyOf": [
+              "\\b(mentre|invece|tuttavia|però|d['’]altra parte|d['’]altro canto|ma)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…mentre…*"
+          }
+        ]
+      },
+      "model": "Direi che il mio punto di forza è la capacità di organizzare il lavoro, mentre a volte tendo a essere troppo perfezionista.",
+      "followOk": "Un difetto che sento spesso, ma apprezzo la sincerità.",
+      "followMiss": "D'accordo. Ognuno ha i suoi punti di forza, mentre i punti deboli si possono sempre migliorare."
+    },
+    {
+      "id": "t4",
+      "say": "E perché vorrebbe lavorare proprio da noi?",
+      "en": "And why would you like to work here, with us in particular?",
+      "task": "Explain your motivation with the conditional (mi piacerebbe, potrei…) and a reason.",
+      "hint": "Mi piacerebbe lavorare qui perché…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Uses the conditional",
+            "anyOf": [
+              "\\b(mi piacerebbe|vorrei|potrei|sarei|avrei|mi permetterebbe|sarebbe|apprezzerei|mi darebbe)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Mi piacerebbe…, potrei…*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché…*"
+          }
+        ]
+      },
+      "model": "Mi piacerebbe lavorare qui perché la vostra azienda investe molto nella formazione e potrei crescere professionalmente.",
+      "followOk": "Mi fa piacere sentirlo. In effetti ci teniamo molto.",
+      "followMiss": "Capisco, Le piacerebbe lavorare qui per crescere professionalmente. Ci fa piacere."
+    },
+    {
+      "id": "t5",
+      "say": "Facciamo un'ipotesi: se entrasse nel nostro team, che cosa farebbe nei primi tre mesi?",
+      "en": "Let's imagine: if you joined our team, what would you do in the first three months?",
+      "task": "Answer the hypothetical: se + congiuntivo imperfetto, then the conditional.",
+      "hint": "Se entrassi nel team, per prima cosa…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Se + congiuntivo imperfetto",
+            "anyOf": [
+              "\\bse\\s+(\\p{L}+\\s+){0,2}(fossi|entrassi|venissi|avessi|cominciassi|iniziassi|lavorassi|ottenessi|potessi|arrivassi|assumeste|assumessero|offriste|deste)\\b"
+            ],
+            "min": 1,
+            "errorType": "hypothetical",
+            "conceptId": "B2-HYP-01",
+            "hint": "*Se **entrassi** nel team…*"
+          },
+          {
+            "label": "Main clause in the conditional",
+            "anyOf": [
+              "\\b\\p{L}+(rei|resti|rebbe|remmo|reste|rebbero)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-HYP-01",
+            "hint": "*…cercherei, studierei…*"
+          }
+        ]
+      },
+      "model": "Se entrassi nel team, per prima cosa cercherei di conoscere i colleghi e studierei bene i progetti in corso.",
+      "followOk": "Un approccio molto sensato.",
+      "followMiss": "Quindi, se entrasse nel team, cercherebbe prima di conoscere i colleghi. Un approccio sensato."
+    },
+    {
+      "id": "t6",
+      "say": "Bene, abbiamo quasi finito. Ha qualche domanda per me?",
+      "en": "Good, we're nearly done. Do you have any questions for me?",
+      "task": "Ask a polite indirect question: vorrei sapere… / potrebbe dirmi…",
+      "hint": "Sì, vorrei sapere quando…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Polite indirect question",
+            "anyOf": [
+              "\\b(vorrei sapere|potrebbe dirmi|mi potrebbe dire|mi chiedevo|volevo chiederle|vorrei chiederle|volevo sapere|sarebbe possibile sapere)\\b"
+            ],
+            "min": 1,
+            "errorType": "register",
+            "conceptId": "B2-REG-01",
+            "hint": "*Vorrei sapere… / Potrebbe dirmi…*"
+          },
+          {
+            "label": "Question word (quando, come, se…)",
+            "anyOf": [
+              "\\b(quando|come|se|quale|quali|quanto|quanti|chi|dove)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-REG-01",
+            "hint": "*…quando, come, se…*"
+          }
+        ]
+      },
+      "model": "Sì, vorrei sapere quando prenderete una decisione e come sono organizzati i turni di lavoro.",
+      "followOk": "Ottima domanda. Le daremo una risposta entro due settimane.",
+      "followMiss": "Vuole sapere quando decideremo? Le daremo una risposta entro due settimane."
+    }
+  ],
+  "closing": "La ringrazio per il Suo tempo. È stato un piacere conoscerLa. Arrivederci!"
+}

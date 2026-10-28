@@ -1,0 +1,130 @@
+{
+  "id": "G-LST-04",
+  "type": "listening",
+  "title": "Il neorealismo",
+  "subtitle": "A radio feature on post-war Italian cinema: Rossellini, De Sica and Bicycle Thieves.",
+  "conceptIds": ["C1-LIST-02"],
+  "difficulty": 4,
+  "minutes": 10,
+  "passage": {
+    "title": "Fotogrammi – Radio Cultura",
+    "source": "invented",
+    "it": "Buonasera e ben ritrovati a «Fotogrammi», lo spazio che Radio Cultura dedica alla storia del cinema. Stasera torniamo indietro di ottant'anni, in un'Italia appena uscita dalla guerra, con le città bombardate e gli studi di Cinecittà trasformati in un campo per sfollati. È in queste condizioni che nasce il neorealismo, la corrente che ha cambiato il modo di fare cinema, e non solo in Italia.\nIl film che apre la stagione è «Roma città aperta» di Roberto Rossellini, girato nel 1945, quando la capitale era stata liberata da pochi mesi. Mancava tutto: la pellicola si comprava dove capitava, le scene si giravano nelle strade vere, tra le macerie. Eppure, o forse proprio per questo, il film ebbe un impatto enorme. Lo spettatore non vedeva più i salotti eleganti dei cosiddetti «telefoni bianchi», le commedie borghesi degli anni Trenta, ma la fame, la paura, la Resistenza.\nTre anni dopo, Vittorio De Sica, su sceneggiatura di Cesare Zavattini, realizza «Ladri di biciclette». La trama è di una semplicità disarmante: Antonio, un disoccupato, trova finalmente lavoro come attacchino, ma per lavorare gli serve la bicicletta. Il primo giorno gliela rubano. Insieme al figlio Bruno la cerca per tutta Roma, inutilmente, finché, disperato, prova a rubarne una a sua volta. Viene fermato, umiliato davanti al bambino, e poi lasciato andare. Il protagonista, Lamberto Maggiorani, non era un attore: era un operaio. Ed è questa la scommessa del neorealismo: interpreti presi dalla strada, luoghi reali, storie di gente comune.\nNon tutti apprezzarono. A Roma c'era chi accusava questi registi di mostrare al mondo un'immagine troppo misera del paese; a un politico dell'epoca viene attribuita la frase «i panni sporchi si lavano in casa». All'estero, invece, il riconoscimento fu immediato: «Ladri di biciclette» ricevette un Oscar onorario e ispirò generazioni di registi, dalla Nouvelle Vague francese al cinema indiano.\nIl neorealismo, come movimento, si esaurisce nei primi anni Cinquanta. La sua lezione, però, è ancora viva: guardare la realtà senza abbellirla. Alla prossima settimana."
+  },
+  "questions": [
+    {
+      "id": "G-LST-04.q1", "type": "choice", "difficulty": 2,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What is this radio feature about?",
+      "options": [
+        "The history of Cinecittà studios",
+        "Italian neorealist cinema after the Second World War",
+        "The life of Vittorio De Sica",
+        "Italian comedies of the 1930s"
+      ],
+      "answer": 1,
+      "explanation": "*È in queste condizioni che nasce il neorealismo.* Cinecittà and 1930s comedies are only background.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-04.q2", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "In what conditions was *Roma città aperta* made?",
+      "options": [
+        "In the well-equipped studios of Cinecittà",
+        "Abroad, because Rome was still occupied",
+        "With a large budget from the new government",
+        "With scarce resources, shooting in real streets among the ruins"
+      ],
+      "answer": 3,
+      "optionWhy": { "0": "Cinecittà had been turned into *un campo per sfollati* (a camp for displaced people)." },
+      "explanation": "*Mancava tutto: la pellicola si comprava dove capitava, le scene si giravano nelle strade vere, tra le macerie.*",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-04.q3", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What were the *«telefoni bianchi»* films?",
+      "options": [
+        "Documentaries about the war",
+        "Elegant middle-class comedies of the 1930s",
+        "The first Italian television programmes",
+        "Films about the Resistance"
+      ],
+      "answer": 1,
+      "explanation": "*I salotti eleganti dei cosiddetti «telefoni bianchi», le commedie borghesi degli anni Trenta*: the contrast with neorealism's hunger and fear.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-04.q4", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "Why is the bicycle so important to Antonio?",
+      "options": [
+        "He needs it for his new job putting up posters.",
+        "It was a present from his son.",
+        "He wants to sell it to pay his debts.",
+        "He uses it to take part in races."
+      ],
+      "answer": 0,
+      "explanation": "*Trova finalmente lavoro come attacchino, ma per lavorare gli serve la bicicletta.* An *attacchino* puts up posters.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-04.q5", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "How does Antonio's story end, according to the presenter?",
+      "options": [
+        "He finds his bicycle and gets his job back.",
+        "He is sent to prison for theft.",
+        "He tries to steal a bicycle himself, is caught and humiliated in front of his son, then let go.",
+        "His son Bruno finds the thief."
+      ],
+      "answer": 2,
+      "explanation": "*Prova a rubarne una a sua volta. Viene fermato, umiliato davanti al bambino, e poi lasciato andare.* *A sua volta* = in turn.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-04.q6", "type": "choice", "difficulty": 3,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What was the 'bet' (*la scommessa*) of neorealism?",
+      "options": [
+        "Using famous stars to attract audiences",
+        "Using non-professional performers, real locations and ordinary people's stories",
+        "Making films only in colour",
+        "Filming exclusively in Rome"
+      ],
+      "answer": 1,
+      "explanation": "*Interpreti presi dalla strada, luoghi reali, storie di gente comune.* Maggiorani, the lead, was a factory worker.",
+      "errorType": "listening"
+    },
+    {
+      "id": "G-LST-04.q7", "type": "choice", "difficulty": 5,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What did critics mean by *«i panni sporchi si lavano in casa»*?",
+      "options": [
+        "The films were too long and needed cutting.",
+        "Directors should shoot inside studios rather than in the street.",
+        "Italy's problems shouldn't be shown to the rest of the world.",
+        "Cinemas should be cleaner."
+      ],
+      "answer": 2,
+      "explanation": "Literally 'dirty laundry is washed at home'. The critics accused the directors *di mostrare al mondo un'immagine troppo misera del paese*.",
+      "errorType": "idiom"
+    },
+    {
+      "id": "G-LST-04.q8", "type": "choice", "difficulty": 4,
+      "instruction": "Choose the correct answer.",
+      "prompt": "What does the presenter think neorealism left behind?",
+      "options": [
+        "Nothing: it ended in the early 1950s.",
+        "Only a few Oscar-winning films",
+        "A lesson that is still alive: to look at reality without embellishing it",
+        "A tradition of comedy films"
+      ],
+      "answer": 2,
+      "optionWhy": { "0": "The movement ended (*si esaurisce*), but *la sua lezione, però, è ancora viva*." },
+      "explanation": "*La sua lezione, però, è ancora viva: guardare la realtà senza abbellirla.* *Però* marks the contrast with the end of the movement.",
+      "errorType": "listening"
+    }
+  ]
+}

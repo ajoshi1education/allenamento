@@ -1,0 +1,11 @@
+{
+  "id": "G-GNT-01",
+  "type": "gauntlet",
+  "title": "Gauntlet: il congiuntivo",
+  "subtitle": "Every subjunctive in Unit 1 against the clock: present, past, imperfect, conjunctions, relatives and indefinites. Three lives.",
+  "conceptIds": ["B2-SUBJ-01", "B2-SUBJ-02", "B2-SUBJ-03", "B2-SUBJ-04", "C1-SUBJ-05", "C1-SUBJ-06"],
+  "difficulty": 4,
+  "minutes": 3,
+  "seconds": 150,
+  "lives": 3
+}

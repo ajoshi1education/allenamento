@@ -1,0 +1,91 @@
+{
+  "title": "Italian B2 → C1 (CEFR)",
+  "note": "Planned concept map. Every concept id here must eventually have a lesson, exercises, a linked game and assessment criteria. The validator reports coverage.",
+  "strands": [
+    { "id": "U01", "title": "Il congiuntivo", "skill": "grammar", "concepts": [
+      { "id": "B2-SUBJ-01", "title": "Congiuntivo presente after opinion, emotion, wish and doubt", "cefr": "B2" },
+      { "id": "B2-SUBJ-02", "title": "Congiuntivo passato", "cefr": "B2" },
+      { "id": "B2-SUBJ-03", "title": "Congiuntivo imperfetto e trapassato", "cefr": "B2" },
+      { "id": "B2-SUBJ-04", "title": "Conjunctions that need the subjunctive (benché, affinché, prima che…)", "cefr": "B2" },
+      { "id": "C1-SUBJ-05", "title": "Subjunctive in relative clauses and after superlatives", "cefr": "C1" },
+      { "id": "C1-SUBJ-06", "title": "Indefinites (chiunque, qualunque…) and the independent subjunctive", "cefr": "C1" }
+    ]},
+    { "id": "U02", "title": "Concordanza dei tempi e discorso indiretto", "skill": "grammar", "concepts": [
+      { "id": "B2-SEQ-01", "title": "Sequence of tenses with the indicative (future in the past)", "cefr": "B2" },
+      { "id": "C1-SEQ-02", "title": "Sequence of tenses with the subjunctive", "cefr": "C1" },
+      { "id": "C1-SEQ-03", "title": "Reported speech (discorso indiretto)", "cefr": "C1" }
+    ]},
+    { "id": "U03", "title": "Condizionale e periodo ipotetico", "skill": "grammar", "concepts": [
+      { "id": "B2-COND-01", "title": "Condizionale presente: politeness, wishes, hearsay", "cefr": "B2" },
+      { "id": "B2-COND-02", "title": "Condizionale passato: regret, future in the past, unconfirmed news", "cefr": "B2" },
+      { "id": "B2-HYP-01", "title": "Periodo ipotetico: real and possible", "cefr": "B2" },
+      { "id": "B2-HYP-02", "title": "Periodo ipotetico: unreal in the past", "cefr": "B2" },
+      { "id": "C1-HYP-03", "title": "Mixed conditionals and the colloquial imperfect (se lo sapevo, venivo)", "cefr": "C1" },
+      { "id": "C1-HYP-04", "title": "Alternatives to se: qualora, nel caso in cui, a patto che, gerundio", "cefr": "C1" }
+    ]},
+    { "id": "U04", "title": "Tempi del passato e del futuro", "skill": "grammar", "concepts": [
+      { "id": "B2-PAST-01", "title": "Passato prossimo vs imperfetto: nuances", "cefr": "B2" },
+      { "id": "B2-PAST-02", "title": "Trapassato prossimo", "cefr": "B2" },
+      { "id": "C1-PAST-03", "title": "Passato remoto: forms and use", "cefr": "C1" },
+      { "id": "C1-PAST-04", "title": "Trapassato remoto (recognition)", "cefr": "C1" },
+      { "id": "B2-FUT-01", "title": "Futuro anteriore and the future of supposition", "cefr": "B2" }
+    ]},
+    { "id": "U05", "title": "Pronomi", "skill": "grammar", "concepts": [
+      { "id": "B2-PRON-01", "title": "Combined pronouns (glielo, me ne, ce lo…)", "cefr": "B2" },
+      { "id": "B2-PRON-02", "title": "Ci and ne in depth", "cefr": "B2" },
+      { "id": "C1-PRON-03", "title": "Pronominal verbs (andarsene, farcela, cavarsela, prendersela…)", "cefr": "C1" },
+      { "id": "B2-PRON-04", "title": "Pronoun position with infinitives, gerunds, imperatives and modals", "cefr": "B2" },
+      { "id": "B2-REL-01", "title": "Relative pronouns: cui, il quale, chi, ciò che", "cefr": "B2" }
+    ]},
+    { "id": "U06", "title": "Preposizioni", "skill": "grammar", "concepts": [
+      { "id": "B2-PREP-01", "title": "Verb + a / di + infinitive", "cefr": "B2" },
+      { "id": "B2-PREP-02", "title": "Prepositions of place and time: nuances", "cefr": "B2" },
+      { "id": "C1-PREP-03", "title": "Prepositional phrases and adjective/noun + preposition", "cefr": "C1" }
+    ]},
+    { "id": "U07", "title": "Passivo e costruzioni con si", "skill": "grammar", "concepts": [
+      { "id": "B2-PASS-01", "title": "The passive with essere and venire", "cefr": "B2" },
+      { "id": "C1-PASS-02", "title": "The passive with andare (va fatto) and obligation", "cefr": "C1" },
+      { "id": "B2-SI-01", "title": "Si passivante vs si impersonale", "cefr": "B2" }
+    ]},
+    { "id": "U08", "title": "Forme implicite", "skill": "grammar", "concepts": [
+      { "id": "B2-INF-01", "title": "Gerundio: cause, time, manner; gerundio passato", "cefr": "B2" },
+      { "id": "C1-PART-01", "title": "Absolute participle (Finito il lavoro, …)", "cefr": "C1" },
+      { "id": "C1-INF-02", "title": "Past infinitive and the nominalised infinitive", "cefr": "C1" },
+      { "id": "B2-INF-03", "title": "Causative fare / lasciare + infinitive", "cefr": "B2" }
+    ]},
+    { "id": "U09", "title": "Connettivi e sintassi", "skill": "grammar", "concepts": [
+      { "id": "B2-CONN-01", "title": "Connectors of cause, consequence and contrast", "cefr": "B2" },
+      { "id": "C1-CONN-02", "title": "Concessive and formal connectors", "cefr": "C1" },
+      { "id": "C1-SYN-01", "title": "Dislocation and cleft sentences", "cefr": "C1" },
+      { "id": "C1-SYN-02", "title": "Nominalisation and formal style", "cefr": "C1" }
+    ]},
+    { "id": "V01", "title": "Lessico, collocazioni, modi di dire", "skill": "vocabulary", "concepts": [
+      { "id": "B2-VOC-01", "title": "False friends", "cefr": "B2" },
+      { "id": "B2-VOC-02", "title": "Core collocations with fare, dare, prendere, avere", "cefr": "B2" },
+      { "id": "C1-VOC-03", "title": "Advanced collocations (porre fine, prendere atto…)", "cefr": "C1" },
+      { "id": "B2-IDIOM-01", "title": "Everyday idioms", "cefr": "B2" },
+      { "id": "C1-IDIOM-02", "title": "Advanced idioms and proverbs", "cefr": "C1" },
+      { "id": "B2-VOC-04", "title": "Word formation: prefixes, suffixes, altered nouns", "cefr": "B2" },
+      { "id": "C1-VOC-05", "title": "Argumentation and academic vocabulary", "cefr": "C1" },
+      { "id": "B2-VOC-06", "title": "Multi-word verbs (tirare fuori, buttare giù…)", "cefr": "B2" }
+    ]},
+    { "id": "R01", "title": "Registro e interazione", "skill": "interaction", "concepts": [
+      { "id": "B2-REG-01", "title": "Formal Lei and formal emails", "cefr": "B2" },
+      { "id": "C1-REG-02", "title": "Register shifts: colloquial, neutral, bureaucratic", "cefr": "C1" },
+      { "id": "B2-INT-01", "title": "Discourse markers in conversation (allora, cioè, mica, magari)", "cefr": "B2" },
+      { "id": "C1-INT-02", "title": "Agreeing, disagreeing, hedging and negotiating", "cefr": "C1" }
+    ]},
+    { "id": "S01", "title": "Comprensione e produzione", "skill": "reading", "concepts": [
+      { "id": "B2-READ-01", "title": "Reading news articles: gist and detail", "cefr": "B2", "skill": "reading" },
+      { "id": "C1-READ-02", "title": "Opinion pieces and implicit meaning", "cefr": "C1", "skill": "reading" },
+      { "id": "C1-READ-03", "title": "Literary narrative (passato remoto)", "cefr": "C1", "skill": "reading" },
+      { "id": "B2-LIST-01", "title": "Everyday dialogues at natural speed", "cefr": "B2", "skill": "listening" },
+      { "id": "C1-LIST-02", "title": "Radio and podcast monologues", "cefr": "C1", "skill": "listening" },
+      { "id": "B2-WRIT-01", "title": "Formal email and complaint", "cefr": "B2", "skill": "writing" },
+      { "id": "C1-WRIT-02", "title": "Argumentative essay", "cefr": "C1", "skill": "writing" },
+      { "id": "C1-WRIT-03", "title": "Summary (riassunto)", "cefr": "C1", "skill": "writing" },
+      { "id": "B2-SPEAK-01", "title": "Describing experiences and giving opinions", "cefr": "B2", "skill": "speaking" },
+      { "id": "C1-SPEAK-02", "title": "Debating and presenting", "cefr": "C1", "skill": "speaking" }
+    ]}
+  ]
+}

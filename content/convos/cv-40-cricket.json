@@ -1,0 +1,191 @@
+{
+  "id": "CV-40",
+  "title": "Spiegare il cricket",
+  "subtitle": "Explaining cricket to a puzzled Italian friend: si impersonale, comparisons with baseball, relative clauses, bisogna che.",
+  "level": "B2",
+  "theme": "Cultura e tempo libero",
+  "conceptIds": [
+    "B2-SI-01",
+    "B2-REL-01",
+    "B2-SUBJ-01",
+    "B2-SPEAK-01"
+  ],
+  "tutor": {
+    "name": "Matteo",
+    "avatar": "👨",
+    "gender": "male",
+    "register": "informal"
+  },
+  "setting": "Your friend Matteo, from Milan, caught a few minutes of a cricket match on TV and is completely lost. You explain it over a drink.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Ieri ho visto una partita di cricket in TV e non ci ho capito niente! Ma come funziona? Spiegamelo in parole semplici.",
+      "en": "Yesterday I watched a cricket match on TV and didn't understand a thing! How does it work? Explain it in simple words.",
+      "task": "Explain the basics with the impersonal si (si gioca, si lancia, si cerca di…) at least twice.",
+      "hint": "Si gioca in due squadre…; si lancia la palla…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Impersonal / passive si (twice)",
+            "anyOf": [
+              "\\bsi\\s+(gioca|giocano|cerca|cercano|lancia|lanciano|segna|segnano|segnano|fa|fanno|vince|vincono|corre|corrono|usa|usano|colpisce|colpiscono|deve|devono|può|possono|prende|prendono|elimina|eliminano|chiama|chiamano|batte|battono|conta|contano)\\b"
+            ],
+            "min": 2,
+            "errorType": "passive",
+            "conceptId": "B2-SI-01",
+            "hint": "*Si gioca…, si lancia…, si segnano punti…*"
+          }
+        ]
+      },
+      "model": "Si gioca in due squadre da undici: si lancia la palla verso il battitore, che cerca di colpirla, e si segnano punti correndo tra i due wicket.",
+      "followOk": "Ah, quindi c'è uno che lancia e uno che batte. Fin qui ci sono.",
+      "followMiss": "Fammi capire: si gioca in undici, si lancia la palla al battitore, e lui la colpisce per fare punti. Giusto?"
+    },
+    {
+      "id": "t2",
+      "say": "Aspetta, ma allora è come il baseball? Anche lì c'è uno che lancia e uno che batte.",
+      "en": "Wait, so it's like baseball? There's someone who throws and someone who bats there too.",
+      "task": "Compare cricket with baseball (or football): use più/meno… di/che, or simile a / diverso da.",
+      "hint": "È simile, ma nel cricket… è più… che nel baseball",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Makes a comparison",
+            "anyOf": [
+              "\\b(più|meno)\\s+(\\S+\\s+){0,3}?(di|del|dello|della|dei|degli|delle|dell['’]|che)\\b",
+              "\\b(simile|simili|uguale|diverso|diversa|diversi)\\s+(a|al|alla|ai|da|dal|dalla|dai)\\b",
+              "\\b(rispetto al|rispetto a|come nel|come il|tanto quanto|così come)\\b"
+            ],
+            "min": 1,
+            "errorType": "grammar",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*Le partite sono **più** lunghe **che** nel baseball.*"
+          },
+          {
+            "label": "Mentions the other sport",
+            "anyOf": [
+              "\\b(baseball|calcio)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*…rispetto al baseball…*"
+          }
+        ]
+      },
+      "model": "Sì, è simile, ma nel cricket di solito la palla rimbalza prima di arrivare al battitore, e le partite durano molto più a lungo che nel baseball.",
+      "followOk": "Ah, ecco la differenza! E io che pensavo che il calcio fosse lento.",
+      "followMiss": "Ah, quindi è simile al baseball, ma la palla rimbalza e le partite sono molto più lunghe. Interessante!"
+    },
+    {
+      "id": "t3",
+      "say": "Più a lungo quanto? Quanto può durare una partita, scusa?",
+      "en": "Longer by how much? How long can a match last, then?",
+      "task": "Explain the formats with relative clauses (il Test match, che dura…; il T20, in cui…).",
+      "hint": "Il Test match, che…, può durare…; il T20, in cui…",
+      "expect": {
+        "minWords": 12,
+        "rubric": [
+          {
+            "label": "Relative clause (che / in cui / il quale)",
+            "anyOf": [
+              "\\b(in cui|di cui|a cui|per cui|nel quale|nella quale|il quale|la quale)\\b",
+              "\\b(match|partita|partite|formato|formati|versione|t20)\\s*,?\\s+che\\b"
+            ],
+            "min": 1,
+            "errorType": "relative",
+            "conceptId": "B2-REL-01",
+            "hint": "*il Test match, **che** dura…; il T20, **in cui**…*"
+          },
+          {
+            "label": "Says how long",
+            "anyOf": [
+              "\\b(giorni|giorno|ore|ora|pomeriggio|settimana|serata)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*…fino a cinque giorni, circa tre ore…*"
+          }
+        ]
+      },
+      "model": "Dipende dal formato: il Test match, che è il più tradizionale, dura fino a cinque giorni, mentre una partita di T20, in cui ogni squadra ha venti over, dura circa tre ore.",
+      "followOk": "Cinque giorni?! E dopo cinque giorni può anche finire in pareggio? Pazzesco.",
+      "followMiss": "Quindi il Test match, che è la versione classica, dura cinque giorni, mentre il T20, in cui si giocano venti over, dura poche ore."
+    },
+    {
+      "id": "t4",
+      "say": "Ok, mettiamo che io voglia provare. Che cosa devo fare per non sembrare un principiante?",
+      "en": "OK, let's say I want to try. What do I need to do so I don't look like a beginner?",
+      "task": "Give him advice with bisogna che / è importante che + subjunctive.",
+      "hint": "Bisogna che tu…, ed è importante che tu…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "bisogna che / è importante che …",
+            "anyOf": [
+              "\\b(bisogna|è importante|è fondamentale|è meglio|occorre|è essenziale)\\s+che\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Bisogna che tu **impari**…, è importante che tu **stia** attento…*"
+          },
+          {
+            "label": "Cricket vocabulary",
+            "anyOf": [
+              "\\b(mazza|palla|battitore|lanciatore|wicket|guanti|casco|protezioni|parastinchi|campo|over|lancio|lanci)\\b"
+            ],
+            "min": 1,
+            "errorType": "vocabulary",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*la mazza, la palla, il battitore…*"
+          }
+        ]
+      },
+      "model": "Prima di tutto bisogna che tu impari a tenere la mazza dritta, e poi è importante che tu non perda mai di vista la palla.",
+      "followOk": "Mi sembra un ottimo consiglio. Tenere gli occhi sulla palla: facile a dirsi!",
+      "followMiss": "Capito: bisogna che io stia attento alla palla e che tenga la mazza nel modo giusto. Non sembra facile!"
+    },
+    {
+      "id": "t5",
+      "say": "Sai che il Milan nacque nel 1899 come club di calcio e cricket? E l'Italia, per la prima volta, si è qualificata ai Mondiali T20 del 2026!",
+      "en": "Did you know AC Milan was founded in 1899 as a football and cricket club? And Italy, for the first time, qualified for the 2026 T20 World Cup!",
+      "task": "Say whether you think cricket could grow in Italy: credo che / penso che + subjunctive, with a reason.",
+      "hint": "Credo che il cricket possa…, perché…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Opinion + che + subjunctive",
+            "anyOf": [
+              "\\b(penso|credo|mi sembra|mi pare|immagino|ritengo|dubito|spero|suppongo|non è detto|è possibile|è probabile|può darsi)\\s+che\\s+(\\S+\\s+){0,5}?(sia|siano|abbia|abbiano|possa|possano|fosse|fossero|avesse|avessero|faccia|facciano|vada|vadano|venga|vengano|debba|debbano|stia|stiano|riesca|riescano|diventi|diventino|cresca|crescano|piaccia|piacciano|torni|tornino|porti|portino|serva|servano|\\p{L}+(assi|asse|essi|esse|issi|isse|assimo|essimo|issimo|assero|essero|issero))\\b"
+            ],
+            "min": 1,
+            "errorType": "indicative-for-subjunctive",
+            "conceptId": "B2-SUBJ-01",
+            "hint": "*Credo che **possa** crescere…, dubito che **diventi**…*"
+          },
+          {
+            "label": "Gives a reason",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti|dal momento che|in quanto|grazie a|grazie al|grazie alla|grazie ai)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché…*"
+          }
+        ]
+      },
+      "model": "Non lo sapevo! Credo che il cricket possa crescere anche qui, perché in Italia ci sono già tante comunità che lo amano.",
+      "followOk": "Speriamo! Magari un giorno mi porti a vedere una partita, così mi spieghi il resto dal vivo.",
+      "followMiss": "Io credo che possa diventare più popolare, perché in Italia ci sono già tante squadre e tanti giovani appassionati."
+    }
+  ],
+  "closing": "Grazie della lezione! Non ho capito proprio tutto, ma almeno ora so che cos'è un over."
+}

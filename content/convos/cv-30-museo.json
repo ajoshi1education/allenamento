@@ -1,0 +1,97 @@
+{
+  "id": "CV-30",
+  "title": "Al museo",
+  "subtitle": "Describing paintings at an exhibition: relative clauses (che, cui, il quale), sembra che + subjunctive, precise adjectives.",
+  "level": "C1",
+  "theme": "Cultura e tempo libero",
+  "conceptIds": ["B2-REL-01", "B2-SUBJ-01", "C1-SUBJ-05", "B2-SPEAK-01"],
+  "tutor": { "name": "Irene", "avatar": "👩‍🎨", "gender": "female", "register": "informal" },
+  "setting": "You're at an exhibition of nineteenth- and twentieth-century painting in Milan with your friend Irene, an art history student.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Eccoci davanti al quadro più famoso della mostra. Descrivimelo un po': che cosa vedi?",
+      "en": "Here we are in front of the most famous painting in the exhibition. Describe it for me: what do you see?",
+      "task": "Describe the painting with a relative clause with che (una donna che guarda…) and say where things are (sullo sfondo, al centro…).",
+      "hint": "Al centro c'è una donna che…, sullo sfondo…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Relative clause (una donna che guarda…)", "anyOf": ["\\b(un|una|uno|il|la|lo|i|gli|le|dei|delle|degli)\\s+\\p{L}+(\\s+\\p{L}+)?\\s+che\\s+\\p{L}+", "\\b(l|un)['’]\\p{L}+(\\s+\\p{L}+)?\\s+che\\s+\\p{L}+"], "min": 1, "errorType": "relative", "conceptId": "B2-REL-01", "hint": "*…una donna **che** guarda fuori…*" },
+          { "label": "Places things in the picture", "anyOf": ["\\b(sullo sfondo|in primo piano|a destra|a sinistra|al centro|in alto|in basso|accanto|dietro|davanti|in lontananza)\\b"], "min": 1, "errorType": "vocabulary", "conceptId": "B2-SPEAK-01", "hint": "*al centro, sullo sfondo, in primo piano…*" }
+        ]
+      },
+      "model": "Al centro c'è una donna che guarda fuori dalla finestra, e sullo sfondo si vede un paesaggio nebbioso.",
+      "followOk": "Sì, e guarda la luce che entra dalla finestra: è quasi irreale.",
+      "followMiss": "Io vedo una figura che guarda lontano, e sullo sfondo un paesaggio che si perde nella nebbia."
+    },
+    {
+      "id": "t2",
+      "say": "Secondo te, che cosa prova quella figura? Che atmosfera trasmette il quadro?",
+      "en": "What do you think that figure is feeling? What atmosphere does the painting convey?",
+      "task": "Interpret it with sembra che / ho l'impressione che + subjunctive, and a precise adjective for the mood.",
+      "hint": "Sembra che stia aspettando…; l'atmosfera è…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "sembra che / ho l'impressione che + subjunctive", "anyOf": ["\\b(sembra|pare|mi sembra|mi pare|ho l['’]impressione|dà l['’]impressione|si direbbe)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}?(sia|siano|stia|stiano|abbia|abbiano|aspetti|aspettino|pensi|pensino|provi|provino|voglia|vogliano|senta|sentano|cerchi|cerchino|guardi|guardino|ricordi|ricordino|nasconda|possa|possano|sappia|soffra|speri|tema|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Sembra che **stia** aspettando…*" },
+          { "label": "Precise adjective for the mood", "anyOf": ["\\b(malinconic|inquiet|seren|sospes|nostalgic|misterios|cup|trist|tranquill|angosciant|silenzios|sognant|enigmatic|drammatic|intim|solitari|pensieros|calm|struggent|cupa|rassegnat|ansios|irreal|onirica|onirico|gioios|vivac|luminos|tetr)\\p{L}*\\b"], "min": 1, "errorType": "vocabulary", "conceptId": "B2-SPEAK-01", "hint": "*malinconica, sospesa, inquieta, serena…*" }
+        ]
+      },
+      "model": "Sembra che stia aspettando qualcuno che non arriva, e l'atmosfera è malinconica e un po' sospesa.",
+      "followOk": "È esattamente quello che ho pensato io. C'è un'attesa che non finisce mai.",
+      "followMiss": "A me sembra che stia aspettando qualcosa, e l'atmosfera mi pare malinconica, quasi sospesa."
+    },
+    {
+      "id": "t3",
+      "say": "Sai qualcosa del pittore? Io so solo che era un tipo piuttosto solitario.",
+      "en": "Do you know anything about the painter? All I know is that he was a rather solitary type.",
+      "task": "Tell her about the painter with cui or il quale (di cui si sa poco, la cui opera…, al quale…).",
+      "hint": "È un pittore di cui si sa…, la cui opera…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Relative with cui / il quale", "anyOf": ["\\b(cui|il quale|la quale|i quali|le quali|del quale|della quale|dei quali|delle quali|al quale|alla quale|ai quali|alle quali|nel quale|nella quale|dal quale|dalla quale|con il quale|con la quale|per il quale|per la quale)\\b"], "min": 1, "errorType": "relative", "conceptId": "B2-REL-01", "hint": "*…un pittore **di cui** si sa poco, **la cui** opera…*" }
+        ]
+      },
+      "model": "Sì, è un pittore di cui si sa pochissimo, e la cui opera è stata riscoperta solo negli anni Settanta.",
+      "followOk": "Interessante! Allora siamo fortunati a vedere tutti questi quadri insieme.",
+      "followMiss": "Mi pare che sia un pittore di cui si sa poco, e la cui opera è stata riscoperta tardi."
+    },
+    {
+      "id": "t4",
+      "say": "Di tutte le opere che abbiamo visto oggi, qual è quella che ti ha colpito di più?",
+      "en": "Of all the works we've seen today, which one struck you most?",
+      "task": "Answer with a superlative + subjunctive (è l'opera più… che io abbia mai visto) and say why.",
+      "hint": "È l'opera più… che io abbia mai visto, perché…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Superlative + che + subjunctive", "anyOf": ["\\b(più|meno|migliore|peggiore|unico|unica|unici|primo|prima)\\b\\s+([\\p{L}'’]+\\s+){0,4}?che\\s+([\\p{L}'’]+\\s+){0,2}?(abbia|abbiano|sia|siano|conosca|conoscano|ricordi|ricordino)\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "C1-SUBJ-05", "hint": "*…il quadro più intenso che io **abbia** mai visto.*" },
+          { "label": "Gives a reason", "anyOf": ["\\b(perché|poiché|visto che|dato che|siccome|infatti)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…perché…*" }
+        ]
+      },
+      "model": "Senza dubbio il ritratto della bambina: è l'opera più commovente che io abbia mai visto, perché lo sguardo sembra vivo.",
+      "followOk": "Anche a me ha emozionato moltissimo. Ci sono opere che ti restano dentro per giorni.",
+      "followMiss": "Per me è il ritratto della bambina: è il quadro più intenso che io abbia mai visto."
+    },
+    {
+      "id": "t5",
+      "say": "Ti dico la verità: la sala dell'arte contemporanea non mi è piaciuta per niente. E a te?",
+      "en": "I'll be honest: I didn't like the contemporary art room at all. What about you?",
+      "task": "Respond diplomatically: capisco che / ammetto che + subjunctive, then a contrast (però, tuttavia).",
+      "hint": "Capisco che possa sembrare…, però…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "capisco che / ammetto che + subjunctive", "anyOf": ["\\b(capisco|ammetto|non direi|non credo|non penso|può darsi|immagino|mi rendo conto)\\s+che\\s+([\\p{L}'’]+\\s+){0,4}?(sia|siano|possa|possano|abbia|abbiano|sembri|sembrino|piaccia|piacciano|risulti|risultino|faccia|facciano|lasci|lascino|\\p{L}{2,}(?:ino|isca|iscano))\\b"], "min": 1, "errorType": "indicative-for-subjunctive", "conceptId": "B2-SUBJ-01", "hint": "*Capisco che **possa** sembrare…*" },
+          { "label": "Contrast (però, tuttavia…)", "anyOf": ["\\b(però|ma|tuttavia|eppure|d['’]altra parte|comunque)\\b"], "min": 1, "errorType": "connector", "conceptId": "B2-CONN-01", "hint": "*…però alcune opere…*" }
+        ]
+      },
+      "model": "Capisco che possa sembrare un po' fredda, però alcune installazioni mi sono sembrate davvero originali.",
+      "followOk": "Forse hai ragione, dovrei tornarci con meno pregiudizi.",
+      "followMiss": "Capisco. Ammetto che possa piacere a qualcuno, però a me è sembrata un po' fredda."
+    }
+  ],
+  "closing": "Che bella giornata. Andiamo a prenderci un caffè? Così continuiamo a parlarne."
+}

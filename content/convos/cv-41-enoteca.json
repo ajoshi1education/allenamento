@@ -1,0 +1,201 @@
+{
+  "id": "CV-41",
+  "title": "In enoteca",
+  "subtitle": "Buying wine in Montepulciano: describing tastes, ne with quantities, polite requests and recommendations with Lei.",
+  "level": "B2",
+  "theme": "Cultura e tempo libero",
+  "conceptIds": [
+    "B2-PRON-02",
+    "B2-COND-01",
+    "B2-REG-01",
+    "B2-REL-01",
+    "B2-SPEAK-01"
+  ],
+  "tutor": {
+    "name": "Signor Paolo",
+    "avatar": "🍷",
+    "gender": "male",
+    "register": "formal"
+  },
+  "setting": "You walk into a small enoteca in Montepulciano, in southern Tuscany. The owner, Signor Paolo, offers you a tasting.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Buongiorno! Posso esserLe utile? Qui trattiamo soprattutto il Vino Nobile, il grande rosso di Montepulciano.",
+      "en": "Good morning! Can I help you? Here we mainly sell Vino Nobile, Montepulciano's great red.",
+      "task": "Say politely what kind of wine you're looking for (cercavo / vorrei) and describe it with an adjective.",
+      "hint": "Buongiorno, cercavo un vino… corposo/leggero…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Polite request (cercavo, vorrei…)",
+            "anyOf": [
+              "\\b(cercavo|cerco|vorrei|volevo|mi piacerebbe|mi servirebbe|avrei bisogno)\\b"
+            ],
+            "min": 1,
+            "errorType": "register",
+            "conceptId": "B2-REG-01",
+            "hint": "*Cercavo…, vorrei…*"
+          },
+          {
+            "label": "Describes the wine",
+            "anyOf": [
+              "\\b(corpos[oa]|legger[oa]|secc[oa]|fruttat[oa]|morbid[oa]|tannic[oa]|strutturat[oa]|fresc[oa]|dolce|elegante|robust[oa]|profumat[oa]|rosso|bianco|rosato|giovane|invecchiat[oa]|important[e])\\b"
+            ],
+            "min": 1,
+            "errorType": "vocabulary",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*un rosso corposo, un bianco fresco…*"
+          }
+        ]
+      },
+      "model": "Buongiorno, cercavo un rosso corposo ma non troppo tannico, da portare a una cena con amici.",
+      "followOk": "Allora è nel posto giusto. Il Nobile si fa soprattutto con il Sangiovese, che qui chiamiamo Prugnolo gentile.",
+      "followMiss": "Capisco. Preferisce un vino corposo e strutturato, oppure qualcosa di più leggero e fruttato?"
+    },
+    {
+      "id": "t2",
+      "say": "Ecco, assaggi questo: è un Nobile invecchiato in botti di rovere. Che ne dice?",
+      "en": "Here, taste this: it's a Nobile aged in oak barrels. What do you think?",
+      "task": "Describe the taste with two adjectives and sa di / sento / si sente.",
+      "hint": "È morbido e…; sento un sapore di…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "Two taste adjectives",
+            "anyOf": [
+              "\\b(corpos[oa]|legger[oa]|secc[oa]|fruttat[oa]|morbid[oa]|tannic[oa]|strutturat[oa]|fresc[oa]|dolce|elegante|robust[oa]|profumat[oa]|speziat[oa]|intens[oa]|rotond[oa]|equilibrat[oa]|aspr[oa]|amar[oa]|persistente|vellutat[oa]|delicat[oa])\\b"
+            ],
+            "min": 2,
+            "errorType": "vocabulary",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*morbido, elegante, fruttato, speziato…*"
+          },
+          {
+            "label": "sa di / sento / si sente",
+            "anyOf": [
+              "\\b(sa di|sapore di|sento|si sente|si sentono|profuma di|profumo di|ricorda|note di)\\b"
+            ],
+            "min": 1,
+            "errorType": "vocabulary",
+            "conceptId": "B2-SPEAK-01",
+            "hint": "*Sento un sapore di ciliegia…, sa di spezie…*"
+          }
+        ]
+      },
+      "model": "È molto buono: è morbido ed elegante, e sento un sapore di ciliegia e di spezie.",
+      "followOk": "Ha un buon palato! Il Nobile deve invecchiare almeno due anni prima di essere messo in vendita.",
+      "followMiss": "A me sembra morbido e fruttato: si sente la ciliegia, e alla fine un po' di vaniglia dal legno."
+    },
+    {
+      "id": "t3",
+      "say": "Questo lo vendiamo anche in cassette da sei. Quante ne vuole prendere?",
+      "en": "We also sell this one in cases of six. How many would you like to take?",
+      "task": "Say how many bottles you'll take using ne (ne prendo…, ne vorrei…).",
+      "hint": "Ne prendo…, grazie.",
+      "expect": {
+        "minWords": 6,
+        "rubric": [
+          {
+            "label": "ne + verb (ne prendo, ne vorrei…)",
+            "anyOf": [
+              "\\bne\\s+(\\p{L}+\\s+)?(prendo|prenderei|vorrei|voglio|compro|comprerei|porto|porterei|prendiamo|basta|bastano)\\b",
+              "\\b(prender|comprar|portar)ne\\b"
+            ],
+            "min": 1,
+            "errorType": "ci-ne",
+            "conceptId": "B2-PRON-02",
+            "hint": "***Ne** prendo tre.*"
+          },
+          {
+            "label": "Says how many",
+            "anyOf": [
+              "\\b(una|due|tre|quattro|cinque|sei|dodici|\\d+|cassetta|cassa|mezza)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-PRON-02",
+            "hint": "*…tre, una cassetta…*"
+          }
+        ]
+      },
+      "model": "Ne prendo tre, grazie: una la apro stasera e le altre due le porto a casa come regalo.",
+      "followOk": "Ottima scelta. Gliele incarto bene, così non si rompono in valigia.",
+      "followMiss": "Se vuole, ne prenda due o tre: gliele metto in una scatola, così viaggiano sicure."
+    },
+    {
+      "id": "t4",
+      "say": "Vuole portare qualcosa anche ad altre persone? Abbiamo una piccola selezione di vini piemontesi, se a qualcuno piacciono.",
+      "en": "Would you like to take something for other people too? We have a small selection of Piedmontese wines, if anyone likes them.",
+      "task": "Ask for a recommendation politely with the conditional (mi consiglierebbe…?) and describe the person with a relative clause (un amico che…).",
+      "hint": "Che cosa mi consiglierebbe per un amico/un'amica che…?",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Polite conditional (consiglierebbe, potrebbe…)",
+            "anyOf": [
+              "\\b(consiglierebbe|suggerirebbe|potrebbe|saprebbe|direbbe|prenderebbe|sceglierebbe|vorrei)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Che cosa mi **consiglierebbe**…?*"
+          },
+          {
+            "label": "Relative clause about the person",
+            "anyOf": [
+              "\\b(amic[oa]|amici|amiche|persona|qualcuno|collega|fratello|sorella|padre|madre|cognat[oa]|zi[oa]|marito|moglie|compagn[oa])\\s+che\\b"
+            ],
+            "min": 1,
+            "errorType": "relative",
+            "conceptId": "B2-REL-01",
+            "hint": "*…per un amico **che** ama…*"
+          }
+        ]
+      },
+      "model": "Sì, grazie. Che cosa mi consiglierebbe per un amico che ama i vini piemontesi e la carne alla brace?",
+      "followOk": "Le consiglierei un Barolo: è fatto con il Nebbiolo e lo chiamano il re dei vini. Con la carne è perfetto.",
+      "followMiss": "Per chi ama i rossi importanti, Le consiglierei un Barolo o un Barbaresco: tutti e due si fanno con il Nebbiolo, nelle Langhe."
+    },
+    {
+      "id": "t5",
+      "say": "Un'ultima curiosità: Lei da dove viene? Che vino o che bevanda del suo paese mi consiglierebbe di provare?",
+      "en": "One last question: where are you from? What wine or drink from your country would you recommend I try?",
+      "task": "Recommend something with Le consiglierei (di) … and say why.",
+      "hint": "Le consiglierei di provare…, perché…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Le consiglierei…",
+            "anyOf": [
+              "\\bconsiglierei\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "***Le consiglierei** di provare…*"
+          },
+          {
+            "label": "Says why",
+            "anyOf": [
+              "\\b(perché|poiché|visto che|dato che|siccome|infatti|dal momento che|in quanto|grazie a|grazie al|grazie alla|grazie ai)\\b",
+              "\\b(è|sono)\\s+(molto\\s+)?(fresc[oa]|secc[oa]|leggero|leggera|buon[oa]|perfett[oa]|tipic[oa]|famos[oa])\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "B2-CONN-01",
+            "hint": "*…perché è fresco e…*"
+          }
+        ]
+      },
+      "model": "Vengo dall'Inghilterra. Le consiglierei di provare un sidro del Somerset, perché è fresco, secco e perfetto d'estate.",
+      "followOk": "Me lo segno! La prossima volta che vado all'estero lo cerco, promesso.",
+      "followMiss": "Quindi Lei mi consiglierebbe qualcosa del suo paese? Allora la prossima volta me lo porta, e lo assaggiamo insieme!"
+    }
+  ],
+  "closing": "Grazie a Lei e buon proseguimento! Se passa da Pienza, assaggi il pecorino: con il Nobile è perfetto."
+}

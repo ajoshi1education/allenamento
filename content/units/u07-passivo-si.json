@@ -1,0 +1,308 @@
+{
+  "unit": "U07",
+  "title": "Passivo e costruzioni con si",
+  "cefr": "B2",
+  "concepts": [
+    {
+      "id": "B2-PASS-01",
+      "title": "The passive with essere and venire",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": [],
+      "rule": "The passive is essere or venire + past participle agreeing with the subject; the agent takes da (dal, dalla…). Venire is only possible in simple tenses (viene, veniva, verrà, venne), never in compound ones (è stato fatto, not è venuto fatto).",
+      "assessment": [
+        "Forms the passive with essere in any tense, with the participle agreeing with the subject",
+        "Uses venire as the auxiliary in simple tenses only, and essere in compound tenses",
+        "Introduces the agent with da and its combined forms (dal, dalla, dagli…)",
+        "Turns active sentences into passive ones (and back) keeping the same tense",
+        "Avoids the English 'I was given…' structure, using mi è stato dato… instead"
+      ],
+      "lesson": {
+        "intro": "Italian news, reports and formal writing use the passive constantly, and it works much like English: the object becomes the subject. Two things trip English speakers up. First, Italian has **two** auxiliaries, *essere* and *venire*, and *venire* is forbidden in compound tenses. Second, 'by' is **da**, never *per*. Get these right and your written Italian immediately sounds more controlled.",
+        "rules": [
+          {
+            "title": "Form: essere + past participle",
+            "text": "Conjugate *essere* in the tense of the active verb and add the past participle, which **agrees** with the new subject in gender and number. The tense of the passive always matches the tense of the active sentence.",
+            "examples": [
+              { "it": "Il sindaco inaugura la mostra. → La mostra **è inaugurata** dal sindaco.", "en": "The mayor opens the exhibition. → The exhibition is opened by the mayor." },
+              { "it": "Hanno venduto la casa. → La casa **è stata venduta**.", "en": "They sold the house. → The house was sold." },
+              { "it": "I ladri **saranno arrestati** presto.", "en": "The thieves will be arrested soon." }
+            ]
+          },
+          {
+            "title": "Venire: only in simple tenses",
+            "text": "*Venire* can replace *essere* in **simple** tenses (presente, imperfetto, futuro, passato remoto, condizionale presente, congiuntivo presente/imperfetto). It stresses the **action** rather than the resulting state. In **compound** tenses only *essere* is possible: ~~è venuto costruito~~ → *è stato costruito*.",
+            "examples": [
+              { "it": "Le porte **vengono chiuse** alle 20.", "en": "The doors are closed (= someone closes them) at 8 pm." },
+              { "it": "Le porte **sono chiuse**.", "en": "The doors are closed (state, or action: ambiguous)." },
+              { "it": "Il ponte **venne costruito** nel 1950. / Il ponte **è stato costruito** nel 1950.", "en": "The bridge was built in 1950." }
+            ],
+            "table": {
+              "head": ["Tense", "with essere", "with venire"],
+              "rows": [
+                ["presente", "è costruito", "viene costruito"],
+                ["imperfetto", "era costruito", "veniva costruito"],
+                ["futuro", "sarà costruito", "verrà costruito"],
+                ["passato remoto", "fu costruito", "venne costruito"],
+                ["condizionale", "sarebbe costruito", "verrebbe costruito"],
+                ["passato prossimo", "è stato costruito", "—"],
+                ["trapassato prossimo", "era stato costruito", "—"],
+                ["congiuntivo passato", "sia stato costruito", "—"]
+              ]
+            }
+          },
+          {
+            "title": "The agent: da, not per",
+            "text": "The person or thing doing the action is introduced by **da**, which combines with the article: *dal, dallo, dalla, dall', dai, dagli, dalle*. *Per* means 'for' or 'through' and never marks the agent.",
+            "examples": [
+              { "it": "Il quadro è stato dipinto **da** Caravaggio.", "en": "The painting was painted by Caravaggio." },
+              { "it": "Il progetto è stato approvato **dagli** azionisti.", "en": "The project was approved by the shareholders." }
+            ]
+          },
+          {
+            "title": "'I was given…': Italian can't passivise the indirect object",
+            "text": "English turns the person receiving into the subject ('I was given a book'). Italian can't: only the **direct object** can become the subject. Keep the person as an indirect object pronoun: *Mi è stato dato un libro*, or simply use the active *Mi hanno dato un libro*.",
+            "examples": [
+              { "it": "**Mi è stato offerto** un lavoro a Milano.", "en": "I was offered a job in Milan." },
+              { "it": "**Ai vincitori sono stati consegnati** i premi.", "en": "The winners were given the prizes." }
+            ]
+          },
+          {
+            "title": "Passive after modal verbs",
+            "text": "With *dovere, potere, volere* the modal is conjugated and the passive infinitive follows: *deve essere firmato, può essere usato*. In compound tenses: *avrebbe dovuto essere firmato*.",
+            "examples": [
+              { "it": "Il contratto **deve essere firmato** entro venerdì.", "en": "The contract must be signed by Friday." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "La chiesa è venuta costruita nel Trecento.", "right": "La chiesa è stata costruita nel Trecento.", "why": "*Venire* can't be used in compound tenses. Use *essere stato*, or the passato remoto *venne costruita*." },
+          { "wrong": "Il libro è stato scritto per Umberto Eco.", "right": "Il libro è stato scritto da Umberto Eco.", "why": "The agent is introduced by *da*. *Per Umberto Eco* would mean 'for Umberto Eco'." },
+          { "wrong": "Sono stato dato un regalo.", "right": "Mi è stato dato un regalo.", "why": "Only the direct object (*un regalo*) can become the subject. The person stays as an indirect object: *mi*." },
+          { "wrong": "La casa è stato venduto.", "right": "La casa è stata venduta.", "why": "In the passive, both *stato* and the participle agree with the subject: *la casa → stata venduta*." },
+          { "wrong": "Il contratto ha stato firmato.", "right": "Il contratto è stato firmato.", "why": "*Stato* always goes with *essere*, never *avere*." }
+        ],
+        "tips": [
+          "Quick check for *venire*: if the verb form has *stato* in it, *venire* is impossible.",
+          "Use *venire* when you want to make clear that something is being done, not that it's in a state: *Il negozio viene chiuso* (someone closes it) vs *Il negozio è chiuso* (it's shut).",
+          "Newspaper headlines and reports love the passato remoto passive: *venne arrestato, fu scoperto*. Recognise it even if you prefer the passato prossimo when speaking."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-PASS-01.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the passive (passato prossimo).", "prompt": "Il ponte ___ (costruire) nel 1950.", "answers": ["è stato costruito"], "focus": ["stato", "costruito"], "errorType": "passive", "traps": [{ "match": "è venuto costruito", "errorType": "passive", "why": "*Venire* can't form compound tenses. Passato prossimo passive = *è stato* + participle." }, { "match": "ha stato costruito", "errorType": "auxiliary", "why": "*Stato* goes with *essere*: *è stato costruito*." }, { "match": "ha costruito", "errorType": "passive", "why": "That's active ('it built'). The bridge didn't build anything: it *was built*, *è stato costruito*." }], "explanation": "Passato prossimo passive = *essere* (passato prossimo: *è stato*) + participle agreeing with *il ponte*: **è stato costruito**.", "en": "The bridge was built in 1950." },
+        { "id": "B2-PASS-01.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the passive (present).", "prompt": "Ogni anno il festival ___ (organizzare) dal Comune.", "answers": ["(è|viene) organizzato"], "focus": ["organizzato"], "errorType": "passive", "traps": [{ "match": "organizza", "errorType": "passive", "why": "The festival is the thing organised, not the organiser: passive *è / viene organizzato*." }, { "match": "(è|viene) organizzata", "errorType": "agreement", "why": "The participle agrees with *il festival* (masculine): *organizzato*." }], "explanation": "Present passive: *è organizzato* or *viene organizzato*. Both work in a simple tense; *viene* stresses the yearly action.", "en": "Every year the festival is organised by the town council." },
+        { "id": "B2-PASS-01.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the passive (future).", "prompt": "Le lettere ___ (spedire) domani mattina.", "answers": ["(saranno|verranno) spedite"], "focus": ["spedite"], "errorType": "passive", "traps": [{ "match": "(saranno|verranno) spediti", "errorType": "agreement", "why": "*Le lettere* is feminine plural, so the participle is *spedite*." }, { "match": "spediranno", "errorType": "passive", "why": "*Spediranno* is active ('they will send'). With *le lettere* as subject you need the passive: *saranno / verranno spedite*." }], "explanation": "Future passive: *saranno spedite* or *verranno spedite*. The participle agrees with *le lettere*.", "en": "The letters will be sent tomorrow morning." },
+        { "id": "B2-PASS-01.e04", "type": "choice", "difficulty": 2, "instruction": "Choose the correct form.", "prompt": "Finora questo romanzo ___ tradotto in venti lingue.", "options": ["è venuto", "è stato", "ha stato", "viene"], "answer": 1, "optionWhy": { "0": "*Venire* can't be used in compound tenses: *è stato tradotto*.", "2": "*Stato* takes *essere*, never *avere*.", "3": "*Finora* ('so far') needs the passato prossimo, not the present." }, "errorType": "passive", "explanation": "*Finora* → passato prossimo, and the passato prossimo passive is only possible with *essere*: **è stato tradotto**.", "en": "So far this novel has been translated into twenty languages." },
+        { "id": "B2-PASS-01.e05", "type": "cloze", "difficulty": 2, "instruction": "Complete with the missing preposition.", "prompt": "La Gioconda è stata dipinta ___ Leonardo.", "answers": ["da"], "focus": ["da"], "errorType": "preposition", "traps": [{ "match": "per", "errorType": "preposition", "why": "'By' in a passive is *da*. *Per Leonardo* means 'for Leonardo'." }, { "match": "di", "errorType": "preposition", "why": "*Di Leonardo* means 'Leonardo's' (possession). The agent takes *da*." }], "explanation": "The agent of a passive is introduced by **da**.", "en": "The Mona Lisa was painted by Leonardo." },
+        { "id": "B2-PASS-01.e06", "type": "choice", "difficulty": 3, "instruction": "Which form makes it clear this is a repeated action, not a state?", "prompt": "Ogni sera alle 20 le porte del museo ___ dal custode.", "options": ["vengono chiuse", "sono chiuse", "sono state chiuse", "vengono chiusi"], "answer": 0, "optionWhy": { "1": "*Sono chiuse* can also describe a state ('they are shut'). *Venire* removes the ambiguity.", "2": "*Sono state chiuse* is a one-off past action, which doesn't fit *ogni sera*.", "3": "*Le porte* is feminine: *chiuse*." }, "errorType": "passive", "explanation": "*Venire* in a simple tense stresses the action: **vengono chiuse** = someone closes them every evening.", "en": "Every evening at 8 the museum doors are closed by the caretaker." },
+        { "id": "B2-PASS-01.e07", "type": "transform", "difficulty": 2, "instruction": "Rewrite in the passive, keeping the agent.", "prompt": "Il sindaco ha inaugurato la nuova biblioteca.", "answers": ["La nuova biblioteca è stata inaugurata dal sindaco"], "focus": ["stata", "inaugurata", "dal"], "errorType": "passive", "traps": [{ "contains": ["venuta"], "errorType": "passive", "why": "Passato prossimo → only *essere*: *è stata inaugurata*." }, { "contains": ["inaugurato"], "errorType": "agreement", "why": "The new subject is *la biblioteca* (feminine): *stata inaugurata*." }, { "contains": ["per"], "errorType": "preposition", "why": "The agent takes *da* (+ article → *dal sindaco*)." }], "explanation": "Same tense (passato prossimo) → *è stata inaugurata*; agent with *dal*.", "en": "The new library was opened by the mayor." },
+        { "id": "B2-PASS-01.e08", "type": "transform", "difficulty": 3, "instruction": "Rewrite in the passive, keeping the agent and the tense.", "prompt": "La polizia arresterà i ladri.", "answers": ["I ladri (saranno|verranno) arrestati dalla polizia"], "focus": ["arrestati", "dalla"], "errorType": "passive", "traps": [{ "contains": ["arrestato"], "errorType": "agreement", "why": "*I ladri* is masculine plural: *arrestati*." }, { "contains": ["sono"], "errorType": "wrong-tense", "why": "The active verb is future (*arresterà*), so the passive is future too: *saranno / verranno arrestati*." }], "explanation": "Future → *saranno* or *verranno arrestati*; agent *dalla polizia*.", "en": "The thieves will be arrested by the police." },
+        { "id": "B2-PASS-01.e09", "type": "transform", "difficulty": 3, "instruction": "Rewrite in the passive, keeping the agent and the tense.", "prompt": "Gli studenti leggevano questi libri.", "answers": ["Questi libri (erano|venivano) letti dagli studenti"], "focus": ["letti", "dagli"], "errorType": "passive", "traps": [{ "contains": ["da"], "errorType": "preposition", "why": "*Da* combines with the article: *da + gli = dagli*." }, { "contains": ["sono"], "errorType": "wrong-tense", "why": "Keep the imperfetto: *erano / venivano letti*." }, { "contains": ["letto"], "errorType": "agreement", "why": "*Questi libri* → *letti*." }], "explanation": "Imperfetto → *erano* or *venivano letti*; *da + gli* → **dagli**.", "en": "These books were read by the students." },
+        { "id": "B2-PASS-01.e10", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian using the passive.", "prompt": "The window was broken by the children.", "answers": ["La finestra è stata rotta dai (bambini|ragazzi)", "La finestra (fu|venne) rotta dai (bambini|ragazzi)"], "focus": ["rotta", "dai"], "errorType": "passive", "traps": [{ "contains": ["venuta"], "errorType": "passive", "why": "No *venire* in compound tenses: *è stata rotta* (or passato remoto *venne rotta*)." }, { "contains": ["per"], "errorType": "preposition", "why": "'By' = *da*: *dai bambini*." }, { "contains": ["rotto"], "errorType": "agreement", "why": "*La finestra* is feminine: *rotta*." }, { "contains": ["era"], "errorType": "wrong-tense", "why": "*Era rotta* describes a state ('was broken', already). The agent shows an action: *è stata rotta dai bambini*." }], "explanation": "A single past action: *è stata rotta* (or the written *fu / venne rotta*), agent *dai bambini*.", "en": "The window was broken by the children." },
+        { "id": "B2-PASS-01.e11", "type": "translate", "difficulty": 4, "instruction": "Translate into Italian.", "prompt": "I was given a present.", "answers": ["Mi è stato (dato|fatto) un regalo", "Mi hanno (dato|fatto) un regalo"], "focus": ["mi"], "errorType": "passive", "traps": [{ "match": "[Io] sono (stato|stata) (dato|data) un regalo", "errorType": "passive", "why": "Italian can't make the receiver the subject. The present is the subject: *Mi è stato dato un regalo*." }, { "match": "Mi è stata (data|fatta) un regalo", "errorType": "agreement", "why": "The subject is *un regalo* (masculine), so *stato dato*." }], "explanation": "The direct object (*un regalo*) becomes the subject; the person stays as indirect object *mi*: **Mi è stato dato un regalo** (or active *Mi hanno dato…*).", "en": "I was given a present." },
+        { "id": "B2-PASS-01.e12", "type": "cloze", "difficulty": 4, "instruction": "Complete with the passive (trapassato prossimo).", "prompt": "Mi hanno detto che la riunione ___ (rimandare) a lunedì.", "answers": ["era stata rimandata"], "focus": ["stata", "rimandata"], "errorType": "passive", "traps": [{ "match": "era venuta rimandata", "errorType": "passive", "why": "The trapassato is a compound tense, so *venire* isn't possible: *era stata rimandata*." }, { "match": "era stato rimandato", "errorType": "agreement", "why": "*La riunione* is feminine: *stata rimandata*." }, { "match": "aveva stata rimandata", "errorType": "auxiliary", "why": "The passive uses *essere* throughout: *era stata*." }], "explanation": "Trapassato passive: *era stata* + participle, all agreeing with *la riunione*.", "en": "They told me the meeting had been postponed to Monday." },
+        { "id": "B2-PASS-01.e13", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "The contract will be signed by the director.", "tokens": ["Il", "contratto", "verrà", "firmato", "dal", "direttore"], "answers": ["Il contratto verrà firmato dal direttore"], "errorType": "word-order", "explanation": "Subject + passive verb (*verrà firmato*) + agent (*dal direttore*), as in English." },
+        { "id": "B2-PASS-01.e14", "type": "choice", "difficulty": 4, "instruction": "Choose the correct form.", "prompt": "Si dice che l'edificio ___ progettato da Renzo Piano.", "options": ["sia stato", "sia venuto", "venga stato", "abbia stato"], "answer": 0, "optionWhy": { "1": "The congiuntivo passato is compound, so *venire* is impossible.", "2": "*Venga stato* doesn't exist: *stato* goes with *essere*.", "3": "*Stato* never takes *avere*." }, "errorType": "passive", "explanation": "*Si dice che* + congiuntivo; a past passive → **sia stato progettato**.", "en": "They say the building was designed by Renzo Piano." },
+        { "id": "B2-PASS-01.e15", "type": "speak", "difficulty": 3, "instruction": "Say it in Italian, using the passive.", "prompt": "Tell a visitor that the cathedral was built in the 14th century.", "answers": ["La cattedrale (è stata|fu|venne) costruita nel (Trecento|quattordicesimo secolo|XIV secolo)"], "focus": ["costruita"], "errorType": "passive", "traps": [{ "contains": ["venuta"], "errorType": "passive", "why": "No *venire* in compound tenses: *è stata costruita* (or *venne costruita*)." }, { "contains": ["costruito"], "errorType": "agreement", "why": "*La cattedrale* is feminine: *costruita*." }], "explanation": "*La cattedrale è stata costruita nel Trecento*. Italians often name centuries as *il Trecento* (= the 1300s).", "en": "The cathedral was built in the 14th century." },
+        { "id": "B2-PASS-01.e16", "type": "transform", "difficulty": 4, "instruction": "Rewrite in the active, keeping the tense.", "prompt": "Il premio venne consegnato al vincitore dal presidente.", "answers": ["Il presidente consegnò il premio al vincitore"], "focus": ["consegnò"], "errorType": "passive", "traps": [{ "contains": ["ha"], "errorType": "wrong-tense", "why": "*Venne consegnato* is passato remoto, so the active is *consegnò*, not the passato prossimo." }, { "contains": ["consegnato"], "errorType": "passive", "why": "In the active there's no participle: the passato remoto of *consegnare* is *consegnò*." }], "explanation": "The agent (*dal presidente*) becomes the subject; *venne consegnato* (passato remoto) → **consegnò**.", "en": "The president presented the prize to the winner." }
+      ]
+    },
+    {
+      "id": "C1-PASS-02",
+      "title": "The passive with andare (va fatto) and obligation",
+      "cefr": "C1",
+      "skill": "grammar",
+      "prereqs": ["B2-PASS-01"],
+      "rule": "Andare + past participle means 'must be done' (va fatto = deve essere fatto; andrebbe fatto = should be done) and only works in simple tenses. With verbs of loss (perdere, smarrire, sprecare, distruggere) andare is a plain passive with no obligation, and compound tenses are fine: è andato perso.",
+      "assessment": [
+        "Uses va / vanno + participle to express obligation, with correct agreement",
+        "Uses andrebbe / andrebbero + participle for recommendations ('should be…')",
+        "Avoids andare-obligation in compound tenses, using andava or doveva essere instead",
+        "Uses andare perso / smarrito / sprecato as a plain passive, including in compound tenses",
+        "Recognises formal set phrases like va detto che, va ricordato che, non va dimenticato che"
+      ],
+      "lesson": {
+        "intro": "Instructions, labels and formal texts are full of *va fatto*, *vanno rispettate*, *andrebbe detto*. This passive with *andare* packs 'must be' into one word, and it has no English equivalent, so learners often avoid it or misread it. There's a second, completely different use: *andare perso* ('to get lost'), which has no idea of obligation at all.",
+        "rules": [
+          {
+            "title": "Andare + participle = must be (obligation)",
+            "text": "*Andare* conjugated + past participle = *dovere essere* + participle. The participle agrees with the subject. The agent is normally left out: the point is the duty, not who does it.",
+            "examples": [
+              { "it": "Questo modulo **va compilato** in stampatello.", "en": "This form must be filled in in block capitals." },
+              { "it": "Le medicine **vanno prese** dopo i pasti.", "en": "The medicine must be taken after meals." },
+              { "it": "Le scarpe **vanno tolte** all'ingresso.", "en": "Shoes must be removed at the entrance." }
+            ]
+          },
+          {
+            "title": "Andrebbe = should be (softer advice)",
+            "text": "The conditional turns the obligation into a recommendation or criticism: *andrebbe fatto* = 'it should be done', *andrebbe detto* = 'it should be said'. In the past, use *andava* ('had to be') or *sarebbe dovuto essere* ('should have been').",
+            "examples": [
+              { "it": "La questione **andrebbe affrontata** con più calma.", "en": "The matter should be dealt with more calmly." },
+              { "it": "Il lavoro **andava finito** entro le cinque.", "en": "The work had to be finished by five." }
+            ],
+            "table": {
+              "head": ["Meaning", "andare form", "equivalent"],
+              "rows": [
+                ["must be done", "va fatto / vanno fatti", "deve essere fatto"],
+                ["should be done", "andrebbe fatto", "dovrebbe essere fatto"],
+                ["had to be done", "andava fatto", "doveva essere fatto"],
+                ["will have to be done", "andrà fatto", "dovrà essere fatto"],
+                ["should have been done", "—", "sarebbe dovuto essere fatto"]
+              ]
+            }
+          },
+          {
+            "title": "Only simple tenses for obligation",
+            "text": "Like *venire*, obligation-*andare* can't appear in compound tenses: ~~è andato fatto~~. For a past obligation use *andava fatto* or *doveva essere fatto*.",
+            "examples": [
+              { "it": "Quel documento **andava firmato** ieri.", "en": "That document had to be signed yesterday." }
+            ]
+          },
+          {
+            "title": "Andare + verbs of loss: a plain passive",
+            "text": "With *perdere, smarrire, sprecare, distruggere, dimenticare* (and a few others), *andare* means 'to get / end up' + participle. There's **no** obligation, and compound tenses are normal: *è andato perso* = 'it got lost'.",
+            "examples": [
+              { "it": "Il mio bagaglio **è andato smarrito**.", "en": "My luggage got lost." },
+              { "it": "Tutto il cibo avanzato **è andato sprecato**.", "en": "All the leftover food went to waste." },
+              { "it": "Molti documenti **andarono distrutti** nell'incendio.", "en": "Many documents were destroyed in the fire." }
+            ]
+          },
+          {
+            "title": "Set phrases in formal writing",
+            "text": "*Va detto che…* ('it must be said that'), *va ricordato che…*, *va sottolineato che…*, *non va dimenticato che…*. They introduce a point in essays and reports and are followed by the **indicative** when stating a fact.",
+            "examples": [
+              { "it": "**Va detto** che i risultati sono incoraggianti.", "en": "It must be said that the results are encouraging." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Il lavoro è andato fatto ieri.", "right": "Il lavoro andava fatto ieri. / Il lavoro doveva essere fatto ieri.", "why": "Obligation-*andare* only works in simple tenses." },
+          { "wrong": "Questi errori va corretti.", "right": "Questi errori vanno corretti.", "why": "*Andare* agrees with the subject (*questi errori* → *vanno*), and so does the participle." },
+          { "wrong": "Le regole vanno rispettare.", "right": "Le regole vanno rispettate.", "why": "*Andare* takes the past participle, not the infinitive." },
+          { "wrong": "Il biglietto va perso.", "right": "Il biglietto è andato perso.", "why": "For something that got lost, use the passato prossimo: with verbs of loss *andare* is an ordinary passive and compound tenses are fine." }
+        ],
+        "tips": [
+          "Read *va* + participle as 'must be': *va fatto* = must be done. With *perso / smarrito / sprecato* read it as 'got': *è andato perso* = got lost.",
+          "*Andrebbe detto che…* is a polite way to add a criticism in a meeting.",
+          "Look for *va / vanno* on labels and instructions: *da consumarsi*, *va conservato in frigorifero*, *non va ingerito*."
+        ]
+      },
+      "exercises": [
+        { "id": "C1-PASS-02.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct form of andare (present).", "prompt": "Questo modulo ___ compilato in stampatello.", "answers": ["va"], "focus": ["va"], "errorType": "passive", "traps": [{ "match": "vanno", "errorType": "agreement", "why": "*Questo modulo* is singular: *va*." }], "explanation": "*Va compilato* = *deve essere compilato*: obligation.", "en": "This form must be filled in in block capitals." },
+        { "id": "C1-PASS-02.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with the correct form of andare (present).", "prompt": "Le medicine ___ prese dopo i pasti.", "answers": ["vanno"], "focus": ["vanno"], "errorType": "agreement", "traps": [{ "match": "va", "errorType": "agreement", "why": "*Andare* agrees with the subject *le medicine* (plural): *vanno*." }], "explanation": "Plural subject → **vanno prese** ('must be taken').", "en": "The medicine must be taken after meals." },
+        { "id": "C1-PASS-02.e03", "type": "transform", "difficulty": 2, "instruction": "Rewrite using andare + past participle.", "prompt": "Il latte deve essere conservato in frigorifero.", "answers": ["Il latte va conservato in frigorifero"], "focus": ["va", "conservato"], "errorType": "passive", "traps": [{ "contains": ["conservare"], "errorType": "verb-form", "why": "*Andare* takes the past participle: *va conservato*." }, { "contains": ["è"], "errorType": "passive", "why": "No *essere* needed: *va conservato* already means 'must be kept'." }], "explanation": "*Deve essere conservato* → **va conservato**.", "en": "Milk must be kept in the fridge." },
+        { "id": "C1-PASS-02.e04", "type": "transform", "difficulty": 3, "instruction": "Rewrite using andare + past participle.", "prompt": "Questi errori devono essere corretti subito.", "answers": ["Questi errori vanno corretti subito"], "focus": ["vanno", "corretti"], "errorType": "passive", "traps": [{ "contains": ["va"], "errorType": "agreement", "why": "Plural subject (*questi errori*) → *vanno*." }, { "contains": ["correggere"], "errorType": "verb-form", "why": "*Andare* + past participle: *corretti*, not the infinitive." }, { "contains": ["corretto"], "errorType": "agreement", "why": "The participle agrees with *errori*: *corretti*." }], "explanation": "*Devono essere corretti* → **vanno corretti**.", "en": "These mistakes must be corrected immediately." },
+        { "id": "C1-PASS-02.e05", "type": "cloze", "difficulty": 3, "instruction": "Complete with andare in the conditional ('should be').", "prompt": "Secondo me, la questione ___ affrontata con più calma.", "answers": ["andrebbe"], "focus": ["andrebbe"], "errorType": "conditional-form", "traps": [{ "match": "va", "errorType": "conditional-form", "why": "*Va affrontata* is a firm obligation ('must be'). *Secondo me* signals advice: conditional *andrebbe*." }, { "match": "andrebbero", "errorType": "agreement", "why": "*La questione* is singular: *andrebbe*." }], "explanation": "Conditional *andrebbe* + participle = 'should be' (recommendation).", "en": "In my view, the matter should be dealt with more calmly." },
+        { "id": "C1-PASS-02.e06", "type": "choice", "difficulty": 3, "instruction": "Choose the correct form.", "prompt": "Il pacco ___ perso durante il trasloco.", "options": ["è andato", "è stato andato", "va", "è venuto"], "answer": 0, "optionWhy": { "1": "*È stato andato* doesn't exist.", "2": "*Va perso* is present ('gets lost'), but the move is over.", "3": "*Venire* can't form compound tenses." }, "errorType": "passive", "explanation": "With verbs of loss, *andare* is an ordinary passive and compound tenses are fine: **è andato perso** = it got lost.", "en": "The parcel got lost during the move." },
+        { "id": "C1-PASS-02.e07", "type": "choice", "difficulty": 2, "instruction": "What does the sentence mean?", "prompt": "Questo vino va bevuto fresco.", "options": ["This wine must be drunk chilled.", "This wine is being drunk chilled.", "This wine went off when chilled.", "This wine was drunk chilled."], "answer": 0, "errorType": "comprehension", "explanation": "*Va* + participle = obligation: 'must be drunk'.", "en": "This wine must be drunk chilled." },
+        { "id": "C1-PASS-02.e08", "type": "choice", "difficulty": 4, "instruction": "Choose the correct form.", "prompt": "Ieri quel lavoro ___ fatto entro le cinque.", "options": ["andava", "è andato", "è stato andato", "andrà"], "answer": 0, "optionWhy": { "1": "Obligation-*andare* can't be used in compound tenses: *è andato fatto* is wrong. Use *andava fatto*.", "2": "*È stato andato* doesn't exist.", "3": "*Ieri* needs a past form." }, "errorType": "passive", "explanation": "Past obligation with *andare* → imperfetto: **andava fatto** ('had to be done'). Compound tenses aren't possible.", "en": "Yesterday that work had to be done by five." },
+        { "id": "C1-PASS-02.e09", "type": "translate", "difficulty": 3, "instruction": "Translate using andare + participle.", "prompt": "It must be said that the results are good.", "answers": ["Va detto che i risultati sono (buoni|positivi)"], "focus": ["va", "detto"], "errorType": "passive", "traps": [{ "match": ["(Bisogna|Si deve) dire che i risultati sono (buoni|positivi)", "Deve essere detto che i risultati sono (buoni|positivi)"], "ok": true, "errorType": "passive", "why": "Correct Italian. The more compact formal version is *Va detto che…*." }, { "contains": ["siano"], "errorType": "subjunctive-for-indicative", "why": "*Va detto che* introduces a fact, so the indicative *sono* is right." }, { "contains": ["dire"], "errorType": "verb-form", "why": "*Andare* takes the past participle: *va detto*." }], "explanation": "*Va detto che…* = 'it must be said that…', a typical formal opener.", "en": "It must be said that the results are good." },
+        { "id": "C1-PASS-02.e10", "type": "translate", "difficulty": 4, "instruction": "Translate using andare + participle.", "prompt": "My luggage got lost.", "answers": ["Il mio bagaglio è andato (perso|smarrito)", "I miei bagagli sono andati (persi|smarriti)", "La mia valigia è andata (persa|smarrita)", "Le mie valigie sono andate (perse|smarrite)"], "focus": ["andato", "andati", "andata", "andate"], "errorType": "passive", "traps": [{ "match": ["Il mio bagaglio è stato (perso|smarrito)", "La mia valigia è stata (persa|smarrita)"], "ok": true, "errorType": "passive", "why": "Correct, but *è andato perso / smarrito* is the natural way to say something 'got lost'." }, { "match": ["Il mio bagaglio ha andato (perso|smarrito)", "La mia valigia ha andato (persa|smarrita)"], "errorType": "auxiliary", "why": "*Andare* takes *essere*: *è andato*." }, { "match": "Il mio bagaglio è andato (persa|smarrita)", "errorType": "agreement", "why": "*Il bagaglio* is masculine: *perso / smarrito*." }], "explanation": "With verbs of loss, *andare* + participle = 'get lost', in any tense: **è andato smarrito**.", "en": "My luggage got lost." },
+        { "id": "C1-PASS-02.e11", "type": "transform", "difficulty": 4, "instruction": "Rewrite using 'Va' + past participle.", "prompt": "Bisogna ricordare che il progetto è ancora in fase sperimentale.", "answers": ["Va ricordato che il progetto è ancora in fase sperimentale"], "focus": ["va", "ricordato"], "errorType": "passive", "traps": [{ "contains": ["ricordare"], "errorType": "verb-form", "why": "*Andare* + past participle: *va ricordato*." }, { "contains": ["sia"], "errorType": "subjunctive-for-indicative", "why": "The fact stays in the indicative: *è ancora in fase sperimentale*." }], "explanation": "*Bisogna ricordare che* → **Va ricordato che**: same meaning, more compact and formal.", "en": "It should be remembered that the project is still at an experimental stage." },
+        { "id": "C1-PASS-02.e12", "type": "cloze", "difficulty": 4, "instruction": "Complete with andare in the passato prossimo.", "prompt": "Tutto il cibo avanzato ___ sprecato.", "answers": ["è andato"], "focus": ["andato"], "errorType": "passive", "traps": [{ "match": "è stato andato", "errorType": "passive", "why": "*È stato andato* doesn't exist: *è andato sprecato*." }, { "match": "ha andato", "errorType": "auxiliary", "why": "*Andare* takes *essere*." }, { "match": "va", "errorType": "wrong-tense", "why": "The prompt asks for the passato prossimo: *è andato*." }], "explanation": "*Andare sprecato* ('go to waste'): verb of loss, so the compound tense is fine: **è andato sprecato**.", "en": "All the leftover food went to waste." },
+        { "id": "C1-PASS-02.e13", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "Shoes must be removed at the entrance.", "tokens": ["Le", "scarpe", "vanno", "tolte", "all'ingresso"], "answers": ["Le scarpe vanno tolte all'ingresso"], "errorType": "word-order", "explanation": "*Vanno tolte* = must be removed; the participle agrees with *le scarpe*." },
+        { "id": "C1-PASS-02.e14", "type": "speak", "difficulty": 3, "instruction": "Say it in Italian, using andare + participle.", "prompt": "Tell a new colleague that this document should be signed by tomorrow (a recommendation).", "answers": ["(Questo|Il) documento andrebbe firmato entro domani"], "focus": ["andrebbe", "firmato"], "errorType": "passive", "traps": [{ "match": "(Questo|Il) documento va firmato entro domani", "ok": true, "errorType": "passive", "why": "Correct, but *va* is a firm 'must'. For 'should', use the conditional *andrebbe*." }, { "contains": ["firmare"], "errorType": "verb-form", "why": "*Andare* + past participle: *firmato*." }], "explanation": "'Should be signed' → conditional **andrebbe firmato**.", "en": "This document should be signed by tomorrow." },
+        { "id": "C1-PASS-02.e15", "type": "choice", "difficulty": 5, "instruction": "Which sentence is NOT correct?", "prompt": "Find the ungrammatical sentence.", "options": ["La lettera va spedita oggi.", "La lettera è andata spedita ieri.", "La lettera andrebbe spedita oggi.", "La lettera è andata persa."], "answer": 1, "optionWhy": { "0": "Correct: 'must be sent today'.", "2": "Correct: 'should be sent today'.", "3": "Correct: verbs of loss allow compound tenses." }, "errorType": "passive", "explanation": "Obligation-*andare* can't be used in compound tenses: ~~è andata spedita~~. Say *andava spedita* or *è stata spedita*. Only verbs of loss (*è andata persa*) allow it.", "en": "Which sentence is wrong?" },
+        { "id": "C1-PASS-02.e16", "type": "transform", "difficulty": 5, "instruction": "Rewrite using andare + past participle (keep the conditional).", "prompt": "Si dovrebbero ridurre i costi.", "answers": ["I costi andrebbero ridotti"], "focus": ["andrebbero", "ridotti"], "errorType": "passive", "traps": [{ "contains": ["andrebbe"], "errorType": "agreement", "why": "*I costi* is plural: *andrebbero*." }, { "contains": ["ridotto"], "errorType": "agreement", "why": "The participle agrees with *i costi*: *ridotti*." }, { "contains": ["ridurre"], "errorType": "verb-form", "why": "*Andare* + past participle: *ridotti*." }], "explanation": "The object *i costi* becomes the subject: **I costi andrebbero ridotti** ('costs should be cut').", "en": "Costs should be cut." }
+      ]
+    },
+    {
+      "id": "B2-SI-01",
+      "title": "Si passivante vs si impersonale",
+      "cefr": "B2",
+      "skill": "grammar",
+      "prereqs": ["B2-PASS-01"],
+      "rule": "Si + verb with a direct object is passive: the verb agrees with the object (si vende una casa, si vendono case). Without a direct object si is impersonal and the verb is singular, but adjectives are plural (si è felici). Reflexive verbs become ci si (ci si alza). Compound tenses always take essere: si sono vendute, si è mangiato, si è partiti.",
+      "assessment": [
+        "Makes the verb agree with the plural object after si passivante (si vendono, si devono rispettare)",
+        "Uses si impersonale with a singular verb and plural adjectives (si è stanchi)",
+        "Uses ci si with reflexive verbs (ci si alza, ci si diverte)",
+        "Forms compound tenses with essere and the correct participle ending (si sono vendute, si è mangiato, si è partiti)",
+        "Uses si for generic 'you / one / people' instead of tu or la gente"
+      ],
+      "lesson": {
+        "intro": "Where English says 'you', 'one', 'people' or 'they' for people in general, Italian uses *si*. It's everywhere: signs, recipes, rules, conversation. The traps are agreement: *si vendono case*, not ~~si vende case~~; *si è stanchi*, not ~~si è stanco~~; and the reflexive form *ci si*, which has no English parallel.",
+        "rules": [
+          {
+            "title": "Si passivante: the verb agrees with the object",
+            "text": "With a transitive verb and a direct object, *si* works like a passive: the object is really the subject, so the verb agrees with it. Singular object → singular verb; plural object → plural verb. The same goes for modals: *si devono rispettare le regole*.",
+            "examples": [
+              { "it": "**Si vende** casa con giardino.", "en": "House with garden for sale." },
+              { "it": "In questo negozio **si vendono** solo prodotti biologici.", "en": "This shop only sells organic products." },
+              { "it": "**Si devono rispettare** le regole.", "en": "The rules must be respected." }
+            ]
+          },
+          {
+            "title": "Si impersonale: singular verb, plural adjectives",
+            "text": "Without a direct object (intransitive verbs, or *essere*, *diventare*…), *si* means 'one / people / you'. The verb is always **singular**, but adjectives and nouns referring to the people are **plural**.",
+            "examples": [
+              { "it": "In Italia **si mangia** bene.", "en": "You eat well in Italy." },
+              { "it": "Quando **si è giovani**, si pensa di poter fare tutto.", "en": "When you're young, you think you can do anything." },
+              { "it": "**Si parla** molto di questo film.", "en": "People are talking a lot about this film." }
+            ]
+          },
+          {
+            "title": "Reflexive verbs: ci si",
+            "text": "A reflexive verb already has *si* (*alzarsi*), and Italian can't say ~~si si~~. The impersonal becomes **ci si**: *ci si alza*, *ci si diverte*, *ci si annoia*.",
+            "examples": [
+              { "it": "In vacanza **ci si alza** tardi.", "en": "On holiday you get up late." },
+              { "it": "Quando si è stanchi **ci si annoia** facilmente.", "en": "When you're tired, you get bored easily." }
+            ]
+          },
+          {
+            "title": "Compound tenses: always essere",
+            "text": "All *si* constructions take **essere** in compound tenses. The participle depends on the type: si passivante → agrees with the object; si impersonale with a verb that normally takes *avere* → **-o**; with a verb that normally takes *essere* (including reflexives) → **-i** (masculine plural).",
+            "table": {
+              "head": ["Type", "Example", "Participle"],
+              "rows": [
+                ["si passivante", "Si sono vendute molte copie.", "agrees with the object"],
+                ["si impersonale, avere-verb", "Si è mangiato benissimo.", "-o"],
+                ["si impersonale, essere-verb", "Si è partiti all'alba.", "-i"],
+                ["ci si (reflexive)", "Ci si è divertiti molto.", "-i"]
+              ]
+            }
+          },
+          {
+            "title": "Si with other pronouns",
+            "text": "Object pronouns go **before** *si*: *lo si fa, la si vede*. With *ne* the *si* becomes *se*: *se ne parla* ('people talk about it').",
+            "examples": [
+              { "it": "Di questo problema **se ne parla** da anni.", "en": "People have been talking about this problem for years." },
+              { "it": "Il vino buono **lo si riconosce** subito.", "en": "You recognise good wine straight away." }
+            ]
+          }
+        ],
+        "mistakes": [
+          { "wrong": "Si vende biglietti per il concerto.", "right": "Si vendono biglietti per il concerto.", "why": "*Biglietti* is the real subject (plural), so the verb is plural." },
+          { "wrong": "Quando si è stanco si lavora male.", "right": "Quando si è stanchi si lavora male.", "why": "With si impersonale, adjectives are plural." },
+          { "wrong": "In vacanza si si alza tardi.", "right": "In vacanza ci si alza tardi.", "why": "Reflexive verb + impersonal *si* → *ci si*." },
+          { "wrong": "Alla festa si ha ballato molto.", "right": "Alla festa si è ballato molto.", "why": "All *si* constructions take *essere* in compound tenses." },
+          { "wrong": "Qui non puoi fumare. (on a sign)", "right": "Qui non si può fumare. / Vietato fumare.", "why": "For general rules, Italian uses impersonal *si*, not *tu*." }
+        ],
+        "tips": [
+          "Test: is there a direct object after the verb? Yes → make the verb agree with it. No → singular verb.",
+          "Think of *si è* + plural adjective as 'one is' + 'people': *si è contenti*.",
+          "*Ci si* is just the reflexive *si* plus impersonal *si* in disguise: *ci si vede!* ('see you!') is the same structure."
+        ]
+      },
+      "exercises": [
+        { "id": "B2-SI-01.e01", "type": "cloze", "difficulty": 1, "instruction": "Complete with si + the verb in the present.", "prompt": "In questo negozio ___ (vendere) solo prodotti biologici.", "answers": ["si vendono"], "focus": ["vendono"], "errorType": "passive", "traps": [{ "match": "si vende", "errorType": "agreement", "why": "*Prodotti* is plural and is the real subject: *si vendono*. *Si vende prodotti* is common in speech but non-standard." }, { "match": "vendono", "errorType": "passive", "why": "Without *si* this means 'they sell'. The general 'is sold / are sold' needs *si vendono*." }], "explanation": "Si passivante: the verb agrees with the plural object → **si vendono**.", "en": "This shop only sells organic products." },
+        { "id": "B2-SI-01.e02", "type": "cloze", "difficulty": 1, "instruction": "Complete with si + the verb in the present.", "prompt": "In Italia ___ (mangiare) la pasta quasi ogni giorno.", "answers": ["si mangia"], "focus": ["mangia"], "errorType": "passive", "traps": [{ "match": "si mangiano", "errorType": "agreement", "why": "*La pasta* is singular: *si mangia*." }], "explanation": "Singular object (*la pasta*) → singular verb: **si mangia**.", "en": "In Italy people eat pasta almost every day." },
+        { "id": "B2-SI-01.e03", "type": "cloze", "difficulty": 2, "instruction": "Complete with the impersonal form of the reflexive verb in brackets.", "prompt": "In vacanza ___ (alzarsi) sempre tardi.", "answers": ["ci si alza"], "focus": ["ci"], "errorType": "pronoun", "traps": [{ "match": "si si alza", "errorType": "pronoun", "why": "Two *si* can't follow each other: reflexive + impersonal → *ci si alza*." }, { "match": "si alza", "errorType": "pronoun", "why": "*Si alza* means 'he / she gets up'. The impersonal 'you / people get up' is *ci si alza*." }, { "match": "ci si alzano", "errorType": "agreement", "why": "Si impersonale takes a singular verb: *ci si alza*." }], "explanation": "Reflexive verb + impersonal *si* → **ci si alza**.", "en": "On holiday you always get up late." },
+        { "id": "B2-SI-01.e04", "type": "cloze", "difficulty": 2, "instruction": "Complete with the correct form of the adjective.", "prompt": "Quando si è ___ (stanco), si lavora male.", "answers": ["stanchi"], "focus": ["stanchi"], "errorType": "agreement", "traps": [{ "match": "stanco", "errorType": "agreement", "why": "After impersonal *si*, adjectives are plural: *si è stanchi*." }, { "match": "stanca", "errorType": "agreement", "why": "Impersonal *si* takes a masculine plural adjective: *stanchi*." }], "explanation": "Si impersonale: singular verb (*si è*) but plural adjective: **stanchi**.", "en": "When you're tired, you work badly." },
+        { "id": "B2-SI-01.e05", "type": "choice", "difficulty": 2, "instruction": "Choose the correct form.", "prompt": "Ieri ___ molti biglietti per il concerto.", "options": ["si sono venduti", "si è venduto", "si hanno venduto", "si è venduti"], "answer": 0, "optionWhy": { "1": "*Biglietti* is plural and the real subject: *si sono venduti*.", "2": "*Si* constructions always take *essere*.", "3": "Verb and participle both agree with *biglietti*: *si sono venduti*." }, "errorType": "passive", "explanation": "Si passivante in the passato prossimo: *essere* + participle, both agreeing with the object: **si sono venduti**.", "en": "Yesterday a lot of tickets were sold for the concert." },
+        { "id": "B2-SI-01.e06", "type": "cloze", "difficulty": 3, "instruction": "Complete with the impersonal form in the passato prossimo.", "prompt": "Alla festa ___ (divertirsi) moltissimo.", "answers": ["ci si è divertiti"], "focus": ["ci", "divertiti"], "errorType": "passive", "traps": [{ "match": "ci si è divertito", "errorType": "agreement", "why": "Reflexive verbs with impersonal *si* take a plural participle: *divertiti*." }, { "match": "si è divertiti", "errorType": "pronoun", "why": "*Divertirsi* is reflexive, so the impersonal is *ci si*: *ci si è divertiti*." }, { "match": "ci si ha divertiti", "errorType": "auxiliary", "why": "*Si* constructions always take *essere*." }], "explanation": "Reflexive → *ci si*; compound tense → *è*; essere-type verb → participle in **-i**: *ci si è divertiti*.", "en": "We all had a great time at the party." },
+        { "id": "B2-SI-01.e07", "type": "cloze", "difficulty": 3, "instruction": "Complete with the impersonal form in the passato prossimo.", "prompt": "A quella cena ___ (mangiare) benissimo.", "answers": ["si è mangiato"], "focus": ["è", "mangiato"], "errorType": "passive", "traps": [{ "match": "si ha mangiato", "errorType": "auxiliary", "why": "Even verbs that normally take *avere* switch to *essere* with *si*: *si è mangiato*." }, { "match": ["si sono mangiati", "si è mangiati"], "errorType": "agreement", "why": "There's no object, and *mangiare* normally takes *avere*, so the participle stays in *-o*: *si è mangiato*." }], "explanation": "Si impersonale + verb that normally takes *avere* → *si è* + participle in **-o**.", "en": "We ate wonderfully at that dinner." },
+        { "id": "B2-SI-01.e08", "type": "cloze", "difficulty": 3, "instruction": "Complete with the impersonal form in the passato prossimo.", "prompt": "Quella volta ___ (partire) all'alba per evitare il traffico.", "answers": ["si è partiti"], "focus": ["partiti"], "errorType": "agreement", "traps": [{ "match": "si è partito", "errorType": "agreement", "why": "*Partire* normally takes *essere*, so with impersonal *si* the participle is plural: *si è partiti*." }, { "match": "si ha partito", "errorType": "auxiliary", "why": "*Si* constructions always take *essere*." }], "explanation": "Essere-verb + impersonal *si* → participle in **-i**: *si è partiti*.", "en": "That time we set off at dawn to avoid the traffic." },
+        { "id": "B2-SI-01.e09", "type": "transform", "difficulty": 2, "instruction": "Rewrite using impersonal si.", "prompt": "La gente parla molto di questo film.", "answers": ["Si parla molto di questo film", "Di questo film si parla molto"], "focus": ["parla"], "errorType": "passive", "traps": [{ "contains": ["parlano"], "errorType": "agreement", "why": "*Di questo film* isn't a direct object, so the verb stays singular: *si parla*." }], "explanation": "No direct object → si impersonale, singular verb: **si parla**.", "en": "People are talking a lot about this film." },
+        { "id": "B2-SI-01.e10", "type": "transform", "difficulty": 3, "instruction": "Rewrite using si instead of 'noi'.", "prompt": "In questo ufficio rispettiamo le regole.", "answers": ["In questo ufficio si rispettano le regole", "In questo ufficio le regole si rispettano"], "focus": ["rispettano"], "errorType": "passive", "traps": [{ "contains": ["rispetta"], "errorType": "agreement", "why": "*Le regole* is plural and is the real subject: *si rispettano*." }], "explanation": "Si passivante with a plural object → **si rispettano**.", "en": "In this office the rules are respected." },
+        { "id": "B2-SI-01.e11", "type": "transform", "difficulty": 4, "instruction": "Rewrite using si (keep the passato prossimo).", "prompt": "Abbiamo costruito molte case nuove.", "answers": ["Si sono costruite molte case nuove"], "focus": ["sono", "costruite"], "errorType": "passive", "traps": [{ "contains": ["costruito"], "errorType": "agreement", "why": "With si passivante the participle agrees with the object *case* (feminine plural): *costruite*." }, { "contains": ["costruiti"], "errorType": "agreement", "why": "*Case* is feminine: *costruite*." }, { "contains": ["ha", "hanno"], "errorType": "auxiliary", "why": "*Si* constructions take *essere*: *si sono costruite*." }, { "contains": ["è"], "errorType": "agreement", "why": "The verb agrees with the plural object: *si sono*." }], "explanation": "Si passivante, compound tense: *essere* + participle agreeing with *molte case* → **si sono costruite**.", "en": "Many new houses have been built." },
+        { "id": "B2-SI-01.e12", "type": "translate", "difficulty": 3, "instruction": "Translate into Italian (a general rule, not addressed to one person).", "prompt": "You can't smoke here.", "answers": ["Qui non si (può fumare|fuma)", "Non si (può fumare|fuma) qui"], "focus": ["si"], "errorType": "passive", "traps": [{ "contains": ["puoi"], "errorType": "passive", "why": "For a general rule Italian uses impersonal *si*: *non si può fumare*." }, { "match": ["(Qui|Qua) è vietato fumare", "È vietato fumare (qui|qua)", "Vietato fumare"], "ok": true, "errorType": "passive", "why": "Also correct (a sign-style ban). The *si* version is: *Qui non si può fumare*." }], "explanation": "Generic 'you' → impersonal **si**: *Qui non si può fumare* (or *non si fuma*).", "en": "You can't smoke here." },
+        { "id": "B2-SI-01.e13", "type": "translate", "difficulty": 4, "instruction": "Translate using si constructions.", "prompt": "When one is tired, one gets bored easily.", "answers": ["Quando si è stanchi[,] ci si annoia (facilmente|con facilità)", "Ci si annoia (facilmente|con facilità) quando si è stanchi"], "focus": ["stanchi", "ci"], "errorType": "passive", "traps": [{ "contains": ["stanco"], "errorType": "agreement", "why": "Impersonal *si* takes a plural adjective: *si è stanchi*." }, { "match": "Quando si è stanchi si annoia (facilmente|con facilità)", "errorType": "pronoun", "why": "*Annoiarsi* is reflexive, so the impersonal is *ci si annoia*." }, { "contains": ["uno"], "errorType": "passive", "why": "'One' is translated with impersonal *si*, not *uno*, in neutral Italian." }], "explanation": "*Si è* + plural adjective (*stanchi*), and reflexive *annoiarsi* → **ci si annoia**.", "en": "When one is tired, one gets bored easily." },
+        { "id": "B2-SI-01.e14", "type": "order", "difficulty": 2, "instruction": "Put the words in order.", "prompt": "Three languages are spoken here.", "tokens": ["Qui", "si", "parlano", "tre", "lingue"], "answers": ["Qui si parlano tre lingue", "Si parlano tre lingue qui"], "errorType": "word-order", "explanation": "*Si* + verb agreeing with the plural object *tre lingue*: *si parlano*." },
+        { "id": "B2-SI-01.e15", "type": "choice", "difficulty": 4, "instruction": "Choose the correct standard form.", "prompt": "Le regole ___ rispettare sempre.", "options": ["si devono", "si deve", "ci si devono", "si devano"], "answer": 0, "optionWhy": { "1": "*Si deve rispettare le regole* is heard in speech, but in standard Italian the modal agrees with the plural object: *si devono rispettare*.", "2": "*Ci si* is only for reflexive verbs; *rispettare* isn't reflexive here.", "3": "*Devano* isn't a standard form." }, "errorType": "agreement", "explanation": "With si passivante + modal, the modal agrees with the object: *le regole* → **si devono**.", "en": "Rules must always be respected." },
+        { "id": "B2-SI-01.e16", "type": "speak", "difficulty": 1, "instruction": "Ask the question in Italian.", "prompt": "Ask how you say 'deadline' in Italian.", "answers": ["Come si dice deadline in italiano"], "focus": ["si"], "errorType": "passive", "traps": [{ "contains": ["dici"], "errorType": "passive", "why": "The question is general, not about one person: *Come si dice…?*" }], "explanation": "*Come si dice…?* is the classic impersonal *si*. (The answer is *scadenza*.)", "en": "How do you say 'deadline' in Italian?" },
+        { "id": "B2-SI-01.e17", "type": "choice", "difficulty": 5, "instruction": "Choose the correct form.", "prompt": "Di questo problema ___ è parlato a lungo.", "options": ["se ne", "si ne", "ne si", "ci si"], "answer": 0, "optionWhy": { "1": "Before *ne*, *si* becomes *se*: *se ne*.", "2": "*Ne* follows *se*: *se ne*.", "3": "*Ci si* is for reflexive verbs; here we need *ne* for 'about it'." }, "errorType": "pronoun", "explanation": "*Si* + *ne* → **se ne** (*se n'è parlato*), just like *me ne, te ne*.", "en": "This problem was discussed at length." }
+      ]
+    }
+  ]
+}

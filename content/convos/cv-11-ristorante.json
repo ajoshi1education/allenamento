@@ -1,0 +1,115 @@
+{
+  "id": "CV-11",
+  "title": "Al ristorante",
+  "subtitle": "Booking, ordering, asking about dishes and complaining politely about a cold plate.",
+  "level": "B2",
+  "theme": "Vita quotidiana",
+  "conceptIds": ["B2-COND-01", "B2-PAST-01", "B2-REG-01", "B2-PRON-04"],
+  "tutor": { "name": "Marco", "avatar": "🧑‍🍳", "gender": "male", "register": "formal" },
+  "setting": "It's Friday evening and you've booked a table at a small trattoria in Siena. Marco, the waiter, greets you at the door.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Buonasera, prego, si accomodi! Ha prenotato?",
+      "en": "Good evening, come in! Have you booked?",
+      "task": "Say that you booked a table (passato prossimo of prenotare), for how many people and in whose name.",
+      "hint": "Sì, ho prenotato un tavolo per… a nome…",
+      "expect": {
+        "minWords": 7,
+        "rubric": [
+          { "label": "Passato prossimo of prenotare", "anyOf": ["\\b(ho|abbiamo|hanno|ha)\\s+(\\p{L}+\\s+)?prenotato\\b", "\\bprenotazione\\b"], "min": 1, "errorType": "wrong-tense", "conceptId": "B2-PAST-01", "hint": "*Ho prenotato un tavolo…*" },
+          { "label": "Gives the number of people or the name", "anyOf": ["\\b(due|tre|quattro|cinque|sei|persone|persona|nome|\\d+)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-REG-01", "hint": "*…per due, a nome Rossi.*" }
+        ]
+      },
+      "model": "Buonasera, sì, ho prenotato un tavolo per due a nome Rossi, per le otto.",
+      "followOk": "Perfetto, eccolo qui. Prego, da questa parte, il tavolo vicino alla finestra.",
+      "followMiss": "Allora, ha prenotato a nome Suo? Benissimo, ho trovato la prenotazione. Prego, da questa parte."
+    },
+    {
+      "id": "t2",
+      "say": "Ecco il menù. Intanto, desidera qualcosa da bere?",
+      "en": "Here's the menu. In the meantime, would you like something to drink?",
+      "task": "Order drinks politely with the conditional: vorrei or prenderei.",
+      "hint": "Vorrei… / Prenderei…, per favore.",
+      "expect": {
+        "minWords": 6,
+        "rubric": [
+          { "label": "Polite conditional (vorrei, prenderei…)", "anyOf": ["\\b(vorrei|vorremmo|prenderei|prenderemmo|gradirei|mi piacerebbe|potrei avere|potrebbe portarmi)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Vorrei un bicchiere di vino…*" },
+          { "label": "Names a drink", "anyOf": ["\\b(acqua|vino|birra|bicchiere|bottiglia|caraffa|rosso|bianco|frizzante|naturale|gassata|liscia|spritz|aperitivo|succo|bibita|coca)\\b"], "min": 1, "errorType": "vocabulary", "conceptId": "B2-COND-01", "hint": "*…una bottiglia d'acqua frizzante.*" }
+        ]
+      },
+      "model": "Vorrei una bottiglia di acqua frizzante e un bicchiere di vino rosso della casa, per favore.",
+      "followOk": "Ottima scelta, il nostro rosso è di un produttore qui vicino. Arriva subito.",
+      "followMiss": "Certo. Allora Le porto un'acqua frizzante e un bicchiere di rosso della casa?"
+    },
+    {
+      "id": "t3",
+      "say": "Ecco a Lei. Ha già deciso, o Le serve qualche consiglio?",
+      "en": "Here you are. Have you decided already, or do you need some advice?",
+      "task": "Ask what's in a dish and what he would recommend. Use the conditional (mi consiglierebbe…?).",
+      "hint": "Che cosa c'è nei pici? E Lei che cosa mi consiglierebbe…?",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          { "label": "Asks about a dish", "anyOf": ["\\b(che cosa c['’]?\\s?è|cosa c['’]?\\s?è|che cos['’]?\\s?è|cos['’]?\\s?è|com['’]?\\s?è|come sono|come è fatto|com['’]?\\s?è fatto|ingredienti|piatto del giorno|specialità)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-REG-01", "hint": "*Che cosa c'è nei pici?*" },
+          { "label": "Asks for a recommendation", "anyOf": ["\\b(consiglierebbe|consiglia|consigliare|suggerirebbe|suggerisce|prenderebbe|sceglierebbe|cosa mi dice)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Che cosa mi consiglierebbe?*" }
+        ]
+      },
+      "model": "Mi scusi, che cosa c'è nei pici all'aglione? E come secondo, Lei che cosa mi consiglierebbe?",
+      "followOk": "I pici sono fatti a mano, con pomodoro e aglio. Come secondo Le consiglio la tagliata, è la nostra specialità.",
+      "followMiss": "Le spiego: i pici sono fatti a mano, con pomodoro e aglio. E come secondo Le consiglierei la tagliata."
+    },
+    {
+      "id": "t4",
+      "say": "Allora, che cosa prende?",
+      "en": "So, what will you have?",
+      "task": "Order a first and a second course. Express a preference with mi piacerebbe or preferirei, and add a special request (senza…, ben cotta…).",
+      "hint": "Prenderei… e poi mi piacerebbe provare…, però senza…",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          { "label": "Preference in the conditional", "anyOf": ["\\b(mi piacerebbe|preferirei|prenderei|vorrei|proverei|assaggerei)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Mi piacerebbe provare…, preferirei…*" },
+          { "label": "Adds a special request", "anyOf": ["\\b(senza|ben cotta|ben cotto|al sangue|poco cotta|poco cotto|media cottura|non troppo|invece di|invece del|invece della|al posto di|al posto del|a parte|allergico|allergica|intollerante)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-REG-01", "hint": "*…però senza rucola, ben cotta.*" }
+        ]
+      },
+      "model": "Allora prenderei i pici, e poi mi piacerebbe provare la tagliata, però ben cotta e senza rucola, se possibile.",
+      "followOk": "Benissimo, nessun problema. Porto subito l'ordine in cucina.",
+      "followMiss": "Va bene: pici e poi tagliata. La preferirebbe ben cotta, magari senza rucola? Porto subito l'ordine in cucina."
+    },
+    {
+      "id": "t5",
+      "say": "Ecco i pici, buon appetito! Tutto bene? Sono di Suo gradimento?",
+      "en": "Here are the pici, enjoy! Everything all right? Are they to your liking?",
+      "task": "The pasta has arrived cold. Complain politely: say what's wrong and ask him to do something, with a conditional request (potrebbe…?).",
+      "hint": "Mi scusi, purtroppo sono un po' freddi. Potrebbe…?",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Says the dish is cold", "anyOf": ["\\b(freddo|fredda|freddi|fredde|tiepido|tiepida|tiepidi|tiepide|non è caldo|non sono caldi|non è calda|gelato|gelati)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-REG-01", "hint": "*…sono arrivati un po' freddi.*" },
+          { "label": "Polite request in the conditional", "anyOf": ["\\b(potrebbe|potreste|sarebbe possibile|le dispiacerebbe|vi dispiacerebbe|vorrei|mi farebbe|gentilmente)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Potrebbe farli riscaldare?*" }
+        ]
+      },
+      "model": "Mi scusi, i pici sono buoni, ma purtroppo sono arrivati un po' freddi. Potrebbe farli riscaldare, per favore?",
+      "followOk": "Ha perfettamente ragione, mi scusi tanto! Glieli faccio rifare subito, belli caldi.",
+      "followMiss": "Oh, sono un po' freddi? Ha ragione, mi scusi tanto. Glieli faccio riscaldare subito."
+    },
+    {
+      "id": "t6",
+      "say": "Ecco, ora sono caldi. Per farci perdonare, il dolce lo offre la casa. Desidera anche un caffè?",
+      "en": "There, now they're hot. To make it up to you, dessert is on the house. Would you also like a coffee?",
+      "task": "Thank him, choose a dessert or coffee, and ask for the bill politely (potrebbe portarmi il conto?).",
+      "hint": "Grazie, molto gentile! Prenderei… e poi potrebbe portarmi il conto?",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          { "label": "Asks for the bill", "anyOf": ["\\b(conto|pagare|scontrino)\\b"], "min": 1, "errorType": "task-completion", "conceptId": "B2-REG-01", "hint": "*…il conto, per favore.*" },
+          { "label": "Polite conditional", "anyOf": ["\\b(potrebbe|potrei|prenderei|vorrei|gradirei|porterebbe|sarebbe possibile)\\b"], "min": 1, "errorType": "conditional-form", "conceptId": "B2-COND-01", "hint": "*Potrebbe portarmi il conto?*" }
+        ]
+      },
+      "model": "Grazie, molto gentile! Prenderei un tiramisù e un caffè, e poi potrebbe portarmi il conto, per favore?",
+      "followOk": "Con piacere. Tiramisù, caffè e poi il conto. Torno subito.",
+      "followMiss": "Certo: Le porto un tiramisù e un caffè, e poi il conto. Torno subito."
+    }
+  ],
+  "closing": "Grazie a Lei, è stato un piacere. Torni a trovarci, buona serata!"
+}

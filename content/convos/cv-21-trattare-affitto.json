@@ -1,0 +1,210 @@
+{
+  "id": "CV-21",
+  "title": "Trattare l'affitto",
+  "subtitle": "Negotiating the rent with a landlord in Lei: concessions, conditional offers, a patto che + subjunctive.",
+  "level": "C1",
+  "theme": "Vita quotidiana",
+  "conceptIds": [
+    "C1-CONN-02",
+    "C1-INT-02",
+    "C1-HYP-04",
+    "B2-COND-01",
+    "B2-REG-01"
+  ],
+  "tutor": {
+    "name": "Signor Ferrante",
+    "avatar": "👨‍🦳",
+    "gender": "male",
+    "register": "formal"
+  },
+  "setting": "You've just visited a renovated two-room flat in Turin. You sit down with the owner, Signor Ferrante, to talk about the rent and the terms.",
+  "turns": [
+    {
+      "id": "t1",
+      "say": "Allora, l'appartamento Le è piaciuto? Come Le dicevo, l'affitto è di novecento euro al mese, spese escluse.",
+      "en": "So, did you like the flat? As I was saying, the rent is nine hundred euros a month, bills excluded.",
+      "task": "Say you liked it but the price is high, with a concessive: sebbene / benché / nonostante + subjunctive.",
+      "hint": "Sebbene l'appartamento mi sia piaciuto molto, …",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Sebbene / benché / nonostante + subjunctive",
+            "anyOf": [
+              "\\b(sebbene|benché|nonostante|malgrado|per quanto)\\s+([\\p{L}'’]+\\s+){0,4}(sia|siano|abbia|abbiano|possa|possano|debba|debbano|vada|vadano|faccia|facciano|serva|servano|convenga|convengano|stia|stiano|venga|vengano|valga|valgano|sappia|sappiano|voglia|vogliano|occorra|bisogni|basti|bastino|costi|costino|funzioni|funzionino|porti|portino|rischi|rischino|aiuti|aiutino|renda|rendano|cambi|migliori|paghi|paghino|spenda|spendano|includa|includano|metta|mettano|tenga|tengano|dia|diano|conosca|conoscano|legga|scelga|scelgano|piaccia|piacciano|parli|parlino|chieda|chiedano|prenda|prendano|\\p{L}{3,}(?:ino|isca|iscano|iamo|iate)|fosse|fossero|fossi|avesse|avessero|avessi|\\p{L}{2,}(?:asse|esse|isse|assero|essero|issero|assi|essi|issi))\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-mood",
+            "conceptId": "C1-CONN-02",
+            "hint": "*Sebbene mi **sia** piaciuto…*"
+          },
+          {
+            "label": "Says the price is high",
+            "anyOf": [
+              "\\b(alto|alta|caro|cara|eccessivo|eccessiva|elevato|elevata|troppo|budget|sopra le mie possibilità)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "C1-INT-02",
+            "hint": "*…il prezzo mi sembra un po' alto.*"
+          }
+        ]
+      },
+      "model": "Sebbene l'appartamento mi sia piaciuto molto, devo dirLe che il prezzo mi sembra un po' alto.",
+      "followOk": "Capisco, ma la zona è molto richiesta e l'appartamento è appena stato ristrutturato.",
+      "followMiss": "Ho capito: Le è piaciuto, ma il prezzo Le sembra alto. Però la zona è molto richiesta, sa?"
+    },
+    {
+      "id": "t2",
+      "say": "Mi dica Lei, allora: che cifra avrebbe in mente?",
+      "en": "You tell me, then: what figure did you have in mind?",
+      "task": "Make a counter-offer with the conditional (sarei disposto/a a…, potrei arrivare a…) and justify it.",
+      "hint": "Sarei disposto/a a pagare… considerando che…",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Conditional offer (sarei disposto/a a…, potrei…)",
+            "anyOf": [
+              "\\b(sarei disposto|sarei disposta|potrei arrivare|potrei offrire|potrei pagare|le proporrei|proporrei|offrirei|pagherei|potremmo fare|potremmo accordarci|che ne direbbe|accetterebbe)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Sarei disposto/a a pagare…*"
+          },
+          {
+            "label": "Names a figure",
+            "anyOf": [
+              "\\b\\d{3,4}\\b",
+              "\\b\\p{L}*cento(\\p{L}+)?\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "C1-INT-02",
+            "hint": "*…ottocento euro…*"
+          }
+        ]
+      },
+      "model": "Sarei disposto a pagare ottocento euro al mese, considerando che le spese condominiali sono piuttosto alte.",
+      "followOk": "Mmh, è meno di quanto speravo. Potrei scendere a ottocentocinquanta, ma non di più.",
+      "followMiss": "Vediamo… Per venirLe incontro, potrei scendere a ottocentocinquanta, ma non di più."
+    },
+    {
+      "id": "t3",
+      "say": "Ottocentocinquanta è davvero la mia ultima offerta. Allora, che cosa ne dice?",
+      "en": "Eight hundred and fifty really is my final offer. So, what do you say?",
+      "task": "Accept, but on a condition: a patto che / purché / a condizione che + subjunctive.",
+      "hint": "Va bene, accetto, a patto che…",
+      "expect": {
+        "minWords": 8,
+        "rubric": [
+          {
+            "label": "A patto che / purché + subjunctive",
+            "anyOf": [
+              "\\b(a patto che|purché|a condizione che|sempre che|basta che)\\s+([\\p{L}'’]+\\s+){0,5}(sia|siano|abbia|abbiano|possa|possano|debba|debbano|vada|vadano|faccia|facciano|serva|servano|convenga|convengano|stia|stiano|venga|vengano|valga|valgano|sappia|sappiano|voglia|vogliano|occorra|bisogni|basti|bastino|costi|costino|funzioni|funzionino|porti|portino|rischi|rischino|aiuti|aiutino|renda|rendano|cambi|migliori|paghi|paghino|spenda|spendano|includa|includano|metta|mettano|tenga|tengano|dia|diano|conosca|conoscano|legga|scelga|scelgano|piaccia|piacciano|parli|parlino|chieda|chiedano|prenda|prendano|\\p{L}{3,}(?:ino|isca|iscano|iamo|iate)|fosse|fossero|fossi|avesse|avessero|avessi|\\p{L}{2,}(?:asse|esse|isse|assero|essero|issero|assi|essi|issi)|ripari|riparino|sistemi|sistemino|sostituisca|sostituiscano|aggiunga|lasci|tolga|abbassi|resti|restino|rimanga|rimangano)\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-mood",
+            "conceptId": "C1-HYP-04",
+            "hint": "*…a patto che le spese **siano** incluse.*"
+          },
+          {
+            "label": "Accepts",
+            "anyOf": [
+              "\\b(va bene|accetto|d['’]accordo|potrei accettare|mi sta bene|ci sto|affare fatto|accetterei)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "C1-INT-02",
+            "hint": "*Va bene, accetto…*"
+          }
+        ]
+      },
+      "model": "Va bene, accetto ottocentocinquanta, a patto che le spese condominiali siano incluse nel prezzo.",
+      "followOk": "Mmh, è una richiesta impegnativa, ma credo che possiamo trovare un accordo.",
+      "followMiss": "Vediamo se ho capito: Lei accetta, purché le spese siano comprese nel prezzo? Si può fare."
+    },
+    {
+      "id": "t4",
+      "say": "Un'ultima cosa: di solito chiedo tre mensilità di deposito cauzionale.",
+      "en": "One last thing: I usually ask for three months' rent as a deposit.",
+      "task": "Object politely: acknowledge (capisco…), contrast (tuttavia…), and propose an alternative with the conditional.",
+      "hint": "Capisco, tuttavia… non sarebbe possibile…?",
+      "expect": {
+        "minWords": 9,
+        "rubric": [
+          {
+            "label": "Acknowledges (capisco, comprendo…)",
+            "anyOf": [
+              "\\b(capisco|comprendo|mi rendo conto|certo|è comprensibile|è normale)\\b"
+            ],
+            "min": 1,
+            "errorType": "discourse-marker",
+            "conceptId": "C1-INT-02",
+            "hint": "*Capisco…, comprendo…*"
+          },
+          {
+            "label": "Formal contrast (tuttavia, però…)",
+            "anyOf": [
+              "\\b(tuttavia|però|ciononostante|d['’]altra parte|eppure|ma)\\b"
+            ],
+            "min": 1,
+            "errorType": "connector",
+            "conceptId": "C1-CONN-02",
+            "hint": "*…tuttavia…*"
+          },
+          {
+            "label": "Conditional proposal",
+            "anyOf": [
+              "\\b(sarebbe possibile|non sarebbe possibile|potremmo|preferirei|le chiederei|le proporrei|proporrei|accetterebbe|sarebbe disposto|che ne direbbe|potrebbe|vorrei)\\b"
+            ],
+            "min": 1,
+            "errorType": "conditional-form",
+            "conceptId": "B2-COND-01",
+            "hint": "*Non sarebbe possibile ridurlo a due?*"
+          }
+        ]
+      },
+      "model": "Capisco, tuttavia tre mensilità mi sembrano tante: non sarebbe possibile ridurle a due?",
+      "followOk": "Mah, d'accordo, facciamo due. Vedo che Lei è una persona seria.",
+      "followMiss": "Capisco, Lei preferirebbe un deposito più basso. Va bene, possiamo scendere a due mensilità."
+    },
+    {
+      "id": "t5",
+      "say": "Benissimo. Allora preparo il contratto. Quando pensa di entrare nell'appartamento?",
+      "en": "Excellent. I'll draw up the contract, then. When are you thinking of moving in?",
+      "task": "Give a date, and add a contingency with qualora / nel caso in cui + subjunctive.",
+      "hint": "Pensavo di entrare dal primo…; qualora cambiasse qualcosa, …",
+      "expect": {
+        "minWords": 10,
+        "rubric": [
+          {
+            "label": "Qualora / nel caso in cui + subjunctive",
+            "anyOf": [
+              "\\b(qualora|nel caso in cui|nel caso che)\\s+([\\p{L}'’]+\\s+){0,4}(dovesse|dovessero|ci fosse|ci fossero|ci sia|ci siano|sia|siano|abbia|abbiano|possa|possano|debba|debbano|vada|vadano|faccia|facciano|serva|servano|convenga|convengano|stia|stiano|venga|vengano|valga|valgano|sappia|sappiano|voglia|vogliano|occorra|bisogni|basti|bastino|costi|costino|funzioni|funzionino|porti|portino|rischi|rischino|aiuti|aiutino|renda|rendano|cambi|migliori|paghi|paghino|spenda|spendano|includa|includano|metta|mettano|tenga|tengano|dia|diano|conosca|conoscano|legga|scelga|scelgano|piaccia|piacciano|parli|parlino|chieda|chiedano|prenda|prendano|\\p{L}{3,}(?:ino|isca|iscano|iamo|iate)|fosse|fossero|fossi|avesse|avessero|avessi|\\p{L}{2,}(?:asse|esse|isse|assero|essero|issero|assi|essi|issi))\\b"
+            ],
+            "min": 1,
+            "errorType": "wrong-mood",
+            "conceptId": "C1-HYP-04",
+            "hint": "*Qualora **cambiasse** qualcosa…*"
+          },
+          {
+            "label": "Gives a date",
+            "anyOf": [
+              "\\b(dal|dall['’]|primo|inizio|fine|entro|a partire|prossimo mese|mese prossimo|settimana|gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre|\\d+)\\b"
+            ],
+            "min": 1,
+            "errorType": "task-completion",
+            "conceptId": "B2-PREP-02",
+            "hint": "*…dal primo dicembre…*"
+          }
+        ]
+      },
+      "model": "Pensavo di entrare dal primo dicembre; qualora cambiasse qualcosa, La avviserei subito.",
+      "followOk": "Perfetto, mi sembra un'ottima soluzione. Le mando la bozza del contratto entro venerdì.",
+      "followMiss": "D'accordo. E qualora ci fossero cambiamenti, mi avvisi pure per tempo, mi raccomando."
+    }
+  ],
+  "closing": "È stato un piacere trattare con Lei. Ci sentiamo in settimana per la firma. Arrivederci!"
+}

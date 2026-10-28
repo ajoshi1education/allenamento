@@ -1,0 +1,901 @@
+{
+  "unit": "V01",
+  "title": "Lessico, collocazioni, modi di dire",
+  "cefr": "B2",
+  "concepts": [
+    {
+      "id": "B2-VOC-01",
+      "title": "False friends",
+      "cefr": "B2",
+      "skill": "vocabulary",
+      "prereqs": [],
+      "rule": "Words that look English often mean something else: attualmente = currently, eventualmente = if need be, libreria = bookshop, parenti = relatives, educato = polite, sensibile = sensitive, morbido = soft, argomento = topic, fattoria = farm. 'To realise' is rendersi conto.",
+      "assessment": [
+        "Recognises the real meaning of the most common false friends in context",
+        "Chooses the right Italian word for English 'actually', 'eventually', 'library', 'realise', 'sensible', 'argument'",
+        "Avoids anglicisms such as *ho realizzato che* in careful Italian",
+        "Translates short sentences without falling into false-friend traps"
+      ],
+      "lesson": {
+        "intro": "Italian and English share thousands of Latin-rooted words, which is a gift until a familiar-looking word turns out to mean something else. These *falsi amici* cause some of the most noticeable mistakes English speakers make, because the sentence sounds fluent but says the wrong thing. At C1 you're expected to avoid the common ones automatically.",
+        "rules": [
+          {
+            "title": "Time and logic words",
+            "text": "*Attualmente* means **currently** (for 'actually' say *in realtà*, *in effetti*, *a dire il vero*). *Eventualmente* means **if need be, possibly** (for 'eventually' say *alla fine*, *prima o poi*). *Attuale* = current. *Effettivamente* = indeed, that's true.",
+            "examples": [
+              {"it":"Attualmente vivo a Torino.","en":"I currently live in Turin."},
+              {"it":"Sembra semplice, ma in realtà è complicato.","en":"It looks simple, but actually it's complicated."},
+              {"it":"Eventualmente possiamo spostare la riunione a giovedì.","en":"If need be, we can move the meeting to Thursday."},
+              {"it":"Alla fine ha accettato.","en":"Eventually he accepted."}
+            ]
+          },
+          {
+            "title": "People and character",
+            "text": "*Parenti* = **relatives** (parents = *genitori*). *Educato* = **polite, well-mannered** (educated = *istruito, colto*). *Sensibile* = **sensitive** (sensible = *sensato* for things, *giudizioso, assennato* for people). *Simpatico* = **likeable, nice** (sympathetic = *comprensivo, solidale*). *Morbido* = **soft** (morbid = *morboso*).",
+            "examples": [
+              {"it":"A Natale vengono tutti i parenti.","en":"All the relatives come at Christmas."},
+              {"it":"Tuo figlio è molto educato: saluta sempre.","en":"Your son is very polite: he always says hello."},
+              {"it":"È una ragazza sensibile, si commuove facilmente.","en":"She's a sensitive girl, she's easily moved."}
+            ]
+          },
+          {
+            "title": "Places and things",
+            "table": {
+              "head": [
+                "Italian",
+                "means",
+                "for the English word, say"
+              ],
+              "rows": [
+                [
+                  "libreria",
+                  "bookshop; bookcase",
+                  "library → biblioteca"
+                ],
+                [
+                  "fattoria",
+                  "farm",
+                  "factory → fabbrica, stabilimento"
+                ],
+                [
+                  "camera",
+                  "room, bedroom",
+                  "camera → macchina fotografica"
+                ],
+                [
+                  "magazzino",
+                  "warehouse, storeroom",
+                  "magazine → rivista"
+                ],
+                [
+                  "argomento",
+                  "topic, subject",
+                  "argument → litigio, discussione"
+                ],
+                [
+                  "rumore",
+                  "noise",
+                  "rumour → voce, pettegolezzo"
+                ],
+                [
+                  "preservativo",
+                  "condom",
+                  "preservative → conservante"
+                ],
+                [
+                  "delusione",
+                  "disappointment",
+                  "delusion → illusione"
+                ]
+              ]
+            },
+            "text": "Places and objects are a classic trap, and some mistakes (*preservativo*!) can be embarrassing.",
+            "examples": [
+              {"it":"Ho comprato il romanzo in libreria e l'ho letto in biblioteca.","en":"I bought the novel at the bookshop and read it at the library."},
+              {"it":"Hanno litigato per un argomento banale.","en":"They argued about a trivial topic."}
+            ]
+          },
+          {
+            "title": "Verbs",
+            "text": "*Realizzare* = **carry out, achieve, make real** (*realizzare un progetto*). For 'realise' use *rendersi conto*, *accorgersi*: *realizzare* in that sense is a widespread anglicism, best avoided in careful Italian. *Pretendere* = **demand, expect** (pretend = *fingere, fare finta*). *Assistere a* = **witness, watch** (assist = *aiutare*). *Attendere* = **wait** (attend = *frequentare, partecipare a*). *Confrontare* = **compare** (confront = *affrontare*). *Assumere* = **hire, take on** (assume = *supporre*). *Controllare* = **check** (control = *gestire, dominare*).",
+            "examples": [
+              {"it":"Mi sono reso conto di aver sbagliato.","en":"I realised I'd made a mistake."},
+              {"it":"Hanno realizzato il progetto in sei mesi.","en":"They carried out the project in six months."},
+              {"it":"Pretendo delle scuse.","en":"I demand an apology."},
+              {"it":"Ho partecipato al convegno.","en":"I attended the conference."}
+            ]
+          }
+        ],
+        "mistakes": [
+          {"wrong":"Attualmente non è vero.","right":"In realtà non è vero.","why":"*Attualmente* means 'currently', not 'actually'."},
+          {"wrong":"Ho realizzato che era tardi.","right":"Mi sono reso conto che era tardi.","why":"'Realise' (become aware) is *rendersi conto*. *Realizzare* means 'carry out'; the 'realise' meaning is an anglicism."},
+          {"wrong":"Vado in libreria a studiare.","right":"Vado in biblioteca a studiare.","why":"A *libreria* sells books; a *biblioteca* lends them and has reading rooms."},
+          {"wrong":"I miei parenti vivono a Londra. (= my mum and dad)","right":"I miei genitori vivono a Londra.","why":"*Parenti* are relatives in general; parents are *genitori*."},
+          {"wrong":"È molto educato, ha due lauree.","right":"È molto istruito, ha due lauree.","why":"*Educato* means polite. 'Educated' is *istruito* or *colto*."}
+        ],
+        "tips": [
+          "When an Italian word looks exactly like English, pause and check it in a monolingual dictionary (Treccani, Garzanti) before using it in writing.",
+          "Learn false friends in pairs: *attualmente* ≠ actually → *in realtà*; *eventualmente* ≠ eventually → *alla fine*.",
+          "Some anglicisms (*realizzare* = realise, *evidenze* = evidence) are spreading in journalism. Recognise them, but prefer the traditional word in careful writing."
+        ]
+      },
+      "exercises": [
+        {"id":"B2-VOC-01.e01","type":"choice","difficulty":1,"instruction":"Choose the correct option.","prompt":"Mio fratello lavora in una ___: vende romanzi, saggi e guide di viaggio.","options":["libreria","biblioteca","libraria"],"answer":0,"optionWhy":{"1":"A *biblioteca* lends books (library); it doesn't sell them.","2":"*Libraria* isn't a noun (it's the feminine of the adjective *librario*)."},"errorType":"false-friend","explanation":"*Libreria* = bookshop (or bookcase). Library = *biblioteca*.","en":"My brother works in a bookshop: he sells novels, essays and travel guides."},
+        {"id":"B2-VOC-01.e02","type":"choice","difficulty":1,"instruction":"Choose the correct option.","prompt":"A Natale vengono a pranzo tutti i miei ___: zii, cugini, nonni.","options":["parenti","genitori","relativi"],"answer":0,"optionWhy":{"1":"*Genitori* are just your mother and father, but here we have uncles, cousins and grandparents.","2":"*Relativo* is an adjective ('relative to'), not a noun for family members."},"errorType":"false-friend","explanation":"*Parenti* = relatives. Parents = *genitori*.","en":"At Christmas all my relatives come for lunch: uncles, cousins, grandparents."},
+        {"id":"B2-VOC-01.e03","type":"cloze","difficulty":2,"instruction":"Complete the sentence.","prompt":"Sembra un lavoro facile, ma ___ (actually) è molto complicato.","answers":["in realtà","in verità","a dire il vero"],"focus":["realtà"],"errorType":"false-friend","traps":[{"match":"attualmente","errorType":"false-friend","why":"*Attualmente* means 'currently'. 'Actually' (in fact) is *in realtà*."},{"match":"attuale","errorType":"false-friend","why":"*Attuale* means 'current'. 'Actually' is *in realtà*."}],"explanation":"'Actually' = *in realtà / in effetti / a dire il vero*. *Attualmente* = currently.","en":"It looks like an easy job, but actually it's very complicated."},
+        {"id":"B2-VOC-01.e04","type":"choice","difficulty":2,"instruction":"Choose the correct option.","prompt":"What does *eventualmente* mean here? «Eventualmente possiamo spostare la riunione a giovedì.»","options":["Eventually, in the end","If need be, if necessary","Finally, at last"],"answer":1,"optionWhy":{"0":"'Eventually' (in the end) is *alla fine* or *prima o poi*.","2":"'Finally, at last' is *finalmente*."},"errorType":"false-friend","explanation":"*Eventualmente* = if need be, possibly, should the case arise.","en":"If need be, we can move the meeting to Thursday."},
+        {"id":"B2-VOC-01.e05","type":"cloze","difficulty":2,"instruction":"Complete the sentence.","prompt":"Il vostro bambino è molto ___ (polite): saluta sempre e dice grazie.","answers":["educato","beneducato","ben educato","gentile"],"focus":["educato"],"errorType":"false-friend","traps":[{"match":"istruito","errorType":"false-friend","why":"*Istruito* means 'educated' (well-schooled). Polite is *educato*."},{"match":"colto","errorType":"false-friend","why":"*Colto* means 'cultured, well-read'. Polite is *educato*."}],"explanation":"*Educato* = polite, well brought up. Educated = *istruito / colto*.","en":"Your child is very polite: he always says hello and thank you."},
+        {"id":"B2-VOC-01.e06","type":"translate","difficulty":2,"instruction":"Translate into Italian.","prompt":"This sweater is really soft.","answers":["Questo maglione è (davvero|proprio|molto|veramente) (morbido|soffice)","Questo maglione è (morbidissimo|sofficissimo)"],"focus":["morbido"],"errorType":"false-friend","traps":[{"contains":["morboso"],"errorType":"false-friend","why":"*Morboso* means 'morbid'. Soft is *morbido* (or *soffice*)."}],"explanation":"*Morbido* = soft. Morbid = *morboso*.","en":"This sweater is really soft."},
+        {"id":"B2-VOC-01.e07","type":"choice","difficulty":3,"instruction":"Choose the correct option.","prompt":"How do you say 'I realised I had forgotten my keys' in careful Italian?","options":["Ho realizzato di aver dimenticato le chiavi.","Mi sono reso conto di aver dimenticato le chiavi.","Mi sono realizzato di aver dimenticato le chiavi."],"answer":1,"optionWhy":{"0":"You'll hear it, but *realizzare* = 'realise' is an anglicism. Its core meaning is 'carry out, achieve'. Use *rendersi conto*.","2":"*Realizzarsi* means 'to fulfil oneself' (*si è realizzato nel lavoro*), not 'realise'."},"errorType":"false-friend","explanation":"Realise (become aware) = *rendersi conto* or *accorgersi*.","en":"I realised I had forgotten my keys."},
+        {"id":"B2-VOC-01.e08","type":"cloze","difficulty":3,"instruction":"Complete the sentence.","prompt":"Il nuovo ponte è stato ___ (carried out, built) in soli due anni.","answers":["realizzato","completato","costruito","portato a termine"],"focus":["realizzato"],"errorType":"false-friend","explanation":"Here *realizzare* is used in its genuine Italian sense: to carry out, make, build.","en":"The new bridge was built in just two years."},
+        {"id":"B2-VOC-01.e09","type":"translate","difficulty":3,"instruction":"Translate into Italian.","prompt":"She's a very sensitive person.","answers":["[Lei] è una persona molto sensibile","È una persona davvero sensibile","È una persona sensibilissima"],"focus":["sensibile"],"errorType":"false-friend","traps":[{"contains":["sensata","sensato"],"errorType":"false-friend","why":"*Sensato* means 'sensible, reasonable'. Sensitive is *sensibile*."}],"explanation":"*Sensibile* = sensitive. Sensible = *sensato / giudizioso*.","en":"She's a very sensitive person."},
+        {"id":"B2-VOC-01.e10","type":"choice","difficulty":3,"instruction":"Choose the correct option.","prompt":"Which sentence means 'He's a sensible guy'?","options":["È un ragazzo sensibile.","È un ragazzo giudizioso.","È un ragazzo sensazionale."],"answer":1,"optionWhy":{"0":"*Sensibile* = sensitive.","2":"*Sensazionale* = sensational, amazing."},"errorType":"false-friend","explanation":"A sensible person is *giudizioso*, *assennato* or *con la testa sulle spalle*. A sensible decision is *sensata*.","en":"He's a sensible guy."},
+        {"id":"B2-VOC-01.e11","type":"translate","difficulty":4,"instruction":"Translate into Italian.","prompt":"They had an argument about money.","answers":["(Hanno litigato|Hanno avuto una discussione|Hanno avuto un litigio|Hanno discusso) (per i soldi|per soldi|per questioni di soldi|a causa dei soldi|sui soldi)"],"focus":["litigato"],"errorType":"false-friend","traps":[{"contains":["argomento","argomentazione"],"errorType":"false-friend","why":"*Argomento* means 'topic'. A quarrel is *un litigio* or *una discussione*; the verb is *litigare*."}],"explanation":"Argument (quarrel) = *litigio / discussione*; to argue = *litigare*. *Argomento* = topic.","en":"They had an argument about money."},
+        {"id":"B2-VOC-01.e12","type":"cloze","difficulty":3,"instruction":"Complete the sentence.","prompt":"Mio padre lavora in una ___ (factory) di automobili vicino a Torino.","answers":["fabbrica","industria"],"focus":["fabbrica"],"errorType":"false-friend","traps":[{"match":"fattoria","errorType":"false-friend","why":"*Fattoria* is a farm. A factory is a *fabbrica* (or *stabilimento*)."}],"explanation":"Factory = *fabbrica*. *Fattoria* = farm.","en":"My father works in a car factory near Turin."},
+        {"id":"B2-VOC-01.e13","type":"choice","difficulty":4,"instruction":"Choose the correct option.","prompt":"«Pretendo una risposta entro domani.» This means:","options":["I'm pretending to have an answer by tomorrow.","I demand an answer by tomorrow.","I intend to give an answer by tomorrow."],"answer":1,"optionWhy":{"0":"'Pretend' is *fingere* or *fare finta (di)*.","2":"'Intend' is *intendere* or *avere intenzione di*."},"errorType":"false-friend","explanation":"*Pretendere* = to demand, to expect (as a right).","en":"I demand an answer by tomorrow."},
+        {"id":"B2-VOC-01.e14","type":"transform","difficulty":4,"instruction":"Replace the anglicism with natural Italian (use rendersi conto, accorgersi or capire).","prompt":"Ho realizzato che era troppo tardi.","answers":["Mi sono (reso|resa) conto che era troppo tardi","Mi sono (accorto|accorta) che era troppo tardi","Ho capito che era troppo tardi"],"focus":["conto"],"errorType":"false-friend","traps":[{"contains":["realizzato"],"errorType":"false-friend","why":"Avoid *realizzare* for 'realise' in careful Italian: use *rendersi conto* or *accorgersi*."}],"explanation":"*Mi sono reso/a conto che…* is the standard way to say 'I realised that…'. Note the auxiliary *essere* with the reflexive.","en":"I realised it was too late."},
+        {"id":"B2-VOC-01.e15","type":"translate","difficulty":4,"instruction":"Translate into Italian.","prompt":"I attended the conference last week.","answers":["La settimana scorsa ho (partecipato|assistito) (al convegno|alla conferenza)","Ho (partecipato|assistito) (al convegno|alla conferenza) la settimana scorsa","La settimana scorsa sono andato (al convegno|alla conferenza)","La settimana scorsa sono andata (al convegno|alla conferenza)"],"focus":["partecipato"],"errorType":"false-friend","traps":[{"contains":["atteso","attenduto","attendito"],"errorType":"false-friend","why":"*Attendere* means 'to wait for'. To attend a conference is *partecipare a* (or *assistere a* as a listener)."},{"contains":["frequentato"],"errorType":"false-friend","why":"*Frequentare* is for attending regularly (a school, a course). For a single event use *partecipare a*."}],"explanation":"Attend an event = *partecipare a* / *assistere a*. *Attendere* = to wait.","en":"I attended the conference last week."},
+        {"id":"B2-VOC-01.e16","type":"speak","difficulty":3,"instruction":"Answer aloud (or type) in Italian.","prompt":"A friend asks what you do. Say that you are currently working in a bookshop.","answers":["(Attualmente|Al momento|In questo momento|Adesso|Ora|Per ora) (lavoro|sto lavorando) in una libreria","(Lavoro|Sto lavorando) in una libreria (attualmente|al momento|in questo momento|adesso|ora|per ora)"],"focus":["libreria"],"errorType":"false-friend","traps":[{"contains":["biblioteca"],"errorType":"false-friend","why":"A *biblioteca* is a library. A bookshop is a *libreria*."},{"contains":["attuale","attualità"],"errorType":"false-friend","why":"'Currently' is the adverb *attualmente* (or *al momento*)."}],"explanation":"*Attualmente* = currently; *libreria* = bookshop.","en":"I'm currently working in a bookshop."},
+        {"id":"B2-VOC-01.e17","type":"cloze","difficulty":5,"instruction":"Complete the sentence.","prompt":"Non è stato per niente ___ (understanding): quando gli ho raccontato i miei problemi, mi ha riso in faccia.","answers":["comprensivo"],"focus":["comprensivo"],"errorType":"false-friend","traps":[{"match":"simpatico","errorType":"false-friend","why":"*Simpatico* means 'likeable, nice', not 'sympathetic'. Understanding, supportive = *comprensivo*."},{"match":"comprensibile","errorType":"word-formation","why":"*Comprensibile* means 'understandable' (of a thing). An understanding person is *comprensivo*."}],"explanation":"Sympathetic, understanding = *comprensivo*. *Simpatico* = likeable; *comprensibile* = understandable.","en":"He wasn't understanding at all: when I told him my problems, he laughed in my face."},
+        {"id":"B2-VOC-01.e18","type":"translate","difficulty":5,"instruction":"Translate into Italian.","prompt":"Currently my relatives live on a farm.","answers":["(Attualmente|Al momento|Adesso|Ora|Oggi) i miei parenti (vivono|abitano) in una fattoria","I miei parenti (vivono|abitano) (attualmente|al momento|adesso|ora) in una fattoria"],"focus":["parenti","fattoria"],"errorType":"false-friend","traps":[{"contains":["relativi"],"errorType":"false-friend","why":"Relatives = *parenti*. *Relativo* is an adjective."},{"contains":["genitori"],"errorType":"false-friend","why":"*Genitori* are parents only; relatives in general are *parenti*."},{"contains":["fabbrica"],"errorType":"false-friend","why":"A *fabbrica* is a factory. A farm is a *fattoria*."},{"contains":["realtà","effettivamente"],"errorType":"false-friend","why":"'Currently' is *attualmente / al momento*; *in realtà* means 'actually'."}],"explanation":"Three false friends in one: *attualmente* = currently, *parenti* = relatives, *fattoria* = farm.","en":"Currently my relatives live on a farm."}
+      ]
+    },
+    {
+      "id": "B2-VOC-02",
+      "title": "Core collocations with fare, dare, prendere, avere",
+      "cefr": "B2",
+      "skill": "vocabulary",
+      "prereqs": [],
+      "rule": "Italian pairs nouns with light verbs differently from English: prendere una decisione, fare una domanda / una foto / la doccia, avere senso / luogo / fretta, dare fastidio / una mano / retta. Learn them as fixed chunks.",
+      "assessment": [
+        "Uses the right light verb (fare, prendere, dare, avere) with common nouns",
+        "Avoids English calques such as *fare una decisione*, *prendere una foto*, *fa senso*",
+        "Understands figurative collocations (prendere in giro, dare retta, fare caso a, fare finta)",
+        "Uses these collocations spontaneously in short spoken and written answers"
+      ],
+      "lesson": {
+        "intro": "English builds countless expressions with make, take, have and give, and Italian does the same with *fare, prendere, dare, avere*, but the pairings rarely match. Translating word for word gives *~~fare una decisione~~* or *~~prendere una foto~~*, which Italians understand but immediately notice. Learn each noun together with its verb, as one chunk.",
+        "rules": [
+          {
+            "title": "Fare: activities, routines and many English 'take / have / ask'",
+            "text": "*fare una domanda* (ask a question), *fare una foto* (take a photo), *fare una passeggiata / due passi* (go for a walk), *fare colazione* (have breakfast), *fare la doccia* (have a shower), *fare una pausa* (take a break), *fare la fila* (queue), *fare attenzione* (pay attention), *fare caso a* (notice), *fare finta di* (pretend), *fare a meno di* (do without), *fare fatica a* (struggle to), *fare paura* (be scary).",
+            "examples": [
+              {"it":"Posso farti una domanda?","en":"Can I ask you a question?"},
+              {"it":"Non ho fatto caso all'ora.","en":"I didn't notice the time."},
+              {"it":"Non riesco a fare a meno del caffè.","en":"I can't do without coffee."}
+            ]
+          },
+          {
+            "title": "Prendere: decisions and things you take in",
+            "text": "*prendere una decisione* (make a decision), *prendere un caffè* (have a coffee), *prendere appunti* (take notes), *prendere il sole* (sunbathe), *prendere freddo* (catch a chill), *prendere in giro* (tease, make fun of, con), *prendere sul serio* (take seriously), *prendere una multa* (get a fine), *prendere l'iniziativa*.",
+            "examples": [
+              {"it":"Dobbiamo prendere una decisione entro venerdì.","en":"We have to make a decision by Friday."},
+              {"it":"Mi stai prendendo in giro?","en":"Are you pulling my leg?"}
+            ]
+          },
+          {
+            "title": "Dare: giving something abstract",
+            "text": "*dare fastidio* (bother; *fare fastidio* is also common), *dare una mano* (lend a hand), *dare un'occhiata* (have a look), *dare retta a* (listen to, heed), *dare per scontato* (take for granted), *dare la colpa a* (blame), *dare ragione a* (agree someone is right), *dare un passaggio* (give a lift), *dare un esame* (sit an exam: student language; formally *sostenere un esame*).",
+            "examples": [
+              {"it":"Ti dà fastidio se apro la finestra?","en":"Do you mind if I open the window?"},
+              {"it":"Dammi retta: non partire stasera.","en":"Listen to me: don't leave tonight."}
+            ]
+          },
+          {
+            "title": "Avere: states, needs and events",
+            "text": "*avere senso* (make sense), *avere voglia di* (feel like), *avere bisogno di* (need), *avere fretta* (be in a hurry), *avere ragione / torto* (be right / wrong), *avere luogo* (take place, formal), *avere a che fare con* (have to do with, deal with), *avere fame / sete / sonno / caldo / freddo / paura*.",
+            "table": {
+              "head": [
+                "English",
+                "Italian",
+                "Not"
+              ],
+              "rows": [
+                [
+                  "make a decision",
+                  "prendere una decisione",
+                  "fare una decisione"
+                ],
+                [
+                  "make sense",
+                  "avere senso",
+                  "fare senso (= gross out)"
+                ],
+                [
+                  "take a photo",
+                  "fare una foto",
+                  "prendere una foto"
+                ],
+                [
+                  "have a shower",
+                  "fare la doccia",
+                  "prendere / avere una doccia"
+                ],
+                [
+                  "ask a question",
+                  "fare una domanda",
+                  "chiedere una domanda"
+                ],
+                [
+                  "pay attention",
+                  "fare / prestare attenzione",
+                  "pagare attenzione"
+                ],
+                [
+                  "take place",
+                  "avere luogo, svolgersi",
+                  "prendere posto"
+                ],
+                [
+                  "be right",
+                  "avere ragione",
+                  "essere giusto"
+                ]
+              ]
+            },
+            "examples": [
+              {"it":"Questa frase non ha senso.","en":"This sentence doesn't make sense."},
+              {"it":"La cerimonia avrà luogo in Duomo.","en":"The ceremony will take place in the cathedral."}
+            ]
+          }
+        ],
+        "mistakes": [
+          {"wrong":"Devo fare una decisione.","right":"Devo prendere una decisione.","why":"Decisions are *taken* in Italian: *prendere una decisione*."},
+          {"wrong":"Non fa senso.","right":"Non ha senso.","why":"*Fare senso* means 'to gross out' (*il sangue mi fa senso*). Some young speakers say *fa senso* for 'makes sense', but it's non-standard."},
+          {"wrong":"Posso chiedere una domanda?","right":"Posso fare una domanda?","why":"You *fare* a question, or simply *chiedere una cosa*."},
+          {"wrong":"Il concerto prende posto in piazza.","right":"Il concerto ha luogo (si svolge) in piazza.","why":"'Take place' = *avere luogo* or *svolgersi*. *Prendere posto* = take a seat."},
+          {"wrong":"Sei giusto.","right":"Hai ragione.","why":"Being right is something you *have*: *avere ragione*."}
+        ],
+        "tips": [
+          "Memorise verb and noun as one block: *prendere-una-decisione*, *fare-una-domanda*.",
+          "For activities and routines, *fare* is the safest bet (*fare sport, fare la spesa, fare un giro*).",
+          "*Dare un esame* is everyday student talk; in formal writing use *sostenere un esame*."
+        ]
+      },
+      "exercises": [
+        {"id":"B2-VOC-02.e01","type":"cloze","difficulty":1,"instruction":"Complete the sentence.","prompt":"Scusi, posso ___ una domanda?","answers":["fare","farle","porre","porle"],"focus":["fare"],"errorType":"collocation","traps":[{"match":"chiedere","errorType":"collocation","why":"*Chiedere una domanda* is a calque. You *fare* (or, formally, *porre*) a question."},{"match":"domandare","errorType":"collocation","why":"*Domandare una domanda* is redundant. Use *fare una domanda*."}],"explanation":"Ask a question = *fare una domanda* (formal: *porre*).","en":"Excuse me, may I ask a question?"},
+        {"id":"B2-VOC-02.e02","type":"cloze","difficulty":1,"instruction":"Complete the sentence.","prompt":"Dobbiamo ___ una decisione entro venerdì.","answers":["prendere"],"focus":["prendere"],"errorType":"collocation","traps":[{"match":"fare","errorType":"collocation","why":"Decisions are taken, not made, in Italian: *prendere una decisione*."}],"explanation":"Make a decision = *prendere una decisione*.","en":"We have to make a decision by Friday."},
+        {"id":"B2-VOC-02.e03","type":"choice","difficulty":1,"instruction":"Choose the correct option.","prompt":"Questa frase non ___ senso.","options":["fa","ha","dà","prende"],"answer":1,"optionWhy":{"0":"*Fare senso* means 'to gross out' (*il sangue mi fa senso*). 'Make sense' = *avere senso*.","2":"*Dare senso* = to give meaning (*dare un senso alla vita*), not 'make sense'.","3":"*Prendere senso* doesn't exist."},"errorType":"collocation","explanation":"Make sense = *avere senso*.","en":"This sentence doesn't make sense."},
+        {"id":"B2-VOC-02.e04","type":"choice","difficulty":2,"instruction":"Choose the correct option.","prompt":"Aspettami cinque minuti: mi ___ una doccia veloce e arrivo.","options":["faccio","prendo","ho","do"],"answer":0,"optionWhy":{"1":"*Prendere una doccia* is a calque from English/French; standard Italian uses *fare la doccia*.","2":"*Avere una doccia* is a calque of 'have a shower'."},"errorType":"collocation","explanation":"Have a shower = *fare la doccia* (*farsi una doccia* in speech).","en":"Wait five minutes for me: I'll have a quick shower and I'll be there."},
+        {"id":"B2-VOC-02.e05","type":"cloze","difficulty":2,"instruction":"Complete the sentence.","prompt":"Non ___ finta di niente: so che hai letto il mio messaggio!","answers":["fare"],"focus":["fare"],"errorType":"collocation","traps":[{"match":"fai","errorType":"verb-form","why":"Right verb, but the negative *tu* imperative is *non* + infinitive: *non fare*."},{"match":["prendere","dare"],"errorType":"collocation","why":"Pretend = *fare finta (di)*."}],"explanation":"*Fare finta di* = to pretend. Negative tu imperative: *non fare*.","en":"Don't pretend nothing's happened: I know you've read my message!"},
+        {"id":"B2-VOC-02.e06","type":"cloze","difficulty":2,"instruction":"Complete the sentence.","prompt":"Stasera non ho ___ di uscire: resto a casa.","answers":["voglia"],"focus":["voglia"],"errorType":"collocation","traps":[{"match":"desiderio","errorType":"collocation","why":"*Avere voglia di* is the natural way to say 'feel like'."},{"match":"bisogno","errorType":"vocabulary","why":"*Avere bisogno di* = to need. 'Feel like' = *avere voglia di*."}],"explanation":"Feel like (doing) = *avere voglia di*.","en":"I don't feel like going out tonight: I'm staying in."},
+        {"id":"B2-VOC-02.e07","type":"order","difficulty":2,"instruction":"Put the words in order.","prompt":"Let's take a short walk before dinner.","tokens":["Facciamo","due","passi","prima","di","cena"],"answers":["Facciamo due passi prima di cena","Prima di cena facciamo due passi"],"errorType":"collocation","explanation":"*Fare due passi* = go for a short walk (lit. 'take two steps').","en":"Let's take a short walk before dinner."},
+        {"id":"B2-VOC-02.e08","type":"translate","difficulty":3,"instruction":"Translate into Italian (any form of 'you').","prompt":"Pay attention to the traffic!","answers":["(Fai|Fate|Faccia|Presta|Prestate|Presti) attenzione al traffico","(Stai|Stia) (attento|attenta) al traffico","State (attenti|attente) al traffico"],"focus":["attenzione"],"errorType":"collocation","traps":[{"contains":["paga","pagate","paghi"],"errorType":"collocation","why":"You don't *pay* attention in Italian: *fare (or prestare) attenzione*."}],"explanation":"Pay attention = *fare attenzione* / *prestare attenzione* / *stare attento*.","en":"Pay attention to the traffic!"},
+        {"id":"B2-VOC-02.e09","type":"cloze","difficulty":3,"instruction":"Complete the sentence.","prompt":"Mi puoi ___ una mano a spostare il divano?","answers":["dare"],"focus":["dare"],"errorType":"collocation","traps":[{"match":"prestare","errorType":"collocation","why":"Lend a hand = *dare una mano*."},{"match":"fare","errorType":"collocation","why":"Lend a hand = *dare una mano*."}],"explanation":"*Dare una mano* = lend a hand, help.","en":"Can you give me a hand moving the sofa?"},
+        {"id":"B2-VOC-02.e10","type":"choice","difficulty":3,"instruction":"Choose the correct option.","prompt":"«Mi stai prendendo in giro?» means:","options":["Are you taking me for a ride in the car?","Are you pulling my leg?","Are you picking me up?"],"answer":1,"optionWhy":{"0":"A ride is *un giro* or *un passaggio*, but *prendere in giro* is figurative.","2":"Picking someone up is *passare a prendere*."},"errorType":"collocation","explanation":"*Prendere in giro* = to tease, make fun of, or con.","en":"Are you pulling my leg?"},
+        {"id":"B2-VOC-02.e11","type":"cloze","difficulty":3,"instruction":"Complete the sentence.","prompt":"Se mi avessi ___ retta, adesso non saresti in questo guaio.","answers":["dato"],"focus":["dato"],"errorType":"collocation","traps":[{"match":["fatto","preso","tenuto"],"errorType":"collocation","why":"Listen to / heed someone = *dare retta a qualcuno*."}],"explanation":"*Dare retta a* = listen to, follow someone's advice.","en":"If you'd listened to me, you wouldn't be in this mess now."},
+        {"id":"B2-VOC-02.e12","type":"cloze","difficulty":3,"instruction":"Complete the sentence.","prompt":"La cerimonia ___ luogo sabato alle undici in municipio.","answers":["avrà","ha"],"focus":["avrà"],"errorType":"collocation","traps":[{"match":["prenderà","prende"],"errorType":"collocation","why":"'Take place' is not *prendere luogo*: use *avere luogo* (or *si svolgerà*)."},{"match":["farà","fa"],"errorType":"collocation","why":"'Take place' = *avere luogo*."}],"explanation":"Take place = *avere luogo* (or *svolgersi*).","en":"The ceremony will take place on Saturday at eleven at the town hall."},
+        {"id":"B2-VOC-02.e13","type":"cloze","difficulty":4,"instruction":"Complete the sentence.","prompt":"Hai ___ caso a come ci guardava quel signore?","answers":["fatto"],"focus":["fatto"],"errorType":"collocation","traps":[{"match":["dato","preso","avuto"],"errorType":"collocation","why":"Notice = *fare caso a*."}],"explanation":"*Fare caso a* = to notice, pay attention to.","en":"Did you notice how that man was looking at us?"},
+        {"id":"B2-VOC-02.e14","type":"transform","difficulty":4,"instruction":"Rewrite using 'fare a meno di'.","prompt":"Non posso vivere senza caffè.","answers":["Non posso fare a meno del caffè","Non riesco a fare a meno del caffè"],"focus":["meno"],"errorType":"collocation","traps":[{"contains":["senza"],"errorType":"collocation","why":"*Fare a meno di* already means 'do without', so drop *senza*."},{"contains":["di"],"errorType":"preposition","why":"*Di* + *il* merges: *fare a meno del caffè*."}],"explanation":"*Fare a meno di* + noun = do without. *Di + il caffè* → *del caffè*.","en":"I can't do without coffee."},
+        {"id":"B2-VOC-02.e15","type":"translate","difficulty":4,"instruction":"Translate into Italian.","prompt":"I took a lot of photos in Rome.","answers":["Ho fatto (molte|tante|un sacco di|parecchie) (foto|fotografie) a Roma","A Roma ho fatto (molte|tante|un sacco di|parecchie) (foto|fotografie)"],"focus":["fatto"],"errorType":"collocation","traps":[{"contains":["preso","presi","prese"],"errorType":"collocation","why":"Photos are *made* in Italian: *fare una foto*."},{"contains":["scattato"],"errorType":"collocation","why":"*Scattare una foto* is also correct, but here practise *fare*: *ho fatto molte foto*."}],"explanation":"Take a photo = *fare una foto* (also *scattare*).","en":"I took a lot of photos in Rome."},
+        {"id":"B2-VOC-02.e16","type":"speak","difficulty":2,"instruction":"Answer aloud (or type) in Italian.","prompt":"You bump into a friend but must run. Say: 'Sorry, I'm in a hurry!'","answers":["(Scusa|Scusami|Mi dispiace) (ho fretta|ho molta fretta|vado di fretta|vado di corsa|sono di fretta|sono di corsa)"],"focus":["fretta"],"errorType":"collocation","traps":[{"contains":["affrettato","affrettata"],"errorType":"collocation","why":"Be in a hurry = *avere fretta* (or *andare di fretta*)."},{"contains":["sbrigo"],"errorType":"collocation","why":"*Mi sbrigo* means 'I'll hurry up'. To say you're in a hurry: *ho fretta*."}],"explanation":"Be in a hurry = *avere fretta* / *andare di fretta*.","en":"Sorry, I'm in a hurry!","interaction":true},
+        {"id":"B2-VOC-02.e17","type":"translate","difficulty":5,"instruction":"Translate into Italian (informal 'you').","prompt":"Don't take it for granted that everyone agrees: ask a question at the meeting.","answers":["Non dare per scontato che (tutti siano d'accordo|siano tutti d'accordo)[,] fai una domanda alla riunione","Non dare per scontato che (tutti siano d'accordo|siano tutti d'accordo)[,] fa' una domanda alla riunione"],"focus":["dare","scontato"],"errorType":"collocation","traps":[{"contains":["prendere","prendi"],"errorType":"collocation","why":"Take for granted = *dare per scontato*."},{"contains":["sono"],"errorType":"indicative-for-subjunctive","why":"*Dare per scontato che* is followed by the subjunctive: *siano*."},{"contains":["chiedi"],"errorType":"collocation","why":"Ask a question = *fare una domanda*."}],"explanation":"*Dare per scontato che* + subjunctive; *fare una domanda*. Negative tu imperative = *non* + infinitive.","en":"Don't take it for granted that everyone agrees: ask a question at the meeting."},
+        {"id":"B2-VOC-02.e18","type":"free","difficulty":5,"instruction":"Write 40–80 words in Italian.","prompt":"Describe a difficult decision you made. Use at least three collocations with fare, dare, prendere or avere (e.g. prendere una decisione, avere senso, dare retta, fare fatica).","minWords":40,"maxWords":80,"rubric":[{"label":"Uses prendere una decisione","anyOf":["\\b(pres[oaie]|prend\\w*)\\b[^.]{0,25}decision"],"min":1,"errorType":"collocation","hint":"Decisions are taken: *ho preso una decisione*."},{"label":"Uses a collocation with avere","anyOf":["\\b(avere|ho|hai|ha|avevo|aveva|avuto)\\b\\s+(senso|voglia|bisogno|fretta|ragione|torto|paura)"],"min":1,"errorType":"collocation","hint":"Try *non aveva senso* or *avevo paura*."},{"label":"Uses a collocation with dare or fare","anyOf":["\\b(da\\w*|dett[oaie])\\s+(retta|una mano|fastidio|un'occhiata|per scontato|ragione)","\\b(f\\w+)\\s+(fatica|caso|finta|a meno|attenzione)"],"min":1,"errorType":"collocation","hint":"Try *ho fatto fatica a…* or *ho dato retta a…*."}],"model":"Due anni fa ho dovuto prendere una decisione difficile: lasciare il lavoro e trasferirmi a Bologna. All'inizio ho fatto fatica ad accettarlo, perché avevo paura di sbagliare. Poi ho dato retta a mia sorella, che mi ha detto che restare non aveva senso. Oggi le do ragione: è stata la scelta giusta.","errorType":"collocation","explanation":"A good answer recycles fixed chunks: *prendere una decisione*, *fare fatica a*, *avere paura*, *dare retta a*, *non avere senso*."}
+      ]
+    },
+    {
+      "id": "C1-VOC-03",
+      "title": "Advanced collocations (porre fine, prendere atto…)",
+      "cefr": "C1",
+      "skill": "vocabulary",
+      "prereqs": [
+        "B2-VOC-02"
+      ],
+      "rule": "Formal Italian uses precise verb–noun pairs with fixed prepositions: porre fine a, prendere atto di, svolgere un ruolo, trarre vantaggio da, recare danno a, sollevare una questione, tenere conto di. Avoid calques like indirizzare un problema or prendere vantaggio.",
+      "assessment": [
+        "Uses formal verb–noun collocations (porre fine a, prendere atto di, svolgere un ruolo, trarre vantaggio da) with the right preposition",
+        "Replaces generic verbs (fare, mettere, dire) with precise collocations in formal writing",
+        "Avoids calques such as *indirizzare un problema*, *alzare una questione*, *prendere vantaggio*",
+        "Pairs nouns with natural adjectives (netto calo, accesa discussione, ampio consenso)"
+      ],
+      "lesson": {
+        "intro": "At C1 the difference between correct and *convincing* Italian is often collocation. News, reports, formal emails and essays prefer precise verb–noun pairs like *porre fine a*, *prendere atto di*, *svolgere un ruolo*, where everyday speech would just use *fare* or *mettere*. Using them signals a sophisticated register; calquing English (*indirizzare un problema*) signals the opposite.",
+        "rules": [
+          {
+            "title": "Porre, sollevare, avanzare, muovere: putting things forward",
+            "text": "*porre fine a* (put an end to), *porre rimedio a* (remedy), *porre le basi per* (lay the foundations for), *porre una domanda / una condizione*; *sollevare una questione / un problema / obiezioni / dubbi* (raise); *avanzare una proposta / un'ipotesi / una richiesta* (put forward); *muovere una critica / un'accusa* (level a criticism / an accusation).",
+            "examples": [
+              {"it":"L'accordo ha posto fine a dieci anni di conflitto.","en":"The agreement put an end to ten years of conflict."},
+              {"it":"Alcuni consiglieri hanno sollevato dubbi sui costi.","en":"Some councillors raised doubts about the costs."}
+            ]
+          },
+          {
+            "title": "Prendere, tenere, fare fronte: dealing with situations",
+            "text": "*prendere atto di* (formally acknowledge), *prendere provvedimenti / misure* (take measures; also *adottare misure*), *prendere in considerazione* (consider), *tenere conto di* (take into account), *fare fronte a* (cope with, meet: *spese, un'emergenza*), *affrontare un problema* (tackle a problem).",
+            "examples": [
+              {"it":"Prendiamo atto della sua decisione.","en":"We acknowledge your decision."},
+              {"it":"Il comune non riesce a far fronte alle spese.","en":"The council can't meet its expenses."}
+            ]
+          },
+          {
+            "title": "Svolgere, ricoprire, trarre, recare: roles, benefits and harm",
+            "text": "*svolgere un ruolo / un'attività / un compito / un'indagine* (play a role, carry out); *ricoprire una carica* (hold an office); *trarre vantaggio / beneficio / profitto da* (benefit from), *trarre le conclusioni*, *trarre ispirazione da*; *recare (arrecare) danno / disturbo a* (cause harm / inconvenience); *commettere un errore / un reato*; *correre un rischio*.",
+            "examples": [
+              {"it":"La scuola svolge un ruolo fondamentale.","en":"School plays a fundamental role."},
+              {"it":"Ci scusiamo per il disturbo arrecato.","en":"We apologise for any inconvenience caused."}
+            ]
+          },
+          {
+            "title": "Adjective + noun pairs",
+            "table": {
+              "head": [
+                "noun",
+                "typical adjective",
+                "English"
+              ],
+              "rows": [
+                [
+                  "calo",
+                  "netto, drastico",
+                  "sharp drop"
+                ],
+                [
+                  "aumento",
+                  "forte, notevole",
+                  "steep / significant rise"
+                ],
+                [
+                  "discussione, dibattito",
+                  "acceso",
+                  "heated discussion"
+                ],
+                [
+                  "consenso",
+                  "ampio, unanime",
+                  "broad / unanimous consensus"
+                ],
+                [
+                  "errore",
+                  "grave",
+                  "serious mistake"
+                ],
+                [
+                  "crisi",
+                  "profonda",
+                  "deep crisis"
+                ]
+              ]
+            },
+            "text": "Native writers reach for these pairings automatically; using them makes a text sound idiomatic.",
+            "examples": [
+              {"it":"Le vendite hanno registrato un netto calo.","en":"Sales recorded a sharp drop."}
+            ]
+          },
+          {
+            "title": "Calques to avoid",
+            "text": "*~~indirizzare un problema~~* → *affrontare*; *~~alzare una questione~~* → *sollevare*; *~~prendere vantaggio~~* → *trarre vantaggio da* / *approfittare di*; *~~prendere un rischio~~* → *correre un rischio*. *Giocare un ruolo* is frequent in journalism but considered an anglicism: prefer *svolgere / avere / ricoprire un ruolo*.",
+            "examples": [
+              {"it":"Bisogna affrontare il problema alla radice.","en":"We need to address the problem at its root."}
+            ]
+          }
+        ],
+        "mistakes": [
+          {"wrong":"Bisogna indirizzare il problema.","right":"Bisogna affrontare il problema.","why":"*Indirizzare* = to address a letter or direct something. 'Address a problem' = *affrontare*."},
+          {"wrong":"Ha alzato una questione importante.","right":"Ha sollevato una questione importante.","why":"Questions and objections are *sollevate*."},
+          {"wrong":"Hanno preso vantaggio della situazione.","right":"Hanno approfittato della situazione. / Hanno tratto vantaggio dalla situazione.","why":"*Prendere vantaggio* doesn't exist in this sense."},
+          {"wrong":"Non voglio prendere rischi.","right":"Non voglio correre rischi.","why":"Risks are *run*: *correre un rischio*."},
+          {"wrong":"Prendiamo atto la sua decisione.","right":"Prendiamo atto della sua decisione.","why":"*Prendere atto* needs *di*."}
+        ],
+        "tips": [
+          "Learn the preposition with the chunk: porre fine **a**, prendere atto **di**, trarre vantaggio **da**, recare danno **a**, tenere conto **di**, fare fronte **a**.",
+          "Read one Italian news article a day and highlight verb–noun pairs; note which verb a journalist chooses instead of *fare*.",
+          "In conversation these can sound stiff: with friends, *mettere fine a* and *pensarci* are perfectly fine."
+        ]
+      },
+      "exercises": [
+        {"id":"C1-VOC-03.e01","type":"cloze","difficulty":1,"instruction":"Complete the sentence.","prompt":"Il governo vuole ___ fine alla crisi entro l'estate.","answers":["porre","mettere"],"focus":["porre"],"errorType":"collocation","traps":[{"match":"fare","errorType":"collocation","why":"Put an end to = *porre (mettere) fine a*."},{"match":"dare","errorType":"collocation","why":"Put an end to = *porre fine a*."}],"explanation":"*Porre fine a* (formal) / *mettere fine a* (neutral) = put an end to.","en":"The government wants to put an end to the crisis by the summer."},
+        {"id":"C1-VOC-03.e02","type":"choice","difficulty":2,"instruction":"Choose the verb preferred in careful written Italian.","prompt":"La ricerca ___ un ruolo fondamentale nello sviluppo del Paese.","options":["svolge","gioca","fa","prende"],"answer":0,"optionWhy":{"1":"*Giocare un ruolo* is a calque of 'play a role'. Common in journalism, but careful writers prefer *svolgere*, *avere* or *ricoprire*.","2":"*Fare un ruolo* is colloquial (an actor *fa la parte di…*).","3":"*Prendere un ruolo* doesn't mean 'play a role'."},"errorType":"collocation","explanation":"*Svolgere un ruolo* = play a role.","en":"Research plays a fundamental role in the country's development."},
+        {"id":"C1-VOC-03.e03","type":"cloze","difficulty":2,"instruction":"Complete the sentence.","prompt":"Prendiamo ___ della sua decisione e procederemo di conseguenza.","answers":["atto"],"focus":["atto"],"errorType":"collocation","traps":[{"match":"nota","errorType":"vocabulary","why":"*Prendere nota* = to note down. It's possible, but *prendere atto* is the formal way to say 'acknowledge'.","ok":true},{"match":"conto","errorType":"collocation","why":"*Tenere conto di* = take into account; but here the verb is *prendere*: *prendere atto di*."}],"explanation":"*Prendere atto di* = formally acknowledge (often a decision you don't like).","en":"We acknowledge your decision and will act accordingly."},
+        {"id":"C1-VOC-03.e04","type":"cloze","difficulty":2,"instruction":"Complete the sentence.","prompt":"Molte aziende hanno ___ vantaggio dalla crisi dei concorrenti.","answers":["tratto"],"focus":["tratto"],"errorType":"collocation","traps":[{"match":"preso","errorType":"collocation","why":"*Prendere vantaggio* is a calque. Use *trarre vantaggio da* (or *approfittare di*)."},{"match":"avuto","errorType":"collocation","why":"*Avere un vantaggio* = to have an advantage; benefit from = *trarre vantaggio da*."}],"explanation":"*Trarre vantaggio da* = benefit from. Past participle of *trarre*: *tratto*.","en":"Many companies benefited from their competitors' crisis."},
+        {"id":"C1-VOC-03.e05","type":"choice","difficulty":2,"instruction":"Choose the correct option.","prompt":"La cattiva gestione ha ___ grave danno all'immagine dell'azienda.","options":["recato","giocato","svolto","tratto"],"answer":0,"optionWhy":{"1":"*Giocare* collocates with *un ruolo* (journalese), not *danno*.","2":"*Svolgere* goes with *un ruolo, un compito, un'attività*.","3":"*Trarre* goes with *vantaggio, beneficio, conclusioni*."},"errorType":"collocation","explanation":"*Recare (arrecare) danno a* = cause harm to.","en":"Bad management has seriously damaged the company's image."},
+        {"id":"C1-VOC-03.e06","type":"cloze","difficulty":3,"instruction":"Complete the sentence.","prompt":"Durante il consiglio comunale, la sindaca ha ___ una questione delicata: chi pagherà i lavori?","answers":["sollevato","posto"],"focus":["sollevato"],"errorType":"collocation","traps":[{"match":"alzato","errorType":"collocation","why":"*Alzare* is literal (raise a hand). A question or issue is *sollevata* (or *posta*)."},{"match":"aumentato","errorType":"collocation","why":"*Aumentare* means increase. Raise an issue = *sollevare una questione*."}],"explanation":"*Sollevare una questione* = raise an issue.","en":"During the council meeting, the mayor raised a delicate issue: who will pay for the works?"},
+        {"id":"C1-VOC-03.e07","type":"choice","difficulty":3,"instruction":"Choose the correct option.","prompt":"Le vendite del primo trimestre hanno registrato un ___ calo.","options":["netto","alto","lungo","largo"],"answer":0,"optionWhy":{"1":"*Alto* goes with levels (*un alto livello*), not with a drop.","2":"*Lungo* refers to length or duration.","3":"*Largo* = wide; it doesn't collocate with *calo*."},"errorType":"collocation","explanation":"*Un netto calo* = a sharp drop (also *forte, drastico*).","en":"First-quarter sales recorded a sharp drop."},
+        {"id":"C1-VOC-03.e08","type":"cloze","difficulty":3,"instruction":"Complete the sentence.","prompt":"La scuola ha preso ___ severi contro il bullismo.","answers":["provvedimenti","misure"],"focus":["provvedimenti"],"errorType":"collocation","traps":[{"match":"passi","errorType":"collocation","why":"'Take steps' is not *prendere passi*: say *prendere provvedimenti / misure*."},{"match":"azioni","errorType":"collocation","why":"'Take action' = *intervenire* or *prendere provvedimenti*; *prendere azioni* is a calque."}],"explanation":"*Prendere provvedimenti / misure* = take measures, take action.","en":"The school took strict measures against bullying."},
+        {"id":"C1-VOC-03.e09","type":"translate","difficulty":3,"instruction":"Translate into Italian.","prompt":"We must take this into account.","answers":["(Dobbiamo|Bisogna|Occorre) tenerne conto","Ne dobbiamo tenere conto","Dobbiamo (tenere|tener) conto di (questo|ciò|questa cosa)","Dobbiamo (prenderlo|prenderla) in considerazione","(Lo|La) dobbiamo prendere in considerazione"],"focus":["conto"],"errorType":"collocation","traps":[{"contains":["contare"],"errorType":"collocation","why":"Take into account = *tenere conto di* (with *ne*: *tenerne conto*)."},{"contains":["prendere","conto"],"errorType":"collocation","why":"It's *tenere conto*, not *prendere conto*."}],"explanation":"*Tenere conto di* → with a pronoun, *tenerne conto*. Or *prendere in considerazione*.","en":"We must take this into account."},
+        {"id":"C1-VOC-03.e10","type":"order","difficulty":3,"instruction":"Put the words in order.","prompt":"We must draw conclusions from these data.","tokens":["Dobbiamo","trarre","le","conclusioni","da","questi","dati"],"answers":["Dobbiamo trarre le conclusioni da questi dati","Da questi dati dobbiamo trarre le conclusioni"],"errorType":"collocation","explanation":"*Trarre le conclusioni (da)* = draw conclusions (from).","en":"We must draw conclusions from these data."},
+        {"id":"C1-VOC-03.e11","type":"transform","difficulty":4,"instruction":"Rewrite more formally using 'porre fine a'.","prompt":"Il nuovo accordo ha fatto finire la guerra.","answers":["Il nuovo accordo ha posto fine alla guerra"],"focus":["posto"],"errorType":"collocation","traps":[{"contains":["messo"],"errorType":"register","why":"*Mettere fine a* is correct but neutral; the task asks for the formal *porre fine a*: *ha posto fine*."},{"contains":["la"],"errorType":"preposition","why":"*Porre fine* needs *a*: *a + la guerra* → *alla guerra*."},{"contains":["poso","porto"],"errorType":"verb-form","why":"The past participle of *porre* is *posto*."}],"explanation":"*Porre fine a* → passato prossimo *ha posto fine alla…*","en":"The new agreement put an end to the war."},
+        {"id":"C1-VOC-03.e12","type":"cloze","difficulty":4,"instruction":"Complete the sentence.","prompt":"Dal 2019 la dottoressa Neri ___ la carica di direttrice generale.","answers":["ricopre","riveste","occupa"],"focus":["ricopre"],"errorType":"collocation","traps":[{"match":"tiene","errorType":"collocation","why":"'Hold an office' isn't *tenere*: say *ricoprire (rivestire, occupare) una carica*."},{"match":"gioca","errorType":"collocation","why":"Offices are held: *ricoprire una carica*."}],"explanation":"*Ricoprire una carica* = hold an office.","en":"Since 2019 Dr Neri has held the post of director general."},
+        {"id":"C1-VOC-03.e13","type":"choice","difficulty":4,"instruction":"Which expression is NOT natural Italian?","prompt":"Il nuovo assessore deve ___ il problema del traffico.","options":["affrontare","gestire","indirizzare","risolvere"],"answer":2,"optionWhy":{"0":"*Affrontare un problema* is natural: you're looking for the odd one out.","1":"*Gestire un problema* is natural.","3":"*Risolvere un problema* is natural."},"errorType":"collocation","explanation":"*Indirizzare un problema* is a calque of 'address a problem'. Use *affrontare*.","en":"The new councillor must tackle the traffic problem."},
+        {"id":"C1-VOC-03.e14","type":"translate","difficulty":4,"instruction":"Translate into formal Italian.","prompt":"This decision could cause serious damage to the company.","answers":["Questa decisione potrebbe (recare|arrecare|causare|provocare) (gravi danni|un grave danno|danni gravi) (all'azienda|alla società)","Questa decisione potrebbe danneggiare gravemente (l'azienda|la società)"],"focus":["danno"],"errorType":"collocation","traps":[{"contains":["fare","dare"],"errorType":"register","why":"Correct-ish in speech, but formally use *recare / arrecare / causare danno a*."},{"contains":["dannare","dannoso"],"errorType":"vocabulary","why":"*Dannare* = to damn. Use *recare danno a* or *danneggiare*."}],"explanation":"*Recare / arrecare danno a* = cause harm to (formal).","en":"This decision could cause serious damage to the company."},
+        {"id":"C1-VOC-03.e15","type":"translate","difficulty":5,"instruction":"Translate into Italian.","prompt":"The minister raised a question that nobody had considered.","answers":["(Il ministro|La ministra) ha (sollevato|posto) una questione che nessuno aveva (considerato|preso in considerazione|valutato)"],"focus":["sollevato"],"errorType":"collocation","traps":[{"contains":["alzato"],"errorType":"collocation","why":"Raise an issue = *sollevare una questione*."},{"contains":["domanda"],"errorType":"collocation","why":"*Questione* (issue) fits better than *domanda* (a question asked) here."}],"explanation":"*Sollevare / porre una questione*; trapassato *aveva considerato*.","en":"The minister raised a question that nobody had considered."},
+        {"id":"C1-VOC-03.e16","type":"speak","difficulty":5,"instruction":"Answer aloud (or type) in Italian, formal register.","prompt":"At a meeting, tell the client (Lei): 'We acknowledge your proposal and will take it into account.'","answers":["Prendiamo atto della (sua|Sua|vostra) proposta e (ne terremo conto|la terremo in considerazione|la prenderemo in considerazione|la valuteremo)"],"focus":["atto"],"errorType":"collocation","traps":[{"contains":["la"],"errorType":"preposition","why":"*Prendere atto* needs *di*: *della sua proposta*."},{"contains":["account","contare"],"errorType":"collocation","why":"Take into account = *tenerne conto*."}],"explanation":"*Prendere atto di* + *tenerne conto* / *prenderla in considerazione*.","en":"We acknowledge your proposal and will take it into account.","interaction":true},
+        {"id":"C1-VOC-03.e17","type":"free","difficulty":5,"instruction":"Write 50–90 words in formal Italian.","prompt":"You are writing a short report for your company about a problem (e.g. delays, rising costs). Use at least three advanced collocations: porre fine a, prendere atto di, svolgere un ruolo, trarre vantaggio da, recare danno a, sollevare una questione, fare fronte a, prendere provvedimenti.","minWords":50,"maxWords":90,"rubric":[{"label":"Uses at least three advanced collocations","anyOf":["\\b(port\\w*|pon\\w*|post[oaie])\\s+fine\\s+a","\\bpre(nd|s)\\w*\\s+atto\\s+d","\\b(svol\\w+|ricopr\\w+)\\b[^.]{0,20}\\bruol","\\b(tra\\w*|tratt[oaie])\\s+(vantaggio|beneficio|conclusion)","\\b(rec|arrec)\\w+\\s+(danno|danni|disturbo)","\\bsollev\\w+\\b[^.]{0,20}(questione|problema|dubbi|obiezion)","\\bfa\\w*\\s+fronte\\s+a","\\bpre(nd|s)\\w*\\s+(provvedimenti|misure)"],"min":3,"errorType":"collocation","hint":"Combine, for example, *sollevare una questione*, *prendere provvedimenti*, *porre fine a*."},{"label":"Uses a formal linking word","anyOf":["\\b(pertanto|tuttavia|inoltre|di conseguenza|in questo modo|al fine di|dunque)\\b"],"min":1,"errorType":"connector","hint":"Link your sentences with *pertanto*, *tuttavia* or *in questo modo*."}],"model":"Negli ultimi mesi i ritardi nelle consegne hanno recato danno all'immagine dell'azienda. Durante l'ultima riunione il responsabile logistico ha sollevato la questione dei fornitori. Prendiamo atto delle difficoltà, ma è necessario prendere provvedimenti: proponiamo di cambiare fornitore per porre fine a questa situazione. In questo modo potremo anche trarre vantaggio da prezzi più competitivi.","errorType":"collocation","explanation":"A strong report chains several formal collocations: *recare danno a*, *sollevare una questione*, *prendere atto di*, *prendere provvedimenti*, *porre fine a*, *trarre vantaggio da*."}
+      ]
+    },
+    {
+      "id": "B2-IDIOM-01",
+      "title": "Everyday idioms",
+      "cefr": "B2",
+      "skill": "vocabulary",
+      "prereqs": [],
+      "rule": "Everyday idioms are fixed chunks with vivid images: essere al verde, costare un occhio della testa, non vedere l'ora di, avere le mani bucate, in bocca al lupo (– crepi!). Don't change their words, and keep informal ones out of formal contexts.",
+      "assessment": [
+        "Understands common everyday idioms in context",
+        "Uses idioms in their fixed form (right noun, preposition, singular or plural)",
+        "Responds appropriately to ritual expressions (In bocca al lupo! – Crepi!)",
+        "Chooses idioms that suit the register of the situation"
+      ],
+      "lesson": {
+        "intro": "Italians use idioms constantly in everyday conversation, often built on a vivid image: wolves, clouds, bread, the Pope. You don't need hundreds, but you do need to understand the common ones instantly and use a few naturally. Most are informal or neutral, so match them to the situation.",
+        "rules": [
+          {
+            "title": "Money",
+            "text": "*essere al verde* (be broke; lit. 'be at the green', from the green base of old candles), *costare un occhio della testa* (cost an arm and a leg; lit. 'an eye from your head'), *avere le mani bucate* (spend money like water; lit. 'have holes in your hands'), *spendere e spandere* (splash out).",
+            "examples": [
+              {"it":"Fino a fine mese sono al verde.","en":"I'm broke until the end of the month."},
+              {"it":"Quella macchina costa un occhio della testa.","en":"That car costs an arm and a leg."}
+            ]
+          },
+          {
+            "title": "Feelings and moods",
+            "text": "*non vedere l'ora di* (can't wait to; lit. 'not see the hour'), *avere un diavolo per capello* (be furious; lit. 'a devil for every hair'), *avere la luna storta* (be in a bad mood; lit. 'have a crooked moon'), *essere giù di corda* (feel down), *essere al settimo cielo* (be over the moon), *cadere dalle nuvole* (be taken completely by surprise; lit. 'fall from the clouds').",
+            "examples": [
+              {"it":"Non vedo l'ora di rivederti!","en":"I can't wait to see you again!"},
+              {"it":"Oggi lascialo stare: ha un diavolo per capello.","en":"Leave him alone today: he's furious."}
+            ]
+          },
+          {
+            "title": "People",
+            "text": "*essere in gamba* (be capable, smart; lit. 'be in leg'), *essere un pezzo di pane* (be a sweetheart; lit. 'a piece of bread'), *non avere peli sulla lingua* (speak one's mind; lit. 'have no hairs on the tongue'), *avere la testa fra le nuvole* (be absent-minded), *essere una buona forchetta* (be a hearty eater; lit. 'a good fork'), *alla mano* (easy-going, down to earth).",
+            "examples": [
+              {"it":"La nuova collega è molto in gamba.","en":"The new colleague is very capable."},
+              {"it":"Mia nonna non ha peli sulla lingua.","en":"My grandmother doesn't mince her words."}
+            ]
+          },
+          {
+            "title": "Situations and rituals",
+            "text": "*In bocca al lupo!* – *Crepi!* (Good luck! – lit. 'Into the wolf's mouth!' – 'May it die!'), *acqua in bocca* (keep it secret; lit. 'water in your mouth'), *fare le ore piccole* (stay up till the small hours), *ogni morte di papa* (once in a blue moon; lit. 'every time a pope dies'), *a occhio e croce* (roughly, at a guess), *in quattro e quattr'otto* (in no time). Register: *rompere le scatole* (get on someone's nerves) is fine with friends but rude at work.",
+            "examples": [
+              {"it":"– Domani ho l'esame. – In bocca al lupo! – Crepi!","en":"– I've got my exam tomorrow. – Good luck! – Thanks!"},
+              {"it":"A occhio e croce saremo in trenta.","en":"At a rough guess there'll be about thirty of us."}
+            ]
+          }
+        ],
+        "mistakes": [
+          {"wrong":"Rompiti una gamba!","right":"In bocca al lupo!","why":"'Break a leg' doesn't exist in Italian."},
+          {"wrong":"– In bocca al lupo! – Grazie!","right":"– In bocca al lupo! – Crepi!","why":"*Grazie* is increasingly heard, but *Crepi (il lupo)!* is the traditional reply."},
+          {"wrong":"Non posso aspettare di vederti!","right":"Non vedo l'ora di vederti!","why":"'Can't wait' is *non vedere l'ora di*. The literal version sounds like you're impatient for practical reasons."},
+          {"wrong":"Ha un diavolo per capelli.","right":"Ha un diavolo per capello.","why":"Idioms are fixed: one devil for every single *capello*."},
+          {"wrong":"Ci vediamo ogni morte di papà.","right":"Ci vediamo ogni morte di papa.","why":"*Papa* = pope; *papà* = dad. Watch the accent!"}
+        ],
+        "tips": [
+          "Learn the literal image along with the meaning: a devil on every single hair makes 'furious' easy to remember.",
+          "Don't tweak idioms (number, article, preposition): they only work in their fixed form.",
+          "Check the register: *rompere le scatole* is fine with friends, never in a work email."
+        ]
+      },
+      "exercises": [
+        {"id":"B2-IDIOM-01.e01","type":"choice","difficulty":1,"instruction":"Choose the correct option.","prompt":"Your friend says: «In bocca al lupo per l'esame!» What's the traditional reply?","options":["Crepi!","Salute!","Anche a te!","Buon appetito!"],"answer":0,"optionWhy":{"1":"*Salute!* is what you say when someone sneezes.","2":"*Anche a te* doesn't work: they're not the one taking the exam, and the ritual answer is *Crepi!*","3":"*Buon appetito* is for meals."},"errorType":"idiom","explanation":"*In bocca al lupo!* – *Crepi (il lupo)!* (lit. 'may the wolf die'). Some people now answer *Grazie* or *Viva il lupo*, but *Crepi!* is the classic.","en":"Good luck with your exam! – Thanks!"},
+        {"id":"B2-IDIOM-01.e02","type":"cloze","difficulty":1,"instruction":"Complete the sentence.","prompt":"Non posso venire in vacanza con voi, sono completamente al ___.","answers":["verde"],"focus":["verde"],"errorType":"idiom","explanation":"*Essere al verde* = be broke.","en":"I can't come on holiday with you, I'm completely broke."},
+        {"id":"B2-IDIOM-01.e03","type":"cloze","difficulty":1,"instruction":"Complete the sentence.","prompt":"Non vedo l'___ di andare in vacanza!","answers":["ora"],"focus":["ora"],"errorType":"idiom","traps":[{"match":"momento","errorType":"idiom","why":"The idiom is fixed: *non vedere l'ora di*."}],"explanation":"*Non vedere l'ora di* = can't wait to.","en":"I can't wait to go on holiday!"},
+        {"id":"B2-IDIOM-01.e04","type":"choice","difficulty":2,"instruction":"Choose the correct option.","prompt":"Quella borsa è bellissima, ma costa un occhio della ___.","options":["testa","faccia","mano","vita"],"answer":0,"errorType":"idiom","explanation":"*Costare un occhio della testa* = cost an arm and a leg.","en":"That bag is gorgeous, but it costs an arm and a leg."},
+        {"id":"B2-IDIOM-01.e05","type":"choice","difficulty":2,"instruction":"Choose the correct option.","prompt":"«Marco ha le mani bucate.» This means:","options":["Marco is clumsy.","Marco spends money too easily.","Marco works very hard."],"answer":1,"optionWhy":{"0":"Clumsy is *imbranato* or *ha le mani di burro* (butterfingers).","2":"Working hard is *lavorare sodo* or *sgobbare*."},"errorType":"idiom","explanation":"*Avere le mani bucate* = to be a spendthrift (money slips through the holes).","en":"Marco spends money too easily."},
+        {"id":"B2-IDIOM-01.e06","type":"cloze","difficulty":2,"instruction":"Complete the sentence.","prompt":"Il nonno di Sara è buonissimo, un vero pezzo di ___.","answers":["pane"],"focus":["pane"],"errorType":"idiom","explanation":"*Essere un pezzo di pane* = be a kind, gentle person.","en":"Sara's grandfather is lovely, a real sweetheart."},
+        {"id":"B2-IDIOM-01.e07","type":"translate","difficulty":3,"instruction":"Translate into Italian (informal).","prompt":"I can't wait to see you!","answers":["Non vedo l'ora di (vederti|vedervi|rivederti|rivedervi)"],"focus":["ora"],"errorType":"idiom","traps":[{"contains":["aspettare","aspetto"],"errorType":"idiom","why":"'Can't wait to' = *non vedere l'ora di*. *Non posso aspettare* is a literal calque."}],"explanation":"*Non vedere l'ora di* + infinitive.","en":"I can't wait to see you!"},
+        {"id":"B2-IDIOM-01.e08","type":"cloze","difficulty":3,"instruction":"Complete the sentence.","prompt":"Oggi non parlargli del lavoro: ha un diavolo per ___.","answers":["capello"],"focus":["capello"],"errorType":"idiom","traps":[{"match":"capelli","errorType":"idiom","why":"The idiom is fixed in the singular: *un diavolo per capello* (one devil for each hair)."}],"explanation":"*Avere un diavolo per capello* = be furious.","en":"Don't talk to him about work today: he's absolutely furious."},
+        {"id":"B2-IDIOM-01.e09","type":"choice","difficulty":3,"instruction":"Choose the correct option.","prompt":"«Ti dico una cosa, ma acqua in bocca!» means:","options":["Drink something first!","Keep it to yourself!","Shut up, you're boring!"],"answer":1,"errorType":"idiom","explanation":"*Acqua in bocca* = keep it secret, don't tell anyone.","en":"I'll tell you something, but keep it to yourself!"},
+        {"id":"B2-IDIOM-01.e10","type":"choice","difficulty":3,"instruction":"Which sentence would be out of place in a formal email to your boss?","prompt":"Choose the inappropriate sentence.","options":["Resto a disposizione per qualsiasi chiarimento.","Mi sta rompendo le scatole con questa storia.","La ringrazio per la disponibilità."],"answer":1,"optionWhy":{"0":"This is a standard formal closing.","2":"This is polite and formal."},"errorType":"register","explanation":"*Rompere le scatole* (get on someone's nerves) is informal and rude in a work context.","en":"He's getting on my nerves with this business."},
+        {"id":"B2-IDIOM-01.e11","type":"transform","difficulty":3,"instruction":"Rewrite using the idiom 'non avere peli sulla lingua'.","prompt":"Mia sorella dice sempre quello che pensa, senza filtri.","answers":["Mia sorella non ha peli sulla lingua"],"focus":["peli"],"errorType":"idiom","traps":[{"contains":["pelo"],"errorType":"idiom","why":"The idiom is plural: *non avere peli sulla lingua*."},{"contains":["nella"],"errorType":"preposition","why":"The idiom uses *sulla*: *peli sulla lingua*."}],"explanation":"*Non avere peli sulla lingua* = speak one's mind, not mince one's words.","en":"My sister always says what she thinks."},
+        {"id":"B2-IDIOM-01.e12","type":"cloze","difficulty":4,"instruction":"Complete the sentence.","prompt":"Quando gli abbiamo detto che ci sposavamo, è caduto dalle ___: non ne sapeva niente.","answers":["nuvole"],"focus":["nuvole"],"errorType":"idiom","traps":[{"match":"stelle","errorType":"idiom","why":"The idiom is *cadere dalle nuvole* (from the clouds)."},{"match":"nubi","errorType":"idiom","why":"The fixed form is *nuvole*."}],"explanation":"*Cadere dalle nuvole* = be completely taken by surprise.","en":"When we told him we were getting married, he was stunned: he knew nothing about it."},
+        {"id":"B2-IDIOM-01.e13","type":"translate","difficulty":4,"instruction":"Translate into Italian.","prompt":"It cost an arm and a leg.","answers":["[(Mi|Ci|Gli|Le)] è (costato|costata) un occhio della testa","[(Mi|Ci|Gli|Le)] costava un occhio della testa"],"focus":["occhio","testa"],"errorType":"idiom","traps":[{"contains":["braccio","gamba"],"errorType":"idiom","why":"The Italian image is different: *costare un occhio della testa*."}],"explanation":"*Costare un occhio della testa* = cost a fortune.","en":"It cost an arm and a leg."},
+        {"id":"B2-IDIOM-01.e14","type":"choice","difficulty":4,"instruction":"Choose the correct option.","prompt":"«Ieri abbiamo fatto le ore piccole.» This means:","options":["We worked part-time.","We stayed up very late.","We got up very early."],"answer":1,"errorType":"idiom","explanation":"*Fare le ore piccole* = stay up until the small hours.","en":"Yesterday we stayed up very late."},
+        {"id":"B2-IDIOM-01.e15","type":"cloze","difficulty":4,"instruction":"Complete the sentence.","prompt":"Si vede che oggi è giù di ___: non ha detto una parola.","answers":["corda"],"focus":["corda"],"errorType":"idiom","traps":[{"match":"morale","errorType":"idiom","why":"*Essere giù di morale* also exists, but the fixed idiom here is *giù di corda*."}],"explanation":"*Essere giù di corda* = feel down, low.","en":"You can tell he's feeling down today: he hasn't said a word."},
+        {"id":"B2-IDIOM-01.e16","type":"speak","difficulty":2,"instruction":"Answer aloud (or type) in Italian.","prompt":"Your friend is going to a job interview. Wish them luck the Italian way.","answers":["In bocca al lupo[ per il colloquio]","In bocca al lupo per il tuo colloquio"],"focus":["lupo"],"errorType":"idiom","traps":[{"contains":["rompiti","gamba"],"errorType":"idiom","why":"'Break a leg' doesn't exist in Italian. Say *In bocca al lupo!*"},{"contains":["fortuna"],"errorType":"vocabulary","why":"*Buona fortuna* is fine, but the idiomatic wish is *In bocca al lupo!*","ok":true}],"explanation":"*In bocca al lupo!* is the standard good-luck wish before exams and interviews.","en":"Good luck (with the interview)!","interaction":true},
+        {"id":"B2-IDIOM-01.e17","type":"translate","difficulty":5,"instruction":"Translate into Italian.","prompt":"He's really capable, but he always has his head in the clouds.","answers":["È (davvero|molto|proprio|veramente) in gamba[,] ma ha sempre la testa (fra|tra) le nuvole","È (davvero|molto|proprio|veramente) in gamba[,] ma è sempre (fra|tra) le nuvole","È (davvero|molto|proprio|veramente) in gamba[,] ma è sempre con la testa (fra|tra) le nuvole"],"focus":["gamba","nuvole"],"errorType":"idiom","traps":[{"contains":["cielo","cieli"],"errorType":"idiom","why":"Italian uses *nuvole* (clouds) for absent-mindedness: *avere la testa fra le nuvole*."},{"contains":["capace"],"errorType":"vocabulary","why":"*Capace* is correct, but *in gamba* is the idiomatic choice.","ok":true}],"explanation":"*Essere in gamba* = be capable; *avere la testa fra le nuvole* = be absent-minded.","en":"He's really capable, but he always has his head in the clouds."},
+        {"id":"B2-IDIOM-01.e18","type":"cloze","difficulty":5,"instruction":"Complete the sentence.","prompt":"Ci vediamo ogni morte di ___: l'ultima volta è stata tre anni fa!","answers":["papa"],"focus":["papa"],"errorType":"idiom","traps":[{"match":"papà","errorType":"spelling","why":"*Papà* (accent) means dad! The idiom is about the Pope: *ogni morte di papa*."}],"explanation":"*Ogni morte di papa* = once in a blue moon.","en":"We see each other once in a blue moon: the last time was three years ago!"}
+      ]
+    },
+    {
+      "id": "C1-IDIOM-02",
+      "title": "Advanced idioms and proverbs",
+      "cefr": "C1",
+      "skill": "vocabulary",
+      "prereqs": [
+        "B2-IDIOM-01"
+      ],
+      "rule": "Advanced idioms and proverbs are fixed and often quoted in half: prendere due piccioni con una fava, fare orecchie da mercante, cadere a fagiolo, chi va piano va sano e va lontano, tutto fa brodo. Know the image, the meaning and the register.",
+      "assessment": [
+        "Recognises common proverbs from their first half and explains their meaning",
+        "Matches idioms and proverbs to situations",
+        "Uses advanced idioms in their fixed form, including old words (piglia, menare, can)",
+        "Uses proverbs with the right register, often with a touch of irony"
+      ],
+      "lesson": {
+        "intro": "Proverbs and colourful idioms are everywhere in Italian journalism, TV and family conversation, often shortened (*Chi dorme…*) or twisted for effect. At C1 you need to recognise them from a fragment, understand the allusion, and drop the occasional one into speech or writing at the right moment, usually with a hint of irony.",
+        "rules": [
+          {
+            "title": "Efficiency and opportunity",
+            "text": "*prendere due piccioni con una fava* (kill two birds with one stone; lit. 'catch two pigeons with one broad bean'), *cadere / capitare a fagiolo* (come at just the right moment), *tutto fa brodo* (every little helps; lit. 'everything makes broth'), *chi dorme non piglia pesci* (the early bird catches the worm; lit. 'whoever sleeps catches no fish'), *meglio un uovo oggi che una gallina domani* (a bird in the hand is worth two in the bush), *salvare capra e cavoli* (have it both ways; lit. 'save the goat and the cabbages').",
+            "examples": [
+              {"it":"Passo in banca e poi dal medico: prendo due piccioni con una fava.","en":"I'll stop at the bank and then the doctor's: two birds, one stone."},
+              {"it":"Il tuo aiuto è caduto proprio a fagiolo.","en":"Your help came at exactly the right moment."}
+            ]
+          },
+          {
+            "title": "Behaviour and character",
+            "text": "*fare orecchie da mercante* (turn a deaf ear; lit. 'have merchant's ears'), *menare il can per l'aia* (beat around the bush; lit. 'lead the dog around the threshing floor'), *avere la coda di paglia* (have a guilty conscience; lit. 'a straw tail', which catches fire easily), *il lupo perde il pelo ma non il vizio* (a leopard never changes its spots), *non è farina del tuo sacco* (it's not your own work), *fare di tutta l'erba un fascio* (tar everyone with the same brush), *l'abito non fa il monaco* (don't judge a book by its cover).",
+            "examples": [
+              {"it":"Gli ho chiesto i soldi tre volte, ma fa orecchie da mercante.","en":"I've asked him for the money three times, but he turns a deaf ear."},
+              {"it":"Non tutti i politici sono corrotti: non fare di tutta l'erba un fascio.","en":"Not all politicians are corrupt: don't tar them all with the same brush."}
+            ]
+          },
+          {
+            "title": "Plans and outcomes",
+            "text": "*chi va piano va sano e va lontano* (slow and steady wins the race), *tra il dire e il fare c'è di mezzo il mare* (easier said than done), *non tutte le ciambelle riescono col buco* (things don't always turn out as planned; lit. 'not every ring cake comes out with a hole'), *dalla padella nella brace* (out of the frying pan into the fire), *tagliare la testa al toro* (settle the matter once and for all), *gettare la spugna* (throw in the towel), *chi la fa l'aspetti* (what goes around comes around).",
+            "examples": [
+              {"it":"Ho cambiato lavoro e il nuovo capo è peggio: dalla padella nella brace!","en":"I changed jobs and the new boss is worse: out of the frying pan into the fire!"},
+              {"it":"Per tagliare la testa al toro, decidiamo a maggioranza.","en":"To settle it once and for all, let's decide by majority vote."}
+            ]
+          },
+          {
+            "title": "How proverbs are used",
+            "text": "Proverbs are often quoted in half (*Chi va piano…*, *Tra il dire e il fare…*) because everyone knows the ending. They're neutral to informal: in formal writing use them sparingly, introduced by *come dice il proverbio* or *come si suol dire*. Some keep old words: *pigliare* (= prendere), *menare* (= condurre), *can* (= cane).",
+            "examples": [
+              {"it":"Come si suol dire, tra il dire e il fare c'è di mezzo il mare.","en":"As they say, it's easier said than done."},
+              {"it":"Eh, chi dorme…","en":"Well, you snooze, you lose…"}
+            ]
+          }
+        ],
+        "mistakes": [
+          {"wrong":"Prendere due uccelli con una pietra.","right":"Prendere due piccioni con una fava.","why":"Don't translate the English image: Italian uses pigeons and a broad bean."},
+          {"wrong":"Fa orecchie da sordo.","right":"Fa orecchie da mercante.","why":"*Fare il sordo* exists, but the idiom is *orecchie da mercante*."},
+          {"wrong":"È caduto a fagiolini.","right":"È caduto a fagiolo.","why":"Fixed form: singular *fagiolo*."},
+          {"wrong":"Il lupo perde il vizio ma non il pelo.","right":"Il lupo perde il pelo ma non il vizio.","why":"The wolf loses its fur (it gets old) but keeps its bad habits."}
+        ],
+        "tips": [
+          "Learn the second half: when you hear *Chi la fa…* you should be able to finish it (*…l'aspetti*).",
+          "Use a proverb to round off an anecdote, not to open a formal essay.",
+          "Ironic twists (*Chi va piano… arriva tardi*) only work if you know the original: recognise both."
+        ]
+      },
+      "exercises": [
+        {"id":"C1-IDIOM-02.e01","type":"choice","difficulty":1,"instruction":"Choose the correct option.","prompt":"Vado in centro a pagare la bolletta e intanto passo da mia madre: prendo due piccioni con una ___.","options":["fava","pietra","sasso","mano"],"answer":0,"optionWhy":{"1":"That's the English image (one stone). Italian uses *una fava* (a broad bean).","2":"Italian uses *una fava*, not a stone."},"errorType":"idiom","explanation":"*Prendere due piccioni con una fava* = kill two birds with one stone.","en":"I'm going into town to pay the bill and I'll stop at my mother's: two birds with one stone."},
+        {"id":"C1-IDIOM-02.e02","type":"order","difficulty":2,"instruction":"Put the words in order.","prompt":"We killed two birds with one stone.","tokens":["Abbiamo","preso","due","piccioni","con","una","fava"],"answers":["Abbiamo preso due piccioni con una fava"],"errorType":"idiom","explanation":"The idiom is fixed: *prendere due piccioni con una fava*.","en":"We killed two birds with one stone."},
+        {"id":"C1-IDIOM-02.e03","type":"cloze","difficulty":2,"instruction":"Complete the sentence.","prompt":"Gli ho chiesto tre volte di restituirmi i soldi, ma lui fa orecchie da ___.","answers":["mercante"],"focus":["mercante"],"errorType":"idiom","traps":[{"match":"sordo","errorType":"idiom","why":"*Fare il sordo* exists, but the idiom is *fare orecchie da mercante*."}],"explanation":"*Fare orecchie da mercante* = turn a deaf ear, pretend not to hear.","en":"I've asked him three times to give me my money back, but he turns a deaf ear."},
+        {"id":"C1-IDIOM-02.e04","type":"choice","difficulty":2,"instruction":"Choose the correct option.","prompt":"La tua telefonata è caduta a ___: stavo proprio per chiamarti!","options":["fagiolo","patata","pisello","pomodoro"],"answer":0,"errorType":"idiom","explanation":"*Cadere / capitare a fagiolo* = come at exactly the right moment.","en":"Your call came at just the right moment: I was about to ring you!"},
+        {"id":"C1-IDIOM-02.e05","type":"cloze","difficulty":2,"instruction":"Complete the sentence.","prompt":"Non avere fretta: chi va piano va sano e va ___.","answers":["lontano"],"focus":["lontano"],"errorType":"idiom","explanation":"*Chi va piano va sano e va lontano* = slow and steady wins the race.","en":"Don't rush: slow and steady wins the race."},
+        {"id":"C1-IDIOM-02.e06","type":"choice","difficulty":3,"instruction":"Choose the correct option.","prompt":"La torta è venuta un disastro… Pazienza: non tutte le ciambelle riescono col ___.","options":["buco","zucchero","forno","cioccolato"],"answer":0,"errorType":"idiom","explanation":"*Non tutte le ciambelle riescono col buco* = things don't always turn out as planned.","en":"The cake was a disaster… Oh well: you can't win them all."},
+        {"id":"C1-IDIOM-02.e07","type":"choice","difficulty":3,"instruction":"Choose the correct option.","prompt":"The teacher says: «Questo tema non è farina del tuo sacco.» She means:","options":["This essay isn't your cup of tea.","You didn't write this essay yourself.","This essay is worthless."],"answer":1,"errorType":"idiom","explanation":"*Non è farina del tuo sacco* = it's not your own work (lit. 'not flour from your sack').","en":"You didn't write this essay yourself."},
+        {"id":"C1-IDIOM-02.e08","type":"cloze","difficulty":3,"instruction":"Complete the sentence.","prompt":"Non è un grande guadagno, ma tutto fa ___.","answers":["brodo"],"focus":["brodo"],"errorType":"idiom","explanation":"*Tutto fa brodo* = every little helps (lit. 'everything makes broth').","en":"It's not a big profit, but every little helps."},
+        {"id":"C1-IDIOM-02.e09","type":"translate","difficulty":3,"instruction":"Translate with the Italian idiom.","prompt":"Every little helps.","answers":["Tutto fa brodo"],"focus":["brodo"],"errorType":"idiom","traps":[{"contains":["aiuta","poco"],"errorType":"idiom","why":"The Italian idiom uses a cooking image: *tutto fa brodo*."}],"explanation":"*Tutto fa brodo* is the idiomatic equivalent.","en":"Every little helps."},
+        {"id":"C1-IDIOM-02.e10","type":"transform","difficulty":4,"instruction":"Replace the sentence with the proverb that means 'you snooze, you lose' (Chi dorme…).","prompt":"Se ti alzi tardi, perdi le occasioni migliori.","answers":["Chi dorme non piglia pesci"],"focus":["piglia"],"errorType":"idiom","traps":[{"match":"Chi dorme non prende pesci","errorType":"idiom","ok":true,"why":"Understood and sometimes heard, but the canonical form keeps the old verb: *piglia*."}],"explanation":"*Chi dorme non piglia pesci* (*pigliare* = colloquial/old *prendere*).","en":"The early bird catches the worm."},
+        {"id":"C1-IDIOM-02.e11","type":"choice","difficulty":4,"instruction":"Choose the correct option.","prompt":"«Non fare di tutta l'erba un fascio.» means:","options":["Don't put all your eggs in one basket.","Don't generalise; don't tar everyone with the same brush.","Don't waste your time."],"answer":1,"optionWhy":{"0":"That's *non mettere tutte le uova nello stesso paniere*.","2":"That's *non perdere tempo*."},"errorType":"idiom","explanation":"*Fare di tutta l'erba un fascio* = lump everything together, generalise unfairly.","en":"Don't tar everyone with the same brush."},
+        {"id":"C1-IDIOM-02.e12","type":"cloze","difficulty":4,"instruction":"Complete the sentence.","prompt":"Ha giurato che avrebbe smesso di giocare d'azzardo, ma il lupo perde il pelo ma non il ___.","answers":["vizio"],"focus":["vizio"],"errorType":"idiom","explanation":"*Il lupo perde il pelo ma non il vizio* = a leopard never changes its spots.","en":"He swore he'd stop gambling, but a leopard never changes its spots."},
+        {"id":"C1-IDIOM-02.e13","type":"choice","difficulty":4,"instruction":"Choose the correct option.","prompt":"«Smettila di menare il can per l'aia e dimmi cosa è successo!»","options":["Stop walking the dog and tell me what happened!","Stop beating around the bush and tell me what happened!","Stop exaggerating and tell me what happened!"],"answer":1,"optionWhy":{"0":"The literal image is about a dog, but the meaning is figurative.","2":"Exaggerating is *esagerare* or *fare un dramma*."},"errorType":"idiom","explanation":"*Menare il can per l'aia* = beat around the bush, stall.","en":"Stop beating around the bush and tell me what happened!"},
+        {"id":"C1-IDIOM-02.e14","type":"choice","difficulty":5,"instruction":"Choose the correct option.","prompt":"Luca promised to finish renovating the house in a month. A year later it's still not done. Which proverb fits?","options":["Tra il dire e il fare c'è di mezzo il mare.","Chi va piano va sano e va lontano.","Chi la fa l'aspetti."],"answer":0,"optionWhy":{"1":"That praises slowness; here the point is the gap between promises and action.","2":"That's about revenge or karma."},"errorType":"idiom","explanation":"*Tra il dire e il fare c'è di mezzo il mare* = easier said than done.","en":"Easier said than done."},
+        {"id":"C1-IDIOM-02.e15","type":"cloze","difficulty":5,"instruction":"Complete the sentence.","prompt":"Ha proprio la coda di ___: appena ho parlato di furti, è diventato rosso.","answers":["paglia"],"focus":["paglia"],"errorType":"idiom","explanation":"*Avere la coda di paglia* = have a guilty conscience (a straw tail catches fire at the slightest spark).","en":"He's got a guilty conscience: as soon as I mentioned thefts, he went red."},
+        {"id":"C1-IDIOM-02.e16","type":"translate","difficulty":5,"instruction":"Translate using 'tagliare la testa al toro'.","prompt":"Let's settle it once and for all: we'll split the costs.","answers":["Tagliamo la testa al toro (dividiamo|ci dividiamo|divideremo|ci divideremo) (le spese|i costi)","Tagliamo la testa al toro facciamo a metà","Per tagliare la testa al toro (dividiamo|ci dividiamo|divideremo|ci divideremo) (le spese|i costi)"],"focus":["toro"],"errorType":"idiom","traps":[{"contains":["corna"],"errorType":"idiom","why":"*Prendere il toro per le corna* means facing a problem head-on. To settle a matter decisively: *tagliare la testa al toro*."}],"explanation":"*Tagliare la testa al toro* = settle a matter decisively.","en":"Let's settle it once and for all: we'll split the costs."},
+        {"id":"C1-IDIOM-02.e17","type":"speak","difficulty":5,"instruction":"Answer aloud (or type) in Italian.","prompt":"Your friend quit a terrible job, and the new one is even worse. Comment with the idiom for 'out of the frying pan into the fire'.","answers":["[Sei (caduto|caduta|finito|finita|cascato|cascata|passato|passata)] dalla padella nella brace","È proprio il caso di dire dalla padella nella brace"],"focus":["padella","brace"],"errorType":"idiom","traps":[{"contains":["fuoco"],"errorType":"idiom","why":"The Italian image ends in the embers: *dalla padella nella brace*."}],"explanation":"*Cadere dalla padella nella brace* = go from bad to worse.","en":"Out of the frying pan into the fire!","interaction":true},
+        {"id":"C1-IDIOM-02.e18","type":"choice","difficulty":3,"instruction":"Choose the correct option.","prompt":"Complete the proverb: «Chi la fa…»","options":["…l'aspetti.","…la dimentichi.","…la ripeta."],"answer":0,"errorType":"idiom","explanation":"*Chi la fa l'aspetti* = what goes around comes around (whoever plays a dirty trick should expect one back).","en":"What goes around comes around."}
+      ]
+    },
+    {
+      "id": "B2-VOC-04",
+      "title": "Word formation: prefixes, suffixes, altered nouns",
+      "cefr": "B2",
+      "skill": "vocabulary",
+      "prereqs": [],
+      "rule": "Prefixes (in-/im-/il-/ir-, s-, dis-, ri-) and suffixes (-mente, -zione, -mento, -tore/-trice, -ità, -ezza) build new words; altered nouns add size or attitude (-ino small, -one big, -accio bad). Beware false alterations like bottone, mattone, tacchino.",
+      "assessment": [
+        "Forms opposites with the correct prefix (in-/im-/il-/ir-, s-, dis-)",
+        "Derives adverbs, nouns and feminine forms with the right suffix",
+        "Interprets altered nouns (-ino, -one, -accio, -astro) and their nuance",
+        "Recognises false and lexicalised alterations (bottone, tacchino, ombrellone)"
+      ],
+      "lesson": {
+        "intro": "Italian builds vocabulary like Lego: a root plus prefixes and suffixes. Knowing the patterns lets you understand unfamiliar words instantly and produce the right adjective, noun or adverb when you need one. Altered nouns (*-ino, -one, -accio*) add nuances that English expresses with extra words (little, big, nasty).",
+        "rules": [
+          {
+            "title": "Negative and opposite prefixes",
+            "text": "**in-** becomes **im-** before *b, p, m*, **il-** before *l*, **ir-** before *r*: *inutile, impossibile, immaturo, illegale, irregolare*. **s-**: *scontento, scomodo, sfortunato, scorretto*. **dis-**: *disonesto, disoccupato, disattento, disordine*. **a-** (Greek): *asociale, apolitico*. Each word has its own prefix, so learn them as whole words.",
+            "table": {
+              "head": [
+                "prefix",
+                "examples"
+              ],
+              "rows": [
+                [
+                  "in- / im- / il- / ir-",
+                  "inutile, impossibile, illegale, irregolare"
+                ],
+                [
+                  "s-",
+                  "scontento, scomodo, sfortunato, scorretto"
+                ],
+                [
+                  "dis-",
+                  "disonesto, disoccupato, disattento, disordine"
+                ],
+                [
+                  "a-",
+                  "asociale, apolitico, atipico"
+                ]
+              ]
+            },
+            "examples": [
+              {"it":"È impossibile parcheggiare qui.","en":"It's impossible to park here."},
+              {"it":"Questa sedia è scomodissima.","en":"This chair is really uncomfortable."}
+            ]
+          },
+          {
+            "title": "Verb prefixes",
+            "text": "**ri-** = again / back: *rifare, rileggere, ritornare*. **s-** = undo, remove: *scaricare* (unload), *scongelare* (defrost), *sbloccare* (unblock), *svitare* (unscrew). **dis-** = undo: *disfare* (unpack, undo), *disdire* (cancel a booking), *disattivare*.",
+            "examples": [
+              {"it":"Hai scongelato il pesce?","en":"Have you defrosted the fish?"},
+              {"it":"Ho dovuto disdire l'appuntamento.","en":"I had to cancel the appointment."}
+            ]
+          },
+          {
+            "title": "Suffixes that change the word class",
+            "text": "Adverbs: feminine adjective + **-mente** (*lento → lenta → lentamente*); adjectives in *-le / -re* drop the *-e* (*facile → facilmente, regolare → regolarmente*). Watch *leggero → leggermente*, *violento → violentemente*. Nouns from verbs: **-zione / -sione** (*organizzare → organizzazione, decidere → decisione*), **-mento** (*cambiare → cambiamento*), **-tore / -trice** (*lavoratore / lavoratrice, attore / attrice*; but *dottore → dottoressa*). Nouns from adjectives: **-ità** (*felice → felicità*), **-ezza** (*bello → bellezza*).",
+            "examples": [
+              {"it":"Faccio sport regolarmente.","en":"I do sport regularly."},
+              {"it":"L'organizzazione della festa è stata perfetta.","en":"The organisation of the party was perfect."}
+            ]
+          },
+          {
+            "title": "Altered nouns: size and attitude",
+            "text": "**-ino, -etto, -ello**: small, cute (*gattino, casetta, alberello*). **-one**: big; feminine nouns often become masculine (*la porta → il portone*). **-accio**: bad, ugly, nasty (*tempaccio, parolaccia, ragazzaccio*). **-uccio**: small and endearing (*casuccia*). **-astro**: pejorative, or '-ish' with colours (*poetastro, giallastro*).",
+            "examples": [
+              {"it":"Che tempaccio! Piove da tre giorni.","en":"What awful weather! It's been raining for three days."},
+              {"it":"Aveva la pelle giallastra.","en":"His skin was an unhealthy yellowish colour."}
+            ]
+          },
+          {
+            "title": "False alterations and lexicalised words",
+            "text": "Some words only look altered: *bottone* (button), *mattone* (brick), *burrone* (ravine), *tacchino* (turkey), *postino* (postman), *rubinetto* (tap), *focaccia*. Others started as alterations but are now separate words: *telefonino* (mobile phone), *ombrellone* (beach umbrella), *finestrino* (car or train window), *spazzolino* (toothbrush), *panino* (roll, sandwich).",
+            "examples": [
+              {"it":"Mi si è staccato un bottone.","en":"A button has come off."},
+              {"it":"Abbiamo affittato un ombrellone in prima fila.","en":"We rented a beach umbrella in the front row."}
+            ]
+          }
+        ],
+        "mistakes": [
+          {"wrong":"inpossibile, inlegale","right":"impossibile, illegale","why":"*in-* assimilates: *im-* before p/b/m, *il-* before l, *ir-* before r."},
+          {"wrong":"lentomente","right":"lentamente","why":"*-mente* attaches to the feminine form: *lenta + mente*."},
+          {"wrong":"leggeramente","right":"leggermente","why":"*Leggero* drops the final vowel: *leggermente*."},
+          {"wrong":"l'attora","right":"l'attrice","why":"Masculine *-tore* → feminine *-trice*."},
+          {"wrong":"Che bella giornataccia!","right":"Che bella giornata! / Che giornataccia!","why":"*-accio* is negative: a *giornataccia* is an awful day."}
+        ],
+        "tips": [
+          "Don't invent alterations freely in formal writing: many combinations don't exist, and many altered words are lexicalised.",
+          "When you meet a word ending in *-one* or *-ino*, check the dictionary before assuming it means 'big' or 'small'.",
+          "Use *-accio* and *-uccio* mainly in informal speech: they add attitude."
+        ]
+      },
+      "exercises": [
+        {"id":"B2-VOC-04.e01","type":"cloze","difficulty":1,"instruction":"Form the opposite with a prefix.","prompt":"È ___ (possibile → opposite) finire tutto in un giorno.","answers":["impossibile"],"focus":["impossibile"],"errorType":"word-formation","traps":[{"match":"inpossibile","errorType":"word-formation","why":"*In-* becomes *im-* before p and b: *impossibile*."},{"match":"spossibile","errorType":"word-formation","why":"The negative prefix here is *in-* → *im-*: *impossibile*."}],"explanation":"*im-* before p: *impossibile*.","en":"It's impossible to finish everything in one day."},
+        {"id":"B2-VOC-04.e02","type":"cloze","difficulty":1,"instruction":"Form an adverb in -mente from the adjective in brackets.","prompt":"Parla più ___ (lento), per favore: non capisco.","answers":["lentamente"],"focus":["lentamente"],"errorType":"word-formation","traps":[{"match":"lentomente","errorType":"word-formation","why":"*-mente* attaches to the feminine form: *lenta → lentamente*."},{"match":"lento","errorType":"word-formation","why":"In speech you'll hear *parla più lento*, but the task asks for the *-mente* adverb: *lentamente*."}],"explanation":"Feminine adjective + *-mente*: *lentamente*.","en":"Speak more slowly, please: I don't understand."},
+        {"id":"B2-VOC-04.e03","type":"cloze","difficulty":2,"instruction":"Give the feminine form of the word in brackets.","prompt":"Mia figlia vuole fare l'___ (attore), come sua nonna.","answers":["attrice"],"focus":["attrice"],"errorType":"word-formation","traps":[{"match":["attora","attoressa"],"errorType":"word-formation","why":"*-tore* → *-trice*: *attrice*."}],"explanation":"*-tore → -trice*: *attore → attrice*.","en":"My daughter wants to be an actress, like her grandmother."},
+        {"id":"B2-VOC-04.e04","type":"cloze","difficulty":2,"instruction":"Form the opposite with a prefix.","prompt":"Vendere alcolici ai minorenni è ___ (legale → opposite).","answers":["illegale"],"focus":["illegale"],"errorType":"word-formation","traps":[{"match":"inlegale","errorType":"word-formation","why":"*In-* becomes *il-* before l: *illegale*."},{"match":"ilegale","errorType":"spelling","why":"Double l: *il- + legale = illegale*."}],"explanation":"*il-* before l: *illegale*.","en":"Selling alcohol to minors is illegal."},
+        {"id":"B2-VOC-04.e05","type":"choice","difficulty":2,"instruction":"Choose the correct option.","prompt":"Che ___! Piove da tre giorni e fa freddo.","options":["tempaccio","tempino","tempone","tempetto"],"answer":0,"optionWhy":{"1":"*-ino* is small/cute: it doesn't fit a complaint.","2":"*Tempone* would mean 'big weather' and is used only jokingly for a great time.","3":"*-etto* is diminutive, not negative."},"errorType":"word-formation","explanation":"*-accio* = bad, nasty: *tempaccio* = awful weather.","en":"What awful weather! It's been raining and cold for three days."},
+        {"id":"B2-VOC-04.e06","type":"choice","difficulty":2,"instruction":"Choose the correct option.","prompt":"Which word is NOT an altered form of another noun?","options":["gattino","casetta","bottone","ragazzaccio"],"answer":2,"optionWhy":{"0":"*Gattino* = kitten (gatto + -ino).","1":"*Casetta* = little house (casa + -etta).","3":"*Ragazzaccio* = bad boy (ragazzo + -accio)."},"errorType":"word-formation","explanation":"*Bottone* means 'button': it isn't a big *botto* (bang). A false alteration.","en":"Which word is not an altered noun?"},
+        {"id":"B2-VOC-04.e07","type":"cloze","difficulty":3,"instruction":"Form the word with a prefix (dis- + occupato).","prompt":"Dopo la chiusura della fabbrica, Paolo è rimasto ___ (senza lavoro) per due anni.","answers":["disoccupato"],"focus":["disoccupato"],"errorType":"word-formation","traps":[{"match":"inoccupato","errorType":"word-formation","why":"*Inoccupato* is someone who has never had a job. Paolo lost his job, so he's *disoccupato*."},{"match":"senza lavoro","errorType":"word-formation","why":"Correct meaning, but the task asks for one word: *disoccupato*."}],"explanation":"*Disoccupato* = unemployed (having lost a job).","en":"After the factory closed, Paolo was unemployed for two years."},
+        {"id":"B2-VOC-04.e08","type":"cloze","difficulty":3,"instruction":"Form the opposite with a prefix.","prompt":"È stato molto ___ (corretto → opposite) a non avvisarci.","answers":["scorretto"],"focus":["scorretto"],"errorType":"word-formation","traps":[{"match":"incorretto","errorType":"word-formation","why":"*Incorretto* is rare and old-fashioned. The everyday opposite of *corretto* is *scorretto*."},{"match":"discorretto","errorType":"word-formation","why":"The prefix here is *s-*: *scorretto*."}],"explanation":"*s-* + corretto = *scorretto* (unfair, improper).","en":"It was very unfair of him not to warn us."},
+        {"id":"B2-VOC-04.e09","type":"transform","difficulty":3,"instruction":"Rewrite using the noun formed from 'organizzare'.","prompt":"Organizzare l'evento è stato difficile.","answers":["L'organizzazione dell'evento è stata difficile"],"focus":["organizzazione"],"errorType":"word-formation","traps":[{"contains":["organizzamento","organizzatura"],"errorType":"word-formation","why":"Nouns from *-are* verbs often end in *-azione*: *organizzazione*."},{"contains":["stato"],"errorType":"agreement","why":"*L'organizzazione* is feminine: *è stata difficile*."}],"explanation":"*Organizzare → organizzazione* (feminine): *è stata*.","en":"Organising the event was difficult."},
+        {"id":"B2-VOC-04.e10","type":"cloze","difficulty":3,"instruction":"Form an adverb in -mente from the adjective in brackets.","prompt":"Sono arrivato ___ (leggero) in ritardo, scusate.","answers":["leggermente"],"focus":["leggermente"],"errorType":"word-formation","traps":[{"match":"leggeramente","errorType":"word-formation","why":"*Leggero* is an exception: *leggermente*."}],"explanation":"*Leggero* is irregular: it drops the vowel before *-mente*, giving *leggermente*.","en":"I arrived slightly late, sorry."},
+        {"id":"B2-VOC-04.e11","type":"choice","difficulty":3,"instruction":"Choose the correct option.","prompt":"«La pelle del malato era giallastra.» *Giallastra* means:","options":["bright yellow","an unpleasant yellowish colour","covered in small yellow spots"],"answer":1,"errorType":"word-formation","explanation":"*-astro* with colours = '-ish', usually unpleasant: *giallastro, verdastro*.","en":"The patient's skin was yellowish."},
+        {"id":"B2-VOC-04.e12","type":"cloze","difficulty":4,"instruction":"Form the verb with a prefix meaning 'undo' (… + caricare).","prompt":"Il camion ha ___ la merce davanti al magazzino.","answers":["scaricato"],"focus":["scaricato"],"errorType":"word-formation","traps":[{"match":"discaricato","errorType":"word-formation","why":"The reversing prefix here is *s-*: *scaricare*."},{"match":"caricato","errorType":"word-formation","why":"*Caricare* = load. Unload = *scaricare*."}],"explanation":"*s-* reverses: *caricare → scaricare* (unload).","en":"The lorry unloaded the goods in front of the warehouse."},
+        {"id":"B2-VOC-04.e13","type":"translate","difficulty":4,"instruction":"Translate into Italian.","prompt":"The postman left a little parcel by the main front door.","answers":["Il postino ha lasciato un (pacchetto|pacchettino) (davanti al|vicino al|accanto al) portone","Il postino ha lasciato (davanti al|vicino al|accanto al) portone un (pacchetto|pacchettino)"],"focus":["portone"],"errorType":"word-formation","traps":[{"contains":["porta"],"errorType":"word-formation","why":"The big main door of a building is *il portone* (porta + -one, masculine)."},{"contains":["postale","postiere"],"errorType":"word-formation","why":"The postman is *il postino*."}],"explanation":"*Postino* (postman), *pacchetto* (small parcel), *portone* (main door of a building).","en":"The postman left a little parcel by the main front door."},
+        {"id":"B2-VOC-04.e14","type":"choice","difficulty":4,"instruction":"Choose the correct option.","prompt":"What is a *tacchino*?","options":["a small heel","a turkey","a small nail"],"answer":1,"optionWhy":{"0":"A small heel is a *tacchetto*.","2":"A small nail is a *chiodino*."},"errorType":"word-formation","explanation":"*Tacchino* = turkey: a false alteration, not 'small *tacco*'.","en":"A turkey."},
+        {"id":"B2-VOC-04.e15","type":"cloze","difficulty":4,"instruction":"Form the opposite with a prefix.","prompt":"Mia sorella è molto ___ (attenta → opposite): perde sempre le chiavi.","answers":["disattenta"],"focus":["disattenta"],"errorType":"word-formation","traps":[{"match":["sattenta","inattenta"],"errorType":"word-formation","why":"The standard opposite of *attento* is *disattento*."}],"explanation":"*dis-* + attenta = *disattenta* (careless, absent-minded).","en":"My sister is very careless: she's always losing her keys."},
+        {"id":"B2-VOC-04.e16","type":"cloze","difficulty":5,"instruction":"Use an altered form of 'parola' (bad words).","prompt":"Non dire ___ davanti ai bambini!","answers":["parolacce"],"focus":["parolacce"],"errorType":"word-formation","traps":[{"match":["paroloni","parolone"],"errorType":"word-formation","why":"*Paroloni* are big, pompous words. Swear words are *parolacce* (-accia = bad)."},{"match":["paroline","parolette"],"errorType":"word-formation","why":"*Paroline* are sweet little words. Swear words are *parolacce*."}],"explanation":"*Parola + -accia → parolaccia* = swear word.","en":"Don't swear in front of the children!"},
+        {"id":"B2-VOC-04.e17","type":"transform","difficulty":5,"instruction":"Replace 'in modo regolare' with a single adverb.","prompt":"Faccio sport in modo regolare.","answers":["Faccio sport regolarmente","Faccio regolarmente sport"],"focus":["regolarmente"],"errorType":"word-formation","traps":[{"contains":["regolaremente","regolarmento"],"errorType":"word-formation","why":"Adjectives in *-re* drop the *-e*: *regolarmente*."}],"explanation":"*-le / -re* adjectives drop the final *-e* before *-mente*.","en":"I do sport regularly."},
+        {"id":"B2-VOC-04.e18","type":"choice","difficulty":5,"instruction":"Choose the correct option.","prompt":"Al mare abbiamo affittato due lettini e un ___.","options":["ombrellino","ombrellone","ombrellaccio"],"answer":1,"optionWhy":{"0":"An *ombrellino* is a small umbrella or parasol you carry.","2":"*Ombrellaccio* is an ugly or broken umbrella."},"errorType":"word-formation","explanation":"*Ombrellone* is a lexicalised word: beach umbrella.","en":"At the beach we rented two sunloungers and a beach umbrella."}
+      ]
+    },
+    {
+      "id": "C1-VOC-05",
+      "title": "Argumentation and academic vocabulary",
+      "cefr": "C1",
+      "skill": "vocabulary",
+      "prereqs": [
+        "C1-VOC-03"
+      ],
+      "rule": "Formal argument uses a fixed toolkit: sostenere / ribadire / evidenziare to state, confutare / smentire / contestare to challenge, ne consegue che / pertanto to conclude, alla luce di / in merito a to frame. Beware evidenza (≠ evidence) and assumere (= hire).",
+      "assessment": [
+        "Uses varied verbs to report and evaluate claims (sostenere, ribadire, evidenziare, confutare)",
+        "Signals consequence and contrast with formal connectors (ne consegue che, pertanto, ciononostante)",
+        "Frames arguments with expressions such as *alla luce di*, *in merito a*, *a fronte di*",
+        "Avoids academic false friends (evidenza, assumere, discutere che)",
+        "Writes a short structured argument in a formal register"
+      ],
+      "lesson": {
+        "intro": "At C1 you are expected to argue: present a thesis, support it, deal with objections and draw conclusions. Italian academic and journalistic prose relies on a fairly fixed toolkit of verbs (*sostenere, ribadire, evidenziare, confutare*) and framing phrases (*alla luce di, ne consegue che*). Several English-looking words are traps here: *evidenza*, *assumere*, *discutere*, *controllare*.",
+        "rules": [
+          {
+            "title": "Presenting and reinforcing a position",
+            "text": "*sostenere che* (argue, maintain), *affermare* (state), *ribadire* (reiterate), *sottolineare / evidenziare / mettere in luce* (highlight), *rilevare* (note, point out). After *sostenere che* you'll find both moods: the indicative presents the claim as fact, the subjunctive keeps a critical distance.",
+            "examples": [
+              {"it":"L'autrice sostiene che il lavoro da remoto aumenti la produttività.","en":"The author argues that remote work increases productivity."},
+              {"it":"Il ministro ha ribadito che non ci saranno nuove tasse.","en":"The minister reiterated that there will be no new taxes."}
+            ]
+          },
+          {
+            "title": "Challenging a position",
+            "text": "*confutare* (refute, with arguments), *smentire* (deny, disprove: rumours, news), *contestare* (dispute), *obiettare* (object), *mettere in discussione / in dubbio* (call into question).",
+            "examples": [
+              {"it":"Lo studio confuta la tesi tradizionale.","en":"The study refutes the traditional thesis."},
+              {"it":"Il portavoce ha smentito la notizia.","en":"The spokesperson denied the report."}
+            ]
+          },
+          {
+            "title": "Logic: cause and consequence",
+            "text": "*ne consegue che / ne deriva che* (it follows that), *di conseguenza*, *pertanto*, *dunque* (therefore), *ciò comporta* (this entails), *dal momento che*, *in quanto* (since, as). For contrast: *tuttavia*, *ciononostante*, *d'altro canto*.",
+            "examples": [
+              {"it":"I costi sono aumentati; ne consegue che il progetto va rivisto.","en":"Costs have risen; it follows that the project must be revised."},
+              {"it":"Il campione è ridotto, pertanto i risultati vanno presi con cautela.","en":"The sample is small, therefore the results must be treated with caution."}
+            ]
+          },
+          {
+            "title": "Framing and structuring",
+            "text": "*alla luce di* (in light of), *in merito a / per quanto riguarda / quanto a* (regarding), *a fronte di* (in the face of, against), *nell'ambito di* (within), *in base a* (based on), *va detto che* (it should be said), *in sintesi / in conclusione*.",
+            "examples": [
+              {"it":"Alla luce di questi dati, è necessario un cambio di rotta.","en":"In light of these data, a change of course is needed."},
+              {"it":"A fronte di un aumento dei costi, i salari sono rimasti fermi.","en":"Against a rise in costs, wages have stayed flat."}
+            ]
+          },
+          {
+            "title": "Academic false friends",
+            "table": {
+              "head": [
+                "Italian",
+                "means",
+                "for the English word, say"
+              ],
+              "rows": [
+                [
+                  "evidenza",
+                  "obviousness, prominence",
+                  "evidence → prove, dati"
+                ],
+                [
+                  "assumere",
+                  "hire; take on (a role, a responsibility)",
+                  "assume → supporre, presumere"
+                ],
+                [
+                  "discutere",
+                  "discuss; argue (quarrel)",
+                  "argue that → sostenere che"
+                ],
+                [
+                  "controllare",
+                  "check",
+                  "control → gestire, dominare"
+                ],
+                [
+                  "eventuale",
+                  "possible, any",
+                  "eventual → finale"
+                ]
+              ]
+            },
+            "text": "In scientific jargon *evidenze* (evidence) is spreading as an anglicism; in general Italian use *prove*.",
+            "examples": [
+              {"it":"Non ci sono prove che il farmaco funzioni.","en":"There is no evidence that the drug works."},
+              {"it":"Per eventuali domande, scrivete alla segreteria.","en":"For any questions, write to the office."}
+            ]
+          }
+        ],
+        "mistakes": [
+          {"wrong":"Non c'è evidenza che funzioni.","right":"Non ci sono prove che funzioni.","why":"*Evidenza* means obviousness. Evidence = *prove*."},
+          {"wrong":"Assumiamo che i dati siano corretti.","right":"Supponiamo che i dati siano corretti.","why":"*Assumere* mainly means 'hire' or 'take on'. For 'assume' use *supporre* or *presumere*."},
+          {"wrong":"Nella luce di questi dati…","right":"Alla luce di questi dati…","why":"The fixed phrase is *alla luce di*."},
+          {"wrong":"L'autore discute che il turismo danneggia la città.","right":"L'autore sostiene che il turismo danneggi la città.","why":"*Discutere* = discuss, not 'argue that'."}
+        ],
+        "tips": [
+          "Build a personal kit of two verbs per function (state, reinforce, object, conclude) and rotate them so you never repeat *dire*.",
+          "Formal Italian loves prepositional phrases: *alla luce di*, *a fronte di*, *in merito a*, *nell'ambito di*.",
+          "Don't overdo it in conversation: *quindi* and *però* are perfectly fine when speaking."
+        ]
+      },
+      "exercises": [
+        {"id":"C1-VOC-05.e01","type":"cloze","difficulty":1,"instruction":"Complete the sentence.","prompt":"Il ministro ha ___ (reiterated) che non ci saranno nuove tasse.","answers":["ribadito"],"focus":["ribadito"],"errorType":"vocabulary","traps":[{"match":"ripetuto","errorType":"vocabulary","why":"*Ripetere* is correct but neutral. *Ribadire* (reiterate, stress again) is the typical formal choice.","ok":true},{"match":"reiterato","errorType":"vocabulary","why":"*Reiterare* exists but is very formal and usually takes a noun (*reiterare una richiesta*). With *che*, use *ribadire*."}],"explanation":"*Ribadire* = reiterate, restate firmly.","en":"The minister reiterated that there will be no new taxes."},
+        {"id":"C1-VOC-05.e02","type":"choice","difficulty":2,"instruction":"Choose the correct option.","prompt":"Gli autori ___ la tesi secondo cui il clima non influisce sulle migrazioni.","options":["confutano","confondono","confortano","confessano"],"answer":0,"optionWhy":{"1":"*Confondere* = confuse.","2":"*Confortare* = comfort.","3":"*Confessare* = confess."},"errorType":"vocabulary","explanation":"*Confutare* = refute with arguments.","en":"The authors refute the thesis that climate doesn't affect migration."},
+        {"id":"C1-VOC-05.e03","type":"cloze","difficulty":2,"instruction":"Complete the sentence.","prompt":"___ luce di questi risultati, dobbiamo rivedere il progetto.","answers":["Alla"],"focus":["alla"],"errorType":"preposition","traps":[{"match":["Nella","In"],"errorType":"preposition","why":"The fixed phrase is *alla luce di* (in light of)."},{"match":"Sotto la","errorType":"preposition","why":"The fixed phrase is *alla luce di*."}],"explanation":"*Alla luce di* = in light of.","en":"In light of these results, we must revise the project."},
+        {"id":"C1-VOC-05.e04","type":"choice","difficulty":3,"instruction":"Choose the correct option.","prompt":"«L'azienda ha assunto dieci ingegneri.» This means the company…","options":["assumed ten engineers.","hired ten engineers.","dismissed ten engineers."],"answer":1,"optionWhy":{"0":"'Assume' (suppose) is *supporre* or *presumere*.","2":"'Dismiss' is *licenziare*."},"errorType":"false-friend","explanation":"*Assumere* = hire; also take on (*assumersi una responsabilità*).","en":"The company hired ten engineers."},
+        {"id":"C1-VOC-05.e05","type":"cloze","difficulty":3,"instruction":"Complete the sentence.","prompt":"I primi risultati sono positivi; ne ___ che la strategia funziona.","answers":["consegue","deriva","segue"],"focus":["consegue"],"errorType":"connector","traps":[{"match":"risulta","errorType":"connector","why":"*Ne risulta* is possible in some contexts, but the fixed formula for 'it follows that' is *ne consegue che*."}],"explanation":"*Ne consegue che* / *ne deriva che* = it follows that.","en":"The first results are positive; it follows that the strategy works."},
+        {"id":"C1-VOC-05.e06","type":"choice","difficulty":3,"instruction":"Which connector introduces a counter-argument?","prompt":"I dati sono incoraggianti. ___, il campione è troppo piccolo per trarre conclusioni.","options":["Pertanto","Ciononostante","Ne consegue che","Di conseguenza"],"answer":1,"optionWhy":{"0":"*Pertanto* introduces a consequence, not a contrast.","2":"*Ne consegue che* introduces a consequence.","3":"*Di conseguenza* introduces a consequence."},"errorType":"connector","explanation":"*Ciononostante* = nevertheless.","en":"The data are encouraging. Nevertheless, the sample is too small to draw conclusions."},
+        {"id":"C1-VOC-05.e07","type":"transform","difficulty":3,"instruction":"Rewrite in a more formal style, starting with 'Rossi sostiene che…'.","prompt":"Secondo Rossi, il progetto è troppo costoso.","answers":["Rossi sostiene che il progetto (sia|è) troppo costoso"],"focus":["sostiene"],"errorType":"vocabulary","traps":[{"contains":["dice"],"errorType":"register","why":"*Dire* is neutral; the task asks for *sostenere*."}],"explanation":"*Sostenere che* + subjunctive (critical distance) or indicative (presented as fact). Both are used.","en":"Rossi maintains that the project is too expensive."},
+        {"id":"C1-VOC-05.e08","type":"translate","difficulty":3,"instruction":"Translate into Italian.","prompt":"There is no evidence that the drug works.","answers":["Non ci sono prove che il farmaco funzioni","Non esistono prove che il farmaco funzioni","Non c'è (nessuna|alcuna) prova che il farmaco funzioni"],"focus":["prove","funzioni"],"errorType":"false-friend","traps":[{"contains":["funziona"],"errorType":"indicative-for-subjunctive","why":"*Non ci sono prove che* expresses doubt, so it takes the subjunctive: *funzioni*."},{"contains":["evidenza"],"errorType":"false-friend","why":"*Evidenza* means 'obviousness'. Evidence = *prove*."},{"contains":["evidenze"],"errorType":"vocabulary","why":"*Evidenze* is common in scientific jargon (an anglicism). In general Italian, prefer *prove*.","ok":true}],"explanation":"Evidence = *prove*; *non ci sono prove che* + subjunctive.","en":"There is no evidence that the drug works."},
+        {"id":"C1-VOC-05.e09","type":"cloze","difficulty":4,"instruction":"Complete the sentence.","prompt":"Una nuova ricerca ha ___ le voci su un legame tra telefoni cellulari e tumori.","answers":["smentito","confutato"],"focus":["smentito"],"errorType":"vocabulary","traps":[{"match":"negato","errorType":"vocabulary","why":"*Negare* is what a person does (deny). Research that disproves rumours *smentisce* them."},{"match":"rifiutato","errorType":"vocabulary","why":"*Rifiutare* = refuse, reject (an offer). Disprove = *smentire*."}],"explanation":"*Smentire* = disprove, deny (rumours, reports).","en":"New research has disproved the rumours of a link between mobile phones and cancer."},
+        {"id":"C1-VOC-05.e10","type":"translate","difficulty":4,"instruction":"Translate into Italian.","prompt":"In light of the data, we can conclude that the plan has failed.","answers":["Alla luce dei dati[,] (possiamo|si può) concludere che il (piano|progetto) (è fallito|non ha funzionato)"],"focus":["alla","luce"],"errorType":"vocabulary","traps":[{"contains":["nella","sotto"],"errorType":"preposition","why":"The fixed phrase is *alla luce di*."},{"contains":["ha"],"errorType":"auxiliary","why":"A plan fails with *essere*: *il piano è fallito*. (*Ha fallito* is for a person failing at something: *ha fallito l'esame*.)"}],"explanation":"*Alla luce di* + *concludere che* + indicative; *fallire* (of a plan) takes *essere*.","en":"In light of the data, we can conclude that the plan has failed."},
+        {"id":"C1-VOC-05.e11","type":"cloze","difficulty":4,"instruction":"Complete the sentence.","prompt":"Vorrei ___ (to stress) un aspetto fondamentale: la sicurezza dei dati.","answers":["sottolineare","evidenziare","rimarcare","ribadire","mettere in evidenza","mettere in luce"],"focus":["sottolineare"],"errorType":"vocabulary","traps":[{"match":"stressare","errorType":"false-friend","why":"*Stressare* means to stress someone out. To emphasise = *sottolineare*."},{"match":"accentuare","errorType":"vocabulary","why":"*Accentuare* = accentuate, intensify (a feature). To stress a point = *sottolineare*."}],"explanation":"Stress a point = *sottolineare / evidenziare*.","en":"I'd like to stress one fundamental aspect: data security."},
+        {"id":"C1-VOC-05.e12","type":"order","difficulty":3,"instruction":"Put the words in order.","prompt":"It follows that the model must be revised.","tokens":["Ne","consegue","che","il","modello","va","rivisto"],"answers":["Ne consegue che il modello va rivisto"],"errorType":"word-order","explanation":"*Ne consegue che* opens the sentence; *va rivisto* = must be revised (passive with *andare*).","en":"It follows that the model must be revised."},
+        {"id":"C1-VOC-05.e13","type":"choice","difficulty":5,"instruction":"Choose the best opening for the conclusion of a formal essay.","prompt":"Which sentence fits?","options":["In sintesi, i dati raccolti confermano l'ipotesi iniziale.","Insomma, alla fine i dati dicono che avevo ragione.","Comunque sia, boh, i dati confermano."],"answer":0,"optionWhy":{"1":"*Insomma, alla fine* and *avevo ragione* are conversational.","2":"*Boh* is very informal."},"errorType":"register","explanation":"*In sintesi / In conclusione* + impersonal statement is the expected academic register.","en":"In summary, the data collected confirm the initial hypothesis."},
+        {"id":"C1-VOC-05.e14","type":"cloze","difficulty":5,"instruction":"Fill the gap with an expression meaning 'with regard to'.","prompt":"___ la seconda obiezione, va detto che i costi sono già stati ridotti.","answers":["Per quanto riguarda","Per quanto concerne","In merito a","Quanto a","Riguardo a","Relativamente a","Con riferimento a","In relazione a","Rispetto a"],"focus":["riguarda"],"errorType":"connector","traps":[{"match":["Riguardante","Riguardo"],"errorType":"preposition","why":"Use *riguardo a* (with *a*) or *per quanto riguarda*."},{"match":"Con rispetto a","errorType":"preposition","why":"'With respect to' is *rispetto a* or *per quanto riguarda*, without *con*."}],"explanation":"*Per quanto riguarda / in merito a / quanto a* = as regards.","en":"As regards the second objection, it should be said that costs have already been reduced."},
+        {"id":"C1-VOC-05.e15","type":"translate","difficulty":5,"instruction":"Translate into Italian.","prompt":"The author argues that tourism damages the city.","answers":["(L'autore|L'autrice) sostiene che il turismo (danneggi|danneggia) la città","(L'autore|L'autrice) sostiene che il turismo (rechi|reca|arrechi|arreca) danno alla città"],"focus":["sostiene"],"errorType":"false-friend","traps":[{"contains":["discute"],"errorType":"false-friend","why":"*Discutere* = discuss (or quarrel). 'Argue that' = *sostenere che*."},{"contains":["argomenta"],"errorType":"vocabulary","why":"*Argomentare* exists in formal Italian, but *sostenere che* is the standard way to say 'argue that'.","ok":true},{"contains":["litiga"],"errorType":"false-friend","why":"*Litigare* = to quarrel. 'Argue that' = *sostenere che*."}],"explanation":"Argue (a thesis) = *sostenere che* (+ subjunctive or indicative).","en":"The author argues that tourism damages the city."},
+        {"id":"C1-VOC-05.e16","type":"free","difficulty":5,"instruction":"Write 60–110 words in formal Italian.","prompt":"Should cities limit short-term holiday rentals? Present one argument, one objection, and a conclusion, using vocabulary from this unit.","minWords":60,"maxWords":110,"rubric":[{"label":"Uses a verb to present or reinforce a position","anyOf":["\\b(sostien|sosten|ribad|evidenzi|sottoline|afferm|rilev)\\w*"],"min":1,"errorType":"vocabulary","hint":"Try *Molti sostengono che…* or *Va sottolineato che…*."},{"label":"Uses a verb or phrase to challenge a position","anyOf":["\\b(confut|smentisc|smenti|contest|obiett)\\w*","mett\\w*\\s+in\\s+(discussione|dubbio)"],"min":1,"errorType":"vocabulary","hint":"Try *Altri contestano questa posizione…*."},{"label":"Uses a formal consequence connector","anyOf":["ne\\s+(consegue|deriva)","\\b(pertanto|di conseguenza|dunque)\\b"],"min":1,"errorType":"connector","hint":"Conclude with *Ne consegue che…* or *Pertanto…*."},{"label":"Uses a framing expression","anyOf":["alla luce d","in merito a","per quanto riguarda","a fronte d","nell'ambito d","quanto a\\b","in base a"],"min":1,"errorType":"connector","hint":"Open with *Alla luce di…* or *Per quanto riguarda…*."}],"model":"Molti sostengono che gli affitti brevi abbiano svuotato i centri storici: i residenti, a fronte di canoni sempre più alti, si trasferiscono in periferia. I proprietari contestano questa posizione e ribadiscono che il turismo porta reddito a tutta la città. Tuttavia, alla luce dei dati più recenti, l'impatto sulle famiglie appare evidente. Ne consegue che un limite ragionevole, per esempio novanta giorni l'anno, sarebbe una soluzione equilibrata.","errorType":"writing","explanation":"A good answer has a clear thesis (*sostenere*), an objection (*contestare*), a framing phrase (*alla luce di*) and a conclusion (*ne consegue che*)."}
+      ]
+    },
+    {
+      "id": "B2-VOC-06",
+      "title": "Multi-word verbs (tirare fuori, buttare giù…)",
+      "cefr": "B2",
+      "skill": "vocabulary",
+      "prereqs": [],
+      "rule": "A verb + an adverb (fuori, giù, su, via, avanti, indietro) forms a multi-word verb with literal and figurative meanings: tirare fuori, buttare giù, mettere su, tirare avanti, venire fuori, portare avanti. Common in speech; prefer single verbs in formal writing.",
+      "assessment": [
+        "Understands the literal and figurative meanings of common multi-word verbs",
+        "Chooses the right particle (fuori, giù, su, via, avanti, indietro)",
+        "Uses multi-word verbs naturally in informal speech, with pronouns in the right place",
+        "Replaces them with single verbs in formal writing when appropriate"
+      ],
+      "lesson": {
+        "intro": "Like English phrasal verbs (take out, put up, knock down), Italian has *verbi sintagmatici*: a verb plus an adverb such as *fuori, giù, su, via, avanti, indietro*. They're very frequent in speech, often informal, and many have both a literal and a figurative meaning. You need them to follow spoken Italian and to sound natural with friends.",
+        "rules": [
+          {
+            "title": "fuori (out)",
+            "text": "*tirare fuori* (take out; bring up a topic; find the courage), *venire fuori* (come out, emerge), *saltare fuori* (turn up, pop up), *portare fuori* (take out: *il cane, la spazzatura*), *fare fuori* (informal: kill; polish off food; get rid of).",
+            "examples": [
+              {"it":"Tira fuori il portafoglio, offro io… scherzo!","en":"Get your wallet out, my treat… just kidding!"},
+              {"it":"Alla fine è venuta fuori la verità.","en":"In the end the truth came out."}
+            ]
+          },
+          {
+            "title": "giù and su (down and up)",
+            "text": "*buttare giù* (knock down; swallow; jot down; depress: *questa notizia mi butta giù*), *mandare giù* (swallow; accept), *mettere giù* (put down; hang up), *venire giù* (come down, collapse). *tirare su* (lift; cheer up; raise a child), *mettere su* (set up: *casa, famiglia, un'azienda*; put on: *peso, l'acqua per la pasta, un disco*).",
+            "examples": [
+              {"it":"Hanno buttato giù il vecchio cinema.","en":"They knocked down the old cinema."},
+              {"it":"Metto su l'acqua per la pasta.","en":"I'll put the water on for the pasta."}
+            ]
+          },
+          {
+            "title": "avanti and indietro (forward and back)",
+            "text": "*andare avanti* (go on, continue), *portare avanti* (carry on, pursue: *un progetto, una battaglia*), *tirare avanti* (get by), *tornare indietro* (go back), *tirarsi indietro* (back out).",
+            "examples": [
+              {"it":"Con la pensione tiriamo avanti, ma niente di più.","en":"We get by on the pension, but nothing more."},
+              {"it":"Ormai hai promesso: non puoi tirarti indietro.","en":"You've promised now: you can't back out."}
+            ]
+          },
+          {
+            "title": "via (away)",
+            "text": "*andare via* (leave), *buttare via* (throw away; waste), *portare via* (take away; steal; take up time), *mettere via* (put away; save money).",
+            "examples": [
+              {"it":"Non buttare via il pane avanzato.","en":"Don't throw away the leftover bread."},
+              {"it":"Questo lavoro mi porta via un sacco di tempo.","en":"This job takes up a lot of my time."}
+            ]
+          },
+          {
+            "title": "Pronouns and word order",
+            "text": "The adverb follows the verb, and a noun object normally comes after the whole unit (*tirare fuori il passaporto*). Pronouns behave as usual: *tiralo fuori*, *lo tiro fuori*, *non riesco a mandarla giù*. Reflexive forms can change the meaning: *tirarsi indietro* (back out), *tirarsi su* (pick oneself up).",
+            "examples": [
+              {"it":"Dov'è il passaporto? – Aspetta, lo tiro fuori.","en":"Where's the passport? – Hang on, I'll get it out."}
+            ]
+          }
+        ],
+        "mistakes": [
+          {"wrong":"Devo prendere fuori la spazzatura.","right":"Devo portare fuori la spazzatura.","why":"Rubbish (and dogs) are *portati fuori*."},
+          {"wrong":"Ho messo cinque chili.","right":"Ho messo su cinque chili.","why":"Without *su*, *mettere* doesn't mean 'put on weight'. Also: *ho preso cinque chili*."},
+          {"wrong":"Continueremo avanti il progetto.","right":"Porteremo avanti il progetto.","why":"*Portare avanti* = carry on with, pursue."},
+          {"wrong":"Hanno buttato via il vecchio palazzo.","right":"Hanno buttato giù il vecchio palazzo.","why":"*Buttare via* = throw away; *buttare giù* = knock down."}
+        ],
+        "tips": [
+          "Learn each one with a typical object: *tirare fuori il portafoglio*, *mettere su casa*, *buttare giù una bozza*.",
+          "In formal writing prefer single verbs: *estrarre, demolire, fondare, proseguire, emergere*.",
+          "*Fare fuori* is crime-film slang for 'kill', but at home it means 'polish off': *ho fatto fuori tutta la torta*."
+        ]
+      },
+      "exercises": [
+        {"id":"B2-VOC-06.e01","type":"cloze","difficulty":1,"instruction":"Complete the sentence.","prompt":"Puoi ___ fuori la spazzatura, per favore?","answers":["portare","mettere"],"focus":["portare"],"errorType":"vocabulary","traps":[{"match":"prendere","errorType":"vocabulary","why":"*Prendere fuori* isn't used. Take out the rubbish = *portare fuori*."},{"match":"tirare","errorType":"vocabulary","why":"*Tirare fuori* = take something out of a bag or pocket. Rubbish is *portata fuori*."}],"explanation":"*Portare fuori* = take out (the rubbish, the dog).","en":"Can you take the rubbish out, please?"},
+        {"id":"B2-VOC-06.e02","type":"cloze","difficulty":1,"instruction":"Complete the sentence.","prompt":"Non buttare ___ quel giornale: lo devo ancora leggere!","answers":["via"],"focus":["via"],"errorType":"vocabulary","traps":[{"match":"fuori","errorType":"vocabulary","why":"*Buttare fuori* = throw someone out (of a club). Throw away = *buttare via*."},{"match":"giù","errorType":"vocabulary","why":"*Buttare giù* = knock down or swallow. Throw away = *buttare via*."}],"explanation":"*Buttare via* = throw away.","en":"Don't throw that newspaper away: I still have to read it!"},
+        {"id":"B2-VOC-06.e03","type":"choice","difficulty":2,"instruction":"Choose the correct option.","prompt":"Con questo stipendio si tira ___ a fatica.","options":["avanti","fuori","su","giù"],"answer":0,"optionWhy":{"1":"*Tirare fuori* = take out.","2":"*Tirare su* = lift, cheer up.","3":"*Tirare giù* = pull down."},"errorType":"vocabulary","explanation":"*Tirare avanti* = get by, scrape by.","en":"With this salary you barely get by."},
+        {"id":"B2-VOC-06.e04","type":"cloze","difficulty":2,"instruction":"Complete the sentence.","prompt":"Alla fine è venuta ___ la verità: era stato lui.","answers":["fuori","a galla"],"focus":["fuori"],"errorType":"vocabulary","traps":[{"match":"su","errorType":"vocabulary","why":"*Venire su* = come up (plants, food you can't digest). The truth *viene fuori* (or *a galla*)."}],"explanation":"*Venire fuori* = come out, emerge.","en":"In the end the truth came out: it was him."},
+        {"id":"B2-VOC-06.e05","type":"choice","difficulty":2,"instruction":"Choose the correct option.","prompt":"«Hanno buttato giù il vecchio palazzo.» This means:","options":["They threw the old building away.","They knocked down the old building.","They painted the old building."],"answer":1,"errorType":"vocabulary","explanation":"*Buttare giù* = knock down, demolish.","en":"They knocked down the old building."},
+        {"id":"B2-VOC-06.e06","type":"cloze","difficulty":3,"instruction":"Complete the sentence.","prompt":"Ha ___ su un'azienda di software con due amici dell'università.","answers":["messo","tirato"],"focus":["messo"],"errorType":"vocabulary","traps":[{"match":"fatto","errorType":"vocabulary","why":"With *su*, the verb is *mettere*: *mettere su un'azienda* (set up)."},{"match":"preso","errorType":"vocabulary","why":"*Mettere su* = set up."}],"explanation":"*Mettere su* (a business, a home, a family) = set up. *Tirare su* is also used colloquially.","en":"He set up a software company with two friends from university."},
+        {"id":"B2-VOC-06.e07","type":"translate","difficulty":3,"instruction":"Translate into Italian (formal or informal).","prompt":"Can you take out your passport, please?","answers":["[Per favore] (può|potrebbe) (tirare|tirar) fuori il [suo] passaporto[ per favore]","[Per favore] puoi (tirare|tirar) fuori il [tuo] passaporto[ per favore]"],"focus":["fuori"],"errorType":"vocabulary","traps":[{"contains":["togliere","toglie","togli"],"errorType":"vocabulary","why":"*Togliere* = remove, take off (clothes). Take out of a bag = *tirare fuori*."},{"contains":["prendere","prende","prendi"],"errorType":"vocabulary","why":"To take something out of a bag or pocket: *tirare fuori*."}],"explanation":"*Tirare fuori* = take out (of a bag, pocket, drawer).","en":"Can you take out your passport, please?"},
+        {"id":"B2-VOC-06.e08","type":"choice","difficulty":3,"instruction":"Choose the correct option.","prompt":"«Dopo la sconfitta Marco è a pezzi: dobbiamo tirarlo su.» Here *tirarlo su* means:","options":["lift him up physically","cheer him up","bring him up (raise him)"],"answer":1,"optionWhy":{"0":"Literal meaning, but the context (a defeat) is emotional.","2":"*Tirare su un figlio* does mean 'raise a child', but here the context is cheering up."},"errorType":"vocabulary","explanation":"*Tirare su (il morale)* = cheer up.","en":"After the defeat Marco is devastated: we need to cheer him up."},
+        {"id":"B2-VOC-06.e09","type":"cloze","difficulty":3,"instruction":"Complete the sentence.","prompt":"Mi ha mentito per anni: non riesco proprio a mandarla ___.","answers":["giù"],"focus":["giù"],"errorType":"vocabulary","traps":[{"match":"via","errorType":"vocabulary","why":"*Mandare via* = send away. Accept, swallow = *mandare giù*."}],"explanation":"*Mandare giù* (una cosa) = swallow, accept something hard.","en":"He lied to me for years: I just can't swallow it."},
+        {"id":"B2-VOC-06.e10","type":"order","difficulty":3,"instruction":"Put the words in order.","prompt":"We set up home last year.","tokens":["Abbiamo","messo","su","casa","l'anno","scorso"],"answers":["Abbiamo messo su casa l'anno scorso","L'anno scorso abbiamo messo su casa"],"errorType":"word-order","explanation":"*Mettere su casa* = set up home (often: move in together).","en":"We set up home last year."},
+        {"id":"B2-VOC-06.e11","type":"transform","difficulty":4,"instruction":"Replace 'continueremo' with a multi-word verb.","prompt":"Nonostante le critiche, continueremo il progetto.","answers":["Nonostante le critiche[,] porteremo avanti il progetto","Nonostante le critiche[,] andremo avanti (con il|col) progetto","Porteremo avanti il progetto nonostante le critiche"],"focus":["avanti"],"errorType":"vocabulary","traps":[{"contains":["continueremo"],"errorType":"vocabulary","why":"The task asks for a multi-word verb: *porteremo avanti*."},{"contains":["tireremo"],"errorType":"vocabulary","why":"*Tirare avanti* = get by. Pursue a project = *portare avanti*."}],"explanation":"*Portare avanti* = carry on with, pursue.","en":"Despite the criticism, we will carry on with the project."},
+        {"id":"B2-VOC-06.e12","type":"choice","difficulty":4,"instruction":"Choose the correct option.","prompt":"In a crime film: «Il boss ha fatto fuori due testimoni.»","options":["The boss released two witnesses.","The boss killed two witnesses.","The boss threw two witnesses out."],"answer":1,"optionWhy":{"2":"Throw out = *buttare fuori*."},"errorType":"vocabulary","explanation":"*Fare fuori* (slang) = kill, eliminate. At home: *ho fatto fuori la torta* = I polished off the cake.","en":"The boss killed two witnesses."},
+        {"id":"B2-VOC-06.e13","type":"cloze","difficulty":4,"instruction":"Complete the sentence.","prompt":"Ho ___ giù due righe per il discorso di stasera.","answers":["buttato","messo"],"focus":["buttato"],"errorType":"vocabulary","traps":[{"match":"scritto","errorType":"vocabulary","why":"*Scrivere giù* is a calque of 'write down'. Jot down = *buttare giù* (or just *scrivere*)."}],"explanation":"*Buttare giù (due righe, una bozza)* = jot down, draft.","en":"I've jotted down a few lines for tonight's speech."},
+        {"id":"B2-VOC-06.e14","type":"translate","difficulty":4,"instruction":"Translate into Italian.","prompt":"He put on five kilos over the holidays.","answers":["(Ha messo su|Ha preso|È ingrassato di) cinque chili (durante le vacanze|in vacanza|durante le feste|nelle vacanze|con le vacanze)","(Durante le vacanze|In vacanza|Durante le feste) (ha messo su|ha preso|è ingrassato di) cinque chili"],"focus":["su"],"errorType":"vocabulary","traps":[{"match":["Ha messo cinque chili (durante le vacanze|in vacanza|durante le feste|nelle vacanze)","(Durante le vacanze|In vacanza|Durante le feste) ha messo cinque chili"],"errorType":"vocabulary","why":"Put on weight = *mettere su* (or *prendere*): don't drop *su*."},{"contains":["indossato"],"errorType":"vocabulary","why":"*Indossare* = put on clothes. Weight: *mettere su* or *prendere*."}],"explanation":"*Mettere su peso / chili* = put on weight.","en":"He put on five kilos over the holidays."},
+        {"id":"B2-VOC-06.e15","type":"speak","difficulty":5,"instruction":"Answer aloud (or type) in Italian (informal).","prompt":"Your friend wants to back out of a project you started together. Tell them not to back out now.","answers":["[(Adesso|Ora)] (non tirarti|non ti tirare) indietro [(adesso|ora|proprio adesso|proprio ora)]"],"focus":["indietro"],"errorType":"vocabulary","traps":[{"contains":["arrenderti","mollare"],"errorType":"vocabulary","why":"That means 'don't give up', which works too. 'Back out' is exactly *tirarsi indietro*.","ok":true},{"contains":["tirare"],"errorType":"pronoun","why":"*Tirarsi indietro* is reflexive: *non tirarti indietro*."}],"explanation":"*Tirarsi indietro* = back out. Negative tu imperative: *non tirarti* / *non ti tirare*.","en":"Don't back out now!","interaction":true},
+        {"id":"B2-VOC-06.e16","type":"cloze","difficulty":5,"instruction":"Complete the sentence.","prompt":"Quando a cena ha ___ fuori la storia del tradimento, è calato il silenzio.","answers":["tirato"],"focus":["tirato"],"errorType":"vocabulary","traps":[{"match":"portato","errorType":"vocabulary","why":"*Portare fuori* = take out (the dog). Bring up a topic = *tirare fuori*."},{"match":"messo","errorType":"vocabulary","why":"Bring up a topic = *tirare fuori*."}],"explanation":"*Tirare fuori (un argomento, una storia)* = bring up.","en":"When she brought up the story of the affair at dinner, silence fell."},
+        {"id":"B2-VOC-06.e17","type":"translate","difficulty":5,"instruction":"Translate into Italian.","prompt":"We get by, but it's hard to make ends meet.","answers":["Tiriamo avanti[,] ma è (difficile|dura) (arrivare a fine mese|sbarcare il lunario)","Tiriamo avanti[,] ma facciamo fatica ad arrivare a fine mese","Tiriamo avanti[,] ma facciamo fatica a sbarcare il lunario"],"focus":["avanti"],"errorType":"vocabulary","traps":[{"contains":["estremità","estremi","incontrare"],"errorType":"idiom","why":"'Make ends meet' = *arrivare a fine mese* or *sbarcare il lunario*."},{"contains":["prendiamo","otteniamo"],"errorType":"vocabulary","why":"'Get by' = *tirare avanti*."}],"explanation":"*Tirare avanti* = get by; *arrivare a fine mese* / *sbarcare il lunario* = make ends meet.","en":"We get by, but it's hard to make ends meet."}
+      ]
+    }
+  ]
+}
