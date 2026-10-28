@@ -8,7 +8,7 @@ export async function render(view, { store, content }) {
     { href: "#/play", icon: "🎲", c: "purple", title: "Tutti i giochi", sub: `${[...content.games.values()].length} giochi: casi gialli, conversazioni, duelli…` },
     { href: "#/verbi", icon: "🔤", c: "orange", title: "Verbi", sub: `${(content.verbs || []).length} verbi: allenamento e tabelle di coniugazione` },
     { href: "#/play?type=dictation", icon: "✍️", c: "teal", title: "Dettato", sub: "Ascolta una frase e scrivila" },
-    { href: "#/vocab", icon: "🗂️", c: "orange", title: "Vocabolario", sub: `${(content.vocabSeed || []).length} parole ed espressioni, ${vocab.length} nel tuo mazzo` },
+    { href: "#/vocab", icon: "🗂️", c: "pink", title: "Vocabolario", sub: `${(content.vocabSeed || []).length} parole ed espressioni, ${vocab.length} nel tuo mazzo` },
     { href: "#/translate", icon: "🔁", c: "blue", title: "Google Translate", sub: imports.length ? `${imports.length} frasi importate` : "Importa la tua cronologia di traduzioni" },
     { href: "#/errors", icon: "🧭", c: "red", title: "Banca degli errori", sub: `${errors.length} errori registrati, ${errors.filter(e => e.status !== "mastered").length} aperti` },
     { href: "#/learn/coverage", icon: "🧩", c: "teal", title: "Mappa del programma", sub: "Ogni argomento, con lezione, esercizi e giochi" },
